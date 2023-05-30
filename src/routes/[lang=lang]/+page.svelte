@@ -2,45 +2,44 @@
 	import { LightSwitch } from '@skeletonlabs/skeleton';
 
 	import LL from '$i18n/i18n-svelte';
-	import { onMount } from 'svelte';
+	// import { onMount } from 'svelte';
 
-	console.info($LL.log({ fileName: '+page.svelte' }));
+	// console.info($LL.log({ fileName: '+page.svelte' }));
 
-	let spectators = 0;
+	// let spectators = 0;
 
-	onMount(() => {
-		const interval = setInterval(updateSpectatorCount, 2_000);
+	// onMount(() => {
+	// 	const interval = setInterval(updateSpectatorCount, 2_000);
 
-		return () => clearInterval(interval);
-	});
+	// 	return () => clearInterval(interval);
+	// });
 
-	const updateSpectatorCount = async () => {
-		const response = await fetch(
-			'/api/spectators?' + new URLSearchParams({ oldSpectators: spectators.toString() }).toString()
-		);
-		const result = await response.json();
-		spectators = result.spectators;
-	};
+	// const updateSpectatorCount = async () => {
+	// 	const response = await fetch(
+	// 		'/api/spectators?' + new URLSearchParams({ oldSpectators: spectators.toString() }).toString()
+	// 	);
+	// 	const result = await response.json();
+	// 	spectators = result.spectators;
+	// };
 
-	const day = new Date('2021-11-20');
+	// const day = new Date('2021-11-20');
 </script>
 
-<h2>
+<!-- <h2>
 	{$LL.welcome({ year: 2021 })}
-</h2>
+</h2> -->
 
-<h3>
+<!-- <h3>
 	{$LL.summit.schedule(day)}
-</h3>
+</h3> -->
 
-<div class="spectators">
+<!-- <div class="spectators">
 	{$LL.spectators(spectators)}
-</div>
+</div> -->
 
 <div class="container h-full mx-auto flex justify-center items-center">
 	<div class="space-y-5">
-		<h1 class="h1">Let's get cracking bones!</h1>
-		<p>Start by exploring:</p>
+		<h1 class="h1">{$LL.mainTitle()}</h1>
 		<div class="py-12">
 			<LightSwitch />
 		</div>

@@ -4,9 +4,9 @@
 </script>
 
 <header>
-	<a href="/{$locale}">
+	<!-- <a href="/{$locale}">
 		<h1>typesafe-i18n</h1>
-	</a>
+	</a> -->
 
 	<LocaleSwitcher />
 </header>

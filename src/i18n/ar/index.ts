@@ -1,8 +1,8 @@
 import type { BaseTranslation } from '../i18n-types';
 
 const en: BaseTranslation = {
-	mainTitle: "Let's get cracking bones!",
-	title: 'BTEC Elevators'
+	mainTitle: 'مـــرحباً!',
+	title: 'فن المعمار'
 };
 
 export default en;

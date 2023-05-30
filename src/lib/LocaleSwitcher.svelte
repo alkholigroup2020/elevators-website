@@ -48,12 +48,30 @@
 
 <ul>
 	<div class="m-12 flex flex-column">
-		{#each locales as l}
+		<div>
+			<a
+				class="p-5"
+				class:active={'en' === $locale}
+				href={`${replaceLocaleInUrl($page.url, 'en')}`}
+			>
+				English
+			</a>
+		</div>
+		<div>
+			<a
+				class="p-5"
+				class:active={'ar' === $locale}
+				href={`${replaceLocaleInUrl($page.url, 'ar')}`}
+			>
+				Arabic
+			</a>
+		</div>
+		<!-- {#each locales as l}
 			<li>
 				<a class="p-5" class:active={l === $locale} href={`${replaceLocaleInUrl($page.url, l)}`}>
 					{l}
 				</a>
 			</li>
-		{/each}
+		{/each} -->
 	</div>
 </ul>

@@ -46,32 +46,22 @@
 
 <svelte:window on:popstate={handlePopStateEvent} />
 
-<ul>
-	<div class="m-12 flex flex-column">
-		<div>
-			<a
-				class="p-5"
-				class:active={'en' === $locale}
-				href={`${replaceLocaleInUrl($page.url, 'en')}`}
-			>
-				English
-			</a>
-		</div>
-		<div>
-			<a
-				class="p-5"
-				class:active={'ar' === $locale}
-				href={`${replaceLocaleInUrl($page.url, 'ar')}`}
-			>
-				Arabic
-			</a>
-		</div>
-		<!-- {#each locales as l}
+<div class="m-12 flex flex-column">
+	<div>
+		<a class="p-5" class:active={'en' === $locale} href={`${replaceLocaleInUrl($page.url, 'en')}`}>
+			English
+		</a>
+	</div>
+	<div>
+		<a class="p-5" class:active={'ar' === $locale} href={`${replaceLocaleInUrl($page.url, 'ar')}`}>
+			Arabic
+		</a>
+	</div>
+	<!-- {#each locales as l}
 			<li>
 				<a class="p-5" class:active={l === $locale} href={`${replaceLocaleInUrl($page.url, l)}`}>
 					{l}
 				</a>
 			</li>
 		{/each} -->
-	</div>
-</ul>
+</div>

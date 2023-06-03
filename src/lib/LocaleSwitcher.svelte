@@ -22,8 +22,8 @@
 			history.pushState({ locale: newLocale }, '', replaceLocaleInUrl($page.url, newLocale));
 		}
 
-		// run the `load` function again
-		invalidateAll();
+		// run the `load` function again <=== This what is making hover over the btn changes the language!!
+		// invalidateAll();
 	};
 
 	// update `lang` attribute
@@ -47,7 +47,11 @@
 <svelte:window on:popstate={handlePopStateEvent} />
 
 <div class="m-12 flex flex-column">
-	<div>
+	<a href={`${replaceLocaleInUrl($page.url, 'ar')}`} class="btn variant-filled">arabic</a>
+	<a href={`${replaceLocaleInUrl($page.url, 'en')}`} class="btn variant-filled mx-3">english</a>
+</div>
+
+<!-- <div>
 		<a class="p-5" class:active={'en' === $locale} href={`${replaceLocaleInUrl($page.url, 'en')}`}>
 			English
 		</a>
@@ -56,12 +60,14 @@
 		<a class="p-5" class:active={'ar' === $locale} href={`${replaceLocaleInUrl($page.url, 'ar')}`}>
 			Arabic
 		</a>
-	</div>
-	<!-- {#each locales as l}
+	</div> -->
+
+<!-- 
+		{#each locales as l}
 			<li>
 				<a class="p-5" class:active={l === $locale} href={`${replaceLocaleInUrl($page.url, l)}`}>
 					{l}
 				</a>
 			</li>
-		{/each} -->
-</div>
+		{/each} 
+	-->

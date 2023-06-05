@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { LightSwitch } from '@skeletonlabs/skeleton';
+	import LocaleSwitcher from '$lib/LocaleSwitcher.svelte';
+
 	import LL from '$i18n/i18n-svelte';
 </script>
 
@@ -8,6 +10,9 @@
 		<h1 class="h1">{$LL.mainTitle()}</h1>
 		<div class="py-12">
 			<LightSwitch />
+		</div>
+		<div>
+			<LocaleSwitcher />
 		</div>
 	</div>
 </div>

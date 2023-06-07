@@ -22,8 +22,11 @@
 			history.pushState({ locale: newLocale }, '', replaceLocaleInUrl($page.url, newLocale));
 		}
 
-		// run the `load` function again <=== This what is making hover over the btn changes the language!!
+		// run the `load` function again <=== This what is making hover over the btn changes the language!! - But also makes the title name not changing from lang to another!
 		// invalidateAll();
+
+		// to solve the title lang issue above
+		location.reload();
 	};
 
 	// update `lang` attribute

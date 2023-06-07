@@ -1,3 +1,5 @@
+console.log(`Running on the client and server sides @home page`);
+
 import type { PageLoad } from './$types';
 import LL, { setLocale } from '$i18n/i18n-svelte';
 import { get } from 'svelte/store';

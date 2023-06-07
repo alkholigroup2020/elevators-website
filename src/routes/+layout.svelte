@@ -2,7 +2,6 @@
 	// The ordering of these imports is critical to your app working properly
 	// import '@skeletonlabs/skeleton/themes/theme-modern.css';
 	import '../theme.postcss';
-
 	// If you have source.organizeImports set to true in VSCode, then it will auto change this ordering
 	import '@skeletonlabs/skeleton/styles/skeleton.css';
 	// Most of your app wide CSS should be put in this file
@@ -25,6 +24,7 @@
 
 <svelte:head>
 	<title>{$page.data.title || 'BTEC'}</title>
+	<meta name="description" content="An Elevators Co." />
 	<HeadHrefLangs />
 </svelte:head>
 

@@ -3,16 +3,29 @@
 	import LocaleSwitcher from '$lib/LocaleSwitcher.svelte';
 
 	import LL from '$i18n/i18n-svelte';
+
+	import { page } from '$app/stores';
+	import { browser } from '$app/environment';
+	const lang = $page.params.lang;
+	if (browser) {
+		localStorage.setItem('language', lang);
+	}
 </script>
 
-<div class="container h-full mx-auto flex justify-center items-center">
+<div
+	dir={`${lang === 'ar' ? 'rtl' : 'ltr'}`}
+	class="container h-full mx-auto flex justify-center items-center"
+>
 	<div class="space-y-5">
 		<h1 class="h1">{$LL.mainTitle()}</h1>
-		<div class="py-12">
+		<div dir="ltr" class="py-12">
 			<LightSwitch />
 		</div>
 		<div>
 			<LocaleSwitcher />
+		</div>
+		<div>
+			<p>The current Lang is: {lang}</p>
 		</div>
 	</div>
 </div>

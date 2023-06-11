@@ -35,9 +35,12 @@
 	// update locale when navigating via browser back/forward buttons
 	const handlePopStateEvent = async ({ state }: PopStateEvent) => switchLocale(state.locale, false);
 
+	let currentLang: string; // my addition
+
 	// update locale when page store changes
 	$: if (browser) {
 		const lang = $page.params.lang as Locales;
+		currentLang = lang; // my addition
 		switchLocale(lang, false);
 		history.replaceState(
 			{ ...history.state, locale: lang },
@@ -49,28 +52,40 @@
 
 <svelte:window on:popstate={handlePopStateEvent} />
 
-<div class="m-12 flex flex-column">
+{#if currentLang === 'en'}
+	<button type="button" class="btn !bg-transparent h-2">
+		<a href={`${replaceLocaleInUrl($page.url, 'ar')}`}>العربية</a>
+	</button>
+{/if}
+
+{#if currentLang === 'ar'}
+	<button type="button" class="btn !bg-transparent h-2">
+		<a href={`${replaceLocaleInUrl($page.url, 'en')}`}>English</a>
+	</button>
+{/if}
+
+<!-- <div class="flex flex-column">
 	<a href={`${replaceLocaleInUrl($page.url, 'ar')}`} class="btn variant-filled">arabic</a>
 	<a href={`${replaceLocaleInUrl($page.url, 'en')}`} class="btn variant-filled mx-3">english</a>
-</div>
+</div> -->
 
 <!-- <div>
-		<a class="p-5" class:active={'en' === $locale} href={`${replaceLocaleInUrl($page.url, 'en')}`}>
-			English
-		</a>
-	</div>
-	<div>
-		<a class="p-5" class:active={'ar' === $locale} href={`${replaceLocaleInUrl($page.url, 'ar')}`}>
-			Arabic
-		</a>
-	</div> -->
+	<a class="p-5" class:active={'en' === $locale} href={`${replaceLocaleInUrl($page.url, 'en')}`}>
+		English
+	</a>
+</div>
+<div>
+	<a class="p-5" class:active={'ar' === $locale} href={`${replaceLocaleInUrl($page.url, 'ar')}`}>
+		Arabic
+	</a>
+</div> -->
 
-<!-- 
-		{#each locales as l}
-			<li>
-				<a class="p-5" class:active={l === $locale} href={`${replaceLocaleInUrl($page.url, l)}`}>
-					{l}
-				</a>
-			</li>
-		{/each} 
-	-->
+<!-- <ul class="flex">
+	{#each locales as l}
+		<li>
+			<a class="p-5" class:active={l === $locale} href={`${replaceLocaleInUrl($page.url, l)}`}>
+				{l}
+			</a>
+		</li>
+	{/each}
+</ul> -->

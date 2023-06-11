@@ -1,9 +1,4 @@
 <script lang="ts">
-	import { LightSwitch } from '@skeletonlabs/skeleton';
-	import LocaleSwitcher from '$lib/LocaleSwitcher.svelte';
-
-	import LL from '$i18n/i18n-svelte';
-
 	import { page } from '$app/stores';
 	import { browser } from '$app/environment';
 	const lang = $page.params.lang;
@@ -12,7 +7,7 @@
 	}
 </script>
 
-<div
+<!-- <div
 	dir={`${lang === 'ar' ? 'rtl' : 'ltr'}`}
 	class="container h-full mx-auto flex justify-center items-center"
 >
@@ -28,4 +23,4 @@
 			<p>The current Lang is: {lang}</p>
 		</div>
 	</div>
-</div>
+</div> -->

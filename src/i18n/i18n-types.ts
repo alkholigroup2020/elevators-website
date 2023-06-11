@@ -22,6 +22,20 @@ type RootTranslation = {
 	 * B​T​E​C​ ​E​l​e​v​a​t​o​r​s
 	 */
 	title: string
+	veryTopNav: {
+		/**
+		 * R​i​y​a​d​h​:​ ​+​9​6​6​ ​5​9​ ​7​3​7​ ​0​7​8​5
+		 */
+		mobile: string
+		/**
+		 * J​e​d​d​a​h​:​ ​+​9​6​6​ ​5​8​ ​0​2​5​ ​1​2​2​7
+		 */
+		jed: string
+		/**
+		 * i​n​f​o​@​b​u​i​l​d​i​n​g​t​e​c​.​c​o​m
+		 */
+		email: string
+	}
 }
 
 export type TranslationFunctions = {
@@ -33,6 +47,20 @@ export type TranslationFunctions = {
 	 * BTEC Elevators
 	 */
 	title: () => LocalizedString
+	veryTopNav: {
+		/**
+		 * Riyadh: +966 59 737 0785
+		 */
+		mobile: () => LocalizedString
+		/**
+		 * Jeddah: +966 58 025 1227
+		 */
+		jed: () => LocalizedString
+		/**
+		 * info@buildingtec.com
+		 */
+		email: () => LocalizedString
+	}
 }
 
 export type Formatters = {}

@@ -19,7 +19,7 @@
 	setLocale(data.locale);
 
 	import { AppShell } from '@skeletonlabs/skeleton';
-	import { AppBar } from '@skeletonlabs/skeleton';
+	import VeryTopNav from '$lib/navComponents/VeryTopNav.svelte';
 </script>
 
 <svelte:head>
@@ -28,18 +28,18 @@
 	<HeadHrefLangs />
 </svelte:head>
 
-<AppShell>
-	<svelte:fragment slot="pageHeader">
-		<AppBar>Skeleton</AppBar>
-	</svelte:fragment>
+<!-- bg-surface-100-800-token -->
 
-	<svelte:fragment slot="sidebarLeft">
-		<!-- Hidden below Tailwind's large breakpoint lg:block -->
+<AppShell>
+	<!-- <svelte:fragment slot="pageHeader" /> -->
+	<VeryTopNav />
+	<!-- <svelte:fragment slot="sidebarLeft">
+		Hidden below Tailwind's large breakpoint lg:block
 		<div id="sidebar-left" class="block md:hidden">Sidebar</div>
-	</svelte:fragment>
+	</svelte:fragment> -->
 
 	<!-- Router Slot -->
 	<slot />
 
-	<svelte:fragment slot="footer">Footer</svelte:fragment>
+	<!-- <svelte:fragment slot="footer">Footer</svelte:fragment> -->
 </AppShell>

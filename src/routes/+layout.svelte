@@ -20,6 +20,10 @@
 
 	import { AppShell } from '@skeletonlabs/skeleton';
 	import VeryTopNav from '$lib/navComponents/VeryTopNav.svelte';
+	import Navbar from '$lib/navComponents/Navbar.svelte';
+
+	import { Drawer } from '@skeletonlabs/skeleton';
+	import { drawerStore } from '@skeletonlabs/skeleton';
 </script>
 
 <svelte:head>
@@ -29,10 +33,31 @@
 </svelte:head>
 
 <!-- bg-surface-100-800-token -->
+<Drawer>
+	{#if $drawerStore.id === 'id-1'}
+		<nav class="space-y-4 flex flex-col p-10">
+			<a href="/" class="text-gray-500 hover:text-gray-700">Link1</a>
+			<a href="/" class="text-gray-500 hover:text-gray-700">Link2</a>
+			<a href="/" class="text-gray-500 hover:text-gray-700">Link3</a>
+			<a href="/" class="text-gray-500 hover:text-gray-700">Link4</a>
+			<a href="/" class="text-gray-500 hover:text-gray-700">Link5</a>
+			<a href="/" class="text-gray-500 hover:text-gray-700">Link6</a>
+			<a href="/" class="text-gray-500 hover:text-gray-700">Link7</a>
+			<a href="/" class="text-gray-500 hover:text-gray-700">Link8</a>
+			<a href="/" class="text-gray-500 hover:text-gray-700">Link9</a>
+		</nav>
+	{:else if $drawerStore.id === 'id-2'}
+		<!-- (show 'example-2' contents) -->
+	{:else}
+		<!-- (fallback contents) -->
+	{/if}
+</Drawer>
 
 <AppShell>
 	<!-- <svelte:fragment slot="pageHeader" /> -->
 	<VeryTopNav />
+
+	<Navbar />
 	<!-- <svelte:fragment slot="sidebarLeft">
 		Hidden below Tailwind's large breakpoint lg:block
 		<div id="sidebar-left" class="block md:hidden">Sidebar</div>

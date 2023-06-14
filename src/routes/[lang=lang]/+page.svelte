@@ -1,16 +1,23 @@
 <script lang="ts">
-	import { page } from '$app/stores';
-	import { browser } from '$app/environment';
+	// import { page } from '$app/stores';
+	// import { browser } from '$app/environment';
+
 	import HeroSection from '$lib/homePage/HeroSection.svelte';
-	const lang = $page.params.lang;
-	if (browser) {
-		localStorage.setItem('language', lang);
-	}
+
+	// const lang = $page.params.lang;
+	// if (browser) {
+	// 	localStorage.setItem('language', lang);
+	// }
 
 	export let data;
+
+	const currentLocal = data.locale;
 </script>
 
-<HeroSection imageURL={data.url} />
+<HeroSection sectionData={data.data} {currentLocal} />
+
+<!-- <p>{data.enSectionTitle}</p> -->
+
 <!-- <div
 	dir={`${lang === 'ar' ? 'rtl' : 'ltr'}`}
 	class="container h-full mx-auto flex justify-center items-center"

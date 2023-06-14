@@ -2,14 +2,18 @@
 	/**
 	 * @type {any}
 	 */
-	export let imageURL;
+	export let sectionData;
+	/**
+	 * @type {string}
+	 */
+	export let currentLocal;
 </script>
 
-<!-- <h1 class="h1">{imageURL}</h1> -->
-<!-- <img class="w-full max-h-[50%]" src={`http://10.11.10.66:1337${imageURL}`} alt="" /> -->
-
 <!-- Hero section -->
-<section class="relative min-h-[75%] flex items-center justify-center">
+<section
+	class="relative min-h-[75%] flex items-center justify-center"
+	dir={currentLocal === 'en' ? 'ltr' : 'rtl'}
+>
 	<!-- Image container -->
 	<div class="absolute inset-0 overflow-hidden">
 		<!-- <img
@@ -17,25 +21,44 @@
 			alt="Background image"
 			class="object-cover w-full h-full"
 		/> -->
-		<img class="object-cover w-full h-full" src={`http://10.11.10.66:1337${imageURL}`} alt="" />
+		<img
+			class="object-cover w-full h-full"
+			src={`http://10.11.10.66:1337${sectionData.backgroundImageURL}`}
+			alt=""
+		/>
 	</div>
 
 	<!-- Dimmer layer -->
 	<div class="absolute inset-0 bg-black bg-opacity-40" />
 
 	<!-- Text container -->
-	<div class="relative z-10 flex flex-col items-center space-y-4">
-		<!-- Heading -->
-		<h1 class="text-4xl md:text-6xl text-white font-bold">Welcome to our website!</h1>
-
-		<!-- Subheading -->
-		<h2 class="text-2xl md:text-4xl text-white font-semibold">We create amazing things.</h2>
-
-		<!-- Call-to-action button -->
-		<button
-			class="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold text-lg rounded"
-		>
-			Get started
-		</button>
+	<div class="relative z-10 flex flex-col items-center space-y-4 px-[250px]">
+		{#if currentLocal === 'en'}
+			<!-- en Heading -->
+			<h1 class="text-4xl md:text-6xl text-white font-bold">{sectionData.enSectionTitle}</h1>
+			<!-- en Subheading -->
+			<h2 class="text-2xl md:text-3xl px-2 text-white font-semibold py-12">
+				{sectionData.enSectionMessage}
+			</h2>
+			<!-- en Call-to-action button -->
+			<button
+				class="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold text-lg rounded"
+			>
+				{sectionData.enButtonText}
+			</button>
+		{:else}
+			<!-- ar Heading -->
+			<h1 class="text-4xl md:text-6xl text-white font-bold">{sectionData.arSectionTitle}</h1>
+			<!-- ar Subheading -->
+			<h2 class="text-2xl md:text-3xl px-2 text-white font-semibold py-12">
+				{sectionData.arSectionMessage}
+			</h2>
+			<!-- ar Call-to-action button -->
+			<button
+				class="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold text-lg rounded"
+			>
+				{sectionData.arButtonText}
+			</button>
+		{/if}
 	</div>
 </section>

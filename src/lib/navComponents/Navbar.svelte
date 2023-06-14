@@ -22,6 +22,7 @@
 		<div class="flex">
 			<button
 				class="lg:hidden mt-2"
+				aria-label="a button to open the side drawer"
 				on:click={() => {
 					drawerStore.open(drawerSettings);
 				}}
@@ -51,7 +52,12 @@
 			<div class="ml-5 lg:ml-0">
 				<a href="/" aria-label="a link to the home page">
 					<div class="flex max-h-12">
-						<img class="w-7" src="logo_icon.png" alt="company's logo" />
+						<!-- <img class="w-8" src="logo_icon.png" alt="company's logo" /> -->
+
+						<div class="aspect-w-603 aspect-h-1181 -mt-1">
+							<img class="w-7 object-cover" src="logo_icon.png" alt="company's logo" />
+						</div>
+
 						{#if $modeCurrent}
 							<img
 								class="ml-3 w-40 h-[80%] mt-auto"
@@ -73,15 +79,33 @@
 
 	<svelte:fragment slot="trail">
 		<nav class="hidden lg:block space-x-6">
-			<a href="/" class="text-gray-500 hover:text-gray-700">Link 1</a>
-			<a href="/" class="text-gray-500 hover:text-gray-700">Link 2</a>
-			<a href="/" class="text-gray-500 hover:text-gray-700">Link 3</a>
-			<a href="/" class="text-gray-500 hover:text-gray-700">Link 4</a>
-			<a href="/" class="text-gray-500 hover:text-gray-700">Link 5</a>
-			<a href="/" class="text-gray-500 hover:text-gray-700">Link 6</a>
-			<a href="/" class="text-gray-500 hover:text-gray-700">Link 7</a>
-			<a href="/" class="text-gray-500 hover:text-gray-700">Link 8</a>
-			<a href="/" class="text-gray-500 hover:text-gray-700">Link 9</a>
+			<a href="/" aria-label="a link to a page #1" class="text-gray-500 hover:text-gray-700"
+				>Link 1</a
+			>
+			<a href="/" aria-label="a link to a page #2" class="text-gray-500 hover:text-gray-700"
+				>Link 2</a
+			>
+			<a href="/" aria-label="a link to a page #3" class="text-gray-500 hover:text-gray-700"
+				>Link 3</a
+			>
+			<a href="/" aria-label="a link to a page #4" class="text-gray-500 hover:text-gray-700"
+				>Link 4</a
+			>
+			<a href="/" aria-label="a link to a page #5" class="text-gray-500 hover:text-gray-700"
+				>Link 5</a
+			>
+			<a href="/" aria-label="a link to a page #" class="text-gray-500 hover:text-gray-700"
+				>Link 6</a
+			>
+			<a href="/" aria-label="a link to a page #1" class="text-gray-500 hover:text-gray-700"
+				>Link 7</a
+			>
+			<a href="/" aria-label="a link to a page #1" class="text-gray-500 hover:text-gray-700"
+				>Link 8</a
+			>
+			<a href="/" aria-label="a link to a page #1" class="text-gray-500 hover:text-gray-700"
+				>Link 9</a
+			>
 		</nav>
 	</svelte:fragment>
 </AppBar>

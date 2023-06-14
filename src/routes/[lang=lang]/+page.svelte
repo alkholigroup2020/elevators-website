@@ -1,12 +1,16 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { browser } from '$app/environment';
+	import HeroSection from '$lib/homePage/HeroSection.svelte';
 	const lang = $page.params.lang;
 	if (browser) {
 		localStorage.setItem('language', lang);
 	}
+
+	export let data;
 </script>
 
+<HeroSection imageURL={data.url} />
 <!-- <div
 	dir={`${lang === 'ar' ? 'rtl' : 'ltr'}`}
 	class="container h-full mx-auto flex justify-center items-center"

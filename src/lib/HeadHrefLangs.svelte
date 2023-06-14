@@ -5,10 +5,16 @@
 </script>
 
 {#each locales as l}
-	<link rel="alternate" hreflang={l} href={`${replaceLocaleInUrl($page.url, l, true)}`} />
+	<link
+		aria-label="header language link"
+		rel="alternate"
+		hreflang={l}
+		href={`${replaceLocaleInUrl($page.url, l, true)}`}
+	/>
 {/each}
 <link
 	rel="alternate"
 	hreflang="x-default"
+	aria-label="header language link"
 	href={`${replaceLocaleInUrl($page.url, baseLocale, true)}`}
 />

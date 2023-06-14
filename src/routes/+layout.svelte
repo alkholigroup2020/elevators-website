@@ -36,15 +36,15 @@
 <Drawer>
 	{#if $drawerStore.id === 'id-1'}
 		<nav class="space-y-4 flex flex-col p-10">
-			<a href="/" class="text-gray-500 hover:text-gray-700">Link1</a>
-			<a href="/" class="text-gray-500 hover:text-gray-700">Link2</a>
-			<a href="/" class="text-gray-500 hover:text-gray-700">Link3</a>
-			<a href="/" class="text-gray-500 hover:text-gray-700">Link4</a>
-			<a href="/" class="text-gray-500 hover:text-gray-700">Link5</a>
-			<a href="/" class="text-gray-500 hover:text-gray-700">Link6</a>
-			<a href="/" class="text-gray-500 hover:text-gray-700">Link7</a>
-			<a href="/" class="text-gray-500 hover:text-gray-700">Link8</a>
-			<a href="/" class="text-gray-500 hover:text-gray-700">Link9</a>
+			<a href="/" aria-label="some link" class="text-gray-500 hover:text-gray-700">Link1</a>
+			<a href="/" aria-label="some link" class="text-gray-500 hover:text-gray-700">Link2</a>
+			<a href="/" aria-label="some link" class="text-gray-500 hover:text-gray-700">Link3</a>
+			<a href="/" aria-label="some link" class="text-gray-500 hover:text-gray-700">Link4</a>
+			<a href="/" aria-label="some link" class="text-gray-500 hover:text-gray-700">Link5</a>
+			<a href="/" aria-label="some link" class="text-gray-500 hover:text-gray-700">Link6</a>
+			<a href="/" aria-label="some link" class="text-gray-500 hover:text-gray-700">Link7</a>
+			<a href="/" aria-label="some link" class="text-gray-500 hover:text-gray-700">Link8</a>
+			<a href="/" aria-label="some link" class="text-gray-500 hover:text-gray-700">Link9</a>
 		</nav>
 	{:else if $drawerStore.id === 'id-2'}
 		<!-- (show 'example-2' contents) -->

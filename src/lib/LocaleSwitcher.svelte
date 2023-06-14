@@ -54,13 +54,13 @@
 
 {#if currentLang === 'en'}
 	<button type="button" class="btn !bg-transparent h-2">
-		<a href={`${replaceLocaleInUrl($page.url, 'ar')}`}>العربية</a>
+		<a href={`${replaceLocaleInUrl($page.url, 'ar')}`} aria-label="language switch link">العربية</a>
 	</button>
 {/if}
 
 {#if currentLang === 'ar'}
 	<button type="button" class="btn !bg-transparent h-2">
-		<a href={`${replaceLocaleInUrl($page.url, 'en')}`}>english</a>
+		<a href={`${replaceLocaleInUrl($page.url, 'en')}`} aria-label="language switch link">english</a>
 	</button>
 {/if}
 

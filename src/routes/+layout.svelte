@@ -11,9 +11,10 @@
 	import { setLocale } from '$i18n/i18n-svelte';
 	import HeadHrefLangs from '$lib/HeadHrefLangs.svelte';
 
-	import type { LayoutData } from './$types';
+	// import type { LayoutData } from './$types';
 
-	export let data: LayoutData;
+	export let data;
+
 	// at the very top, set the locale before you access the store
 	// and before the actual rendering takes place
 	setLocale(data.locale);
@@ -24,6 +25,10 @@
 
 	import { Drawer } from '@skeletonlabs/skeleton';
 	import { drawerStore } from '@skeletonlabs/skeleton';
+
+	import type { NavData } from '../types/nav.type';
+
+	const theNavData: NavData = data.cmsData;
 </script>
 
 <svelte:head>
@@ -57,7 +62,8 @@
 	<!-- <svelte:fragment slot="pageHeader" /> -->
 	<VeryTopNav />
 
-	<Navbar />
+	<Navbar theNavbarData={theNavData} />
+
 	<!-- <svelte:fragment slot="sidebarLeft">
 		Hidden below Tailwind's large breakpoint lg:block
 		<div id="sidebar-left" class="block md:hidden">Sidebar</div>

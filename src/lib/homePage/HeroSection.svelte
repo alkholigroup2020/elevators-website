@@ -21,10 +21,18 @@
 			alt="Background image"
 			class="object-cover w-full h-full"
 		/> -->
+
+		<!-- src={`https://cms.buildingtec-elevators.com${sectionData.backgroundImageURL}`} -->
 		<img
 			class="object-cover w-full h-full"
-			src={`http://10.11.10.66:1337${sectionData.backgroundImageURL}`}
-			alt=""
+			src={`https://cms.buildingtec-elevators.com${sectionData.backgroundImageURL}`}
+			srcset={`https://cms.buildingtec-elevators.com${sectionData.smBackgroundImageURL} 300w,
+			https://cms.buildingtec-elevators.com${sectionData.mdBackgroundImageURL} 600w,
+			https://cms.buildingtec-elevators.com${sectionData.lgBackgroundImageURL} 1200w,`}
+			sizes="(max-width: 600px) 300px,
+		 (max-width: 1200px) 600px,
+		 1200px"
+			alt="background"
 		/>
 	</div>
 
@@ -32,8 +40,9 @@
 	<div class="absolute inset-0 bg-black bg-opacity-40" />
 
 	<!-- Text container -->
-	<div class="relative z-10 flex flex-col items-center space-y-4 px-[250px]">
+	<div class="container relative z-10 flex flex-col items-center space-y-4">
 		{#if currentLocal === 'en'}
+			<pre>{sectionData.smBackgroundImageURL}</pre>
 			<!-- en Heading -->
 			<h1 class="text-4xl md:text-6xl text-white font-bold">{sectionData.enSectionTitle}</h1>
 			<!-- en Subheading -->

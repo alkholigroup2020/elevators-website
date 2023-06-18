@@ -14,6 +14,7 @@ const query = gql`
 					BackgroundImage {
 						data {
 							attributes {
+								formats
 								url
 							}
 						}
@@ -34,10 +35,19 @@ const query = gql`
 `;
 
 const getHeroSectionDate = async () => {
-	const theData = await request(`${CMS_URL}/graphql`, query);
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any
+	const theData: any = await request(`${CMS_URL}/graphql`, query);
 
 	const backgroundImageURL =
 		theData.heroSection.data.attributes.BackgroundImage.data.attributes.url;
+	const lgBackgroundImageURL =
+		theData.heroSection.data.attributes.BackgroundImage.data.attributes.formats.large.url;
+	const mdBackgroundImageURL =
+		theData.heroSection.data.attributes.BackgroundImage.data.attributes.formats.medium.url;
+	const smBackgroundImageURL =
+		theData.heroSection.data.attributes.BackgroundImage.data.attributes.formats.small.url;
+	const thumBackgroundImageURL =
+		theData.heroSection.data.attributes.BackgroundImage.data.attributes.formats.thumbnail.url;
 
 	const enSectionTitle = theData.heroSection.data.attributes.SectionTitle;
 	const enSectionMessage = theData.heroSection.data.attributes.SectionMessage;
@@ -52,6 +62,10 @@ const getHeroSectionDate = async () => {
 
 	return {
 		backgroundImageURL,
+		lgBackgroundImageURL,
+		mdBackgroundImageURL,
+		smBackgroundImageURL,
+		thumBackgroundImageURL,
 		enSectionTitle,
 		enSectionMessage,
 		enButtonText,

@@ -5,6 +5,7 @@
 	import type { DrawerSettings } from '@skeletonlabs/skeleton';
 	import { modeCurrent } from '@skeletonlabs/skeleton';
 
+	// : DrawerSettings
 	const drawerSettings: DrawerSettings = {
 		id: 'id-1',
 		bgDrawer: 'bg-secondary-200-700-token',
@@ -15,6 +16,10 @@
 	};
 
 	$: hamburgerIconColor = $modeCurrent ? '#212121' : '#d3d3d3';
+
+	import type { NavData } from '../../types/nav.type';
+
+	export let theNavbarData: NavData;
 </script>
 
 <AppBar background="bg-surface-50-800-token" shadow="shadow-md" regionRowMain="container mx-auto">
@@ -51,27 +56,64 @@
 
 			<div class="ml-5 lg:ml-0">
 				<a href="/" aria-label="a link to the home page">
-					<div class="flex max-h-12">
-						<!-- <img class="w-8" src="logo_icon.png" alt="company's logo" /> -->
+					{#if theNavbarData !== undefined}
+						<div class="flex max-h-12">
+							<div class="aspect-w-603 aspect-h-1181 -mt-1">
+								<!-- <img
+									class="w-7 h-[105%] object-cover"
+									src={`https://cms.buildingtec-elevators.com${theNavbarData.logoImageURL}`}
+									srcset={`https://cms.buildingtec-elevators.com${theNavbarData.smLogoImageURL} 300w,
+										https://cms.buildingtec-elevators.com${theNavbarData.mdLogoImageURL} 600w,
+										https://cms.buildingtec-elevators.com${theNavbarData.lgLogoImageURL} 1200w,`}
+									sizes="(max-width: 600px) 300px,
+										(max-width: 1200px) 600px,
+										1200px"
+									alt="company's logo"
+								/> -->
+								<img
+									class="w-7 h-[105%] object-cover"
+									src={`https://cms.buildingtec-elevators.com${theNavbarData.logoImageURL}`}
+									alt="company's logo"
+								/>
+							</div>
 
-						<div class="aspect-w-603 aspect-h-1181 -mt-1">
-							<img class="w-7 object-cover" src="logo_icon.png" alt="company's logo" />
+							{#if $modeCurrent}
+								<img
+									class="ml-5 w-40 h-[80%] mt-auto pb-1"
+									src={`https://cms.buildingtec-elevators.com${theNavbarData.blackTextLogoURL}`}
+									alt="company's logo text"
+								/>
+								<!-- <img
+									class="ml-3 w-40 h-[80%] mt-auto"
+									src={`https://cms.buildingtec-elevators.com${theNavbarData.blackTextLogoURL}`}
+									srcset={`https://cms.buildingtec-elevators.com${theNavbarData.smBlackTextLogoURL} 300w,
+										https://cms.buildingtec-elevators.com${theNavbarData.mdBlackTextLogoURL} 600w,
+										https://cms.buildingtec-elevators.com${theNavbarData.lgBlackTextLogoURL} 1200w,`}
+									sizes="(max-width: 600px) 300px,
+										(max-width: 1200px) 600px,
+										1200px"
+									alt="company's logo text"
+								/> -->
+							{:else}
+								<img
+									class="ml-5 w-40 h-[80%] mt-auto pb-1"
+									src={`https://cms.buildingtec-elevators.com${theNavbarData.whiteTextLogoURL}`}
+									alt="company's logo text"
+								/>
+								<!-- <img
+									class="ml-3 w-40 h-[80%] mt-auto"
+									src={`https://cms.buildingtec-elevators.com${theNavbarData.whiteTextLogoURL}`}
+									srcset={`https://cms.buildingtec-elevators.com${theNavbarData.smWhiteTextLogoURL} 300w,
+										https://cms.buildingtec-elevators.com${theNavbarData.mdWhiteTextLogoURL} 600w,
+										https://cms.buildingtec-elevators.com${theNavbarData.lgWhiteTextLogoURL} 1200w,`}
+									sizes="(max-width: 600px) 300px,
+										(max-width: 1200px) 600px,
+										1200px"
+									alt="company's logo text"
+								/> -->
+							{/if}
 						</div>
-
-						{#if $modeCurrent}
-							<img
-								class="ml-3 w-40 h-[80%] mt-auto"
-								src="logo_text.png"
-								alt="company's logo text"
-							/>
-						{:else}
-							<img
-								class="ml-3 w-40 h-[80%] mt-auto"
-								src="logo_text_white.png"
-								alt="company's logo text"
-							/>
-						{/if}
-					</div>
+					{/if}
 				</a>
 			</div>
 		</div>

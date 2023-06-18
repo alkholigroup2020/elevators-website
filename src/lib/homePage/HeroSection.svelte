@@ -11,18 +11,11 @@
 
 <!-- Hero section -->
 <section
-	class="relative min-h-[75%] flex items-center justify-center"
+	class="relative min-h-[77%] flex items-center justify-center"
 	dir={currentLocal === 'en' ? 'ltr' : 'rtl'}
 >
 	<!-- Image container -->
 	<div class="absolute inset-0 overflow-hidden">
-		<!-- <img
-			src="http://10.11.10.66:1337/uploads/landing_BG_4mw_W_Wt_Scai_8a1f78c5c9.jpg"
-			alt="Background image"
-			class="object-cover w-full h-full"
-		/> -->
-
-		<!-- src={`https://cms.buildingtec-elevators.com${sectionData.backgroundImageURL}`} -->
 		<img
 			class="object-cover w-full h-full"
 			src={`https://cms.buildingtec-elevators.com${sectionData.backgroundImageURL}`}
@@ -37,37 +30,61 @@
 	</div>
 
 	<!-- Dimmer layer -->
-	<div class="absolute inset-0 bg-black bg-opacity-40" />
+	<div class="absolute inset-0 bg-black bg-opacity-50" />
 
 	<!-- Text container -->
-	<div class="container relative z-10 flex flex-col items-center space-y-4">
+	<div class="container mx-auto grid grid-cols-6 relative z-10 text-center">
 		{#if currentLocal === 'en'}
-			<pre>{sectionData.smBackgroundImageURL}</pre>
-			<!-- en Heading -->
-			<h1 class="text-4xl md:text-6xl text-white font-bold">{sectionData.enSectionTitle}</h1>
-			<!-- en Subheading -->
-			<h2 class="text-2xl md:text-3xl px-2 text-white font-semibold py-12">
-				{sectionData.enSectionMessage}
-			</h2>
-			<!-- en Call-to-action button -->
-			<button
-				class="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold text-lg rounded"
+			<div
+				class="col-span-6 space-y-8 xl:space-y-12 lg:col-span-4 lg:col-start-1 lg:col-end-7 lg:px-12"
 			>
-				{sectionData.enButtonText}
-			</button>
+				<!-- en Heading -->
+				<h1 class="text-5xl md:text-5xl lg:text-6xl xl:text-7xl text-white font-bold px-2 md:px-0">
+					{sectionData.enSectionTitle}
+				</h1>
+				<!-- en Subheading -->
+				<h2 class="text-2xl lg:text-3xl text-white section-msg lg:px-12">
+					{sectionData.enSectionMessage}
+				</h2>
+				<!-- en Call-to-action button -->
+				<button type="button" class="btn variant-filled-secondary btn-xl">
+					{sectionData.enButtonText}
+				</button>
+			</div>
 		{:else}
-			<!-- ar Heading -->
-			<h1 class="text-4xl md:text-6xl text-white font-bold">{sectionData.arSectionTitle}</h1>
-			<!-- ar Subheading -->
-			<h2 class="text-2xl md:text-3xl px-2 text-white font-semibold py-12">
-				{sectionData.arSectionMessage}
-			</h2>
-			<!-- ar Call-to-action button -->
-			<button
-				class="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold text-lg rounded"
+			<div
+				class="col-span-6 space-y-8 xl:space-y-12 lg:col-span-4 lg:col-start-1 lg:col-end-7 lg:px-12"
 			>
-				{sectionData.arButtonText}
-			</button>
+				<!-- ar Heading -->
+				<h1 class="text-5xl md:text-5xl lg:text-6xl xl:text-7xl text-white font-bold px-2 md:px-0">
+					{sectionData.arSectionTitle}
+				</h1>
+				<!-- ar Subheading -->
+				<h2 class="text-2xl lg:text-3xl text-white section-msg lg:px-12">
+					{sectionData.arSectionMessage}
+				</h2>
+				<!-- ar Call-to-action button -->
+				<button type="button" class="btn variant-filled-secondary btn-xl">
+					{sectionData.arButtonText}
+				</button>
+			</div>
 		{/if}
 	</div>
 </section>
+
+<style>
+	.section-msg {
+		line-height: 48px;
+		letter-spacing: 1.2px;
+		word-spacing: 2px;
+		text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.8);
+	}
+	@media screen and (max-width: 720px) {
+		.section-msg {
+			line-height: 40px;
+			letter-spacing: normal;
+			word-spacing: normal;
+			padding: 0px 18px;
+		}
+	}
+</style>

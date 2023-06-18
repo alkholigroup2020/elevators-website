@@ -74,3 +74,11 @@
 
 	<!-- <svelte:fragment slot="footer">Footer</svelte:fragment> -->
 </AppShell>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+	:global(body) {
+		font-family: 'Tajawal', sans-serif;
+	}
+</style>

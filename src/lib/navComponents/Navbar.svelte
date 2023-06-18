@@ -22,7 +22,11 @@
 	export let theNavbarData: NavData;
 </script>
 
-<AppBar background="bg-surface-50-800-token" shadow="shadow-md" regionRowMain="container mx-auto">
+<AppBar
+	background="bg-surface-50-800-token text-secondary-800-100-token text-lg"
+	shadow="shadow-md"
+	regionRowMain="container mx-auto"
+>
 	<svelte:fragment slot="lead">
 		<div class="flex">
 			<button
@@ -121,33 +125,15 @@
 
 	<svelte:fragment slot="trail">
 		<nav class="hidden lg:block space-x-6">
-			<a href="/" aria-label="a link to a page #1" class="text-gray-500 hover:text-gray-700"
-				>Link 1</a
-			>
-			<a href="/" aria-label="a link to a page #2" class="text-gray-500 hover:text-gray-700"
-				>Link 2</a
-			>
-			<a href="/" aria-label="a link to a page #3" class="text-gray-500 hover:text-gray-700"
-				>Link 3</a
-			>
-			<a href="/" aria-label="a link to a page #4" class="text-gray-500 hover:text-gray-700"
-				>Link 4</a
-			>
-			<a href="/" aria-label="a link to a page #5" class="text-gray-500 hover:text-gray-700"
-				>Link 5</a
-			>
-			<a href="/" aria-label="a link to a page #" class="text-gray-500 hover:text-gray-700"
-				>Link 6</a
-			>
-			<a href="/" aria-label="a link to a page #1" class="text-gray-500 hover:text-gray-700"
-				>Link 7</a
-			>
-			<a href="/" aria-label="a link to a page #1" class="text-gray-500 hover:text-gray-700"
-				>Link 8</a
-			>
-			<a href="/" aria-label="a link to a page #1" class="text-gray-500 hover:text-gray-700"
-				>Link 9</a
-			>
+			<a href="/" aria-label="a link to a page #1" class="hover:text-secondary-300">Link 1</a>
+			<a href="/" aria-label="a link to a page #2" class="hover:text-secondary-300">Link 2</a>
+			<a href="/" aria-label="a link to a page #3" class="hover:text-secondary-300">Link 3</a>
+			<a href="/" aria-label="a link to a page #4" class="hover:text-secondary-300">Link 4</a>
+			<a href="/" aria-label="a link to a page #5" class="hover:text-secondary-300">Link 5</a>
+			<a href="/" aria-label="a link to a page #" class="hover:text-secondary-300">Link 6</a>
+			<a href="/" aria-label="a link to a page #1" class="hover:text-secondary-300">Link 7</a>
+			<a href="/" aria-label="a link to a page #1" class="hover:text-secondary-300">Link 8</a>
+			<a href="/" aria-label="a link to a page #1" class="hover:text-secondary-300">Link 9</a>
 		</nav>
 	</svelte:fragment>
 </AppBar>

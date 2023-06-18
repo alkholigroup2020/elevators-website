@@ -11,7 +11,7 @@
 
 <!-- Hero section -->
 <section
-	class="relative min-h-[77%] flex items-center justify-center"
+	class="relative h-[650px] flex items-center justify-center"
 	dir={currentLocal === 'en' ? 'ltr' : 'rtl'}
 >
 	<!-- Image container -->
@@ -30,7 +30,7 @@
 	</div>
 
 	<!-- Dimmer layer -->
-	<div class="absolute inset-0 bg-black bg-opacity-50" />
+	<div class="absolute inset-0 bg-black bg-opacity-40" />
 
 	<!-- Text container -->
 	<div class="container mx-auto grid grid-cols-6 relative z-10 text-center">
@@ -39,7 +39,10 @@
 				class="col-span-6 space-y-8 xl:space-y-12 lg:col-span-4 lg:col-start-1 lg:col-end-7 lg:px-12"
 			>
 				<!-- en Heading -->
-				<h1 class="text-5xl md:text-5xl lg:text-6xl xl:text-7xl text-white font-bold px-2 md:px-0">
+				<h1
+					class="text-5xl md:text-5xl lg:text-6xl xl:text-7xl text-white font-bold px-2 md:px-0"
+					style="text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.8);"
+				>
 					{sectionData.enSectionTitle}
 				</h1>
 				<!-- en Subheading -->
@@ -56,7 +59,10 @@
 				class="col-span-6 space-y-8 xl:space-y-12 lg:col-span-4 lg:col-start-1 lg:col-end-7 lg:px-12"
 			>
 				<!-- ar Heading -->
-				<h1 class="text-5xl md:text-5xl lg:text-6xl xl:text-7xl text-white font-bold px-2 md:px-0">
+				<h1
+					class="text-5xl md:text-5xl lg:text-6xl xl:text-7xl text-white font-bold px-2 md:px-0"
+					style="text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.8);"
+				>
 					{sectionData.arSectionTitle}
 				</h1>
 				<!-- ar Subheading -->

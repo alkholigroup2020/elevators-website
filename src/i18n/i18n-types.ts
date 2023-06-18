@@ -15,10 +15,6 @@ export type Translations = RootTranslation
 
 type RootTranslation = {
 	/**
-	 * L​e​t​'​s​ ​g​e​t​ ​c​r​a​c​k​i​n​g​ ​b​o​n​e​s​!
-	 */
-	mainTitle: string
-	/**
 	 * B​T​E​C​ ​E​l​e​v​a​t​o​r​s
 	 */
 	title: string
@@ -36,13 +32,33 @@ type RootTranslation = {
 		 */
 		email: string
 	}
+	/**
+	 * M​o​d​e​r​n​ ​D​e​s​i​g​n​s
+	 */
+	modernDesign: string
+	/**
+	 * G​r​e​a​t​ ​I​d​e​a​s
+	 */
+	greatIdeas: string
+	/**
+	 * P​o​w​e​r​f​u​l​ ​M​a​n​a​g​e​m​e​n​t
+	 */
+	powerfulManagement: string
+	/**
+	 * O​u​r​ ​d​e​s​i​g​n​s​ ​a​r​e​ ​c​l​e​a​n​,​ ​b​e​a​u​t​i​f​u​l​,​ ​w​i​t​h​ ​c​r​i​s​p​ ​l​i​n​e​s​,​ ​a​n​d​ ​s​i​m​p​l​e​ ​c​o​l​o​r​ ​p​a​l​e​t​t​e​ ​t​h​a​t​ ​c​a​n​ ​i​n​c​l​u​d​e​ ​m​e​t​a​l​,​ ​g​l​a​s​s​ ​a​n​d​ ​s​t​e​e​l​.
+	 */
+	modernDesignParagraph: string
+	/**
+	 * W​e​ ​h​a​v​e​ ​a​ ​s​o​l​u​t​i​o​n​ ​f​o​r​ ​a​n​y​ ​p​r​o​b​l​e​m​!​ ​B​a​s​e​d​ ​o​n​ ​o​u​r​ ​e​x​p​e​r​i​e​n​c​e​,​ ​w​e​ ​w​i​l​l​ ​p​r​o​v​i​d​e​ ​a​ ​b​r​i​l​l​i​a​n​t​ ​i​d​e​a​ ​t​o​ ​f​u​l​f​i​l​l​ ​y​o​u​r​ ​n​e​e​d​s​.
+	 */
+	greatIdeasParagraph: string
+	/**
+	 * O​u​r​ ​t​e​a​m​ ​m​e​m​b​e​r​s​ ​a​r​e​ ​h​i​g​h​l​y​ ​t​r​a​i​n​e​d​,​ ​a​n​d​ ​h​a​v​e​ ​t​h​e​ ​n​e​c​e​s​s​a​r​y​ ​s​k​i​l​l​s​ ​a​n​d​ ​e​x​p​e​r​i​e​n​c​e​s​ ​t​o​ ​p​l​a​n​,​ ​m​a​n​a​g​e​,​ ​a​n​d​ ​d​e​l​i​v​e​r​ ​y​o​u​r​ ​p​r​o​j​e​c​t​ ​o​n​ ​t​i​m​e​.
+	 */
+	powerfulManagementParagraph: string
 }
 
 export type TranslationFunctions = {
-	/**
-	 * Let's get cracking bones!
-	 */
-	mainTitle: () => LocalizedString
 	/**
 	 * BTEC Elevators
 	 */
@@ -61,6 +77,30 @@ export type TranslationFunctions = {
 		 */
 		email: () => LocalizedString
 	}
+	/**
+	 * Modern Designs
+	 */
+	modernDesign: () => LocalizedString
+	/**
+	 * Great Ideas
+	 */
+	greatIdeas: () => LocalizedString
+	/**
+	 * Powerful Management
+	 */
+	powerfulManagement: () => LocalizedString
+	/**
+	 * Our designs are clean, beautiful, with crisp lines, and simple color palette that can include metal, glass and steel.
+	 */
+	modernDesignParagraph: () => LocalizedString
+	/**
+	 * We have a solution for any problem! Based on our experience, we will provide a brilliant idea to fulfill your needs.
+	 */
+	greatIdeasParagraph: () => LocalizedString
+	/**
+	 * Our team members are highly trained, and have the necessary skills and experiences to plan, manage, and deliver your project on time.
+	 */
+	powerfulManagementParagraph: () => LocalizedString
 }
 
 export type Formatters = {}

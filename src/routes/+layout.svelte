@@ -38,6 +38,7 @@
 </svelte:head>
 
 <!-- bg-surface-100-800-token -->
+<!-- {$LL.veryTopNav.mobile()} -->
 <Drawer>
 	{#if $drawerStore.id === 'id-1'}
 		<nav class="space-y-4 flex flex-col p-10">

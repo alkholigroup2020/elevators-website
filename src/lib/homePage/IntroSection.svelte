@@ -16,7 +16,7 @@
 </script>
 
 <section class="container mx-auto px-4" dir={currentLocal === 'en' ? 'ltr' : 'rtl'}>
-	<div class="grid grid-cols-1 lg:grid-cols-3 gap-12 py-[80px] lg:py-[50px]">
+	<div class="grid grid-cols-1 lg:grid-cols-3 gap-12 py-[50px]">
 		<!-- Column 1 -->
 		<div class="flex flex-col items-center">
 			<div

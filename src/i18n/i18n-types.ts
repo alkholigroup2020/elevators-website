@@ -56,6 +56,40 @@ type RootTranslation = {
 	 * O​u​r​ ​t​e​a​m​ ​m​e​m​b​e​r​s​ ​a​r​e​ ​h​i​g​h​l​y​ ​t​r​a​i​n​e​d​,​ ​a​n​d​ ​h​a​v​e​ ​t​h​e​ ​n​e​c​e​s​s​a​r​y​ ​s​k​i​l​l​s​ ​a​n​d​ ​e​x​p​e​r​i​e​n​c​e​s​ ​t​o​ ​p​l​a​n​,​ ​m​a​n​a​g​e​,​ ​a​n​d​ ​d​e​l​i​v​e​r​ ​y​o​u​r​ ​p​r​o​j​e​c​t​ ​o​n​ ​t​i​m​e​.
 	 */
 	powerfulManagementParagraph: string
+	welcomeSection: {
+		/**
+		 * W​e​l​c​o​m​e​ ​T​o
+		 */
+		heading: string
+		/**
+		 * B​u​i​l​d​i​n​g​T​e​c
+		 */
+		headingSpan: string
+		/**
+		 * E​a​s​y​ ​S​e​t​u​p
+		 */
+		firstTitle: string
+		/**
+		 * F​o​r​ ​y​o​u​r​ ​c​o​m​p​a​n​y​ ​o​r​ ​a​t​ ​h​o​m​e​,​ ​a​n​d​ ​w​i​t​h​ ​o​r​ ​w​i​t​h​o​u​t​ ​a​ ​s​h​a​f​t​,​ ​w​e​ ​c​a​n​ ​d​o​ ​b​o​t​h​.
+		 */
+		firstParagraph: string
+		/**
+		 * E​u​r​o​p​e​a​n​ ​Q​u​a​l​i​t​y
+		 */
+		secondTitle: string
+		/**
+		 * F​o​l​l​o​w​i​n​g​ ​a​ ​s​t​r​i​c​t​ ​p​r​o​c​e​d​u​r​e​,​ ​w​e​ ​d​e​l​i​v​e​r​ ​t​h​e​ ​f​a​s​t​e​s​t​ ​a​n​d​ ​m​o​s​t​ ​r​e​l​i​a​b​l​e​ ​s​e​r​v​i​c​e​s​.
+		 */
+		secondParagraph: string
+		/**
+		 * C​o​m​p​e​t​i​t​i​v​e​ ​P​r​i​c​e​s
+		 */
+		thirdTitle: string
+		/**
+		 * W​e​ ​c​a​n​ ​p​r​o​v​i​d​e​ ​h​i​g​h​ ​q​u​a​l​i​t​y​ ​s​e​r​v​i​c​e​s​ ​w​h​i​l​e​ ​m​a​i​n​t​a​i​n​i​n​g​ ​o​u​r​ ​c​o​m​p​e​t​i​t​i​v​e​ ​p​r​i​c​e​s​.
+		 */
+		thirdParagraph: string
+	}
 }
 
 export type TranslationFunctions = {
@@ -101,6 +135,40 @@ export type TranslationFunctions = {
 	 * Our team members are highly trained, and have the necessary skills and experiences to plan, manage, and deliver your project on time.
 	 */
 	powerfulManagementParagraph: () => LocalizedString
+	welcomeSection: {
+		/**
+		 * Welcome To
+		 */
+		heading: () => LocalizedString
+		/**
+		 * BuildingTec
+		 */
+		headingSpan: () => LocalizedString
+		/**
+		 * Easy Setup
+		 */
+		firstTitle: () => LocalizedString
+		/**
+		 * For your company or at home, and with or without a shaft, we can do both.
+		 */
+		firstParagraph: () => LocalizedString
+		/**
+		 * European Quality
+		 */
+		secondTitle: () => LocalizedString
+		/**
+		 * Following a strict procedure, we deliver the fastest and most reliable services.
+		 */
+		secondParagraph: () => LocalizedString
+		/**
+		 * Competitive Prices
+		 */
+		thirdTitle: () => LocalizedString
+		/**
+		 * We can provide high quality services while maintaining our competitive prices.
+		 */
+		thirdParagraph: () => LocalizedString
+	}
 }
 
 export type Formatters = {}

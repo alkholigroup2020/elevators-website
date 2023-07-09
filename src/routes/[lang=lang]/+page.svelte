@@ -4,6 +4,7 @@
 
 	import HeroSection from '$lib/homePage/HeroSection.svelte';
 	import IntroSection from '$lib/homePage/IntroSection.svelte';
+	import WelcomeSection from '$lib/homePage/WelcomeSection.svelte';
 
 	// const lang = $page.params.lang;
 	// if (browser) {
@@ -19,7 +20,9 @@
 
 <IntroSection {currentLocal} />
 
-<div class="h-[1200px] w-full bg-slate-400" />
+<WelcomeSection {currentLocal} />
+
+<div class="h-[1200px] w-full bg-white" />
 <!-- <p>{data.enSectionTitle}</p> -->
 
 <!-- <div

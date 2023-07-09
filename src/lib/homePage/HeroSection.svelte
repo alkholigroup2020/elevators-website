@@ -46,7 +46,9 @@
 					{sectionData.enSectionTitle}
 				</h1>
 				<!-- en Subheading -->
-				<h2 class="text-2xl lg:text-3xl text-white section-msg lg:px-12">
+				<h2
+					class="text-xl md:text-2xl lg:text-3xl text-white section-msg lg:px-[50px] xl:px-[150px]"
+				>
 					{sectionData.enSectionMessage}
 				</h2>
 				<!-- en Call-to-action button -->
@@ -66,7 +68,9 @@
 					{sectionData.arSectionTitle}
 				</h1>
 				<!-- ar Subheading -->
-				<h2 class="text-2xl lg:text-3xl text-white section-msg lg:px-12">
+				<h2
+					class="text-xl md:text-2xl lg:text-3xl text-white section-msg lg:px-[50px] xl:px-[150px]"
+				>
 					{sectionData.arSectionMessage}
 				</h2>
 				<!-- ar Call-to-action button -->
@@ -90,7 +94,7 @@
 			line-height: 40px;
 			letter-spacing: normal;
 			word-spacing: normal;
-			padding: 0px 18px;
+			padding: 0px 30px;
 		}
 	}
 </style>

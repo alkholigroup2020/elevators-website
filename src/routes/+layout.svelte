@@ -29,6 +29,7 @@
 	import type { NavData } from '../types/nav.type';
 
 	const theNavData: NavData = data.cmsData;
+	const currentLocal = data.locale;
 </script>
 
 <svelte:head>
@@ -63,7 +64,7 @@
 	<!-- <svelte:fragment slot="pageHeader" /> -->
 	<VeryTopNav />
 
-	<Navbar theNavbarData={theNavData} />
+	<Navbar theNavbarData={theNavData} {currentLocal} />
 
 	<!-- <svelte:fragment slot="sidebarLeft">
 		Hidden below Tailwind's large breakpoint lg:block

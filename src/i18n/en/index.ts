@@ -26,6 +26,9 @@ const en: BaseTranslation = {
 			'Following a strict procedure, we deliver the fastest and most reliable services.',
 		thirdTitle: 'Competitive Prices',
 		thirdParagraph: 'We can provide high quality services while maintaining our competitive prices.'
+	},
+	productsSection: {
+		heading: 'Our Products'
 	}
 };
 

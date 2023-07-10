@@ -1,10 +1,10 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
-	import { invalidateAll } from '$app/navigation';
+	// import { invalidateAll } from '$app/navigation';
 	import { page } from '$app/stores';
 	import { setLocale, locale } from '$i18n/i18n-svelte';
 	import type { Locales } from '$i18n/i18n-types';
-	import { locales } from '$i18n/i18n-util';
+	// import { locales } from '$i18n/i18n-util';
 	import { loadLocaleAsync } from '$i18n/i18n-util.async';
 	import { replaceLocaleInUrl } from '../utils';
 
@@ -22,7 +22,8 @@
 			history.pushState({ locale: newLocale }, '', replaceLocaleInUrl($page.url, newLocale));
 		}
 
-		// run the `load` function again <=== This what is making hover over the btn changes the language!! - But also makes the title name not changing from lang to another!
+		// run the `load` function again <=== This what is making hover over the btn changes the language!!
+		// but also makes the title name not changing from lang to another!
 		// invalidateAll();
 
 		// to solve the title lang issue above
@@ -63,29 +64,3 @@
 		<a href={`${replaceLocaleInUrl($page.url, 'en')}`} aria-label="language switch link">english</a>
 	</button>
 {/if}
-
-<!-- <div class="flex flex-column">
-	<a href={`${replaceLocaleInUrl($page.url, 'ar')}`} class="btn variant-filled">arabic</a>
-	<a href={`${replaceLocaleInUrl($page.url, 'en')}`} class="btn variant-filled mx-3">english</a>
-</div> -->
-
-<!-- <div>
-	<a class="p-5" class:active={'en' === $locale} href={`${replaceLocaleInUrl($page.url, 'en')}`}>
-		English
-	</a>
-</div>
-<div>
-	<a class="p-5" class:active={'ar' === $locale} href={`${replaceLocaleInUrl($page.url, 'ar')}`}>
-		Arabic
-	</a>
-</div> -->
-
-<!-- <ul class="flex">
-	{#each locales as l}
-		<li>
-			<a class="p-5" class:active={l === $locale} href={`${replaceLocaleInUrl($page.url, l)}`}>
-				{l}
-			</a>
-		</li>
-	{/each}
-</ul> -->

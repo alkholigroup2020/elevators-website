@@ -4,6 +4,7 @@
 
 	import HeroSection from '$lib/homePage/HeroSection.svelte';
 	import IntroSection from '$lib/homePage/IntroSection.svelte';
+	import Products from '$lib/homePage/Products.svelte';
 	import WelcomeSection from '$lib/homePage/WelcomeSection.svelte';
 
 	// const lang = $page.params.lang;
@@ -16,11 +17,13 @@
 	const currentLocal = data.locale;
 </script>
 
-<HeroSection sectionData={data.data} {currentLocal} />
+<HeroSection sectionData={data.data.heroSectionData} {currentLocal} />
 
 <IntroSection {currentLocal} />
 
 <WelcomeSection {currentLocal} />
+
+<Products sectionData={data.data.homeProductsArray} {currentLocal} />
 
 <div class="h-[1200px] w-full bg-white" />
 <!-- <p>{data.enSectionTitle}</p> -->

@@ -31,6 +31,30 @@ const query = gql`
 				}
 			}
 		}
+		homeProducts {
+			data {
+				attributes {
+					localizations {
+						data {
+							attributes {
+								productTitle
+								productBrief
+							}
+						}
+					}
+					productTitle
+					productBrief
+					linkName
+					productImage {
+						data {
+							attributes {
+								url
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 `;
 
@@ -60,7 +84,7 @@ const getHeroSectionDate = async () => {
 	const arButtonText =
 		theData.heroSection.data.attributes.localizations.data[0].attributes.ButtonText;
 
-	return {
+	const heroSectionData = {
 		backgroundImageURL,
 		lgBackgroundImageURL,
 		mdBackgroundImageURL,
@@ -72,6 +96,13 @@ const getHeroSectionDate = async () => {
 		arSectionTitle,
 		arSectionMessage,
 		arButtonText
+	};
+
+	const homeProductsArray = theData.homeProducts.data;
+
+	return {
+		heroSectionData,
+		homeProductsArray
 	};
 };
 

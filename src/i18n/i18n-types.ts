@@ -90,6 +90,12 @@ type RootTranslation = {
 		 */
 		thirdParagraph: string
 	}
+	productsSection: {
+		/**
+		 * O​u​r​ ​P​r​o​d​u​c​t​s
+		 */
+		heading: string
+	}
 }
 
 export type TranslationFunctions = {
@@ -168,6 +174,12 @@ export type TranslationFunctions = {
 		 * We can provide high quality services while maintaining our competitive prices.
 		 */
 		thirdParagraph: () => LocalizedString
+	}
+	productsSection: {
+		/**
+		 * Our Products
+		 */
+		heading: () => LocalizedString
 	}
 }
 

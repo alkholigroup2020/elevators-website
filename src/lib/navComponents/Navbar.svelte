@@ -20,6 +20,8 @@
 	import type { NavData } from '../../types/nav.type';
 
 	export let theNavbarData: NavData;
+
+	export let currentLocal: any;
 </script>
 
 <AppBar
@@ -59,7 +61,7 @@
 			</button>
 
 			<div class="ml-5 lg:ml-0">
-				<a href="/" aria-label="a link to the home page">
+				<a href={`/${currentLocal}`} aria-label="a link to the home page">
 					{#if theNavbarData !== undefined}
 						<div class="flex max-h-12">
 							<div class="aspect-w-603 aspect-h-1181 -mt-1">

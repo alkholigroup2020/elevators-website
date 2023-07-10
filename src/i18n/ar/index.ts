@@ -26,6 +26,9 @@ const en: BaseTranslation = {
 		secondParagraph: 'باتباع أفضل إجراءات السلامة، نقدم أسرع الخدمات وأكثرها موثوقية.',
 		thirdTitle: 'أسعار منافسة',
 		thirdParagraph: 'يمكننا تقديم خدمات عالية الجودة مع الحفاظ على أسعارنا التنافسية.'
+	},
+	productsSection: {
+		heading: 'منتجــاتنا'
 	}
 };
 

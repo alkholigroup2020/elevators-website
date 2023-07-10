@@ -45,6 +45,7 @@ const query = gql`
 					productTitle
 					productBrief
 					linkName
+					productOrder
 					productImage {
 						data {
 							attributes {

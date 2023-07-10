@@ -14,26 +14,29 @@
 	href={`${currentLocal}/product/${product.attributes.linkName}`}
 >
 	<header>
+		<!-- aspect-[21/11] lg:aspect-[21/14] xl:aspect-[21/13]  -->
 		<img
 			src={`https://cms.buildingtec-elevators.com${product.attributes.productImage.data.attributes.url}`}
-			class="aspect-[21/11] lg:aspect-[21/14] xl:aspect-[21/13] w-full"
+			class="w-full aspect-[8/5]"
 			alt={`${product.attributes.productTitle} product image`}
 		/>
 	</header>
 	<div class="p-4 space-y-4">
 		{#if currentLocal === 'en'}
-			<h3 class="h3 text-primary-500" data-toc-ignore>{product.attributes.productTitle}</h3>
+			<h3 class="text-2xl lg:text-3xl font-medium mb-3 text-primary-500 py-3" data-toc-ignore>
+				{product.attributes.productTitle}
+			</h3>
 			<article>
-				<p class="pb-3">
+				<p class="text-xl pb-3" style="line-height: 30px;">
 					{product.attributes.productBrief}
 				</p>
 			</article>
 		{:else}
-			<h3 class="h3 text-primary-500" data-toc-ignore>
+			<h3 class="text-2xl lg:text-3xl font-medium mb-3 text-primary-500 py-3" data-toc-ignore>
 				{product.attributes.localizations.data[0].attributes.productTitle}
 			</h3>
 			<article>
-				<p class="pb-3">
+				<p class="text-xl pb-3" style="line-height: 30px;">
 					{product.attributes.localizations.data[0].attributes.productBrief}
 				</p>
 			</article>

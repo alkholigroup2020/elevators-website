@@ -28,7 +28,7 @@ const en: BaseTranslation = {
 		thirdParagraph: 'يمكننا تقديم خدمات عالية الجودة مع الحفاظ على أسعارنا التنافسية.'
 	},
 	productsSection: {
-		heading: 'منتجــاتنا'
+		heading: 'معرض المنتجات'
 	}
 };
 

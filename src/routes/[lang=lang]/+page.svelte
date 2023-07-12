@@ -2,7 +2,8 @@
 	import DopplerSection from '$lib/homePage/DopplerSection.svelte';
 	import HeroSection from '$lib/homePage/HeroSection.svelte';
 	import IntroSection from '$lib/homePage/IntroSection.svelte';
-	import Products from '$lib/homePage/Products.svelte';
+	import ProductsSection from '$lib/homePage/ProductsSection.svelte';
+	import ServicesSection from '$lib/homePage/ServicesSection.svelte';
 	import WelcomeSection from '$lib/homePage/WelcomeSection.svelte';
 
 	export let data;
@@ -15,8 +16,10 @@
 
 <WelcomeSection {currentLocal} />
 
-<Products sectionData={data.data.homeProductsArray} {currentLocal} />
+<ProductsSection sectionData={data.data.homeProductsArray} {currentLocal} />
 
 <DopplerSection {currentLocal} />
 
-<div class="h-[1200px] w-full bg-surface-300" />
+<ServicesSection {currentLocal} />
+
+<div class="h-[500px] w-full bg-surface-300" />

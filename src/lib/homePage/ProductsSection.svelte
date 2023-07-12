@@ -22,9 +22,9 @@
 </script>
 
 <!-- Product section -->
-<section class="container mx-auto px-8 md:px-4 pb-10" dir={currentLocal === 'en' ? 'ltr' : 'rtl'}>
+<section class="container mx-auto px-8 md:px-0 pb-10" dir={currentLocal === 'en' ? 'ltr' : 'rtl'}>
 	<div>
-		<h3 class="text-4xl lg:text-4xl 2xl:text-5xl font-semibold text-primary-500 py-12">
+		<h3 class="text-4xl lg:text-4xl 2xl:text-5xl font-semibold text-primary-500 py-12 2xl:py-16">
 			{$LL.productsSection.heading()}
 		</h3>
 	</div>

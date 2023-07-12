@@ -38,6 +38,28 @@ const en: BaseTranslation = {
 		p3: 'BuildingTec Elevators are the right choice for the demanding needs of any facilities.',
 		p4: 'Emergency situations, continuous traffic of people, doctors, nurses, Hotel visitors, VIP people in luxurious offices, transportation of bulky beds, wheelchairs and medical equipment, Cars and Goods are everyday challenges that demand reliable and robust solutions.',
 		p5: 'Our lifts offer high safety, great functionality, excellent riding comfort and cost reduction by energy saving systems along with modern design.'
+	},
+	servicesSection: {
+		heading: 'Our Services',
+		installationTitle: 'Installation',
+		installationText:
+			'BuildingTec Elevators following a strict procedure and under the supervision of our Engineers delivers the fastest and most reliable installation services within the Kingdom of Saudi Arabia.',
+		trafficTitle: 'Traffic Analysis',
+		trafficTextP1:
+			'Traffic analysis is a mathematical analysis of the flow of the people inside the building.',
+		trafficTextP2:
+			'Our company can provide to all consultant engineers with a free of charge traffic analysis for their building in order to determine the optimized speed and capacity of their lifts.',
+		maintenanceTitle: 'Maintenance',
+		maintenanceS1Title: 'Traffic Analysis',
+		maintenanceS1Text:
+			'Our scheduled maintenance gives you peace of mind that your lift will continue working.',
+		maintenanceS2Title: 'Repairs',
+		maintenanceS2Text:
+			'If your elevator breaks down, our priority is to repair it. Your service agreement is your guarantee that you will receive a priority repair service from experienced engineers who know and understand your lift.',
+		maintenanceS3Title: 'Warranty',
+		maintenanceS3TextP1: 'Our Company will provide two (2) years warranty to all equipment.',
+		maintenanceS3TextP2:
+			'Our Technician will be stand by for 24 hours / 7 days a week for any breakdown call, offering the highest possible service.'
 	}
 };
 

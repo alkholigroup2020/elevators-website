@@ -15,7 +15,7 @@
 	$: managementSVGColor = managementSVGEnter ? '#FFFFFF' : '#d63030';
 </script>
 
-<section class="container mx-auto px-4" dir={currentLocal === 'en' ? 'ltr' : 'rtl'}>
+<section class="container mx-auto px-4 md:px-0" dir={currentLocal === 'en' ? 'ltr' : 'rtl'}>
 	<div class="grid grid-cols-1 lg:grid-cols-3 gap-12 py-[50px]">
 		<!-- Column 1 -->
 		<div class="flex flex-col items-center">
@@ -141,7 +141,9 @@
 				</span>
 			</div>
 			<h3 class="mt-5 mb-2 lg:mb-0 h3 font-semibold">{$LL.modernDesign()}</h3>
-			<p class="text-center lg:text-justify pt-5 px-2 md:px-[50px] lg:px-1 2xl:px-10 text-xl">
+			<p
+				class="text-center lg:text-justify pt-5 px-2 md:px-[50px] lg:px-1 2xl:px-10 text-xl leading-9"
+			>
 				{$LL.modernDesignParagraph()}
 			</p>
 		</div>
@@ -198,7 +200,9 @@
 				</span>
 			</div>
 			<h3 class="mt-5 mb-2 lg:mb-0 h3 font-semibold">{$LL.greatIdeas()}</h3>
-			<p class="text-center lg:text-justify pt-5 px-2 md:px-[50px] lg:px-1 2xl:px-10 text-xl">
+			<p
+				class="text-center lg:text-justify pt-5 px-2 md:px-[50px] lg:px-1 2xl:px-10 text-xl leading-9"
+			>
 				{$LL.greatIdeasParagraph()}
 			</p>
 		</div>
@@ -280,7 +284,9 @@
 				</span>
 			</div>
 			<h3 class="mt-5 mb-2 lg:mb-0 h3 font-semibold">{$LL.powerfulManagement()}</h3>
-			<p class="text-center lg:text-justify pt-5 px-2 md:px-[50px] lg:px-1 2xl:px-10 text-xl">
+			<p
+				class="text-center lg:text-justify pt-5 px-2 md:px-[50px] lg:px-1 2xl:px-10 text-xl leading-9"
+			>
 				{$LL.powerfulManagementParagraph()}
 			</p>
 		</div>

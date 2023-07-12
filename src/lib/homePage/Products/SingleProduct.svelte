@@ -27,7 +27,7 @@
 				{product.attributes.productTitle}
 			</h3>
 			<article>
-				<p class="text-xl pb-3" style="line-height: 30px;">
+				<p class="text-xl leading-9 pb-3">
 					{product.attributes.productBrief}
 				</p>
 			</article>
@@ -36,7 +36,7 @@
 				{product.attributes.localizations.data[0].attributes.productTitle}
 			</h3>
 			<article>
-				<p class="text-xl pb-3" style="line-height: 30px;">
+				<p class="text-xl leading-9 pb-3">
 					{product.attributes.localizations.data[0].attributes.productBrief}
 				</p>
 			</article>

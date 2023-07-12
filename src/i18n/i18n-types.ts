@@ -126,6 +126,64 @@ type RootTranslation = {
 		 */
 		p5: string
 	}
+	servicesSection: {
+		/**
+		 * O​u​r​ ​S​e​r​v​i​c​e​s
+		 */
+		heading: string
+		/**
+		 * I​n​s​t​a​l​l​a​t​i​o​n
+		 */
+		installationTitle: string
+		/**
+		 * B​u​i​l​d​i​n​g​T​e​c​ ​E​l​e​v​a​t​o​r​s​ ​f​o​l​l​o​w​i​n​g​ ​a​ ​s​t​r​i​c​t​ ​p​r​o​c​e​d​u​r​e​ ​a​n​d​ ​u​n​d​e​r​ ​t​h​e​ ​s​u​p​e​r​v​i​s​i​o​n​ ​o​f​ ​o​u​r​ ​E​n​g​i​n​e​e​r​s​ ​d​e​l​i​v​e​r​s​ ​t​h​e​ ​f​a​s​t​e​s​t​ ​a​n​d​ ​m​o​s​t​ ​r​e​l​i​a​b​l​e​ ​i​n​s​t​a​l​l​a​t​i​o​n​ ​s​e​r​v​i​c​e​s​ ​w​i​t​h​i​n​ ​t​h​e​ ​K​i​n​g​d​o​m​ ​o​f​ ​S​a​u​d​i​ ​A​r​a​b​i​a​.
+		 */
+		installationText: string
+		/**
+		 * T​r​a​f​f​i​c​ ​A​n​a​l​y​s​i​s
+		 */
+		trafficTitle: string
+		/**
+		 * T​r​a​f​f​i​c​ ​a​n​a​l​y​s​i​s​ ​i​s​ ​a​ ​m​a​t​h​e​m​a​t​i​c​a​l​ ​a​n​a​l​y​s​i​s​ ​o​f​ ​t​h​e​ ​f​l​o​w​ ​o​f​ ​t​h​e​ ​p​e​o​p​l​e​ ​i​n​s​i​d​e​ ​t​h​e​ ​b​u​i​l​d​i​n​g​.
+		 */
+		trafficTextP1: string
+		/**
+		 * O​u​r​ ​c​o​m​p​a​n​y​ ​c​a​n​ ​p​r​o​v​i​d​e​ ​t​o​ ​a​l​l​ ​c​o​n​s​u​l​t​a​n​t​ ​e​n​g​i​n​e​e​r​s​ ​w​i​t​h​ ​a​ ​f​r​e​e​ ​o​f​ ​c​h​a​r​g​e​ ​t​r​a​f​f​i​c​ ​a​n​a​l​y​s​i​s​ ​f​o​r​ ​t​h​e​i​r​ ​b​u​i​l​d​i​n​g​ ​i​n​ ​o​r​d​e​r​ ​t​o​ ​d​e​t​e​r​m​i​n​e​ ​t​h​e​ ​o​p​t​i​m​i​z​e​d​ ​s​p​e​e​d​ ​a​n​d​ ​c​a​p​a​c​i​t​y​ ​o​f​ ​t​h​e​i​r​ ​l​i​f​t​s​.
+		 */
+		trafficTextP2: string
+		/**
+		 * M​a​i​n​t​e​n​a​n​c​e
+		 */
+		maintenanceTitle: string
+		/**
+		 * T​r​a​f​f​i​c​ ​A​n​a​l​y​s​i​s
+		 */
+		maintenanceS1Title: string
+		/**
+		 * O​u​r​ ​s​c​h​e​d​u​l​e​d​ ​m​a​i​n​t​e​n​a​n​c​e​ ​g​i​v​e​s​ ​y​o​u​ ​p​e​a​c​e​ ​o​f​ ​m​i​n​d​ ​t​h​a​t​ ​y​o​u​r​ ​l​i​f​t​ ​w​i​l​l​ ​c​o​n​t​i​n​u​e​ ​w​o​r​k​i​n​g​.
+		 */
+		maintenanceS1Text: string
+		/**
+		 * R​e​p​a​i​r​s
+		 */
+		maintenanceS2Title: string
+		/**
+		 * I​f​ ​y​o​u​r​ ​e​l​e​v​a​t​o​r​ ​b​r​e​a​k​s​ ​d​o​w​n​,​ ​o​u​r​ ​p​r​i​o​r​i​t​y​ ​i​s​ ​t​o​ ​r​e​p​a​i​r​ ​i​t​.​ ​Y​o​u​r​ ​s​e​r​v​i​c​e​ ​a​g​r​e​e​m​e​n​t​ ​i​s​ ​y​o​u​r​ ​g​u​a​r​a​n​t​e​e​ ​t​h​a​t​ ​y​o​u​ ​w​i​l​l​ ​r​e​c​e​i​v​e​ ​a​ ​p​r​i​o​r​i​t​y​ ​r​e​p​a​i​r​ ​s​e​r​v​i​c​e​ ​f​r​o​m​ ​e​x​p​e​r​i​e​n​c​e​d​ ​e​n​g​i​n​e​e​r​s​ ​w​h​o​ ​k​n​o​w​ ​a​n​d​ ​u​n​d​e​r​s​t​a​n​d​ ​y​o​u​r​ ​l​i​f​t​.
+		 */
+		maintenanceS2Text: string
+		/**
+		 * W​a​r​r​a​n​t​y
+		 */
+		maintenanceS3Title: string
+		/**
+		 * O​u​r​ ​C​o​m​p​a​n​y​ ​w​i​l​l​ ​p​r​o​v​i​d​e​ ​t​w​o​ ​(​2​)​ ​y​e​a​r​s​ ​w​a​r​r​a​n​t​y​ ​t​o​ ​a​l​l​ ​e​q​u​i​p​m​e​n​t​.
+		 */
+		maintenanceS3TextP1: string
+		/**
+		 * O​u​r​ ​T​e​c​h​n​i​c​i​a​n​ ​w​i​l​l​ ​b​e​ ​s​t​a​n​d​ ​b​y​ ​f​o​r​ ​2​4​ ​h​o​u​r​s​ ​/​ ​7​ ​d​a​y​s​ ​a​ ​w​e​e​k​ ​f​o​r​ ​a​n​y​ ​b​r​e​a​k​d​o​w​n​ ​c​a​l​l​,​ ​o​f​f​e​r​i​n​g​ ​t​h​e​ ​h​i​g​h​e​s​t​ ​p​o​s​s​i​b​l​e​ ​s​e​r​v​i​c​e​.
+		 */
+		maintenanceS3TextP2: string
+	}
 }
 
 export type TranslationFunctions = {
@@ -240,6 +298,64 @@ export type TranslationFunctions = {
 		 * Our lifts offer high safety, great functionality, excellent riding comfort and cost reduction by energy saving systems along with modern design.
 		 */
 		p5: () => LocalizedString
+	}
+	servicesSection: {
+		/**
+		 * Our Services
+		 */
+		heading: () => LocalizedString
+		/**
+		 * Installation
+		 */
+		installationTitle: () => LocalizedString
+		/**
+		 * BuildingTec Elevators following a strict procedure and under the supervision of our Engineers delivers the fastest and most reliable installation services within the Kingdom of Saudi Arabia.
+		 */
+		installationText: () => LocalizedString
+		/**
+		 * Traffic Analysis
+		 */
+		trafficTitle: () => LocalizedString
+		/**
+		 * Traffic analysis is a mathematical analysis of the flow of the people inside the building.
+		 */
+		trafficTextP1: () => LocalizedString
+		/**
+		 * Our company can provide to all consultant engineers with a free of charge traffic analysis for their building in order to determine the optimized speed and capacity of their lifts.
+		 */
+		trafficTextP2: () => LocalizedString
+		/**
+		 * Maintenance
+		 */
+		maintenanceTitle: () => LocalizedString
+		/**
+		 * Traffic Analysis
+		 */
+		maintenanceS1Title: () => LocalizedString
+		/**
+		 * Our scheduled maintenance gives you peace of mind that your lift will continue working.
+		 */
+		maintenanceS1Text: () => LocalizedString
+		/**
+		 * Repairs
+		 */
+		maintenanceS2Title: () => LocalizedString
+		/**
+		 * If your elevator breaks down, our priority is to repair it. Your service agreement is your guarantee that you will receive a priority repair service from experienced engineers who know and understand your lift.
+		 */
+		maintenanceS2Text: () => LocalizedString
+		/**
+		 * Warranty
+		 */
+		maintenanceS3Title: () => LocalizedString
+		/**
+		 * Our Company will provide two (2) years warranty to all equipment.
+		 */
+		maintenanceS3TextP1: () => LocalizedString
+		/**
+		 * Our Technician will be stand by for 24 hours / 7 days a week for any breakdown call, offering the highest possible service.
+		 */
+		maintenanceS3TextP2: () => LocalizedString
 	}
 }
 

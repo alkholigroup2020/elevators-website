@@ -27,19 +27,19 @@
 			</div>
 			<!-- text section -->
 			<div class="px-8 w-full space-y-10 xl:pt-3 2xl:pt-0">
-				<p class="text-xl leading-8">
+				<p class="text-xl leading-9">
 					{$LL.dopplerSection.p1()}
 				</p>
-				<p class="text-xl leading-8">
+				<p class="text-xl leading-9">
 					{$LL.dopplerSection.p2()}
 				</p>
-				<p class="text-xl leading-8">
+				<p class="text-xl leading-9">
 					{$LL.dopplerSection.p3()}
 				</p>
-				<p class="text-xl leading-8">
+				<p class="text-xl leading-9">
 					{$LL.dopplerSection.p4()}
 				</p>
-				<p class="text-xl leading-8">
+				<p class="text-xl leading-9">
 					{$LL.dopplerSection.p5()}
 				</p>
 			</div>

@@ -73,7 +73,7 @@
 									>
 										{$LL.welcomeSection.firstTitle()}
 									</h3>
-									<p class="text-xl">
+									<p class="text-xl leading-9">
 										{$LL.welcomeSection.firstParagraph()}
 									</p>
 								</div>
@@ -111,7 +111,7 @@
 									>
 										{$LL.welcomeSection.secondTitle()}
 									</h3>
-									<p class="text-xl">
+									<p class="text-xl leading-9">
 										{$LL.welcomeSection.secondParagraph()}
 									</p>
 								</div>
@@ -149,7 +149,7 @@
 									>
 										{$LL.welcomeSection.thirdTitle()}
 									</h3>
-									<p class="text-xl">
+									<p class="text-xl leading-9">
 										{$LL.welcomeSection.thirdParagraph()}
 									</p>
 								</div>

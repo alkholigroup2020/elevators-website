@@ -61,6 +61,6 @@
 
 {#if currentLang === 'ar'}
 	<button type="button" class="btn !bg-transparent h-2">
-		<a href={`${replaceLocaleInUrl($page.url, 'en')}`} aria-label="language switch link">english</a>
+		<a href={`${replaceLocaleInUrl($page.url, 'en')}`} aria-label="language switch link">English</a>
 	</button>
 {/if}

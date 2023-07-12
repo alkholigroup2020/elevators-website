@@ -96,6 +96,36 @@ type RootTranslation = {
 		 */
 		heading: string
 	}
+	dopplerSection: {
+		/**
+		 * E​x​c​l​u​s​i​v​e​ ​A​g​e​n​t​ ​i​n​ ​K​S​A
+		 */
+		heading: string
+		/**
+		 * D​O​P​P​L​E​R​'​s
+		 */
+		headingSpan: string
+		/**
+		 * B​u​i​l​d​i​n​g​T​e​c​ ​E​l​e​v​a​t​o​r​s​ ​t​h​r​o​u​g​h​ ​i​t​s​ ​c​o​o​p​e​r​a​t​i​o​n​ ​w​i​t​h​ ​D​O​P​P​L​E​R​ ​S​.​A​.​ ​c​a​n​ ​o​f​f​e​r​ ​a​ ​c​o​m​p​l​e​t​e​ ​R​a​n​g​e​ ​o​f​ ​A​p​p​l​i​c​a​t​i​o​n​ ​i​n​ ​a​n​y​ ​V​e​r​t​i​c​a​l​ ​T​r​a​n​s​p​o​r​t​a​t​i​o​n​ ​n​e​e​d​.
+		 */
+		p1: string
+		/**
+		 * W​h​e​n​ ​i​t​ ​c​o​m​e​s​ ​t​o​ ​e​l​e​v​a​t​o​r​s​,​ ​e​v​e​r​y​ ​s​e​c​o​n​d​ ​c​o​u​n​t​s​.​ ​B​u​i​l​d​i​n​g​T​e​c​ ​m​e​e​t​s​ ​t​h​e​ ​h​i​g​h​e​s​t​ ​e​x​p​e​c​t​a​t​i​o​n​s​ ​t​h​r​o​u​g​h​ ​s​t​a​t​e​-​o​f​-​t​h​e​-​a​r​t​ ​t​e​c​h​n​o​l​o​g​y​.
+		 */
+		p2: string
+		/**
+		 * B​u​i​l​d​i​n​g​T​e​c​ ​E​l​e​v​a​t​o​r​s​ ​a​r​e​ ​t​h​e​ ​r​i​g​h​t​ ​c​h​o​i​c​e​ ​f​o​r​ ​t​h​e​ ​d​e​m​a​n​d​i​n​g​ ​n​e​e​d​s​ ​o​f​ ​a​n​y​ ​f​a​c​i​l​i​t​i​e​s​.
+		 */
+		p3: string
+		/**
+		 * E​m​e​r​g​e​n​c​y​ ​s​i​t​u​a​t​i​o​n​s​,​ ​c​o​n​t​i​n​u​o​u​s​ ​t​r​a​f​f​i​c​ ​o​f​ ​p​e​o​p​l​e​,​ ​d​o​c​t​o​r​s​,​ ​n​u​r​s​e​s​,​ ​H​o​t​e​l​ ​v​i​s​i​t​o​r​s​,​ ​V​I​P​ ​p​e​o​p​l​e​ ​i​n​ ​l​u​x​u​r​i​o​u​s​ ​o​f​f​i​c​e​s​,​ ​t​r​a​n​s​p​o​r​t​a​t​i​o​n​ ​o​f​ ​b​u​l​k​y​ ​b​e​d​s​,​ ​w​h​e​e​l​c​h​a​i​r​s​ ​a​n​d​ ​m​e​d​i​c​a​l​ ​e​q​u​i​p​m​e​n​t​,​ ​C​a​r​s​ ​a​n​d​ ​G​o​o​d​s​ ​a​r​e​ ​e​v​e​r​y​d​a​y​ ​c​h​a​l​l​e​n​g​e​s​ ​t​h​a​t​ ​d​e​m​a​n​d​ ​r​e​l​i​a​b​l​e​ ​a​n​d​ ​r​o​b​u​s​t​ ​s​o​l​u​t​i​o​n​s​.
+		 */
+		p4: string
+		/**
+		 * O​u​r​ ​l​i​f​t​s​ ​o​f​f​e​r​ ​h​i​g​h​ ​s​a​f​e​t​y​,​ ​g​r​e​a​t​ ​f​u​n​c​t​i​o​n​a​l​i​t​y​,​ ​e​x​c​e​l​l​e​n​t​ ​r​i​d​i​n​g​ ​c​o​m​f​o​r​t​ ​a​n​d​ ​c​o​s​t​ ​r​e​d​u​c​t​i​o​n​ ​b​y​ ​e​n​e​r​g​y​ ​s​a​v​i​n​g​ ​s​y​s​t​e​m​s​ ​a​l​o​n​g​ ​w​i​t​h​ ​m​o​d​e​r​n​ ​d​e​s​i​g​n​.
+		 */
+		p5: string
+	}
 }
 
 export type TranslationFunctions = {
@@ -180,6 +210,36 @@ export type TranslationFunctions = {
 		 * Our Products
 		 */
 		heading: () => LocalizedString
+	}
+	dopplerSection: {
+		/**
+		 * Exclusive Agent in KSA
+		 */
+		heading: () => LocalizedString
+		/**
+		 * DOPPLER's
+		 */
+		headingSpan: () => LocalizedString
+		/**
+		 * BuildingTec Elevators through its cooperation with DOPPLER S.A. can offer a complete Range of Application in any Vertical Transportation need.
+		 */
+		p1: () => LocalizedString
+		/**
+		 * When it comes to elevators, every second counts. BuildingTec meets the highest expectations through state-of-the-art technology.
+		 */
+		p2: () => LocalizedString
+		/**
+		 * BuildingTec Elevators are the right choice for the demanding needs of any facilities.
+		 */
+		p3: () => LocalizedString
+		/**
+		 * Emergency situations, continuous traffic of people, doctors, nurses, Hotel visitors, VIP people in luxurious offices, transportation of bulky beds, wheelchairs and medical equipment, Cars and Goods are everyday challenges that demand reliable and robust solutions.
+		 */
+		p4: () => LocalizedString
+		/**
+		 * Our lifts offer high safety, great functionality, excellent riding comfort and cost reduction by energy saving systems along with modern design.
+		 */
+		p5: () => LocalizedString
 	}
 }
 

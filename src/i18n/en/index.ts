@@ -29,6 +29,15 @@ const en: BaseTranslation = {
 	},
 	productsSection: {
 		heading: 'Our Products'
+	},
+	dopplerSection: {
+		heading: 'Exclusive Agent in KSA',
+		headingSpan: "DOPPLER's",
+		p1: 'BuildingTec Elevators through its cooperation with DOPPLER S.A. can offer a complete Range of Application in any Vertical Transportation need.',
+		p2: 'When it comes to elevators, every second counts. BuildingTec meets the highest expectations through state-of-the-art technology.',
+		p3: 'BuildingTec Elevators are the right choice for the demanding needs of any facilities.',
+		p4: 'Emergency situations, continuous traffic of people, doctors, nurses, Hotel visitors, VIP people in luxurious offices, transportation of bulky beds, wheelchairs and medical equipment, Cars and Goods are everyday challenges that demand reliable and robust solutions.',
+		p5: 'Our lifts offer high safety, great functionality, excellent riding comfort and cost reduction by energy saving systems along with modern design.'
 	}
 };
 

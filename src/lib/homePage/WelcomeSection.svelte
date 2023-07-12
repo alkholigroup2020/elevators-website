@@ -1,7 +1,7 @@
 <!-- Svelte component file -->
 <script>
 	import LL from '$i18n/i18n-svelte';
-	import YouTubeVideo from './welcome/YouTubeVideo.svelte';
+	import YouTubeVideo from './generalComponents/YouTubeVideo.svelte';
 
 	/**
 	 * @type {string}
@@ -9,7 +9,7 @@
 	export let currentLocal;
 </script>
 
-<div class="welcomeSection text-white py-0" dir={currentLocal === 'en' ? 'ltr' : 'rtl'}>
+<section class="welcomeSection text-white py-0" dir={currentLocal === 'en' ? 'ltr' : 'rtl'}>
 	<div class="pb-0 max-w-[1920px] mx-auto">
 		<!-- title section -->
 		<div
@@ -163,21 +163,11 @@
 			<div
 				class="aspect-w-16 aspect-h-9 pb-12 md:pb-[60px] px-8 lg:px-[120px] xl:px-[300px] 2xl:px-0"
 			>
-				<!-- <div class="the-video">
-					<iframe
-						title="advertisement video"
-						src="https://www.youtube.com/embed/mwJpEtaygys?controls=1&autoplay=1&mute=1&disablekb=1&loop=1&playlist=mwJpEtaygys"
-						frameborder="0"
-						allowfullscreen
-						class="w-full h-full"
-						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-					/>
-				</div> -->
 				<YouTubeVideo videoId="mwJpEtaygys" />
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 
 <style>
 	.welcomeSection {

@@ -1,7 +1,7 @@
 <!-- Svelte component file -->
 <script>
 	import LL from '$i18n/i18n-svelte';
-	import YouTubeVideo from './generalComponents/YouTubeVideo.svelte';
+	import YouTubeVideo from '.././generalComponents/YouTubeVideo.svelte';
 
 	/**
 	 * @type {string}

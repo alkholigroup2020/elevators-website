@@ -64,6 +64,26 @@ const en: BaseTranslation = {
 	quoteRequest: {
 		newElevator: 'New Elevator',
 		newMaintenanceContract: 'Maintenance Contract'
+	},
+	footer: {
+		contact: {
+			title: 'Contact Us',
+			email: 'Email: info@buildingtec.com',
+			riyadhMobile: 'Riyadh: +966 59 737 0785',
+			jeddahMobile: 'Jeddah: +966 58 025 1227',
+			hotLine: 'Hotline: 9200 23 588',
+			locations: 'Our Branches:',
+			city1: 'Riyadh',
+			city2: 'Jeddah',
+			riyadhLocation: 'Uthman Ibn Affan Branch Rd, 7600, Riyadh',
+			jeddahLocation: 'Jeddah, Abi Haitham Al-Ansari Street, Al-Muhammadiyah District.'
+		},
+		message: {
+			title: 'Send Us a Message',
+			form: {
+				fullName: 'Your Good Name'
+			}
+		}
 	}
 };
 

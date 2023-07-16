@@ -2,7 +2,7 @@
 	import DopplerSection from '$lib/homePage/DopplerSection.svelte';
 	import HeroSection from '$lib/homePage/HeroSection.svelte';
 	import IntroSection from '$lib/homePage/IntroSection.svelte';
-	import PartnersSection from '$lib/homePage/BrandsSection.svelte';
+	import BrandsSection from '$lib/homePage/BrandsSection.svelte';
 	import ProductsSection from '$lib/homePage/ProductsSection.svelte';
 	import ServicesSection from '$lib/homePage/ServicesSection.svelte';
 	import WelcomeSection from '$lib/homePage/WelcomeSection.svelte';
@@ -13,20 +13,20 @@
 	const currentLocal = data.locale;
 </script>
 
-<HeroSection sectionData={data.data.heroSectionData} {currentLocal} />
+<!-- <HeroSection sectionData={data.data.heroSectionData} {currentLocal} /> -->
 
-<IntroSection {currentLocal} />
+<!-- <IntroSection {currentLocal} /> -->
 
-<WelcomeSection {currentLocal} />
+<!-- <WelcomeSection {currentLocal} /> -->
 
-<ProductsSection sectionData={data.data.homeProductsArray} {currentLocal} />
+<!-- <ProductsSection sectionData={data.data.homeProductsArray} {currentLocal} /> -->
 
-<DopplerSection {currentLocal} />
+<!-- <DopplerSection {currentLocal} /> -->
 
-<ServicesSection {currentLocal} />
+<!-- <ServicesSection {currentLocal} /> -->
 
-<ProjectsSection />
+<!-- <ProjectsSection /> -->
 
-<QuoteSection {currentLocal} />
+<!-- <QuoteSection /> -->
 
-<PartnersSection />
+<!-- <BrandsSection /> -->

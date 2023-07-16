@@ -3,4 +3,6 @@
 	const productID = $page.params.productID;
 </script>
 
-<h1>{productID}</h1>
+<div class="h-[600px]">
+	<h1>{productID}</h1>
+</div>

@@ -194,6 +194,62 @@ type RootTranslation = {
 		 */
 		newMaintenanceContract: string
 	}
+	footer: {
+		contact: {
+			/**
+			 * C​o​n​t​a​c​t​ ​U​s
+			 */
+			title: string
+			/**
+			 * E​m​a​i​l​:​ ​i​n​f​o​@​b​u​i​l​d​i​n​g​t​e​c​.​c​o​m
+			 */
+			email: string
+			/**
+			 * R​i​y​a​d​h​:​ ​+​9​6​6​ ​5​9​ ​7​3​7​ ​0​7​8​5
+			 */
+			riyadhMobile: string
+			/**
+			 * J​e​d​d​a​h​:​ ​+​9​6​6​ ​5​8​ ​0​2​5​ ​1​2​2​7
+			 */
+			jeddahMobile: string
+			/**
+			 * H​o​t​l​i​n​e​:​ ​9​2​0​0​ ​2​3​ ​5​8​8
+			 */
+			hotLine: string
+			/**
+			 * O​u​r​ ​B​r​a​n​c​h​e​s​:
+			 */
+			locations: string
+			/**
+			 * R​i​y​a​d​h
+			 */
+			city1: string
+			/**
+			 * J​e​d​d​a​h
+			 */
+			city2: string
+			/**
+			 * U​t​h​m​a​n​ ​I​b​n​ ​A​f​f​a​n​ ​B​r​a​n​c​h​ ​R​d​,​ ​7​6​0​0​,​ ​R​i​y​a​d​h
+			 */
+			riyadhLocation: string
+			/**
+			 * J​e​d​d​a​h​,​ ​A​b​i​ ​H​a​i​t​h​a​m​ ​A​l​-​A​n​s​a​r​i​ ​S​t​r​e​e​t​,​ ​A​l​-​M​u​h​a​m​m​a​d​i​y​a​h​ ​D​i​s​t​r​i​c​t​.
+			 */
+			jeddahLocation: string
+		}
+		message: {
+			/**
+			 * S​e​n​d​ ​U​s​ ​a​ ​M​e​s​s​a​g​e
+			 */
+			title: string
+			form: {
+				/**
+				 * Y​o​u​r​ ​G​o​o​d​ ​N​a​m​e
+				 */
+				fullName: string
+			}
+		}
+	}
 }
 
 export type TranslationFunctions = {
@@ -376,6 +432,62 @@ export type TranslationFunctions = {
 		 * Maintenance Contract
 		 */
 		newMaintenanceContract: () => LocalizedString
+	}
+	footer: {
+		contact: {
+			/**
+			 * Contact Us
+			 */
+			title: () => LocalizedString
+			/**
+			 * Email: info@buildingtec.com
+			 */
+			email: () => LocalizedString
+			/**
+			 * Riyadh: +966 59 737 0785
+			 */
+			riyadhMobile: () => LocalizedString
+			/**
+			 * Jeddah: +966 58 025 1227
+			 */
+			jeddahMobile: () => LocalizedString
+			/**
+			 * Hotline: 9200 23 588
+			 */
+			hotLine: () => LocalizedString
+			/**
+			 * Our Branches:
+			 */
+			locations: () => LocalizedString
+			/**
+			 * Riyadh
+			 */
+			city1: () => LocalizedString
+			/**
+			 * Jeddah
+			 */
+			city2: () => LocalizedString
+			/**
+			 * Uthman Ibn Affan Branch Rd, 7600, Riyadh
+			 */
+			riyadhLocation: () => LocalizedString
+			/**
+			 * Jeddah, Abi Haitham Al-Ansari Street, Al-Muhammadiyah District.
+			 */
+			jeddahLocation: () => LocalizedString
+		}
+		message: {
+			/**
+			 * Send Us a Message
+			 */
+			title: () => LocalizedString
+			form: {
+				/**
+				 * Your Good Name
+				 */
+				fullName: () => LocalizedString
+			}
+		}
 	}
 }
 

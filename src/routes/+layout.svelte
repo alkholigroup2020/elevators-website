@@ -76,7 +76,9 @@
 	<!-- Router Slot -->
 	<slot />
 
-	<FooterSection />
+	<div class=" h-[190px]" />
+
+	<FooterSection {currentLocal} />
 	<VeryButtonFooter />
 
 	<!-- <svelte:fragment slot="footer">Footer</svelte:fragment> -->

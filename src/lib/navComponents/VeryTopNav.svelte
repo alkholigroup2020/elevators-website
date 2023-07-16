@@ -188,11 +188,9 @@
 						class="mx-3 hidden lg:block"
 						on:mouseenter={() => {
 							onYouTubeEnter = true;
-							console.log('🚀 onYouTubeEnter:', onYouTubeEnter);
 						}}
 						on:mouseleave={() => {
 							onYouTubeEnter = false;
-							console.log('🚀 onYouTubeEnter:', onYouTubeEnter);
 						}}
 					>
 						<a

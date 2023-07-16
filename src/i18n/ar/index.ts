@@ -62,6 +62,20 @@ const en: BaseTranslation = {
 	quoteRequest: {
 		newElevator: 'مصعد جديد',
 		newMaintenanceContract: 'عقد صيانة'
+	},
+	footer: {
+		contact: {
+			title: 'اتصــل بنا',
+			email: 'البريد الإلكتروني: info@buildingtec.com',
+			riyadhMobile: 'الريــاض: 00966597370785',
+			jeddahMobile: 'جــدة: 00966580251227',
+			hotLine: 'الخط الساخن: 920023588',
+			locations: 'فــروعنا:',
+			city1: 'الــريـاض',
+			city2: 'جــدة',
+			riyadhLocation: 'طريق عثمان بن عفان الفرعي، الرياض.',
+			jeddahLocation: 'جدة - شارع آبي هيثم الأنصاري - حي المحمدية.'
+		}
 	}
 };
 

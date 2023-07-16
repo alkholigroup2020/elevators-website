@@ -1,3 +1,9 @@
+<script>
+	/**
+	 * @type {string}
+	 */
+</script>
+
 <section class="section-bg">
 	<div class="container mx-auto py-14 px-8 2xl:px-0">
 		<div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-2 lg:gap-5 xl:gap-12">

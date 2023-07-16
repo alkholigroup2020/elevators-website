@@ -1,9 +1,559 @@
-<div class="section-bg h-[300px]">
-	<!--  -->
-</div>
+<script>
+	import LL from '$i18n/i18n-svelte';
+	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
+	import FooterForm from './FooterForm.svelte';
 
-<style>
-	.section-bg {
-		background: rgba(var(--color-secondary-800));
-	}
-</style>
+	/**
+	 * @type {string}
+	 */
+	export let currentLocal;
+
+	$: onMailEnter = false;
+	$: mailColor = onMailEnter ? '#d63030' : '#FFF';
+	$: onRiyadhEnter = false;
+	$: riyadhColor = onRiyadhEnter ? '#d63030' : '#FFF';
+	$: onJeddahEnter = false;
+	$: jeddahColor = onJeddahEnter ? '#d63030' : '#FFF';
+	$: onHotLineEnter = false;
+	$: hotlineColor = onHotLineEnter ? '#d63030' : '#FFF';
+	$: onBranchesEnter = false;
+	$: branchesColor = onBranchesEnter ? '#d63030' : '#FFF';
+
+	$: onYouTubeEnter = false;
+	$: YouTubeColor = onYouTubeEnter ? '#d63030' : '#FFF';
+	$: onFacebookEnter = false;
+	$: facebookColor = onFacebookEnter ? '#d63030' : '#FFF';
+	$: onTwitterEnter = false;
+	$: twitterColor = onTwitterEnter ? '#d63030' : '#FFF';
+	$: onWhatsAppEnter = false;
+	$: whatsAppColor = onWhatsAppEnter ? '#d63030' : '#FFF';
+	$: onLinkedInEnter = false;
+	$: linkedInColor = onLinkedInEnter ? '#d63030' : '#FFF';
+	$: onInstagramEnter = false;
+	$: instagramColor = onInstagramEnter ? '#d63030' : '#FFF';
+</script>
+
+<hr />
+
+<footer class="pb-5 pt-8 bg-secondary-700 text-white">
+	<div
+		class="container mx-auto grid gap-2 md:grid-cols-5 px-8"
+		dir={currentLocal === 'en' ? 'ltr' : 'rtl'}
+	>
+		<!-- Contact Us section -->
+		<div class="col-span-2">
+			<h2 class="text-2xl md:text-3xl font-bold mb-4">{$LL.footer.contact.title()}</h2>
+
+			<!-- email address -->
+			<div>
+				<a
+					type="button"
+					class="btn !bg-transparent p-0"
+					aria-label="our email address"
+					href="mailto:info@buildingtec.com"
+				>
+					<div
+						class="flex pb-3"
+						on:mouseenter={() => {
+							onMailEnter = true;
+						}}
+						on:mouseleave={() => {
+							onMailEnter = false;
+						}}
+					>
+						<div class="my-auto">
+							<span>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 32 32"
+									width="22"
+									height="18"
+									fill={mailColor}
+									><g data-name="18-Mail"
+										><path
+											d="M28 32H4a4 4 0 0 1-4-4V12a4 4 0 0 1 4-4h2a1 1 0 0 1 0 2H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2V12a2 2 0 0 0-2-2h-2a1 1 0 0 1 0-2h2a4 4 0 0 1 4 4v16a4 4 0 0 1-4 4z"
+										/><path
+											d="M16 22a1 1 0 0 1-.618-.214l-14-11a1 1 0 1 1 1.236-1.572L16 19.728 29.382 9.214a1 1 0 1 1 1.236 1.572l-14 11A1 1 0 0 1 16 22z"
+										/><path
+											d="M2 31a1 1 0 0 1-.707-1.707l11-11a1 1 0 0 1 1.414 1.414l-11 11A1 1 0 0 1 2 31zM30 31a1 1 0 0 1-.707-.293l-11-11a1 1 0 0 1 1.414-1.414l11 11A1 1 0 0 1 30 31zM26 14a1 1 0 0 1-1-1V2H7v11a1 1 0 0 1-2 0V2a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2v11a1 1 0 0 1-1 1z"
+										/><path
+											d="M21 7H11a1 1 0 0 1 0-2h10a1 1 0 0 1 0 2zM21.064 12H11a1 1 0 0 1 0-2h10.064a1 1 0 0 1 0 2z"
+										/></g
+									></svg
+								>
+							</span>
+						</div>
+						<div>
+							<h3 class="text-xl px-3 pt-1">{$LL.footer.contact.email()}</h3>
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<!-- Riyadh mobile number -->
+			<div>
+				<a
+					type="button"
+					href="tel:00966597370785"
+					aria-label="Riyadh branch mobile number"
+					class="btn !bg-transparent p-0"
+				>
+					<div
+						class="flex pb-3"
+						on:mouseenter={() => {
+							onRiyadhEnter = true;
+						}}
+						on:mouseleave={() => {
+							onRiyadhEnter = false;
+						}}
+					>
+						<div class="my-auto">
+							<span>
+								<svg width="22px" height="22px" viewBox="0 0 70.34 122.88" fill={riyadhColor}
+									><defs
+										><style>
+											.cls-1 {
+												fill-rule: evenodd;
+											}
+										</style></defs
+									><title>mobile-phone</title><path
+										class="cls-1"
+										d="M13.33,0H57A13.37,13.37,0,0,1,70.34,13.33v96.22A13.37,13.37,0,0,1,57,122.88H13.33A13.35,13.35,0,0,1,0,109.54V13.33A13.35,13.35,0,0,1,13.33,0ZM35.16,108.37a5.46,5.46,0,1,1-5.45,5.46,5.47,5.47,0,0,1,5.45-5.46Zm31.34-4.19V16.75H3.83v87.43Z"
+									/></svg
+								>
+							</span>
+						</div>
+						<div>
+							<h3 class="text-xl px-3 pt-1">{$LL.footer.contact.riyadhMobile()}</h3>
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<!-- Jeddah mobile number -->
+			<div>
+				<a
+					type="button"
+					aria-label="Jeddah branch mobile number"
+					href="tel:00966580251227"
+					class="btn !bg-transparent p-0"
+				>
+					<div
+						class="flex pb-3"
+						on:mouseenter={() => {
+							onJeddahEnter = true;
+						}}
+						on:mouseleave={() => {
+							onJeddahEnter = false;
+						}}
+					>
+						<div class="my-auto">
+							<span>
+								<svg width="22px" height="22px" viewBox="0 0 70.34 122.88" fill={jeddahColor}
+									><defs
+										><style>
+											.cls-1 {
+												fill-rule: evenodd;
+											}
+										</style></defs
+									><title>mobile-phone</title><path
+										class="cls-1"
+										d="M13.33,0H57A13.37,13.37,0,0,1,70.34,13.33v96.22A13.37,13.37,0,0,1,57,122.88H13.33A13.35,13.35,0,0,1,0,109.54V13.33A13.35,13.35,0,0,1,13.33,0ZM35.16,108.37a5.46,5.46,0,1,1-5.45,5.46,5.47,5.47,0,0,1,5.45-5.46Zm31.34-4.19V16.75H3.83v87.43Z"
+									/></svg
+								>
+							</span>
+						</div>
+						<div>
+							<h3 class="text-xl px-3 pt-1">{$LL.footer.contact.jeddahMobile()}</h3>
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<!-- hotline number -->
+			<div>
+				<a
+					type="button"
+					aria-label="Call us on the hotline number"
+					href="tel:920023588"
+					class="btn !bg-transparent p-0"
+				>
+					<div
+						class="flex pb-3"
+						on:mouseenter={() => {
+							onHotLineEnter = true;
+						}}
+						on:mouseleave={() => {
+							onHotLineEnter = false;
+						}}
+					>
+						<div class="my-auto">
+							<span>
+								<svg
+									width="20px"
+									height="20px"
+									viewBox="0 0 48 48"
+									id="b"
+									xmlns="http://www.w3.org/2000/svg"
+									fill={hotlineColor}
+									><defs
+										><style>
+											.c {
+												stroke-linecap: round;
+												stroke-linejoin: round;
+											}
+										</style></defs
+									><path
+										class="c"
+										d="m19.308,12.467c-.4234-1.4115-.7215-2.8773-.8813-4.3843-.1571-1.4812-1.449-2.5826-2.9385-2.5826h-6.9092c-1.7767,0-3.1454,1.5345-2.989,3.3043,1.5754,17.8285,15.7771,32.0302,33.6056,33.6056,1.7698.1564,3.3043-1.2073,3.3043-2.9839v-6.1595c0-2.2488-1.1015-3.5362-2.5826-3.6932-1.507-.1598-2.9728-.4579-4.3843-.8813-1.7266-.5179-3.5957-.0304-4.8704,1.2442l-2.9566,2.9566c-5.326-2.8825-9.7164-7.2729-12.5989-12.5989l2.9566-2.9567c1.2746-1.2746,1.7621-3.1438,1.2442-4.8703Z"
+									/></svg
+								>
+							</span>
+						</div>
+						<div>
+							<h3 class="text-xl px-3 pt-1">{$LL.footer.contact.hotLine()}</h3>
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<!-- branches locations -->
+			<div>
+				<div
+					class="flex pb-3"
+					on:mouseenter={() => {
+						onBranchesEnter = true;
+					}}
+					on:mouseleave={() => {
+						onBranchesEnter = false;
+					}}
+				>
+					<div class="my-auto">
+						<span>
+							<svg
+								version="1.1"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								width="20"
+								height="20"
+								fill={branchesColor}
+								viewBox="0 0 16 16"
+							>
+								<path
+									d="M16 9.226l-8-6.21-8 6.21v-2.532l8-6.21 8 6.21zM14 9v6h-4v-4h-4v4h-4v-6l6-4.5z"
+								/>
+							</svg>
+						</span>
+					</div>
+					<div>
+						<h3 class="text-xl px-3 pt-1">{$LL.footer.contact.locations()}</h3>
+					</div>
+				</div>
+			</div>
+			<div dir="ltr" class={currentLocal === 'ar' ? 'flex justify-end' : ''}>
+				<Accordion
+					width="w-[80%]"
+					regionControl={currentLocal === 'ar'
+						? 'border text-lg border-surface-500 text-right '
+						: 'border text-lg border-surface-500 '}
+				>
+					<AccordionItem>
+						<svelte:fragment slot="summary">{$LL.footer.contact.city1()}</svelte:fragment>
+						<svelte:fragment slot="content">
+							<div dir={currentLocal === 'en' ? 'ltr' : 'rtl'}>
+								<div>
+									<span>
+										{$LL.footer.contact.riyadhLocation()}
+									</span>
+								</div>
+								<div class="py-3">
+									<iframe
+										src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1077.0017267077585!2d46.7084347102375!3d24.775326357118814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f044091c2d4ad%3A0xbd01a43eaeaa3d94!2z2YHZhiDYp9mE2YXYudmF2KfYsSDZhNmE2YXYtdin2LnYryBCdWlsZGluZ1RlYyBFbGV2YXRvcnM!5e0!3m2!1sen!2ssa!4v1565249010683!5m2!1sen!2ssa"
+										frameborder="0"
+										allowfullscreen
+										title="Riyadh Office Location"
+										referrerpolicy="no-referrer-when-downgrade"
+										aria-hidden="false"
+										loading="lazy"
+									/>
+								</div>
+							</div>
+						</svelte:fragment>
+					</AccordionItem>
+					<AccordionItem>
+						<svelte:fragment slot="summary">{$LL.footer.contact.city2()}</svelte:fragment>
+						<svelte:fragment slot="content">
+							<div dir={currentLocal === 'en' ? 'ltr' : 'rtl'}>
+								<div>
+									<span>
+										{$LL.footer.contact.jeddahLocation()}
+									</span>
+								</div>
+								<div class="py-3">
+									<iframe
+										src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d463.5209916450007!2d39.134341468633515!3d21.65732377260275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d9ef37027ddb%3A0x8be458075e9f0318!2sBuildingTec%20Elevators%20LLC!5e0!3m2!1sen!2ssa!4v1664263053893!5m2!1sen!2ssa"
+										frameborder="0"
+										allowfullscreen
+										title="Jeddah Office Location"
+										referrerpolicy="no-referrer-when-downgrade"
+										aria-hidden="false"
+										loading="lazy"
+									/>
+								</div>
+							</div>
+						</svelte:fragment>
+					</AccordionItem>
+					<!-- ... -->
+				</Accordion>
+			</div>
+
+			<!-- social media logos -->
+			<ul class="flex py-5 px-0">
+				<!-- YouTube -->
+				<li
+					class="mx-3 hidden lg:block"
+					on:mouseenter={() => {
+						onYouTubeEnter = true;
+					}}
+					on:mouseleave={() => {
+						onYouTubeEnter = false;
+					}}
+				>
+					<a
+						target="_blank"
+						aria-label="Our YouTube Channel"
+						href="https://www.youtube.com/channel/UCWM4ga98EBskD7g8JNlPmzg"
+					>
+						<span>
+							<svg
+								fill={YouTubeColor}
+								height="24px"
+								width="24px"
+								version="1.1"
+								id="Layer_1"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								viewBox="-271 311.2 256 179.8"
+								xml:space="preserve"
+							>
+								<path
+									d="M-59.1,311.2h-167.8c0,0-44.1,0-44.1,44.1v91.5c0,0,0,44.1,44.1,44.1h167.8c0,0,44.1,0,44.1-44.1v-91.5
+									C-15,355.3-15,311.2-59.1,311.2z M-177.1,450.3v-98.5l83.8,49.3L-177.1,450.3z"
+								/>
+							</svg>
+						</span>
+					</a>
+				</li>
+
+				<!-- Facebook -->
+				<li
+					class="mx-3 hidden lg:block"
+					on:mouseenter={() => {
+						onFacebookEnter = true;
+					}}
+					on:mouseleave={() => {
+						onFacebookEnter = false;
+					}}
+				>
+					<a
+						aria-label="Our Facebook Page"
+						href="https://www.facebook.com/BuildingTec.Elevators"
+						target="_blank"
+					>
+						<span>
+							<svg
+								width="25px"
+								height="24px"
+								viewBox="0 0 32 32"
+								fill={facebookColor}
+								id="Camada_1"
+								version="1.1"
+								xml:space="preserve"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								><style type="text/css">
+									.st0 {
+										fill-rule: evenodd;
+										clip-rule: evenodd;
+										fill: #303030;
+									}
+								</style><path
+									d="M6,2h20c2.2,0,4,1.8,4,4v20c0,2.2-1.8,4-4,4H6c-2.2,0-4-1.8-4-4V6C2,3.8,3.8,2,6,2z"
+								/><path
+									class="st0"
+									d="M13.2,16.1v9.7c0,0.1,0.1,0.3,0.3,0.3h3.9c0.2,0,0.3-0.1,0.3-0.3v-9.8h2.8c0.1,0,0.3-0.1,0.3-0.2l0.3-3  c0-0.2-0.1-0.3-0.3-0.3h-3.1v-2.1c0-0.5,0.4-0.9,1-0.9h2.2c0.2,0,0.3-0.1,0.3-0.3V6.3C21,6.1,20.9,6,20.7,6h-3.6  c-2.1,0-3.9,1.6-3.9,3.6v2.9h-1.9c-0.2,0-0.3,0.1-0.3,0.3v3c0,0.1,0.1,0.3,0.3,0.3h1.9V16.1z"
+								/></svg
+							>
+						</span>
+					</a>
+				</li>
+				<!-- Twitter -->
+				<li
+					class="mx-3 hidden lg:block"
+					on:mouseenter={() => {
+						onTwitterEnter = true;
+					}}
+					on:mouseleave={() => {
+						onTwitterEnter = false;
+					}}
+				>
+					<a aria-label="Our Twitter Page" href="https://twitter.com/BuildingTec" target="_blank">
+						<span>
+							<svg
+								fill={twitterColor}
+								width="22px"
+								height="24px"
+								viewBox="0 0 1920 1920"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M1920 311.856c-70.701 33.769-146.598 56.47-226.221 66.86 81.317-52.517 143.774-135.529 173.252-234.691-76.236 48.678-160.716 84.028-250.391 103.002-71.718-82.56-174.268-134.06-287.435-134.06-217.75 0-394.165 189.966-394.165 424.206 0 33.318 3.614 65.619 10.165 96.678C617.9 616.119 327.304 447.385 133.045 190.67c-33.77 62.57-53.309 135.53-53.309 213.233 0 147.162 91.031 276.818 196.744 353.054-64.602-2.26-157.101-21.46-157.101-53.309v5.648c0 205.327 114.41 376.658 294.55 415.849-32.978 9.487-78.38 14.795-114.409 14.795-25.412 0-55.454-2.71-79.624-7.793 50.26 168.509 193.13 291.163 365.478 294.777-134.852 113.506-306.07 181.383-490.616 181.383-31.85 0-64.038-2.033-94.758-5.873 174.494 120.17 381.176 190.532 603.67 190.532 724.97 0 1121.055-646.136 1121.055-1206.55 0-18.41-.452-36.932-1.356-55.116 77.026-59.746 143.887-134.4 196.631-219.444"
+									fill-rule="evenodd"
+								/>
+							</svg>
+						</span>
+					</a>
+				</li>
+				<!-- WhatsApp -->
+				<li
+					class="mx-3 hidden lg:block"
+					on:mouseenter={() => {
+						onWhatsAppEnter = true;
+					}}
+					on:mouseleave={() => {
+						onWhatsAppEnter = false;
+					}}
+				>
+					<a aria-label="Our WhatsApp Link" href="https://wa.me/966597370785" target="_blank">
+						<span>
+							<svg
+								width="20px"
+								height="22px"
+								viewBox="0 0 20 20"
+								version="1.1"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+							>
+								<title>whatsapp [#128]</title>
+								<desc>Created with Sketch.</desc>
+								<defs />
+								<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+									<g
+										id="Dribbble-Light-Preview"
+										transform="translate(-300.000000, -7599.000000)"
+										fill={whatsAppColor}
+									>
+										<g id="icons" transform="translate(56.000000, 160.000000)">
+											<path
+												d="M259.821,7453.12124 C259.58,7453.80344 258.622,7454.36761 257.858,7454.53266 C257.335,7454.64369 256.653,7454.73172 254.355,7453.77943 C251.774,7452.71011 248.19,7448.90097 248.19,7446.36621 C248.19,7445.07582 248.934,7443.57337 250.235,7443.57337 C250.861,7443.57337 250.999,7443.58538 251.205,7444.07952 C251.446,7444.6617 252.034,7446.09613 252.104,7446.24317 C252.393,7446.84635 251.81,7447.19946 251.387,7447.72462 C251.252,7447.88266 251.099,7448.05372 251.27,7448.3478 C251.44,7448.63589 252.028,7449.59418 252.892,7450.36341 C254.008,7451.35771 254.913,7451.6748 255.237,7451.80984 C255.478,7451.90987 255.766,7451.88687 255.942,7451.69881 C256.165,7451.45774 256.442,7451.05762 256.724,7450.6635 C256.923,7450.38141 257.176,7450.3464 257.441,7450.44643 C257.62,7450.50845 259.895,7451.56477 259.991,7451.73382 C260.062,7451.85686 260.062,7452.43903 259.821,7453.12124 M254.002,7439 L253.997,7439 L253.997,7439 C248.484,7439 244,7443.48535 244,7449 C244,7451.18666 244.705,7453.21526 245.904,7454.86076 L244.658,7458.57687 L248.501,7457.3485 C250.082,7458.39482 251.969,7459 254.002,7459 C259.515,7459 264,7454.51465 264,7449 C264,7443.48535 259.515,7439 254.002,7439"
+												id="whatsapp-[#128]"
+											/>
+										</g>
+									</g>
+								</g>
+							</svg>
+						</span>
+					</a>
+				</li>
+				<!-- LinkedIn -->
+				<li
+					class="mx-3 hidden lg:block"
+					on:mouseenter={() => {
+						onLinkedInEnter = true;
+					}}
+					on:mouseleave={() => {
+						onLinkedInEnter = false;
+					}}
+				>
+					<a
+						aria-label="Our LinkedIn Page"
+						href="https://www.linkedin.com/company/buildingtec-elevators/about/"
+						target="_blank"
+					>
+						<span>
+							<svg
+								fill={linkedInColor}
+								height="24px"
+								width="21px"
+								version="1.1"
+								id="Layer_1"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								viewBox="-143 145 512 512"
+								xml:space="preserve"
+							>
+								<path
+									d="M329,145h-432c-22.1,0-40,17.9-40,40v432c0,22.1,17.9,40,40,40h432c22.1,0,40-17.9,40-40V185C369,162.9,351.1,145,329,145z
+									M41.4,508.1H-8.5V348.4h49.9V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7c0-15.8,12.1-27.7,30.5-27.7
+									c18.4,0,29.7,11.9,30.1,27.7C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6c0-21.6-8.8-36.4-28.3-36.4
+									c-14.9,0-23.2,10-27,19.6c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1c3.3-11,21.2-26.6,49.8-26.6
+									c35.5,0,63.3,23,63.3,72.4V508.1z"
+								/>
+							</svg>
+						</span>
+					</a>
+				</li>
+				<!-- Instagram -->
+				<li
+					class="mx-3 hidden lg:block"
+					on:mouseenter={() => {
+						onInstagramEnter = true;
+					}}
+					on:mouseleave={() => {
+						onInstagramEnter = false;
+					}}
+				>
+					<a
+						aria-label="Our Instagram Page"
+						href="https://www.instagram.com/buildingtecelevators/?hl=el"
+						target="_blank"
+					>
+						<span>
+							<svg
+								width="24px"
+								height="24px"
+								viewBox="0 0 20 20"
+								version="1.1"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+							>
+								<title>instagram [#167]</title>
+								<desc>Created with Sketch.</desc>
+								<defs />
+								<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+									<g
+										id="Dribbble-Light-Preview"
+										transform="translate(-340.000000, -7439.000000)"
+										fill={instagramColor}
+									>
+										<g id="icons" transform="translate(56.000000, 160.000000)">
+											<path
+												d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792"
+												id="instagram-[#167]"
+											/>
+										</g>
+									</g>
+								</g>
+							</svg>
+						</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Message Form section -->
+		<div class="col-span-2">
+			<h2 class="text-2xl md:text-3xl font-bold">{$LL.footer.message.title()}</h2>
+			<FooterForm />
+		</div>
+
+		<!-- Image section -->
+		<div class="col-span-1 flex mt-auto justify-end">
+			<img
+				src="/ISO-Certified-vector-min.webp"
+				alt="our iso certificate"
+				class="w-[150px] h-[150px] aspect-1/1"
+			/>
+		</div>
+	</div>
+</footer>

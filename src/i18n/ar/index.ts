@@ -58,6 +58,10 @@ const en: BaseTranslation = {
 		maintenanceS3TextP1: 'تقدم شركتنا ضمانًا لمدة عامين (2) لجميع المعدات.',
 		maintenanceS3TextP2:
 			'طاقمنا الفني على أهبة الاستعداد لخدمتكم 24 ساعة / 7 أيام في الأسبوع لإصلاح الأعطال فوراً، وتقديم أفضل خدمة ممكنة.'
+	},
+	quoteRequest: {
+		newElevator: 'مصعد جديد',
+		newMaintenanceContract: 'عقد صيانة'
 	}
 };
 

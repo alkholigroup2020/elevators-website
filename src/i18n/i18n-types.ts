@@ -184,6 +184,16 @@ type RootTranslation = {
 		 */
 		maintenanceS3TextP2: string
 	}
+	quoteRequest: {
+		/**
+		 * N​e​w​ ​E​l​e​v​a​t​o​r
+		 */
+		newElevator: string
+		/**
+		 * M​a​i​n​t​e​n​a​n​c​e​ ​C​o​n​t​r​a​c​t
+		 */
+		newMaintenanceContract: string
+	}
 }
 
 export type TranslationFunctions = {
@@ -356,6 +366,16 @@ export type TranslationFunctions = {
 		 * Our Technician will be stand by for 24 hours / 7 days a week for any breakdown call, offering the highest possible service.
 		 */
 		maintenanceS3TextP2: () => LocalizedString
+	}
+	quoteRequest: {
+		/**
+		 * New Elevator
+		 */
+		newElevator: () => LocalizedString
+		/**
+		 * Maintenance Contract
+		 */
+		newMaintenanceContract: () => LocalizedString
 	}
 }
 

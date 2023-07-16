@@ -6,6 +6,8 @@
 	import ProductsSection from '$lib/homePage/ProductsSection.svelte';
 	import ServicesSection from '$lib/homePage/ServicesSection.svelte';
 	import WelcomeSection from '$lib/homePage/WelcomeSection.svelte';
+	import ProjectsSection from '$lib/homePage/ProjectsSection.svelte';
+	import QuoteSection from '$lib/homePage/QuoteSection.svelte';
 
 	export let data;
 	const currentLocal = data.locale;
@@ -23,8 +25,8 @@
 
 <ServicesSection {currentLocal} />
 
-<div class="h-[50px] w-full bg-surface-300" />
+<ProjectsSection />
 
-<PartnersSection {currentLocal} />
+<QuoteSection {currentLocal} />
 
-<div class="h-[500px] w-full bg-surface-300" />
+<PartnersSection />

@@ -46,12 +46,14 @@
 
 <style>
 	.section-bg {
-		background: rgba(var(--color-surface-600)) url('/pattern.webp') repeat 50% 22px;
+		background: rgba(var(--color-surface-500)) url('/pattern.webp') repeat 50% 22px;
+		/* bg-surface-100-800-token */
+		/* background: rgba(var(--color-surface-400-600-token)); */
 	}
 	.circle {
-		background-color: rgb(250, 250, 250);
+		background-color: rgb(245, 245, 245);
 		width: 220px;
-		height: 100px;
+		height: 110px;
 		display: flex;
 		justify-content: center;
 		align-items: center;

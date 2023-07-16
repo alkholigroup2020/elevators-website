@@ -27,6 +27,8 @@
 	import { drawerStore } from '@skeletonlabs/skeleton';
 
 	import type { NavData } from '../types/nav.type';
+	import FooterSection from '$lib/footer/FooterSection.svelte';
+	import VeryButtonFooter from '$lib/footer/VeryButtonFooter.svelte';
 
 	const theNavData: NavData = data.cmsData;
 	const currentLocal = data.locale;
@@ -73,6 +75,9 @@
 
 	<!-- Router Slot -->
 	<slot />
+
+	<FooterSection />
+	<VeryButtonFooter />
 
 	<!-- <svelte:fragment slot="footer">Footer</svelte:fragment> -->
 </AppShell>

@@ -60,6 +60,10 @@ const en: BaseTranslation = {
 		maintenanceS3TextP1: 'Our Company will provide two (2) years warranty to all equipment.',
 		maintenanceS3TextP2:
 			'Our Technician will be stand by for 24 hours / 7 days a week for any breakdown call, offering the highest possible service.'
+	},
+	quoteRequest: {
+		newElevator: 'New Elevator',
+		newMaintenanceContract: 'Maintenance Contract'
 	}
 };
 

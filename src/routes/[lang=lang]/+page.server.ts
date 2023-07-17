@@ -3,6 +3,10 @@
 import { CMS_URL } from '$env/static/private';
 import { request, gql } from 'graphql-request';
 
+import { fail } from '@sveltejs/kit';
+import { z } from 'zod';
+import { superValidate } from 'sveltekit-superforms/server';
+
 const query = gql`
 	{
 		heroSection {
@@ -107,6 +111,44 @@ const getHeroSectionDate = async () => {
 	};
 };
 
-export function load() {
-	return getHeroSectionDate();
+const schema = z.object({
+	name: z.string().min(3).max(60),
+	email: z.string().email().optional(),
+	mobile: z.string().min(10).max(10).optional(),
+	textArea: z.string().min(3).max(500)
+});
+
+export async function load() {
+	const heroSectionDate = getHeroSectionDate();
+
+	// Server API:
+	const footerFormSettings = await superValidate(schema);
+
+	// Always return { form } in load and form actions.
+	return { footerFormSettings, heroSectionDate };
 }
+
+export const actions = {
+	default: async ({ request }) => {
+		const footerForm = await superValidate(request, schema);
+		console.log('POST', footerForm);
+
+		if (footerForm.data.email === undefined && footerForm.data.mobile === undefined) {
+			return fail(406, { footerForm });
+		}
+
+		if (!footerForm.valid) {
+			return fail(400, { footerForm });
+		}
+
+		// TODO: Do something with the validated data
+
+		// reset the form values
+		footerForm.data.name = '';
+		footerForm.data.email = undefined;
+		footerForm.data.mobile = undefined;
+		footerForm.data.textArea = '';
+
+		return { footerForm };
+	}
+};

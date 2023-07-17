@@ -81,7 +81,25 @@ const en: BaseTranslation = {
 		message: {
 			title: 'Send Us a Message',
 			form: {
-				fullName: 'Your Good Name'
+				fullName: 'Name:',
+				fullNameError: 'Name length should be more that 3 characters!',
+				fullNameLengthError: 'Name is too long! Maximum 60 characters.',
+				fullNameNumericError: 'No numbers are allowed!',
+				fullNamePlaceholder: 'your good name ...',
+				email: 'Email:',
+				emailError: 'Please enter a valid email!',
+				emailPlaceholder: 'email address ... (optional)',
+				mobileNumber: 'Mobile Number:',
+				mobilePlaceholder: 'mobile number (05xxxxxxxx)',
+				mobileError: 'Please enter a valid mobile number!',
+				textArea: 'Message:',
+				textAreaPlaceholder: 'enter your message here ...',
+				textAreaError1: 'Message is too short!',
+				textAreaError2: 'Message is too long! Maximum 500 characters.',
+				submit: 'Send Your Message',
+				successFeedback: 'Message sent successfully!',
+				errorFeedback: 'Something went wrong!',
+				notAllowedFeedback: 'At least an email address or a mobile number is required!'
 			}
 		}
 	}

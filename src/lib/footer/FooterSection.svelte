@@ -220,7 +220,7 @@
 			<!-- branches locations -->
 			<div>
 				<div
-					class="flex pb-3"
+					class="flex pb-3 w-fit"
 					on:mouseenter={() => {
 						onBranchesEnter = true;
 					}}
@@ -252,7 +252,7 @@
 			</div>
 			<div dir="ltr" class={currentLocal === 'ar' ? 'flex justify-end' : ''}>
 				<Accordion
-					width="w-[80%]"
+					width="w-[70%]"
 					regionControl={currentLocal === 'ar'
 						? 'border text-lg border-surface-500 text-right '
 						: 'border text-lg border-surface-500 '}

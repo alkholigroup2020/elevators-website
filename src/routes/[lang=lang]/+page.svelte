@@ -8,18 +8,22 @@
 	import WelcomeSection from '$lib/homePage/WelcomeSection.svelte';
 	import ProjectsSection from '$lib/homePage/ProjectsSection.svelte';
 	import QuoteSection from '$lib/homePage/QuoteSection.svelte';
+	import FooterSection from '$lib/footer/FooterSection.svelte';
 
 	export let data;
 	const currentLocal = data.locale;
+
+	import { footerFormSettingsStore } from '$lib/stores/store.js';
+	footerFormSettingsStore.set(data.data.footerFormSettings);
 </script>
 
-<!-- <HeroSection sectionData={data.data.heroSectionData} {currentLocal} /> -->
+<!-- <HeroSection sectionData={data.data.heroSectionDate.heroSectionData} {currentLocal} /> -->
 
 <!-- <IntroSection {currentLocal} /> -->
 
 <!-- <WelcomeSection {currentLocal} /> -->
 
-<!-- <ProductsSection sectionData={data.data.homeProductsArray} {currentLocal} /> -->
+<!-- <ProductsSection sectionData={data.data.heroSectionDate.homeProductsArray} {currentLocal} /> -->
 
 <!-- <DopplerSection {currentLocal} /> -->
 
@@ -30,3 +34,6 @@
 <!-- <QuoteSection /> -->
 
 <!-- <BrandsSection /> -->
+<div class=" h-[150px]" />
+
+<FooterSection {currentLocal} />

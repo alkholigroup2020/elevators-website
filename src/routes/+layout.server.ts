@@ -5,13 +5,6 @@ import { request, gql } from 'graphql-request';
 
 import type { NavData } from '../types/nav.type';
 
-export async function load({ locals: { locale } }) {
-	const cmsData = await getHeroSectionDate();
-
-	// pass locale information from "server-context" to "shared server + client context"
-	return { locale, cmsData };
-}
-
 const query = gql`
 	{
 		generalWebsiteImages {
@@ -71,3 +64,10 @@ const getHeroSectionDate = async () => {
 
 	return result;
 };
+
+export async function load({ locals: { locale } }) {
+	const cmsData = await getHeroSectionDate();
+
+	// pass locale information from "server-context" to "shared server + client context"
+	return { locale, cmsData };
+}

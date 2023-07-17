@@ -244,9 +244,81 @@ type RootTranslation = {
 			title: string
 			form: {
 				/**
-				 * Y​o​u​r​ ​G​o​o​d​ ​N​a​m​e
+				 * N​a​m​e​:
 				 */
 				fullName: string
+				/**
+				 * N​a​m​e​ ​l​e​n​g​t​h​ ​s​h​o​u​l​d​ ​b​e​ ​m​o​r​e​ ​t​h​a​t​ ​3​ ​c​h​a​r​a​c​t​e​r​s​!
+				 */
+				fullNameError: string
+				/**
+				 * N​a​m​e​ ​i​s​ ​t​o​o​ ​l​o​n​g​!​ ​M​a​x​i​m​u​m​ ​6​0​ ​c​h​a​r​a​c​t​e​r​s​.
+				 */
+				fullNameLengthError: string
+				/**
+				 * N​o​ ​n​u​m​b​e​r​s​ ​a​r​e​ ​a​l​l​o​w​e​d​!
+				 */
+				fullNameNumericError: string
+				/**
+				 * y​o​u​r​ ​g​o​o​d​ ​n​a​m​e​ ​.​.​.
+				 */
+				fullNamePlaceholder: string
+				/**
+				 * E​m​a​i​l​:
+				 */
+				email: string
+				/**
+				 * P​l​e​a​s​e​ ​e​n​t​e​r​ ​a​ ​v​a​l​i​d​ ​e​m​a​i​l​!
+				 */
+				emailError: string
+				/**
+				 * e​m​a​i​l​ ​a​d​d​r​e​s​s​ ​.​.​.​ ​(​o​p​t​i​o​n​a​l​)
+				 */
+				emailPlaceholder: string
+				/**
+				 * M​o​b​i​l​e​ ​N​u​m​b​e​r​:
+				 */
+				mobileNumber: string
+				/**
+				 * m​o​b​i​l​e​ ​n​u​m​b​e​r​ ​(​0​5​x​x​x​x​x​x​x​x​)
+				 */
+				mobilePlaceholder: string
+				/**
+				 * P​l​e​a​s​e​ ​e​n​t​e​r​ ​a​ ​v​a​l​i​d​ ​m​o​b​i​l​e​ ​n​u​m​b​e​r​!
+				 */
+				mobileError: string
+				/**
+				 * M​e​s​s​a​g​e​:
+				 */
+				textArea: string
+				/**
+				 * e​n​t​e​r​ ​y​o​u​r​ ​m​e​s​s​a​g​e​ ​h​e​r​e​ ​.​.​.
+				 */
+				textAreaPlaceholder: string
+				/**
+				 * M​e​s​s​a​g​e​ ​i​s​ ​t​o​o​ ​s​h​o​r​t​!
+				 */
+				textAreaError1: string
+				/**
+				 * M​e​s​s​a​g​e​ ​i​s​ ​t​o​o​ ​l​o​n​g​!​ ​M​a​x​i​m​u​m​ ​5​0​0​ ​c​h​a​r​a​c​t​e​r​s​.
+				 */
+				textAreaError2: string
+				/**
+				 * S​e​n​d​ ​Y​o​u​r​ ​M​e​s​s​a​g​e
+				 */
+				submit: string
+				/**
+				 * M​e​s​s​a​g​e​ ​s​e​n​t​ ​s​u​c​c​e​s​s​f​u​l​l​y​!
+				 */
+				successFeedback: string
+				/**
+				 * S​o​m​e​t​h​i​n​g​ ​w​e​n​t​ ​w​r​o​n​g​!
+				 */
+				errorFeedback: string
+				/**
+				 * A​t​ ​l​e​a​s​t​ ​a​n​ ​e​m​a​i​l​ ​a​d​d​r​e​s​s​ ​o​r​ ​a​ ​m​o​b​i​l​e​ ​n​u​m​b​e​r​ ​i​s​ ​r​e​q​u​i​r​e​d​!
+				 */
+				notAllowedFeedback: string
 			}
 		}
 	}
@@ -483,9 +555,81 @@ export type TranslationFunctions = {
 			title: () => LocalizedString
 			form: {
 				/**
-				 * Your Good Name
+				 * Name:
 				 */
 				fullName: () => LocalizedString
+				/**
+				 * Name length should be more that 3 characters!
+				 */
+				fullNameError: () => LocalizedString
+				/**
+				 * Name is too long! Maximum 60 characters.
+				 */
+				fullNameLengthError: () => LocalizedString
+				/**
+				 * No numbers are allowed!
+				 */
+				fullNameNumericError: () => LocalizedString
+				/**
+				 * your good name ...
+				 */
+				fullNamePlaceholder: () => LocalizedString
+				/**
+				 * Email:
+				 */
+				email: () => LocalizedString
+				/**
+				 * Please enter a valid email!
+				 */
+				emailError: () => LocalizedString
+				/**
+				 * email address ... (optional)
+				 */
+				emailPlaceholder: () => LocalizedString
+				/**
+				 * Mobile Number:
+				 */
+				mobileNumber: () => LocalizedString
+				/**
+				 * mobile number (05xxxxxxxx)
+				 */
+				mobilePlaceholder: () => LocalizedString
+				/**
+				 * Please enter a valid mobile number!
+				 */
+				mobileError: () => LocalizedString
+				/**
+				 * Message:
+				 */
+				textArea: () => LocalizedString
+				/**
+				 * enter your message here ...
+				 */
+				textAreaPlaceholder: () => LocalizedString
+				/**
+				 * Message is too short!
+				 */
+				textAreaError1: () => LocalizedString
+				/**
+				 * Message is too long! Maximum 500 characters.
+				 */
+				textAreaError2: () => LocalizedString
+				/**
+				 * Send Your Message
+				 */
+				submit: () => LocalizedString
+				/**
+				 * Message sent successfully!
+				 */
+				successFeedback: () => LocalizedString
+				/**
+				 * Something went wrong!
+				 */
+				errorFeedback: () => LocalizedString
+				/**
+				 * At least an email address or a mobile number is required!
+				 */
+				notAllowedFeedback: () => LocalizedString
 			}
 		}
 	}

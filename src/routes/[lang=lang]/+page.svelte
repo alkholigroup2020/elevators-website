@@ -11,23 +11,22 @@
 	import FooterSection from '$lib/footer/FooterSection.svelte';
 
 	export let data;
-	const currentLocal = data.locale;
 
 	import { footerFormSettingsStore } from '$lib/stores/store.js';
 	footerFormSettingsStore.set(data.data.footerFormSettings);
 </script>
 
-<HeroSection sectionData={data.data.heroSectionDate.heroSectionData} {currentLocal} />
+<HeroSection sectionData={data.data.heroSectionDate.heroSectionData} />
 
-<IntroSection {currentLocal} />
+<IntroSection />
 
-<WelcomeSection {currentLocal} />
+<WelcomeSection />
 
-<ProductsSection sectionData={data.data.heroSectionDate.homeProductsArray} {currentLocal} />
+<ProductsSection sectionData={data.data.heroSectionDate.homeProductsArray} />
 
-<DopplerSection {currentLocal} />
+<DopplerSection />
 
-<ServicesSection {currentLocal} />
+<ServicesSection />
 
 <ProjectsSection />
 
@@ -35,4 +34,4 @@
 
 <BrandsSection />
 
-<FooterSection {currentLocal} />
+<FooterSection />

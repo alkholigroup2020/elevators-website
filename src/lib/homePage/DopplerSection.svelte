@@ -1,13 +1,10 @@
 <script>
 	import LL from '$i18n/i18n-svelte';
 	import YouTubeVideo from '.././generalComponents/YouTubeVideo.svelte';
-	/**
-	 * @type {string}
-	 */
-	export let currentLocal;
+	import { currentAppLang } from '$lib/stores/store';
 </script>
 
-<section class="dopplerSection text-white py-0" dir={currentLocal === 'en' ? 'ltr' : 'rtl'}>
+<section class="dopplerSection text-white py-0" dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}>
 	<div class="pb-0 max-w-[1920px] mx-auto lg:px-[80px] xl:px-[265px] 2xl:px-0">
 		<!-- title section -->
 		<div class="py-12">

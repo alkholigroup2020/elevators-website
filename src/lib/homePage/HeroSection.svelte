@@ -3,16 +3,13 @@
 	 * @type {any}
 	 */
 	export let sectionData;
-	/**
-	 * @type {string}
-	 */
-	export let currentLocal;
+	import { currentAppLang } from '$lib/stores/store';
 </script>
 
 <!-- Hero section -->
 <section
 	class="relative h-[650px] flex items-center justify-center"
-	dir={currentLocal === 'en' ? 'ltr' : 'rtl'}
+	dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}
 >
 	<!-- Image container -->
 	<div class="absolute inset-0 overflow-hidden">
@@ -34,7 +31,7 @@
 
 	<!-- Text container -->
 	<div class="container mx-auto grid grid-cols-6 relative z-10 text-center">
-		{#if currentLocal === 'en'}
+		{#if $currentAppLang === 'en'}
 			<div
 				class="col-span-6 space-y-8 xl:space-y-12 lg:col-span-4 lg:col-start-1 lg:col-end-7 lg:px-12"
 			>

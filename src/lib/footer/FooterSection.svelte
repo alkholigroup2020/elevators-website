@@ -3,10 +3,12 @@
 	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
 	import FooterForm from './FooterForm.svelte';
 
-	/**
-	 * @type {string}
-	 */
-	export let currentLocal;
+	import { currentAppLang } from '$lib/stores/store';
+
+	// /**
+	//  * @type {string}
+	//  */
+	// export let currentLocal;
 
 	$: onMailEnter = false;
 	$: mailColor = onMailEnter ? '#d63030' : '#FFF';
@@ -38,7 +40,7 @@
 <footer class="pb-5 pt-8 bg-secondary-700 text-white">
 	<div
 		class="container mx-auto grid gap-2 lg:grid-cols-5 px-8"
-		dir={currentLocal === 'en' ? 'ltr' : 'rtl'}
+		dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}
 	>
 		<!-- Contact Us section -->
 		<div class="col-span-2">
@@ -250,17 +252,17 @@
 					</div>
 				</div>
 			</div>
-			<div dir="ltr" class={currentLocal === 'ar' ? 'flex justify-end' : ''}>
+			<div dir="ltr" class={$currentAppLang === 'ar' ? 'flex justify-end' : ''}>
 				<Accordion
 					width="w-[70%]"
-					regionControl={currentLocal === 'ar'
+					regionControl={$currentAppLang === 'ar'
 						? 'border text-lg border-surface-500 text-right '
 						: 'border text-lg border-surface-500 '}
 				>
 					<AccordionItem>
 						<svelte:fragment slot="summary">{$LL.footer.contact.city1()}</svelte:fragment>
 						<svelte:fragment slot="content">
-							<div dir={currentLocal === 'en' ? 'ltr' : 'rtl'}>
+							<div dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}>
 								<div>
 									<span>
 										{$LL.footer.contact.riyadhLocation()}
@@ -283,7 +285,7 @@
 					<AccordionItem>
 						<svelte:fragment slot="summary">{$LL.footer.contact.city2()}</svelte:fragment>
 						<svelte:fragment slot="content">
-							<div dir={currentLocal === 'en' ? 'ltr' : 'rtl'}>
+							<div dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}>
 								<div>
 									<span>
 										{$LL.footer.contact.jeddahLocation()}

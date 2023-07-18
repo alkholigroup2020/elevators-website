@@ -3,13 +3,10 @@
 	import LL from '$i18n/i18n-svelte';
 	import YouTubeVideo from '.././generalComponents/YouTubeVideo.svelte';
 
-	/**
-	 * @type {string}
-	 */
-	export let currentLocal;
+	import { currentAppLang } from '$lib/stores/store';
 </script>
 
-<section class="welcomeSection text-white py-0" dir={currentLocal === 'en' ? 'ltr' : 'rtl'}>
+<section class="welcomeSection text-white py-0" dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}>
 	<div class="pb-0 max-w-[1920px] mx-auto">
 		<!-- title section -->
 		<div
@@ -36,7 +33,7 @@
 
 				<!-- Right sub-column: UL with 3 li elements -->
 				<div
-					class={currentLocal === 'en'
+					class={$currentAppLang === 'en'
 						? 'px-8 lg:px-[80px] xl:px-[270px] 2xl:px-0 2xl:-ml-8'
 						: 'px-8 lg:px-[80px] xl:px-[270px] 2xl:px-0 2xl:-mr-12'}
 				>
@@ -63,7 +60,7 @@
 									</span>
 								</div>
 								<div
-									class={currentLocal === 'en'
+									class={$currentAppLang === 'en'
 										? 'col-start-2 col-end-9 ml-1 sm:-ml-5 md:-ml-10 lg:-ml-[40px] 2xl:ml-0'
 										: 'col-start-2 col-end-9 mr-1 sm:-mr-5 md:-mr-10 lg:-mr-[40px] 2xl:mr-0'}
 								>
@@ -101,7 +98,7 @@
 									</span>
 								</div>
 								<div
-									class={currentLocal === 'en'
+									class={$currentAppLang === 'en'
 										? 'col-start-2 col-end-9 ml-1 sm:-ml-5 md:-ml-10 lg:-ml-[40px] 2xl:ml-0'
 										: 'col-start-2 col-end-9 mr-1 sm:-mr-5 md:-mr-10 lg:-mr-[40px] 2xl:mr-0'}
 								>
@@ -139,7 +136,7 @@
 									</span>
 								</div>
 								<div
-									class={currentLocal === 'en'
+									class={$currentAppLang === 'en'
 										? 'col-start-2 col-end-9 ml-1 sm:-ml-5 md:-ml-10 lg:-ml-[40px] 2xl:ml-0'
 										: 'col-start-2 col-end-9 mr-1 sm:-mr-5 md:-mr-10 lg:-mr-[40px] 2xl:mr-0'}
 								>

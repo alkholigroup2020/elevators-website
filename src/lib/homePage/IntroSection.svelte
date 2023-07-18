@@ -1,10 +1,7 @@
 <script>
 	import LL from '$i18n/i18n-svelte';
 
-	/**
-	 * @type {string}
-	 */
-	export let currentLocal;
+	import { currentAppLang } from '$lib/stores/store';
 
 	$: designSVGEnter = false;
 	$: ideaSVGEnter = false;
@@ -15,7 +12,7 @@
 	$: managementSVGColor = managementSVGEnter ? '#FFFFFF' : '#d63030';
 </script>
 
-<section class="container mx-auto px-4 md:px-0" dir={currentLocal === 'en' ? 'ltr' : 'rtl'}>
+<section class="container mx-auto px-4 md:px-0" dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}>
 	<div class="grid grid-cols-1 lg:grid-cols-3 gap-12 py-[50px]">
 		<!-- Column 1 -->
 		<div class="flex flex-col items-center">

@@ -1,7 +1,7 @@
 import nodemailer from 'nodemailer';
 import type { Transporter } from 'nodemailer';
 import type { SendMailOptions } from 'nodemailer';
-import type { SentMessageInfo } from 'nodemailer';
+// import type { SentMessageInfo } from 'nodemailer';
 
 import { INFO_PASSWORD } from '$env/static/private';
 

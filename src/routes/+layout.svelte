@@ -30,11 +30,12 @@
 	import VeryButtonFooter from '$lib/footer/VeryButtonFooter.svelte';
 
 	const theNavData: NavData = data.cmsData;
-	const currentLocal = data.locale;
+
+	import LL from '$i18n/i18n-svelte';
 </script>
 
 <svelte:head>
-	<title>{$page.data.title || 'BTEC'}</title>
+	<title>{$LL.title()}</title>
 	<meta name="description" content="An Elevators Co." />
 	<HeadHrefLangs />
 </svelte:head>
@@ -65,7 +66,7 @@
 	<!-- <svelte:fragment slot="pageHeader" /> -->
 	<VeryTopNav />
 
-	<Navbar theNavbarData={theNavData} {currentLocal} />
+	<Navbar theNavbarData={theNavData} />
 
 	<!-- <svelte:fragment slot="sidebarLeft">
 		Hidden below Tailwind's large breakpoint lg:block

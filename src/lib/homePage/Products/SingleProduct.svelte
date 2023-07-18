@@ -3,15 +3,13 @@
 	 * @type {any}
 	 */
 	export let product;
-	/**
-	 * @type {string}
-	 */
-	export let currentLocal;
+
+	import { currentAppLang } from '$lib/stores/store';
 </script>
 
 <a
 	class="card bg-transparent card-hover overflow-hidden shadow-md"
-	href={`${currentLocal}/product/${product.attributes.linkName}`}
+	href={`${$currentAppLang}/product/${product.attributes.linkName}`}
 >
 	<header>
 		<!-- aspect-[21/11] lg:aspect-[21/14] xl:aspect-[21/13]  -->
@@ -22,7 +20,7 @@
 		/>
 	</header>
 	<div class="p-4 space-y-4">
-		{#if currentLocal === 'en'}
+		{#if $currentAppLang === 'en'}
 			<h3 class="text-2xl lg:text-3xl font-medium mb-3 text-primary-500 py-3" data-toc-ignore>
 				{product.attributes.productTitle}
 			</h3>

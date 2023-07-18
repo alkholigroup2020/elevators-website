@@ -21,7 +21,7 @@
 
 	export let theNavbarData: NavData;
 
-	export let currentLocal: any;
+	import { currentAppLang } from '$lib/stores/store';
 </script>
 
 <AppBar
@@ -61,7 +61,7 @@
 			</button>
 
 			<div class="ml-5 lg:ml-0">
-				<a href={`/${currentLocal}`} aria-label="a link to the home page">
+				<a href={`/${$currentAppLang}`} aria-label="a link to the home page">
 					{#if theNavbarData !== undefined}
 						<div class="flex max-h-12">
 							<div class="aspect-w-603 aspect-h-1181 -mt-1">

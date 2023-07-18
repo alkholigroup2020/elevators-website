@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
-	// import { invalidateAll } from '$app/navigation';
+	import { invalidateAll } from '$app/navigation';
 	import { page } from '$app/stores';
 	import { setLocale, locale } from '$i18n/i18n-svelte';
 	import type { Locales } from '$i18n/i18n-types';
@@ -8,7 +8,13 @@
 	import { loadLocaleAsync } from '$i18n/i18n-util.async';
 	import { replaceLocaleInUrl } from '../utils';
 
+	import { currentAppLang } from '$lib/stores/store.js';
+
+	// let currentLang: string; // my addition
+
 	const switchLocale = async (newLocale: Locales, updateHistoryState = true) => {
+		currentAppLang.set(newLocale);
+
 		if (!newLocale || $locale === newLocale) return;
 
 		// load new dictionary from server
@@ -24,10 +30,10 @@
 
 		// run the `load` function again <=== This what is making hover over the btn changes the language!!
 		// but also makes the title name not changing from lang to another!
-		// invalidateAll();
+		invalidateAll();
 
 		// to solve the title lang issue above
-		location.reload();
+		// location.reload();
 	};
 
 	// update `lang` attribute
@@ -36,12 +42,10 @@
 	// update locale when navigating via browser back/forward buttons
 	const handlePopStateEvent = async ({ state }: PopStateEvent) => switchLocale(state.locale, false);
 
-	let currentLang: string; // my addition
-
 	// update locale when page store changes
 	$: if (browser) {
 		const lang = $page.params.lang as Locales;
-		currentLang = lang; // my addition
+		// currentLang = lang; // my addition
 		switchLocale(lang, false);
 		history.replaceState(
 			{ ...history.state, locale: lang },
@@ -53,13 +57,13 @@
 
 <svelte:window on:popstate={handlePopStateEvent} />
 
-{#if currentLang === 'en'}
+{#if $currentAppLang === 'en'}
 	<button type="button" class="btn !bg-transparent h-2">
 		<a href={`${replaceLocaleInUrl($page.url, 'ar')}`} aria-label="language switch link">العربية</a>
 	</button>
 {/if}
 
-{#if currentLang === 'ar'}
+{#if $currentAppLang === 'ar'}
 	<button type="button" class="btn !bg-transparent h-2">
 		<a href={`${replaceLocaleInUrl($page.url, 'en')}`} aria-label="language switch link">English</a>
 	</button>

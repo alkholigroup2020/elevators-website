@@ -7,7 +7,7 @@
 	// Most of your app wide CSS should be put in this file
 	import '../app.postcss';
 
-	import { page } from '$app/stores';
+	// import { page } from '$app/stores';
 	import { setLocale } from '$i18n/i18n-svelte';
 	import HeadHrefLangs from '$lib/HeadHrefLangs.svelte';
 
@@ -32,6 +32,7 @@
 	const theNavData: NavData = data.cmsNavData;
 
 	import LL from '$i18n/i18n-svelte';
+	import ScrollTopButton from '$lib/generalComponents/ScrollTopButton.svelte';
 </script>
 
 <svelte:head>
@@ -41,7 +42,6 @@
 </svelte:head>
 
 <!-- bg-surface-100-800-token -->
-<!-- {$LL.veryTopNav.mobile()} -->
 <Drawer>
 	{#if $drawerStore.id === 'id-1'}
 		<nav class="space-y-4 flex flex-col p-10">
@@ -56,35 +56,32 @@
 			<a href="/" aria-label="some link" class="text-gray-500 hover:text-gray-700">Link9</a>
 		</nav>
 	{:else if $drawerStore.id === 'id-2'}
-		<!-- (show 'example-2' contents) -->
+		(show 'example-2' contents)
 	{:else}
-		<!-- (fallback contents) -->
+		(fallback contents)
 	{/if}
 </Drawer>
 
-<AppShell>
-	<!-- <svelte:fragment slot="pageHeader" /> -->
-	<VeryTopNav />
+<!-- <AppShell on:scroll={() => {}}> -->
+<!-- <svelte:fragment slot="pageHeader" /> -->
+<VeryTopNav />
 
-	<Navbar theNavbarData={theNavData} />
+<Navbar theNavbarData={theNavData} />
 
-	<!-- <svelte:fragment slot="sidebarLeft">
-		Hidden below Tailwind's large breakpoint lg:block
-		<div id="sidebar-left" class="block md:hidden">Sidebar</div>
-	</svelte:fragment> -->
+<ScrollTopButton />
 
-	<!-- Router Slot -->
-	<slot />
+<!-- Router Slot -->
+<slot />
 
-	<VeryButtonFooter />
+<VeryButtonFooter />
 
-	<!-- <svelte:fragment slot="footer">Footer</svelte:fragment> -->
-</AppShell>
+<!-- <svelte:fragment slot="footer">Footer</svelte:fragment> -->
+<!-- </AppShell> -->
 
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 
-	:global(body) {
+	/* :global(body) {
 		font-family: 'Tajawal', sans-serif;
-	}
+	} */
 </style>

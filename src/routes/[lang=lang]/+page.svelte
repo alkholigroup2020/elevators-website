@@ -17,23 +17,22 @@
 	footerFormSettingsStore.set(data.data.footerFormSettings);
 </script>
 
-<!-- <HeroSection sectionData={data.data.heroSectionDate.heroSectionData} {currentLocal} /> -->
+<HeroSection sectionData={data.data.heroSectionDate.heroSectionData} {currentLocal} />
 
-<!-- <IntroSection {currentLocal} /> -->
+<IntroSection {currentLocal} />
 
-<!-- <WelcomeSection {currentLocal} /> -->
+<WelcomeSection {currentLocal} />
 
-<!-- <ProductsSection sectionData={data.data.heroSectionDate.homeProductsArray} {currentLocal} /> -->
+<ProductsSection sectionData={data.data.heroSectionDate.homeProductsArray} {currentLocal} />
 
-<!-- <DopplerSection {currentLocal} /> -->
+<DopplerSection {currentLocal} />
 
-<!-- <ServicesSection {currentLocal} /> -->
+<ServicesSection {currentLocal} />
 
-<!-- <ProjectsSection /> -->
+<ProjectsSection />
 
-<!-- <QuoteSection /> -->
+<QuoteSection />
 
-<!-- <BrandsSection /> -->
-<div class=" h-[150px]" />
+<BrandsSection />
 
 <FooterSection {currentLocal} />

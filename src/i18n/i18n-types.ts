@@ -260,7 +260,7 @@ type RootTranslation = {
 				 */
 				fullNameNumericError: string
 				/**
-				 * y​o​u​r​ ​g​o​o​d​ ​n​a​m​e​ ​.​.​.
+				 * Y​o​u​r​ ​g​o​o​d​ ​n​a​m​e​ ​.​.​.
 				 */
 				fullNamePlaceholder: string
 				/**
@@ -272,7 +272,7 @@ type RootTranslation = {
 				 */
 				emailError: string
 				/**
-				 * e​m​a​i​l​ ​a​d​d​r​e​s​s​ ​.​.​.​ ​(​o​p​t​i​o​n​a​l​)
+				 * E​m​a​i​l​ ​a​d​d​r​e​s​s​ ​.​.​.​ ​(​o​p​t​i​o​n​a​l​)
 				 */
 				emailPlaceholder: string
 				/**
@@ -280,7 +280,7 @@ type RootTranslation = {
 				 */
 				mobileNumber: string
 				/**
-				 * m​o​b​i​l​e​ ​n​u​m​b​e​r​ ​(​0​5​x​x​x​x​x​x​x​x​)
+				 * M​o​b​i​l​e​ ​n​u​m​b​e​r​ ​(​0​5​x​x​x​x​x​x​x​x​)
 				 */
 				mobilePlaceholder: string
 				/**
@@ -292,7 +292,7 @@ type RootTranslation = {
 				 */
 				textArea: string
 				/**
-				 * e​n​t​e​r​ ​y​o​u​r​ ​m​e​s​s​a​g​e​ ​h​e​r​e​ ​.​.​.
+				 * E​n​t​e​r​ ​y​o​u​r​ ​m​e​s​s​a​g​e​ ​h​e​r​e​ ​.​.​.
 				 */
 				textAreaPlaceholder: string
 				/**
@@ -571,7 +571,7 @@ export type TranslationFunctions = {
 				 */
 				fullNameNumericError: () => LocalizedString
 				/**
-				 * your good name ...
+				 * Your good name ...
 				 */
 				fullNamePlaceholder: () => LocalizedString
 				/**
@@ -583,7 +583,7 @@ export type TranslationFunctions = {
 				 */
 				emailError: () => LocalizedString
 				/**
-				 * email address ... (optional)
+				 * Email address ... (optional)
 				 */
 				emailPlaceholder: () => LocalizedString
 				/**
@@ -591,7 +591,7 @@ export type TranslationFunctions = {
 				 */
 				mobileNumber: () => LocalizedString
 				/**
-				 * mobile number (05xxxxxxxx)
+				 * Mobile number (05xxxxxxxx)
 				 */
 				mobilePlaceholder: () => LocalizedString
 				/**
@@ -603,7 +603,7 @@ export type TranslationFunctions = {
 				 */
 				textArea: () => LocalizedString
 				/**
-				 * enter your message here ...
+				 * Enter your message here ...
 				 */
 				textAreaPlaceholder: () => LocalizedString
 				/**

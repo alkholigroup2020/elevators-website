@@ -37,7 +37,7 @@
 
 <footer class="pb-5 pt-8 bg-secondary-700 text-white">
 	<div
-		class="container mx-auto grid gap-2 md:grid-cols-5 px-8"
+		class="container mx-auto grid gap-2 lg:grid-cols-5 px-8"
 		dir={currentLocal === 'en' ? 'ltr' : 'rtl'}
 	>
 		<!-- Contact Us section -->
@@ -548,11 +548,11 @@
 		</div>
 
 		<!-- Image section -->
-		<div class="col-span-1 flex mt-auto justify-end">
+		<div class="col-span-1 flex mt-auto mb-1 lg:mb-8 justify-start lg:justify-end">
 			<img
 				src="/ISO-Certified-vector-min.webp"
 				alt="our iso certificate"
-				class="w-[150px] h-[150px] aspect-1/1"
+				class="w-[150px] h-[150px] aspect-1/1 mt-5"
 			/>
 		</div>
 	</div>

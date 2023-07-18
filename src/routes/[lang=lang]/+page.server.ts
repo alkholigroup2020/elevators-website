@@ -7,6 +7,8 @@ import { fail } from '@sveltejs/kit';
 import { z } from 'zod';
 import { superValidate } from 'sveltekit-superforms/server';
 
+import { sendEmail } from '$lib/serverFiles/emailService.js';
+
 const query = gql`
 	{
 		heroSection {
@@ -131,7 +133,6 @@ export async function load() {
 export const actions = {
 	default: async ({ request }) => {
 		const footerForm = await superValidate(request, schema);
-		console.log('POST', footerForm);
 
 		if (footerForm.data.email === undefined && footerForm.data.mobile === undefined) {
 			return fail(406, { footerForm });
@@ -141,7 +142,22 @@ export const actions = {
 			return fail(400, { footerForm });
 		}
 
-		// TODO: Do something with the validated data
+		// Prepare the email template
+		const emailTemplate = `
+			<h2>New Footer Form Submission</h2>
+			<p><strong>Name:</strong> ${footerForm.data.name}</p>
+			<p><strong>Email:</strong> ${footerForm.data.email || "Didn't provide that."}</p>
+			<p><strong>Mobile:</strong> ${footerForm.data.mobile || "Didn't provide that."}</p>
+			<p><strong>Message:</strong> ${footerForm.data.textArea}</p>
+		`;
+
+		// Send the email
+		await sendEmail(
+			'fawzy.mohamed@alkholi.com',
+			'Website Messages - Footer Form.',
+			emailTemplate,
+			emailTemplate
+		);
 
 		// reset the form values
 		footerForm.data.name = '';

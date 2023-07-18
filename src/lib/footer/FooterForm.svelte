@@ -22,7 +22,7 @@
 
 	// import SuperDebug from 'sveltekit-superforms/client/SuperDebug.svelte';
 
-	import { footerFormSettingsStore } from '../stores/store.js';
+	import { footerFormSettingsStore } from '$lib/stores/store';
 
 	let footerFormSettings;
 
@@ -77,19 +77,19 @@
 				appliedClass = 'text-success-500 pt-2';
 				setTimeout(() => {
 					formSubmitMessage = '';
-				}, 5000);
+				}, 3000);
 			} else if (result.status === 400) {
 				formSubmitMessage = `${$LL.footer.message.form.errorFeedback()}`;
 				appliedClass = 'text-error-400 pt-2';
 				setTimeout(() => {
 					formSubmitMessage = '';
-				}, 5000);
+				}, 3000);
 			} else if (result.status === 406) {
 				formSubmitMessage = `${$LL.footer.message.form.notAllowedFeedback()}`;
 				appliedClass = 'text-warning-600 pt-2';
 				setTimeout(() => {
 					formSubmitMessage = '';
-				}, 5000);
+				}, 3000);
 			}
 		}
 	});
@@ -189,7 +189,7 @@
 					type="submit"
 					class="btn variant-ghost rounded-md border border-success-800 px-8 py-[5px] text-lg mt-3"
 				>
-					<span class="px-1"
+					<span class="px-3"
 						><svg
 							xmlns="http://www.w3.org/2000/svg"
 							viewBox="0 0 32 32"

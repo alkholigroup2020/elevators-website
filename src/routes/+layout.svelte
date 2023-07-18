@@ -29,7 +29,7 @@
 	import type { NavData } from '../types/nav.type';
 	import VeryButtonFooter from '$lib/footer/VeryButtonFooter.svelte';
 
-	const theNavData: NavData = data.cmsData;
+	const theNavData: NavData = data.cmsNavData;
 
 	import LL from '$i18n/i18n-svelte';
 </script>

@@ -142,16 +142,35 @@ export const actions = {
 			return fail(400, { footerForm });
 		}
 
-		// Prepare the email template
 		const emailTemplate = `
-			<h2>New Footer Form Submission</h2>
-			<p><strong>Name:</strong> ${footerForm.data.name}</p>
-			<p><strong>Email:</strong> ${footerForm.data.email || "Didn't provide that."}</p>
-			<p><strong>Mobile:</strong> ${footerForm.data.mobile || "Didn't provide that."}</p>
-			<p><strong>Message:</strong> ${footerForm.data.textArea}</p>
+			<table align="center" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse; border: 1px solid #cccccc; margin-bottom: 25px;">
+				<tr>
+					<td bgcolor="#70bbd9" style="padding: 40px 30px 40px 30px;">
+						<img src="https://cms.buildingtec-elevators.com/uploads/logo_text_white_Small_9774aace41.png" alt="Creating Email Magic." width="210" height="45" style="display: block;" />
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="#ffffff" style="padding: 40px 30px 40px 30px;">
+						<h1>New Form Submission</h1>
+						<p style="font-size: 18px;"><strong>Name:</strong> ${footerForm.data.name}</p>
+						<p style="font-size: 18px;"><strong>Email:</strong> ${
+							footerForm.data.email || 'Did not provide that.'
+						}</p>
+						<p style="font-size: 18px;"><strong>Mobile:</strong> ${
+							footerForm.data.mobile || 'Did not provide that.'
+						}</p>
+						<p style="font-size: 18px;"><strong>Message:</strong> ${footerForm.data.textArea}</p>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="#70bbd9" style="padding: 30px 30px; color: white;">
+						<p style="color: #ffffff; font-size: 18px;">This message is sent from the footer form.</p>
+					</td>
+				</tr>
+			</table>
+			<div style="width: 50px; height: 50px;"></div>
 		`;
 
-		// Send the email
 		await sendEmail(
 			'fawzy.mohamed@alkholi.com',
 			'Website Messages - Footer Form.',

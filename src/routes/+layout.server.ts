@@ -66,8 +66,8 @@ const getHeroSectionDate = async () => {
 };
 
 export async function load({ locals: { locale } }) {
-	const cmsData = await getHeroSectionDate();
+	const cmsNavData = await getHeroSectionDate();
 
 	// pass locale information from "server-context" to "shared server + client context"
-	return { locale, cmsData };
+	return { locale, cmsNavData };
 }

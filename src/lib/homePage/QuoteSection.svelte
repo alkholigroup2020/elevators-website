@@ -10,7 +10,7 @@
 		</h2>
 	</div>
 
-	<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-12">
+	<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-16">
 		<div class="flex justify-center xl:col-start-2">
 			<a
 				class="card bg-transparent card-hover overflow-hidden shadow-md border border-surface-400 w-[360px]"

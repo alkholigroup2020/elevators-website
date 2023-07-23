@@ -186,6 +186,10 @@ type RootTranslation = {
 	}
 	quoteRequest: {
 		/**
+		 * R​e​q​u​e​s​t​ ​a​ ​Q​u​o​t​e
+		 */
+		title: string
+		/**
 		 * N​e​w​ ​E​l​e​v​a​t​o​r
 		 */
 		newElevator: string
@@ -193,6 +197,16 @@ type RootTranslation = {
 		 * M​a​i​n​t​e​n​a​n​c​e​ ​C​o​n​t​r​a​c​t
 		 */
 		newMaintenanceContract: string
+	}
+	projects: {
+		/**
+		 * O​u​r​ ​P​r​o​j​e​c​t​s
+		 */
+		title: string
+		/**
+		 * L​e​a​r​n​ ​M​o​r​e​ ​.​.​.
+		 */
+		more: string
 	}
 	footer: {
 		contact: {
@@ -308,7 +322,7 @@ type RootTranslation = {
 				 */
 				submit: string
 				/**
-				 * M​e​s​s​a​g​e​ ​s​e​n​t​ ​s​u​c​c​e​s​s​f​u​l​l​y​!
+				 * M​e​s​s​a​g​e​ ​s​e​n​t​!
 				 */
 				successFeedback: string
 				/**
@@ -497,6 +511,10 @@ export type TranslationFunctions = {
 	}
 	quoteRequest: {
 		/**
+		 * Request a Quote
+		 */
+		title: () => LocalizedString
+		/**
 		 * New Elevator
 		 */
 		newElevator: () => LocalizedString
@@ -504,6 +522,16 @@ export type TranslationFunctions = {
 		 * Maintenance Contract
 		 */
 		newMaintenanceContract: () => LocalizedString
+	}
+	projects: {
+		/**
+		 * Our Projects
+		 */
+		title: () => LocalizedString
+		/**
+		 * Learn More ...
+		 */
+		more: () => LocalizedString
 	}
 	footer: {
 		contact: {
@@ -619,7 +647,7 @@ export type TranslationFunctions = {
 				 */
 				submit: () => LocalizedString
 				/**
-				 * Message sent successfully!
+				 * Message sent!
 				 */
 				successFeedback: () => LocalizedString
 				/**

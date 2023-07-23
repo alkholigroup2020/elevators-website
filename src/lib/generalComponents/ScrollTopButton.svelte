@@ -20,7 +20,10 @@
 		<div
 			class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200 opacity-60 hover:opacity-100"
 		>
-			<button class="grid rounded-full w-[44px] md:w-[50px] h-[44px] md:h-[50px]">
+			<button
+				class="grid rounded-full w-[44px] md:w-[50px] h-[44px] md:h-[50px]"
+				aria-label="a whatsapp button"
+			>
 				<span class="justify-self-center self-center w-[45px] md:w-[52px] h-[45px] md:h-[52px]">
 					<svg
 						version="1.1"
@@ -64,6 +67,7 @@
 		>
 			<button
 				hidden={y > 800 ? false : true}
+				aria-label="a move to the top of the screen button"
 				class="bg-initial border-[5px] border-[#7AD06D] rounded-full"
 				on:click={scrollToTop}
 			>

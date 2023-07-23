@@ -62,8 +62,13 @@ const en: BaseTranslation = {
 			'Our Technician will be stand by for 24 hours / 7 days a week for any breakdown call, offering the highest possible service.'
 	},
 	quoteRequest: {
+		title: 'Request a Quote',
 		newElevator: 'New Elevator',
 		newMaintenanceContract: 'Maintenance Contract'
+	},
+	projects: {
+		title: 'Our Projects',
+		more: 'Learn More ...'
 	},
 	footer: {
 		contact: {
@@ -97,7 +102,7 @@ const en: BaseTranslation = {
 				textAreaError1: 'Message is too short!',
 				textAreaError2: 'Message is too long! Maximum 500 characters.',
 				submit: 'Send Your Message',
-				successFeedback: 'Message sent successfully!',
+				successFeedback: 'Message sent!',
 				errorFeedback: 'Something went wrong!',
 				notAllowedFeedback: 'At least an email address or a mobile number is required!'
 			}

@@ -16,19 +16,19 @@
 	footerFormSettingsStore.set(data.data.footerFormSettings);
 </script>
 
-<HeroSection sectionData={data.data.heroSectionDate.heroSectionData} />
+<HeroSection sectionData={data.data.homePageCMSData.heroSectionData} />
 
 <IntroSection />
 
 <WelcomeSection />
 
-<ProductsSection sectionData={data.data.heroSectionDate.homeProductsArray} />
+<ProductsSection sectionData={data.data.homePageCMSData.homeProductsArray} />
 
 <DopplerSection />
 
 <ServicesSection />
 
-<ProjectsSection />
+<ProjectsSection sectionData={data.data.homePageCMSData.projectsData} />
 
 <QuoteSection />
 

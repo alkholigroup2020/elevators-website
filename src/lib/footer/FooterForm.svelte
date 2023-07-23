@@ -182,8 +182,8 @@
 
 			{#if $errors.textArea}<span class="text-warning-600">{$errors.textArea}</span>{/if}
 		</div>
-		<!-- class="flex items-center" -->
-		<div>
+		<!--  -->
+		<div class="flex items-center">
 			<div>
 				<button
 					type="submit"
@@ -207,7 +207,7 @@
 				</button>
 			</div>
 			<div>
-				<p class={`${appliedClass} text-lg`}>
+				<p class={`${appliedClass} text-lg mx-3`}>
 					{formSubmitMessage}
 				</p>
 			</div>

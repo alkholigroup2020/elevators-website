@@ -62,10 +62,42 @@ const query = gql`
 				}
 			}
 		}
+		projects {
+			data {
+				attributes {
+					localizations {
+						data {
+							attributes {
+								projectTitle
+								projectDescription
+							}
+						}
+					}
+					projectTitle
+					projectDescription
+					projectTable
+					projectOrder
+					projectCover {
+						data {
+							attributes {
+								url
+							}
+						}
+					}
+					projectImages {
+						data {
+							attributes {
+								url
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 `;
 
-const getHeroSectionDate = async () => {
+const homePageData = async () => {
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	const theData: any = await request(`${CMS_URL}/graphql`, query);
 
@@ -107,9 +139,12 @@ const getHeroSectionDate = async () => {
 
 	const homeProductsArray = theData.homeProducts.data;
 
+	const projectsData = theData.projects.data;
+
 	return {
 		heroSectionData,
-		homeProductsArray
+		homeProductsArray,
+		projectsData
 	};
 };
 
@@ -121,13 +156,13 @@ const schema = z.object({
 });
 
 export async function load() {
-	const heroSectionDate = getHeroSectionDate();
+	const homePageCMSData = homePageData();
 
 	// Server API:
 	const footerFormSettings = await superValidate(schema);
 
 	// Always return { form } in load and form actions.
-	return { footerFormSettings, heroSectionDate };
+	return { footerFormSettings, homePageCMSData };
 }
 
 export const actions = {
@@ -151,13 +186,11 @@ export const actions = {
 				</tr>
 				<tr>
 					<td bgcolor="#ffffff" style="padding: 40px 30px 40px 30px;">
-						<h1>New Form Submission</h1>
+						<h1>Footer Form</h1>
 						<p style="font-size: 18px;"><strong>Name:</strong> ${footerForm.data.name}</p>
-						<p style="font-size: 18px;"><strong>Email:</strong> ${
-							footerForm.data.email || 'Did not provide that.'
-						}</p>
+						<p style="font-size: 18px;"><strong>Email:</strong> ${footerForm.data.email || 'Not provided!'}</p>
 						<p style="font-size: 18px;"><strong>Mobile:</strong> ${
-							footerForm.data.mobile || 'Did not provide that.'
+							footerForm.data.mobile || 'Not provided!'
 						}</p>
 						<p style="font-size: 18px;"><strong>Message:</strong> ${footerForm.data.textArea}</p>
 					</td>

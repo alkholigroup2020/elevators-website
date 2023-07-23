@@ -13,6 +13,8 @@
 
 	// import type { LayoutData } from './$types';
 
+	import { Modal } from '@skeletonlabs/skeleton';
+
 	export let data;
 
 	// at the very top, set the locale before you access the store
@@ -40,6 +42,8 @@
 	<meta name="description" content="An Elevators Co." />
 	<HeadHrefLangs />
 </svelte:head>
+
+<Modal />
 
 <!-- bg-surface-100-800-token -->
 <Drawer>

@@ -60,8 +60,13 @@ const en: BaseTranslation = {
 			'طاقمنا الفني على أهبة الاستعداد لخدمتكم 24 ساعة / 7 أيام في الأسبوع لإصلاح الأعطال فوراً، وتقديم أفضل خدمة ممكنة.'
 	},
 	quoteRequest: {
+		title: 'طلب عرض سعر',
 		newElevator: 'مصعد جديد',
 		newMaintenanceContract: 'عقد صيانة'
+	},
+	projects: {
+		title: 'أعمالـنا السابقة',
+		more: 'المـزيد ...'
 	},
 	footer: {
 		contact: {

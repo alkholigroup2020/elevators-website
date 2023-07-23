@@ -14,7 +14,6 @@
 		arr.sort((a, b) => a.attributes.productOrder - b.attributes.productOrder);
 		return arr;
 	}
-
 	const sortedProducts = orderByProductOrder(sectionData);
 </script>
 

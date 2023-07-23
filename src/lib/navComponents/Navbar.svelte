@@ -84,39 +84,25 @@
 							</div>
 
 							{#if $modeCurrent}
-								<img
-									class="ml-5 w-40 h-[80%] mt-auto pb-1"
-									src={`https://cms.buildingtec-elevators.com${theNavbarData.blackTextLogoURL}`}
-									alt="company's logo text"
-								/>
-								<!-- <img
-									class="ml-3 w-40 h-[80%] mt-auto"
-									src={`https://cms.buildingtec-elevators.com${theNavbarData.blackTextLogoURL}`}
-									srcset={`https://cms.buildingtec-elevators.com${theNavbarData.smBlackTextLogoURL} 300w,
-										https://cms.buildingtec-elevators.com${theNavbarData.mdBlackTextLogoURL} 600w,
-										https://cms.buildingtec-elevators.com${theNavbarData.lgBlackTextLogoURL} 1200w,`}
-									sizes="(max-width: 600px) 300px,
-										(max-width: 1200px) 600px,
-										1200px"
-									alt="company's logo text"
-								/> -->
+								<!-- w-40 h-[80%] 
+								src={`https://cms.buildingtec-elevators.com${theNavbarData.blackTextLogoURL}`}
+								src={`https://cms.buildingtec-elevators.com${theNavbarData.whiteTextLogoURL}`}
+								-->
+								<div class="mx-5 mt-1 flex items-center">
+									<img
+										class="w-full aspect-[4/1]"
+										src="/logo_text-_Small_.webp"
+										alt="company's logo text"
+									/>
+								</div>
 							{:else}
-								<img
-									class="ml-5 w-40 h-[80%] mt-auto pb-1"
-									src={`https://cms.buildingtec-elevators.com${theNavbarData.whiteTextLogoURL}`}
-									alt="company's logo text"
-								/>
-								<!-- <img
-									class="ml-3 w-40 h-[80%] mt-auto"
-									src={`https://cms.buildingtec-elevators.com${theNavbarData.whiteTextLogoURL}`}
-									srcset={`https://cms.buildingtec-elevators.com${theNavbarData.smWhiteTextLogoURL} 300w,
-										https://cms.buildingtec-elevators.com${theNavbarData.mdWhiteTextLogoURL} 600w,
-										https://cms.buildingtec-elevators.com${theNavbarData.lgWhiteTextLogoURL} 1200w,`}
-									sizes="(max-width: 600px) 300px,
-										(max-width: 1200px) 600px,
-										1200px"
-									alt="company's logo text"
-								/> -->
+								<div class="mx-5 mt-1 flex items-center">
+									<img
+										class="w-full aspect-[4/1]"
+										src="/logo_text_white-_Small_.webp"
+										alt="company's logo text"
+									/>
+								</div>
 							{/if}
 						</div>
 					{/if}

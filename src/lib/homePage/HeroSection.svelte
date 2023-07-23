@@ -49,7 +49,10 @@
 					{sectionData.enSectionMessage}
 				</h2>
 				<!-- en Call-to-action button -->
-				<button type="button" class="btn variant-filled-secondary btn-xl">
+				<button
+					type="button"
+					class="btn variant-filled-secondary border border-success-500 btn-xl text-[22px]"
+				>
 					{sectionData.enButtonText}
 				</button>
 			</div>
@@ -71,7 +74,10 @@
 					{sectionData.arSectionMessage}
 				</h2>
 				<!-- ar Call-to-action button -->
-				<button type="button" class="btn variant-filled-secondary btn-xl">
+				<button
+					type="button"
+					class="btn variant-filled-secondary border border-success-500 btn-xl text-[22px]"
+				>
 					{sectionData.arButtonText}
 				</button>
 			</div>

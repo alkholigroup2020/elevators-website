@@ -252,6 +252,7 @@
 					</div>
 				</div>
 			</div>
+
 			<div dir="ltr" class={$currentAppLang === 'ar' ? 'flex justify-end' : ''}>
 				<Accordion
 					width="w-[70%]"

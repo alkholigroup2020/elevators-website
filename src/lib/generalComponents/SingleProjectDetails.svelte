@@ -121,7 +121,7 @@
 					{/if}
 				</div>
 				<!-- table -->
-				<div>
+				<div class="mt-1 xl:mt-3">
 					<table
 						class="table-auto rounded-md border-separate border-spacing-2 border-surface-800-100-token border min-w-full"
 					>

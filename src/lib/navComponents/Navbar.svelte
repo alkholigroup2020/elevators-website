@@ -4,6 +4,7 @@
 	import { drawerStore } from '@skeletonlabs/skeleton';
 	import type { DrawerSettings } from '@skeletonlabs/skeleton';
 	import { modeCurrent } from '@skeletonlabs/skeleton';
+	import LL from '$i18n/i18n-svelte';
 
 	// : DrawerSettings
 	const drawerSettings: DrawerSettings = {
@@ -22,6 +23,28 @@
 	export let theNavbarData: NavData;
 
 	import { currentAppLang } from '$lib/stores/store';
+
+	import { goto } from '$app/navigation';
+
+	let navigate = async (event: Event) => {
+		event.preventDefault();
+
+		let targetId = (event.target as HTMLAnchorElement).hash;
+		let target = document.querySelector(targetId);
+
+		if (target) {
+			target.scrollIntoView({ behavior: 'smooth' });
+		} else {
+			// If the target doesn't exist on the current page, navigate to the homepage
+			// and then scroll to the target.
+
+			await goto(`/${$currentAppLang}`);
+			target = document.querySelector(targetId);
+			if (target) {
+				target.scrollIntoView({ behavior: 'smooth' });
+			}
+		}
+	};
 </script>
 
 <AppBar
@@ -112,16 +135,72 @@
 	</svelte:fragment>
 
 	<svelte:fragment slot="trail">
-		<nav class="hidden lg:block space-x-6">
-			<a href="/" aria-label="a link to a page #1" class="hover:text-secondary-300">Link 1</a>
-			<a href="/" aria-label="a link to a page #2" class="hover:text-secondary-300">Link 2</a>
-			<a href="/" aria-label="a link to a page #3" class="hover:text-secondary-300">Link 3</a>
-			<a href="/" aria-label="a link to a page #4" class="hover:text-secondary-300">Link 4</a>
-			<a href="/" aria-label="a link to a page #5" class="hover:text-secondary-300">Link 5</a>
-			<a href="/" aria-label="a link to a page #" class="hover:text-secondary-300">Link 6</a>
-			<a href="/" aria-label="a link to a page #1" class="hover:text-secondary-300">Link 7</a>
-			<a href="/" aria-label="a link to a page #1" class="hover:text-secondary-300">Link 8</a>
-			<a href="/" aria-label="a link to a page #1" class="hover:text-secondary-300">Link 9</a>
+		<nav class="hidden lg:block space-x-6" dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}>
+			<!-- Why I have to add ml-6 to the first link?! Arabic page only!! -->
+			<a
+				href={`/${$currentAppLang}`}
+				aria-label="a link to the home page"
+				class="hover:text-secondary-300 ml-6"
+				>{$LL.mainNav.home()}
+			</a>
+			<a
+				href={`#products`}
+				on:click={navigate}
+				aria-label="a link to the products section"
+				class="hover:text-secondary-300"
+				>{$LL.mainNav.products()}
+			</a>
+			<a
+				href={`/${$currentAppLang}/about`}
+				aria-label="a link to the about page"
+				class="hover:text-secondary-300"
+				>{$LL.mainNav.about()}
+			</a>
+			<a
+				href={`/${$currentAppLang}/cabins`}
+				aria-label="a link to the cabins page"
+				class="hover:text-secondary-300"
+				>{$LL.mainNav.cabins()}
+			</a>
+			<a
+				href={`#projects`}
+				on:click={navigate}
+				aria-label="a link to the projects section"
+				class="hover:text-secondary-300"
+				>{$LL.mainNav.projects()}
+			</a>
+			<a
+				href={`#brands`}
+				on:click={navigate}
+				aria-label="a link to the brands section"
+				class="hover:text-secondary-300"
+				>{$LL.mainNav.brands()}
+			</a>
+			<a
+				href={`/${$currentAppLang}/media`}
+				aria-label="a link to the media page"
+				class="hover:text-secondary-300"
+				>{$LL.mainNav.media()}
+			</a>
+			<a
+				href={`/${$currentAppLang}/career`}
+				aria-label="a link to the career page"
+				class="hover:text-secondary-300"
+				>{$LL.mainNav.career()}
+			</a>
+			<a
+				href={`/${$currentAppLang}/blog`}
+				aria-label="a link to the blog page"
+				class="hover:text-secondary-300"
+				>{$LL.mainNav.blog()}
+			</a>
+			<a
+				href={`#quote`}
+				on:click={navigate}
+				aria-label="a link to the quote section"
+				class="hover:text-secondary-300"
+				>{$LL.mainNav.quote()}
+			</a>
 		</nav>
 	</svelte:fragment>
 </AppBar>

@@ -2,7 +2,7 @@
 	import LL from '$i18n/i18n-svelte';
 </script>
 
-<section class="container mx-auto pb-16 px-8 md:px-4 lg:px-16 xl:px-0">
+<section id="quote" class="container mx-auto pb-16 px-8 md:px-4 lg:px-16 xl:px-0">
 	<!-- title section -->
 	<div class="text-center py-9 md:py-12 2xl:py-[70px]">
 		<h2 class="text-4xl lg:text-4xl 2xl:text-5xl font-semibold">

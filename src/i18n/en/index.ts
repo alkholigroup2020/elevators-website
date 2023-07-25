@@ -7,6 +7,18 @@ const en: BaseTranslation = {
 		jed: 'Jeddah: +966 58 025 1227',
 		email: 'info@buildingtec.com'
 	},
+	mainNav: {
+		home: 'Home',
+		products: 'Products',
+		about: 'About',
+		cabins: 'Cabins',
+		projects: 'Projects',
+		brands: 'Brands',
+		media: 'Media',
+		career: 'Career',
+		blog: 'Blog',
+		quote: 'Request a Quote'
+	},
 	modernDesign: 'Modern Designs',
 	greatIdeas: 'Great Ideas',
 	powerfulManagement: 'Powerful Management',

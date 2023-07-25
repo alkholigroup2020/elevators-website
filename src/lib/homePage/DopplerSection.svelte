@@ -4,7 +4,11 @@
 	import { currentAppLang } from '$lib/stores/store';
 </script>
 
-<section class="dopplerSection text-white py-0" dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}>
+<section
+	id="doppler"
+	class="dopplerSection text-white py-0"
+	dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}
+>
 	<div class="pb-0 max-w-[1920px] mx-auto lg:px-[80px] xl:px-[265px] 2xl:px-0">
 		<!-- title section -->
 		<div class="py-12">

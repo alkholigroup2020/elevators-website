@@ -1,4 +1,4 @@
-<section class="section-bg">
+<section class="section-bg" id="brands">
 	<div class="container mx-auto py-14 px-8 2xl:px-0">
 		<div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-2 lg:gap-5 xl:gap-12">
 			<div class="flex justify-center">

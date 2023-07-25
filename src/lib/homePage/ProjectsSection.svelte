@@ -75,7 +75,7 @@
 	}
 </script>
 
-<section class="section-bg">
+<section class="section-bg" id="projects">
 	<div class="container mx-auto pb-16 px-8 lg:px-4 2xl:px-0">
 		<!-- title section -->
 		<div class="text-center py-9 md:py-12 2xl:py-[70px]">

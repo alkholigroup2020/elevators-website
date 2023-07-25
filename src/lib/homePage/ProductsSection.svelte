@@ -1,7 +1,7 @@
 <script>
 	import LL from '$i18n/i18n-svelte';
 	import { currentAppLang } from '$lib/stores/store';
-	import SingleProduct from './products/SingleProduct.svelte';
+	import SingleProduct from '$lib/generalComponents/SingleProduct.svelte';
 	/**
 	 * @type {any}
 	 */
@@ -19,6 +19,7 @@
 
 <!-- Product section -->
 <section
+	id="products"
 	class="container mx-auto px-8 md:px-0 pb-10"
 	dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}
 >

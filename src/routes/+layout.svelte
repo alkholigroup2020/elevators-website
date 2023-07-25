@@ -13,6 +13,8 @@
 
 	// import type { LayoutData } from './$types';
 
+	import { currentAppLang } from '$lib/stores/store';
+
 	import { Modal } from '@skeletonlabs/skeleton';
 
 	export let data;
@@ -35,6 +37,28 @@
 
 	import LL from '$i18n/i18n-svelte';
 	import ScrollTopButton from '$lib/generalComponents/ScrollTopButton.svelte';
+
+	import { goto } from '$app/navigation';
+
+	let navigate = async (event: Event) => {
+		event.preventDefault();
+
+		let targetId = (event.target as HTMLAnchorElement).hash;
+		let target = document.querySelector(targetId);
+
+		if (target) {
+			target.scrollIntoView({ behavior: 'smooth' });
+		} else {
+			// If the target doesn't exist on the current page, navigate to the homepage
+			// and then scroll to the target.
+
+			await goto(`/${$currentAppLang}`);
+			target = document.querySelector(targetId);
+			if (target) {
+				target.scrollIntoView({ behavior: 'smooth' });
+			}
+		}
+	};
 </script>
 
 <svelte:head>
@@ -45,19 +69,73 @@
 
 <Modal />
 
-<!-- bg-surface-100-800-token -->
 <Drawer>
 	{#if $drawerStore.id === 'id-1'}
 		<nav class="space-y-4 flex flex-col p-10">
-			<a href="/" aria-label="some link" class="text-gray-500 hover:text-gray-700">Link1</a>
-			<a href="/" aria-label="some link" class="text-gray-500 hover:text-gray-700">Link2</a>
-			<a href="/" aria-label="some link" class="text-gray-500 hover:text-gray-700">Link3</a>
-			<a href="/" aria-label="some link" class="text-gray-500 hover:text-gray-700">Link4</a>
-			<a href="/" aria-label="some link" class="text-gray-500 hover:text-gray-700">Link5</a>
-			<a href="/" aria-label="some link" class="text-gray-500 hover:text-gray-700">Link6</a>
-			<a href="/" aria-label="some link" class="text-gray-500 hover:text-gray-700">Link7</a>
-			<a href="/" aria-label="some link" class="text-gray-500 hover:text-gray-700">Link8</a>
-			<a href="/" aria-label="some link" class="text-gray-500 hover:text-gray-700">Link9</a>
+			<a
+				href={`/${$currentAppLang}`}
+				aria-label="a link to the home page"
+				class="hover:text-secondary-300"
+				>{$LL.mainNav.home()}
+			</a>
+			<a
+				href={`#products`}
+				on:click={navigate}
+				aria-label="a link to the products section"
+				class="hover:text-secondary-300"
+				>{$LL.mainNav.products()}
+			</a>
+			<a
+				href={`/${$currentAppLang}/about`}
+				aria-label="a link to the about page"
+				class="hover:text-secondary-300"
+				>{$LL.mainNav.about()}
+			</a>
+			<a
+				href={`/${$currentAppLang}/cabins`}
+				aria-label="a link to the cabins page"
+				class="hover:text-secondary-300"
+				>{$LL.mainNav.cabins()}
+			</a>
+			<a
+				href={`#projects`}
+				on:click={navigate}
+				aria-label="a link to the projects section"
+				class="hover:text-secondary-300"
+				>{$LL.mainNav.projects()}
+			</a>
+			<a
+				href={`#brands`}
+				on:click={navigate}
+				aria-label="a link to the brands section"
+				class="hover:text-secondary-300"
+				>{$LL.mainNav.brands()}
+			</a>
+			<a
+				href={`/${$currentAppLang}/media`}
+				aria-label="a link to the media page"
+				class="hover:text-secondary-300"
+				>{$LL.mainNav.media()}
+			</a>
+			<a
+				href={`/${$currentAppLang}/career`}
+				aria-label="a link to the career page"
+				class="hover:text-secondary-300"
+				>{$LL.mainNav.career()}
+			</a>
+			<a
+				href={`/${$currentAppLang}/blog`}
+				aria-label="a link to the blog page"
+				class="hover:text-secondary-300"
+				>{$LL.mainNav.blog()}
+			</a>
+			<a
+				href={`#quote`}
+				on:click={navigate}
+				aria-label="a link to the quote section"
+				class="hover:text-secondary-300"
+				>{$LL.mainNav.quote()}
+			</a>
 		</nav>
 	{:else if $drawerStore.id === 'id-2'}
 		(show 'example-2' contents)

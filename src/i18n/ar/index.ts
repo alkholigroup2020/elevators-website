@@ -7,6 +7,18 @@ const en: BaseTranslation = {
 		jed: '+966 58 025 1227 :جــدة',
 		email: 'info@buildingtec.com'
 	},
+	mainNav: {
+		home: 'الرئيسية',
+		products: 'المنتجات',
+		about: 'عن الشركة',
+		cabins: 'كبائن',
+		projects: 'مشاريع',
+		brands: 'موديلات',
+		media: 'الوسائط',
+		career: 'وظائف',
+		blog: 'المدونة',
+		quote: 'طلب عرض سعر'
+	},
 	modernDesign: 'تصميمات حديثة',
 	greatIdeas: 'أفكار رائعة',
 	powerfulManagement: 'إدارة ماهرة',

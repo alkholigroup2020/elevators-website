@@ -32,6 +32,48 @@ type RootTranslation = {
 		 */
 		email: string
 	}
+	mainNav: {
+		/**
+		 * H​o​m​e
+		 */
+		home: string
+		/**
+		 * P​r​o​d​u​c​t​s
+		 */
+		products: string
+		/**
+		 * A​b​o​u​t
+		 */
+		about: string
+		/**
+		 * C​a​b​i​n​s
+		 */
+		cabins: string
+		/**
+		 * P​r​o​j​e​c​t​s
+		 */
+		projects: string
+		/**
+		 * B​r​a​n​d​s
+		 */
+		brands: string
+		/**
+		 * M​e​d​i​a
+		 */
+		media: string
+		/**
+		 * C​a​r​e​e​r
+		 */
+		career: string
+		/**
+		 * B​l​o​g
+		 */
+		blog: string
+		/**
+		 * R​e​q​u​e​s​t​ ​a​ ​Q​u​o​t​e
+		 */
+		quote: string
+	}
 	/**
 	 * M​o​d​e​r​n​ ​D​e​s​i​g​n​s
 	 */
@@ -356,6 +398,48 @@ export type TranslationFunctions = {
 		 * info@buildingtec.com
 		 */
 		email: () => LocalizedString
+	}
+	mainNav: {
+		/**
+		 * Home
+		 */
+		home: () => LocalizedString
+		/**
+		 * Products
+		 */
+		products: () => LocalizedString
+		/**
+		 * About
+		 */
+		about: () => LocalizedString
+		/**
+		 * Cabins
+		 */
+		cabins: () => LocalizedString
+		/**
+		 * Projects
+		 */
+		projects: () => LocalizedString
+		/**
+		 * Brands
+		 */
+		brands: () => LocalizedString
+		/**
+		 * Media
+		 */
+		media: () => LocalizedString
+		/**
+		 * Career
+		 */
+		career: () => LocalizedString
+		/**
+		 * Blog
+		 */
+		blog: () => LocalizedString
+		/**
+		 * Request a Quote
+		 */
+		quote: () => LocalizedString
 	}
 	/**
 	 * Modern Designs

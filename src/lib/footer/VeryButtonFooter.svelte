@@ -1,5 +1,11 @@
-<div class="section-bg h-[30px]">
-	<!--  -->
+<script lang="ts">
+	const currentYear = () => {
+		return new Date().getFullYear();
+	};
+</script>
+
+<div class="section-bg h-fit flex justify-center">
+	<p class="py-1 text-md">Copyright &copy; Alkholi Group {currentYear()}</p>
 </div>
 
 <style>

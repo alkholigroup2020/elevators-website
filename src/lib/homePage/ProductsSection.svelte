@@ -20,7 +20,7 @@
 <!-- Product section -->
 <section
 	id="products"
-	class="container mx-auto px-8 md:px-0 pb-10"
+	class="container mx-auto px-5 2xl:px-0 pb-10"
 	dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}
 >
 	<div>

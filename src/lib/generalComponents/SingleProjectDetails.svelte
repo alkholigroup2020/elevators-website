@@ -47,14 +47,18 @@
 	>
 		<!-- title -->
 		{#if $currentAppLang === 'en' ? true : false}
-			<h2 class="h2 px-3 py-5 mb-3">{$modalStore[0].meta.projectName}</h2>
+			<h3 class="h3 px-3 py-5 mb-3">{$modalStore[0].meta.projectName}</h3>
 		{:else}
-			<h2 class="h2 px-3 py-5 mb-3" dir="rtl">{$modalStore[0].meta.projectNameAr}</h2>
+			<h3 class="h3 px-3 py-5 mb-3" dir="rtl">{$modalStore[0].meta.projectNameAr}</h3>
 		{/if}
 
 		<div class="grid grid-cols-1 xl:grid-cols-2 pb-5">
-			<!-- carousel  -->
-			<div class="pb-8 xl:pb-0 px-0 lg:px-5 2xl:px-3 xl:order-last">
+			<!-- carousel xl:order-last -->
+			<div
+				class="pb-8 xl:pb-0 px-0 lg:px-5 2xl:px-3 {$currentAppLang === 'en'
+					? 'xl:order-last'
+					: 'order-start'}"
+			>
 				<div class="mx-auto grid grid-cols-1 items-center justify-items-center">
 					<div class="grid grid-cols-[auto_1fr_auto] gap-4 items-center w-fit">
 						<!-- Button: Left -->

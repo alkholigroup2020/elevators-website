@@ -39,7 +39,7 @@
 
 <footer class="pb-5 pt-8 bg-secondary-700 text-white">
 	<div
-		class="container mx-auto grid gap-2 lg:grid-cols-5 px-8"
+		class="container mx-auto grid gap-2 lg:grid-cols-5 px-5 2xl:px-0"
 		dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}
 	>
 		<!-- Contact Us section -->

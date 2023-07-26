@@ -1,5 +1,5 @@
 <section class="section-bg" id="brands">
-	<div class="container mx-auto py-14 px-8 2xl:px-0">
+	<div class="container mx-auto py-14 px-5 2xl:px-0">
 		<div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-2 lg:gap-5 xl:gap-12">
 			<div class="flex justify-center">
 				<div class="circle my-5">
@@ -51,12 +51,12 @@
 		/* background: rgba(var(--color-surface-400-600-token)); */
 	}
 	.circle {
-		background-color: rgb(245, 245, 245);
+		background-color: rgb(240, 240, 240);
 		width: 220px;
 		height: 110px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		border-radius: 20px;
+		border-radius: 10px;
 	}
 </style>

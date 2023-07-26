@@ -17,7 +17,7 @@ const en: BaseTranslation = {
 		media: 'الوسائط',
 		career: 'وظائف',
 		blog: 'المدونة',
-		quote: 'طلب عرض سعر'
+		quote: 'عرض سعر'
 	},
 	modernDesign: 'تصميمات حديثة',
 	greatIdeas: 'أفكار رائعة',
@@ -79,6 +79,35 @@ const en: BaseTranslation = {
 	projects: {
 		title: 'أعمالـنا السابقة',
 		more: 'المـزيد ...'
+	},
+	aboutUs: {
+		title: 'من نحن',
+		ourStory: {
+			title: 'قصتنا',
+			p1: ''
+		},
+		ourValues: {
+			title: '',
+			v1: '',
+			p1: '',
+			v2: '',
+			p2: '',
+			v3: '',
+			p3: '',
+			v4: '',
+			p4: '',
+			v5: '',
+			p5: '',
+			v6: '',
+			p6: ''
+		},
+		whyUs: {
+			title: '',
+			r1: '',
+			r2: '',
+			r3: '',
+			r4: ''
+		}
 	},
 	footer: {
 		contact: {

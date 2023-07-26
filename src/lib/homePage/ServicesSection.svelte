@@ -5,8 +5,9 @@
 	$: svgColor = $modeCurrent ? '#212121' : '#dedede';
 </script>
 
+<!-- px-8 xl:px-[240px] 2xl:px-0 -->
 <section
-	class="container mx-auto pb-10 px-8 xl:px-[240px] 2xl:px-0"
+	class="container mx-auto pb-10 px-5 2xl:px-0"
 	dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}
 >
 	<!-- title section -->

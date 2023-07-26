@@ -82,6 +82,38 @@ const en: BaseTranslation = {
 		title: 'Our Projects',
 		more: 'Learn More ...'
 	},
+	aboutUs: {
+		title: 'About Us',
+		ourStory: {
+			title: 'Our Story',
+			p1: 'Setting the standard and being recognized as the primary venue for elevator solutions, BuildingTec Elevators continuously works towards their vision of becoming the ultimate leaders in the GCC. We have built strong relations and an impressive clientele base within the Gulf and establishing relations abroad as well to form mutually beneficial partnerships that will aid in elevating Saudi Arabia’s status further as a country at the helm of spearheading technological growth. Our unified goal of success and passion for perfection is reflected both internally and externally.',
+			p2: 'We have cultivated an internal culture that has constantly placed focused on paying close attention to the fine details and ensuring our services which, not only include delivering a quality product, but also educating along the way. This has resulted in us being renowned for delivering beyond customer expectations. Through our pragmatic approach, expertise, systematic execution, and delivery of projects on time we have earned the trust and build rapport within our community that has ultimately set us apart from our competition. Throughout our dedication of providing solutions to our community, we have built strong relations and created as safe, sustainable, and comfortable environment for our community to prosper in.',
+			p3: 'Practicing as “self – motivated” attitude internally, we have also been able to harbor a culture of growth. Our employees are provided with an opportunity that service as a learning curve allowing everyone to get involved in the business aspect of the company as well. Through this, we were able to expand our operations and become a prominent contributor to Saudi Arabia’s 2030 vision.',
+			p4: 'We are also providing a platform from local talent to become pivotal members of our team, under the guidance of experts that were on boarded to elevate standards internally, to deliver uncompromised excellence externally. With our open and honest approach, commitment to serving a quality experience and product, BuildingTec Elevators is now one of the most coveted companies within the industry.'
+		},
+		ourValues: {
+			title: 'Our Values',
+			v1: 'Quality',
+			p1: 'In every step of our business.',
+			v2: 'Flexibility',
+			p2: 'Through the adjustment of the corporate mechanism to the client needs.',
+			v3: 'Credibility',
+			p3: 'We will be successful based on our experience.',
+			v4: 'Stability',
+			p4: 'Our clients feel safe through our stable operation.',
+			v5: 'Supportive',
+			p5: 'We support our associates in every step of the project.',
+			v6: 'Innovation',
+			p6: 'Experience and innovation in a single touch.'
+		},
+		whyUs: {
+			title: 'Why Choose Us?',
+			r1: 'Integrated lift solutions from design to final commissioning and after sales.',
+			r2: 'Customization Design and Manufacturing according to customer specifications and needs.',
+			r3: '24 hours /7 days per week technical support for installation and servicing of products through our call center.',
+			r4: 'Spare parts availability for all the life cycle of the product forever European Technology and Services at your door step.'
+		}
+	},
 	footer: {
 		contact: {
 			title: 'Contact Us',

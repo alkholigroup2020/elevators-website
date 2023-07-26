@@ -39,6 +39,7 @@
 	import ScrollTopButton from '$lib/generalComponents/ScrollTopButton.svelte';
 
 	import { goto } from '$app/navigation';
+	import WindowSize from '$lib/generalComponents/WindowSize.svelte';
 
 	let navigate = async (event: Event) => {
 		event.preventDefault();
@@ -66,6 +67,10 @@
 	<meta name="description" content="An Elevators Co." />
 	<HeadHrefLangs />
 </svelte:head>
+
+{#if process.env.NODE_ENV === 'development'}
+	<WindowSize />
+{/if}
 
 <Modal />
 
@@ -150,7 +155,7 @@
 
 <Navbar theNavbarData={theNavData} />
 
-<ScrollTopButton />
+<!-- <ScrollTopButton /> -->
 
 <!-- Router Slot -->
 <slot />

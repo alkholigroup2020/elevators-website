@@ -10,7 +10,7 @@
 	const drawerSettings: DrawerSettings = {
 		id: 'id-1',
 		bgDrawer: 'bg-secondary-200-700-token',
-		width: 'w-5/6 md:w-3/6',
+		width: 'w-3/6 md:w-2/6',
 		rounded: 'rounded-xl'
 		// bgBackdrop: 'bg-gradient-to-tr from-indigo-500/50 via-purple-500/50 to-pink-500/50',
 		// padding: 'p-4',
@@ -135,12 +135,15 @@
 	</svelte:fragment>
 
 	<svelte:fragment slot="trail">
-		<nav class="hidden lg:block space-x-6" dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}>
+		<nav
+			class="hidden lg:block space-x-2 xl:space-x-6"
+			dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}
+		>
 			<!-- Why I have to add ml-6 to the first link?! Arabic page only!! -->
 			<a
 				href={`/${$currentAppLang}`}
 				aria-label="a link to the home page"
-				class="hover:text-secondary-300 ml-6"
+				class="hover:text-secondary-300 ml-2 xl:ml-6"
 				>{$LL.mainNav.home()}
 			</a>
 			<a

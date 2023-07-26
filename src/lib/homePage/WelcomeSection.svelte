@@ -10,7 +10,7 @@
 	<div class="pb-0 max-w-[1920px] mx-auto">
 		<!-- title section -->
 		<div
-			class=" 2xl:text-center px-8 lg:px-[110px] xl:px-[300px] 2xl:px-0 py-9 md:py-12 2xl:py-[70px]"
+			class=" 2xl:text-center px-5 lg:px-[110px] xl:px-[300px] 2xl:px-0 py-9 md:py-12 2xl:py-[70px]"
 		>
 			<h2 class="text-4xl lg:text-4xl 2xl:text-5xl font-semibold">
 				<span>{$LL.welcomeSection.heading()}</span>
@@ -34,8 +34,8 @@
 				<!-- Right sub-column: UL with 3 li elements -->
 				<div
 					class={$currentAppLang === 'en'
-						? 'px-8 lg:px-[80px] xl:px-[270px] 2xl:px-0 2xl:-ml-8'
-						: 'px-8 lg:px-[80px] xl:px-[270px] 2xl:px-0 2xl:-mr-12'}
+						? 'px-5 lg:px-[80px] xl:px-[270px] 2xl:px-0 2xl:-ml-8'
+						: 'px-5 lg:px-[80px] xl:px-[270px] 2xl:px-0 2xl:-mr-12'}
 				>
 					<ul>
 						<li class="the-padding">
@@ -61,8 +61,8 @@
 								</div>
 								<div
 									class={$currentAppLang === 'en'
-										? 'col-start-2 col-end-9 ml-1 sm:-ml-5 md:-ml-10 lg:-ml-[40px] 2xl:ml-0'
-										: 'col-start-2 col-end-9 mr-1 sm:-mr-5 md:-mr-10 lg:-mr-[40px] 2xl:mr-0'}
+										? 'col-start-2 col-end-9 ml-3 sm:-ml-5 md:-ml-10 lg:-ml-[40px] 2xl:ml-0'
+										: 'col-start-2 col-end-9 mr-3 sm:-mr-5 md:-mr-10 lg:-mr-[40px] 2xl:mr-0'}
 								>
 									<h3
 										class="text-2xl lg:text-3xl font-medium mb-3 text-primary-500"
@@ -99,8 +99,8 @@
 								</div>
 								<div
 									class={$currentAppLang === 'en'
-										? 'col-start-2 col-end-9 ml-1 sm:-ml-5 md:-ml-10 lg:-ml-[40px] 2xl:ml-0'
-										: 'col-start-2 col-end-9 mr-1 sm:-mr-5 md:-mr-10 lg:-mr-[40px] 2xl:mr-0'}
+										? 'col-start-2 col-end-9 ml-3 sm:-ml-5 md:-ml-10 lg:-ml-[40px] 2xl:ml-0'
+										: 'col-start-2 col-end-9 mr-3 sm:-mr-5 md:-mr-10 lg:-mr-[40px] 2xl:mr-0'}
 								>
 									<h3
 										class="text-2xl lg:text-3xl font-medium mb-3 text-primary-500"
@@ -137,8 +137,8 @@
 								</div>
 								<div
 									class={$currentAppLang === 'en'
-										? 'col-start-2 col-end-9 ml-1 sm:-ml-5 md:-ml-10 lg:-ml-[40px] 2xl:ml-0'
-										: 'col-start-2 col-end-9 mr-1 sm:-mr-5 md:-mr-10 lg:-mr-[40px] 2xl:mr-0'}
+										? 'col-start-2 col-end-9 ml-3 sm:-ml-5 md:-ml-10 lg:-ml-[40px] 2xl:ml-0'
+										: 'col-start-2 col-end-9 mr-3 sm:-mr-5 md:-mr-10 lg:-mr-[40px] 2xl:mr-0'}
 								>
 									<h3
 										class="text-2xl lg:text-3xl font-medium mb-3 text-primary-500 text-custom-shadow"
@@ -158,7 +158,7 @@
 
 			<!-- Right column: YouTube video -->
 			<div
-				class="aspect-w-16 aspect-h-9 pb-12 md:pb-[60px] px-8 lg:px-[120px] xl:px-[300px] 2xl:px-0"
+				class="aspect-w-16 aspect-h-9 pb-12 md:pb-[60px] px-5 lg:px-[120px] xl:px-[300px] 2xl:px-0"
 			>
 				<YouTubeVideo videoId="mwJpEtaygys" />
 			</div>

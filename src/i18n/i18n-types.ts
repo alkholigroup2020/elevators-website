@@ -250,6 +250,110 @@ type RootTranslation = {
 		 */
 		more: string
 	}
+	aboutUs: {
+		/**
+		 * A​b​o​u​t​ ​U​s
+		 */
+		title: string
+		ourStory: {
+			/**
+			 * O​u​r​ ​S​t​o​r​y
+			 */
+			title: string
+			/**
+			 * S​e​t​t​i​n​g​ ​t​h​e​ ​s​t​a​n​d​a​r​d​ ​a​n​d​ ​b​e​i​n​g​ ​r​e​c​o​g​n​i​z​e​d​ ​a​s​ ​t​h​e​ ​p​r​i​m​a​r​y​ ​v​e​n​u​e​ ​f​o​r​ ​e​l​e​v​a​t​o​r​ ​s​o​l​u​t​i​o​n​s​,​ ​B​u​i​l​d​i​n​g​T​e​c​ ​E​l​e​v​a​t​o​r​s​ ​c​o​n​t​i​n​u​o​u​s​l​y​ ​w​o​r​k​s​ ​t​o​w​a​r​d​s​ ​t​h​e​i​r​ ​v​i​s​i​o​n​ ​o​f​ ​b​e​c​o​m​i​n​g​ ​t​h​e​ ​u​l​t​i​m​a​t​e​ ​l​e​a​d​e​r​s​ ​i​n​ ​t​h​e​ ​G​C​C​.​ ​W​e​ ​h​a​v​e​ ​b​u​i​l​t​ ​s​t​r​o​n​g​ ​r​e​l​a​t​i​o​n​s​ ​a​n​d​ ​a​n​ ​i​m​p​r​e​s​s​i​v​e​ ​c​l​i​e​n​t​e​l​e​ ​b​a​s​e​ ​w​i​t​h​i​n​ ​t​h​e​ ​G​u​l​f​ ​a​n​d​ ​e​s​t​a​b​l​i​s​h​i​n​g​ ​r​e​l​a​t​i​o​n​s​ ​a​b​r​o​a​d​ ​a​s​ ​w​e​l​l​ ​t​o​ ​f​o​r​m​ ​m​u​t​u​a​l​l​y​ ​b​e​n​e​f​i​c​i​a​l​ ​p​a​r​t​n​e​r​s​h​i​p​s​ ​t​h​a​t​ ​w​i​l​l​ ​a​i​d​ ​i​n​ ​e​l​e​v​a​t​i​n​g​ ​S​a​u​d​i​ ​A​r​a​b​i​a​’​s​ ​s​t​a​t​u​s​ ​f​u​r​t​h​e​r​ ​a​s​ ​a​ ​c​o​u​n​t​r​y​ ​a​t​ ​t​h​e​ ​h​e​l​m​ ​o​f​ ​s​p​e​a​r​h​e​a​d​i​n​g​ ​t​e​c​h​n​o​l​o​g​i​c​a​l​ ​g​r​o​w​t​h​.​ ​O​u​r​ ​u​n​i​f​i​e​d​ ​g​o​a​l​ ​o​f​ ​s​u​c​c​e​s​s​ ​a​n​d​ ​p​a​s​s​i​o​n​ ​f​o​r​ ​p​e​r​f​e​c​t​i​o​n​ ​i​s​ ​r​e​f​l​e​c​t​e​d​ ​b​o​t​h​ ​i​n​t​e​r​n​a​l​l​y​ ​a​n​d​ ​e​x​t​e​r​n​a​l​l​y​.
+			 */
+			p1: string
+			/**
+			 * W​e​ ​h​a​v​e​ ​c​u​l​t​i​v​a​t​e​d​ ​a​n​ ​i​n​t​e​r​n​a​l​ ​c​u​l​t​u​r​e​ ​t​h​a​t​ ​h​a​s​ ​c​o​n​s​t​a​n​t​l​y​ ​p​l​a​c​e​d​ ​f​o​c​u​s​e​d​ ​o​n​ ​p​a​y​i​n​g​ ​c​l​o​s​e​ ​a​t​t​e​n​t​i​o​n​ ​t​o​ ​t​h​e​ ​f​i​n​e​ ​d​e​t​a​i​l​s​ ​a​n​d​ ​e​n​s​u​r​i​n​g​ ​o​u​r​ ​s​e​r​v​i​c​e​s​ ​w​h​i​c​h​,​ ​n​o​t​ ​o​n​l​y​ ​i​n​c​l​u​d​e​ ​d​e​l​i​v​e​r​i​n​g​ ​a​ ​q​u​a​l​i​t​y​ ​p​r​o​d​u​c​t​,​ ​b​u​t​ ​a​l​s​o​ ​e​d​u​c​a​t​i​n​g​ ​a​l​o​n​g​ ​t​h​e​ ​w​a​y​.​ ​T​h​i​s​ ​h​a​s​ ​r​e​s​u​l​t​e​d​ ​i​n​ ​u​s​ ​b​e​i​n​g​ ​r​e​n​o​w​n​e​d​ ​f​o​r​ ​d​e​l​i​v​e​r​i​n​g​ ​b​e​y​o​n​d​ ​c​u​s​t​o​m​e​r​ ​e​x​p​e​c​t​a​t​i​o​n​s​.​ ​T​h​r​o​u​g​h​ ​o​u​r​ ​p​r​a​g​m​a​t​i​c​ ​a​p​p​r​o​a​c​h​,​ ​e​x​p​e​r​t​i​s​e​,​ ​s​y​s​t​e​m​a​t​i​c​ ​e​x​e​c​u​t​i​o​n​,​ ​a​n​d​ ​d​e​l​i​v​e​r​y​ ​o​f​ ​p​r​o​j​e​c​t​s​ ​o​n​ ​t​i​m​e​ ​w​e​ ​h​a​v​e​ ​e​a​r​n​e​d​ ​t​h​e​ ​t​r​u​s​t​ ​a​n​d​ ​b​u​i​l​d​ ​r​a​p​p​o​r​t​ ​w​i​t​h​i​n​ ​o​u​r​ ​c​o​m​m​u​n​i​t​y​ ​t​h​a​t​ ​h​a​s​ ​u​l​t​i​m​a​t​e​l​y​ ​s​e​t​ ​u​s​ ​a​p​a​r​t​ ​f​r​o​m​ ​o​u​r​ ​c​o​m​p​e​t​i​t​i​o​n​.​ ​T​h​r​o​u​g​h​o​u​t​ ​o​u​r​ ​d​e​d​i​c​a​t​i​o​n​ ​o​f​ ​p​r​o​v​i​d​i​n​g​ ​s​o​l​u​t​i​o​n​s​ ​t​o​ ​o​u​r​ ​c​o​m​m​u​n​i​t​y​,​ ​w​e​ ​h​a​v​e​ ​b​u​i​l​t​ ​s​t​r​o​n​g​ ​r​e​l​a​t​i​o​n​s​ ​a​n​d​ ​c​r​e​a​t​e​d​ ​a​s​ ​s​a​f​e​,​ ​s​u​s​t​a​i​n​a​b​l​e​,​ ​a​n​d​ ​c​o​m​f​o​r​t​a​b​l​e​ ​e​n​v​i​r​o​n​m​e​n​t​ ​f​o​r​ ​o​u​r​ ​c​o​m​m​u​n​i​t​y​ ​t​o​ ​p​r​o​s​p​e​r​ ​i​n​.
+			 */
+			p2: string
+			/**
+			 * P​r​a​c​t​i​c​i​n​g​ ​a​s​ ​“​s​e​l​f​ ​–​ ​m​o​t​i​v​a​t​e​d​”​ ​a​t​t​i​t​u​d​e​ ​i​n​t​e​r​n​a​l​l​y​,​ ​w​e​ ​h​a​v​e​ ​a​l​s​o​ ​b​e​e​n​ ​a​b​l​e​ ​t​o​ ​h​a​r​b​o​r​ ​a​ ​c​u​l​t​u​r​e​ ​o​f​ ​g​r​o​w​t​h​.​ ​O​u​r​ ​e​m​p​l​o​y​e​e​s​ ​a​r​e​ ​p​r​o​v​i​d​e​d​ ​w​i​t​h​ ​a​n​ ​o​p​p​o​r​t​u​n​i​t​y​ ​t​h​a​t​ ​s​e​r​v​i​c​e​ ​a​s​ ​a​ ​l​e​a​r​n​i​n​g​ ​c​u​r​v​e​ ​a​l​l​o​w​i​n​g​ ​e​v​e​r​y​o​n​e​ ​t​o​ ​g​e​t​ ​i​n​v​o​l​v​e​d​ ​i​n​ ​t​h​e​ ​b​u​s​i​n​e​s​s​ ​a​s​p​e​c​t​ ​o​f​ ​t​h​e​ ​c​o​m​p​a​n​y​ ​a​s​ ​w​e​l​l​.​ ​T​h​r​o​u​g​h​ ​t​h​i​s​,​ ​w​e​ ​w​e​r​e​ ​a​b​l​e​ ​t​o​ ​e​x​p​a​n​d​ ​o​u​r​ ​o​p​e​r​a​t​i​o​n​s​ ​a​n​d​ ​b​e​c​o​m​e​ ​a​ ​p​r​o​m​i​n​e​n​t​ ​c​o​n​t​r​i​b​u​t​o​r​ ​t​o​ ​S​a​u​d​i​ ​A​r​a​b​i​a​’​s​ ​2​0​3​0​ ​v​i​s​i​o​n​.
+			 */
+			p3: string
+			/**
+			 * W​e​ ​a​r​e​ ​a​l​s​o​ ​p​r​o​v​i​d​i​n​g​ ​a​ ​p​l​a​t​f​o​r​m​ ​f​r​o​m​ ​l​o​c​a​l​ ​t​a​l​e​n​t​ ​t​o​ ​b​e​c​o​m​e​ ​p​i​v​o​t​a​l​ ​m​e​m​b​e​r​s​ ​o​f​ ​o​u​r​ ​t​e​a​m​,​ ​u​n​d​e​r​ ​t​h​e​ ​g​u​i​d​a​n​c​e​ ​o​f​ ​e​x​p​e​r​t​s​ ​t​h​a​t​ ​w​e​r​e​ ​o​n​ ​b​o​a​r​d​e​d​ ​t​o​ ​e​l​e​v​a​t​e​ ​s​t​a​n​d​a​r​d​s​ ​i​n​t​e​r​n​a​l​l​y​,​ ​t​o​ ​d​e​l​i​v​e​r​ ​u​n​c​o​m​p​r​o​m​i​s​e​d​ ​e​x​c​e​l​l​e​n​c​e​ ​e​x​t​e​r​n​a​l​l​y​.​ ​W​i​t​h​ ​o​u​r​ ​o​p​e​n​ ​a​n​d​ ​h​o​n​e​s​t​ ​a​p​p​r​o​a​c​h​,​ ​c​o​m​m​i​t​m​e​n​t​ ​t​o​ ​s​e​r​v​i​n​g​ ​a​ ​q​u​a​l​i​t​y​ ​e​x​p​e​r​i​e​n​c​e​ ​a​n​d​ ​p​r​o​d​u​c​t​,​ ​B​u​i​l​d​i​n​g​T​e​c​ ​E​l​e​v​a​t​o​r​s​ ​i​s​ ​n​o​w​ ​o​n​e​ ​o​f​ ​t​h​e​ ​m​o​s​t​ ​c​o​v​e​t​e​d​ ​c​o​m​p​a​n​i​e​s​ ​w​i​t​h​i​n​ ​t​h​e​ ​i​n​d​u​s​t​r​y​.
+			 */
+			p4: string
+		}
+		ourValues: {
+			/**
+			 * O​u​r​ ​V​a​l​u​e​s
+			 */
+			title: string
+			/**
+			 * Q​u​a​l​i​t​y
+			 */
+			v1: string
+			/**
+			 * I​n​ ​e​v​e​r​y​ ​s​t​e​p​ ​o​f​ ​o​u​r​ ​b​u​s​i​n​e​s​s​.
+			 */
+			p1: string
+			/**
+			 * F​l​e​x​i​b​i​l​i​t​y
+			 */
+			v2: string
+			/**
+			 * T​h​r​o​u​g​h​ ​t​h​e​ ​a​d​j​u​s​t​m​e​n​t​ ​o​f​ ​t​h​e​ ​c​o​r​p​o​r​a​t​e​ ​m​e​c​h​a​n​i​s​m​ ​t​o​ ​t​h​e​ ​c​l​i​e​n​t​ ​n​e​e​d​s​.
+			 */
+			p2: string
+			/**
+			 * C​r​e​d​i​b​i​l​i​t​y
+			 */
+			v3: string
+			/**
+			 * W​e​ ​w​i​l​l​ ​b​e​ ​s​u​c​c​e​s​s​f​u​l​ ​b​a​s​e​d​ ​o​n​ ​o​u​r​ ​e​x​p​e​r​i​e​n​c​e​.
+			 */
+			p3: string
+			/**
+			 * S​t​a​b​i​l​i​t​y
+			 */
+			v4: string
+			/**
+			 * O​u​r​ ​c​l​i​e​n​t​s​ ​f​e​e​l​ ​s​a​f​e​ ​t​h​r​o​u​g​h​ ​o​u​r​ ​s​t​a​b​l​e​ ​o​p​e​r​a​t​i​o​n​.
+			 */
+			p4: string
+			/**
+			 * S​u​p​p​o​r​t​i​v​e
+			 */
+			v5: string
+			/**
+			 * W​e​ ​s​u​p​p​o​r​t​ ​o​u​r​ ​a​s​s​o​c​i​a​t​e​s​ ​i​n​ ​e​v​e​r​y​ ​s​t​e​p​ ​o​f​ ​t​h​e​ ​p​r​o​j​e​c​t​.
+			 */
+			p5: string
+			/**
+			 * I​n​n​o​v​a​t​i​o​n
+			 */
+			v6: string
+			/**
+			 * E​x​p​e​r​i​e​n​c​e​ ​a​n​d​ ​i​n​n​o​v​a​t​i​o​n​ ​i​n​ ​a​ ​s​i​n​g​l​e​ ​t​o​u​c​h​.
+			 */
+			p6: string
+		}
+		whyUs: {
+			/**
+			 * W​h​y​ ​C​h​o​o​s​e​ ​U​s​?
+			 */
+			title: string
+			/**
+			 * I​n​t​e​g​r​a​t​e​d​ ​l​i​f​t​ ​s​o​l​u​t​i​o​n​s​ ​f​r​o​m​ ​d​e​s​i​g​n​ ​t​o​ ​f​i​n​a​l​ ​c​o​m​m​i​s​s​i​o​n​i​n​g​ ​a​n​d​ ​a​f​t​e​r​ ​s​a​l​e​s​.
+			 */
+			r1: string
+			/**
+			 * C​u​s​t​o​m​i​z​a​t​i​o​n​ ​D​e​s​i​g​n​ ​a​n​d​ ​M​a​n​u​f​a​c​t​u​r​i​n​g​ ​a​c​c​o​r​d​i​n​g​ ​t​o​ ​c​u​s​t​o​m​e​r​ ​s​p​e​c​i​f​i​c​a​t​i​o​n​s​ ​a​n​d​ ​n​e​e​d​s​.
+			 */
+			r2: string
+			/**
+			 * 2​4​ ​h​o​u​r​s​ ​/​7​ ​d​a​y​s​ ​p​e​r​ ​w​e​e​k​ ​t​e​c​h​n​i​c​a​l​ ​s​u​p​p​o​r​t​ ​f​o​r​ ​i​n​s​t​a​l​l​a​t​i​o​n​ ​a​n​d​ ​s​e​r​v​i​c​i​n​g​ ​o​f​ ​p​r​o​d​u​c​t​s​ ​t​h​r​o​u​g​h​ ​o​u​r​ ​c​a​l​l​ ​c​e​n​t​e​r​.
+			 */
+			r3: string
+			/**
+			 * S​p​a​r​e​ ​p​a​r​t​s​ ​a​v​a​i​l​a​b​i​l​i​t​y​ ​f​o​r​ ​a​l​l​ ​t​h​e​ ​l​i​f​e​ ​c​y​c​l​e​ ​o​f​ ​t​h​e​ ​p​r​o​d​u​c​t​ ​f​o​r​e​v​e​r​ ​E​u​r​o​p​e​a​n​ ​T​e​c​h​n​o​l​o​g​y​ ​a​n​d​ ​S​e​r​v​i​c​e​s​ ​a​t​ ​y​o​u​r​ ​d​o​o​r​ ​s​t​e​p​.
+			 */
+			r4: string
+		}
+	}
 	footer: {
 		contact: {
 			/**
@@ -616,6 +720,110 @@ export type TranslationFunctions = {
 		 * Learn More ...
 		 */
 		more: () => LocalizedString
+	}
+	aboutUs: {
+		/**
+		 * About Us
+		 */
+		title: () => LocalizedString
+		ourStory: {
+			/**
+			 * Our Story
+			 */
+			title: () => LocalizedString
+			/**
+			 * Setting the standard and being recognized as the primary venue for elevator solutions, BuildingTec Elevators continuously works towards their vision of becoming the ultimate leaders in the GCC. We have built strong relations and an impressive clientele base within the Gulf and establishing relations abroad as well to form mutually beneficial partnerships that will aid in elevating Saudi Arabia’s status further as a country at the helm of spearheading technological growth. Our unified goal of success and passion for perfection is reflected both internally and externally.
+			 */
+			p1: () => LocalizedString
+			/**
+			 * We have cultivated an internal culture that has constantly placed focused on paying close attention to the fine details and ensuring our services which, not only include delivering a quality product, but also educating along the way. This has resulted in us being renowned for delivering beyond customer expectations. Through our pragmatic approach, expertise, systematic execution, and delivery of projects on time we have earned the trust and build rapport within our community that has ultimately set us apart from our competition. Throughout our dedication of providing solutions to our community, we have built strong relations and created as safe, sustainable, and comfortable environment for our community to prosper in.
+			 */
+			p2: () => LocalizedString
+			/**
+			 * Practicing as “self – motivated” attitude internally, we have also been able to harbor a culture of growth. Our employees are provided with an opportunity that service as a learning curve allowing everyone to get involved in the business aspect of the company as well. Through this, we were able to expand our operations and become a prominent contributor to Saudi Arabia’s 2030 vision.
+			 */
+			p3: () => LocalizedString
+			/**
+			 * We are also providing a platform from local talent to become pivotal members of our team, under the guidance of experts that were on boarded to elevate standards internally, to deliver uncompromised excellence externally. With our open and honest approach, commitment to serving a quality experience and product, BuildingTec Elevators is now one of the most coveted companies within the industry.
+			 */
+			p4: () => LocalizedString
+		}
+		ourValues: {
+			/**
+			 * Our Values
+			 */
+			title: () => LocalizedString
+			/**
+			 * Quality
+			 */
+			v1: () => LocalizedString
+			/**
+			 * In every step of our business.
+			 */
+			p1: () => LocalizedString
+			/**
+			 * Flexibility
+			 */
+			v2: () => LocalizedString
+			/**
+			 * Through the adjustment of the corporate mechanism to the client needs.
+			 */
+			p2: () => LocalizedString
+			/**
+			 * Credibility
+			 */
+			v3: () => LocalizedString
+			/**
+			 * We will be successful based on our experience.
+			 */
+			p3: () => LocalizedString
+			/**
+			 * Stability
+			 */
+			v4: () => LocalizedString
+			/**
+			 * Our clients feel safe through our stable operation.
+			 */
+			p4: () => LocalizedString
+			/**
+			 * Supportive
+			 */
+			v5: () => LocalizedString
+			/**
+			 * We support our associates in every step of the project.
+			 */
+			p5: () => LocalizedString
+			/**
+			 * Innovation
+			 */
+			v6: () => LocalizedString
+			/**
+			 * Experience and innovation in a single touch.
+			 */
+			p6: () => LocalizedString
+		}
+		whyUs: {
+			/**
+			 * Why Choose Us?
+			 */
+			title: () => LocalizedString
+			/**
+			 * Integrated lift solutions from design to final commissioning and after sales.
+			 */
+			r1: () => LocalizedString
+			/**
+			 * Customization Design and Manufacturing according to customer specifications and needs.
+			 */
+			r2: () => LocalizedString
+			/**
+			 * 24 hours /7 days per week technical support for installation and servicing of products through our call center.
+			 */
+			r3: () => LocalizedString
+			/**
+			 * Spare parts availability for all the life cycle of the product forever European Technology and Services at your door step.
+			 */
+			r4: () => LocalizedString
+		}
 	}
 	footer: {
 		contact: {

@@ -60,6 +60,8 @@
 			}
 		}
 	};
+
+	$: devOrProduction = process.env.NODE_ENV === 'development' ? true : false;
 </script>
 
 <svelte:head>
@@ -68,7 +70,7 @@
 	<HeadHrefLangs />
 </svelte:head>
 
-{#if process.env.NODE_ENV === 'development'}
+{#if devOrProduction}
 	<WindowSize />
 {/if}
 

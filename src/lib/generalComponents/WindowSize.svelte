@@ -2,7 +2,7 @@
 	import { onMount, onDestroy } from 'svelte';
 
 	// Define the breakpoints as specified in your Tailwind CSS configuration
-	const breakpoints = {
+	const breakpoints: any = {
 		sm: 640,
 		md: 768,
 		lg: 1024,

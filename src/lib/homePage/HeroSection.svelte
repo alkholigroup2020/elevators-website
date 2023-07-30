@@ -54,7 +54,7 @@
 				src={items.w2000.url}
 				srcset={`${items.w650.url} 640w,${items.w800.url} 768w, ${items.w1200.url} 1024w, ${items.w1400.url} 1280w, ${items.w1600.url} 1536w, ${items.w2000.url} 99999w`}
 				alt={`Our values hero`}
-				appliedClass={`w-full aspect-[1/1] sm:aspect-[1/0.7] md:aspect-[1/0.7] lg:aspect-[1/0.5] xl:aspect-[1/0.45] 2xl:aspect-[1/0.33] opacity-0 transition-opacity duration-1000 ease-in-out`}
+				appliedClass={`w-full aspect-[1/1] sm:aspect-[1/0.7] md:aspect-[1/0.7] lg:aspect-[1/0.5] xl:aspect-[1/0.45] 2xl:aspect-[1/0.33]`}
 			/>
 		{:catch error}
 			<p style="color: red">{error.message}</p>

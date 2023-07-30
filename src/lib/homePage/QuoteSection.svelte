@@ -58,7 +58,7 @@
 							<LazyImage
 								src={items.newElevatorImage.url}
 								alt={`A new elevator image`}
-								appliedClass={`w-full aspect-[1/0.7] opacity-0 transition-opacity duration-3000 ease-in-out`}
+								appliedClass={`w-full aspect-[1/0.7]`}
 							/>
 						{:catch error}
 							<p style="color: red">{error.message}</p>
@@ -91,7 +91,7 @@
 						<LazyImage
 							src={items.newContract.url}
 							alt={`A new maintenance image.`}
-							appliedClass={`w-full aspect-[1/0.7] opacity-0 transition-opacity duration-3000 ease-in-out`}
+							appliedClass={`w-full aspect-[1/0.7]`}
 						/>
 					{:catch error}
 						<p style="color: red">{error.message}</p>

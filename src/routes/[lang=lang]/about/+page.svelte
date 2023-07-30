@@ -159,7 +159,7 @@
 						src={items.w2000.url}
 						srcset={`${items.w800.url} 768w, ${items.w1600.url} 1536w, ${items.w2000.url} 8000w`}
 						alt={`About us page background`}
-						appliedClass={`w-full lg:p-16 xl:p-0 aspect-[1/0.6] md:aspect-[1/0.7] xl:aspect-[1/0.75] opacity-0 transition-opacity duration-3000 ease-in-out`}
+						appliedClass={`w-full lg:p-16 xl:p-0 aspect-[1/0.6] md:aspect-[1/0.7] xl:aspect-[1/0.75]`}
 					/>
 				{:catch error}
 					<p style="color: red">{error.message}</p>
@@ -215,7 +215,7 @@
 							<LazyImage
 								src={items.w400.url}
 								alt={`Our values hero`}
-								appliedClass={`w-full aspect-[1/1] opacity-0 transition-opacity duration-3000 ease-in-out`}
+								appliedClass={`w-full aspect-[1/1]`}
 							/>
 						{:catch error}
 							<p style="color: red">{error.message}</p>
@@ -278,7 +278,7 @@
 								src={items.w800.url}
 								srcset={`${items.w600.url} 768w, ${items.w800.url} 8000w`}
 								alt={`Why choose us image`}
-								appliedClass={`w-full aspect-[1/0.7] md:aspect-[1/0.6] opacity-0 transition-opacity duration-3000 ease-in-out`}
+								appliedClass={`w-full aspect-[1/0.7] md:aspect-[1/0.6]`}
 							/>
 						{:catch error}
 							<p style="color: red">{error.message}</p>

@@ -47,7 +47,7 @@
 						<LazyImage
 							src={items.image.url}
 							alt={`welcome section hero`}
-							appliedClass={`w-full aspect-[1/1.3] opacity-0 transition-opacity duration-3000 ease-in-out`}
+							appliedClass={`w-full aspect-[1/1.3]`}
 						/>
 					{:catch error}
 						<p style="color: red">{error.message}</p>

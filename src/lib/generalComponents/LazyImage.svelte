@@ -7,10 +7,3 @@
 </script>
 
 <img use:lazyLoad={src} {alt} class={appliedClass} {srcset} />
-
-<style>
-	/* img {
-		opacity: 0;
-		transition: opacity 5s ease;
-	} */
-</style>

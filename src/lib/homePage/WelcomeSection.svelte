@@ -2,8 +2,25 @@
 <script>
 	import LL from '$i18n/i18n-svelte';
 	import YouTubeVideo from '.././generalComponents/YouTubeVideo.svelte';
+	import LazyImage from '$lib/generalComponents/LazyImage.svelte';
 
 	import { currentAppLang } from '$lib/stores/store';
+
+	async function fetchImage() {
+		const response = await fetch('/img-welcome-min_600x780.webp');
+
+		// Handling HTTP error status
+		if (!response.ok) {
+			const message = `An error has occurred: ${response.status}`;
+			throw new Error(message);
+		}
+
+		const result = {
+			image: response
+		};
+
+		return result;
+	}
 </script>
 
 <section class="welcomeSection text-white py-0" dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}>
@@ -23,12 +40,18 @@
 			<!-- Left column: Image and UL -->
 			<div class="grid 2xl:grid-cols-2 pb-8 2xl:pb-0 gap-4 lg:px-8">
 				<!-- Left sub-column: Image -->
-				<div class="relative hidden 2xl:block">
-					<img
-						src="/img-welcome-min.webp"
-						alt="description"
-						class="w-[85%] h-full pt-[40px] 2xl:pt-[60px] object-cover"
-					/>
+				<div class="relative hidden 2xl:block mt-auto">
+					{#await fetchImage()}
+						<div class="placeholder animate-pulse rounded-lg h-[200px]" />
+					{:then items}
+						<LazyImage
+							src={items.image.url}
+							alt={`welcome section hero`}
+							appliedClass={`w-full aspect-[1/1.3] opacity-0 transition-opacity duration-3000 ease-in-out`}
+						/>
+					{:catch error}
+						<p style="color: red">{error.message}</p>
+					{/await}
 				</div>
 
 				<!-- Right sub-column: UL with 3 li elements -->

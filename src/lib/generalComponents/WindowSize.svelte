@@ -3,6 +3,7 @@
 
 	// Define the breakpoints as specified in your Tailwind CSS configuration
 	const breakpoints: any = {
+		xs: 0,
 		sm: 640,
 		md: 768,
 		lg: 1024,
@@ -30,8 +31,10 @@
 	});
 </script>
 
-<div class="fixed top-10 right-10 bg-opacity-50 bg-white text-black p-2 rounded z-[999]">
-	<p>Width: {dimensions.width}px</p>
-	<p>Height: {dimensions.height}px</p>
-	<p>Breakpoint: {currentBreakpoint}</p>
+<div
+	class="fixed bottom-1 left-1 bg-opacity-60 bg-blue-700 text-white text-center p-5 rounded-full z-[999] h-fit w-fit"
+>
+	<p class="text-xl">W: {dimensions.width}px</p>
+	<p class="text-xl">H: {dimensions.height}px</p>
+	<p class="text-3xl">{currentBreakpoint}</p>
 </div>

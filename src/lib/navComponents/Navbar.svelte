@@ -6,6 +6,8 @@
 	import { modeCurrent } from '@skeletonlabs/skeleton';
 	import LL from '$i18n/i18n-svelte';
 
+	import LazyImage from '$lib/generalComponents/LazyImage.svelte';
+
 	// : DrawerSettings
 	const drawerSettings: DrawerSettings = {
 		id: 'id-1',
@@ -45,15 +47,60 @@
 			}
 		}
 	};
+
+	async function fetchLogoImage() {
+		const response = await fetch('/logo_60x90.webp');
+
+		// Handling HTTP error status
+		if (!response.ok) {
+			const message = `An error has occurred: ${response.status}`;
+			throw new Error(message);
+		}
+
+		const result = {
+			w40: response
+		};
+
+		return result;
+	}
+	async function fetchLogoTextImages() {
+		// An array of URLs
+		const urls = ['/logo_text_black_240x60.webp', '/logo_text_white_240x60.webp'];
+
+		// Create an array of fetch promises
+		const fetchPromises = urls.map((url) => fetch(url));
+
+		try {
+			// Use Promise.all to wait until all fetch requests are completed
+			const responses = await Promise.all(fetchPromises);
+
+			// Check if any of the responses have an error
+			if (responses.some((response) => !response.ok)) {
+				throw new Error('Something Went Wrong!');
+			}
+
+			// Construct the result object
+			const result = {
+				black: responses[0],
+				white: responses[1]
+			};
+
+			return result;
+		} catch (error) {
+			console.error(error);
+			throw new Error('Something Went Wrong!');
+		}
+	}
 </script>
 
 <AppBar
-	background="bg-surface-50-800-token text-secondary-800-100-token text-lg"
+	background="bg-surface-50-800-token text-secondary-800-100-token text-lg py-0"
 	shadow="shadow-md"
 	regionRowMain="container mx-auto"
 >
 	<svelte:fragment slot="lead">
 		<div class="flex">
+			<!-- hamburger btn -->
 			<button
 				class="lg:hidden mt-2"
 				aria-label="a button to open the side drawer"
@@ -83,50 +130,48 @@
 				</span>
 			</button>
 
-			<div class="ml-5 lg:ml-0">
+			<div class="ml-3 lg:ml-0">
 				<a href={`/${$currentAppLang}`} aria-label="a link to the home page">
 					{#if theNavbarData !== undefined}
-						<div class="flex max-h-12">
-							<div class="aspect-w-603 aspect-h-1181 -mt-1">
-								<!-- <img
-									class="w-7 h-[105%] object-cover"
-									src={`https://cms.buildingtec-elevators.com${theNavbarData.logoImageURL}`}
-									srcset={`https://cms.buildingtec-elevators.com${theNavbarData.smLogoImageURL} 300w,
-										https://cms.buildingtec-elevators.com${theNavbarData.mdLogoImageURL} 600w,
-										https://cms.buildingtec-elevators.com${theNavbarData.lgLogoImageURL} 1200w,`}
-									sizes="(max-width: 600px) 300px,
-										(max-width: 1200px) 600px,
-										1200px"
-									alt="company's logo"
-								/> -->
-								<img
-									class="w-7 h-[105%] object-cover"
-									src={`https://cms.buildingtec-elevators.com${theNavbarData.logoImageURL}`}
-									alt="company's logo"
-								/>
+						<div class="flex">
+							<div class="py-3">
+								<!-- logo -->
+								{#await fetchLogoImage()}
+									<div class="placeholder animate-pulse rounded-lg h-[200px]" />
+								{:then items}
+									<LazyImage
+										src={items.w40.url}
+										alt={`company's logo`}
+										appliedClass={`w-full max-h-12 aspect-[2/3]`}
+									/>
+								{:catch error}
+									<p style="color: red">{error.message}</p>
+								{/await}
 							</div>
 
-							{#if $modeCurrent}
-								<!-- w-40 h-[80%] 
-								src={`https://cms.buildingtec-elevators.com${theNavbarData.blackTextLogoURL}`}
-								src={`https://cms.buildingtec-elevators.com${theNavbarData.whiteTextLogoURL}`}
-								-->
-								<div class="mx-5 mt-1 flex items-center">
-									<img
-										class="w-full aspect-[4/1]"
-										src="/logo_text-_Small_.webp"
-										alt="company's logo text"
-									/>
+							<div class="flex items-end pb-4 ml-3">
+								<div>
+									{#await fetchLogoTextImages()}
+										<div class="placeholder animate-pulse rounded-lg h-[200px]" />
+									{:then items}
+										{#if $modeCurrent}
+											<LazyImage
+												src={items.black.url}
+												alt={`company's logo`}
+												appliedClass={`w-full aspect-[4/1] max-h-9`}
+											/>
+										{:else}
+											<LazyImage
+												src={items.white.url}
+												alt={`company's logo`}
+												appliedClass={`w-full aspect-[4/1] max-h-9`}
+											/>
+										{/if}
+									{:catch error}
+										<p style="color: red">{error.message}</p>
+									{/await}
 								</div>
-							{:else}
-								<div class="mx-5 mt-1 flex items-center">
-									<img
-										class="w-full aspect-[4/1]"
-										src="/logo_text_white-_Small_.webp"
-										alt="company's logo text"
-									/>
-								</div>
-							{/if}
+							</div>
 						</div>
 					{/if}
 				</a>

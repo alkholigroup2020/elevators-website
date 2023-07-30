@@ -1,25 +1,8 @@
-<script>
+<script lang="ts">
 	import FooterSection from '$lib/footer/FooterSection.svelte';
 	import LL from '$i18n/i18n-svelte';
 	import LazyImage from '$lib/generalComponents/LazyImage.svelte';
 	import { currentAppLang } from '$lib/stores/store';
-	import { onMount } from 'svelte';
-
-	/**
-	 * @type {Element}
-	 */
-	let imageHolder; // This will hold the reference to the second div
-	let dimensions = { width: 0, height: 0 };
-
-	onMount(() => {
-		const resizeObserver = new ResizeObserver((entries) => {
-			for (let entry of entries) {
-				dimensions = entry.contentRect;
-			}
-		});
-
-		resizeObserver.observe(imageHolder);
-	});
 
 	async function fetchHeaderData() {
 		const w800 = await fetch('/about-us/header/About us Final_800x400.webp');
@@ -287,15 +270,6 @@
 
 			<div>
 				<div>
-					<!-- <div bind:this={imageHolder} class="relative">
-						<div
-							class="absolute left-1 top-1 rounded-md p-3 opacity-50 text-2xl text-white bg-black z-[999]"
-						>
-							<p>Width: {Math.round(dimensions.width)}px</p>
-							<p>Height: {Math.round(dimensions.height)}px</p>
-						</div>
-					</div> -->
-
 					<div>
 						{#await fetchWhyUsData()}
 							<div class="placeholder animate-pulse rounded-lg h-[200px]" />

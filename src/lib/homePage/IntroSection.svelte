@@ -137,7 +137,7 @@
 					</svg>
 				</span>
 			</div>
-			<h3 class="mt-5 mb-2 lg:mb-0 h3 font-semibold">{$LL.modernDesign()}</h3>
+			<p class="mt-5 mb-2 lg:mb-0 h3 font-semibold">{$LL.modernDesign()}</p>
 			<p
 				class="text-center lg:text-justify pt-5 px-2 md:px-[50px] lg:px-1 2xl:px-10 text-xl leading-9"
 			>
@@ -196,7 +196,7 @@
 					>
 				</span>
 			</div>
-			<h3 class="mt-5 mb-2 lg:mb-0 h3 font-semibold">{$LL.greatIdeas()}</h3>
+			<p class="mt-5 mb-2 lg:mb-0 h3 font-semibold">{$LL.greatIdeas()}</p>
 			<p
 				class="text-center lg:text-justify pt-5 px-2 md:px-[50px] lg:px-1 2xl:px-10 text-xl leading-9"
 			>
@@ -280,7 +280,7 @@
 					</svg>
 				</span>
 			</div>
-			<h3 class="mt-5 mb-2 lg:mb-0 h3 font-semibold">{$LL.powerfulManagement()}</h3>
+			<p class="mt-5 mb-2 lg:mb-0 h3 font-semibold">{$LL.powerfulManagement()}</p>
 			<p
 				class="text-center lg:text-justify pt-5 px-2 md:px-[50px] lg:px-1 2xl:px-10 text-xl leading-9"
 			>

@@ -1,12 +1,10 @@
 <script lang="ts">
-	import { browser } from '$app/environment';
+	// import { browser } from '$app/environment';
 	import { AppBar } from '@skeletonlabs/skeleton';
 	import { drawerStore } from '@skeletonlabs/skeleton';
 	import type { DrawerSettings } from '@skeletonlabs/skeleton';
 	import { modeCurrent } from '@skeletonlabs/skeleton';
 	import LL from '$i18n/i18n-svelte';
-
-	import LazyImage from '$lib/generalComponents/LazyImage.svelte';
 
 	// : DrawerSettings
 	const drawerSettings: DrawerSettings = {
@@ -20,9 +18,9 @@
 
 	$: hamburgerIconColor = $modeCurrent ? '#212121' : '#d3d3d3';
 
-	import type { NavData } from '../../types/nav.type';
+	// import type { NavData } from '../../types/nav.type';
 
-	export let theNavbarData: NavData;
+	// export let theNavbarData: NavData;
 
 	import { currentAppLang } from '$lib/stores/store';
 
@@ -47,50 +45,6 @@
 			}
 		}
 	};
-
-	async function fetchLogoImage() {
-		const response = await fetch('/logo_60x90.webp');
-
-		// Handling HTTP error status
-		if (!response.ok) {
-			const message = `An error has occurred: ${response.status}`;
-			throw new Error(message);
-		}
-
-		const result = {
-			w40: response
-		};
-
-		return result;
-	}
-	async function fetchLogoTextImages() {
-		// An array of URLs
-		const urls = ['/logo_text_black_240x60.webp', '/logo_text_white_240x60.webp'];
-
-		// Create an array of fetch promises
-		const fetchPromises = urls.map((url) => fetch(url));
-
-		try {
-			// Use Promise.all to wait until all fetch requests are completed
-			const responses = await Promise.all(fetchPromises);
-
-			// Check if any of the responses have an error
-			if (responses.some((response) => !response.ok)) {
-				throw new Error('Something Went Wrong!');
-			}
-
-			// Construct the result object
-			const result = {
-				black: responses[0],
-				white: responses[1]
-			};
-
-			return result;
-		} catch (error) {
-			console.error(error);
-			throw new Error('Something Went Wrong!');
-		}
-	}
 </script>
 
 <AppBar
@@ -132,48 +86,38 @@
 
 			<div class="ml-3 lg:ml-0">
 				<a href={`/${$currentAppLang}`} aria-label="a link to the home page">
-					{#if theNavbarData !== undefined}
-						<div class="flex">
-							<div class="py-3">
-								<!-- logo -->
-								{#await fetchLogoImage()}
-									<div class="placeholder animate-pulse rounded-lg h-[200px]" />
-								{:then items}
-									<LazyImage
-										src={items.w40.url}
-										alt={`company's logo`}
-										appliedClass={`w-full max-h-12 aspect-[2/3]`}
-									/>
-								{:catch error}
-									<p style="color: red">{error.message}</p>
-								{/await}
-							</div>
+					<div class="flex">
+						<div class="py-3">
+							<!-- logo -->
+							<img
+								loading="lazy"
+								src="/logo_60x90.webp"
+								alt="company's logo"
+								class="w-full max-h-12 aspect-[2/3]"
+							/>
+						</div>
 
-							<div class="flex items-end pb-4 ml-3">
-								<div>
-									{#await fetchLogoTextImages()}
-										<div class="placeholder animate-pulse rounded-lg h-[200px]" />
-									{:then items}
-										{#if $modeCurrent}
-											<LazyImage
-												src={items.black.url}
-												alt={`company's logo`}
-												appliedClass={`w-full aspect-[4/1] max-h-9`}
-											/>
-										{:else}
-											<LazyImage
-												src={items.white.url}
-												alt={`company's logo`}
-												appliedClass={`w-full aspect-[4/1] max-h-9`}
-											/>
-										{/if}
-									{:catch error}
-										<p style="color: red">{error.message}</p>
-									{/await}
-								</div>
+						<div class="flex items-end pb-4 ml-3">
+							<div>
+								<!-- '/logo_text_black_240x60.webp', '/logo_text_white_240x60.webp' -->
+								{#if $modeCurrent}
+									<img
+										loading="lazy"
+										src="/logo_text_black_240x60.webp"
+										alt="company's logo"
+										class="w-full aspect-[4/1] max-h-9"
+									/>
+								{:else}
+									<img
+										loading="lazy"
+										src="/logo_text_white_240x60.webp"
+										alt="company's logo"
+										class="w-full aspect-[4/1] max-h-9"
+									/>
+								{/if}
 							</div>
 						</div>
-					{/if}
+					</div>
 				</a>
 			</div>
 		</div>

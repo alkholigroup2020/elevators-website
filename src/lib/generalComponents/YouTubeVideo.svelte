@@ -18,7 +18,7 @@
 
 		// Create the IntersectionObserver instance with the callback and options
 		const observer: IntersectionObserver = new IntersectionObserver(handleIntersect, {
-			threshold: 0.1 // Adjust this value to control when the iframe should load (0.5 means 50% of the element is visible)
+			threshold: 0.25 // Adjust this value to control when the iframe should load (0.5 means 50% of the element is visible)
 		});
 
 		// Start observing the videoContainer element

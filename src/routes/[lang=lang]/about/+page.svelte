@@ -1,128 +1,20 @@
 <script lang="ts">
 	import FooterSection from '$lib/footer/FooterSection.svelte';
 	import LL from '$i18n/i18n-svelte';
-	import LazyImage from '$lib/generalComponents/LazyImage.svelte';
 	import { currentAppLang } from '$lib/stores/store';
-
-	async function fetchHeaderData() {
-		const w800 = await fetch('/about-us/header/About us Final_800x400.webp');
-		const w1600 = await fetch('/about-us/header/About us Final_1600x640.webp');
-		const w2000 = await fetch('/about-us/header/About us Final_2000x500.webp');
-
-		const result = {
-			w800,
-			w1600,
-			w2000
-		};
-
-		// const data = await res.json();
-
-		if (w800.ok && w1600.ok && w2000.ok) {
-			return result;
-		} else {
-			throw new Error('Something Went Wrong!');
-		}
-	}
-
-	async function fetchOurStoryData() {
-		// An array of URLs
-		const urls = [
-			'/about-us/our-story/story_800x480.webp',
-			'/about-us/our-story/story_1600x1120.webp',
-			'/about-us/our-story/story_2000x1500.webp'
-		];
-
-		// Create an array of fetch promises
-		const fetchPromises = urls.map((url) => fetch(url));
-
-		try {
-			// Use Promise.all to wait until all fetch requests are completed
-			const responses = await Promise.all(fetchPromises);
-
-			// Check if any of the responses have an error
-			if (responses.some((response) => !response.ok)) {
-				throw new Error('Something Went Wrong!');
-			}
-
-			// Construct the result object
-			const result = {
-				w800: responses[0],
-				w1600: responses[1],
-				w2000: responses[2]
-			};
-
-			return result;
-		} catch (error) {
-			console.error(error);
-			throw new Error('Something Went Wrong!');
-		}
-	}
-
-	async function fetchOurValuesData() {
-		const response = await fetch('/about-us/My project_400x400.webp');
-
-		// Handling HTTP error status
-		if (!response.ok) {
-			const message = `An error has occurred: ${response.status}`;
-			throw new Error(message);
-		}
-
-		const result = {
-			w400: response
-		};
-
-		return result;
-	}
-
-	async function fetchWhyUsData() {
-		// An array of URLs
-		const urls = [
-			'/about-us/why-us/Why Choose Us Final_600x420.webp',
-			'/about-us/why-us/Why Choose Us Final_800x480.webp'
-		];
-
-		// Create an array of fetch promises
-		const fetchPromises = urls.map((url) => fetch(url));
-
-		try {
-			// Use Promise.all to wait until all fetch requests are completed
-			const responses = await Promise.all(fetchPromises);
-
-			// Check if any of the responses have an error
-			if (responses.some((response) => !response.ok)) {
-				throw new Error('Something Went Wrong!');
-			}
-
-			// Construct the result object
-			const result = {
-				w600: responses[0],
-				w800: responses[1]
-			};
-
-			return result;
-		} catch (error) {
-			console.error(error);
-			throw new Error('Something Went Wrong!');
-		}
-	}
 </script>
 
 <div class="flex flex-col items-center" dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}>
 	<!-- Hero Section -->
 	<section class="relative flex">
-		{#await fetchHeaderData()}
-			<div class="placeholder animate-pulse rounded-lg h-[200px]" />
-		{:then items}
-			<!-- opacity-0 transition-opacity duration-3000 ease-in-out -->
-			<LazyImage
-				src={items.w2000.url}
-				srcset={`${items.w800.url} 768w, ${items.w1600.url} 1536w, ${items.w2000.url} 8000w`}
-				alt={`About-us page background`}
-				appliedClass={`w-screen aspect-[1/0.5] md:aspect-[1/0.4] xl:aspect-[1/0.25]`}
-			/>
-		{:catch error}
-			<p style="color: red">{error.message}</p>
-		{/await}
+		<img
+			loading="lazy"
+			src="/about-us/header/AboutUsFinal_2000x500.webp"
+			alt="About-us page background"
+			srcset="/about-us/header/AboutUsFinal_800x400.webp 768w, /about-us/header/AboutUsFinal_1600x640.webp 1536w, /about-us/header/AboutUsFinal_2000x500.webp 8000w"
+			class="w-screen aspect-[1/0.5] md:aspect-[1/0.4] xl:aspect-[1/0.25]"
+		/>
+
 		<div class="absolute inset-0 bg-black opacity-30" />
 		<div class="absolute w-screen h-full flex items-center justify-center">
 			<div class="container mx-auto px-5 2xl:px-0">
@@ -152,18 +44,13 @@
 				</ul>
 			</div>
 			<div>
-				{#await fetchOurStoryData()}
-					<div class="placeholder animate-pulse rounded-lg h-[200px]" />
-				{:then items}
-					<LazyImage
-						src={items.w2000.url}
-						srcset={`${items.w800.url} 768w, ${items.w1600.url} 1536w, ${items.w2000.url} 8000w`}
-						alt={`About us page background`}
-						appliedClass={`w-full lg:p-16 xl:p-0 aspect-[1/0.6] md:aspect-[1/0.7] xl:aspect-[1/0.75]`}
-					/>
-				{:catch error}
-					<p style="color: red">{error.message}</p>
-				{/await}
+				<img
+					loading="lazy"
+					src="/about-us/our-story/story_2000x1500.webp"
+					alt="our story"
+					srcset="/about-us/our-story/story_800x480.webp 768w, /about-us/our-story/story_1600x1120.webp 1536w, /about-us/our-story/story_2000x1500.webp 99999w"
+					class="w-full lg:p-16 xl:p-0 aspect-[1/0.6] md:aspect-[1/0.7] xl:aspect-[1/0.75]"
+				/>
 			</div>
 		</div>
 
@@ -209,17 +96,12 @@
 			<div>
 				<div class="px-12 flex justify-center">
 					<div class="max-w-[400px]">
-						{#await fetchOurValuesData()}
-							<div class="placeholder animate-pulse rounded-lg h-[200px]" />
-						{:then items}
-							<LazyImage
-								src={items.w400.url}
-								alt={`Our values hero`}
-								appliedClass={`w-full aspect-[1/1]`}
-							/>
-						{:catch error}
-							<p style="color: red">{error.message}</p>
-						{/await}
+						<img
+							loading="lazy"
+							src="/about-us/My_project_400x400.webp"
+							alt="our values"
+							class="w-full aspect-[1/1]"
+						/>
 					</div>
 				</div>
 			</div>
@@ -271,18 +153,13 @@
 			<div>
 				<div>
 					<div>
-						{#await fetchWhyUsData()}
-							<div class="placeholder animate-pulse rounded-lg h-[200px]" />
-						{:then items}
-							<LazyImage
-								src={items.w800.url}
-								srcset={`${items.w600.url} 768w, ${items.w800.url} 8000w`}
-								alt={`Why choose us image`}
-								appliedClass={`w-full aspect-[1/0.7] md:aspect-[1/0.6]`}
-							/>
-						{:catch error}
-							<p style="color: red">{error.message}</p>
-						{/await}
+						<img
+							loading="lazy"
+							src="/about-us/why-us/Why_Choose_Us_Final_800x480.webp"
+							alt="why us"
+							srcset="/about-us/why-us/Why_Choose_Us_Final_600x420.webp 768w, /about-us/why-us/Why_Choose_Us_Final_800x480.webp 99999w"
+							class="w-full aspect-[1/0.7] md:aspect-[1/0.6]"
+						/>
 					</div>
 				</div>
 			</div>

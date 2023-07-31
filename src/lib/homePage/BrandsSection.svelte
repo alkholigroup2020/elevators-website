@@ -4,7 +4,12 @@
 			<div class="flex justify-center">
 				<div class="circle my-5">
 					<div class="p-8">
-						<img src="/brands/doppler.webp" class="w-full aspect-[7/3]" alt="" />
+						<img
+							src="/brands/doppler.webp"
+							class="w-full aspect-[7/3]"
+							alt="a brand logo"
+							loading="lazy"
+						/>
 					</div>
 				</div>
 			</div>
@@ -12,7 +17,12 @@
 			<div class="flex justify-center">
 				<div class="circle my-5">
 					<div class="p-8">
-						<img src="/brands/kalea.webp" class="w-full aspect-[7/3]" alt="" />
+						<img
+							src="/brands/kalea.webp"
+							class="w-full aspect-[7/3]"
+							alt="a brand logo"
+							loading="lazy"
+						/>
 					</div>
 				</div>
 			</div>
@@ -20,7 +30,12 @@
 			<div class="flex justify-center">
 				<div class="circle my-5">
 					<div class="p-8">
-						<img src="/brands/nidec.webp" class="w-full aspect-[7/3]" alt="" />
+						<img
+							src="/brands/nidec.webp"
+							class="w-full aspect-[7/3]"
+							alt="a brand logo"
+							loading="lazy"
+						/>
 					</div>
 				</div>
 			</div>
@@ -28,7 +43,12 @@
 			<div class="flex justify-center">
 				<div class="circle my-5">
 					<div class="p-8">
-						<img src="/brands/pve.webp" class="w-full aspect-[7/3]" alt="" />
+						<img
+							src="/brands/pve.webp"
+							class="w-full aspect-[7/3]"
+							alt="a brand logo"
+							loading="lazy"
+						/>
 					</div>
 				</div>
 			</div>
@@ -36,7 +56,12 @@
 			<div class="flex justify-center">
 				<div class="circle my-5">
 					<div class="p-8">
-						<img src="/brands/indastria.webp" class="w-full aspect-[7/3]" alt="" />
+						<img
+							src="/brands/indastria.webp"
+							class="w-full aspect-[7/3]"
+							alt="a brand logo"
+							loading="lazy"
+						/>
 					</div>
 				</div>
 			</div>

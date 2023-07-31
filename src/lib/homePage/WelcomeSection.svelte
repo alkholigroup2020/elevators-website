@@ -2,25 +2,8 @@
 <script>
 	import LL from '$i18n/i18n-svelte';
 	import YouTubeVideo from '.././generalComponents/YouTubeVideo.svelte';
-	import LazyImage from '$lib/generalComponents/LazyImage.svelte';
 
 	import { currentAppLang } from '$lib/stores/store';
-
-	async function fetchImage() {
-		const response = await fetch('/img-welcome-min_600x780.webp');
-
-		// Handling HTTP error status
-		if (!response.ok) {
-			const message = `An error has occurred: ${response.status}`;
-			throw new Error(message);
-		}
-
-		const result = {
-			image: response
-		};
-
-		return result;
-	}
 </script>
 
 <section class="welcomeSection text-white py-0" dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}>
@@ -41,17 +24,12 @@
 			<div class="grid 2xl:grid-cols-2 pb-8 2xl:pb-0 gap-4 lg:px-8">
 				<!-- Left sub-column: Image -->
 				<div class="relative hidden 2xl:block mt-auto">
-					{#await fetchImage()}
-						<div class="placeholder animate-pulse rounded-lg h-[200px]" />
-					{:then items}
-						<LazyImage
-							src={items.image.url}
-							alt={`welcome section hero`}
-							appliedClass={`w-full aspect-[1/1.3]`}
-						/>
-					{:catch error}
-						<p style="color: red">{error.message}</p>
-					{/await}
+					<img
+						loading="lazy"
+						src="/img-welcome-min_600x780.webp"
+						alt="a person with a building tool in hand"
+						class="w-full aspect-[1/1.3]"
+					/>
 				</div>
 
 				<!-- Right sub-column: UL with 3 li elements -->
@@ -87,12 +65,12 @@
 										? 'col-start-2 col-end-9 ml-3 sm:-ml-5 md:-ml-10 lg:-ml-[40px] 2xl:ml-0'
 										: 'col-start-2 col-end-9 mr-3 sm:-mr-5 md:-mr-10 lg:-mr-[40px] 2xl:mr-0'}
 								>
-									<h3
+									<p
 										class="text-2xl lg:text-3xl font-medium mb-3 text-primary-500"
 										style="text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);"
 									>
 										{$LL.welcomeSection.firstTitle()}
-									</h3>
+									</p>
 									<p class="text-xl leading-9">
 										{$LL.welcomeSection.firstParagraph()}
 									</p>
@@ -125,12 +103,12 @@
 										? 'col-start-2 col-end-9 ml-3 sm:-ml-5 md:-ml-10 lg:-ml-[40px] 2xl:ml-0'
 										: 'col-start-2 col-end-9 mr-3 sm:-mr-5 md:-mr-10 lg:-mr-[40px] 2xl:mr-0'}
 								>
-									<h3
+									<p
 										class="text-2xl lg:text-3xl font-medium mb-3 text-primary-500"
 										style="text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);"
 									>
 										{$LL.welcomeSection.secondTitle()}
-									</h3>
+									</p>
 									<p class="text-xl leading-9">
 										{$LL.welcomeSection.secondParagraph()}
 									</p>
@@ -163,12 +141,12 @@
 										? 'col-start-2 col-end-9 ml-3 sm:-ml-5 md:-ml-10 lg:-ml-[40px] 2xl:ml-0'
 										: 'col-start-2 col-end-9 mr-3 sm:-mr-5 md:-mr-10 lg:-mr-[40px] 2xl:mr-0'}
 								>
-									<h3
+									<p
 										class="text-2xl lg:text-3xl font-medium mb-3 text-primary-500 text-custom-shadow"
 										style="text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);"
 									>
 										{$LL.welcomeSection.thirdTitle()}
-									</h3>
+									</p>
 									<p class="text-xl leading-9">
 										{$LL.welcomeSection.thirdParagraph()}
 									</p>

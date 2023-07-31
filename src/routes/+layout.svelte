@@ -23,17 +23,17 @@
 	// and before the actual rendering takes place
 	setLocale(data.locale);
 
-	import { AppShell } from '@skeletonlabs/skeleton';
+	// import { AppShell } from '@skeletonlabs/skeleton';
 	import VeryTopNav from '$lib/navComponents/VeryTopNav.svelte';
 	import Navbar from '$lib/navComponents/Navbar.svelte';
 
 	import { Drawer } from '@skeletonlabs/skeleton';
 	import { drawerStore } from '@skeletonlabs/skeleton';
 
-	import type { NavData } from '../types/nav.type';
+	// import type { NavData } from '../types/nav.type';
 	import VeryButtonFooter from '$lib/footer/VeryButtonFooter.svelte';
 
-	const theNavData: NavData = data.cmsNavData;
+	// const theNavData: NavData = data.cmsNavData;
 
 	import LL from '$i18n/i18n-svelte';
 	import ScrollTopButton from '$lib/generalComponents/ScrollTopButton.svelte';
@@ -155,7 +155,8 @@
 <!-- <svelte:fragment slot="pageHeader" /> -->
 <VeryTopNav />
 
-<Navbar theNavbarData={theNavData} />
+<!-- theNavbarData={theNavData} -->
+<Navbar />
 
 <!-- <ScrollTopButton /> -->
 

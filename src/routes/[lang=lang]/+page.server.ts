@@ -9,6 +9,15 @@ import { superValidate } from 'sveltekit-superforms/server';
 
 import { sendEmail } from '$lib/serverFiles/emailService.js';
 
+// BackgroundImage {
+// 	data {
+// 		attributes {
+// 			formats
+// 			url
+// 		}
+// 	}
+// }
+
 const query = gql`
 	{
 		heroSection {
@@ -17,14 +26,6 @@ const query = gql`
 					SectionTitle
 					SectionMessage
 					ButtonText
-					BackgroundImage {
-						data {
-							attributes {
-								formats
-								url
-							}
-						}
-					}
 					localizations {
 						data {
 							attributes {
@@ -101,16 +102,16 @@ const homePageData = async () => {
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	const theData: any = await request(`${CMS_URL}/graphql`, query);
 
-	const backgroundImageURL =
-		theData.heroSection.data.attributes.BackgroundImage.data.attributes.url;
-	const lgBackgroundImageURL =
-		theData.heroSection.data.attributes.BackgroundImage.data.attributes.formats.large.url;
-	const mdBackgroundImageURL =
-		theData.heroSection.data.attributes.BackgroundImage.data.attributes.formats.medium.url;
-	const smBackgroundImageURL =
-		theData.heroSection.data.attributes.BackgroundImage.data.attributes.formats.small.url;
-	const thumBackgroundImageURL =
-		theData.heroSection.data.attributes.BackgroundImage.data.attributes.formats.thumbnail.url;
+	// const backgroundImageURL =
+	// 	theData.heroSection.data.attributes.BackgroundImage.data.attributes.url;
+	// const lgBackgroundImageURL =
+	// 	theData.heroSection.data.attributes.BackgroundImage.data.attributes.formats.large.url;
+	// const mdBackgroundImageURL =
+	// 	theData.heroSection.data.attributes.BackgroundImage.data.attributes.formats.medium.url;
+	// const smBackgroundImageURL =
+	// 	theData.heroSection.data.attributes.BackgroundImage.data.attributes.formats.small.url;
+	// const thumBackgroundImageURL =
+	// 	theData.heroSection.data.attributes.BackgroundImage.data.attributes.formats.thumbnail.url;
 
 	const enSectionTitle = theData.heroSection.data.attributes.SectionTitle;
 	const enSectionMessage = theData.heroSection.data.attributes.SectionMessage;
@@ -124,11 +125,11 @@ const homePageData = async () => {
 		theData.heroSection.data.attributes.localizations.data[0].attributes.ButtonText;
 
 	const heroSectionData = {
-		backgroundImageURL,
-		lgBackgroundImageURL,
-		mdBackgroundImageURL,
-		smBackgroundImageURL,
-		thumBackgroundImageURL,
+		// backgroundImageURL,
+		// lgBackgroundImageURL,
+		// mdBackgroundImageURL,
+		// smBackgroundImageURL,
+		// thumBackgroundImageURL,
 		enSectionTitle,
 		enSectionMessage,
 		enButtonText,

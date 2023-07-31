@@ -13,9 +13,10 @@ export const load = async (data: any) => {
 	setLocale(data.data.locale);
 
 	const locale = data.data.locale;
-	const cmsNavData = data.data.cmsNavData;
+	// const cmsNavData = data.data.cmsNavData;
 
 	// pass locale to the "rendering context"
-	return { locale, cmsNavData };
+	// , cmsNavData
+	return { locale };
 };
 //

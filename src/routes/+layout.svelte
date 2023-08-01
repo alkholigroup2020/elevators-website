@@ -19,6 +19,9 @@
 
 	export let data;
 
+	import { footerFormSettingsStore } from '$lib/stores/store.js';
+	footerFormSettingsStore.set(data.footerFormSettings);
+
 	// at the very top, set the locale before you access the store
 	// and before the actual rendering takes place
 	setLocale(data.locale);
@@ -29,6 +32,8 @@
 
 	import { Drawer } from '@skeletonlabs/skeleton';
 	import { drawerStore } from '@skeletonlabs/skeleton';
+
+	import FooterSection from '$lib/footer/FooterSection.svelte';
 
 	// import type { NavData } from '../types/nav.type';
 	import VeryButtonFooter from '$lib/footer/VeryButtonFooter.svelte';
@@ -162,6 +167,8 @@
 
 <!-- Router Slot -->
 <slot />
+
+<FooterSection />
 
 <VeryButtonFooter />
 

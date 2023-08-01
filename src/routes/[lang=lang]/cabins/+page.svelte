@@ -1,5 +1,4 @@
 <script lang="ts">
-	import FooterSection from '$lib/footer/FooterSection.svelte';
 	import CabinsGallery from '$lib/generalComponents/CabinsGallery.svelte';
 	import LL from '$i18n/i18n-svelte';
 
@@ -142,5 +141,3 @@
 		</div>
 	</div>
 </section>
-
-<FooterSection />

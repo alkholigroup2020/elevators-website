@@ -1,5 +1,7 @@
-<script>
+<script lang="ts">
 	import LL from '$i18n/i18n-svelte';
+
+	import { currentAppLang } from '$lib/stores/store';
 
 	$: formSubmitMessage = '';
 	$: appliedClass = 'text-success-500';
@@ -10,13 +12,12 @@
 
 	import { footerFormSettingsStore } from '$lib/stores/store';
 
-	let footerFormSettings;
+	let footerFormSettings: any;
 
 	footerFormSettingsStore.subscribe((value) => {
 		footerFormSettings = value;
 	});
 
-	// @ts-ignore
 	const { form, errors, constraints, enhance } = superForm(footerFormSettings, {
 		validators: {
 			name: (value) => {
@@ -86,7 +87,7 @@
 
 	<!-- on:submit|preventDefault={handleSubmit}  -->
 
-	<form method="POST" use:enhance>
+	<form method="POST" action={`/${$currentAppLang}/footer`} use:enhance>
 		<!-- name -->
 		<div class="my-2">
 			<label class="label">

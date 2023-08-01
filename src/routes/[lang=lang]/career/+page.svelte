@@ -1,10 +1,8 @@
 <script lang="ts">
 	import { currentAppLang } from '$lib/stores/store';
 	import LL from '$i18n/i18n-svelte';
-	import FooterSection from '$lib/footer/FooterSection.svelte';
 
 	import { superForm } from 'sveltekit-superforms/client';
-	import { superValidate } from 'sveltekit-superforms/server';
 
 	export let data;
 
@@ -143,5 +141,3 @@
 		</form>
 	</div>
 </section>
-
-<FooterSection />

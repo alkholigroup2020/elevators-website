@@ -8,12 +8,8 @@
 	import WelcomeSection from '$lib/homePage/WelcomeSection.svelte';
 	import ProjectsSection from '$lib/homePage/ProjectsSection.svelte';
 	import QuoteSection from '$lib/homePage/QuoteSection.svelte';
-	import FooterSection from '$lib/footer/FooterSection.svelte';
 
 	export let data;
-
-	import { footerFormSettingsStore } from '$lib/stores/store.js';
-	footerFormSettingsStore.set(data.data.footerFormSettings);
 </script>
 
 <HeroSection sectionData={data.data.homePageCMSData.heroSectionData} />
@@ -33,5 +29,3 @@
 <QuoteSection />
 
 <BrandsSection />
-
-<FooterSection />

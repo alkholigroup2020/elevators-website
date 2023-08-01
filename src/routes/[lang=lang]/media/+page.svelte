@@ -2,7 +2,6 @@
 	import { currentAppLang } from '$lib/stores/store';
 	import LL from '$i18n/i18n-svelte';
 	import YouTubeVideo from '$lib/generalComponents/YouTubeVideo.svelte';
-	import FooterSection from '$lib/footer/FooterSection.svelte';
 
 	export let data;
 
@@ -77,5 +76,3 @@
 		{/each}
 	</div>
 </section>
-
-<FooterSection />

@@ -14,9 +14,9 @@ export const load = async (data: any) => {
 
 	const locale = data.data.locale;
 	// const cmsNavData = data.data.cmsNavData;
-
+	const footerFormSettings = data.data.footerFormSettings;
 	// pass locale to the "rendering context"
 	// , cmsNavData
-	return { locale };
+	return { locale, footerFormSettings };
 };
 //

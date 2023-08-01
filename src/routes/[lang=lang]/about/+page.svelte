@@ -1,5 +1,4 @@
 <script lang="ts">
-	import FooterSection from '$lib/footer/FooterSection.svelte';
 	import LL from '$i18n/i18n-svelte';
 	import { currentAppLang } from '$lib/stores/store';
 </script>
@@ -166,5 +165,3 @@
 		</div>
 	</section>
 </div>
-
-<FooterSection />

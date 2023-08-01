@@ -16,7 +16,7 @@
 		/>
 
 		<div class="absolute inset-0 bg-black opacity-30" />
-		<div class="absolute w-screen h-full flex items-center justify-center">
+		<div class="absolute w-[100%] h-full flex items-center justify-center">
 			<div class="container mx-auto px-5 2xl:px-0">
 				<h1
 					class="text-5xl lg:text-7xl font-bold text-white pb-16"

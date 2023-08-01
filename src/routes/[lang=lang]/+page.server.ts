@@ -9,15 +9,6 @@ import { superValidate } from 'sveltekit-superforms/server';
 
 import { sendEmail } from '$lib/serverFiles/emailService.js';
 
-// BackgroundImage {
-// 	data {
-// 		attributes {
-// 			formats
-// 			url
-// 		}
-// 	}
-// }
-
 const query = gql`
 	{
 		heroSection {
@@ -157,6 +148,8 @@ const schema = z.object({
 });
 
 export async function load() {
+	console.log(`I am the main page server :)`);
+
 	const homePageCMSData = homePageData();
 
 	// Server API:

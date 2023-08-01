@@ -86,6 +86,10 @@ const en: BaseTranslation = {
 	cabins: {
 		title: 'الكبائن'
 	},
+	career: {
+		title: 'التوظيف',
+		intro: 'نحن نبحث عن أشخاص يضيفون قيمة استثنائية لنا ولعملائنا.'
+	},
 	aboutUs: {
 		title: 'من نحن',
 		ourStory: {

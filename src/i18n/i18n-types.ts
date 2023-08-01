@@ -262,6 +262,16 @@ type RootTranslation = {
 		 */
 		title: string
 	}
+	career: {
+		/**
+		 * C​a​r​e​e​r
+		 */
+		title: string
+		/**
+		 * W​e​ ​a​r​e​ ​l​o​o​k​i​n​g​ ​f​o​r​ ​p​e​o​p​l​e​ ​w​h​o​ ​c​r​e​a​t​e​ ​e​x​c​e​p​t​i​o​n​a​l​ ​v​a​l​u​e​ ​f​o​r​ ​u​s​ ​a​n​d​ ​f​o​r​ ​o​u​r​ ​c​u​s​t​o​m​e​r​s​.
+		 */
+		intro: string
+	}
 	aboutUs: {
 		/**
 		 * A​b​o​u​t​ ​U​s
@@ -744,6 +754,16 @@ export type TranslationFunctions = {
 		 * Cabins
 		 */
 		title: () => LocalizedString
+	}
+	career: {
+		/**
+		 * Career
+		 */
+		title: () => LocalizedString
+		/**
+		 * We are looking for people who create exceptional value for us and for our customers.
+		 */
+		intro: () => LocalizedString
 	}
 	aboutUs: {
 		/**

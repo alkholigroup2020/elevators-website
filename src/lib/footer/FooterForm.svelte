@@ -1,20 +1,6 @@
 <script>
 	import LL from '$i18n/i18n-svelte';
 
-	// let name = '';
-	// let email = '';
-	// let mobile = '';
-	// let message = '';
-
-	// function handleSubmit() {
-	// 	if (!name || !message || (!email && !mobile)) {
-	// 		alert('Please fill in the required fields.');
-	// 		return;
-	// 	}
-
-	// 	//... send your form data to your API
-	// }
-
 	$: formSubmitMessage = '';
 	$: appliedClass = 'text-success-500';
 
@@ -182,7 +168,7 @@
 
 			{#if $errors.textArea}<span class="text-warning-600">{$errors.textArea}</span>{/if}
 		</div>
-		<!--  -->
+		<!-- submit button -->
 		<div class="flex items-center">
 			<div>
 				<button

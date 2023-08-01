@@ -88,6 +88,10 @@ const en: BaseTranslation = {
 	cabins: {
 		title: 'Cabins'
 	},
+	career: {
+		title: 'Career',
+		intro: 'We are looking for people who create exceptional value for us and for our customers.'
+	},
 	aboutUs: {
 		title: 'About Us',
 		ourStory: {

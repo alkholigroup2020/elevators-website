@@ -80,6 +80,12 @@ const en: BaseTranslation = {
 		title: 'أعمالـنا السابقة',
 		more: 'المـزيد ...'
 	},
+	media: {
+		title: 'الوسائط'
+	},
+	cabins: {
+		title: 'الكبائن'
+	},
 	aboutUs: {
 		title: 'من نحن',
 		ourStory: {

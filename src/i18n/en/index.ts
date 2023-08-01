@@ -82,6 +82,12 @@ const en: BaseTranslation = {
 		title: 'Our Projects',
 		more: 'Learn More ...'
 	},
+	media: {
+		title: 'Media'
+	},
+	cabins: {
+		title: 'Cabins'
+	},
 	aboutUs: {
 		title: 'About Us',
 		ourStory: {

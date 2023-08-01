@@ -1,6 +1,7 @@
 <script lang="ts">
 	import FooterSection from '$lib/footer/FooterSection.svelte';
 	import CabinsGallery from '$lib/generalComponents/CabinsGallery.svelte';
+	import LL from '$i18n/i18n-svelte';
 
 	import { modalStore } from '@skeletonlabs/skeleton';
 	import type { ModalSettings, ModalComponent } from '@skeletonlabs/skeleton';
@@ -105,7 +106,7 @@
 					class="text-4xl lg:text-6xl font-medium text-white"
 					style="text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.8);"
 				>
-					Cabins
+					{$LL.cabins.title()}
 				</h1>
 			</div>
 		</div>

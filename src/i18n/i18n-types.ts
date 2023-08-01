@@ -250,6 +250,18 @@ type RootTranslation = {
 		 */
 		more: string
 	}
+	media: {
+		/**
+		 * M​e​d​i​a
+		 */
+		title: string
+	}
+	cabins: {
+		/**
+		 * C​a​b​i​n​s
+		 */
+		title: string
+	}
 	aboutUs: {
 		/**
 		 * A​b​o​u​t​ ​U​s
@@ -720,6 +732,18 @@ export type TranslationFunctions = {
 		 * Learn More ...
 		 */
 		more: () => LocalizedString
+	}
+	media: {
+		/**
+		 * Media
+		 */
+		title: () => LocalizedString
+	}
+	cabins: {
+		/**
+		 * Cabins
+		 */
+		title: () => LocalizedString
 	}
 	aboutUs: {
 		/**

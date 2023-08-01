@@ -33,10 +33,6 @@
 				: elemCarousel.scrollLeft + elemCarousel.clientWidth; // step right
 		elemCarousel.scroll(x, 0);
 	}
-
-	function carouselThumbnail(index: number) {
-		elemCarousel.scroll(elemCarousel.clientWidth * index, 0);
-	}
 </script>
 
 {#if $modalStore[0]}

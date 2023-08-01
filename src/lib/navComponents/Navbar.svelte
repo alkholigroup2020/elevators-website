@@ -97,7 +97,7 @@
 							/>
 						</div>
 
-						<div class="flex items-end pb-4 ml-3">
+						<div class="hidden md:flex items-end pb-4 ml-3">
 							<div>
 								<!-- '/logo_text_black_240x60.webp', '/logo_text_white_240x60.webp' -->
 								{#if $modeCurrent}

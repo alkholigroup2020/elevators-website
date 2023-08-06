@@ -79,9 +79,9 @@
 	<HeadHrefLangs />
 </svelte:head>
 
-<!-- {#if devOrProduction}
+{#if devOrProduction}
 	<WindowSize />
-{/if} -->
+{/if}
 
 <Modal />
 

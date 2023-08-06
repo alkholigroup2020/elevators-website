@@ -56,7 +56,7 @@
 		<div class="flex">
 			<!-- hamburger btn -->
 			<button
-				class="lg:hidden mt-2"
+				class="lg:hidden mt-1"
 				aria-label="a button to open the side drawer"
 				on:click={() => {
 					drawerStore.open(drawerSettings);
@@ -84,22 +84,25 @@
 				</span>
 			</button>
 
-			<div class="ml-3 lg:ml-0">
+			<div class="ml-4 lg:ml-0">
 				<a href={`/${$currentAppLang}`} aria-label="a link to the home page">
 					<div class="flex">
-						<div class="py-3">
+						<div>
 							<!-- logo -->
-							<img
-								loading="lazy"
-								src="/logo_60x90.webp"
-								alt="company's logo"
-								class="w-full max-h-12 aspect-[2/3]"
-							/>
+							<div class="w-[20px] lg:w-[30px] py-3 lg:py-[5px]">
+								<img
+									loading="lazy"
+									src="/logo_60x120.webp"
+									srcset="/logo_40x80.webp 1024w, /logo_60x120.webp 8000w"
+									alt="company's logo"
+									class="w-full aspect-[1/2]"
+								/>
+							</div>
 						</div>
 
-						<div class="hidden md:flex items-end pb-4 ml-3">
+						<div class="hidden lg:flex items-end pb-4 ml-4">
 							<div>
-								<!-- '/logo_text_black_240x60.webp', '/logo_text_white_240x60.webp' -->
+								<!-- text logo -->
 								{#if $modeCurrent}
 									<img
 										loading="lazy"

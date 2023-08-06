@@ -3,6 +3,8 @@
 import { loadLocaleAsync } from '$i18n/i18n-util.async';
 import { setLocale } from '$i18n/i18n-svelte';
 
+import { currentAppLang } from '$lib/stores/store';
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const load = async (data: any) => {
 	// load dictionary into memory
@@ -13,6 +15,7 @@ export const load = async (data: any) => {
 	setLocale(data.data.locale);
 
 	const locale = data.data.locale;
+	currentAppLang.set(locale);
 	// const cmsNavData = data.data.cmsNavData;
 	const footerFormSettings = data.data.footerFormSettings;
 	// pass locale to the "rendering context"

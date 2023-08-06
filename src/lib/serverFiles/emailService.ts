@@ -24,7 +24,8 @@ export const sendEmail = async (
 	to: string,
 	subject: string,
 	text: string,
-	html: string
+	html: string,
+	attachments: { filename: string; content: Buffer }[] = []
 ): Promise<void> => {
 	// email options
 	const mailOptions: SendMailOptions = {
@@ -32,7 +33,8 @@ export const sendEmail = async (
 		to: to,
 		subject: subject,
 		text: text,
-		html: html
+		html: html,
+		attachments: attachments
 	};
 	// send email with defined transport object
 	try {
@@ -43,3 +45,27 @@ export const sendEmail = async (
 		console.log('Error occurred while sending email: ', error);
 	}
 };
+
+// Async function to send an email
+// export const sendEmail = async (
+// 	to: string,
+// 	subject: string,
+// 	text: string,
+// 	html: string
+// ): Promise<void> => {
+// 	// email options
+// 	const mailOptions: SendMailOptions = {
+// 		from: 'info@buildingtec.com',
+// 		to: to,
+// 		subject: subject,
+// 		text: text,
+// 		html: html
+// 	};
+// 	// send email with defined transport object
+// 	try {
+// 		await transporter.sendMail(mailOptions);
+
+// 	} catch (error) {
+// 		console.log('Error occurred while sending email: ', error);
+// 	}
+// };

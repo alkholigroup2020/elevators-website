@@ -169,6 +169,7 @@
 
 			{#if $errors.textArea}<span class="text-warning-600">{$errors.textArea}</span>{/if}
 		</div>
+
 		<!-- submit button -->
 		<div class="flex items-center">
 			<div>

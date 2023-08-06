@@ -271,6 +271,142 @@ type RootTranslation = {
 		 * W​e​ ​a​r​e​ ​l​o​o​k​i​n​g​ ​f​o​r​ ​p​e​o​p​l​e​ ​w​h​o​ ​c​r​e​a​t​e​ ​e​x​c​e​p​t​i​o​n​a​l​ ​v​a​l​u​e​ ​f​o​r​ ​u​s​ ​a​n​d​ ​f​o​r​ ​o​u​r​ ​c​u​s​t​o​m​e​r​s​.
 		 */
 		intro: string
+		/**
+		 * Y​o​u​r​ ​N​a​m​e​ ​:
+		 */
+		fullName: string
+		/**
+		 * N​a​m​e​ ​l​e​n​g​t​h​ ​s​h​o​u​l​d​ ​b​e​ ​m​o​r​e​ ​t​h​a​t​ ​3​ ​c​h​a​r​a​c​t​e​r​s​!
+		 */
+		fullNameError: string
+		/**
+		 * N​a​m​e​ ​i​s​ ​t​o​o​ ​l​o​n​g​!​ ​M​a​x​i​m​u​m​ ​6​0​ ​c​h​a​r​a​c​t​e​r​s​.
+		 */
+		fullNameLengthError: string
+		/**
+		 * N​o​ ​n​u​m​b​e​r​s​ ​a​r​e​ ​a​l​l​o​w​e​d​!
+		 */
+		fullNameNumericError: string
+		/**
+		 * F​u​l​l​ ​N​a​m​e​ ​.​.​.
+		 */
+		fullNamePlaceholder: string
+		/**
+		 * E​m​a​i​l​ ​A​d​d​r​e​s​s​ ​:
+		 */
+		email: string
+		/**
+		 * P​l​e​a​s​e​ ​e​n​t​e​r​ ​a​ ​v​a​l​i​d​ ​e​m​a​i​l​!
+		 */
+		emailError: string
+		/**
+		 * E​n​t​e​r​ ​y​o​u​r​ ​e​m​a​i​l​ ​a​d​d​r​e​s​s​ ​.​.​.
+		 */
+		emailPlaceholder: string
+		/**
+		 * M​o​b​i​l​e​ ​N​u​m​b​e​r​ ​:
+		 */
+		mobileNumber: string
+		/**
+		 * M​o​b​i​l​e​ ​n​u​m​b​e​r​ ​(​0​5​x​x​x​x​x​x​x​x​)
+		 */
+		mobilePlaceholder: string
+		/**
+		 * P​l​e​a​s​e​ ​e​n​t​e​r​ ​a​ ​v​a​l​i​d​ ​m​o​b​i​l​e​ ​n​u​m​b​e​r​!
+		 */
+		mobileError: string
+		/**
+		 * C​o​v​e​r​ ​L​e​t​t​e​r​ ​:
+		 */
+		textArea: string
+		/**
+		 * E​n​t​e​r​ ​y​o​u​r​ ​c​o​v​e​r​ ​l​e​t​t​e​r​ ​h​e​r​e​ ​.​.​.
+		 */
+		textAreaPlaceholder: string
+		/**
+		 * M​e​s​s​a​g​e​ ​i​s​ ​t​o​o​ ​s​h​o​r​t​!
+		 */
+		textAreaError1: string
+		/**
+		 * M​e​s​s​a​g​e​ ​i​s​ ​t​o​o​ ​l​o​n​g​!​ ​M​a​x​i​m​u​m​ ​2​0​0​0​ ​c​h​a​r​a​c​t​e​r​s​.
+		 */
+		textAreaError2: string
+		/**
+		 * P​o​s​i​t​i​o​n​ ​A​p​p​l​i​e​d​ ​F​o​r​ ​:
+		 */
+		position: string
+		/**
+		 * N​a​t​i​o​n​a​l​i​t​y​ ​:
+		 */
+		nationality: string
+		/**
+		 * S​e​a​r​c​h​ ​f​o​r​ ​y​o​u​r​ ​n​a​t​i​o​n​a​l​i​t​y​ ​.​.​.
+		 */
+		nationPlaceholder: string
+		/**
+		 * D​a​t​e​ ​O​f​ ​B​i​r​t​h​ ​:
+		 */
+		dateOfBirth: string
+		/**
+		 * D​e​g​r​e​e​ ​L​e​v​e​l​ ​:
+		 */
+		degreeLevel: string
+		/**
+		 * C​a​r​e​e​r​ ​L​e​v​e​l​ ​:
+		 */
+		careerLevel: string
+		/**
+		 * R​e​s​i​d​e​n​c​y​ ​C​i​t​y​ ​:
+		 */
+		address: string
+		/**
+		 * E​n​t​e​r​ ​y​o​u​r​ ​r​e​s​i​d​e​n​c​y​ ​c​i​t​y​ ​.​.​.
+		 */
+		addressPlaceholder: string
+		/**
+		 * C​i​t​y​ ​l​e​n​g​t​h​ ​s​h​o​u​l​d​ ​b​e​ ​m​o​r​e​ ​t​h​a​t​ ​2​ ​c​h​a​r​a​c​t​e​r​s​!
+		 */
+		addressError: string
+		/**
+		 * C​i​t​y​ ​n​a​m​e​ ​i​s​ ​t​o​o​ ​l​o​n​g​!​ ​M​a​x​i​m​u​m​ ​3​0​ ​c​h​a​r​a​c​t​e​r​s​.
+		 */
+		addressLengthError: string
+		/**
+		 * N​o​ ​n​u​m​b​e​r​s​ ​a​r​e​ ​a​l​l​o​w​e​d​!
+		 */
+		addressNumericError: string
+		/**
+		 * A​t​t​a​c​h​ ​C​V​:
+		 */
+		employeeCV: string
+		/**
+		 * U​p​l​o​a​d​ ​Y​o​u​r​ ​R​e​s​u​m​e​ ​.​.​.
+		 */
+		employeeCvMSG: string
+		/**
+		 * F​i​l​e​ ​i​s​ ​t​o​o​ ​l​a​r​g​e​.​ ​P​l​e​a​s​e​ ​u​p​l​o​a​d​ ​a​ ​f​i​l​e​ ​t​h​a​t​ ​i​s​ ​l​e​s​s​ ​t​h​a​n​ ​1​0​M​B​.
+		 */
+		employeeCvSizeError: string
+		/**
+		 * I​n​v​a​l​i​d​ ​f​i​l​e​ ​t​y​p​e​.​ ​P​l​e​a​s​e​ ​u​p​l​o​a​d​ ​a​ ​W​o​r​d​ ​o​r​ ​a​ ​P​D​F​ ​d​o​c​u​m​e​n​t​.
+		 */
+		employeeCvTypeError: string
+		/**
+		 * T​h​i​s​ ​i​s​ ​a​ ​r​e​q​u​i​r​e​d​ ​f​i​e​l​d​!
+		 */
+		requiredError: string
+		/**
+		 * S​e​n​d
+		 */
+		submit: string
+		/**
+		 * T​h​a​n​k​ ​Y​o​u​!
+		 */
+		successFeedback: string
+		/**
+		 * S​o​m​e​t​h​i​n​g​ ​w​e​n​t​ ​w​r​o​n​g​!
+		 */
+		errorFeedback: string
 	}
 	aboutUs: {
 		/**
@@ -490,7 +626,7 @@ type RootTranslation = {
 				 */
 				submit: string
 				/**
-				 * M​e​s​s​a​g​e​ ​s​e​n​t​!
+				 * T​h​a​n​k​ ​Y​o​u​!
 				 */
 				successFeedback: string
 				/**
@@ -764,6 +900,142 @@ export type TranslationFunctions = {
 		 * We are looking for people who create exceptional value for us and for our customers.
 		 */
 		intro: () => LocalizedString
+		/**
+		 * Your Name :
+		 */
+		fullName: () => LocalizedString
+		/**
+		 * Name length should be more that 3 characters!
+		 */
+		fullNameError: () => LocalizedString
+		/**
+		 * Name is too long! Maximum 60 characters.
+		 */
+		fullNameLengthError: () => LocalizedString
+		/**
+		 * No numbers are allowed!
+		 */
+		fullNameNumericError: () => LocalizedString
+		/**
+		 * Full Name ...
+		 */
+		fullNamePlaceholder: () => LocalizedString
+		/**
+		 * Email Address :
+		 */
+		email: () => LocalizedString
+		/**
+		 * Please enter a valid email!
+		 */
+		emailError: () => LocalizedString
+		/**
+		 * Enter your email address ...
+		 */
+		emailPlaceholder: () => LocalizedString
+		/**
+		 * Mobile Number :
+		 */
+		mobileNumber: () => LocalizedString
+		/**
+		 * Mobile number (05xxxxxxxx)
+		 */
+		mobilePlaceholder: () => LocalizedString
+		/**
+		 * Please enter a valid mobile number!
+		 */
+		mobileError: () => LocalizedString
+		/**
+		 * Cover Letter :
+		 */
+		textArea: () => LocalizedString
+		/**
+		 * Enter your cover letter here ...
+		 */
+		textAreaPlaceholder: () => LocalizedString
+		/**
+		 * Message is too short!
+		 */
+		textAreaError1: () => LocalizedString
+		/**
+		 * Message is too long! Maximum 2000 characters.
+		 */
+		textAreaError2: () => LocalizedString
+		/**
+		 * Position Applied For :
+		 */
+		position: () => LocalizedString
+		/**
+		 * Nationality :
+		 */
+		nationality: () => LocalizedString
+		/**
+		 * Search for your nationality ...
+		 */
+		nationPlaceholder: () => LocalizedString
+		/**
+		 * Date Of Birth :
+		 */
+		dateOfBirth: () => LocalizedString
+		/**
+		 * Degree Level :
+		 */
+		degreeLevel: () => LocalizedString
+		/**
+		 * Career Level :
+		 */
+		careerLevel: () => LocalizedString
+		/**
+		 * Residency City :
+		 */
+		address: () => LocalizedString
+		/**
+		 * Enter your residency city ...
+		 */
+		addressPlaceholder: () => LocalizedString
+		/**
+		 * City length should be more that 2 characters!
+		 */
+		addressError: () => LocalizedString
+		/**
+		 * City name is too long! Maximum 30 characters.
+		 */
+		addressLengthError: () => LocalizedString
+		/**
+		 * No numbers are allowed!
+		 */
+		addressNumericError: () => LocalizedString
+		/**
+		 * Attach CV:
+		 */
+		employeeCV: () => LocalizedString
+		/**
+		 * Upload Your Resume ...
+		 */
+		employeeCvMSG: () => LocalizedString
+		/**
+		 * File is too large. Please upload a file that is less than 10MB.
+		 */
+		employeeCvSizeError: () => LocalizedString
+		/**
+		 * Invalid file type. Please upload a Word or a PDF document.
+		 */
+		employeeCvTypeError: () => LocalizedString
+		/**
+		 * This is a required field!
+		 */
+		requiredError: () => LocalizedString
+		/**
+		 * Send
+		 */
+		submit: () => LocalizedString
+		/**
+		 * Thank You!
+		 */
+		successFeedback: () => LocalizedString
+		/**
+		 * Something went wrong!
+		 */
+		errorFeedback: () => LocalizedString
 	}
 	aboutUs: {
 		/**
@@ -983,7 +1255,7 @@ export type TranslationFunctions = {
 				 */
 				submit: () => LocalizedString
 				/**
-				 * Message sent!
+				 * Thank You!
 				 */
 				successFeedback: () => LocalizedString
 				/**

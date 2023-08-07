@@ -74,6 +74,20 @@ type RootTranslation = {
 		 */
 		quote: string
 	}
+	heroSection: {
+		/**
+		 * B​u​i​l​d​i​n​g​t​e​c​ ​E​l​e​v​a​t​o​r​s
+		 */
+		title: string
+		/**
+		 * W​e​ ​o​f​f​e​r​ ​h​i​g​h​-​q​u​a​l​i​t​y​,​ ​c​u​s​t​o​m​i​z​a​b​l​e​ ​e​l​e​v​a​t​o​r​,​ ​e​s​c​a​l​a​t​o​r​ ​a​n​d​ ​p​a​r​k​i​n​g​ ​s​y​s​t​e​m​s​ ​s​o​l​u​t​i​o​n​s​ ​t​h​a​t​ ​p​r​o​v​i​d​e​ ​s​a​f​e​,​ ​e​f​f​i​c​i​e​n​t​,​ ​a​n​d​ ​r​e​l​i​a​b​l​e​ ​v​e​r​t​i​c​a​l​ ​t​r​a​n​s​p​o​r​t​a​t​i​o​n​ ​f​o​r​ ​a​n​y​ ​b​u​i​l​d​i​n​g​,​ ​w​h​i​l​e​ ​a​l​s​o​ ​e​n​h​a​n​c​i​n​g​ ​i​t​s​ ​v​a​l​u​e​ ​a​n​d​ ​a​c​c​e​s​s​i​b​i​l​i​t​y​.
+		 */
+		message: string
+		/**
+		 * R​e​q​u​e​s​t​ ​a​ ​m​e​e​t​i​n​g
+		 */
+		action: string
+	}
 	/**
 	 * M​o​d​e​r​n​ ​D​e​s​i​g​n​s
 	 */
@@ -261,6 +275,16 @@ type RootTranslation = {
 		 * C​a​b​i​n​s
 		 */
 		title: string
+	}
+	blogs: {
+		/**
+		 * B​L​O​G
+		 */
+		title: string
+		/**
+		 * R​e​a​d​ ​M​o​r​e​ ​.​.​.
+		 */
+		more: string
 	}
 	career: {
 		/**
@@ -703,6 +727,20 @@ export type TranslationFunctions = {
 		 */
 		quote: () => LocalizedString
 	}
+	heroSection: {
+		/**
+		 * Buildingtec Elevators
+		 */
+		title: () => LocalizedString
+		/**
+		 * We offer high-quality, customizable elevator, escalator and parking systems solutions that provide safe, efficient, and reliable vertical transportation for any building, while also enhancing its value and accessibility.
+		 */
+		message: () => LocalizedString
+		/**
+		 * Request a meeting
+		 */
+		action: () => LocalizedString
+	}
 	/**
 	 * Modern Designs
 	 */
@@ -890,6 +928,16 @@ export type TranslationFunctions = {
 		 * Cabins
 		 */
 		title: () => LocalizedString
+	}
+	blogs: {
+		/**
+		 * BLOG
+		 */
+		title: () => LocalizedString
+		/**
+		 * Read More ...
+		 */
+		more: () => LocalizedString
 	}
 	career: {
 		/**

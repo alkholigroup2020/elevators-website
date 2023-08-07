@@ -19,6 +19,12 @@ const en: BaseTranslation = {
 		blog: 'Blog',
 		quote: 'Request a Quote'
 	},
+	heroSection: {
+		title: 'Buildingtec Elevators',
+		message:
+			'We offer high-quality, customizable elevator, escalator and parking systems solutions that provide safe, efficient, and reliable vertical transportation for any building, while also enhancing its value and accessibility.',
+		action: 'Request a meeting'
+	},
 	modernDesign: 'Modern Designs',
 	greatIdeas: 'Great Ideas',
 	powerfulManagement: 'Powerful Management',
@@ -87,6 +93,10 @@ const en: BaseTranslation = {
 	},
 	cabins: {
 		title: 'Cabins'
+	},
+	blogs: {
+		title: 'BLOG',
+		more: 'Read More ...'
 	},
 	career: {
 		title: 'Career',

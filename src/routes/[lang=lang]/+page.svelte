@@ -12,7 +12,7 @@
 	export let data;
 </script>
 
-<HeroSection sectionData={data.data.homePageCMSData.heroSectionData} />
+<HeroSection />
 
 <IntroSection />
 

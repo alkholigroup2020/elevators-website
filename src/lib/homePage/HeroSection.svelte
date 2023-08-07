@@ -1,7 +1,6 @@
 <script lang="ts">
 	import SectionSize from '$lib/generalComponents/SectionSize.svelte';
-	export let sectionData: any;
-	import { currentAppLang } from '$lib/stores/store';
+	import LL from '$i18n/i18n-svelte';
 </script>
 
 <section>
@@ -16,62 +15,32 @@
 
 		<div class="absolute inset-0 flex items-center justify-center">
 			<div class="container mx-auto grid grid-cols-6 relative inset-0 z-10 text-center">
-				{#if $currentAppLang === 'en'}
-					<div
-						class="col-span-6 space-y-12 min-[350px]:space-y-6 min-[450px]:space-y-10 min-[520px]:space-y-12 xl:space-y-12 lg:col-span-4 lg:col-start-1 lg:col-end-7 lg:px-12"
+				<div
+					class="col-span-6 space-y-12 min-[350px]:space-y-6 min-[450px]:space-y-10 min-[520px]:space-y-12 xl:space-y-12 lg:col-span-4 lg:col-start-1 lg:col-end-7 lg:px-12"
+				>
+					<!-- en Heading -->
+					<h1
+						class="text-[40px] min-[450px]:text-5xl md:text-6xl xl:text-7xl text-white font-bold px-5"
+						style="text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.8); line-height:55px"
 					>
-						<!-- en Heading -->
-						<h1
-							class="text-[40px] min-[450px]:text-5xl md:text-6xl xl:text-7xl text-white font-bold px-5"
-							style="text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.8); line-height:55px"
-						>
-							{sectionData.enSectionTitle}
-						</h1>
-						<!-- en Subheading -->
-						<p
-							class="text-lg min-[390px]:text-xl md:text-2xl lg:text-3xl text-white max-[768px]:text-justify section-msg px-5 lg:px-[50px] xl:px-[150px] hidden min-[350px]:block"
-						>
-							<span class="leading-2 min-[390px]:leading-8 md:leading-relaxed">
-								{sectionData.enSectionMessage}
-							</span>
-						</p>
-						<!-- en Call-to-action button -->
-						<button
-							type="button"
-							class="btn variant-filled-secondary border border-success-500 btn-md md:btn-xl text-lg md:text-[22px]"
-						>
-							{sectionData.enButtonText}
-						</button>
-					</div>
-				{:else}
-					<div
-						dir="rtl"
-						class="col-span-6 space-y-12 min-[350px]:space-y-6 min-[450px]:space-y-10 min-[520px]:space-y-12 xl:space-y-12 lg:col-span-4 lg:col-start-1 lg:col-end-7 lg:px-12"
+						{$LL.heroSection.title()}
+					</h1>
+					<!-- en Subheading -->
+					<p
+						class="text-lg min-[390px]:text-xl md:text-2xl lg:text-3xl text-white max-[768px]:text-justify section-msg px-5 lg:px-[50px] xl:px-[150px] hidden min-[350px]:block"
 					>
-						<!-- en Heading -->
-						<h1
-							class="text-[40px] min-[450px]:text-5xl md:text-6xl xl:text-7xl text-white font-bold px-5"
-							style="text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.8); line-height:55px"
-						>
-							{sectionData.arSectionTitle}
-						</h1>
-						<!-- en Subheading -->
-						<p
-							class="text-lg min-[390px]:text-xl md:text-2xl lg:text-3xl text-white max-[768px]:text-justify section-msg px-5 lg:px-[50px] xl:px-[150px] hidden min-[350px]:block"
-						>
-							<span class="leading-2 min-[390px]:leading-8 md:leading-relaxed">
-								{sectionData.arSectionMessage}
-							</span>
-						</p>
-						<!-- en Call-to-action button -->
-						<button
-							type="button"
-							class="btn variant-filled-secondary border border-success-500 btn-md md:btn-xl text-lg md:text-[22px]"
-						>
-							{sectionData.arButtonText}
-						</button>
-					</div>
-				{/if}
+						<span class="leading-2 min-[390px]:leading-8 md:leading-relaxed">
+							{$LL.heroSection.message()}
+						</span>
+					</p>
+					<!-- en Call-to-action button -->
+					<button
+						type="button"
+						class="btn variant-filled-secondary border border-success-500 btn-md md:btn-xl text-lg md:text-[22px]"
+					>
+						{$LL.heroSection.action()}
+					</button>
+				</div>
 			</div>
 		</div>
 	</div>

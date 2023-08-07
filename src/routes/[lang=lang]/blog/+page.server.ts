@@ -1,37 +1,27 @@
+import type { PageServerLoad } from './$types';
 import { CMS_URL } from '$env/static/private';
 import { request, gql } from 'graphql-request';
 
 const query = gql`
 	{
-		cabinImages {
+		blogs {
 			data {
 				attributes {
-					description
-					thumb_100_100 {
+					Blog_Title
+					ID_And_Order
+					Blog_Brief
+					Blog_Main_Image_w550_h385 {
 						data {
 							attributes {
 								url
 							}
 						}
 					}
-					small_380_570 {
+					localizations {
 						data {
 							attributes {
-								url
-							}
-						}
-					}
-					medium_450_540 {
-						data {
-							attributes {
-								url
-							}
-						}
-					}
-					large_550_605 {
-						data {
-							attributes {
-								url
+								Blog_Title
+								Blog_Brief
 							}
 						}
 					}
@@ -44,11 +34,10 @@ const query = gql`
 const pageData = async () => {
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	const theData: any = await request(`${CMS_URL}/graphql`, query);
-	return theData.cabinImages.data;
+	return theData.blogs.data;
 };
 
-export async function load() {
+export const load = (async () => {
 	const pageCMSData = pageData();
-
 	return { pageCMSData };
-}
+}) satisfies PageServerLoad;

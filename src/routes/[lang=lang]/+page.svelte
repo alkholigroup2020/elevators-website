@@ -18,7 +18,7 @@
 
 <WelcomeSection />
 
-<ProductsSection sectionData={data.data.homePageCMSData.homeProductsArray} />
+<ProductsSection />
 
 <DopplerSection />
 

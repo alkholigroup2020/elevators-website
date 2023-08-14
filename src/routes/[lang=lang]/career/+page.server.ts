@@ -1,7 +1,6 @@
 import { fail } from '@sveltejs/kit';
 import { z } from 'zod';
 import { superValidate } from 'sveltekit-superforms/server';
-
 import { sendEmail } from '$lib/serverFiles/emailService.js';
 
 function convertDate(originalDate: Date): string {
@@ -42,13 +41,11 @@ const careerSchema = z.object({
 	textArea: z.string().min(10).max(2000).optional(),
 	position: z.string().nonempty(),
 	nationality: z.string().nonempty(),
-	dateOfBirth: z
-		.date()
-		.min(new Date('1940-01-01'), { message: 'Dates before 1940 are not allowed.' }),
+	dateOfBirth: z.any(),
 	degreeLevel: z.string().nonempty(),
 	careerLevel: z.string().nonempty(),
 	address: z.string().min(3).max(30).nonempty(),
-	employeeCV: z.instanceof(File).optional()
+	employeeCV: z.any()
 });
 
 export async function load() {
@@ -98,29 +95,29 @@ export const actions = {
 		`;
 
 		const file = formData.get('employeeCV');
+		console.log('🚀 attached file:', file);
 
-		if (file instanceof File) {
-			const fileBuffer = await file.arrayBuffer();
-			await sendEmail(
-				'fawzy.mohamed@alkholi.com',
-				'Website Messages - Career Form.',
-				emailTemplate,
-				emailTemplate,
-				[{ filename: file.name, content: Buffer.from(fileBuffer) }]
-			);
-		} else {
-			return fail(400, { careerForm });
-		}
+		// if (file instanceof File) {
+		// 	const fileBuffer = await file.arrayBuffer();
+		// 	await sendEmail(
+		// 		'fawzy.mohamed@alkholi.com',
+		// 		'Website Messages - Career Form.',
+		// 		emailTemplate,
+		// 		emailTemplate,
+		// 		[{ filename: file.name, content: Buffer.from(fileBuffer) }]
+		// 	);
+		// } else {
+		// 	return fail(400, { careerForm });
+		// }
 
-		// await sendEmail(
-		// 	'fawzy.mohamed@alkholi.com',
-		// 	'Website Messages - Career Form.',
-		// 	emailTemplate,
-		// 	emailTemplate
-		// );
+		await sendEmail(
+			'fawzy.mohamed@alkholi.com',
+			'Website Messages - Career Form.',
+			emailTemplate,
+			emailTemplate
+		);
 
 		// reset the form values
-
 		careerForm.data.name = '';
 		careerForm.data.email = '';
 		careerForm.data.mobile = '';

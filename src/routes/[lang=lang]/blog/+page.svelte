@@ -2,9 +2,10 @@
 	import { pageDirection } from '$lib/stores/store';
 	import { currentAppLang } from '$lib/stores/store';
 	import LL from '$i18n/i18n-svelte';
+	import LoadingSpinner from '$lib/generalComponents/LoadingSpinner.svelte';
 
 	export let data;
-	const blogsData = data.pageCMSData;
+	const blogsData = data.props.pageCMSData;
 
 	// A type representing the structure of your data
 	type DataType = {
@@ -31,8 +32,6 @@
 
 	// Sorting the array based on the `ID_And_Order` property
 	const blogs = cmsData.sort((a, b) => a.attributes.ID_And_Order - b.attributes.ID_And_Order);
-
-	let blogID = 4;
 </script>
 
 <section dir={$pageDirection}>
@@ -89,7 +88,7 @@
 							<p class="text-[42px] text-primary-500 font-light hidden md:block">
 								{blog.attributes.Blog_Title}
 							</p>
-							<p class="text-xl font-thin line-clamp-3 leading-7">
+							<p class="text-xl font-normal line-clamp-3 leading-7">
 								{blog.attributes.Blog_Brief}
 							</p>
 						</div>
@@ -98,7 +97,7 @@
 							<p class="text-t-[42px] text-primary-500 font-light hidden md:block">
 								{blog.attributes.localizations.data[0].attributes.Blog_Title}
 							</p>
-							<p class="text-xl font-thin line-clamp-3 leading-7">
+							<p class="text-xl font-normal line-clamp-3 leading-7">
 								{blog.attributes.localizations.data[0].attributes.Blog_Brief}
 							</p>
 						</div>
@@ -109,7 +108,7 @@
 							type="button"
 							aria-label="a link for the blog page"
 							href={`/${$currentAppLang}/blog/${blog.attributes.ID_And_Order}`}
-							class="text-lg font-thin btn variant-ringed-primary w-full rounded-lg py-[12px] mt-6"
+							class="text-lg font-normal btn variant-ringed-primary w-full rounded-lg py-[12px] mt-6"
 							>{$LL.blogs.more()}</a
 						>
 					</div>

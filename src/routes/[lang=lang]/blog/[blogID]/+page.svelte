@@ -8,11 +8,11 @@
 <section dir={$pageDirection}>
 	<div class="max-w-[1100px] mx-auto px-5 pb-8">
 		{#if $currentAppLang === 'en'}
-			<h1 class="h1 font-thin py-8 md:py-16 text-primary-500 text-center">
+			<h1 class="h1 font-normal py-8 md:py-16 text-primary-500 text-center">
 				{data.pageCMSData.Blog_Title}
 			</h1>
 		{:else}
-			<h1 class="h1 font-thin py-8 md:py-16 text-primary-500">
+			<h1 class="h1 font-normal py-8 md:py-16 text-primary-500">
 				{data.pageCMSData.localizations.data[0].attributes.Blog_Title}
 			</h1>
 		{/if}

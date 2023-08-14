@@ -44,11 +44,14 @@
 
 	// const theNavData: NavData = data.cmsNavData;
 
+	import { navigating } from '$app/stores';
+
 	import LL from '$i18n/i18n-svelte';
 	import ScrollTopButton from '$lib/generalComponents/ScrollTopButton.svelte';
 
 	import { goto } from '$app/navigation';
 	import WindowSize from '$lib/generalComponents/WindowSize.svelte';
+	import LoadingSpinner from '$lib/generalComponents/LoadingSpinner.svelte';
 
 	let navigate = async (event: Event) => {
 		event.preventDefault();
@@ -85,99 +88,96 @@
 
 <Modal />
 
-<Drawer>
-	{#if $drawerStore.id === 'id-1'}
-		<nav class="space-y-4 flex flex-col p-10">
-			<a
-				href={`/${$currentAppLang}`}
-				aria-label="a link to the home page"
-				class="hover:text-secondary-300"
-				>{$LL.mainNav.home()}
-			</a>
-			<a
-				href={`#products`}
-				on:click={navigate}
-				aria-label="a link to the products section"
-				class="hover:text-secondary-300"
-				>{$LL.mainNav.products()}
-			</a>
-			<a
-				href={`/${$currentAppLang}/about`}
-				aria-label="a link to the about page"
-				class="hover:text-secondary-300"
-				>{$LL.mainNav.about()}
-			</a>
-			<a
-				href={`/${$currentAppLang}/cabins`}
-				aria-label="a link to the cabins page"
-				class="hover:text-secondary-300"
-				>{$LL.mainNav.cabins()}
-			</a>
-			<a
-				href={`#projects`}
-				on:click={navigate}
-				aria-label="a link to the projects section"
-				class="hover:text-secondary-300"
-				>{$LL.mainNav.projects()}
-			</a>
-			<a
-				href={`#brands`}
-				on:click={navigate}
-				aria-label="a link to the brands section"
-				class="hover:text-secondary-300"
-				>{$LL.mainNav.brands()}
-			</a>
-			<a
-				href={`/${$currentAppLang}/media`}
-				aria-label="a link to the media page"
-				class="hover:text-secondary-300"
-				>{$LL.mainNav.media()}
-			</a>
-			<a
-				href={`/${$currentAppLang}/career`}
-				aria-label="a link to the career page"
-				class="hover:text-secondary-300"
-				>{$LL.mainNav.career()}
-			</a>
-			<a
-				href={`/${$currentAppLang}/blog`}
-				aria-label="a link to the blog page"
-				class="hover:text-secondary-300"
-				>{$LL.mainNav.blog()}
-			</a>
-			<a
-				href={`#quote`}
-				on:click={navigate}
-				aria-label="a link to the quote section"
-				class="hover:text-secondary-300"
-				>{$LL.mainNav.quote()}
-			</a>
-		</nav>
-	{:else if $drawerStore.id === 'id-2'}
-		(show 'example-2' contents)
-	{:else}
-		(fallback contents)
-	{/if}
-</Drawer>
+{#if $navigating}
+	<LoadingSpinner />
+{:else}
+	<Drawer>
+		{#if $drawerStore.id === 'id-1'}
+			<nav class="space-y-4 flex flex-col p-10">
+				<a
+					href={`/${$currentAppLang}`}
+					aria-label="a link to the home page"
+					class="hover:text-secondary-300"
+					>{$LL.mainNav.home()}
+				</a>
+				<a
+					href={`#products`}
+					on:click={navigate}
+					aria-label="a link to the products section"
+					class="hover:text-secondary-300"
+					>{$LL.mainNav.products()}
+				</a>
+				<a
+					href={`/${$currentAppLang}/about`}
+					aria-label="a link to the about page"
+					class="hover:text-secondary-300"
+					>{$LL.mainNav.about()}
+				</a>
+				<a
+					href={`/${$currentAppLang}/cabins`}
+					aria-label="a link to the cabins page"
+					class="hover:text-secondary-300"
+					>{$LL.mainNav.cabins()}
+				</a>
+				<a
+					href={`#projects`}
+					on:click={navigate}
+					aria-label="a link to the projects section"
+					class="hover:text-secondary-300"
+					>{$LL.mainNav.projects()}
+				</a>
+				<a
+					href={`#brands`}
+					on:click={navigate}
+					aria-label="a link to the brands section"
+					class="hover:text-secondary-300"
+					>{$LL.mainNav.brands()}
+				</a>
+				<a
+					href={`/${$currentAppLang}/media`}
+					aria-label="a link to the media page"
+					class="hover:text-secondary-300"
+					>{$LL.mainNav.media()}
+				</a>
+				<a
+					href={`/${$currentAppLang}/career`}
+					aria-label="a link to the career page"
+					class="hover:text-secondary-300"
+					>{$LL.mainNav.career()}
+				</a>
+				<a
+					href={`/${$currentAppLang}/blog`}
+					aria-label="a link to the blog page"
+					class="hover:text-secondary-300"
+					>{$LL.mainNav.blog()}
+				</a>
+				<a
+					href={`#quote`}
+					on:click={navigate}
+					aria-label="a link to the quote section"
+					class="hover:text-secondary-300"
+					>{$LL.mainNav.quote()}
+				</a>
+			</nav>
+		{:else if $drawerStore.id === 'id-2'}
+			(show 'example-2' contents)
+		{:else}
+			(fallback contents)
+		{/if}
+	</Drawer>
 
-<!-- <AppShell on:scroll={() => {}}> -->
-<!-- <svelte:fragment slot="pageHeader" /> -->
-<VeryTopNav />
+	<VeryTopNav />
 
-<!-- theNavbarData={theNavData} -->
-<Navbar />
+	<Navbar />
 
-<!-- <ScrollTopButton /> -->
+	<ScrollTopButton />
 
-<!-- Router Slot -->
-<slot />
+	<slot />
 
-<FooterSection />
+	<FooterSection />
 
-<VeryButtonFooter />
-
-<!-- <svelte:fragment slot="footer">Footer</svelte:fragment> -->
-<!-- </AppShell> -->
+	<VeryButtonFooter />
+{/if}
 
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');

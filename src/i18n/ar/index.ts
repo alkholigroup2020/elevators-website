@@ -46,7 +46,33 @@ const en: BaseTranslation = {
 		thirdParagraph: 'يمكننا تقديم خدمات عالية الجودة مع الحفاظ على أسعارنا التنافسية.'
 	},
 	productsSection: {
-		heading: 'معرض المنتجات'
+		heading: 'معرض المنتجات',
+		carElevatorHeading: 'مصاعد السيارات',
+		carElevatorBrief:
+			'تخيل فندقًا لا يوجد به طريقة فعالة لإيقاف سيارتك، وما هي تكلفة خدش سيارة العملاء وكيف سيؤثر ذلك على سمعة الفندق؟ ستنقل مصاعدنا سيارات العملاء بسرعة وأمان.',
+		cargoElevatorsHeading: 'مصاعد البضائع',
+		cargoElevatorsBrief:
+			'تتميز مصاعد البضائع في شركة فن المعمار بالسرعة والموثوقية مما يقلل من تكلفة العمليات ويزيد من كفائتها.',
+		dumbWaitersHeading: 'مصعد نقل الاطعمة',
+		dumbWaitersBrief:
+			'تتميز مصاعد الطعام لدينا بتصميم قوي وموثوق يزيد من الإنتاجية ويقلل من الإجهاد ويوفر الوقت.',
+		escalatorHeading: 'السلالم المتحركة',
+		escalatorBrief:
+			'قلب كل مركز تجاري في جميع أنحاء العالم هو المصعد. السلالم المتحركة تنقل آلاف الأشخاص كل يوم.',
+		homeElevatorsHeading: 'مصاعد المنزل',
+		homeElevatorsBrief:
+			'يوفر مصعد المنزل لدينا وسيلة نقل عمودية آمنة وموثوقة ومريحة ، مما يعزز إمكانية الوصول ويضيف قيمة إلى ممتلكاتك.',
+		modernizationHeading: 'العصرية',
+		modernizationBrief: 'تعبت من الأعطال المتكررة؟ قم بترقية المصعد الخاص بك لتحسين الأداء.',
+		panoramicElevatorsHeading: 'مصاعد بانورامية',
+		panoramicElevatorsBrief:
+			'نصمم الكبائن البانورامية لهؤلاء الذين يرغبون في الاستمتاع بالمنظر من الأعلى بكل روعته.',
+		passengerElevatorsHeading: 'مصاعد الأشخاص',
+		passengerElevatorsBrief:
+			'يمكننا من خلال تعاوننا مع شركة دوبلر العالمية تقديم مجموعة كاملة من التطبيقات في جميع وسائل النقل العامودي.',
+		spsHeading: 'أنظمة وقوف السيارات الذكية',
+		spsBrief:
+			'وقوف السيارات مكلف ومحدود في كل مدينة رئيسية تقريبًا في العالم. هناك حاجة لأنظمة وقوف السيارات الذكية لتلبية طلب وقوف السيارات لمدد قصيرة.'
 	},
 	dopplerSection: {
 		heading: 'دوبلر العالمية',
@@ -165,6 +191,33 @@ const en: BaseTranslation = {
 			r3: 'دعم فني لتركيب وخدمة المنتجات من خلال مركز الاتصال الخاص بنا على مدار 24 ساعة / 7 أيام.',
 			r4: 'توفر قطع الغيار لجميع دورة حياة المنتج وتوصيلها وتركيبها دون عناء.'
 		}
+	},
+	newElevator: {
+		title: 'طلب عرض سعر',
+		intro1: 'تفكر في مصعد جديد؟',
+		intro2: 'تواصل معنا الآن، وسنجعل أفكارك حقيقة!',
+		fullName: 'الإســم :',
+		fullNameError: 'الإسم يجب أن يكون أكثر من حرفين!',
+		fullNameLengthError: 'الحد الأقصى للإسم 60 حرف!',
+		fullNameNumericError: 'غير مسموح بالأرقام!',
+		fullNamePlaceholder: 'أدخل إسمك هنا ...',
+		companyName: 'إســم الشركة :',
+		companyNameError: 'الإسم يجب أن يكون أكثر من حرفين!',
+		companyNameLengthError: 'الحد الأقصى للإسم 60 حرف!',
+		companyNameNumericError: 'غير مسموح بالأرقام!',
+		companyNamePlaceholder: 'أدخل إسمك هنا ...',
+		mobileNumber: 'رقم الجوال :',
+		mobileNumberError: 'من فضلك أدخل رقم جوال صحيح!',
+		mobileNumberPlaceholder: 'أدخل رقم الجوال ...',
+		email: 'البريد الإلكتروني :',
+		emailError: 'من فضلك أدخل ايميل صحيح!',
+		emailPlaceholder: 'عنوان البريد الإلكتروني ...',
+		textArea: 'أخبرنا أكثر عن إحتياجاتك :',
+		textAreaPlaceholder: 'أكتب رسالتك هنا ...',
+		textAreaError1: 'الرسالة قصيرة للغاية!',
+		textAreaError2: 'الحد الأقصى للرسالة 2000 حرف!',
+		successFeedback: 'أرسلت بنجاح!',
+		errorFeedback: 'حدث خطأ ما!'
 	},
 	footer: {
 		contact: {

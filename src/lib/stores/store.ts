@@ -10,3 +10,5 @@ export const currentAppLang = writable({});
 export const pageDirection = derived(currentAppLang, ($currentAppLang) =>
 	$currentAppLang === 'ar' ? 'rtl' : 'ltr'
 );
+
+export const isLoading = writable();

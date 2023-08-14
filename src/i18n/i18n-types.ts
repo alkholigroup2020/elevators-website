@@ -151,6 +151,78 @@ type RootTranslation = {
 		 * O​u​r​ ​P​r​o​d​u​c​t​s
 		 */
 		heading: string
+		/**
+		 * C​a​r​ ​E​l​e​v​a​t​o​r​s
+		 */
+		carElevatorHeading: string
+		/**
+		 * I​m​a​g​i​n​e​ ​a​ ​h​o​t​e​l​ ​w​i​t​h​ ​n​o​ ​e​f​f​i​c​i​e​n​t​ ​w​a​y​ ​t​o​ ​p​a​r​k​ ​y​o​u​r​ ​c​a​r​.​ ​H​o​w​ ​m​u​c​h​ ​a​ ​s​c​r​a​t​c​h​ ​o​f​ ​c​l​i​e​n​t​s​ ​c​a​r​ ​i​s​ ​c​o​s​t​i​n​g​ ​f​o​r​ ​t​h​e​ ​r​e​p​u​t​a​t​i​o​n​ ​o​f​ ​t​h​e​ ​h​o​t​e​l​?​ ​O​u​r​ ​c​a​r​ ​l​i​f​t​s​ ​w​i​l​l​ ​t​r​a​n​s​p​o​r​t​ ​a​n​y​ ​v​e​h​i​c​l​e​ ​w​i​t​h​ ​s​p​e​e​d​ ​a​n​d​ ​s​a​f​e​t​y​.
+		 */
+		carElevatorBrief: string
+		/**
+		 * C​a​r​g​o​ ​L​i​f​t​s
+		 */
+		cargoElevatorsHeading: string
+		/**
+		 * B​u​i​l​d​i​n​g​T​e​c​’​s​ ​c​a​r​g​o​ ​l​i​f​t​s​ ​a​r​e​ ​f​a​s​t​ ​a​n​d​ ​r​e​l​i​a​b​l​e​ ​r​e​d​u​c​i​n​g​ ​t​h​e​ ​c​o​s​t​ ​o​f​ ​o​p​e​r​a​t​i​o​n​s​.
+		 */
+		cargoElevatorsBrief: string
+		/**
+		 * D​u​m​b​ ​W​a​i​t​e​r​s
+		 */
+		dumbWaitersHeading: string
+		/**
+		 * O​u​r​ ​d​u​m​b​w​a​i​t​e​r​s​ ​h​a​v​e​ ​r​o​b​u​s​t​ ​a​n​d​ ​r​e​l​i​a​b​l​e​ ​d​e​s​i​g​n​ ​i​n​c​r​e​a​s​i​n​g​ ​p​r​o​d​u​c​t​i​v​i​t​y​,​ ​d​e​c​r​e​a​s​i​n​g​ ​s​t​r​a​i​n​ ​a​n​d​ ​s​a​v​i​n​g​ ​t​i​m​e​.
+		 */
+		dumbWaitersBrief: string
+		/**
+		 * E​s​c​a​l​a​t​o​r​s
+		 */
+		escalatorHeading: string
+		/**
+		 * T​h​e​ ​h​e​a​r​t​ ​o​f​ ​e​v​e​r​y​ ​m​a​l​l​ ​a​l​l​ ​o​v​e​r​ ​t​h​e​ ​w​o​r​l​d​ ​i​s​ ​t​h​e​ ​e​s​c​a​l​a​t​o​r​.​ ​T​h​e​ ​e​s​c​a​l​a​t​o​r​s​ ​a​r​e​ ​t​r​a​n​s​p​o​r​t​i​n​g​ ​t​h​o​u​s​a​n​d​s​ ​o​f​ ​p​e​o​p​l​e​ ​e​v​e​r​y​ ​d​a​y​.
+		 */
+		escalatorBrief: string
+		/**
+		 * H​o​m​e​ ​E​l​e​v​a​t​o​r​s
+		 */
+		homeElevatorsHeading: string
+		/**
+		 * O​u​r​ ​h​o​m​e​ ​e​l​e​v​a​t​o​r​ ​p​r​o​v​i​d​e​s​ ​s​a​f​e​,​ ​r​e​l​i​a​b​l​e​,​ ​a​n​d​ ​c​o​n​v​e​n​i​e​n​t​ ​v​e​r​t​i​c​a​l​ ​t​r​a​n​s​p​o​r​t​a​t​i​o​n​,​ ​e​n​h​a​n​c​i​n​g​ ​a​c​c​e​s​s​i​b​i​l​i​t​y​ ​a​n​d​ ​a​d​d​i​n​g​ ​v​a​l​u​e​ ​t​o​ ​y​o​u​r​ ​p​r​o​p​e​r​t​y​.
+		 */
+		homeElevatorsBrief: string
+		/**
+		 * M​o​d​e​r​n​i​z​a​t​i​o​n
+		 */
+		modernizationHeading: string
+		/**
+		 * T​i​r​e​d​ ​o​f​ ​f​r​e​q​u​e​n​t​ ​b​r​e​a​k​d​o​w​n​s​?​ ​U​p​g​r​a​d​e​ ​y​o​u​r​ ​e​l​e​v​a​t​o​r​ ​f​o​r​ ​e​n​h​a​n​c​e​d​ ​p​e​r​f​o​r​m​a​n​c​e​.
+		 */
+		modernizationBrief: string
+		/**
+		 * P​a​n​o​r​a​m​i​c​ ​E​l​e​v​a​t​o​r​s
+		 */
+		panoramicElevatorsHeading: string
+		/**
+		 * W​e​ ​d​e​s​i​g​n​ ​p​a​n​o​r​a​m​i​c​ ​c​a​b​i​n​s​ ​f​o​r​ ​t​h​o​s​e​ ​w​h​o​ ​w​a​n​t​ ​t​o​ ​e​n​j​o​y​ ​t​h​e​ ​v​i​e​w​ ​f​r​o​m​ ​a​b​o​v​e​ ​i​n​ ​i​t​s​ ​e​n​t​i​r​e​ ​s​p​l​e​n​d​o​r​.
+		 */
+		panoramicElevatorsBrief: string
+		/**
+		 * P​a​s​s​e​n​g​e​r​ ​E​l​e​v​a​t​o​r
+		 */
+		passengerElevatorsHeading: string
+		/**
+		 * B​u​i​l​d​i​n​g​T​e​c​ ​E​l​e​v​a​t​o​r​s​ ​t​h​r​o​u​g​h​ ​i​t​s​ ​c​o​o​p​e​r​a​t​i​o​n​ ​w​i​t​h​ ​D​O​P​P​L​E​R​ ​S​.​A​.​ ​c​a​n​ ​o​f​f​e​r​ ​a​ ​c​o​m​p​l​e​t​e​ ​R​a​n​g​e​ ​o​f​ ​A​p​p​l​i​c​a​t​i​o​n​ ​i​n​ ​a​n​y​ ​V​e​r​t​i​c​a​l​ ​T​r​a​n​s​p​o​r​t​a​t​i​o​n​ ​n​e​e​d​.
+		 */
+		passengerElevatorsBrief: string
+		/**
+		 * S​m​a​r​t​ ​P​a​r​k​i​n​g​ ​S​y​s​t​e​m​s
+		 */
+		spsHeading: string
+		/**
+		 * P​a​r​k​i​n​g​ ​i​s​ ​c​o​s​t​l​y​ ​a​n​d​ ​l​i​m​i​t​e​d​ ​i​n​ ​a​l​m​o​s​t​ ​e​v​e​r​y​ ​m​a​j​o​r​ ​c​i​t​y​ ​i​n​ ​t​h​e​ ​w​o​r​l​d​.​ ​S​m​a​r​t​ ​p​a​r​k​i​n​g​ ​s​y​s​t​e​m​s​ ​f​o​r​ ​m​e​e​t​i​n​g​ ​n​e​a​r​-​t​e​r​m​ ​p​a​r​k​i​n​g​ ​d​e​m​a​n​d​ ​a​r​e​ ​n​e​e​d​e​d​.
+		 */
+		spsBrief: string
 	}
 	dopplerSection: {
 		/**
@@ -536,6 +608,108 @@ type RootTranslation = {
 			r4: string
 		}
 	}
+	newElevator: {
+		/**
+		 * R​e​q​u​e​s​t​ ​a​ ​Q​u​o​t​e
+		 */
+		title: string
+		/**
+		 * T​h​i​n​k​ ​a​b​o​u​t​ ​n​e​w​ ​l​i​f​t​?
+		 */
+		intro1: string
+		/**
+		 * G​e​t​ ​i​n​ ​t​o​u​c​h​,​ ​a​n​d​ ​w​e​ ​w​i​l​l​ ​m​a​k​e​ ​i​t​ ​d​o​n​e​!
+		 */
+		intro2: string
+		/**
+		 * N​a​m​e​:
+		 */
+		fullName: string
+		/**
+		 * N​a​m​e​ ​l​e​n​g​t​h​ ​s​h​o​u​l​d​ ​b​e​ ​m​o​r​e​ ​t​h​a​t​ ​2​ ​c​h​a​r​a​c​t​e​r​s​!
+		 */
+		fullNameError: string
+		/**
+		 * N​a​m​e​ ​i​s​ ​t​o​o​ ​l​o​n​g​!​ ​M​a​x​i​m​u​m​ ​6​0​ ​c​h​a​r​a​c​t​e​r​s​.
+		 */
+		fullNameLengthError: string
+		/**
+		 * N​o​ ​n​u​m​b​e​r​s​ ​a​r​e​ ​a​l​l​o​w​e​d​!
+		 */
+		fullNameNumericError: string
+		/**
+		 * E​n​t​e​r​ ​y​o​u​r​ ​n​a​m​e​ ​.​.​.
+		 */
+		fullNamePlaceholder: string
+		/**
+		 * C​o​m​p​a​n​y​ ​N​a​m​e​:
+		 */
+		companyName: string
+		/**
+		 * N​a​m​e​ ​l​e​n​g​t​h​ ​s​h​o​u​l​d​ ​b​e​ ​m​o​r​e​ ​t​h​a​t​ ​1​ ​c​h​a​r​a​c​t​e​r​!
+		 */
+		companyNameError: string
+		/**
+		 * N​a​m​e​ ​i​s​ ​t​o​o​ ​l​o​n​g​!​ ​M​a​x​i​m​u​m​ ​6​0​ ​c​h​a​r​a​c​t​e​r​s​.
+		 */
+		companyNameLengthError: string
+		/**
+		 * N​o​ ​n​u​m​b​e​r​s​ ​a​r​e​ ​a​l​l​o​w​e​d​!
+		 */
+		companyNameNumericError: string
+		/**
+		 * E​n​t​e​r​ ​c​o​m​p​a​n​y​ ​n​a​m​e​ ​.​.​.
+		 */
+		companyNamePlaceholder: string
+		/**
+		 * M​o​b​i​l​e​ ​N​u​m​b​e​r​:
+		 */
+		mobileNumber: string
+		/**
+		 * M​o​b​i​l​e​ ​n​u​m​b​e​r​ ​(​0​5​x​x​x​x​x​x​x​x​)
+		 */
+		mobileNumberPlaceholder: string
+		/**
+		 * P​l​e​a​s​e​ ​e​n​t​e​r​ ​a​ ​v​a​l​i​d​ ​m​o​b​i​l​e​ ​n​u​m​b​e​r​!
+		 */
+		mobileNumberError: string
+		/**
+		 * E​m​a​i​l​ ​A​d​d​r​e​s​s​:
+		 */
+		email: string
+		/**
+		 * P​l​e​a​s​e​ ​e​n​t​e​r​ ​a​ ​v​a​l​i​d​ ​e​m​a​i​l​!
+		 */
+		emailError: string
+		/**
+		 * E​n​t​e​r​ ​y​o​u​r​ ​e​m​a​i​l​ ​a​d​d​r​e​s​s​ ​.​.​.
+		 */
+		emailPlaceholder: string
+		/**
+		 * T​e​l​l​ ​u​s​ ​a​b​o​u​t​ ​y​o​u​r​ ​n​e​e​d​s​:
+		 */
+		textArea: string
+		/**
+		 * E​n​t​e​r​ ​y​o​u​r​ ​m​e​s​s​a​g​e​ ​h​e​r​e​ ​.​.​.
+		 */
+		textAreaPlaceholder: string
+		/**
+		 * M​e​s​s​a​g​e​ ​i​s​ ​t​o​o​ ​s​h​o​r​t​!
+		 */
+		textAreaError1: string
+		/**
+		 * M​e​s​s​a​g​e​ ​i​s​ ​t​o​o​ ​l​o​n​g​!​ ​M​a​x​i​m​u​m​ ​2​0​0​0​ ​c​h​a​r​a​c​t​e​r​s​.
+		 */
+		textAreaError2: string
+		/**
+		 * M​e​s​s​a​g​e​ ​S​e​n​t​ ​S​u​c​c​e​s​s​f​u​l​l​y
+		 */
+		successFeedback: string
+		/**
+		 * S​o​m​e​t​h​i​n​g​ ​w​e​n​t​ ​w​r​o​n​g​!
+		 */
+		errorFeedback: string
+	}
 	footer: {
 		contact: {
 			/**
@@ -804,6 +978,78 @@ export type TranslationFunctions = {
 		 * Our Products
 		 */
 		heading: () => LocalizedString
+		/**
+		 * Car Elevators
+		 */
+		carElevatorHeading: () => LocalizedString
+		/**
+		 * Imagine a hotel with no efficient way to park your car. How much a scratch of clients car is costing for the reputation of the hotel? Our car lifts will transport any vehicle with speed and safety.
+		 */
+		carElevatorBrief: () => LocalizedString
+		/**
+		 * Cargo Lifts
+		 */
+		cargoElevatorsHeading: () => LocalizedString
+		/**
+		 * BuildingTec’s cargo lifts are fast and reliable reducing the cost of operations.
+		 */
+		cargoElevatorsBrief: () => LocalizedString
+		/**
+		 * Dumb Waiters
+		 */
+		dumbWaitersHeading: () => LocalizedString
+		/**
+		 * Our dumbwaiters have robust and reliable design increasing productivity, decreasing strain and saving time.
+		 */
+		dumbWaitersBrief: () => LocalizedString
+		/**
+		 * Escalators
+		 */
+		escalatorHeading: () => LocalizedString
+		/**
+		 * The heart of every mall all over the world is the escalator. The escalators are transporting thousands of people every day.
+		 */
+		escalatorBrief: () => LocalizedString
+		/**
+		 * Home Elevators
+		 */
+		homeElevatorsHeading: () => LocalizedString
+		/**
+		 * Our home elevator provides safe, reliable, and convenient vertical transportation, enhancing accessibility and adding value to your property.
+		 */
+		homeElevatorsBrief: () => LocalizedString
+		/**
+		 * Modernization
+		 */
+		modernizationHeading: () => LocalizedString
+		/**
+		 * Tired of frequent breakdowns? Upgrade your elevator for enhanced performance.
+		 */
+		modernizationBrief: () => LocalizedString
+		/**
+		 * Panoramic Elevators
+		 */
+		panoramicElevatorsHeading: () => LocalizedString
+		/**
+		 * We design panoramic cabins for those who want to enjoy the view from above in its entire splendor.
+		 */
+		panoramicElevatorsBrief: () => LocalizedString
+		/**
+		 * Passenger Elevator
+		 */
+		passengerElevatorsHeading: () => LocalizedString
+		/**
+		 * BuildingTec Elevators through its cooperation with DOPPLER S.A. can offer a complete Range of Application in any Vertical Transportation need.
+		 */
+		passengerElevatorsBrief: () => LocalizedString
+		/**
+		 * Smart Parking Systems
+		 */
+		spsHeading: () => LocalizedString
+		/**
+		 * Parking is costly and limited in almost every major city in the world. Smart parking systems for meeting near-term parking demand are needed.
+		 */
+		spsBrief: () => LocalizedString
 	}
 	dopplerSection: {
 		/**
@@ -1188,6 +1434,108 @@ export type TranslationFunctions = {
 			 */
 			r4: () => LocalizedString
 		}
+	}
+	newElevator: {
+		/**
+		 * Request a Quote
+		 */
+		title: () => LocalizedString
+		/**
+		 * Think about new lift?
+		 */
+		intro1: () => LocalizedString
+		/**
+		 * Get in touch, and we will make it done!
+		 */
+		intro2: () => LocalizedString
+		/**
+		 * Name:
+		 */
+		fullName: () => LocalizedString
+		/**
+		 * Name length should be more that 2 characters!
+		 */
+		fullNameError: () => LocalizedString
+		/**
+		 * Name is too long! Maximum 60 characters.
+		 */
+		fullNameLengthError: () => LocalizedString
+		/**
+		 * No numbers are allowed!
+		 */
+		fullNameNumericError: () => LocalizedString
+		/**
+		 * Enter your name ...
+		 */
+		fullNamePlaceholder: () => LocalizedString
+		/**
+		 * Company Name:
+		 */
+		companyName: () => LocalizedString
+		/**
+		 * Name length should be more that 1 character!
+		 */
+		companyNameError: () => LocalizedString
+		/**
+		 * Name is too long! Maximum 60 characters.
+		 */
+		companyNameLengthError: () => LocalizedString
+		/**
+		 * No numbers are allowed!
+		 */
+		companyNameNumericError: () => LocalizedString
+		/**
+		 * Enter company name ...
+		 */
+		companyNamePlaceholder: () => LocalizedString
+		/**
+		 * Mobile Number:
+		 */
+		mobileNumber: () => LocalizedString
+		/**
+		 * Mobile number (05xxxxxxxx)
+		 */
+		mobileNumberPlaceholder: () => LocalizedString
+		/**
+		 * Please enter a valid mobile number!
+		 */
+		mobileNumberError: () => LocalizedString
+		/**
+		 * Email Address:
+		 */
+		email: () => LocalizedString
+		/**
+		 * Please enter a valid email!
+		 */
+		emailError: () => LocalizedString
+		/**
+		 * Enter your email address ...
+		 */
+		emailPlaceholder: () => LocalizedString
+		/**
+		 * Tell us about your needs:
+		 */
+		textArea: () => LocalizedString
+		/**
+		 * Enter your message here ...
+		 */
+		textAreaPlaceholder: () => LocalizedString
+		/**
+		 * Message is too short!
+		 */
+		textAreaError1: () => LocalizedString
+		/**
+		 * Message is too long! Maximum 2000 characters.
+		 */
+		textAreaError2: () => LocalizedString
+		/**
+		 * Message Sent Successfully
+		 */
+		successFeedback: () => LocalizedString
+		/**
+		 * Something went wrong!
+		 */
+		errorFeedback: () => LocalizedString
 	}
 	footer: {
 		contact: {

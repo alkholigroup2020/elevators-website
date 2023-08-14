@@ -407,7 +407,7 @@
 <section dir={$pageDirection}>
 	<div class="container mx-auto px-5 2xl:px-0">
 		<div class="py-12 lg:py-16">
-			<p class="text-white text-2xl">{$LL.career.intro()}</p>
+			<p class="text-surface-900-50-token text-xl lg:text-2xl">{$LL.career.intro()}</p>
 		</div>
 
 		<!-- <div class="mb-30">
@@ -709,9 +709,9 @@
 							<button
 								disabled={!resumeFileValid}
 								type="submit"
-								class="btn variant-ghost rounded-md border border-surface-50-900-token px-14 py-3 text-lg mt-3"
+								class="btn variant-ringed-success rounded-lg border border-surface-50-900-token px-16 py-[10px] text-lg mt-3"
 							>
-								<span class="px-3"
+								<!-- <span class="px-3"
 									><svg
 										xmlns="http://www.w3.org/2000/svg"
 										viewBox="0 0 32 32"
@@ -724,7 +724,7 @@
 											/><path d="M0 21h14v2H0zM16 21h2v2h-2zM0 16h2v2H0zM4 16h6v2H4z" /></g
 										></svg
 									></span
-								>
+								> -->
 								<span>{$LL.career.submit()}</span>
 							</button>
 						</div>

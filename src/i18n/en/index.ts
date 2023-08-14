@@ -46,7 +46,34 @@ const en: BaseTranslation = {
 		thirdParagraph: 'We can provide high quality services while maintaining our competitive prices.'
 	},
 	productsSection: {
-		heading: 'Our Products'
+		heading: 'Our Products',
+		carElevatorHeading: 'Car Elevators',
+		carElevatorBrief:
+			'Imagine a hotel with no efficient way to park your car. How much a scratch of clients car is costing for the reputation of the hotel? Our car lifts will transport any vehicle with speed and safety.',
+		cargoElevatorsHeading: 'Cargo Lifts',
+		cargoElevatorsBrief:
+			'BuildingTec’s cargo lifts are fast and reliable reducing the cost of operations.',
+		dumbWaitersHeading: 'Dumb Waiters',
+		dumbWaitersBrief:
+			'Our dumbwaiters have robust and reliable design increasing productivity, decreasing strain and saving time.',
+		escalatorHeading: 'Escalators',
+		escalatorBrief:
+			'The heart of every mall all over the world is the escalator. The escalators are transporting thousands of people every day.',
+		homeElevatorsHeading: 'Home Elevators',
+		homeElevatorsBrief:
+			'Our home elevator provides safe, reliable, and convenient vertical transportation, enhancing accessibility and adding value to your property.',
+		modernizationHeading: 'Modernization',
+		modernizationBrief:
+			'Tired of frequent breakdowns? Upgrade your elevator for enhanced performance.',
+		panoramicElevatorsHeading: 'Panoramic Elevators',
+		panoramicElevatorsBrief:
+			'We design panoramic cabins for those who want to enjoy the view from above in its entire splendor.',
+		passengerElevatorsHeading: 'Passenger Elevator',
+		passengerElevatorsBrief:
+			'BuildingTec Elevators through its cooperation with DOPPLER S.A. can offer a complete Range of Application in any Vertical Transportation need.',
+		spsHeading: 'Smart Parking Systems',
+		spsBrief:
+			'Parking is costly and limited in almost every major city in the world. Smart parking systems for meeting near-term parking demand are needed.'
 	},
 	dopplerSection: {
 		heading: 'Exclusive Agent in KSA',
@@ -167,6 +194,33 @@ const en: BaseTranslation = {
 			r3: '24 hours /7 days per week technical support for installation and servicing of products through our call center.',
 			r4: 'Spare parts availability for all the life cycle of the product forever European Technology and Services at your door step.'
 		}
+	},
+	newElevator: {
+		title: 'Request a Quote',
+		intro1: 'Think about new lift?',
+		intro2: 'Get in touch, and we will make it done!',
+		fullName: 'Name:',
+		fullNameError: 'Name length should be more that 2 characters!',
+		fullNameLengthError: 'Name is too long! Maximum 60 characters.',
+		fullNameNumericError: 'No numbers are allowed!',
+		fullNamePlaceholder: 'Enter your name ...',
+		companyName: 'Company Name:',
+		companyNameError: 'Name length should be more that 1 character!',
+		companyNameLengthError: 'Name is too long! Maximum 60 characters.',
+		companyNameNumericError: 'No numbers are allowed!',
+		companyNamePlaceholder: 'Enter company name ...',
+		mobileNumber: 'Mobile Number:',
+		mobileNumberPlaceholder: 'Mobile number (05xxxxxxxx)',
+		mobileNumberError: 'Please enter a valid mobile number!',
+		email: 'Email Address:',
+		emailError: 'Please enter a valid email!',
+		emailPlaceholder: 'Enter your email address ...',
+		textArea: 'Tell us about your needs:',
+		textAreaPlaceholder: 'Enter your message here ...',
+		textAreaError1: 'Message is too short!',
+		textAreaError2: 'Message is too long! Maximum 2000 characters.',
+		successFeedback: 'Message Sent Successfully',
+		errorFeedback: 'Something went wrong!'
 	},
 	footer: {
 		contact: {

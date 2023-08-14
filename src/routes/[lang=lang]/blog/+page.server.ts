@@ -37,7 +37,17 @@ const pageData = async () => {
 	return theData.blogs.data;
 };
 
-export const load = (async () => {
-	const pageCMSData = pageData();
-	return { pageCMSData };
-}) satisfies PageServerLoad;
+// export const load = (async () => {
+// 	const pageCMSData = pageData();
+// 	return { pageCMSData };
+// }) satisfies PageServerLoad;
+
+export const load: PageServerLoad = async () => {
+	try {
+		const pageCMSData = await pageData();
+		return { props: { pageCMSData } };
+	} catch (error) {
+		console.error('Failed to load page data:', error);
+		return { props: {} };
+	}
+};

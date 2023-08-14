@@ -76,7 +76,7 @@
 </script>
 
 <section class="section-bg" id="projects">
-	<div class="container mx-auto pb-16 px-5 2xl:px-0">
+	<div class="container mx-auto pb-16 px-3 2xl:px-0">
 		<!-- title section -->
 		<div class="text-center py-9 md:py-12 2xl:py-[70px]">
 			<h2 class="text-4xl lg:text-4xl 2xl:text-5xl font-semibold">
@@ -105,7 +105,7 @@
 				<!-- Carousel -->
 				<div
 					bind:this={elemProjects}
-					class="snap-x snap-mandatory scroll-smooth flex gap-12 pb-3 overflow-x-auto"
+					class="snap-x snap-mandatory scroll-smooth flex gap-4 pb-3 overflow-x-auto"
 				>
 					{#each sortedProducts as project}
 						<div

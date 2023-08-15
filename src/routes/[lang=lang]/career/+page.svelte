@@ -3,14 +3,15 @@
 
 	import LL from '$i18n/i18n-svelte';
 
-	import SuperDebug from 'sveltekit-superforms/client/SuperDebug.svelte';
-
 	import { superForm } from 'sveltekit-superforms/client';
 
 	import { Autocomplete, popup } from '@skeletonlabs/skeleton';
 	import type { AutocompleteOption, PopupSettings } from '@skeletonlabs/skeleton';
 
 	import { FileDropzone } from '@skeletonlabs/skeleton';
+
+	import { modeCurrent } from '@skeletonlabs/skeleton';
+	$: sendIconColor = $modeCurrent ? '#000' : '#FFF';
 
 	const nationalityOptions: AutocompleteOption[] = [
 		{ label: 'Afghan', value: 'afghan' },
@@ -407,12 +408,8 @@
 <section dir={$pageDirection}>
 	<div class="container mx-auto px-5 2xl:px-0">
 		<div class="py-12 lg:py-16">
-			<p class="text-surface-900-50-token text-xl lg:text-2xl">{$LL.career.intro()}</p>
+			<p class="text-2xl lg:text-3xl font-light text-primary-400-500-token">{$LL.career.intro()}</p>
 		</div>
-
-		<!-- <div class="mb-30">
-			<SuperDebug data={$form} />
-		</div> -->
 
 		<form method="POST" use:enhance>
 			<div class="grid lg:grid-cols-2 gap-4 lg:gap-x-16 lg:gap-y-8 pb-5 lg:pb-12">
@@ -426,7 +423,7 @@
 
 							<input
 								bind:value={$form.name}
-								class="variant-form-material input text-lg focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
+								class="rounded-md input text-lg focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
 								type="text"
 								name="name"
 								{...$constraints.name}
@@ -448,7 +445,7 @@
 							<select
 								name="position"
 								bind:value={$form.position}
-								class="select variant-form-material text-lg focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
+								class="select rounded-md text-lg focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
 							>
 								<option class="mb-3" value="Sales Rep">Sales Rep</option>
 								<option class="mb-3" value="Sales Engineer">Sales Engineer</option>
@@ -473,7 +470,7 @@
 								</div>
 
 								<input
-									class="input autocomplete variant-form-material text-lg focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
+									class="input autocomplete rounded-md text-lg focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
 									type="search"
 									name="nationality"
 									bind:value={$form.nationality}
@@ -508,7 +505,7 @@
 							<input
 								class="{$pageDirection === 'rtl'
 									? 'text-right'
-									: ''} variant-form-material input text-lg focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
+									: ''}  rounded-md input text-lg focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
 								title="Input (date)"
 								type="date"
 								name="dateOfBirth"
@@ -531,7 +528,7 @@
 							</div>
 							<input
 								bind:value={$form.mobile}
-								class="variant-form-material input text-lg focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
+								class=" rounded-md input text-lg focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
 								type="tel"
 								title="Input (number)"
 								name="mobile"
@@ -556,7 +553,7 @@
 								autocomplete="email"
 								{...$constraints.email}
 								bind:value={$form.email}
-								class="variant-form-material input text-lg focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
+								class=" rounded-md input text-lg focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
 								placeholder={$LL.career.emailPlaceholder()}
 							/>
 						</label>
@@ -575,7 +572,7 @@
 							<select
 								name="degreeLevel"
 								bind:value={$form.degreeLevel}
-								class="select variant-form-material text-lg focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
+								class="select rounded-md text-lg focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
 							>
 								<option class="mb-3" value="High School">High School</option>
 								<option class="mb-3" value="Certification">Certification</option>
@@ -600,7 +597,7 @@
 							<select
 								name="careerLevel"
 								bind:value={$form.careerLevel}
-								class="select variant-form-material text-lg focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
+								class="select rounded-md text-lg focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
 							>
 								<option class="mb-3" value="Student">Student</option>
 								<option class="mb-3" value="Entry Level (less than 4 years experience)"
@@ -628,7 +625,7 @@
 
 							<input
 								bind:value={$form.address}
-								class="variant-form-material input text-lg focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
+								class=" rounded-md input text-lg focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
 								type="text"
 								name="address"
 								{...$constraints.address}
@@ -683,7 +680,7 @@
 							</div>
 
 							<textarea
-								class="variant-form-material input text-lg focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
+								class=" rounded-md input text-lg focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
 								rows="5"
 								{...$constraints.textArea}
 								placeholder={$LL.career.textAreaPlaceholder()}
@@ -707,11 +704,45 @@
 						</div>
 						<div>
 							<button
+								type="submit"
+								disabled={!resumeFileValid}
+								class="btn variant-ringed-surface rounded-lg px-16 py-[10px] text-lg mt-3"
+							>
+								<span class="px-3 mt-1"
+									><svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 32 32"
+										fill={sendIconColor}
+										width="18"
+										height="18"
+										><g data-name="21-Email-Send"
+											><path
+												d="M29 4H3a3 3 0 0 0-3 3v4h2V7.23l13.42 9.58a1 1 0 0 0 1.16 0L30 7.23V25a1 1 0 0 1-1 1H4v2h25a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zM16 14.77 3.72 6h24.56zM0 26h2v2H0z"
+											/><path d="M0 21h14v2H0zM16 21h2v2h-2zM0 16h2v2H0zM4 16h6v2H4z" /></g
+										></svg
+									></span
+								>
+								<span class="mt-1">{$LL.career.submit()}</span>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- submit button -->
+				<!-- <div>
+					<div class="h-full flex items-end lg:justify-end p-0 m-0">
+						<div class=" order-last lg:order-first">
+							<p class={`${appliedClass} text-lg mx-3`}>
+								{formSubmitMessage}
+							</p>
+						</div>
+						<div>
+							<button
 								disabled={!resumeFileValid}
 								type="submit"
 								class="btn variant-ringed-success rounded-lg border border-surface-50-900-token px-16 py-[10px] text-lg mt-3"
 							>
-								<!-- <span class="px-3"
+								<span class="px-3"
 									><svg
 										xmlns="http://www.w3.org/2000/svg"
 										viewBox="0 0 32 32"
@@ -724,12 +755,12 @@
 											/><path d="M0 21h14v2H0zM16 21h2v2h-2zM0 16h2v2H0zM4 16h6v2H4z" /></g
 										></svg
 									></span
-								> -->
+								>
 								<span>{$LL.career.submit()}</span>
 							</button>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</form>
 	</div>

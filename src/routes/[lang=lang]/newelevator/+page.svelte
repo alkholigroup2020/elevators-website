@@ -2,6 +2,7 @@
 	import { pageDirection } from '$lib/stores/store';
 	import LL from '$i18n/i18n-svelte';
 	import { superForm } from 'sveltekit-superforms/client';
+	import { modeCurrent } from '@skeletonlabs/skeleton';
 
 	export let data;
 	let newElevatorFormSettings: any;
@@ -9,6 +10,8 @@
 
 	$: formSubmitMessage = '';
 	$: appliedClass = '';
+
+	$: sendIconColor = $modeCurrent ? '#000' : '#FFF';
 
 	const { form, errors, constraints, enhance } = superForm(newElevatorFormSettings, {
 		validators: {
@@ -101,10 +104,10 @@
 <section dir={$pageDirection}>
 	<div class="container mx-auto px-5 2xl:px-0">
 		<div class="py-12 lg:pt-16">
-			<p class="text-surface-900-50-token text-xl lg:text-2xl">
+			<p class="text-2xl lg:text-3xl font-light text-primary-400-500-token">
 				{$LL.newElevator.intro1()}
 			</p>
-			<p class="text-surface-900-50-token text-xl lg:text-2xl pt-3 lg:pt-5">
+			<p class="text-2xl lg:text-3xl font-light text-primary-400-500-token pt-3 lg:pt-5">
 				{$LL.newElevator.intro2()}
 			</p>
 		</div>
@@ -231,7 +234,7 @@
 									><svg
 										xmlns="http://www.w3.org/2000/svg"
 										viewBox="0 0 32 32"
-										fill="#FFF"
+										fill={sendIconColor}
 										width="18"
 										height="18"
 										><g data-name="21-Email-Send"

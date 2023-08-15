@@ -243,12 +243,12 @@ const en: BaseTranslation = {
 			li3: 'إجراء التعديلات اللازمة',
 			li4: 'شاملاً الصيانة الطارئة والعلاجية'
 		},
-		formIntro: '',
+		formIntro: 'إرسل طلبك الآن:',
 		form: {
-			selectMSG: '',
-			silver: '',
-			gold: '',
-			diamond: '',
+			selectMSG: 'مستوى التعاقد',
+			silver: 'المستوى الفضي',
+			gold: 'المستوى الذهبي',
+			diamond: 'المستوى الماسي',
 			fullName: 'الإســم :',
 			fullNameError: 'الإسم يجب أن يكون أكثر من حرفين!',
 			fullNameLengthError: 'الحد الأقصى للإسم 60 حرف!',

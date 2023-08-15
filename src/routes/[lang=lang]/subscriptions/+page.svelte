@@ -16,6 +16,8 @@
 	$: goldContractColor = $modeCurrent ? '#ca8a04' : '#fde68a';
 	$: diamondContractColor = $modeCurrent ? '#4c1d95' : '#6d28d9';
 
+	$: sendIconColor = $modeCurrent ? '#000' : '#FFF';
+
 	const { form, errors, constraints, enhance } = superForm(newSubscriptionFormSettings, {
 		validators: {
 			name: (value) => {
@@ -108,7 +110,7 @@
 	<div class="container mx-auto px-5 2xl:px-0">
 		<!-- intro paragraph -->
 		<div class="py-12 lg:py-16">
-			<p class="text-xl lg:text-3xl font-light max-lg:text-center pb-5 text-primary-400-500-token">
+			<p class="text-2xl lg:text-3xl font-light max-lg:text-center pb-5 text-primary-400-500-token">
 				{$LL.newSubscription.intro()}
 			</p>
 		</div>
@@ -238,7 +240,7 @@
 	<div class="container mx-auto px-5 2xl:px-0">
 		<!-- intro paragraph -->
 		<div class="py-8 lg:py-12">
-			<p class="text-xl lg:text-3xl font-light text-primary-400-500-token max-lg:text-center">
+			<p class="text-2xl lg:text-3xl font-light text-primary-400-500-token">
 				{$LL.newSubscription.formIntro()}
 			</p>
 		</div>
@@ -405,7 +407,7 @@
 									><svg
 										xmlns="http://www.w3.org/2000/svg"
 										viewBox="0 0 32 32"
-										fill="#FFF"
+										fill={sendIconColor}
 										width="18"
 										height="18"
 										><g data-name="21-Email-Send"

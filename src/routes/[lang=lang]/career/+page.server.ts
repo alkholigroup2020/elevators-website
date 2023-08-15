@@ -94,33 +94,34 @@ export const actions = {
 			<div style="width: 50px; height: 50px;"></div>
 		`;
 
-		const file = formData.get('employeeCV');
-		console.log('🚀 attached file:', file);
+		const file: any = formData.get('employeeCV');
 
-		// if (file instanceof File) {
-		// 	const fileBuffer = await file.arrayBuffer();
-		// 	await sendEmail(
-		// 		'fawzy.mohamed@alkholi.com',
-		// 		'Website Messages - Career Form.',
-		// 		emailTemplate,
-		// 		emailTemplate,
-		// 		[{ filename: file.name, content: Buffer.from(fileBuffer) }]
-		// 	);
-		// } else {
-		// 	return fail(400, { careerForm });
-		// }
+		// Specify interface/type for attachment
+		interface Attachment {
+			filename: string;
+			content: Buffer;
+		}
+
+		// Convert file to buffer
+		const buffer = await file.arrayBuffer();
+		const attachment: Attachment = {
+			filename: file.name,
+			content: Buffer.from(buffer)
+		};
 
 		await sendEmail(
 			'fawzy.mohamed@alkholi.com',
 			'Website Messages - Career Form.',
 			emailTemplate,
-			emailTemplate
+			emailTemplate,
+			[attachment]
 		);
 
 		// reset the form values
 		careerForm.data.name = '';
 		careerForm.data.email = '';
 		careerForm.data.mobile = '';
+		careerForm.data.dateOfBirth = '';
 		careerForm.data.textArea = '';
 		careerForm.data.position = '';
 		careerForm.data.nationality = '';

@@ -219,6 +219,60 @@ const en: BaseTranslation = {
 		successFeedback: 'أرسلت بنجاح!',
 		errorFeedback: 'حدث خطأ ما!'
 	},
+	newSubscription: {
+		title: 'طلب عرض سعر',
+		intro: 'لدينا ثلاث مستويات من عقود الصيانة للإختيار منها:',
+		card1: {
+			title: 'المستوى الفضي',
+			li1: 'الصيانة الوقائية (أربع زيارات خلال العام)',
+			li2: 'الفحص الدوري',
+			li3: 'إجراء التعديلات اللازمة',
+			li4: 'شاملاً الصيانة الطارئة والعلاجية'
+		},
+		card2: {
+			title: 'المستوى الذهبي',
+			li1: 'الصيانة الوقائية (ستة زيارات خلال العام)',
+			li2: 'الفحص الدوري',
+			li3: 'إجراء التعديلات اللازمة',
+			li4: 'شاملاً الصيانة الطارئة والعلاجية'
+		},
+		card3: {
+			title: 'المستوى الماسي',
+			li1: 'الصيانة الوقائية (إثنى عشر زيارة خلال العام)',
+			li2: 'الفحص الدوري',
+			li3: 'إجراء التعديلات اللازمة',
+			li4: 'شاملاً الصيانة الطارئة والعلاجية'
+		},
+		formIntro: '',
+		form: {
+			selectMSG: '',
+			silver: '',
+			gold: '',
+			diamond: '',
+			fullName: 'الإســم :',
+			fullNameError: 'الإسم يجب أن يكون أكثر من حرفين!',
+			fullNameLengthError: 'الحد الأقصى للإسم 60 حرف!',
+			fullNameNumericError: 'غير مسموح بالأرقام!',
+			fullNamePlaceholder: 'أدخل إسمك هنا ...',
+			companyName: 'إســم الشركة :',
+			companyNameError: 'الإسم يجب أن يكون أكثر من حرفين!',
+			companyNameLengthError: 'الحد الأقصى للإسم 60 حرف!',
+			companyNameNumericError: 'غير مسموح بالأرقام!',
+			companyNamePlaceholder: 'أدخل إسمك هنا ...',
+			mobileNumber: 'رقم الجوال :',
+			mobileNumberError: 'من فضلك أدخل رقم جوال صحيح!',
+			mobileNumberPlaceholder: 'أدخل رقم الجوال ...',
+			email: 'البريد الإلكتروني :',
+			emailError: 'من فضلك أدخل ايميل صحيح!',
+			emailPlaceholder: 'عنوان البريد الإلكتروني ...',
+			textArea: 'أخبرنا أكثر عن إحتياجاتك :',
+			textAreaPlaceholder: 'أكتب رسالتك هنا ...',
+			textAreaError1: 'الرسالة قصيرة للغاية!',
+			textAreaError2: 'الحد الأقصى للرسالة 2000 حرف!',
+			successFeedback: 'أرسلت بنجاح!',
+			errorFeedback: 'حدث خطأ ما!'
+		}
+	},
 	footer: {
 		contact: {
 			title: 'اتصــل بنا',

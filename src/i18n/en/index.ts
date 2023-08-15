@@ -222,6 +222,60 @@ const en: BaseTranslation = {
 		successFeedback: 'Message Sent Successfully',
 		errorFeedback: 'Something went wrong!'
 	},
+	newSubscription: {
+		title: 'Request a Quote',
+		intro: 'We have three levels of maintenance contracts to choose from:',
+		card1: {
+			title: 'Silver',
+			li1: 'Preventive Maintenance (4 Visits per Year)',
+			li2: 'Inspection',
+			li3: 'Adjustments',
+			li4: 'Emergency and call backs are included'
+		},
+		card2: {
+			title: 'Gold',
+			li1: 'Preventive Maintenance (6 Visits per Year)',
+			li2: 'Inspection',
+			li3: 'Adjustments',
+			li4: 'Emergency and call backs are included'
+		},
+		card3: {
+			title: 'Diamond',
+			li1: 'Preventive Maintenance (12 Visits per Year)',
+			li2: 'Inspection',
+			li3: 'Adjustments',
+			li4: 'Emergency and call backs are included'
+		},
+		formIntro: 'Send a quotation request:',
+		form: {
+			selectMSG: 'Select Contract Level:',
+			silver: 'Silver Subscription',
+			gold: 'Gold Subscription',
+			diamond: 'Diamond Subscription',
+			fullName: 'Name:',
+			fullNameError: 'Name length should be more that 2 characters!',
+			fullNameLengthError: 'Name is too long! Maximum 60 characters.',
+			fullNameNumericError: 'No numbers are allowed!',
+			fullNamePlaceholder: 'Enter your name ...',
+			companyName: 'Company Name:',
+			companyNameError: 'Name length should be more that 1 character!',
+			companyNameLengthError: 'Name is too long! Maximum 60 characters.',
+			companyNameNumericError: 'No numbers are allowed!',
+			companyNamePlaceholder: 'Enter company name ...',
+			mobileNumber: 'Mobile Number:',
+			mobileNumberPlaceholder: 'Mobile number (05xxxxxxxx)',
+			mobileNumberError: 'Please enter a valid mobile number!',
+			email: 'Email Address:',
+			emailError: 'Please enter a valid email!',
+			emailPlaceholder: 'Enter your email address ...',
+			textArea: 'Tell us about your needs:',
+			textAreaPlaceholder: 'Enter your message here ...',
+			textAreaError1: 'Message is too short!',
+			textAreaError2: 'Message is too long! Maximum 2000 characters.',
+			successFeedback: 'Message Sent Successfully',
+			errorFeedback: 'Something went wrong!'
+		}
+	},
 	footer: {
 		contact: {
 			title: 'Contact Us',

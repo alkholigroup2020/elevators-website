@@ -3,7 +3,8 @@ import { z } from 'zod';
 import { superValidate } from 'sveltekit-superforms/server';
 import { sendEmail } from '$lib/serverFiles/emailService.js';
 
-const newElevatorSchema = z.object({
+const newSubscriptionSchema = z.object({
+	level: z.string().nonempty(),
 	name: z.string().min(3).max(60).nonempty(),
 	companyName: z.string().min(2).max(60).nonempty(),
 	mobileNumber: z.string().min(10).max(10),
@@ -12,20 +13,20 @@ const newElevatorSchema = z.object({
 });
 
 export async function load() {
-	const newElevatorFormSettings = await superValidate(newElevatorSchema);
-	return { newElevatorFormSettings };
+	const newSubscriptionFormSettings = await superValidate(newSubscriptionSchema);
+	return { newSubscriptionFormSettings };
 }
 
 export const actions = {
 	default: async ({ request }) => {
-		const newElevatorForm = await superValidate(request, newElevatorSchema);
+		const newSubscriptionForm = await superValidate(request, newSubscriptionSchema);
 
-		if (!newElevatorForm.valid) {
-			return fail(400, { newElevatorForm });
+		if (!newSubscriptionForm.valid) {
+			return fail(400, { newSubscriptionForm });
 		}
 
-		const msg = newElevatorForm.data.textArea || 'No Message';
-		const email = newElevatorForm.data.email || 'No Email Address';
+		const msg = newSubscriptionForm.data.textArea || 'No Message';
+		const email = newSubscriptionForm.data.email || 'No Email Address';
 
 		const emailTemplate = `
 			<table align="center" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse; border: 1px solid #cccccc; margin-bottom: 25px;">
@@ -42,10 +43,11 @@ export const actions = {
 				</tr> 
 				<tr>
 					<td bgcolor="#ffffff" style="padding: 40px 30px 40px 30px;">
-						<h1>Footer Form</h1>
-						<p style="font-size: 18px;"><strong>Name:</strong> ${newElevatorForm.data.name}</p>
-						<p style="font-size: 18px;"><strong>Company Name:</strong> ${newElevatorForm.data.companyName}</p>
-						<p style="font-size: 18px;"><strong>Mobile Number:</strong> ${newElevatorForm.data.mobileNumber}</p>
+						<h1>Subscription Quote Request</h1>
+						<p style="font-size: 18px;"><strong>Name:</strong> ${newSubscriptionForm.data.name}</p>
+						<p style="font-size: 18px;"><strong>Subscription Level:</strong> ${newSubscriptionForm.data.level}</p>
+						<p style="font-size: 18px;"><strong>Company Name:</strong> ${newSubscriptionForm.data.companyName}</p>
+						<p style="font-size: 18px;"><strong>Mobile Number:</strong> ${newSubscriptionForm.data.mobileNumber}</p>
 						<p style="font-size: 18px;"><strong>Email Address:</strong> ${email}</p>
 						<p style="font-size: 18px;"><strong>Message:</strong> ${msg}</p>
 					</td>
@@ -67,12 +69,13 @@ export const actions = {
 		);
 
 		// reset the form values
-		newElevatorForm.data.name = '';
-		newElevatorForm.data.companyName = '';
-		newElevatorForm.data.mobileNumber = '';
-		newElevatorForm.data.email = '';
-		newElevatorForm.data.textArea = '';
+		newSubscriptionForm.data.name = '';
+		newSubscriptionForm.data.level = '';
+		newSubscriptionForm.data.companyName = '';
+		newSubscriptionForm.data.mobileNumber = '';
+		newSubscriptionForm.data.email = '';
+		newSubscriptionForm.data.textArea = '';
 
-		return { newElevatorForm };
+		return { newSubscriptionForm };
 	}
 };

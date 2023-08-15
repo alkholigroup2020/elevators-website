@@ -710,6 +710,192 @@ type RootTranslation = {
 		 */
 		errorFeedback: string
 	}
+	newSubscription: {
+		/**
+		 * R​e​q​u​e​s​t​ ​a​ ​Q​u​o​t​e
+		 */
+		title: string
+		/**
+		 * W​e​ ​h​a​v​e​ ​t​h​r​e​e​ ​l​e​v​e​l​s​ ​o​f​ ​m​a​i​n​t​e​n​a​n​c​e​ ​c​o​n​t​r​a​c​t​s​ ​t​o​ ​c​h​o​o​s​e​ ​f​r​o​m​:
+		 */
+		intro: string
+		card1: {
+			/**
+			 * S​i​l​v​e​r
+			 */
+			title: string
+			/**
+			 * P​r​e​v​e​n​t​i​v​e​ ​M​a​i​n​t​e​n​a​n​c​e​ ​(​4​ ​V​i​s​i​t​s​ ​p​e​r​ ​Y​e​a​r​)
+			 */
+			li1: string
+			/**
+			 * I​n​s​p​e​c​t​i​o​n
+			 */
+			li2: string
+			/**
+			 * A​d​j​u​s​t​m​e​n​t​s
+			 */
+			li3: string
+			/**
+			 * E​m​e​r​g​e​n​c​y​ ​a​n​d​ ​c​a​l​l​ ​b​a​c​k​s​ ​a​r​e​ ​i​n​c​l​u​d​e​d
+			 */
+			li4: string
+		}
+		card2: {
+			/**
+			 * G​o​l​d
+			 */
+			title: string
+			/**
+			 * P​r​e​v​e​n​t​i​v​e​ ​M​a​i​n​t​e​n​a​n​c​e​ ​(​6​ ​V​i​s​i​t​s​ ​p​e​r​ ​Y​e​a​r​)
+			 */
+			li1: string
+			/**
+			 * I​n​s​p​e​c​t​i​o​n
+			 */
+			li2: string
+			/**
+			 * A​d​j​u​s​t​m​e​n​t​s
+			 */
+			li3: string
+			/**
+			 * E​m​e​r​g​e​n​c​y​ ​a​n​d​ ​c​a​l​l​ ​b​a​c​k​s​ ​a​r​e​ ​i​n​c​l​u​d​e​d
+			 */
+			li4: string
+		}
+		card3: {
+			/**
+			 * D​i​a​m​o​n​d
+			 */
+			title: string
+			/**
+			 * P​r​e​v​e​n​t​i​v​e​ ​M​a​i​n​t​e​n​a​n​c​e​ ​(​1​2​ ​V​i​s​i​t​s​ ​p​e​r​ ​Y​e​a​r​)
+			 */
+			li1: string
+			/**
+			 * I​n​s​p​e​c​t​i​o​n
+			 */
+			li2: string
+			/**
+			 * A​d​j​u​s​t​m​e​n​t​s
+			 */
+			li3: string
+			/**
+			 * E​m​e​r​g​e​n​c​y​ ​a​n​d​ ​c​a​l​l​ ​b​a​c​k​s​ ​a​r​e​ ​i​n​c​l​u​d​e​d
+			 */
+			li4: string
+		}
+		/**
+		 * S​e​n​d​ ​a​ ​q​u​o​t​a​t​i​o​n​ ​r​e​q​u​e​s​t​:
+		 */
+		formIntro: string
+		form: {
+			/**
+			 * S​e​l​e​c​t​ ​C​o​n​t​r​a​c​t​ ​L​e​v​e​l​:
+			 */
+			selectMSG: string
+			/**
+			 * S​i​l​v​e​r​ ​S​u​b​s​c​r​i​p​t​i​o​n
+			 */
+			silver: string
+			/**
+			 * G​o​l​d​ ​S​u​b​s​c​r​i​p​t​i​o​n
+			 */
+			gold: string
+			/**
+			 * D​i​a​m​o​n​d​ ​S​u​b​s​c​r​i​p​t​i​o​n
+			 */
+			diamond: string
+			/**
+			 * N​a​m​e​:
+			 */
+			fullName: string
+			/**
+			 * N​a​m​e​ ​l​e​n​g​t​h​ ​s​h​o​u​l​d​ ​b​e​ ​m​o​r​e​ ​t​h​a​t​ ​2​ ​c​h​a​r​a​c​t​e​r​s​!
+			 */
+			fullNameError: string
+			/**
+			 * N​a​m​e​ ​i​s​ ​t​o​o​ ​l​o​n​g​!​ ​M​a​x​i​m​u​m​ ​6​0​ ​c​h​a​r​a​c​t​e​r​s​.
+			 */
+			fullNameLengthError: string
+			/**
+			 * N​o​ ​n​u​m​b​e​r​s​ ​a​r​e​ ​a​l​l​o​w​e​d​!
+			 */
+			fullNameNumericError: string
+			/**
+			 * E​n​t​e​r​ ​y​o​u​r​ ​n​a​m​e​ ​.​.​.
+			 */
+			fullNamePlaceholder: string
+			/**
+			 * C​o​m​p​a​n​y​ ​N​a​m​e​:
+			 */
+			companyName: string
+			/**
+			 * N​a​m​e​ ​l​e​n​g​t​h​ ​s​h​o​u​l​d​ ​b​e​ ​m​o​r​e​ ​t​h​a​t​ ​1​ ​c​h​a​r​a​c​t​e​r​!
+			 */
+			companyNameError: string
+			/**
+			 * N​a​m​e​ ​i​s​ ​t​o​o​ ​l​o​n​g​!​ ​M​a​x​i​m​u​m​ ​6​0​ ​c​h​a​r​a​c​t​e​r​s​.
+			 */
+			companyNameLengthError: string
+			/**
+			 * N​o​ ​n​u​m​b​e​r​s​ ​a​r​e​ ​a​l​l​o​w​e​d​!
+			 */
+			companyNameNumericError: string
+			/**
+			 * E​n​t​e​r​ ​c​o​m​p​a​n​y​ ​n​a​m​e​ ​.​.​.
+			 */
+			companyNamePlaceholder: string
+			/**
+			 * M​o​b​i​l​e​ ​N​u​m​b​e​r​:
+			 */
+			mobileNumber: string
+			/**
+			 * M​o​b​i​l​e​ ​n​u​m​b​e​r​ ​(​0​5​x​x​x​x​x​x​x​x​)
+			 */
+			mobileNumberPlaceholder: string
+			/**
+			 * P​l​e​a​s​e​ ​e​n​t​e​r​ ​a​ ​v​a​l​i​d​ ​m​o​b​i​l​e​ ​n​u​m​b​e​r​!
+			 */
+			mobileNumberError: string
+			/**
+			 * E​m​a​i​l​ ​A​d​d​r​e​s​s​:
+			 */
+			email: string
+			/**
+			 * P​l​e​a​s​e​ ​e​n​t​e​r​ ​a​ ​v​a​l​i​d​ ​e​m​a​i​l​!
+			 */
+			emailError: string
+			/**
+			 * E​n​t​e​r​ ​y​o​u​r​ ​e​m​a​i​l​ ​a​d​d​r​e​s​s​ ​.​.​.
+			 */
+			emailPlaceholder: string
+			/**
+			 * T​e​l​l​ ​u​s​ ​a​b​o​u​t​ ​y​o​u​r​ ​n​e​e​d​s​:
+			 */
+			textArea: string
+			/**
+			 * E​n​t​e​r​ ​y​o​u​r​ ​m​e​s​s​a​g​e​ ​h​e​r​e​ ​.​.​.
+			 */
+			textAreaPlaceholder: string
+			/**
+			 * M​e​s​s​a​g​e​ ​i​s​ ​t​o​o​ ​s​h​o​r​t​!
+			 */
+			textAreaError1: string
+			/**
+			 * M​e​s​s​a​g​e​ ​i​s​ ​t​o​o​ ​l​o​n​g​!​ ​M​a​x​i​m​u​m​ ​2​0​0​0​ ​c​h​a​r​a​c​t​e​r​s​.
+			 */
+			textAreaError2: string
+			/**
+			 * M​e​s​s​a​g​e​ ​S​e​n​t​ ​S​u​c​c​e​s​s​f​u​l​l​y
+			 */
+			successFeedback: string
+			/**
+			 * S​o​m​e​t​h​i​n​g​ ​w​e​n​t​ ​w​r​o​n​g​!
+			 */
+			errorFeedback: string
+		}
+	}
 	footer: {
 		contact: {
 			/**
@@ -1536,6 +1722,192 @@ export type TranslationFunctions = {
 		 * Something went wrong!
 		 */
 		errorFeedback: () => LocalizedString
+	}
+	newSubscription: {
+		/**
+		 * Request a Quote
+		 */
+		title: () => LocalizedString
+		/**
+		 * We have three levels of maintenance contracts to choose from:
+		 */
+		intro: () => LocalizedString
+		card1: {
+			/**
+			 * Silver
+			 */
+			title: () => LocalizedString
+			/**
+			 * Preventive Maintenance (4 Visits per Year)
+			 */
+			li1: () => LocalizedString
+			/**
+			 * Inspection
+			 */
+			li2: () => LocalizedString
+			/**
+			 * Adjustments
+			 */
+			li3: () => LocalizedString
+			/**
+			 * Emergency and call backs are included
+			 */
+			li4: () => LocalizedString
+		}
+		card2: {
+			/**
+			 * Gold
+			 */
+			title: () => LocalizedString
+			/**
+			 * Preventive Maintenance (6 Visits per Year)
+			 */
+			li1: () => LocalizedString
+			/**
+			 * Inspection
+			 */
+			li2: () => LocalizedString
+			/**
+			 * Adjustments
+			 */
+			li3: () => LocalizedString
+			/**
+			 * Emergency and call backs are included
+			 */
+			li4: () => LocalizedString
+		}
+		card3: {
+			/**
+			 * Diamond
+			 */
+			title: () => LocalizedString
+			/**
+			 * Preventive Maintenance (12 Visits per Year)
+			 */
+			li1: () => LocalizedString
+			/**
+			 * Inspection
+			 */
+			li2: () => LocalizedString
+			/**
+			 * Adjustments
+			 */
+			li3: () => LocalizedString
+			/**
+			 * Emergency and call backs are included
+			 */
+			li4: () => LocalizedString
+		}
+		/**
+		 * Send a quotation request:
+		 */
+		formIntro: () => LocalizedString
+		form: {
+			/**
+			 * Select Contract Level:
+			 */
+			selectMSG: () => LocalizedString
+			/**
+			 * Silver Subscription
+			 */
+			silver: () => LocalizedString
+			/**
+			 * Gold Subscription
+			 */
+			gold: () => LocalizedString
+			/**
+			 * Diamond Subscription
+			 */
+			diamond: () => LocalizedString
+			/**
+			 * Name:
+			 */
+			fullName: () => LocalizedString
+			/**
+			 * Name length should be more that 2 characters!
+			 */
+			fullNameError: () => LocalizedString
+			/**
+			 * Name is too long! Maximum 60 characters.
+			 */
+			fullNameLengthError: () => LocalizedString
+			/**
+			 * No numbers are allowed!
+			 */
+			fullNameNumericError: () => LocalizedString
+			/**
+			 * Enter your name ...
+			 */
+			fullNamePlaceholder: () => LocalizedString
+			/**
+			 * Company Name:
+			 */
+			companyName: () => LocalizedString
+			/**
+			 * Name length should be more that 1 character!
+			 */
+			companyNameError: () => LocalizedString
+			/**
+			 * Name is too long! Maximum 60 characters.
+			 */
+			companyNameLengthError: () => LocalizedString
+			/**
+			 * No numbers are allowed!
+			 */
+			companyNameNumericError: () => LocalizedString
+			/**
+			 * Enter company name ...
+			 */
+			companyNamePlaceholder: () => LocalizedString
+			/**
+			 * Mobile Number:
+			 */
+			mobileNumber: () => LocalizedString
+			/**
+			 * Mobile number (05xxxxxxxx)
+			 */
+			mobileNumberPlaceholder: () => LocalizedString
+			/**
+			 * Please enter a valid mobile number!
+			 */
+			mobileNumberError: () => LocalizedString
+			/**
+			 * Email Address:
+			 */
+			email: () => LocalizedString
+			/**
+			 * Please enter a valid email!
+			 */
+			emailError: () => LocalizedString
+			/**
+			 * Enter your email address ...
+			 */
+			emailPlaceholder: () => LocalizedString
+			/**
+			 * Tell us about your needs:
+			 */
+			textArea: () => LocalizedString
+			/**
+			 * Enter your message here ...
+			 */
+			textAreaPlaceholder: () => LocalizedString
+			/**
+			 * Message is too short!
+			 */
+			textAreaError1: () => LocalizedString
+			/**
+			 * Message is too long! Maximum 2000 characters.
+			 */
+			textAreaError2: () => LocalizedString
+			/**
+			 * Message Sent Successfully
+			 */
+			successFeedback: () => LocalizedString
+			/**
+			 * Something went wrong!
+			 */
+			errorFeedback: () => LocalizedString
+		}
 	}
 	footer: {
 		contact: {

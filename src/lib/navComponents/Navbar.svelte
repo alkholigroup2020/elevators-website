@@ -10,7 +10,7 @@
 	const drawerSettings: DrawerSettings = {
 		id: 'id-1',
 		bgDrawer: 'bg-secondary-200-700-token',
-		width: 'w-3/6 md:w-2/6',
+		width: 'w-4/6 md:w-2/6',
 		rounded: 'rounded-xl'
 		// bgBackdrop: 'bg-gradient-to-tr from-indigo-500/50 via-purple-500/50 to-pink-500/50',
 		// padding: 'p-4',

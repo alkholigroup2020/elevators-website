@@ -11,6 +11,8 @@
 	import { storePopup } from '@skeletonlabs/skeleton';
 	storePopup.set({ computePosition, autoUpdate, offset, shift, flip, arrow });
 
+	import { modeCurrent } from '@skeletonlabs/skeleton';
+
 	// import { page } from '$app/stores';
 	import { setLocale } from '$i18n/i18n-svelte';
 	import HeadHrefLangs from '$lib/HeadHrefLangs.svelte';
@@ -61,6 +63,7 @@
 
 		if (target) {
 			target.scrollIntoView({ behavior: 'smooth' });
+			drawerStore.close();
 		} else {
 			// If the target doesn't exist on the current page, navigate to the homepage
 			// and then scroll to the target.
@@ -70,6 +73,7 @@
 			if (target) {
 				target.scrollIntoView({ behavior: 'smooth' });
 			}
+			drawerStore.close();
 		}
 	};
 
@@ -93,9 +97,33 @@
 {:else}
 	<Drawer>
 		{#if $drawerStore.id === 'id-1'}
-			<nav class="space-y-4 flex flex-col p-10">
+			<div class="px-10 pt-8">
+				<!-- text logo -->
+				{#if $modeCurrent}
+					<img
+						loading="lazy"
+						src="/logo_text_black_240x60.webp"
+						alt="company's logo"
+						class="w-full aspect-[4/1] max-h-9"
+					/>
+				{:else}
+					<img
+						loading="lazy"
+						src="/logo_text_white_240x60.webp"
+						alt="company's logo"
+						class="w-full aspect-[4/1] max-h-9"
+					/>
+				{/if}
+			</div>
+			<div class="px-10 py-5">
+				<hr />
+			</div>
+			<nav class="space-y-4 flex flex-col px-10">
 				<a
 					href={`/${$currentAppLang}`}
+					on:click={() => {
+						drawerStore.close();
+					}}
 					aria-label="a link to the home page"
 					class="hover:text-secondary-300"
 					>{$LL.mainNav.home()}
@@ -109,12 +137,18 @@
 				</a>
 				<a
 					href={`/${$currentAppLang}/about`}
+					on:click={() => {
+						drawerStore.close();
+					}}
 					aria-label="a link to the about page"
 					class="hover:text-secondary-300"
 					>{$LL.mainNav.about()}
 				</a>
 				<a
 					href={`/${$currentAppLang}/cabins`}
+					on:click={() => {
+						drawerStore.close();
+					}}
 					aria-label="a link to the cabins page"
 					class="hover:text-secondary-300"
 					>{$LL.mainNav.cabins()}
@@ -135,18 +169,27 @@
 				</a>
 				<a
 					href={`/${$currentAppLang}/media`}
+					on:click={() => {
+						drawerStore.close();
+					}}
 					aria-label="a link to the media page"
 					class="hover:text-secondary-300"
 					>{$LL.mainNav.media()}
 				</a>
 				<a
 					href={`/${$currentAppLang}/career`}
+					on:click={() => {
+						drawerStore.close();
+					}}
 					aria-label="a link to the career page"
 					class="hover:text-secondary-300"
 					>{$LL.mainNav.career()}
 				</a>
 				<a
 					href={`/${$currentAppLang}/blog`}
+					on:click={() => {
+						drawerStore.close();
+					}}
 					aria-label="a link to the blog page"
 					class="hover:text-secondary-300"
 					>{$LL.mainNav.blog()}

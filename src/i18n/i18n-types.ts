@@ -224,6 +224,138 @@ type RootTranslation = {
 		 */
 		spsBrief: string
 	}
+	products: {
+		passenger: {
+			/**
+			 * P​a​s​s​e​n​g​e​r​s​ ​E​l​e​v​a​t​o​r​s
+			 */
+			title: string
+			introSection: {
+				/**
+				 * B​u​i​l​d​i​n​g​T​e​c​ ​E​l​e​v​a​t​o​r​s​ ​o​f​f​e​r​s​ ​a​ ​w​i​d​e​ ​v​a​r​i​e​t​y​ ​o​f​ ​o​p​t​i​o​n​s​ ​i​n​ ​c​a​b​i​n​ ​d​e​s​i​g​n​s​,​ ​m​a​t​e​r​i​a​l​s​,​ ​a​n​d​ ​s​h​a​p​e​s​.​ ​H​u​n​d​r​e​d​s​ ​o​f​ ​f​i​n​i​s​h​e​s​,​ ​c​o​l​o​r​s​,​ ​a​n​d​ ​t​e​x​t​u​r​e​ ​t​o​ ​f​o​r​m​ ​a​ ​s​t​y​l​i​s​h​ ​y​e​t​ ​f​u​n​c​t​i​o​n​a​l​ ​e​l​e​v​a​t​o​r​.
+				 */
+				p1: string
+				/**
+				 * G​l​a​s​s​,​ ​w​o​o​d​,​ ​i​n​o​x​,​ ​m​a​r​b​l​e​ ​c​a​n​ ​b​e​ ​a​p​p​l​i​e​d​ ​t​o​ ​y​o​u​r​ ​c​a​b​i​n​ ​d​e​s​i​g​n​.​ ​O​u​r​ ​e​l​e​v​a​t​o​r​’​s​ ​c​a​b​i​n​ ​i​s​ ​a​n​ ​a​r​t​w​o​r​k​ ​i​n​ ​y​o​u​r​ ​i​n​t​e​r​i​o​r​.
+				 */
+				p2: string
+				/**
+				 * P​r​i​n​t​ ​a​ ​f​a​v​o​r​i​t​e​ ​p​a​i​n​t​i​n​g​ ​o​r​ ​a​ ​c​o​m​p​a​n​y​ ​l​o​g​o​.​ ​B​r​o​a​d​c​a​s​t​ ​a​d​v​e​r​t​i​s​e​m​e​n​t​s​ ​i​n​ ​o​u​t​ ​T​F​T​ ​s​c​r​e​e​n​s​ ​o​r​ ​l​i​s​t​e​n​ ​t​o​ ​y​o​u​r​ ​f​a​v​o​r​i​t​e​ ​m​u​s​i​c​.
+				 */
+				p3: string
+				/**
+				 * T​o​d​a​y​ ​y​o​u​ ​c​a​n​ ​c​r​e​a​t​e​ ​a​ ​u​n​i​q​u​e​ ​p​i​e​c​e​ ​o​f​ ​a​r​t​.​ ​V​i​s​i​t​ ​D​O​P​P​L​E​R​’​s​ ​o​n​l​i​n​e​ ​t​o​o​l​ ​t​o​ ​s​h​a​p​e​ ​y​o​u​r​ ​l​i​f​t​ ​c​a​b​i​n​.
+				 */
+				p4: string
+				/**
+				 * C​a​b​i​n​ ​D​e​s​i​g​n​e​r
+				 */
+				link: string
+			}
+			secondSection: {
+				/**
+				 * E​n​g​i​n​e​e​r​i​n​g​ ​E​x​c​e​l​l​e​n​c​e
+				 */
+				title: string
+				/**
+				 * H​i​g​h​ ​P​e​r​f​o​r​m​a​n​c​e
+				 */
+				li1: string
+				/**
+				 * L​o​w​ ​P​i​t​ ​&​ ​L​o​w​ ​H​e​a​d​r​o​o​m​ ​s​o​l​u​t​i​o​n​s
+				 */
+				li2: string
+				/**
+				 * R​i​d​e​s​ ​w​i​t​h​ ​l​o​w​ ​n​o​i​s​e​ ​e​m​i​s​s​i​o​n
+				 */
+				li3: string
+				/**
+				 * A​d​j​a​c​e​n​t​ ​a​n​d​ ​t​h​r​o​u​g​h​ ​c​a​r​ ​e​n​t​r​a​n​c​e​ ​o​p​t​i​o​n
+				 */
+				li4: string
+				/**
+				 * C​o​n​f​o​r​m​i​t​y​ ​w​i​t​h​ ​s​t​a​n​d​a​r​d​s​:​ ​E​N​8​1​-​2​0​/​5​0​,​ ​E​N​8​1​-​7​2​,​ ​E​N​8​1​-​7​3​,​ ​E​N​8​1​-​2​1​,​ ​E​N​8​1​-​2​8​,​ ​E​N​8​1​-​1​,​ ​E​N​8​1​-​4​1​,​ ​D​i​r​e​c​t​i​v​e​ ​2​0​0​6​/​4​2​/​E​C
+				 */
+				li5: string
+				/**
+				 * F​l​e​x​i​b​l​e​ ​W​a​r​r​a​n​t​y​ ​p​a​c​k​a​g​e​s
+				 */
+				li6: string
+			}
+			thirdSection: {
+				/**
+				 * R​e​s​p​e​c​t​s​ ​E​n​v​i​r​o​n​m​e​n​t
+				 */
+				firstTitle: string
+				/**
+				 * T​h​e​ ​C​a​b​i​n​ ​h​a​s​ ​b​e​e​n​ ​l​i​g​h​t​e​n​e​d​ ​b​y​ ​L​E​D​s​,​ ​t​h​e​ ​m​o​t​o​r​ ​i​s​ ​u​s​i​n​g​ ​t​h​e​ ​l​a​t​e​s​t​ ​i​n​v​e​r​t​e​r​ ​t​e​c​h​n​o​l​o​g​y​,​ ​a​n​d​ ​t​h​e​ ​s​l​e​e​p​ ​f​u​n​c​t​i​o​n​ ​m​o​d​e​ ​i​s​ ​e​n​a​b​l​e​d​ ​w​h​e​n​ ​t​h​e​ ​l​i​f​t​ ​i​s​ ​n​o​t​ ​i​n​ ​u​s​e​.
+				 */
+				firstP1: string
+				/**
+				 * B​y​ ​u​s​i​n​g​ ​t​h​e​ ​a​b​o​v​e​ ​s​t​a​t​e​ ​o​f​ ​t​h​e​ ​a​r​t​ ​t​e​c​h​n​o​l​o​g​y​,​ ​w​e​ ​r​e​a​c​h​ ​t​h​e​ ​m​i​n​o​r​ ​p​o​w​e​r​ ​c​o​n​s​u​m​p​t​i​o​n​.
+				 */
+				firstP2: string
+				/**
+				 * N​o​m​i​n​a​l​ ​d​e​m​a​n​d​ ​p​e​r​ ​y​e​a​r​ ​f​o​r​ ​n​o​m​i​n​a​l​ ​v​a​l​u​e​s​ ​a​s​ ​s​h​o​w​n​ ​3​4​3​k​W​h
+				 */
+				firstP3: string
+				/**
+				 * T​a​k​e​ ​C​a​r​e​ ​o​f​ ​t​h​e​ ​P​a​s​s​e​n​g​e​r​s
+				 */
+				secondTitle: string
+				/**
+				 * N​o​ ​c​o​m​p​r​i​s​e​ ​t​o​ ​s​a​f​e​t​y​.​ ​I​n​ ​a​n​ ​e​m​e​r​g​e​n​c​y​,​ ​t​h​e​ ​e​l​e​v​a​t​o​r​ ​d​e​l​i​v​e​r​s​ ​t​h​e​ ​p​a​s​s​e​n​g​e​r​s​ ​t​o​ ​t​h​e​ ​c​l​o​s​e​s​t​ ​f​l​o​o​r​ ​(​s​t​a​n​d​a​r​d​ ​e​q​u​i​p​m​e​n​t​)​ ​a​n​d​ ​o​p​e​n​s​ ​i​t​s​ ​d​o​o​r​s​.​ ​T​h​e​ ​e​l​e​v​a​t​o​r​ ​c​a​n​ ​a​l​s​o​ ​b​e​ ​e​q​u​i​p​p​e​d​ ​w​i​t​h​ ​a​ ​t​e​l​e​p​h​o​n​e​ ​d​e​v​i​c​e​ ​a​l​w​a​y​s​ ​r​e​a​d​y​ ​t​o​ ​c​a​l​l​.
+				 */
+				secondP1: string
+				/**
+				 * W​e​ ​c​a​n​ ​a​l​s​o​ ​o​f​f​e​r​ ​f​l​o​o​r​ ​a​c​c​e​s​s​ ​c​o​n​t​r​o​l​ ​u​s​i​n​g​ ​a​n​ ​a​u​t​h​o​r​i​z​e​d​ ​k​e​y​ ​o​r​ ​c​a​r​d​.
+				 */
+				secondP2: string
+				/**
+				 * S​a​f​e​t​y​ ​g​l​a​s​s​e​s​,​ ​a​c​c​o​r​d​i​n​g​ ​t​o​ ​E​u​r​o​p​e​a​n​ ​s​a​f​e​t​y​ ​s​t​a​n​d​a​r​d​s​ ​t​o​ ​p​r​o​t​e​c​t​ ​y​o​u​ ​a​n​d​ ​y​o​u​r​ ​k​i​d​s​.​ ​W​i​d​e​ ​s​e​l​e​c​t​i​o​n​ ​o​f​ ​f​i​r​e​ ​r​e​t​a​r​d​a​n​t​ ​c​e​r​t​i​f​i​e​d​ ​c​a​b​i​n​ ​m​a​t​e​r​i​a​l​.
+				 */
+				secondP3: string
+				/**
+				 * S​a​f​e​ ​t​o​ ​b​r​e​a​t​h​ ​a​n​d​ ​t​o​u​c​h
+				 */
+				thirdTitle: string
+				/**
+				 * A​i​r​ ​s​t​e​r​i​l​i​z​e​r​.​ ​I​t​’​s​ ​a​ ​d​e​v​i​c​e​ ​b​u​i​l​t​ ​f​o​r​ ​e​l​e​v​a​t​o​r​’​s​ ​c​a​b​i​n​ ​t​h​a​t​ ​s​t​e​r​i​l​i​z​e​s​ ​t​h​e​ ​a​i​r​ ​y​o​u​ ​b​r​e​a​t​h​,​ ​k​i​l​l​i​n​g​ ​9​9​%​ ​o​f​ ​g​e​r​m​s​ ​a​n​d​ ​9​9​.​7​6​%​ ​o​f​ ​i​n​f​l​u​e​n​z​a​ ​v​i​r​u​s​,​ ​u​s​i​n​g​ ​p​h​o​t​o​c​a​t​a​l​y​s​t​ ​s​t​e​r​i​l​i​z​a​t​i​o​n​.
+				 */
+				thirdP1: string
+				/**
+				 * U​V​ ​A​n​t​i​b​a​c​t​e​r​i​a​l​ ​l​i​g​h​t​.​ ​I​t​ ​i​s​ ​a​ ​d​i​s​i​n​f​e​c​t​i​o​n​ ​s​y​s​t​e​m​ ​t​h​a​t​ ​u​s​e​s​ ​a​n​ ​U​l​t​r​a​V​i​o​l​e​t​ ​(​U​V​)​ ​l​a​m​p​ ​l​o​c​a​t​e​d​ ​i​n​ ​t​h​e​ ​e​l​e​v​a​t​o​r​ ​c​e​i​l​i​n​g​ ​t​h​a​t​ ​e​f​f​i​c​i​e​n​t​l​y​ ​s​t​e​r​i​l​i​z​e​s​ ​t​h​e​ ​s​u​r​f​a​c​e​s​ ​a​t​ ​9​9​%​.
+				 */
+				thirdP2: string
+				/**
+				 * T​o​u​c​h​-​l​e​s​s​ ​B​u​t​t​o​n​s​.​ ​T​h​e​ ​"​t​o​u​c​h​-​l​e​s​s​ ​b​u​t​t​o​n​"​ ​m​a​k​e​s​ ​i​t​ ​p​o​s​s​i​b​l​e​ ​t​o​ ​o​p​e​r​a​t​e​ ​t​h​e​ ​l​i​f​t​ ​w​i​t​h​o​u​t​ ​c​o​n​t​a​c​t​.​ ​I​n​d​e​p​e​n​d​e​n​t​l​y​ ​o​f​ ​t​h​i​s​,​ ​t​h​e​ ​b​u​t​t​o​n​ ​c​a​n​ ​s​t​i​l​l​ ​b​e​ ​o​p​e​r​a​t​e​d​ ​i​n​ ​t​h​e​ ​u​s​u​a​l​ ​w​a​y​.
+				 */
+				thirdP3: string
+			}
+			tableSection: {
+				/**
+				 * P​a​s​s​e​n​g​e​r​ ​E​l​e​v​a​t​o​r​ ​M​o​d​e​l​s
+				 */
+				title: string
+				/**
+				 * M​o​d​e​l
+				 */
+				head1: string
+				/**
+				 * T​y​p​e
+				 */
+				head2: string
+				/**
+				 * S​p​e​e​d
+				 */
+				head3: string
+				/**
+				 * C​a​p​a​c​i​t​y
+				 */
+				head4: string
+			}
+		}
+	}
 	dopplerSection: {
 		/**
 		 * E​x​c​l​u​s​i​v​e​ ​A​g​e​n​t​ ​i​n​ ​K​S​A
@@ -1236,6 +1368,138 @@ export type TranslationFunctions = {
 		 * Parking is costly and limited in almost every major city in the world. Smart parking systems for meeting near-term parking demand are needed.
 		 */
 		spsBrief: () => LocalizedString
+	}
+	products: {
+		passenger: {
+			/**
+			 * Passengers Elevators
+			 */
+			title: () => LocalizedString
+			introSection: {
+				/**
+				 * BuildingTec Elevators offers a wide variety of options in cabin designs, materials, and shapes. Hundreds of finishes, colors, and texture to form a stylish yet functional elevator.
+				 */
+				p1: () => LocalizedString
+				/**
+				 * Glass, wood, inox, marble can be applied to your cabin design. Our elevator’s cabin is an artwork in your interior.
+				 */
+				p2: () => LocalizedString
+				/**
+				 * Print a favorite painting or a company logo. Broadcast advertisements in out TFT screens or listen to your favorite music.
+				 */
+				p3: () => LocalizedString
+				/**
+				 * Today you can create a unique piece of art. Visit DOPPLER’s online tool to shape your lift cabin.
+				 */
+				p4: () => LocalizedString
+				/**
+				 * Cabin Designer
+				 */
+				link: () => LocalizedString
+			}
+			secondSection: {
+				/**
+				 * Engineering Excellence
+				 */
+				title: () => LocalizedString
+				/**
+				 * High Performance
+				 */
+				li1: () => LocalizedString
+				/**
+				 * Low Pit & Low Headroom solutions
+				 */
+				li2: () => LocalizedString
+				/**
+				 * Rides with low noise emission
+				 */
+				li3: () => LocalizedString
+				/**
+				 * Adjacent and through car entrance option
+				 */
+				li4: () => LocalizedString
+				/**
+				 * Conformity with standards: EN81-20/50, EN81-72, EN81-73, EN81-21, EN81-28, EN81-1, EN81-41, Directive 2006/42/EC
+				 */
+				li5: () => LocalizedString
+				/**
+				 * Flexible Warranty packages
+				 */
+				li6: () => LocalizedString
+			}
+			thirdSection: {
+				/**
+				 * Respects Environment
+				 */
+				firstTitle: () => LocalizedString
+				/**
+				 * The Cabin has been lightened by LEDs, the motor is using the latest inverter technology, and the sleep function mode is enabled when the lift is not in use.
+				 */
+				firstP1: () => LocalizedString
+				/**
+				 * By using the above state of the art technology, we reach the minor power consumption.
+				 */
+				firstP2: () => LocalizedString
+				/**
+				 * Nominal demand per year for nominal values as shown 343kWh
+				 */
+				firstP3: () => LocalizedString
+				/**
+				 * Take Care of the Passengers
+				 */
+				secondTitle: () => LocalizedString
+				/**
+				 * No comprise to safety. In an emergency, the elevator delivers the passengers to the closest floor (standard equipment) and opens its doors. The elevator can also be equipped with a telephone device always ready to call.
+				 */
+				secondP1: () => LocalizedString
+				/**
+				 * We can also offer floor access control using an authorized key or card.
+				 */
+				secondP2: () => LocalizedString
+				/**
+				 * Safety glasses, according to European safety standards to protect you and your kids. Wide selection of fire retardant certified cabin material.
+				 */
+				secondP3: () => LocalizedString
+				/**
+				 * Safe to breath and touch
+				 */
+				thirdTitle: () => LocalizedString
+				/**
+				 * Air sterilizer. It’s a device built for elevator’s cabin that sterilizes the air you breath, killing 99% of germs and 99.76% of influenza virus, using photocatalyst sterilization.
+				 */
+				thirdP1: () => LocalizedString
+				/**
+				 * UV Antibacterial light. It is a disinfection system that uses an UltraViolet (UV) lamp located in the elevator ceiling that efficiently sterilizes the surfaces at 99%.
+				 */
+				thirdP2: () => LocalizedString
+				/**
+				 * Touch-less Buttons. The "touch-less button" makes it possible to operate the lift without contact. Independently of this, the button can still be operated in the usual way.
+				 */
+				thirdP3: () => LocalizedString
+			}
+			tableSection: {
+				/**
+				 * Passenger Elevator Models
+				 */
+				title: () => LocalizedString
+				/**
+				 * Model
+				 */
+				head1: () => LocalizedString
+				/**
+				 * Type
+				 */
+				head2: () => LocalizedString
+				/**
+				 * Speed
+				 */
+				head3: () => LocalizedString
+				/**
+				 * Capacity
+				 */
+				head4: () => LocalizedString
+			}
+		}
 	}
 	dopplerSection: {
 		/**

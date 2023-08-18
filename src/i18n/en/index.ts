@@ -75,6 +75,55 @@ const en: BaseTranslation = {
 		spsBrief:
 			'Parking is costly and limited in almost every major city in the world. Smart parking systems for meeting near-term parking demand are needed.'
 	},
+	products: {
+		passenger: {
+			title: 'Passengers Elevators',
+			introSection: {
+				p1: 'BuildingTec Elevators offers a wide variety of options in cabin designs, materials, and shapes. Hundreds of finishes, colors, and texture to form a stylish yet functional elevator.',
+				p2: 'Glass, wood, inox, marble can be applied to your cabin design. Our elevator’s cabin is an artwork in your interior.',
+				p3: 'Print a favorite painting or a company logo. Broadcast advertisements in out TFT screens or listen to your favorite music.',
+				p4: 'Today you can create a unique piece of art. Visit DOPPLER’s online tool to shape your lift cabin.',
+				link: 'Cabin Designer'
+			},
+			secondSection: {
+				title: 'Engineering Excellence',
+				li1: 'High Performance',
+				li2: 'Low Pit & Low Headroom solutions',
+				li3: 'Rides with low noise emission',
+				li4: 'Adjacent and through car entrance option',
+				li5: 'Conformity with standards: EN81-20/50, EN81-72, EN81-73, EN81-21, EN81-28, EN81-1, EN81-41, Directive 2006/42/EC',
+				li6: 'Flexible Warranty packages'
+			},
+			thirdSection: {
+				firstTitle: 'Respects Environment',
+				firstP1:
+					'The Cabin has been lightened by LEDs, the motor is using the latest inverter technology, and the sleep function mode is enabled when the lift is not in use.',
+				firstP2:
+					'By using the above state of the art technology, we reach the minor power consumption.',
+				firstP3: 'Nominal demand per year for nominal values as shown 343kWh',
+				secondTitle: 'Take Care of the Passengers',
+				secondP1:
+					'No comprise to safety. In an emergency, the elevator delivers the passengers to the closest floor (standard equipment) and opens its doors. The elevator can also be equipped with a telephone device always ready to call.',
+				secondP2: 'We can also offer floor access control using an authorized key or card.',
+				secondP3:
+					'Safety glasses, according to European safety standards to protect you and your kids. Wide selection of fire retardant certified cabin material.',
+				thirdTitle: 'Safe to breath and touch',
+				thirdP1:
+					'Air sterilizer. It’s a device built for elevator’s cabin that sterilizes the air you breath, killing 99% of germs and 99.76% of influenza virus, using photocatalyst sterilization.',
+				thirdP2:
+					'UV Antibacterial light. It is a disinfection system that uses an UltraViolet (UV) lamp located in the elevator ceiling that efficiently sterilizes the surfaces at 99%.',
+				thirdP3:
+					'Touch-less Buttons. The "touch-less button" makes it possible to operate the lift without contact. Independently of this, the button can still be operated in the usual way.'
+			},
+			tableSection: {
+				title: 'Passenger Elevator Models',
+				head1: 'Model',
+				head2: 'Type',
+				head3: 'Speed',
+				head4: 'Capacity'
+			}
+		}
+	},
 	dopplerSection: {
 		heading: 'Exclusive Agent in KSA',
 		headingSpan: "DOPPLER's",

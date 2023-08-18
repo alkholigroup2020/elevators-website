@@ -11,6 +11,7 @@
 			srcset="/home-page/header/landing_800x960.webp 768w, /home-page/header/landing_1200x840.webp 1024w, /home-page/header/landing_1400x700.webp 1280w, /home-page/header/landing_1600x720.webp 1536w, /home-page/header/landing_2000x820.webp 99999w"
 			class="w-full min-[420px]:max-h-[70vh] min-[480px]:max-h-[50vh] md:max-h-[60vh] lg:max-h-none aspect-[1/1.2] md:aspect-[1/0.7] lg:aspect-[1/0.5] xl:aspect-[1/0.45] 2xl:aspect-[1/0.41]"
 		/>
+
 		<div class="absolute inset-0 bg-black opacity-40" />
 
 		<div class="absolute inset-0 flex items-center justify-center">

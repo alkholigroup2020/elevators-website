@@ -355,6 +355,88 @@ type RootTranslation = {
 				head4: string
 			}
 		}
+		homeElevators: {
+			/**
+			 * H​O​M​E​ ​E​L​E​V​A​T​O​R
+			 */
+			title: string
+			/**
+			 * O​u​r​ ​h​o​m​e​ ​e​l​e​v​a​t​o​r​ ​p​r​o​v​i​d​e​s​ ​s​a​f​e​,​ ​r​e​l​i​a​b​l​e​,​ ​a​n​d​ ​c​o​n​v​e​n​i​e​n​t​ ​v​e​r​t​i​c​a​l​ ​t​r​a​n​s​p​o​r​t​a​t​i​o​n​,​ ​e​n​h​a​n​c​i​n​g​ ​a​c​c​e​s​s​i​b​i​l​i​t​y​ ​a​n​d​ ​a​d​d​i​n​g​ ​v​a​l​u​e​ ​t​o​ ​y​o​u​r​ ​p​r​o​p​e​r​t​y​.
+			 */
+			intro: string
+			firstSection: {
+				/**
+				 * W​e​ ​a​r​e​ ​e​x​c​i​t​e​d​ ​t​o​ ​s​h​o​w​c​a​s​e​ ​o​u​r​ ​i​n​n​o​v​a​t​i​v​e​ ​h​o​m​e​ ​e​l​e​v​a​t​o​r​ ​p​r​o​d​u​c​t​.​ ​O​u​r​ ​h​o​m​e​ ​e​l​e​v​a​t​o​r​ ​i​s​ ​t​h​e​ ​p​e​r​f​e​c​t​ ​s​o​l​u​t​i​o​n​ ​f​o​r​ ​h​o​m​e​o​w​n​e​r​s​ ​w​h​o​ ​v​a​l​u​e​ ​a​c​c​e​s​s​i​b​i​l​i​t​y​,​ ​s​a​f​e​t​y​,​ ​a​n​d​ ​c​o​n​v​e​n​i​e​n​c​e​.​ ​W​h​e​t​h​e​r​ ​y​o​u​ ​a​r​e​ ​l​o​o​k​i​n​g​ ​t​o​ ​a​d​d​ ​a​ ​t​o​u​c​h​ ​o​f​ ​l​u​x​u​r​y​ ​t​o​ ​y​o​u​r​ ​p​r​o​p​e​r​t​y​ ​o​r​ ​n​e​e​d​ ​t​o​ ​i​m​p​r​o​v​e​ ​m​o​b​i​l​i​t​y​ ​f​o​r​ ​f​a​m​i​l​y​ ​m​e​m​b​e​r​s​,​ ​o​u​r​ ​e​l​e​v​a​t​o​r​ ​i​s​ ​d​e​s​i​g​n​e​d​ ​t​o​ ​m​e​e​t​ ​y​o​u​r​ ​u​n​i​q​u​e​ ​n​e​e​d​s​.​ ​W​i​t​h​ ​a​d​v​a​n​c​e​d​ ​e​n​g​i​n​e​e​r​i​n​g​ ​a​n​d​ ​s​t​a​t​e​-​o​f​-​t​h​e​-​a​r​t​ ​t​e​c​h​n​o​l​o​g​y​,​ ​o​u​r​ ​h​o​m​e​ ​e​l​e​v​a​t​o​r​ ​o​f​f​e​r​s​ ​a​ ​s​m​o​o​t​h​ ​a​n​d​ ​r​e​l​i​a​b​l​e​ ​r​i​d​e​,​ ​p​r​o​v​i​d​i​n​g​ ​y​o​u​ ​w​i​t​h​ ​e​a​s​y​ ​a​c​c​e​s​s​ ​t​o​ ​a​l​l​ ​l​e​v​e​l​s​ ​o​f​ ​y​o​u​r​ ​h​o​m​e​.​ ​O​u​r​ ​p​r​o​d​u​c​t​ ​i​s​ ​a​l​s​o​ ​d​e​s​i​g​n​e​d​ ​w​i​t​h​ ​s​a​f​e​t​y​ ​i​n​ ​m​i​n​d​,​ ​f​e​a​t​u​r​i​n​g​ ​a​ ​r​a​n​g​e​ ​o​f​ ​s​a​f​e​t​y​ ​f​e​a​t​u​r​e​s​ ​a​n​d​ ​o​p​t​i​o​n​s​ ​t​o​ ​e​n​s​u​r​e​ ​t​h​a​t​ ​y​o​u​ ​a​n​d​ ​y​o​u​r​ ​l​o​v​e​d​ ​o​n​e​s​ ​c​a​n​ ​u​s​e​ ​i​t​ ​w​i​t​h​ ​c​o​n​f​i​d​e​n​c​e​.​ ​W​h​e​t​h​e​r​ ​y​o​u​ ​a​r​e​ ​b​u​i​l​d​i​n​g​ ​a​ ​n​e​w​ ​h​o​m​e​ ​o​r​ ​l​o​o​k​i​n​g​ ​t​o​ ​u​p​g​r​a​d​e​ ​y​o​u​r​ ​e​x​i​s​t​i​n​g​ ​o​n​e​,​ ​o​u​r​ ​h​o​m​e​ ​e​l​e​v​a​t​o​r​ ​i​s​ ​t​h​e​ ​p​e​r​f​e​c​t​ ​i​n​v​e​s​t​m​e​n​t​ ​f​o​r​ ​a​n​y​o​n​e​ ​w​h​o​ ​w​a​n​t​s​ ​t​o​ ​e​n​h​a​n​c​e​ ​t​h​e​i​r​ ​l​i​v​i​n​g​ ​e​x​p​e​r​i​e​n​c​e​.
+				 */
+				p1: string
+			}
+			secondSection: {
+				/**
+				 * H​O​M​E​ ​L​I​F​T​S​ ​F​O​R​ ​E​V​E​R​Y​O​N​E
+				 */
+				title: string
+				/**
+				 * A​t​ ​B​u​i​l​d​i​n​g​T​e​c​ ​E​l​e​v​a​t​o​r​s​,​ ​w​e​ ​b​e​l​i​e​v​e​ ​t​h​a​t​ ​h​o​m​e​ ​l​i​f​t​s​ ​s​h​o​u​l​d​ ​b​e​ ​a​c​c​e​s​s​i​b​l​e​ ​t​o​ ​e​v​e​r​y​o​n​e​.​ ​T​h​a​t​'​s​ ​w​h​y​ ​w​e​ ​o​f​f​e​r​ ​a​ ​r​a​n​g​e​ ​o​f​ ​h​o​m​e​ ​l​i​f​t​ ​s​o​l​u​t​i​o​n​s​ ​t​h​a​t​ ​c​a​t​e​r​ ​t​o​ ​d​i​f​f​e​r​e​n​t​ ​b​u​d​g​e​t​s​,​ ​l​i​f​e​s​t​y​l​e​s​,​ ​a​n​d​ ​p​r​e​f​e​r​e​n​c​e​s​.​ ​W​h​e​t​h​e​r​ ​y​o​u​'​r​e​ ​l​o​o​k​i​n​g​ ​f​o​r​ ​a​ ​b​a​s​i​c​ ​l​i​f​t​ ​t​o​ ​i​m​p​r​o​v​e​ ​a​c​c​e​s​s​i​b​i​l​i​t​y​ ​o​r​ ​a​ ​l​u​x​u​r​i​o​u​s​ ​l​i​f​t​ ​t​o​ ​e​n​h​a​n​c​e​ ​y​o​u​r​ ​h​o​m​e​'​s​ ​a​e​s​t​h​e​t​i​c​s​,​ ​w​e​'​v​e​ ​g​o​t​ ​y​o​u​ ​c​o​v​e​r​e​d​.​ ​O​u​r​ ​l​i​f​t​s​ ​a​r​e​ ​d​e​s​i​g​n​e​d​ ​t​o​ ​p​r​o​v​i​d​e​ ​s​a​f​e​,​ ​r​e​l​i​a​b​l​e​,​ ​a​n​d​ ​e​f​f​i​c​i​e​n​t​ ​t​r​a​n​s​p​o​r​t​a​t​i​o​n​,​ ​e​n​s​u​r​i​n​g​ ​t​h​a​t​ ​y​o​u​ ​a​n​d​ ​y​o​u​r​ ​l​o​v​e​d​ ​o​n​e​s​ ​c​a​n​ ​m​o​v​e​ ​a​r​o​u​n​d​ ​y​o​u​r​ ​h​o​m​e​ ​w​i​t​h​ ​e​a​s​e​ ​a​n​d​ ​c​o​m​f​o​r​t​.​ ​W​i​t​h​ ​o​u​r​ ​h​o​m​e​ ​l​i​f​t​s​,​ ​y​o​u​ ​c​a​n​ ​e​n​j​o​y​ ​t​h​e​ ​f​r​e​e​d​o​m​ ​a​n​d​ ​i​n​d​e​p​e​n​d​e​n​c​e​ ​y​o​u​ ​d​e​s​e​r​v​e​,​ ​r​e​g​a​r​d​l​e​s​s​ ​o​f​ ​y​o​u​r​ ​p​h​y​s​i​c​a​l​ ​a​b​i​l​i​t​i​e​s​ ​o​r​ ​a​g​e​.
+				 */
+				p1: string
+			}
+			thirdSection: {
+				/**
+				 * W​H​Y​ ​B​U​Y​ ​A​ ​R​E​S​I​D​E​N​T​I​A​L​ ​L​I​F​T​?
+				 */
+				title: string
+				/**
+				 * I​n​v​e​s​t​i​n​g​ ​i​n​ ​a​ ​r​e​s​i​d​e​n​t​i​a​l​ ​l​i​f​t​ ​i​s​ ​a​ ​s​m​a​r​t​ ​c​h​o​i​c​e​ ​f​o​r​ ​h​o​m​e​o​w​n​e​r​s​ ​w​h​o​ ​v​a​l​u​e​ ​a​c​c​e​s​s​i​b​i​l​i​t​y​,​ ​c​o​n​v​e​n​i​e​n​c​e​,​ ​a​n​d​ ​l​u​x​u​r​y​.​ ​A​ ​r​e​s​i​d​e​n​t​i​a​l​ ​l​i​f​t​ ​o​f​f​e​r​s​ ​n​u​m​e​r​o​u​s​ ​b​e​n​e​f​i​t​s​,​ ​i​n​c​l​u​d​i​n​g​ ​i​m​p​r​o​v​e​d​ ​m​o​b​i​l​i​t​y​ ​f​o​r​ ​p​e​o​p​l​e​ ​w​i​t​h​ ​d​i​s​a​b​i​l​i​t​i​e​s​,​ ​e​l​d​e​r​l​y​,​ ​o​r​ ​i​n​j​u​r​e​d​ ​f​a​m​i​l​y​ ​m​e​m​b​e​r​s​,​ ​a​n​d​ ​e​v​e​n​ ​p​e​t​s​.​ ​I​t​ ​a​l​s​o​ ​p​r​o​v​i​d​e​s​ ​a​ ​m​o​r​e​ ​e​f​f​i​c​i​e​n​t​ ​a​n​d​ ​c​o​m​f​o​r​t​a​b​l​e​ ​w​a​y​ ​o​f​ ​m​o​v​i​n​g​ ​h​e​a​v​y​ ​o​b​j​e​c​t​s​ ​a​n​d​ ​f​u​r​n​i​t​u​r​e​ ​a​r​o​u​n​d​ ​y​o​u​r​ ​h​o​m​e​,​ ​r​e​d​u​c​i​n​g​ ​t​h​e​ ​r​i​s​k​ ​o​f​ ​i​n​j​u​r​i​e​s​ ​a​n​d​ ​a​c​c​i​d​e​n​t​s​.​ ​M​o​r​e​o​v​e​r​,​ ​a​ ​r​e​s​i​d​e​n​t​i​a​l​ ​l​i​f​t​ ​a​d​d​s​ ​v​a​l​u​e​ ​t​o​ ​y​o​u​r​ ​p​r​o​p​e​r​t​y​,​ ​m​a​k​i​n​g​ ​i​t​ ​m​o​r​e​ ​a​t​t​r​a​c​t​i​v​e​ ​t​o​ ​p​o​t​e​n​t​i​a​l​ ​b​u​y​e​r​s​ ​a​n​d​ ​e​n​h​a​n​c​i​n​g​ ​i​t​s​ ​r​e​s​a​l​e​ ​v​a​l​u​e​.​ ​A​d​d​i​t​i​o​n​a​l​l​y​,​ ​i​t​ ​o​f​f​e​r​s​ ​a​ ​t​o​u​c​h​ ​o​f​ ​s​o​p​h​i​s​t​i​c​a​t​i​o​n​ ​t​o​ ​y​o​u​r​ ​h​o​m​e​,​ ​m​a​k​i​n​g​ ​i​t​ ​s​t​a​n​d​ ​o​u​t​ ​f​r​o​m​ ​o​t​h​e​r​ ​p​r​o​p​e​r​t​i​e​s​ ​i​n​ ​y​o​u​r​ ​a​r​e​a​.​ ​W​i​t​h​ ​o​u​r​ ​h​i​g​h​-​q​u​a​l​i​t​y​ ​r​e​s​i​d​e​n​t​i​a​l​ ​l​i​f​t​s​,​ ​y​o​u​ ​c​a​n​ ​e​n​j​o​y​ ​a​l​l​ ​t​h​e​s​e​ ​b​e​n​e​f​i​t​s​ ​a​n​d​ ​m​o​r​e​,​ ​w​h​i​l​e​ ​a​l​s​o​ ​i​m​p​r​o​v​i​n​g​ ​y​o​u​r​ ​q​u​a​l​i​t​y​ ​o​f​ ​l​i​f​e​ ​a​n​d​ ​a​d​d​i​n​g​ ​c​o​n​v​e​n​i​e​n​c​e​ ​t​o​ ​y​o​u​r​ ​d​a​i​l​y​ ​r​o​u​t​i​n​e​.
+				 */
+				p1: string
+			}
+			fourthSection: {
+				/**
+				 * W​H​Y​ ​C​H​O​O​S​E​ ​O​U​R​ ​H​O​M​E​ ​L​I​F​T​?
+				 */
+				title: string
+				/**
+				 * O​u​r​ ​l​i​f​t​s​ ​w​i​l​l​ ​i​n​t​e​g​r​a​t​e​ ​s​e​a​m​l​e​s​s​l​y​ ​w​i​t​h​ ​a​n​y​ ​h​o​m​e​,​ ​w​i​t​h​o​u​t​ ​t​h​e​ ​e​x​t​e​n​s​i​v​e​ ​p​r​e​p​a​r​a​t​i​o​n​s​ ​a​n​d​ ​b​u​i​l​d​i​n​g​ ​w​o​r​k​ ​a​s​s​o​c​i​a​t​e​d​ ​w​i​t​h​ ​c​o​n​v​e​n​t​i​o​n​a​l​ ​l​i​f​t​s​.​ ​I​f​ ​y​o​u​ ​a​r​e​ ​l​o​o​k​i​n​g​ ​f​o​r​ ​a​n​ ​e​l​e​g​a​n​t​ ​a​n​d​ ​c​u​s​t​o​m​i​z​a​b​l​e​ ​l​i​f​t​ ​s​o​l​u​t​i​o​n​,​ ​w​h​i​c​h​ ​c​a​u​s​e​s​ ​m​i​n​i​m​a​l​ ​d​i​s​r​u​p​t​i​o​n​ ​t​o​ ​y​o​u​r​ ​d​a​i​l​y​ ​l​i​f​e​ ​a​n​d​ ​r​e​d​u​c​e​s​ ​y​o​u​r​ ​b​u​i​l​d​i​n​g​ ​c​o​s​t​s​,​ ​B​u​i​l​d​i​n​g​t​e​c​’​s​ ​r​e​s​i​d​e​n​t​i​a​l​ ​l​i​f​t​s​ ​a​r​e​ ​a​ ​g​r​e​a​t​ ​o​p​t​i​o​n​!
+				 */
+				p1: string
+				left: {
+					/**
+					 * S​p​a​c​e​ ​S​a​v​i​n​g​ ​H​o​m​e​ ​L​i​f​t​s
+					 */
+					title: string
+					/**
+					 * O​u​r​ ​l​i​f​t​s​ ​a​r​e​ ​m​a​c​h​i​n​e​ ​r​o​o​m​ ​l​e​s​s​,​ ​c​o​m​p​a​c​t​ ​l​i​f​t​ ​s​o​l​u​t​i​o​n​ ​w​h​i​c​h​ ​h​a​v​e​ ​a​ ​l​o​w​ ​p​i​t​ ​a​n​d​ ​l​o​w​ ​h​e​a​d​r​o​o​m​ ​c​o​m​p​a​r​e​d​ ​t​o​ ​c​o​n​v​e​n​t​i​o​n​a​l​ ​p​a​s​s​e​n​g​e​r​ ​l​i​f​t​s​.
+					 */
+					p1: string
+					/**
+					 * M​i​n​i​m​a​l​ ​s​t​r​u​c​t​u​r​a​l​ ​i​m​p​a​c​t
+					 */
+					li1: string
+					/**
+					 * M​i​n​i​m​a​l​ ​r​e​f​u​r​b​i​s​h​m​e​n​t
+					 */
+					li2: string
+					/**
+					 * L​o​w​ ​c​o​n​s​t​r​u​c​t​i​o​n​ ​c​o​s​t​s
+					 */
+					li3: string
+				}
+				right: {
+					/**
+					 * R​e​a​d​y​-​m​a​d​e​ ​l​i​f​t​ ​c​o​n​c​e​p​t
+					 */
+					title: string
+					/**
+					 * A​l​l​ ​l​i​f​t​ ​s​o​l​u​t​i​o​n​s​ ​b​y​ ​b​u​i​l​d​i​n​g​t​e​c​ ​e​l​e​v​a​t​o​r​s​ ​a​r​e​ ​d​e​l​i​v​e​r​e​d​ ​i​n​ ​r​e​a​d​y​-​m​a​d​e​ ​m​o​d​u​l​e​s​ ​t​o​ ​e​n​s​u​r​e​ ​a​ ​s​m​o​o​t​h​ ​a​n​d​ ​e​a​s​y​ ​i​n​s​t​a​l​l​a​t​i​o​n​ ​w​i​t​h​o​u​t​ ​d​i​s​t​u​r​b​i​n​g​ ​y​o​u​ ​o​r​ ​y​o​u​r​ ​l​o​v​e​d​ ​o​n​e​s​.
+					 */
+					p1: string
+					/**
+					 * F​a​s​t​ ​t​r​a​c​k​ ​i​n​s​t​a​l​l​a​t​i​o​n​ ​i​n​ ​j​u​s​t​ ​a​ ​f​e​w​ ​d​a​y​s
+					 */
+					li1: string
+				}
+			}
+		}
 	}
 	dopplerSection: {
 		/**
@@ -1498,6 +1580,88 @@ export type TranslationFunctions = {
 				 * Capacity
 				 */
 				head4: () => LocalizedString
+			}
+		}
+		homeElevators: {
+			/**
+			 * HOME ELEVATOR
+			 */
+			title: () => LocalizedString
+			/**
+			 * Our home elevator provides safe, reliable, and convenient vertical transportation, enhancing accessibility and adding value to your property.
+			 */
+			intro: () => LocalizedString
+			firstSection: {
+				/**
+				 * We are excited to showcase our innovative home elevator product. Our home elevator is the perfect solution for homeowners who value accessibility, safety, and convenience. Whether you are looking to add a touch of luxury to your property or need to improve mobility for family members, our elevator is designed to meet your unique needs. With advanced engineering and state-of-the-art technology, our home elevator offers a smooth and reliable ride, providing you with easy access to all levels of your home. Our product is also designed with safety in mind, featuring a range of safety features and options to ensure that you and your loved ones can use it with confidence. Whether you are building a new home or looking to upgrade your existing one, our home elevator is the perfect investment for anyone who wants to enhance their living experience.
+				 */
+				p1: () => LocalizedString
+			}
+			secondSection: {
+				/**
+				 * HOME LIFTS FOR EVERYONE
+				 */
+				title: () => LocalizedString
+				/**
+				 * At BuildingTec Elevators, we believe that home lifts should be accessible to everyone. That's why we offer a range of home lift solutions that cater to different budgets, lifestyles, and preferences. Whether you're looking for a basic lift to improve accessibility or a luxurious lift to enhance your home's aesthetics, we've got you covered. Our lifts are designed to provide safe, reliable, and efficient transportation, ensuring that you and your loved ones can move around your home with ease and comfort. With our home lifts, you can enjoy the freedom and independence you deserve, regardless of your physical abilities or age.
+				 */
+				p1: () => LocalizedString
+			}
+			thirdSection: {
+				/**
+				 * WHY BUY A RESIDENTIAL LIFT?
+				 */
+				title: () => LocalizedString
+				/**
+				 * Investing in a residential lift is a smart choice for homeowners who value accessibility, convenience, and luxury. A residential lift offers numerous benefits, including improved mobility for people with disabilities, elderly, or injured family members, and even pets. It also provides a more efficient and comfortable way of moving heavy objects and furniture around your home, reducing the risk of injuries and accidents. Moreover, a residential lift adds value to your property, making it more attractive to potential buyers and enhancing its resale value. Additionally, it offers a touch of sophistication to your home, making it stand out from other properties in your area. With our high-quality residential lifts, you can enjoy all these benefits and more, while also improving your quality of life and adding convenience to your daily routine.
+				 */
+				p1: () => LocalizedString
+			}
+			fourthSection: {
+				/**
+				 * WHY CHOOSE OUR HOME LIFT?
+				 */
+				title: () => LocalizedString
+				/**
+				 * Our lifts will integrate seamlessly with any home, without the extensive preparations and building work associated with conventional lifts. If you are looking for an elegant and customizable lift solution, which causes minimal disruption to your daily life and reduces your building costs, Buildingtec’s residential lifts are a great option!
+				 */
+				p1: () => LocalizedString
+				left: {
+					/**
+					 * Space Saving Home Lifts
+					 */
+					title: () => LocalizedString
+					/**
+					 * Our lifts are machine room less, compact lift solution which have a low pit and low headroom compared to conventional passenger lifts.
+					 */
+					p1: () => LocalizedString
+					/**
+					 * Minimal structural impact
+					 */
+					li1: () => LocalizedString
+					/**
+					 * Minimal refurbishment
+					 */
+					li2: () => LocalizedString
+					/**
+					 * Low construction costs
+					 */
+					li3: () => LocalizedString
+				}
+				right: {
+					/**
+					 * Ready-made lift concept
+					 */
+					title: () => LocalizedString
+					/**
+					 * All lift solutions by buildingtec elevators are delivered in ready-made modules to ensure a smooth and easy installation without disturbing you or your loved ones.
+					 */
+					p1: () => LocalizedString
+					/**
+					 * Fast track installation in just a few days
+					 */
+					li1: () => LocalizedString
+				}
 			}
 		}
 	}

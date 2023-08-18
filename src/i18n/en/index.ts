@@ -122,6 +122,39 @@ const en: BaseTranslation = {
 				head3: 'Speed',
 				head4: 'Capacity'
 			}
+		},
+		homeElevators: {
+			title: 'HOME ELEVATOR',
+			intro:
+				'Our home elevator provides safe, reliable, and convenient vertical transportation, enhancing accessibility and adding value to your property.',
+
+			firstSection: {
+				p1: 'We are excited to showcase our innovative home elevator product. Our home elevator is the perfect solution for homeowners who value accessibility, safety, and convenience. Whether you are looking to add a touch of luxury to your property or need to improve mobility for family members, our elevator is designed to meet your unique needs. With advanced engineering and state-of-the-art technology, our home elevator offers a smooth and reliable ride, providing you with easy access to all levels of your home. Our product is also designed with safety in mind, featuring a range of safety features and options to ensure that you and your loved ones can use it with confidence. Whether you are building a new home or looking to upgrade your existing one, our home elevator is the perfect investment for anyone who wants to enhance their living experience.'
+			},
+			secondSection: {
+				title: 'HOME LIFTS FOR EVERYONE',
+				p1: "At BuildingTec Elevators, we believe that home lifts should be accessible to everyone. That's why we offer a range of home lift solutions that cater to different budgets, lifestyles, and preferences. Whether you're looking for a basic lift to improve accessibility or a luxurious lift to enhance your home's aesthetics, we've got you covered. Our lifts are designed to provide safe, reliable, and efficient transportation, ensuring that you and your loved ones can move around your home with ease and comfort. With our home lifts, you can enjoy the freedom and independence you deserve, regardless of your physical abilities or age."
+			},
+			thirdSection: {
+				title: 'WHY BUY A RESIDENTIAL LIFT?',
+				p1: 'Investing in a residential lift is a smart choice for homeowners who value accessibility, convenience, and luxury. A residential lift offers numerous benefits, including improved mobility for people with disabilities, elderly, or injured family members, and even pets. It also provides a more efficient and comfortable way of moving heavy objects and furniture around your home, reducing the risk of injuries and accidents. Moreover, a residential lift adds value to your property, making it more attractive to potential buyers and enhancing its resale value. Additionally, it offers a touch of sophistication to your home, making it stand out from other properties in your area. With our high-quality residential lifts, you can enjoy all these benefits and more, while also improving your quality of life and adding convenience to your daily routine.'
+			},
+			fourthSection: {
+				title: 'WHY CHOOSE OUR HOME LIFT?',
+				p1: 'Our lifts will integrate seamlessly with any home, without the extensive preparations and building work associated with conventional lifts. If you are looking for an elegant and customizable lift solution, which causes minimal disruption to your daily life and reduces your building costs, Buildingtec’s residential lifts are a great option!',
+				left: {
+					title: 'Space Saving Home Lifts',
+					p1: 'Our lifts are machine room less, compact lift solution which have a low pit and low headroom compared to conventional passenger lifts.',
+					li1: 'Minimal structural impact',
+					li2: 'Minimal refurbishment',
+					li3: 'Low construction costs'
+				},
+				right: {
+					title: 'Ready-made lift concept',
+					p1: 'All lift solutions by buildingtec elevators are delivered in ready-made modules to ensure a smooth and easy installation without disturbing you or your loved ones.',
+					li1: 'Fast track installation in just a few days'
+				}
+			}
 		}
 	},
 	dopplerSection: {

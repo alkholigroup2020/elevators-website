@@ -25,8 +25,8 @@
 					{$LL.products.passenger.title()}
 				</h1>
 				<a
-					href={`/${$currentAppLang}/newelevator`}
-					aria-label="a link to the new-elevator form page"
+					href={`/${$currentAppLang}/meeting`}
+					aria-label="a link to the meeting page"
 					class="btn variant-filled-secondary border border-success-500 rounded-md px-3 lg:px-5 py-2 lg:py-3 text-lg md:text-[22px]"
 				>
 					{$LL.heroSection.action()}
@@ -35,6 +35,7 @@
 		</div>
 	</section>
 
+	<!-- image and text -->
 	<section>
 		<div class="container mx-auto px-5 2xl:px-0 my-16 md:my-20">
 			<div class="grid lg:grid-cols-2 lg:gap-4 xl:gap-8">
@@ -79,6 +80,7 @@
 		</div>
 	</section>
 
+	<!-- three images gallery -->
 	<section>
 		<div class="container mx-auto px-5 2xl:px-0 mb-16 md:mb-20">
 			<div class="grid lg:grid-cols-3 gap-12 lg:gap-4 2xl:gap-8">
@@ -86,8 +88,10 @@
 					<!-- image -->
 					<img
 						alt="an elevator cabin"
-						src="/products/passenger-elevators/Doppler Inox Bronze Etched_500x450.webp"
-						srcset="/products/passenger-elevators/Doppler Inox Bronze Etched_740x481.webp 1024w, /products/passenger-elevators/Doppler Inox Bronze Etched_400x400.webp 1536w, /products/passenger-elevators/Doppler Inox Bronze Etched_500x450.webp 8000w"
+						src="/products/passenger-elevators/Doppler_Inox_Bronze_Etched_500x450.webp"
+						srcset="/products/passenger-elevators/Doppler_Inox_Bronze_Etched_740x481.webp 1024w, 
+						/products/passenger-elevators/Doppler_Inox_Bronze_Etched_400x400.webp 1536w, 
+						/products/passenger-elevators/Doppler_Inox_Bronze_Etched_500x450.webp 8000w"
 						class="w-screen aspect-[1/0.65] lg:aspect-[1/1] 2xl:aspect-[1/0.9]"
 					/>
 				</div>
@@ -95,8 +99,10 @@
 					<!-- image -->
 					<img
 						alt="an elevator cabin"
-						src="/products/passenger-elevators/Doppler Russian Classic Cabin with Frames_500x450.webp"
-						srcset="/products/passenger-elevators/Doppler Russian Classic Cabin with Frames_740x481.webp 1024w, /products/passenger-elevators/Doppler Russian Classic Cabin with Frames_400x400.webp 1536w, /products/passenger-elevators/Doppler Russian Classic Cabin with Frames_500x450.webp 8000w"
+						src="/products/passenger-elevators/Doppler_Russian_Classic_Cabin_with_Frames_500x450.webp"
+						srcset="/products/passenger-elevators/Doppler_Russian_Classic_Cabin_with_Frames_740x481.webp 1024w, 
+						/products/passenger-elevators/Doppler_Russian_Classic_Cabin_with_Frames_400x400.webp 1536w, 
+						/products/passenger-elevators/Doppler_Russian_Classic_Cabin_with_Frames_500x450.webp 8000w"
 						class="w-screen aspect-[1/0.65] lg:aspect-[1/1] 2xl:aspect-[1/0.9]"
 					/>
 				</div>
@@ -104,8 +110,10 @@
 					<!-- image -->
 					<img
 						alt="an elevator cabin"
-						src="/products/passenger-elevators/Doppler Quilted Cabin_500x450.webp"
-						srcset="/products/passenger-elevators/Doppler Quilted Cabin_740x481.webp 1024w, /products/passenger-elevators/Doppler Quilted Cabin_400x400.webp 1536w, /products/passenger-elevators/Doppler Quilted Cabin_500x450.webp 8000w"
+						src="/products/passenger-elevators/Doppler_Quilted_Cabin_500x450.webp"
+						srcset="/products/passenger-elevators/Doppler_Quilted_Cabin_740x481.webp 1024w, 
+						/products/passenger-elevators/Doppler_Quilted_Cabin_400x400.webp 1536w, 
+						/products/passenger-elevators/Doppler_Quilted_Cabin_500x450.webp 8000w"
 						class="w-screen aspect-[1/0.65] lg:aspect-[1/1] 2xl:aspect-[1/0.9]"
 					/>
 				</div>
@@ -157,6 +165,7 @@
 		</div>
 	</section>
 
+	<!-- three text sections -->
 	<section>
 		<div class="container mx-auto px-5 2xl:px-0 mb-16 md:mb-20">
 			<div class="grid lg:grid-cols-3 gap-8 lg:gap-16">
@@ -221,6 +230,7 @@
 		</div>
 	</section>
 
+	<!-- two images -->
 	<section>
 		<div class="container mx-auto px-5 2xl:px-0 mb-16 md:mb-20">
 			<div

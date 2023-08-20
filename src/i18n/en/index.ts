@@ -247,6 +247,44 @@ const en: BaseTranslation = {
 			firstSection: {
 				p1: 'Welcome to Buildingtec Elevators, where we offer you the latest in panoramic elevator technology. Our elevators are designed to provide a stunning and unique experience, adding an element of luxury and sophistication to your building. We understand that every building is different, which is why we offer elevators in all shapes, whether square, semi-circular, or completely circular. Our team of experts has spent years perfecting our elevators to provide the smoothest rides and the most breathtaking views. Our panoramic elevators are not just a mode of transportation but an experience in themselves, as you take in the stunning scenery while travelling from floor to floor. Our products are designed to meet the highest standards of safety and efficiency, ensuring your peace of mind while riding our elevators. We offer our panoramic elevators with both panoramic steel structures or semi-open shafts, giving you the flexibility to choose the style that best suits your building. With our panoramic elevators, you can add a touch of elegance and modernity to your property, impressing visitors and increasing the value of your building.'
 			}
+		},
+		modernization: {
+			title: 'MODERNIZATION',
+			intro: 'Tired of frequent breakdowns? Upgrade your elevator for enhanced performance.',
+			firstSection: {
+				title: 'ARE YOU LOOKING FOR A RELIABLE PARTNER TO MODERNIZE YOUR ELEVATOR?',
+				p1: "At BuildingTec Elevators LLC, we specialize in elevating your building's performance and aesthetics with our cutting-edge elevator modernization service. With years of industry expertise, our team of skilled professionals will work closely with you to assess your existing elevator system and tailor a modernization plan that meets your unique needs and budget."
+			},
+			secondSection: {
+				title: '10 SIGNS THAT ITS TIME TO MODERNIZE',
+				li1: '1. Frequent shutdowns',
+				li2: '2. Doors malfunction',
+				li3: '3. Rising repair costs',
+				li4: '4. High electricity consumption',
+				li5: '5. Out of date style',
+				li6: '6. Imprecise floor leveling',
+				li7: '7. Noise',
+				li8: '8. Vibration',
+				li9: '9. Long waiting time',
+				li10: '10. Change of building’s usage'
+			},
+			thirdSection: {
+				title: 'TIRED OF FREQUENT BREAKDOWNS? ',
+				p1: "Upgrade Your Elevator for Enhanced Performance - Our modernization service will optimize your elevator's performance, reliability, and safety, ensuring smoother rides, faster response times, and reduced downtime. With the latest technology and components, we'll bring your elevator up to modern standards, providing increased efficiency and improved user experience."
+			},
+			fourthSection: {
+				title: 'AESTHETICAL UPGRADE',
+				p1: "Enhance Your Building's Aesthetics - Elevator modernization is not just about performance; it's also about aesthetics. Our expert team can transform the interior and exterior of your elevator, offering a wide range of design options to match your building's style and branding. From sleek and modern to classic and sophisticated, we'll make sure your elevator complements your building's overall look and feel."
+			},
+			fifthSection: {
+				title: 'I DON’T WANT TO PAY A FORTUNE',
+				p1: "Flexible Solutions for Your Budget - We understand that every building has unique requirements and budget considerations. That's why we offer flexible solutions tailored to your budget, without compromising on quality or safety. Our team will work with you to develop a modernization plan that meets your financial goals and delivers maximum value for your investment."
+			},
+			sixthSection: {
+				title: 'MINIMIZE DISRUPTION',
+				p1: "Minimize Disruption with Professional Service - We understand the importance of minimizing disruption to your building's operations. Our experienced technicians will work diligently to complete the modernization process efficiently and with minimal disruption to your tenants or visitors. We'll keep you informed at every step of the process, ensuring a smooth and hassle-free modernization experience.",
+				p2: 'Choose BuildingTec Elevators LLC for Elevator Modernization - Elevate your building with our top-notch elevator modernization service. Experience improved performance, enhanced aesthetics, and unmatched customer service. Contact us today to schedule a consultation and take the first step towards elevating your elevator and your building!'
+			}
 		}
 	},
 	dopplerSection: {

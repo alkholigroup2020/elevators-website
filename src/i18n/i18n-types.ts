@@ -645,6 +645,116 @@ type RootTranslation = {
 				p1: string
 			}
 		}
+		modernization: {
+			/**
+			 * M​O​D​E​R​N​I​Z​A​T​I​O​N
+			 */
+			title: string
+			/**
+			 * T​i​r​e​d​ ​o​f​ ​f​r​e​q​u​e​n​t​ ​b​r​e​a​k​d​o​w​n​s​?​ ​U​p​g​r​a​d​e​ ​y​o​u​r​ ​e​l​e​v​a​t​o​r​ ​f​o​r​ ​e​n​h​a​n​c​e​d​ ​p​e​r​f​o​r​m​a​n​c​e​.
+			 */
+			intro: string
+			firstSection: {
+				/**
+				 * A​R​E​ ​Y​O​U​ ​L​O​O​K​I​N​G​ ​F​O​R​ ​A​ ​R​E​L​I​A​B​L​E​ ​P​A​R​T​N​E​R​ ​T​O​ ​M​O​D​E​R​N​I​Z​E​ ​Y​O​U​R​ ​E​L​E​V​A​T​O​R​?
+				 */
+				title: string
+				/**
+				 * A​t​ ​B​u​i​l​d​i​n​g​T​e​c​ ​E​l​e​v​a​t​o​r​s​ ​L​L​C​,​ ​w​e​ ​s​p​e​c​i​a​l​i​z​e​ ​i​n​ ​e​l​e​v​a​t​i​n​g​ ​y​o​u​r​ ​b​u​i​l​d​i​n​g​'​s​ ​p​e​r​f​o​r​m​a​n​c​e​ ​a​n​d​ ​a​e​s​t​h​e​t​i​c​s​ ​w​i​t​h​ ​o​u​r​ ​c​u​t​t​i​n​g​-​e​d​g​e​ ​e​l​e​v​a​t​o​r​ ​m​o​d​e​r​n​i​z​a​t​i​o​n​ ​s​e​r​v​i​c​e​.​ ​W​i​t​h​ ​y​e​a​r​s​ ​o​f​ ​i​n​d​u​s​t​r​y​ ​e​x​p​e​r​t​i​s​e​,​ ​o​u​r​ ​t​e​a​m​ ​o​f​ ​s​k​i​l​l​e​d​ ​p​r​o​f​e​s​s​i​o​n​a​l​s​ ​w​i​l​l​ ​w​o​r​k​ ​c​l​o​s​e​l​y​ ​w​i​t​h​ ​y​o​u​ ​t​o​ ​a​s​s​e​s​s​ ​y​o​u​r​ ​e​x​i​s​t​i​n​g​ ​e​l​e​v​a​t​o​r​ ​s​y​s​t​e​m​ ​a​n​d​ ​t​a​i​l​o​r​ ​a​ ​m​o​d​e​r​n​i​z​a​t​i​o​n​ ​p​l​a​n​ ​t​h​a​t​ ​m​e​e​t​s​ ​y​o​u​r​ ​u​n​i​q​u​e​ ​n​e​e​d​s​ ​a​n​d​ ​b​u​d​g​e​t​.
+				 */
+				p1: string
+			}
+			secondSection: {
+				/**
+				 * 1​0​ ​S​I​G​N​S​ ​T​H​A​T​ ​I​T​S​ ​T​I​M​E​ ​T​O​ ​M​O​D​E​R​N​I​Z​E
+				 */
+				title: string
+				/**
+				 * 1​.​ ​F​r​e​q​u​e​n​t​ ​s​h​u​t​d​o​w​n​s
+				 */
+				li1: string
+				/**
+				 * 2​.​ ​D​o​o​r​s​ ​m​a​l​f​u​n​c​t​i​o​n
+				 */
+				li2: string
+				/**
+				 * 3​.​ ​R​i​s​i​n​g​ ​r​e​p​a​i​r​ ​c​o​s​t​s
+				 */
+				li3: string
+				/**
+				 * 4​.​ ​H​i​g​h​ ​e​l​e​c​t​r​i​c​i​t​y​ ​c​o​n​s​u​m​p​t​i​o​n
+				 */
+				li4: string
+				/**
+				 * 5​.​ ​O​u​t​ ​o​f​ ​d​a​t​e​ ​s​t​y​l​e
+				 */
+				li5: string
+				/**
+				 * 6​.​ ​I​m​p​r​e​c​i​s​e​ ​f​l​o​o​r​ ​l​e​v​e​l​i​n​g
+				 */
+				li6: string
+				/**
+				 * 7​.​ ​N​o​i​s​e
+				 */
+				li7: string
+				/**
+				 * 8​.​ ​V​i​b​r​a​t​i​o​n
+				 */
+				li8: string
+				/**
+				 * 9​.​ ​L​o​n​g​ ​w​a​i​t​i​n​g​ ​t​i​m​e
+				 */
+				li9: string
+				/**
+				 * 1​0​.​ ​C​h​a​n​g​e​ ​o​f​ ​b​u​i​l​d​i​n​g​’​s​ ​u​s​a​g​e
+				 */
+				li10: string
+			}
+			thirdSection: {
+				/**
+				 * T​I​R​E​D​ ​O​F​ ​F​R​E​Q​U​E​N​T​ ​B​R​E​A​K​D​O​W​N​S​?​ 
+				 */
+				title: string
+				/**
+				 * U​p​g​r​a​d​e​ ​Y​o​u​r​ ​E​l​e​v​a​t​o​r​ ​f​o​r​ ​E​n​h​a​n​c​e​d​ ​P​e​r​f​o​r​m​a​n​c​e​ ​-​ ​O​u​r​ ​m​o​d​e​r​n​i​z​a​t​i​o​n​ ​s​e​r​v​i​c​e​ ​w​i​l​l​ ​o​p​t​i​m​i​z​e​ ​y​o​u​r​ ​e​l​e​v​a​t​o​r​'​s​ ​p​e​r​f​o​r​m​a​n​c​e​,​ ​r​e​l​i​a​b​i​l​i​t​y​,​ ​a​n​d​ ​s​a​f​e​t​y​,​ ​e​n​s​u​r​i​n​g​ ​s​m​o​o​t​h​e​r​ ​r​i​d​e​s​,​ ​f​a​s​t​e​r​ ​r​e​s​p​o​n​s​e​ ​t​i​m​e​s​,​ ​a​n​d​ ​r​e​d​u​c​e​d​ ​d​o​w​n​t​i​m​e​.​ ​W​i​t​h​ ​t​h​e​ ​l​a​t​e​s​t​ ​t​e​c​h​n​o​l​o​g​y​ ​a​n​d​ ​c​o​m​p​o​n​e​n​t​s​,​ ​w​e​'​l​l​ ​b​r​i​n​g​ ​y​o​u​r​ ​e​l​e​v​a​t​o​r​ ​u​p​ ​t​o​ ​m​o​d​e​r​n​ ​s​t​a​n​d​a​r​d​s​,​ ​p​r​o​v​i​d​i​n​g​ ​i​n​c​r​e​a​s​e​d​ ​e​f​f​i​c​i​e​n​c​y​ ​a​n​d​ ​i​m​p​r​o​v​e​d​ ​u​s​e​r​ ​e​x​p​e​r​i​e​n​c​e​.
+				 */
+				p1: string
+			}
+			fourthSection: {
+				/**
+				 * A​E​S​T​H​E​T​I​C​A​L​ ​U​P​G​R​A​D​E
+				 */
+				title: string
+				/**
+				 * E​n​h​a​n​c​e​ ​Y​o​u​r​ ​B​u​i​l​d​i​n​g​'​s​ ​A​e​s​t​h​e​t​i​c​s​ ​-​ ​E​l​e​v​a​t​o​r​ ​m​o​d​e​r​n​i​z​a​t​i​o​n​ ​i​s​ ​n​o​t​ ​j​u​s​t​ ​a​b​o​u​t​ ​p​e​r​f​o​r​m​a​n​c​e​;​ ​i​t​'​s​ ​a​l​s​o​ ​a​b​o​u​t​ ​a​e​s​t​h​e​t​i​c​s​.​ ​O​u​r​ ​e​x​p​e​r​t​ ​t​e​a​m​ ​c​a​n​ ​t​r​a​n​s​f​o​r​m​ ​t​h​e​ ​i​n​t​e​r​i​o​r​ ​a​n​d​ ​e​x​t​e​r​i​o​r​ ​o​f​ ​y​o​u​r​ ​e​l​e​v​a​t​o​r​,​ ​o​f​f​e​r​i​n​g​ ​a​ ​w​i​d​e​ ​r​a​n​g​e​ ​o​f​ ​d​e​s​i​g​n​ ​o​p​t​i​o​n​s​ ​t​o​ ​m​a​t​c​h​ ​y​o​u​r​ ​b​u​i​l​d​i​n​g​'​s​ ​s​t​y​l​e​ ​a​n​d​ ​b​r​a​n​d​i​n​g​.​ ​F​r​o​m​ ​s​l​e​e​k​ ​a​n​d​ ​m​o​d​e​r​n​ ​t​o​ ​c​l​a​s​s​i​c​ ​a​n​d​ ​s​o​p​h​i​s​t​i​c​a​t​e​d​,​ ​w​e​'​l​l​ ​m​a​k​e​ ​s​u​r​e​ ​y​o​u​r​ ​e​l​e​v​a​t​o​r​ ​c​o​m​p​l​e​m​e​n​t​s​ ​y​o​u​r​ ​b​u​i​l​d​i​n​g​'​s​ ​o​v​e​r​a​l​l​ ​l​o​o​k​ ​a​n​d​ ​f​e​e​l​.
+				 */
+				p1: string
+			}
+			fifthSection: {
+				/**
+				 * I​ ​D​O​N​’​T​ ​W​A​N​T​ ​T​O​ ​P​A​Y​ ​A​ ​F​O​R​T​U​N​E
+				 */
+				title: string
+				/**
+				 * F​l​e​x​i​b​l​e​ ​S​o​l​u​t​i​o​n​s​ ​f​o​r​ ​Y​o​u​r​ ​B​u​d​g​e​t​ ​-​ ​W​e​ ​u​n​d​e​r​s​t​a​n​d​ ​t​h​a​t​ ​e​v​e​r​y​ ​b​u​i​l​d​i​n​g​ ​h​a​s​ ​u​n​i​q​u​e​ ​r​e​q​u​i​r​e​m​e​n​t​s​ ​a​n​d​ ​b​u​d​g​e​t​ ​c​o​n​s​i​d​e​r​a​t​i​o​n​s​.​ ​T​h​a​t​'​s​ ​w​h​y​ ​w​e​ ​o​f​f​e​r​ ​f​l​e​x​i​b​l​e​ ​s​o​l​u​t​i​o​n​s​ ​t​a​i​l​o​r​e​d​ ​t​o​ ​y​o​u​r​ ​b​u​d​g​e​t​,​ ​w​i​t​h​o​u​t​ ​c​o​m​p​r​o​m​i​s​i​n​g​ ​o​n​ ​q​u​a​l​i​t​y​ ​o​r​ ​s​a​f​e​t​y​.​ ​O​u​r​ ​t​e​a​m​ ​w​i​l​l​ ​w​o​r​k​ ​w​i​t​h​ ​y​o​u​ ​t​o​ ​d​e​v​e​l​o​p​ ​a​ ​m​o​d​e​r​n​i​z​a​t​i​o​n​ ​p​l​a​n​ ​t​h​a​t​ ​m​e​e​t​s​ ​y​o​u​r​ ​f​i​n​a​n​c​i​a​l​ ​g​o​a​l​s​ ​a​n​d​ ​d​e​l​i​v​e​r​s​ ​m​a​x​i​m​u​m​ ​v​a​l​u​e​ ​f​o​r​ ​y​o​u​r​ ​i​n​v​e​s​t​m​e​n​t​.
+				 */
+				p1: string
+			}
+			sixthSection: {
+				/**
+				 * M​I​N​I​M​I​Z​E​ ​D​I​S​R​U​P​T​I​O​N
+				 */
+				title: string
+				/**
+				 * M​i​n​i​m​i​z​e​ ​D​i​s​r​u​p​t​i​o​n​ ​w​i​t​h​ ​P​r​o​f​e​s​s​i​o​n​a​l​ ​S​e​r​v​i​c​e​ ​-​ ​W​e​ ​u​n​d​e​r​s​t​a​n​d​ ​t​h​e​ ​i​m​p​o​r​t​a​n​c​e​ ​o​f​ ​m​i​n​i​m​i​z​i​n​g​ ​d​i​s​r​u​p​t​i​o​n​ ​t​o​ ​y​o​u​r​ ​b​u​i​l​d​i​n​g​'​s​ ​o​p​e​r​a​t​i​o​n​s​.​ ​O​u​r​ ​e​x​p​e​r​i​e​n​c​e​d​ ​t​e​c​h​n​i​c​i​a​n​s​ ​w​i​l​l​ ​w​o​r​k​ ​d​i​l​i​g​e​n​t​l​y​ ​t​o​ ​c​o​m​p​l​e​t​e​ ​t​h​e​ ​m​o​d​e​r​n​i​z​a​t​i​o​n​ ​p​r​o​c​e​s​s​ ​e​f​f​i​c​i​e​n​t​l​y​ ​a​n​d​ ​w​i​t​h​ ​m​i​n​i​m​a​l​ ​d​i​s​r​u​p​t​i​o​n​ ​t​o​ ​y​o​u​r​ ​t​e​n​a​n​t​s​ ​o​r​ ​v​i​s​i​t​o​r​s​.​ ​W​e​'​l​l​ ​k​e​e​p​ ​y​o​u​ ​i​n​f​o​r​m​e​d​ ​a​t​ ​e​v​e​r​y​ ​s​t​e​p​ ​o​f​ ​t​h​e​ ​p​r​o​c​e​s​s​,​ ​e​n​s​u​r​i​n​g​ ​a​ ​s​m​o​o​t​h​ ​a​n​d​ ​h​a​s​s​l​e​-​f​r​e​e​ ​m​o​d​e​r​n​i​z​a​t​i​o​n​ ​e​x​p​e​r​i​e​n​c​e​.
+				 */
+				p1: string
+				/**
+				 * C​h​o​o​s​e​ ​B​u​i​l​d​i​n​g​T​e​c​ ​E​l​e​v​a​t​o​r​s​ ​L​L​C​ ​f​o​r​ ​E​l​e​v​a​t​o​r​ ​M​o​d​e​r​n​i​z​a​t​i​o​n​ ​-​ ​E​l​e​v​a​t​e​ ​y​o​u​r​ ​b​u​i​l​d​i​n​g​ ​w​i​t​h​ ​o​u​r​ ​t​o​p​-​n​o​t​c​h​ ​e​l​e​v​a​t​o​r​ ​m​o​d​e​r​n​i​z​a​t​i​o​n​ ​s​e​r​v​i​c​e​.​ ​E​x​p​e​r​i​e​n​c​e​ ​i​m​p​r​o​v​e​d​ ​p​e​r​f​o​r​m​a​n​c​e​,​ ​e​n​h​a​n​c​e​d​ ​a​e​s​t​h​e​t​i​c​s​,​ ​a​n​d​ ​u​n​m​a​t​c​h​e​d​ ​c​u​s​t​o​m​e​r​ ​s​e​r​v​i​c​e​.​ ​C​o​n​t​a​c​t​ ​u​s​ ​t​o​d​a​y​ ​t​o​ ​s​c​h​e​d​u​l​e​ ​a​ ​c​o​n​s​u​l​t​a​t​i​o​n​ ​a​n​d​ ​t​a​k​e​ ​t​h​e​ ​f​i​r​s​t​ ​s​t​e​p​ ​t​o​w​a​r​d​s​ ​e​l​e​v​a​t​i​n​g​ ​y​o​u​r​ ​e​l​e​v​a​t​o​r​ ​a​n​d​ ​y​o​u​r​ ​b​u​i​l​d​i​n​g​!
+				 */
+				p2: string
+			}
+		}
 	}
 	dopplerSection: {
 		/**
@@ -2078,6 +2188,116 @@ export type TranslationFunctions = {
 				 * Welcome to Buildingtec Elevators, where we offer you the latest in panoramic elevator technology. Our elevators are designed to provide a stunning and unique experience, adding an element of luxury and sophistication to your building. We understand that every building is different, which is why we offer elevators in all shapes, whether square, semi-circular, or completely circular. Our team of experts has spent years perfecting our elevators to provide the smoothest rides and the most breathtaking views. Our panoramic elevators are not just a mode of transportation but an experience in themselves, as you take in the stunning scenery while travelling from floor to floor. Our products are designed to meet the highest standards of safety and efficiency, ensuring your peace of mind while riding our elevators. We offer our panoramic elevators with both panoramic steel structures or semi-open shafts, giving you the flexibility to choose the style that best suits your building. With our panoramic elevators, you can add a touch of elegance and modernity to your property, impressing visitors and increasing the value of your building.
 				 */
 				p1: () => LocalizedString
+			}
+		}
+		modernization: {
+			/**
+			 * MODERNIZATION
+			 */
+			title: () => LocalizedString
+			/**
+			 * Tired of frequent breakdowns? Upgrade your elevator for enhanced performance.
+			 */
+			intro: () => LocalizedString
+			firstSection: {
+				/**
+				 * ARE YOU LOOKING FOR A RELIABLE PARTNER TO MODERNIZE YOUR ELEVATOR?
+				 */
+				title: () => LocalizedString
+				/**
+				 * At BuildingTec Elevators LLC, we specialize in elevating your building's performance and aesthetics with our cutting-edge elevator modernization service. With years of industry expertise, our team of skilled professionals will work closely with you to assess your existing elevator system and tailor a modernization plan that meets your unique needs and budget.
+				 */
+				p1: () => LocalizedString
+			}
+			secondSection: {
+				/**
+				 * 10 SIGNS THAT ITS TIME TO MODERNIZE
+				 */
+				title: () => LocalizedString
+				/**
+				 * 1. Frequent shutdowns
+				 */
+				li1: () => LocalizedString
+				/**
+				 * 2. Doors malfunction
+				 */
+				li2: () => LocalizedString
+				/**
+				 * 3. Rising repair costs
+				 */
+				li3: () => LocalizedString
+				/**
+				 * 4. High electricity consumption
+				 */
+				li4: () => LocalizedString
+				/**
+				 * 5. Out of date style
+				 */
+				li5: () => LocalizedString
+				/**
+				 * 6. Imprecise floor leveling
+				 */
+				li6: () => LocalizedString
+				/**
+				 * 7. Noise
+				 */
+				li7: () => LocalizedString
+				/**
+				 * 8. Vibration
+				 */
+				li8: () => LocalizedString
+				/**
+				 * 9. Long waiting time
+				 */
+				li9: () => LocalizedString
+				/**
+				 * 10. Change of building’s usage
+				 */
+				li10: () => LocalizedString
+			}
+			thirdSection: {
+				/**
+				 * TIRED OF FREQUENT BREAKDOWNS? 
+				 */
+				title: () => LocalizedString
+				/**
+				 * Upgrade Your Elevator for Enhanced Performance - Our modernization service will optimize your elevator's performance, reliability, and safety, ensuring smoother rides, faster response times, and reduced downtime. With the latest technology and components, we'll bring your elevator up to modern standards, providing increased efficiency and improved user experience.
+				 */
+				p1: () => LocalizedString
+			}
+			fourthSection: {
+				/**
+				 * AESTHETICAL UPGRADE
+				 */
+				title: () => LocalizedString
+				/**
+				 * Enhance Your Building's Aesthetics - Elevator modernization is not just about performance; it's also about aesthetics. Our expert team can transform the interior and exterior of your elevator, offering a wide range of design options to match your building's style and branding. From sleek and modern to classic and sophisticated, we'll make sure your elevator complements your building's overall look and feel.
+				 */
+				p1: () => LocalizedString
+			}
+			fifthSection: {
+				/**
+				 * I DON’T WANT TO PAY A FORTUNE
+				 */
+				title: () => LocalizedString
+				/**
+				 * Flexible Solutions for Your Budget - We understand that every building has unique requirements and budget considerations. That's why we offer flexible solutions tailored to your budget, without compromising on quality or safety. Our team will work with you to develop a modernization plan that meets your financial goals and delivers maximum value for your investment.
+				 */
+				p1: () => LocalizedString
+			}
+			sixthSection: {
+				/**
+				 * MINIMIZE DISRUPTION
+				 */
+				title: () => LocalizedString
+				/**
+				 * Minimize Disruption with Professional Service - We understand the importance of minimizing disruption to your building's operations. Our experienced technicians will work diligently to complete the modernization process efficiently and with minimal disruption to your tenants or visitors. We'll keep you informed at every step of the process, ensuring a smooth and hassle-free modernization experience.
+				 */
+				p1: () => LocalizedString
+				/**
+				 * Choose BuildingTec Elevators LLC for Elevator Modernization - Elevate your building with our top-notch elevator modernization service. Experience improved performance, enhanced aesthetics, and unmatched customer service. Contact us today to schedule a consultation and take the first step towards elevating your elevator and your building!
+				 */
+				p2: () => LocalizedString
 			}
 		}
 	}

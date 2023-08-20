@@ -549,6 +549,30 @@ const en: BaseTranslation = {
 			errorFeedback: 'Something went wrong!'
 		}
 	},
+	meeting: {
+		title: 'Meeting Request',
+		intro1: 'Think about new lift?',
+		intro2: 'Get in touch, and we will arrange a meeting with you!',
+		fullName: 'Name:',
+		fullNameError: 'Name length should be more that 2 characters!',
+		fullNameLengthError: 'Name is too long! Maximum 60 characters.',
+		fullNameNumericError: 'No numbers are allowed!',
+		fullNamePlaceholder: 'Enter your name ...',
+		dateTime: 'Preferred Date & Time:',
+		meetingDateError: 'Can not choose a date in the past!',
+		mobileNumber: 'Mobile Number:',
+		mobileNumberPlaceholder: 'Mobile number (05xxxxxxxx)',
+		mobileNumberError: 'Please enter a valid mobile number!',
+		email: 'Email Address:',
+		emailError: 'Please enter a valid email!',
+		emailPlaceholder: 'Enter your email address ...',
+		textArea: 'Tell us about your needs:',
+		textAreaPlaceholder: 'Enter your message here ...',
+		textAreaError1: 'Message is too short!',
+		textAreaError2: 'Message is too long! Maximum 2000 characters.',
+		successFeedback: 'Message Sent Successfully',
+		errorFeedback: 'Something went wrong!'
+	},
 	footer: {
 		contact: {
 			title: 'Contact Us',

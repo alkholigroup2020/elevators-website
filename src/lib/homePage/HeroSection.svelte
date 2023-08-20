@@ -36,7 +36,7 @@
 					</p>
 					<!--  Call-to-action button -->
 					<a
-						href={`/${$currentAppLang}/newelevator`}
+						href={`/${$currentAppLang}/meeting`}
 						aria-label="a link to the new-elevator form page"
 						class="btn variant-filled-secondary border border-success-500 btn-md md:btn-xl text-lg md:text-[22px]"
 					>

@@ -552,6 +552,30 @@ const en: BaseTranslation = {
 			errorFeedback: 'حدث خطأ ما!'
 		}
 	},
+	meeting: {
+		title: 'طلب اجتماع',
+		intro1: 'هل تفكر في مصعد جديد؟',
+		intro2: 'تواصل معنا وسنرتب مقابلة في أقرب فرصة!',
+		fullName: 'الاسم:',
+		fullNameError: 'يجب أن يكون طول الاسم أكثر من 2 أحرف!',
+		fullNameLengthError: 'الاسم طويل جدًا! الحد الأقصى 60 حرفًا.',
+		fullNameNumericError: 'لا يُسمح بالأرقام!',
+		fullNamePlaceholder: 'أدخل اسمك ...',
+		dateTime: 'التاريخ والوقت المفضل:',
+		meetingDateError: 'لا يمكن إختيار تاريخ في الماضي!',
+		mobileNumber: 'رقم الجوال:',
+		mobileNumberPlaceholder: 'رقم الجوال (05xxxxxxxx)',
+		mobileNumberError: 'يرجى إدخال رقم جوال صحيح!',
+		email: 'عنوان البريد الإلكتروني:',
+		emailError: 'يرجى إدخال بريد إلكتروني صحيح!',
+		emailPlaceholder: 'أدخل عنوان بريدك الإلكتروني ...',
+		textArea: 'أخبرنا عن احتياجاتك:',
+		textAreaPlaceholder: 'أدخل رسالتك هنا ...',
+		textAreaError1: 'الرسالة قصيرة جدًا!',
+		textAreaError2: 'الرسالة طويلة جدًا! الحد الأقصى 2000 حرف.',
+		successFeedback: 'تم إرسال الرسالة بنجاح',
+		errorFeedback: 'حدث خطأ ما!'
+	},
 	footer: {
 		contact: {
 			title: 'اتصــل بنا',

@@ -1594,6 +1594,96 @@ type RootTranslation = {
 			errorFeedback: string
 		}
 	}
+	meeting: {
+		/**
+		 * M​e​e​t​i​n​g​ ​R​e​q​u​e​s​t
+		 */
+		title: string
+		/**
+		 * T​h​i​n​k​ ​a​b​o​u​t​ ​n​e​w​ ​l​i​f​t​?
+		 */
+		intro1: string
+		/**
+		 * G​e​t​ ​i​n​ ​t​o​u​c​h​,​ ​a​n​d​ ​w​e​ ​w​i​l​l​ ​a​r​r​a​n​g​e​ ​a​ ​m​e​e​t​i​n​g​ ​w​i​t​h​ ​y​o​u​!
+		 */
+		intro2: string
+		/**
+		 * N​a​m​e​:
+		 */
+		fullName: string
+		/**
+		 * N​a​m​e​ ​l​e​n​g​t​h​ ​s​h​o​u​l​d​ ​b​e​ ​m​o​r​e​ ​t​h​a​t​ ​2​ ​c​h​a​r​a​c​t​e​r​s​!
+		 */
+		fullNameError: string
+		/**
+		 * N​a​m​e​ ​i​s​ ​t​o​o​ ​l​o​n​g​!​ ​M​a​x​i​m​u​m​ ​6​0​ ​c​h​a​r​a​c​t​e​r​s​.
+		 */
+		fullNameLengthError: string
+		/**
+		 * N​o​ ​n​u​m​b​e​r​s​ ​a​r​e​ ​a​l​l​o​w​e​d​!
+		 */
+		fullNameNumericError: string
+		/**
+		 * E​n​t​e​r​ ​y​o​u​r​ ​n​a​m​e​ ​.​.​.
+		 */
+		fullNamePlaceholder: string
+		/**
+		 * P​r​e​f​e​r​r​e​d​ ​D​a​t​e​ ​&​ ​T​i​m​e​:
+		 */
+		dateTime: string
+		/**
+		 * C​a​n​ ​n​o​t​ ​c​h​o​o​s​e​ ​a​ ​d​a​t​e​ ​i​n​ ​t​h​e​ ​p​a​s​t​!
+		 */
+		meetingDateError: string
+		/**
+		 * M​o​b​i​l​e​ ​N​u​m​b​e​r​:
+		 */
+		mobileNumber: string
+		/**
+		 * M​o​b​i​l​e​ ​n​u​m​b​e​r​ ​(​0​5​x​x​x​x​x​x​x​x​)
+		 */
+		mobileNumberPlaceholder: string
+		/**
+		 * P​l​e​a​s​e​ ​e​n​t​e​r​ ​a​ ​v​a​l​i​d​ ​m​o​b​i​l​e​ ​n​u​m​b​e​r​!
+		 */
+		mobileNumberError: string
+		/**
+		 * E​m​a​i​l​ ​A​d​d​r​e​s​s​:
+		 */
+		email: string
+		/**
+		 * P​l​e​a​s​e​ ​e​n​t​e​r​ ​a​ ​v​a​l​i​d​ ​e​m​a​i​l​!
+		 */
+		emailError: string
+		/**
+		 * E​n​t​e​r​ ​y​o​u​r​ ​e​m​a​i​l​ ​a​d​d​r​e​s​s​ ​.​.​.
+		 */
+		emailPlaceholder: string
+		/**
+		 * T​e​l​l​ ​u​s​ ​a​b​o​u​t​ ​y​o​u​r​ ​n​e​e​d​s​:
+		 */
+		textArea: string
+		/**
+		 * E​n​t​e​r​ ​y​o​u​r​ ​m​e​s​s​a​g​e​ ​h​e​r​e​ ​.​.​.
+		 */
+		textAreaPlaceholder: string
+		/**
+		 * M​e​s​s​a​g​e​ ​i​s​ ​t​o​o​ ​s​h​o​r​t​!
+		 */
+		textAreaError1: string
+		/**
+		 * M​e​s​s​a​g​e​ ​i​s​ ​t​o​o​ ​l​o​n​g​!​ ​M​a​x​i​m​u​m​ ​2​0​0​0​ ​c​h​a​r​a​c​t​e​r​s​.
+		 */
+		textAreaError2: string
+		/**
+		 * M​e​s​s​a​g​e​ ​S​e​n​t​ ​S​u​c​c​e​s​s​f​u​l​l​y
+		 */
+		successFeedback: string
+		/**
+		 * S​o​m​e​t​h​i​n​g​ ​w​e​n​t​ ​w​r​o​n​g​!
+		 */
+		errorFeedback: string
+	}
 	footer: {
 		contact: {
 			/**
@@ -3304,6 +3394,96 @@ export type TranslationFunctions = {
 			 */
 			errorFeedback: () => LocalizedString
 		}
+	}
+	meeting: {
+		/**
+		 * Meeting Request
+		 */
+		title: () => LocalizedString
+		/**
+		 * Think about new lift?
+		 */
+		intro1: () => LocalizedString
+		/**
+		 * Get in touch, and we will arrange a meeting with you!
+		 */
+		intro2: () => LocalizedString
+		/**
+		 * Name:
+		 */
+		fullName: () => LocalizedString
+		/**
+		 * Name length should be more that 2 characters!
+		 */
+		fullNameError: () => LocalizedString
+		/**
+		 * Name is too long! Maximum 60 characters.
+		 */
+		fullNameLengthError: () => LocalizedString
+		/**
+		 * No numbers are allowed!
+		 */
+		fullNameNumericError: () => LocalizedString
+		/**
+		 * Enter your name ...
+		 */
+		fullNamePlaceholder: () => LocalizedString
+		/**
+		 * Preferred Date & Time:
+		 */
+		dateTime: () => LocalizedString
+		/**
+		 * Can not choose a date in the past!
+		 */
+		meetingDateError: () => LocalizedString
+		/**
+		 * Mobile Number:
+		 */
+		mobileNumber: () => LocalizedString
+		/**
+		 * Mobile number (05xxxxxxxx)
+		 */
+		mobileNumberPlaceholder: () => LocalizedString
+		/**
+		 * Please enter a valid mobile number!
+		 */
+		mobileNumberError: () => LocalizedString
+		/**
+		 * Email Address:
+		 */
+		email: () => LocalizedString
+		/**
+		 * Please enter a valid email!
+		 */
+		emailError: () => LocalizedString
+		/**
+		 * Enter your email address ...
+		 */
+		emailPlaceholder: () => LocalizedString
+		/**
+		 * Tell us about your needs:
+		 */
+		textArea: () => LocalizedString
+		/**
+		 * Enter your message here ...
+		 */
+		textAreaPlaceholder: () => LocalizedString
+		/**
+		 * Message is too short!
+		 */
+		textAreaError1: () => LocalizedString
+		/**
+		 * Message is too long! Maximum 2000 characters.
+		 */
+		textAreaError2: () => LocalizedString
+		/**
+		 * Message Sent Successfully
+		 */
+		successFeedback: () => LocalizedString
+		/**
+		 * Something went wrong!
+		 */
+		errorFeedback: () => LocalizedString
 	}
 	footer: {
 		contact: {

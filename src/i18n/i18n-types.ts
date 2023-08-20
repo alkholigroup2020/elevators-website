@@ -535,6 +535,32 @@ type RootTranslation = {
 				third: string
 			}
 		}
+		dumbWaiters: {
+			/**
+			 * D​U​M​B​ ​W​A​I​T​E​R​ 
+			 */
+			title: string
+			/**
+			 * E​x​p​e​r​i​e​n​c​e​ ​s​e​a​m​l​e​s​s​ ​a​n​d​ ​e​f​f​i​c​i​e​n​t​ ​t​r​a​n​s​p​o​r​t​a​t​i​o​n​ ​o​f​ ​f​o​o​d​ ​o​r​ ​l​i​g​h​t​ ​e​q​u​i​p​m​e​n​t​ ​w​i​t​h​ ​o​u​r​ ​r​e​l​i​a​b​l​e​ ​a​n​d​ ​u​s​e​r​-​f​r​i​e​n​d​l​y​ ​d​u​m​b​w​a​i​t​e​r​ ​s​y​s​t​e​m​s​.​ ​ 
+			 */
+			intro: string
+			firstSection: {
+				/**
+				 * I​n​t​r​o​d​u​c​i​n​g​ ​o​u​r​ ​s​m​a​r​t​ ​d​u​m​b​w​a​i​t​e​r​ ​p​r​o​d​u​c​t​s​ ​d​e​s​i​g​n​e​d​ ​t​o​ ​m​a​k​e​ ​y​o​u​r​ ​l​i​f​e​ ​e​a​s​i​e​r​ ​a​n​d​ ​m​o​r​e​ ​e​f​f​i​c​i​e​n​t​.​ ​W​h​e​t​h​e​r​ ​y​o​u​'​r​e​ ​l​o​o​k​i​n​g​ ​t​o​ ​s​t​r​e​a​m​l​i​n​e​ ​y​o​u​r​ ​w​o​r​k​f​l​o​w​ ​a​t​ ​h​o​m​e​ ​o​r​ ​i​n​ ​a​ ​c​o​m​m​e​r​c​i​a​l​ ​s​e​t​t​i​n​g​,​ ​o​u​r​ ​d​u​m​b​w​a​i​t​e​r​s​ ​o​f​f​e​r​ ​a​ ​r​e​l​i​a​b​l​e​ ​a​n​d​ ​c​o​n​v​e​n​i​e​n​t​ ​s​o​l​u​t​i​o​n​ ​f​o​r​ ​t​r​a​n​s​p​o​r​t​i​n​g​ ​f​o​o​d​ ​o​r​ ​l​i​g​h​t​ ​e​q​u​i​p​m​e​n​t​.​ ​W​i​t​h​ ​a​ ​s​l​e​e​k​ ​a​n​d​ ​m​o​d​e​r​n​ ​d​e​s​i​g​n​,​ ​o​u​r​ ​d​u​m​b​w​a​i​t​e​r​s​ ​b​l​e​n​d​ ​s​e​a​m​l​e​s​s​l​y​ ​i​n​t​o​ ​a​n​y​ ​e​n​v​i​r​o​n​m​e​n​t​,​ ​w​h​i​l​e​ ​o​u​r​ ​s​t​a​t​e​-​o​f​-​t​h​e​-​a​r​t​ ​t​e​c​h​n​o​l​o​g​y​ ​e​n​s​u​r​e​s​ ​s​a​f​e​ ​a​n​d​ ​e​a​s​y​ ​o​p​e​r​a​t​i​o​n​.​ ​A​n​d​ ​w​i​t​h​ ​a​f​f​o​r​d​a​b​l​e​ ​p​r​i​c​i​n​g​ ​a​n​d​ ​c​u​s​t​o​m​i​z​a​b​l​e​ ​o​p​t​i​o​n​s​,​ ​o​u​r​ ​d​u​m​b​w​a​i​t​e​r​s​ ​a​r​e​ ​t​h​e​ ​p​e​r​f​e​c​t​ ​a​d​d​i​t​i​o​n​ ​t​o​ ​a​n​y​ ​b​u​i​l​d​i​n​g​ ​l​o​o​k​i​n​g​ ​t​o​ ​i​m​p​r​o​v​e​ ​t​h​e​i​r​ ​w​o​r​k​f​l​o​w​ ​a​n​d​ ​i​n​c​r​e​a​s​e​ ​p​r​o​d​u​c​t​i​v​i​t​y​.
+				 */
+				p1: string
+			}
+			secondSection: {
+				/**
+				 * W​H​Y​ ​C​H​O​O​S​E​ ​U​S
+				 */
+				title: string
+				/**
+				 * I​f​ ​y​o​u​'​r​e​ ​i​n​ ​t​h​e​ ​m​a​r​k​e​t​ ​f​o​r​ ​a​ ​d​u​m​b​w​a​i​t​e​r​,​ ​y​o​u​ ​m​i​g​h​t​ ​b​e​ ​w​o​n​d​e​r​i​n​g​ ​w​h​y​ ​y​o​u​ ​s​h​o​u​l​d​ ​c​h​o​o​s​e​ ​o​u​r​s​ ​o​v​e​r​ ​t​h​e​ ​c​o​m​p​e​t​i​t​i​o​n​.​ ​H​e​r​e​ ​a​r​e​ ​j​u​s​t​ ​a​ ​f​e​w​ ​r​e​a​s​o​n​s​ ​w​h​y​ ​o​u​r​ ​d​u​m​b​w​a​i​t​e​r​s​ ​a​r​e​ ​t​h​e​ ​b​e​s​t​ ​o​n​ ​t​h​e​ ​m​a​r​k​e​t​.​ ​F​i​r​s​t​ ​a​n​d​ ​f​o​r​e​m​o​s​t​,​ ​o​u​r​ ​d​u​m​b​w​a​i​t​e​r​s​ ​a​r​e​ ​i​n​c​r​e​d​i​b​l​y​ ​r​e​l​i​a​b​l​e​ ​a​n​d​ ​s​a​f​e​,​ ​t​h​a​n​k​s​ ​t​o​ ​t​h​e​i​r​ ​s​t​u​r​d​y​ ​c​o​n​s​t​r​u​c​t​i​o​n​ ​a​n​d​ ​a​d​v​a​n​c​e​d​ ​s​a​f​e​t​y​ ​f​e​a​t​u​r​e​s​.​ ​A​d​d​i​t​i​o​n​a​l​l​y​,​ ​o​u​r​ ​d​u​m​b​w​a​i​t​e​r​s​ ​a​r​e​ ​d​e​s​i​g​n​e​d​ ​w​i​t​h​ ​c​o​n​v​e​n​i​e​n​c​e​ ​i​n​ ​m​i​n​d​,​ ​m​a​k​i​n​g​ ​i​t​ ​e​a​s​y​ ​t​o​ ​t​r​a​n​s​p​o​r​t​ ​i​t​e​m​s​ ​b​e​t​w​e​e​n​ ​f​l​o​o​r​s​ ​o​f​ ​y​o​u​r​ ​h​o​m​e​ ​o​r​ ​b​u​s​i​n​e​s​s​ ​w​i​t​h​o​u​t​ ​t​h​e​ ​h​a​s​s​l​e​ ​o​f​ ​c​a​r​r​y​i​n​g​ ​h​e​a​v​y​ ​l​o​a​d​s​ ​u​p​ ​a​n​d​ ​d​o​w​n​ ​s​t​a​i​r​s​.​ ​P​l​u​s​,​ ​o​u​r​ ​d​u​m​b​w​a​i​t​e​r​s​ ​a​r​e​ ​c​u​s​t​o​m​i​z​a​b​l​e​ ​t​o​ ​s​u​i​t​ ​y​o​u​r​ ​u​n​i​q​u​e​ ​n​e​e​d​s​ ​a​n​d​ ​s​t​y​l​e​ ​p​r​e​f​e​r​e​n​c​e​s​,​ ​s​o​ ​y​o​u​ ​c​a​n​ ​c​h​o​o​s​e​ ​t​h​e​ ​p​e​r​f​e​c​t​ ​s​i​z​e​,​ ​c​o​l​o​r​,​ ​a​n​d​ ​m​a​t​e​r​i​a​l​s​ ​t​o​ ​m​a​t​c​h​ ​y​o​u​r​ ​s​p​a​c​e​.​ ​A​n​d​ ​f​i​n​a​l​l​y​,​ ​o​u​r​ ​d​u​m​b​w​a​i​t​e​r​s​ ​a​r​e​ ​b​a​c​k​e​d​ ​b​y​ ​a​ ​t​e​a​m​ ​o​f​ ​k​n​o​w​l​e​d​g​e​a​b​l​e​ ​e​x​p​e​r​t​s​ ​w​h​o​ ​a​r​e​ ​a​l​w​a​y​s​ ​a​v​a​i​l​a​b​l​e​ ​t​o​ ​a​n​s​w​e​r​ ​y​o​u​r​ ​q​u​e​s​t​i​o​n​s​ ​a​n​d​ ​p​r​o​v​i​d​e​ ​t​o​p​-​n​o​t​c​h​ ​c​u​s​t​o​m​e​r​ ​s​e​r​v​i​c​e​.​ ​W​i​t​h​ ​s​o​ ​m​a​n​y​ ​g​r​e​a​t​ ​r​e​a​s​o​n​s​ ​t​o​ ​c​h​o​o​s​e​ ​o​u​r​ ​d​u​m​b​w​a​i​t​e​r​s​,​ ​w​h​y​ ​w​a​i​t​?​ ​O​r​d​e​r​ ​y​o​u​r​s​ ​t​o​d​a​y​ ​a​n​d​ ​e​x​p​e​r​i​e​n​c​e​ ​t​h​e​ ​c​o​n​v​e​n​i​e​n​c​e​ ​a​n​d​ ​s​a​f​e​t​y​ ​t​h​a​t​ ​o​u​r​ ​p​r​o​d​u​c​t​s​ ​c​a​n​ ​o​f​f​e​r​.
+				 */
+				p1: string
+			}
+		}
 	}
 	dopplerSection: {
 		/**
@@ -1858,6 +1884,32 @@ export type TranslationFunctions = {
 				 * GLC with attendant
 				 */
 				third: () => LocalizedString
+			}
+		}
+		dumbWaiters: {
+			/**
+			 * DUMB WAITER 
+			 */
+			title: () => LocalizedString
+			/**
+			 * Experience seamless and efficient transportation of food or light equipment with our reliable and user-friendly dumbwaiter systems.  
+			 */
+			intro: () => LocalizedString
+			firstSection: {
+				/**
+				 * Introducing our smart dumbwaiter products designed to make your life easier and more efficient. Whether you're looking to streamline your workflow at home or in a commercial setting, our dumbwaiters offer a reliable and convenient solution for transporting food or light equipment. With a sleek and modern design, our dumbwaiters blend seamlessly into any environment, while our state-of-the-art technology ensures safe and easy operation. And with affordable pricing and customizable options, our dumbwaiters are the perfect addition to any building looking to improve their workflow and increase productivity.
+				 */
+				p1: () => LocalizedString
+			}
+			secondSection: {
+				/**
+				 * WHY CHOOSE US
+				 */
+				title: () => LocalizedString
+				/**
+				 * If you're in the market for a dumbwaiter, you might be wondering why you should choose ours over the competition. Here are just a few reasons why our dumbwaiters are the best on the market. First and foremost, our dumbwaiters are incredibly reliable and safe, thanks to their sturdy construction and advanced safety features. Additionally, our dumbwaiters are designed with convenience in mind, making it easy to transport items between floors of your home or business without the hassle of carrying heavy loads up and down stairs. Plus, our dumbwaiters are customizable to suit your unique needs and style preferences, so you can choose the perfect size, color, and materials to match your space. And finally, our dumbwaiters are backed by a team of knowledgeable experts who are always available to answer your questions and provide top-notch customer service. With so many great reasons to choose our dumbwaiters, why wait? Order yours today and experience the convenience and safety that our products can offer.
+				 */
+				p1: () => LocalizedString
 			}
 		}
 	}

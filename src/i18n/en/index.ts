@@ -197,6 +197,18 @@ const en: BaseTranslation = {
 				second: 'GLC without attendant',
 				third: 'GLC with attendant'
 			}
+		},
+		dumbWaiters: {
+			title: 'DUMB WAITER ',
+			intro:
+				'Experience seamless and efficient transportation of food or light equipment with our reliable and user-friendly dumbwaiter systems.  ',
+			firstSection: {
+				p1: "Introducing our smart dumbwaiter products designed to make your life easier and more efficient. Whether you're looking to streamline your workflow at home or in a commercial setting, our dumbwaiters offer a reliable and convenient solution for transporting food or light equipment. With a sleek and modern design, our dumbwaiters blend seamlessly into any environment, while our state-of-the-art technology ensures safe and easy operation. And with affordable pricing and customizable options, our dumbwaiters are the perfect addition to any building looking to improve their workflow and increase productivity."
+			},
+			secondSection: {
+				title: 'WHY CHOOSE US',
+				p1: "If you're in the market for a dumbwaiter, you might be wondering why you should choose ours over the competition. Here are just a few reasons why our dumbwaiters are the best on the market. First and foremost, our dumbwaiters are incredibly reliable and safe, thanks to their sturdy construction and advanced safety features. Additionally, our dumbwaiters are designed with convenience in mind, making it easy to transport items between floors of your home or business without the hassle of carrying heavy loads up and down stairs. Plus, our dumbwaiters are customizable to suit your unique needs and style preferences, so you can choose the perfect size, color, and materials to match your space. And finally, our dumbwaiters are backed by a team of knowledgeable experts who are always available to answer your questions and provide top-notch customer service. With so many great reasons to choose our dumbwaiters, why wait? Order yours today and experience the convenience and safety that our products can offer."
+			}
 		}
 	},
 	dopplerSection: {

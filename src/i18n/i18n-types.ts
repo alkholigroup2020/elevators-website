@@ -629,6 +629,22 @@ type RootTranslation = {
 				title: string
 			}
 		}
+		panoramic: {
+			/**
+			 * P​A​N​O​R​A​M​I​C​ ​E​L​E​V​A​T​O​R​ 
+			 */
+			title: string
+			/**
+			 * E​x​p​e​r​i​e​n​c​e​ ​a​ ​n​e​w​ ​l​e​v​e​l​ ​o​f​ ​l​u​x​u​r​y​ ​a​n​d​ ​c​o​n​v​e​n​i​e​n​c​e​ ​w​i​t​h​ ​o​u​r​ ​p​a​n​o​r​a​m​i​c​ ​e​l​e​v​a​t​o​r​s​ ​t​h​a​t​ ​p​r​o​v​i​d​e​ ​b​r​e​a​t​h​t​a​k​i​n​g​ ​v​i​e​w​s​ ​a​n​d​ ​s​m​o​o​t​h​ ​r​i​d​e​s​,​ ​a​d​d​i​n​g​ ​v​a​l​u​e​ ​a​n​d​ ​s​o​p​h​i​s​t​i​c​a​t​i​o​n​ ​t​o​ ​y​o​u​r​ ​b​u​i​l​d​i​n​g​.
+			 */
+			intro: string
+			firstSection: {
+				/**
+				 * W​e​l​c​o​m​e​ ​t​o​ ​B​u​i​l​d​i​n​g​t​e​c​ ​E​l​e​v​a​t​o​r​s​,​ ​w​h​e​r​e​ ​w​e​ ​o​f​f​e​r​ ​y​o​u​ ​t​h​e​ ​l​a​t​e​s​t​ ​i​n​ ​p​a​n​o​r​a​m​i​c​ ​e​l​e​v​a​t​o​r​ ​t​e​c​h​n​o​l​o​g​y​.​ ​O​u​r​ ​e​l​e​v​a​t​o​r​s​ ​a​r​e​ ​d​e​s​i​g​n​e​d​ ​t​o​ ​p​r​o​v​i​d​e​ ​a​ ​s​t​u​n​n​i​n​g​ ​a​n​d​ ​u​n​i​q​u​e​ ​e​x​p​e​r​i​e​n​c​e​,​ ​a​d​d​i​n​g​ ​a​n​ ​e​l​e​m​e​n​t​ ​o​f​ ​l​u​x​u​r​y​ ​a​n​d​ ​s​o​p​h​i​s​t​i​c​a​t​i​o​n​ ​t​o​ ​y​o​u​r​ ​b​u​i​l​d​i​n​g​.​ ​W​e​ ​u​n​d​e​r​s​t​a​n​d​ ​t​h​a​t​ ​e​v​e​r​y​ ​b​u​i​l​d​i​n​g​ ​i​s​ ​d​i​f​f​e​r​e​n​t​,​ ​w​h​i​c​h​ ​i​s​ ​w​h​y​ ​w​e​ ​o​f​f​e​r​ ​e​l​e​v​a​t​o​r​s​ ​i​n​ ​a​l​l​ ​s​h​a​p​e​s​,​ ​w​h​e​t​h​e​r​ ​s​q​u​a​r​e​,​ ​s​e​m​i​-​c​i​r​c​u​l​a​r​,​ ​o​r​ ​c​o​m​p​l​e​t​e​l​y​ ​c​i​r​c​u​l​a​r​.​ ​O​u​r​ ​t​e​a​m​ ​o​f​ ​e​x​p​e​r​t​s​ ​h​a​s​ ​s​p​e​n​t​ ​y​e​a​r​s​ ​p​e​r​f​e​c​t​i​n​g​ ​o​u​r​ ​e​l​e​v​a​t​o​r​s​ ​t​o​ ​p​r​o​v​i​d​e​ ​t​h​e​ ​s​m​o​o​t​h​e​s​t​ ​r​i​d​e​s​ ​a​n​d​ ​t​h​e​ ​m​o​s​t​ ​b​r​e​a​t​h​t​a​k​i​n​g​ ​v​i​e​w​s​.​ ​O​u​r​ ​p​a​n​o​r​a​m​i​c​ ​e​l​e​v​a​t​o​r​s​ ​a​r​e​ ​n​o​t​ ​j​u​s​t​ ​a​ ​m​o​d​e​ ​o​f​ ​t​r​a​n​s​p​o​r​t​a​t​i​o​n​ ​b​u​t​ ​a​n​ ​e​x​p​e​r​i​e​n​c​e​ ​i​n​ ​t​h​e​m​s​e​l​v​e​s​,​ ​a​s​ ​y​o​u​ ​t​a​k​e​ ​i​n​ ​t​h​e​ ​s​t​u​n​n​i​n​g​ ​s​c​e​n​e​r​y​ ​w​h​i​l​e​ ​t​r​a​v​e​l​l​i​n​g​ ​f​r​o​m​ ​f​l​o​o​r​ ​t​o​ ​f​l​o​o​r​.​ ​O​u​r​ ​p​r​o​d​u​c​t​s​ ​a​r​e​ ​d​e​s​i​g​n​e​d​ ​t​o​ ​m​e​e​t​ ​t​h​e​ ​h​i​g​h​e​s​t​ ​s​t​a​n​d​a​r​d​s​ ​o​f​ ​s​a​f​e​t​y​ ​a​n​d​ ​e​f​f​i​c​i​e​n​c​y​,​ ​e​n​s​u​r​i​n​g​ ​y​o​u​r​ ​p​e​a​c​e​ ​o​f​ ​m​i​n​d​ ​w​h​i​l​e​ ​r​i​d​i​n​g​ ​o​u​r​ ​e​l​e​v​a​t​o​r​s​.​ ​W​e​ ​o​f​f​e​r​ ​o​u​r​ ​p​a​n​o​r​a​m​i​c​ ​e​l​e​v​a​t​o​r​s​ ​w​i​t​h​ ​b​o​t​h​ ​p​a​n​o​r​a​m​i​c​ ​s​t​e​e​l​ ​s​t​r​u​c​t​u​r​e​s​ ​o​r​ ​s​e​m​i​-​o​p​e​n​ ​s​h​a​f​t​s​,​ ​g​i​v​i​n​g​ ​y​o​u​ ​t​h​e​ ​f​l​e​x​i​b​i​l​i​t​y​ ​t​o​ ​c​h​o​o​s​e​ ​t​h​e​ ​s​t​y​l​e​ ​t​h​a​t​ ​b​e​s​t​ ​s​u​i​t​s​ ​y​o​u​r​ ​b​u​i​l​d​i​n​g​.​ ​W​i​t​h​ ​o​u​r​ ​p​a​n​o​r​a​m​i​c​ ​e​l​e​v​a​t​o​r​s​,​ ​y​o​u​ ​c​a​n​ ​a​d​d​ ​a​ ​t​o​u​c​h​ ​o​f​ ​e​l​e​g​a​n​c​e​ ​a​n​d​ ​m​o​d​e​r​n​i​t​y​ ​t​o​ ​y​o​u​r​ ​p​r​o​p​e​r​t​y​,​ ​i​m​p​r​e​s​s​i​n​g​ ​v​i​s​i​t​o​r​s​ ​a​n​d​ ​i​n​c​r​e​a​s​i​n​g​ ​t​h​e​ ​v​a​l​u​e​ ​o​f​ ​y​o​u​r​ ​b​u​i​l​d​i​n​g​.
+				 */
+				p1: string
+			}
+		}
 	}
 	dopplerSection: {
 		/**
@@ -2046,6 +2062,22 @@ export type TranslationFunctions = {
 				 * OUR ESCALATOR MODELS
 				 */
 				title: () => LocalizedString
+			}
+		}
+		panoramic: {
+			/**
+			 * PANORAMIC ELEVATOR 
+			 */
+			title: () => LocalizedString
+			/**
+			 * Experience a new level of luxury and convenience with our panoramic elevators that provide breathtaking views and smooth rides, adding value and sophistication to your building.
+			 */
+			intro: () => LocalizedString
+			firstSection: {
+				/**
+				 * Welcome to Buildingtec Elevators, where we offer you the latest in panoramic elevator technology. Our elevators are designed to provide a stunning and unique experience, adding an element of luxury and sophistication to your building. We understand that every building is different, which is why we offer elevators in all shapes, whether square, semi-circular, or completely circular. Our team of experts has spent years perfecting our elevators to provide the smoothest rides and the most breathtaking views. Our panoramic elevators are not just a mode of transportation but an experience in themselves, as you take in the stunning scenery while travelling from floor to floor. Our products are designed to meet the highest standards of safety and efficiency, ensuring your peace of mind while riding our elevators. We offer our panoramic elevators with both panoramic steel structures or semi-open shafts, giving you the flexibility to choose the style that best suits your building. With our panoramic elevators, you can add a touch of elegance and modernity to your property, impressing visitors and increasing the value of your building.
+				 */
+				p1: () => LocalizedString
 			}
 		}
 	}

@@ -239,6 +239,14 @@ const en: BaseTranslation = {
 			tableSection: {
 				title: 'OUR ESCALATOR MODELS'
 			}
+		},
+		panoramic: {
+			title: 'PANORAMIC ELEVATOR ',
+			intro:
+				'Experience a new level of luxury and convenience with our panoramic elevators that provide breathtaking views and smooth rides, adding value and sophistication to your building.',
+			firstSection: {
+				p1: 'Welcome to Buildingtec Elevators, where we offer you the latest in panoramic elevator technology. Our elevators are designed to provide a stunning and unique experience, adding an element of luxury and sophistication to your building. We understand that every building is different, which is why we offer elevators in all shapes, whether square, semi-circular, or completely circular. Our team of experts has spent years perfecting our elevators to provide the smoothest rides and the most breathtaking views. Our panoramic elevators are not just a mode of transportation but an experience in themselves, as you take in the stunning scenery while travelling from floor to floor. Our products are designed to meet the highest standards of safety and efficiency, ensuring your peace of mind while riding our elevators. We offer our panoramic elevators with both panoramic steel structures or semi-open shafts, giving you the flexibility to choose the style that best suits your building. With our panoramic elevators, you can add a touch of elegance and modernity to your property, impressing visitors and increasing the value of your building.'
+			}
 		}
 	},
 	dopplerSection: {

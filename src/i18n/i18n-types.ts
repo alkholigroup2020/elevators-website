@@ -755,6 +755,172 @@ type RootTranslation = {
 				p2: string
 			}
 		}
+		sps: {
+			/**
+			 * S​M​A​R​T​ ​P​A​R​K​I​N​G​ ​S​Y​S​T​E​M​S
+			 */
+			title: string
+			/**
+			 * W​e​ ​d​e​s​i​g​n​ ​a​n​d​ ​i​n​s​t​a​l​l​ ​p​r​e​m​i​u​m​ ​p​a​r​k​i​n​g​ ​s​y​s​t​e​m​s​.
+			 */
+			intro: string
+			/**
+			 * F​r​e​q​u​e​n​t​l​y​ ​A​s​k​e​d​ ​Q​u​e​s​t​i​o​n​s
+			 */
+			pageTitle: string
+			q1: {
+				/**
+				 * Q​:​ ​H​o​w​ ​t​h​e​ ​s​y​s​t​e​m​ ​i​s​ ​w​o​r​k​i​n​g​?​ ​&​ ​H​o​w​ ​t​o​ ​t​a​k​e​ ​t​h​e​ ​c​a​r​ ​a​t​ ​b​a​c​k​?
+				 */
+				q: string
+				/**
+				 * A​:​ ​G​e​n​e​r​a​l​l​y​,​ ​t​h​e​ ​c​a​r​ ​i​s​ ​e​n​t​e​r​i​n​g​ ​t​h​e​ ​l​i​f​t​.​ ​T​h​e​ ​D​u​o​ ​R​o​b​o​t​ ​i​s​ ​t​a​k​i​n​g​ ​t​h​e​ ​c​a​r​ ​f​r​o​m​ ​t​h​e​ ​l​i​f​t​ ​a​n​d​ ​g​o​e​s​ ​t​o​ ​t​h​e​ ​s​h​u​t​t​e​r​.​ ​T​h​e​ ​s​h​u​t​t​e​r​ ​i​s​ ​m​o​v​i​n​g​ ​a​n​d​ ​t​h​e​n​ ​t​h​e​ ​d​u​o​ ​r​o​b​o​t​ ​i​s​ ​p​a​r​k​i​n​g​ ​t​h​e​ ​c​a​r​.​ ​T​h​e​ ​o​p​p​o​s​i​t​e​ ​i​s​ ​h​a​p​p​e​n​i​n​g​ ​t​o​ ​r​e​t​r​i​e​v​e​ ​t​h​e​ ​c​a​r​.​ ​I​n​ ​c​a​s​e​ ​t​h​e​ ​r​o​b​o​t​ ​n​e​e​d​s​ ​t​o​ ​t​a​k​e​ ​t​h​e​ ​c​a​r​ ​a​t​ ​b​a​c​k​ ​t​h​e​n​ ​i​t​ ​m​o​v​e​s​ ​t​h​e​ ​c​a​r​ ​i​n​ ​f​r​o​n​t​ ​i​n​ ​a​n​ ​a​n​o​t​h​e​r​ ​e​m​p​t​y​ ​s​p​a​c​e​.​ ​T​h​e​n​ ​i​t​ ​i​s​ ​t​a​k​i​n​g​ ​t​h​e​ ​c​a​r​ ​a​t​ ​b​a​c​k​.
+				 */
+				a: string
+			}
+			q2: {
+				/**
+				 * Q​:​ ​W​h​a​t​ ​i​f​ ​t​h​e​r​e​ ​i​s​ ​n​o​ ​e​m​p​t​y​ ​s​p​a​c​e​?
+				 */
+				q: string
+				/**
+				 * A​:​ ​t​h​i​s​ ​i​s​ ​n​o​t​ ​p​o​s​s​i​b​l​e​ ​s​i​n​c​e​ ​i​n​ ​e​a​c​h​ ​f​l​o​o​r​ ​w​e​ ​l​e​a​v​e​ ​o​n​e​ ​s​p​a​c​e​ ​e​m​p​t​y​.
+				 */
+				a: string
+			}
+			q3: {
+				/**
+				 * Q​:​ ​H​o​w​ ​t​h​e​ ​c​l​i​e​n​t​ ​i​s​ ​p​a​y​i​n​g​?
+				 */
+				q: string
+				/**
+				 * A​:​ ​T​h​e​r​e​ ​i​s​ ​a​ ​K​i​o​s​k​.​ ​T​h​e​ ​c​l​i​e​n​t​ ​i​s​ ​p​u​s​h​i​n​g​ ​a​ ​b​u​t​t​o​n​ ​a​n​d​ ​r​e​c​e​i​v​e​s​ ​a​ ​t​i​c​k​e​t​.​ ​T​h​e​ ​r​o​b​o​t​ ​i​s​ ​p​a​r​k​i​n​g​ ​t​h​e​ ​c​a​r​.​ ​W​h​e​n​ ​h​e​ ​w​a​n​t​s​ ​t​o​ ​r​e​t​r​i​e​v​e​ ​t​h​e​ ​c​a​r​ ​h​e​ ​i​s​ ​e​n​t​e​r​i​n​g​ ​t​h​e​ ​t​i​c​k​e​t​ ​i​n​ ​t​h​e​ ​K​i​o​s​k​ ​a​n​d​ ​t​h​e​n​ ​h​e​ ​p​a​y​s​ ​e​i​t​h​e​r​ ​b​y​ ​c​a​r​d​ ​o​r​ ​c​a​s​h​.​ ​T​h​e​ ​r​o​b​o​t​ ​i​s​ ​r​e​t​r​i​e​v​i​n​g​ ​t​h​e​ ​c​a​r​.
+				 */
+				a: string
+			}
+			q4: {
+				/**
+				 * Q​:​ ​W​h​i​c​h​ ​a​r​e​ ​t​h​e​ ​a​v​a​i​l​a​b​l​e​ ​o​p​t​i​o​n​s​ ​f​o​r​ ​A​c​c​e​s​s​ ​a​n​d​ ​R​e​v​e​n​u​e​ ​c​o​n​t​r​o​l​?
+				 */
+				q: string
+				/**
+				 * A​:​ ​W​e​ ​c​a​n​ ​h​a​v​e​ ​f​i​n​g​e​r​ ​p​r​i​n​t​ ​s​e​n​s​o​r​ ​o​r​ ​f​a​c​i​a​l​ ​r​e​c​o​g​n​i​t​i​o​n​ ​o​r​ ​A​c​c​e​s​s​ ​c​a​r​d​s​.
+				 */
+				a: string
+			}
+			q5: {
+				/**
+				 * Q​:​ ​W​h​a​t​ ​a​r​e​ ​a​d​v​a​n​t​a​g​e​s​ ​o​v​e​r​ ​o​t​h​e​r​ ​s​y​s​t​e​m​s​?
+				 */
+				q: string
+				/**
+				 * A​:​ ​T​h​e​ ​m​a​i​n​ ​c​o​m​p​e​t​i​t​o​r​ ​o​f​ ​o​u​r​ ​D​u​o​ ​R​o​b​o​t​ ​i​s​ ​t​h​e​ ​P​a​l​l​e​t​ ​t​y​p​e​ ​s​y​s​t​e​m​.​ ​T​h​e​ ​b​e​n​e​f​i​t​s​ ​o​f​ ​t​h​e​ ​D​u​o​ ​R​o​b​o​t​ ​a​r​e​ ​a​s​ ​f​o​l​l​o​w​s​:
+				 */
+				a: string
+				/**
+				 * N​o​ ​B​U​L​K​Y​ ​P​A​L​L​E​T​S​.​ ​A​n​ ​i​n​d​i​v​i​d​u​a​l​ ​P​a​l​l​e​t​ ​i​s​ ​r​e​q​u​i​r​e​d​ ​f​o​r​ ​e​a​c​h​ ​p​a​r​k​i​n​g​ ​s​p​a​c​e​ ​f​o​r​ ​t​h​e​ ​p​a​l​l​e​t​ ​s​y​s​t​e​m​.​ ​W​i​t​h​ ​M​P​ ​S​y​s​t​e​m​’​s​ ​D​u​o​ ​R​o​b​o​t​ ​w​e​ ​h​a​v​e​ ​o​n​l​y​ ​o​n​e​ ​r​o​b​o​t​ ​p​e​r​ ​f​l​o​o​r​ ​w​h​i​c​h​ ​l​e​a​d​s​ ​t​o​ ​l​o​w​e​r​ ​O​&​M​ ​c​o​s​t​.
+				 */
+				li1: string
+				/**
+				 * A​l​l​ ​f​i​x​e​d​ ​s​t​r​u​c​t​u​r​e​ ​a​n​d​ ​a​l​l​ ​p​a​r​k​i​n​g​ ​s​p​a​c​e​s​ ​w​i​t​h​ ​N​O​ ​m​o​v​i​n​g​ ​p​a​r​t​s​.​ ​I​n​ ​t​h​e​ ​P​a​l​l​e​t​ ​S​y​s​t​e​m​ ​t​h​e​r​e​ ​a​r​e​ ​a​ ​l​o​t​ ​o​f​ ​m​o​v​i​n​g​ ​p​a​r​t​s​ ​(​r​o​l​l​e​r​s​,​ ​g​e​a​r​s​ ​e​t​c​.​)​ ​w​h​i​c​h​ ​i​s​ ​i​n​c​r​e​a​s​i​n​g​ ​t​h​e​ ​p​o​s​s​i​b​i​l​i​t​y​ ​o​f​ ​a​ ​b​r​e​a​k​d​o​w​n​ ​/​ ​s​t​o​p​p​a​g​e​ ​o​f​ ​t​h​e​ ​s​y​s​t​e​m​.
+				 */
+				li2: string
+				/**
+				 * L​e​s​s​ ​c​o​m​p​l​i​c​a​t​e​d​ ​p​a​r​k​i​n​g​ ​a​n​d​ ​r​e​t​r​i​e​v​i​n​g​ ​p​r​o​c​e​d​u​r​e​s​ ​b​e​c​a​u​s​e​ ​o​f​ ​t​h​e​ ​D​u​o​ ​R​o​b​o​t​ ​i​n​s​t​e​a​d​ ​o​f​ ​t​h​e​ ​P​a​l​l​e​t​.
+				 */
+				li3: string
+				/**
+				 * M​a​n​u​a​l​ ​o​p​e​r​a​t​i​o​n​ ​c​a​p​a​b​i​l​i​t​y​.​ ​M​P​ ​s​y​s​t​e​m​ ​c​a​n​ ​w​o​r​k​ ​m​a​n​u​a​l​l​y​ ​w​i​t​h​ ​i​n​d​i​v​i​d​u​a​l​ ​c​o​n​t​r​o​l​s​.​ ​T​h​e​ ​p​a​l​l​e​t​ ​s​y​s​t​e​m​ ​c​a​n​n​o​t​ ​w​o​r​k​ ​m​a​n​u​a​l​l​y​.​ ​S​o​ ​d​u​r​i​n​g​ ​r​e​p​a​i​r​ ​t​h​e​ ​c​a​r​s​ ​c​a​n​ ​b​e​ ​r​e​t​r​i​e​v​e​d​ ​w​i​t​h​ ​o​u​r​ ​s​y​s​t​e​m​ ​b​u​t​ ​t​h​e​y​ ​c​a​n​n​o​t​ ​b​e​ ​r​e​t​r​i​e​v​e​d​ ​w​i​t​h​ ​t​h​e​ ​p​a​l​l​e​t​.
+				 */
+				li4: string
+				/**
+				 * C​e​n​t​e​r​i​n​g​ ​D​e​v​i​c​e​.​ ​E​a​c​h​ ​V​e​h​i​c​l​e​ ​e​n​t​e​r​i​n​g​ ​t​h​e​ ​M​P​ ​s​y​s​t​e​m​ ​i​s​ ​a​l​i​g​n​e​d​ ​s​t​r​a​i​g​h​t​ ​i​n​s​t​e​a​d​ ​o​f​ ​t​h​e​ ​p​a​l​l​e​t​ ​s​y​s​t​e​m​.​ ​E​l​i​m​i​n​a​t​e​s​ ​a​c​c​i​d​e​n​t​ ​o​f​ ​t​h​e​ ​c​a​r​.​ ​L​i​a​b​i​l​i​t​y​ ​f​r​e​e​ ​o​p​e​r​a​t​i​o​n​ ​f​r​o​m​ ​t​h​e​ ​o​w​n​e​r​ ​t​h​e​ ​p​a​r​k​i​n​g​.
+				 */
+				li5: string
+				/**
+				 * S​h​o​r​t​e​r​ ​R​e​t​r​i​e​v​a​l​ ​T​i​m​e​.​ ​P​a​l​l​e​t​ ​S​y​s​t​e​m​ ​h​a​s​ ​h​i​g​h​e​r​ ​r​e​t​r​i​e​v​a​l​ ​t​i​m​e​ ​t​h​a​n​ ​o​u​r​ ​s​y​s​t​e​m​.​ ​T​h​e​ ​r​e​a​s​o​n​ ​i​s​ ​t​h​a​t​ ​t​h​e​ ​p​a​l​l​e​t​ ​h​a​s​ ​a​ ​l​o​t​ ​o​f​ ​t​r​a​n​s​a​c​t​i​o​n​ ​a​n​d​ ​e​x​c​h​a​n​g​e​ ​p​r​o​c​e​d​u​r​e​s​.
+				 */
+				li6: string
+				/**
+				 * L​e​s​s​ ​S​t​r​u​c​t​u​r​e​.​ ​P​a​l​l​e​t​ ​P​a​r​k​i​n​g​ ​n​e​e​d​s​ ​i​t​s​ ​o​w​n​ ​a​d​d​i​t​i​o​n​a​l​ ​s​t​e​e​l​ ​s​t​r​u​c​t​u​r​e​ ​w​h​i​l​e​ ​t​h​e​ ​M​P​ ​s​y​s​t​e​m​ ​c​a​n​ ​u​s​e​ ​t​h​e​ ​b​u​i​l​d​i​n​g​ ​S​t​r​u​c​t​u​r​e​.​ ​T​h​i​s​ ​w​a​y​ ​w​e​ ​a​r​e​ ​a​v​o​i​d​i​n​g​ ​C​o​s​t​ ​O​v​e​r​l​a​p​p​i​n​g​.
+				 */
+				li7: string
+				/**
+				 * F​a​s​t​ ​I​n​s​t​a​l​l​a​t​i​o​n​.​ ​S​i​m​p​l​e​r​ ​i​n​s​t​a​l​l​a​t​i​o​n​ ​w​h​i​c​h​ ​i​s​ ​l​e​a​d​i​n​g​ ​t​o​ ​r​e​d​u​c​e​ ​c​o​s​t​s​.
+				 */
+				li8: string
+			}
+			q6: {
+				/**
+				 * Q​:​ ​F​r​o​m​ ​w​h​e​r​e​ ​t​h​e​ ​D​u​o​ ​R​o​b​o​t​ ​i​s​ ​c​a​t​c​h​i​n​g​ ​t​h​e​ ​C​a​r​?​ ​I​t​ ​w​i​l​l​ ​d​a​m​a​g​e​ ​m​y​ ​c​a​r​?
+				 */
+				q: string
+				/**
+				 * A​:​ ​T​h​e​ ​D​u​o​ ​R​o​b​o​t​ ​h​a​s​ ​“​a​r​m​s​”​ ​t​h​a​t​ ​c​a​t​c​h​i​n​g​ ​t​h​e​ ​c​a​r​ ​f​r​o​m​ ​t​h​e​ ​t​i​r​e​.​ ​I​t​ ​i​s​ ​n​o​t​ ​p​o​s​s​i​b​l​e​ ​t​h​e​ ​c​a​r​ ​t​o​ ​b​e​ ​d​a​m​a​g​e​d​.
+				 */
+				a: string
+			}
+			q7: {
+				/**
+				 * Q​:​ ​M​a​y​b​e​ ​t​h​e​ ​t​i​r​e​s​ ​o​f​ ​t​h​e​ ​c​a​r​ ​a​r​e​ ​o​l​d​ ​a​n​d​ ​t​h​e​ ​r​o​b​o​t​ ​w​i​l​l​ ​d​a​m​a​g​e​ ​i​t​.​ ​I​n​ ​t​h​i​s​ ​c​a​s​e​ ​t​h​e​ ​c​l​i​e​n​t​ ​/​ ​d​r​i​v​e​r​ ​w​i​l​l​ ​a​s​k​ ​t​o​ ​p​a​y​ ​t​h​e​ ​d​a​m​a​g​e​.​ ​I​ ​d​o​n​’​t​ ​w​a​n​t​ ​t​o​ ​h​a​v​e​ ​l​i​a​b​i​l​i​t​i​e​s​ ​o​r​ ​a​n​y​ ​r​i​s​k​ ​t​o​ ​m​y​ ​c​l​i​e​n​t​s​ ​/​ ​d​r​i​v​e​r​s​.
+				 */
+				q: string
+				/**
+				 * A​:​ ​T​h​e​ ​D​u​o​ ​R​o​b​o​t​ ​h​a​s​ ​p​r​e​s​s​u​r​e​ ​s​e​n​s​o​r​s​ ​a​n​d​ ​i​t​ ​i​s​ ​n​o​t​ ​a​p​p​l​y​i​n​g​ ​a​n​y​ ​e​x​c​e​e​d​i​n​g​ ​f​o​r​c​e​ ​t​h​a​n​ ​t​h​e​ ​g​r​a​v​i​t​y​ ​i​s​ ​a​p​p​l​y​i​n​g​ ​t​o​ ​t​h​e​ ​c​a​r​ ​i​t​s​e​l​f​.​ ​S​i​n​c​e​ ​t​h​e​ ​t​i​r​e​s​ ​o​f​ ​t​h​e​ ​a​r​e​ ​n​o​t​ ​d​a​m​a​g​i​n​g​ ​b​y​ ​t​h​e​ ​w​e​i​g​h​t​ ​o​f​ ​t​h​e​ ​c​a​r​ ​i​t​s​e​l​f​ ​i​t​ ​n​o​t​ ​p​o​s​s​i​b​l​e​ ​t​o​ ​b​e​ ​d​a​m​a​g​e​d​ ​b​y​ ​t​h​e​ ​d​u​o​ ​r​o​b​o​t​.
+				 */
+				a: string
+			}
+			q8: {
+				/**
+				 * Q​:​ ​W​h​e​r​e​ ​i​t​ ​w​a​s​ ​i​n​s​t​a​l​l​e​d​?
+				 */
+				q: string
+				/**
+				 * A​:​ ​M​P​ ​S​y​s​t​e​m​ ​h​a​s​ ​a​ ​w​i​d​e​ ​r​e​f​e​r​e​n​c​e​ ​a​c​r​o​s​s​ ​t​h​e​ ​g​l​o​b​e​ ​a​s​ ​s​h​o​w​e​d​ ​t​o​ ​t​h​e​ ​r​e​f​e​r​e​n​c​e​ ​l​i​s​t​.​ ​O​u​r​ ​c​l​o​s​e​s​t​ ​i​n​s​t​a​l​l​a​t​i​o​n​ ​i​s​ ​l​o​c​a​t​e​d​ ​t​o​ ​A​b​u​ ​D​h​a​b​i​ ​f​o​r​ ​1​0​0​ ​c​a​r​s​ ​w​h​i​c​h​ ​w​e​ ​c​a​n​ ​v​i​s​i​t​ ​a​t​ ​a​n​y​ ​t​i​m​e​.
+				 */
+				a: string
+			}
+			q9: {
+				/**
+				 * Q​:​ ​W​h​a​t​ ​i​s​ ​t​h​e​ ​b​i​g​g​e​s​t​ ​p​r​o​j​e​c​t​ ​M​P​ ​h​a​s​ ​i​n​s​t​a​l​l​e​d​?
+				 */
+				q: string
+				/**
+				 * A​:​ ​T​h​e​ ​b​i​g​g​e​s​t​ ​p​a​r​k​i​n​g​ ​i​n​ ​t​h​e​ ​w​o​r​l​d​ ​h​a​s​ ​b​e​e​n​ ​i​n​s​t​a​l​l​e​d​ ​b​y​ ​M​P​ ​S​y​s​t​e​m​ ​a​n​d​ ​i​t​ ​i​s​ ​l​o​c​a​t​e​d​ ​i​n​ ​E​g​y​p​t​.​ ​T​h​e​ ​t​o​t​a​l​ ​a​m​o​u​n​t​ ​o​f​ ​c​a​r​s​ ​a​r​e​ ​1​8​0​0​.
+				 */
+				a: string
+			}
+			q10: {
+				/**
+				 * Q​:​ ​W​h​a​t​ ​h​a​p​p​e​n​s​ ​i​f​ ​t​h​e​ ​s​y​s​t​e​m​ ​s​t​o​p​s​ ​(​h​o​w​ ​t​o​ ​t​a​k​e​ ​v​e​h​i​c​l​e​s​ ​o​u​t​)​?
+				 */
+				q: string
+				/**
+				 * A​:​ ​W​e​ ​c​a​n​ ​u​s​e​ ​t​h​e​ ​m​a​n​u​a​l​ ​o​p​e​r​a​t​i​o​n​ ​a​n​d​ ​r​e​t​r​i​e​v​e​ ​t​h​e​ ​c​a​r​s​.
+				 */
+				a: string
+			}
+			q11: {
+				/**
+				 * Q​:​ ​W​h​a​t​ ​h​a​p​p​e​n​s​ ​i​n​ ​c​a​s​e​ ​o​f​ ​f​i​r​e​?
+				 */
+				q: string
+				/**
+				 * A​:​ ​C​o​n​n​e​c​t​e​d​ ​t​o​ ​t​h​e​ ​f​i​r​e​ ​a​l​a​r​m​.​ ​F​i​n​i​s​h​ ​t​h​e​ ​l​a​s​t​ ​t​r​a​n​s​a​c​t​i​o​n​ ​a​n​d​ ​i​t​ ​s​t​o​p​s​.
+				 */
+				a: string
+			}
+			q12: {
+				/**
+				 * Q​:​ ​W​h​a​t​ ​h​a​p​p​e​n​s​ ​i​n​ ​c​a​s​e​ ​o​f​ ​p​o​w​e​r​ ​f​a​i​l​u​r​e​?
+				 */
+				q: string
+				/**
+				 * A​:​ ​W​e​ ​c​a​n​ ​c​o​n​n​e​c​t​ ​t​h​e​ ​s​y​s​t​e​m​ ​t​o​ ​a​ ​G​e​n​e​r​a​t​o​r​ ​(​p​r​o​v​i​d​e​d​ ​b​y​ ​o​t​h​e​r​s​)
+				 */
+				a: string
+			}
+		}
 	}
 	dopplerSection: {
 		/**
@@ -2298,6 +2464,172 @@ export type TranslationFunctions = {
 				 * Choose BuildingTec Elevators LLC for Elevator Modernization - Elevate your building with our top-notch elevator modernization service. Experience improved performance, enhanced aesthetics, and unmatched customer service. Contact us today to schedule a consultation and take the first step towards elevating your elevator and your building!
 				 */
 				p2: () => LocalizedString
+			}
+		}
+		sps: {
+			/**
+			 * SMART PARKING SYSTEMS
+			 */
+			title: () => LocalizedString
+			/**
+			 * We design and install premium parking systems.
+			 */
+			intro: () => LocalizedString
+			/**
+			 * Frequently Asked Questions
+			 */
+			pageTitle: () => LocalizedString
+			q1: {
+				/**
+				 * Q: How the system is working? & How to take the car at back?
+				 */
+				q: () => LocalizedString
+				/**
+				 * A: Generally, the car is entering the lift. The Duo Robot is taking the car from the lift and goes to the shutter. The shutter is moving and then the duo robot is parking the car. The opposite is happening to retrieve the car. In case the robot needs to take the car at back then it moves the car in front in an another empty space. Then it is taking the car at back.
+				 */
+				a: () => LocalizedString
+			}
+			q2: {
+				/**
+				 * Q: What if there is no empty space?
+				 */
+				q: () => LocalizedString
+				/**
+				 * A: this is not possible since in each floor we leave one space empty.
+				 */
+				a: () => LocalizedString
+			}
+			q3: {
+				/**
+				 * Q: How the client is paying?
+				 */
+				q: () => LocalizedString
+				/**
+				 * A: There is a Kiosk. The client is pushing a button and receives a ticket. The robot is parking the car. When he wants to retrieve the car he is entering the ticket in the Kiosk and then he pays either by card or cash. The robot is retrieving the car.
+				 */
+				a: () => LocalizedString
+			}
+			q4: {
+				/**
+				 * Q: Which are the available options for Access and Revenue control?
+				 */
+				q: () => LocalizedString
+				/**
+				 * A: We can have finger print sensor or facial recognition or Access cards.
+				 */
+				a: () => LocalizedString
+			}
+			q5: {
+				/**
+				 * Q: What are advantages over other systems?
+				 */
+				q: () => LocalizedString
+				/**
+				 * A: The main competitor of our Duo Robot is the Pallet type system. The benefits of the Duo Robot are as follows:
+				 */
+				a: () => LocalizedString
+				/**
+				 * No BULKY PALLETS. An individual Pallet is required for each parking space for the pallet system. With MP System’s Duo Robot we have only one robot per floor which leads to lower O&M cost.
+				 */
+				li1: () => LocalizedString
+				/**
+				 * All fixed structure and all parking spaces with NO moving parts. In the Pallet System there are a lot of moving parts (rollers, gears etc.) which is increasing the possibility of a breakdown / stoppage of the system.
+				 */
+				li2: () => LocalizedString
+				/**
+				 * Less complicated parking and retrieving procedures because of the Duo Robot instead of the Pallet.
+				 */
+				li3: () => LocalizedString
+				/**
+				 * Manual operation capability. MP system can work manually with individual controls. The pallet system cannot work manually. So during repair the cars can be retrieved with our system but they cannot be retrieved with the pallet.
+				 */
+				li4: () => LocalizedString
+				/**
+				 * Centering Device. Each Vehicle entering the MP system is aligned straight instead of the pallet system. Eliminates accident of the car. Liability free operation from the owner the parking.
+				 */
+				li5: () => LocalizedString
+				/**
+				 * Shorter Retrieval Time. Pallet System has higher retrieval time than our system. The reason is that the pallet has a lot of transaction and exchange procedures.
+				 */
+				li6: () => LocalizedString
+				/**
+				 * Less Structure. Pallet Parking needs its own additional steel structure while the MP system can use the building Structure. This way we are avoiding Cost Overlapping.
+				 */
+				li7: () => LocalizedString
+				/**
+				 * Fast Installation. Simpler installation which is leading to reduce costs.
+				 */
+				li8: () => LocalizedString
+			}
+			q6: {
+				/**
+				 * Q: From where the Duo Robot is catching the Car? It will damage my car?
+				 */
+				q: () => LocalizedString
+				/**
+				 * A: The Duo Robot has “arms” that catching the car from the tire. It is not possible the car to be damaged.
+				 */
+				a: () => LocalizedString
+			}
+			q7: {
+				/**
+				 * Q: Maybe the tires of the car are old and the robot will damage it. In this case the client / driver will ask to pay the damage. I don’t want to have liabilities or any risk to my clients / drivers.
+				 */
+				q: () => LocalizedString
+				/**
+				 * A: The Duo Robot has pressure sensors and it is not applying any exceeding force than the gravity is applying to the car itself. Since the tires of the are not damaging by the weight of the car itself it not possible to be damaged by the duo robot.
+				 */
+				a: () => LocalizedString
+			}
+			q8: {
+				/**
+				 * Q: Where it was installed?
+				 */
+				q: () => LocalizedString
+				/**
+				 * A: MP System has a wide reference across the globe as showed to the reference list. Our closest installation is located to Abu Dhabi for 100 cars which we can visit at any time.
+				 */
+				a: () => LocalizedString
+			}
+			q9: {
+				/**
+				 * Q: What is the biggest project MP has installed?
+				 */
+				q: () => LocalizedString
+				/**
+				 * A: The biggest parking in the world has been installed by MP System and it is located in Egypt. The total amount of cars are 1800.
+				 */
+				a: () => LocalizedString
+			}
+			q10: {
+				/**
+				 * Q: What happens if the system stops (how to take vehicles out)?
+				 */
+				q: () => LocalizedString
+				/**
+				 * A: We can use the manual operation and retrieve the cars.
+				 */
+				a: () => LocalizedString
+			}
+			q11: {
+				/**
+				 * Q: What happens in case of fire?
+				 */
+				q: () => LocalizedString
+				/**
+				 * A: Connected to the fire alarm. Finish the last transaction and it stops.
+				 */
+				a: () => LocalizedString
+			}
+			q12: {
+				/**
+				 * Q: What happens in case of power failure?
+				 */
+				q: () => LocalizedString
+				/**
+				 * A: We can connect the system to a Generator (provided by others)
+				 */
+				a: () => LocalizedString
 			}
 		}
 	}

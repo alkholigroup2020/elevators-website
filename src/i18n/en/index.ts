@@ -285,6 +285,67 @@ const en: BaseTranslation = {
 				p1: "Minimize Disruption with Professional Service - We understand the importance of minimizing disruption to your building's operations. Our experienced technicians will work diligently to complete the modernization process efficiently and with minimal disruption to your tenants or visitors. We'll keep you informed at every step of the process, ensuring a smooth and hassle-free modernization experience.",
 				p2: 'Choose BuildingTec Elevators LLC for Elevator Modernization - Elevate your building with our top-notch elevator modernization service. Experience improved performance, enhanced aesthetics, and unmatched customer service. Contact us today to schedule a consultation and take the first step towards elevating your elevator and your building!'
 			}
+		},
+		sps: {
+			title: 'SMART PARKING SYSTEMS',
+			intro: 'We design and install premium parking systems.',
+			pageTitle: 'Frequently Asked Questions',
+			q1: {
+				q: 'Q: How the system is working? & How to take the car at back?',
+				a: 'A: Generally, the car is entering the lift. The Duo Robot is taking the car from the lift and goes to the shutter. The shutter is moving and then the duo robot is parking the car. The opposite is happening to retrieve the car. In case the robot needs to take the car at back then it moves the car in front in an another empty space. Then it is taking the car at back.'
+			},
+			q2: {
+				q: 'Q: What if there is no empty space?',
+				a: 'A: this is not possible since in each floor we leave one space empty.'
+			},
+			q3: {
+				q: 'Q: How the client is paying?',
+				a: 'A: There is a Kiosk. The client is pushing a button and receives a ticket. The robot is parking the car. When he wants to retrieve the car he is entering the ticket in the Kiosk and then he pays either by card or cash. The robot is retrieving the car.'
+			},
+			q4: {
+				q: 'Q: Which are the available options for Access and Revenue control?',
+				a: 'A: We can have finger print sensor or facial recognition or Access cards.'
+			},
+			q5: {
+				q: 'Q: What are advantages over other systems?',
+				a: 'A: The main competitor of our Duo Robot is the Pallet type system. The benefits of the Duo Robot are as follows:',
+				li1: 'No BULKY PALLETS. An individual Pallet is required for each parking space for the pallet system. With MP System’s Duo Robot we have only one robot per floor which leads to lower O&M cost.',
+				li2: 'All fixed structure and all parking spaces with NO moving parts. In the Pallet System there are a lot of moving parts (rollers, gears etc.) which is increasing the possibility of a breakdown / stoppage of the system.',
+				li3: 'Less complicated parking and retrieving procedures because of the Duo Robot instead of the Pallet.',
+				li4: 'Manual operation capability. MP system can work manually with individual controls. The pallet system cannot work manually. So during repair the cars can be retrieved with our system but they cannot be retrieved with the pallet.',
+				li5: 'Centering Device. Each Vehicle entering the MP system is aligned straight instead of the pallet system. Eliminates accident of the car. Liability free operation from the owner the parking.',
+				li6: 'Shorter Retrieval Time. Pallet System has higher retrieval time than our system. The reason is that the pallet has a lot of transaction and exchange procedures.',
+				li7: 'Less Structure. Pallet Parking needs its own additional steel structure while the MP system can use the building Structure. This way we are avoiding Cost Overlapping.',
+				li8: 'Fast Installation. Simpler installation which is leading to reduce costs.'
+			},
+			q6: {
+				q: 'Q: From where the Duo Robot is catching the Car? It will damage my car?',
+				a: 'A: The Duo Robot has “arms” that catching the car from the tire. It is not possible the car to be damaged.'
+			},
+			q7: {
+				q: 'Q: Maybe the tires of the car are old and the robot will damage it. In this case the client / driver will ask to pay the damage. I don’t want to have liabilities or any risk to my clients / drivers.',
+				a: 'A: The Duo Robot has pressure sensors and it is not applying any exceeding force than the gravity is applying to the car itself. Since the tires of the are not damaging by the weight of the car itself it not possible to be damaged by the duo robot.'
+			},
+			q8: {
+				q: 'Q: Where it was installed?',
+				a: 'A: MP System has a wide reference across the globe as showed to the reference list. Our closest installation is located to Abu Dhabi for 100 cars which we can visit at any time.'
+			},
+			q9: {
+				q: 'Q: What is the biggest project MP has installed?',
+				a: 'A: The biggest parking in the world has been installed by MP System and it is located in Egypt. The total amount of cars are 1800.'
+			},
+			q10: {
+				q: 'Q: What happens if the system stops (how to take vehicles out)?',
+				a: 'A: We can use the manual operation and retrieve the cars.'
+			},
+			q11: {
+				q: 'Q: What happens in case of fire?',
+				a: 'A: Connected to the fire alarm. Finish the last transaction and it stops.'
+			},
+			q12: {
+				q: 'Q: What happens in case of power failure?',
+				a: 'A: We can connect the system to a Generator (provided by others)'
+			}
 		}
 	},
 	dopplerSection: {

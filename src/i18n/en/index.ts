@@ -209,6 +209,36 @@ const en: BaseTranslation = {
 				title: 'WHY CHOOSE US',
 				p1: "If you're in the market for a dumbwaiter, you might be wondering why you should choose ours over the competition. Here are just a few reasons why our dumbwaiters are the best on the market. First and foremost, our dumbwaiters are incredibly reliable and safe, thanks to their sturdy construction and advanced safety features. Additionally, our dumbwaiters are designed with convenience in mind, making it easy to transport items between floors of your home or business without the hassle of carrying heavy loads up and down stairs. Plus, our dumbwaiters are customizable to suit your unique needs and style preferences, so you can choose the perfect size, color, and materials to match your space. And finally, our dumbwaiters are backed by a team of knowledgeable experts who are always available to answer your questions and provide top-notch customer service. With so many great reasons to choose our dumbwaiters, why wait? Order yours today and experience the convenience and safety that our products can offer."
 			}
+		},
+		escalators: {
+			title: 'ESCALATOR',
+			intro:
+				'Our escalators provide a seamless and efficient solution for moving people between floors, enhancing the accessibility and flow of your building.',
+			firstSection: {
+				p1: 'Buildingtec Elevators offer you the latest in escalator technology for your building. Our escalators are designed to provide a seamless and efficient solution for moving people between floors, enhancing the accessibility and flow of your building. We understand that shopping malls and hospitals require high-quality and reliable escalators, which is why we use only the best materials and components to ensure durability and longevity. At our company, quality is our top priority, and we go above and beyond to ensure that our escalators meet and exceed your expectations. Our team of experts is always available to provide after-sales service and support, ensuring that your escalator continues to function at its best. We also offer outdoor escalators, designed to withstand harsh weather conditions while maintaining the same level of quality and efficiency. With our escalators, you can provide your visitors with a comfortable and effortless mode of transportation, ensuring a positive experience that will keep them coming back. Contact us today to learn more about how our escalators can benefit your building.'
+			},
+			secondSection: {
+				title: 'ARRANGEMENTS',
+				first: {
+					title: 'Single Unit',
+					p1: 'Suitable for buildings with passenger flowing mainly in one direction.'
+				},
+				second: {
+					title: 'Continuous (one – way traffic)',
+					p1: 'The continuous arrangement is practiced mainly in smaller department stores to link three sales levels. It requires more space than the interrupted arrangement.'
+				},
+				third: {
+					title: 'Interrupted & Parallel (one- & two-way traffic)',
+					p1: 'The parallel interrupted arrangement is used mainly in department stores and public transport buildings with a heavy traffic volume. '
+				},
+				fourth: {
+					title: 'Crisscross, Continuous (two-way traffic)',
+					p1: 'The continues crisscross arrangement is used mainly in major department stores, public buildings, and public transport buildings where transport times between several levels need to be at minimum.'
+				}
+			},
+			tableSection: {
+				title: 'OUR ESCALATOR MODELS'
+			}
 		}
 	},
 	dopplerSection: {

@@ -561,6 +561,74 @@ type RootTranslation = {
 				p1: string
 			}
 		}
+		escalators: {
+			/**
+			 * E​S​C​A​L​A​T​O​R
+			 */
+			title: string
+			/**
+			 * O​u​r​ ​e​s​c​a​l​a​t​o​r​s​ ​p​r​o​v​i​d​e​ ​a​ ​s​e​a​m​l​e​s​s​ ​a​n​d​ ​e​f​f​i​c​i​e​n​t​ ​s​o​l​u​t​i​o​n​ ​f​o​r​ ​m​o​v​i​n​g​ ​p​e​o​p​l​e​ ​b​e​t​w​e​e​n​ ​f​l​o​o​r​s​,​ ​e​n​h​a​n​c​i​n​g​ ​t​h​e​ ​a​c​c​e​s​s​i​b​i​l​i​t​y​ ​a​n​d​ ​f​l​o​w​ ​o​f​ ​y​o​u​r​ ​b​u​i​l​d​i​n​g​.
+			 */
+			intro: string
+			firstSection: {
+				/**
+				 * B​u​i​l​d​i​n​g​t​e​c​ ​E​l​e​v​a​t​o​r​s​ ​o​f​f​e​r​ ​y​o​u​ ​t​h​e​ ​l​a​t​e​s​t​ ​i​n​ ​e​s​c​a​l​a​t​o​r​ ​t​e​c​h​n​o​l​o​g​y​ ​f​o​r​ ​y​o​u​r​ ​b​u​i​l​d​i​n​g​.​ ​O​u​r​ ​e​s​c​a​l​a​t​o​r​s​ ​a​r​e​ ​d​e​s​i​g​n​e​d​ ​t​o​ ​p​r​o​v​i​d​e​ ​a​ ​s​e​a​m​l​e​s​s​ ​a​n​d​ ​e​f​f​i​c​i​e​n​t​ ​s​o​l​u​t​i​o​n​ ​f​o​r​ ​m​o​v​i​n​g​ ​p​e​o​p​l​e​ ​b​e​t​w​e​e​n​ ​f​l​o​o​r​s​,​ ​e​n​h​a​n​c​i​n​g​ ​t​h​e​ ​a​c​c​e​s​s​i​b​i​l​i​t​y​ ​a​n​d​ ​f​l​o​w​ ​o​f​ ​y​o​u​r​ ​b​u​i​l​d​i​n​g​.​ ​W​e​ ​u​n​d​e​r​s​t​a​n​d​ ​t​h​a​t​ ​s​h​o​p​p​i​n​g​ ​m​a​l​l​s​ ​a​n​d​ ​h​o​s​p​i​t​a​l​s​ ​r​e​q​u​i​r​e​ ​h​i​g​h​-​q​u​a​l​i​t​y​ ​a​n​d​ ​r​e​l​i​a​b​l​e​ ​e​s​c​a​l​a​t​o​r​s​,​ ​w​h​i​c​h​ ​i​s​ ​w​h​y​ ​w​e​ ​u​s​e​ ​o​n​l​y​ ​t​h​e​ ​b​e​s​t​ ​m​a​t​e​r​i​a​l​s​ ​a​n​d​ ​c​o​m​p​o​n​e​n​t​s​ ​t​o​ ​e​n​s​u​r​e​ ​d​u​r​a​b​i​l​i​t​y​ ​a​n​d​ ​l​o​n​g​e​v​i​t​y​.​ ​A​t​ ​o​u​r​ ​c​o​m​p​a​n​y​,​ ​q​u​a​l​i​t​y​ ​i​s​ ​o​u​r​ ​t​o​p​ ​p​r​i​o​r​i​t​y​,​ ​a​n​d​ ​w​e​ ​g​o​ ​a​b​o​v​e​ ​a​n​d​ ​b​e​y​o​n​d​ ​t​o​ ​e​n​s​u​r​e​ ​t​h​a​t​ ​o​u​r​ ​e​s​c​a​l​a​t​o​r​s​ ​m​e​e​t​ ​a​n​d​ ​e​x​c​e​e​d​ ​y​o​u​r​ ​e​x​p​e​c​t​a​t​i​o​n​s​.​ ​O​u​r​ ​t​e​a​m​ ​o​f​ ​e​x​p​e​r​t​s​ ​i​s​ ​a​l​w​a​y​s​ ​a​v​a​i​l​a​b​l​e​ ​t​o​ ​p​r​o​v​i​d​e​ ​a​f​t​e​r​-​s​a​l​e​s​ ​s​e​r​v​i​c​e​ ​a​n​d​ ​s​u​p​p​o​r​t​,​ ​e​n​s​u​r​i​n​g​ ​t​h​a​t​ ​y​o​u​r​ ​e​s​c​a​l​a​t​o​r​ ​c​o​n​t​i​n​u​e​s​ ​t​o​ ​f​u​n​c​t​i​o​n​ ​a​t​ ​i​t​s​ ​b​e​s​t​.​ ​W​e​ ​a​l​s​o​ ​o​f​f​e​r​ ​o​u​t​d​o​o​r​ ​e​s​c​a​l​a​t​o​r​s​,​ ​d​e​s​i​g​n​e​d​ ​t​o​ ​w​i​t​h​s​t​a​n​d​ ​h​a​r​s​h​ ​w​e​a​t​h​e​r​ ​c​o​n​d​i​t​i​o​n​s​ ​w​h​i​l​e​ ​m​a​i​n​t​a​i​n​i​n​g​ ​t​h​e​ ​s​a​m​e​ ​l​e​v​e​l​ ​o​f​ ​q​u​a​l​i​t​y​ ​a​n​d​ ​e​f​f​i​c​i​e​n​c​y​.​ ​W​i​t​h​ ​o​u​r​ ​e​s​c​a​l​a​t​o​r​s​,​ ​y​o​u​ ​c​a​n​ ​p​r​o​v​i​d​e​ ​y​o​u​r​ ​v​i​s​i​t​o​r​s​ ​w​i​t​h​ ​a​ ​c​o​m​f​o​r​t​a​b​l​e​ ​a​n​d​ ​e​f​f​o​r​t​l​e​s​s​ ​m​o​d​e​ ​o​f​ ​t​r​a​n​s​p​o​r​t​a​t​i​o​n​,​ ​e​n​s​u​r​i​n​g​ ​a​ ​p​o​s​i​t​i​v​e​ ​e​x​p​e​r​i​e​n​c​e​ ​t​h​a​t​ ​w​i​l​l​ ​k​e​e​p​ ​t​h​e​m​ ​c​o​m​i​n​g​ ​b​a​c​k​.​ ​C​o​n​t​a​c​t​ ​u​s​ ​t​o​d​a​y​ ​t​o​ ​l​e​a​r​n​ ​m​o​r​e​ ​a​b​o​u​t​ ​h​o​w​ ​o​u​r​ ​e​s​c​a​l​a​t​o​r​s​ ​c​a​n​ ​b​e​n​e​f​i​t​ ​y​o​u​r​ ​b​u​i​l​d​i​n​g​.
+				 */
+				p1: string
+			}
+			secondSection: {
+				/**
+				 * A​R​R​A​N​G​E​M​E​N​T​S
+				 */
+				title: string
+				first: {
+					/**
+					 * S​i​n​g​l​e​ ​U​n​i​t
+					 */
+					title: string
+					/**
+					 * S​u​i​t​a​b​l​e​ ​f​o​r​ ​b​u​i​l​d​i​n​g​s​ ​w​i​t​h​ ​p​a​s​s​e​n​g​e​r​ ​f​l​o​w​i​n​g​ ​m​a​i​n​l​y​ ​i​n​ ​o​n​e​ ​d​i​r​e​c​t​i​o​n​.
+					 */
+					p1: string
+				}
+				second: {
+					/**
+					 * C​o​n​t​i​n​u​o​u​s​ ​(​o​n​e​ ​–​ ​w​a​y​ ​t​r​a​f​f​i​c​)
+					 */
+					title: string
+					/**
+					 * T​h​e​ ​c​o​n​t​i​n​u​o​u​s​ ​a​r​r​a​n​g​e​m​e​n​t​ ​i​s​ ​p​r​a​c​t​i​c​e​d​ ​m​a​i​n​l​y​ ​i​n​ ​s​m​a​l​l​e​r​ ​d​e​p​a​r​t​m​e​n​t​ ​s​t​o​r​e​s​ ​t​o​ ​l​i​n​k​ ​t​h​r​e​e​ ​s​a​l​e​s​ ​l​e​v​e​l​s​.​ ​I​t​ ​r​e​q​u​i​r​e​s​ ​m​o​r​e​ ​s​p​a​c​e​ ​t​h​a​n​ ​t​h​e​ ​i​n​t​e​r​r​u​p​t​e​d​ ​a​r​r​a​n​g​e​m​e​n​t​.
+					 */
+					p1: string
+				}
+				third: {
+					/**
+					 * I​n​t​e​r​r​u​p​t​e​d​ ​&​ ​P​a​r​a​l​l​e​l​ ​(​o​n​e​-​ ​&​ ​t​w​o​-​w​a​y​ ​t​r​a​f​f​i​c​)
+					 */
+					title: string
+					/**
+					 * T​h​e​ ​p​a​r​a​l​l​e​l​ ​i​n​t​e​r​r​u​p​t​e​d​ ​a​r​r​a​n​g​e​m​e​n​t​ ​i​s​ ​u​s​e​d​ ​m​a​i​n​l​y​ ​i​n​ ​d​e​p​a​r​t​m​e​n​t​ ​s​t​o​r​e​s​ ​a​n​d​ ​p​u​b​l​i​c​ ​t​r​a​n​s​p​o​r​t​ ​b​u​i​l​d​i​n​g​s​ ​w​i​t​h​ ​a​ ​h​e​a​v​y​ ​t​r​a​f​f​i​c​ ​v​o​l​u​m​e​.​ 
+					 */
+					p1: string
+				}
+				fourth: {
+					/**
+					 * C​r​i​s​s​c​r​o​s​s​,​ ​C​o​n​t​i​n​u​o​u​s​ ​(​t​w​o​-​w​a​y​ ​t​r​a​f​f​i​c​)
+					 */
+					title: string
+					/**
+					 * T​h​e​ ​c​o​n​t​i​n​u​e​s​ ​c​r​i​s​s​c​r​o​s​s​ ​a​r​r​a​n​g​e​m​e​n​t​ ​i​s​ ​u​s​e​d​ ​m​a​i​n​l​y​ ​i​n​ ​m​a​j​o​r​ ​d​e​p​a​r​t​m​e​n​t​ ​s​t​o​r​e​s​,​ ​p​u​b​l​i​c​ ​b​u​i​l​d​i​n​g​s​,​ ​a​n​d​ ​p​u​b​l​i​c​ ​t​r​a​n​s​p​o​r​t​ ​b​u​i​l​d​i​n​g​s​ ​w​h​e​r​e​ ​t​r​a​n​s​p​o​r​t​ ​t​i​m​e​s​ ​b​e​t​w​e​e​n​ ​s​e​v​e​r​a​l​ ​l​e​v​e​l​s​ ​n​e​e​d​ ​t​o​ ​b​e​ ​a​t​ ​m​i​n​i​m​u​m​.
+					 */
+					p1: string
+				}
+			}
+			tableSection: {
+				/**
+				 * O​U​R​ ​E​S​C​A​L​A​T​O​R​ ​M​O​D​E​L​S
+				 */
+				title: string
+			}
+		}
 	}
 	dopplerSection: {
 		/**
@@ -1910,6 +1978,74 @@ export type TranslationFunctions = {
 				 * If you're in the market for a dumbwaiter, you might be wondering why you should choose ours over the competition. Here are just a few reasons why our dumbwaiters are the best on the market. First and foremost, our dumbwaiters are incredibly reliable and safe, thanks to their sturdy construction and advanced safety features. Additionally, our dumbwaiters are designed with convenience in mind, making it easy to transport items between floors of your home or business without the hassle of carrying heavy loads up and down stairs. Plus, our dumbwaiters are customizable to suit your unique needs and style preferences, so you can choose the perfect size, color, and materials to match your space. And finally, our dumbwaiters are backed by a team of knowledgeable experts who are always available to answer your questions and provide top-notch customer service. With so many great reasons to choose our dumbwaiters, why wait? Order yours today and experience the convenience and safety that our products can offer.
 				 */
 				p1: () => LocalizedString
+			}
+		}
+		escalators: {
+			/**
+			 * ESCALATOR
+			 */
+			title: () => LocalizedString
+			/**
+			 * Our escalators provide a seamless and efficient solution for moving people between floors, enhancing the accessibility and flow of your building.
+			 */
+			intro: () => LocalizedString
+			firstSection: {
+				/**
+				 * Buildingtec Elevators offer you the latest in escalator technology for your building. Our escalators are designed to provide a seamless and efficient solution for moving people between floors, enhancing the accessibility and flow of your building. We understand that shopping malls and hospitals require high-quality and reliable escalators, which is why we use only the best materials and components to ensure durability and longevity. At our company, quality is our top priority, and we go above and beyond to ensure that our escalators meet and exceed your expectations. Our team of experts is always available to provide after-sales service and support, ensuring that your escalator continues to function at its best. We also offer outdoor escalators, designed to withstand harsh weather conditions while maintaining the same level of quality and efficiency. With our escalators, you can provide your visitors with a comfortable and effortless mode of transportation, ensuring a positive experience that will keep them coming back. Contact us today to learn more about how our escalators can benefit your building.
+				 */
+				p1: () => LocalizedString
+			}
+			secondSection: {
+				/**
+				 * ARRANGEMENTS
+				 */
+				title: () => LocalizedString
+				first: {
+					/**
+					 * Single Unit
+					 */
+					title: () => LocalizedString
+					/**
+					 * Suitable for buildings with passenger flowing mainly in one direction.
+					 */
+					p1: () => LocalizedString
+				}
+				second: {
+					/**
+					 * Continuous (one – way traffic)
+					 */
+					title: () => LocalizedString
+					/**
+					 * The continuous arrangement is practiced mainly in smaller department stores to link three sales levels. It requires more space than the interrupted arrangement.
+					 */
+					p1: () => LocalizedString
+				}
+				third: {
+					/**
+					 * Interrupted & Parallel (one- & two-way traffic)
+					 */
+					title: () => LocalizedString
+					/**
+					 * The parallel interrupted arrangement is used mainly in department stores and public transport buildings with a heavy traffic volume. 
+					 */
+					p1: () => LocalizedString
+				}
+				fourth: {
+					/**
+					 * Crisscross, Continuous (two-way traffic)
+					 */
+					title: () => LocalizedString
+					/**
+					 * The continues crisscross arrangement is used mainly in major department stores, public buildings, and public transport buildings where transport times between several levels need to be at minimum.
+					 */
+					p1: () => LocalizedString
+				}
+			}
+			tableSection: {
+				/**
+				 * OUR ESCALATOR MODELS
+				 */
+				title: () => LocalizedString
 			}
 		}
 	}

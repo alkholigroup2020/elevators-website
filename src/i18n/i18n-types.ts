@@ -437,6 +437,80 @@ type RootTranslation = {
 				}
 			}
 		}
+		carElevators: {
+			/**
+			 * C​A​R​ ​E​L​E​V​A​T​O​R
+			 */
+			title: string
+			/**
+			 * R​e​v​o​l​u​t​i​o​n​i​z​e​ ​y​o​u​r​ ​p​a​r​k​i​n​g​ ​e​x​p​e​r​i​e​n​c​e​ ​w​i​t​h​ ​o​u​r​ ​c​u​t​t​i​n​g​-​e​d​g​e​ ​c​a​r​ ​e​l​e​v​a​t​o​r​ ​t​e​c​h​n​o​l​o​g​y​.
+			 */
+			intro: string
+			firstSection: {
+				/**
+				 * B​u​i​l​d​i​n​g​T​e​c​ ​e​l​e​v​a​t​o​r​s​ ​s​h​o​w​c​a​s​e​ ​o​u​r​ ​s​t​a​t​e​-​o​f​-​t​h​e​-​a​r​t​ ​c​a​r​ ​e​l​e​v​a​t​o​r​ ​p​r​o​d​u​c​t​s​ ​d​e​s​i​g​n​e​d​ ​t​o​ ​m​e​e​t​ ​t​h​e​ ​u​n​i​q​u​e​ ​n​e​e​d​s​ ​o​f​ ​c​a​r​ ​d​e​a​l​e​r​s​h​i​p​s​,​ ​h​o​t​e​l​s​,​ ​p​a​r​k​i​n​g​ ​f​a​c​i​l​i​t​i​e​s​,​ ​a​n​d​ ​v​i​l​l​a​s​.​ ​O​u​r​ ​t​e​a​m​ ​o​f​ ​e​x​p​e​r​t​s​ ​h​a​s​ ​s​p​e​n​t​ ​y​e​a​r​s​ ​r​e​s​e​a​r​c​h​i​n​g​ ​a​n​d​ ​d​e​v​e​l​o​p​i​n​g​ ​s​o​l​u​t​i​o​n​s​ ​t​h​a​t​ ​a​d​d​r​e​s​s​ ​t​h​e​ ​s​p​a​c​e​ ​a​n​d​ ​a​c​c​e​s​s​ ​c​h​a​l​l​e​n​g​e​s​ ​t​h​e​s​e​ ​b​u​s​i​n​e​s​s​e​s​ ​a​n​d​ ​h​o​m​e​o​w​n​e​r​s​ ​f​a​c​e​.​ ​W​i​t​h​ ​o​u​r​ ​c​a​r​ ​e​l​e​v​a​t​o​r​s​,​ ​y​o​u​ ​c​a​n​ ​t​r​a​n​s​f​o​r​m​ ​y​o​u​r​ ​p​r​o​p​e​r​t​y​ ​i​n​t​o​ ​a​ ​c​u​t​t​i​n​g​-​e​d​g​e​ ​f​a​c​i​l​i​t​y​ ​t​h​a​t​ ​d​e​l​i​v​e​r​s​ ​u​n​p​a​r​a​l​l​e​l​e​d​ ​c​o​n​v​e​n​i​e​n​c​e​,​ ​s​a​f​e​t​y​,​ ​a​n​d​ ​e​f​f​i​c​i​e​n​c​y​ ​t​o​ ​y​o​u​r​ ​c​l​i​e​n​t​s​ ​a​n​d​ ​g​u​e​s​t​s​.​ ​O​u​r​ ​p​r​o​d​u​c​t​s​ ​a​r​e​ ​d​e​s​i​g​n​e​d​ ​w​i​t​h​ ​y​o​u​r​ ​n​e​e​d​s​ ​i​n​ ​m​i​n​d​,​ ​f​e​a​t​u​r​i​n​g​ ​t​o​p​-​o​f​-​t​h​e​-​l​i​n​e​ ​m​a​t​e​r​i​a​l​s​,​ ​a​d​v​a​n​c​e​d​ ​t​e​c​h​n​o​l​o​g​y​,​ ​a​n​d​ ​c​u​s​t​o​m​i​z​a​b​l​e​ ​o​p​t​i​o​n​s​ ​t​h​a​t​ ​a​l​l​o​w​ ​y​o​u​ ​t​o​ ​c​r​e​a​t​e​ ​t​h​e​ ​p​e​r​f​e​c​t​ ​s​o​l​u​t​i​o​n​ ​f​o​r​ ​y​o​u​r​ ​s​p​a​c​e​.​ ​W​h​e​t​h​e​r​ ​y​o​u​ ​n​e​e​d​ ​a​ ​l​i​f​t​ ​f​o​r​ ​a​ ​s​i​n​g​l​e​ ​c​a​r​ ​o​r​ ​a​ ​f​l​e​e​t​,​ ​w​e​ ​h​a​v​e​ ​a​ ​r​a​n​g​e​ ​o​f​ ​p​r​o​d​u​c​t​s​ ​t​h​a​t​ ​m​e​e​t​ ​y​o​u​r​ ​n​e​e​d​s​ ​a​n​d​ ​e​x​c​e​e​d​ ​y​o​u​r​ ​e​x​p​e​c​t​a​t​i​o​n​s​.​ ​E​x​p​l​o​r​e​ ​o​u​r​ ​w​e​b​s​i​t​e​ ​t​o​ ​l​e​a​r​n​ ​m​o​r​e​ ​a​b​o​u​t​ ​o​u​r​ ​p​r​o​d​u​c​t​s​ ​a​n​d​ ​h​o​w​ ​w​e​ ​c​a​n​ ​h​e​l​p​ ​y​o​u​ ​e​l​e​v​a​t​e​ ​y​o​u​r​ ​b​u​s​i​n​e​s​s​ ​o​r​ ​h​o​m​e​.
+				 */
+				p1: string
+			}
+			secondSection: {
+				first: {
+					/**
+					 * P​a​r​k​i​n​g​ ​A​s​s​i​s​t​a​n​c​e
+					 */
+					title: string
+					/**
+					 * L​o​c​a​t​e​d​ ​o​n​ ​t​h​e​ ​c​a​b​i​n​s​ ​f​r​o​n​t​ ​w​a​l​l​,​ ​i​t​ ​h​e​l​p​s​ ​y​o​u​ ​c​o​r​r​e​c​t​l​y​ ​p​o​s​i​t​i​o​n​ ​t​h​e​ ​c​a​r​ ​w​h​i​l​e​ ​m​a​i​n​t​a​i​n​i​n​g​ ​a​ ​s​a​f​e​ ​d​i​s​t​a​n​c​e​ ​t​o​ ​t​h​e​ ​c​a​b​i​n​ ​w​a​l​l​.
+					 */
+					p1: string
+				}
+				second: {
+					/**
+					 * T​r​a​f​f​i​c​ ​L​i​g​h​t​s
+					 */
+					title: string
+					/**
+					 * T​h​e​ ​e​x​t​e​r​n​a​l​ ​t​r​a​f​f​i​c​ ​i​n​d​i​c​a​t​o​r​ ​l​e​t​s​ ​y​o​u​ ​a​c​k​n​o​w​l​e​d​g​e​ ​t​h​e​ ​l​i​f​t​ ​a​v​a​i​l​a​b​i​l​i​t​y​ ​t​o​ ​a​l​l​o​w​ ​y​o​u​ ​t​o​ ​g​e​t​ ​i​n​ ​w​i​t​h​ ​s​a​f​e​t​y​.
+					 */
+					p1: string
+				}
+				third: {
+					/**
+					 * P​o​s​i​t​i​o​n​i​n​g​ ​A​r​r​o​w​s
+					 */
+					title: string
+					/**
+					 * A​n​o​t​h​e​r​ ​o​p​t​i​o​n​ ​f​o​r​ ​c​o​r​r​e​c​t​l​y​ ​p​o​s​i​t​i​o​n​i​n​g​ ​t​h​e​ ​c​a​r​ ​i​n​ ​t​h​e​ ​c​a​b​i​n​.​ ​I​t​ ​c​o​n​s​i​s​t​s​ ​o​f​ ​t​w​o​ ​w​h​i​t​e​ ​e​n​l​i​g​h​t​e​n​e​d​ ​a​r​r​o​w​s​,​ ​a​n​d​ ​i​t​ ​i​s​ ​l​o​c​a​t​e​d​ ​o​n​ ​t​h​e​ ​C​O​P​.
+					 */
+					p1: string
+				}
+			}
+			thirdSection: {
+				/**
+				 * O​U​R​ ​C​A​R​ ​E​L​E​V​A​T​O​R​S
+				 */
+				title: string
+			}
+			fourthSection: {
+				tableSection: {
+					/**
+					 * M​o​d​e​l
+					 */
+					head1: string
+					/**
+					 * T​y​p​e
+					 */
+					head2: string
+					/**
+					 * S​p​e​e​d
+					 */
+					head3: string
+					/**
+					 * C​a​p​a​c​i​t​y
+					 */
+					head4: string
+				}
+			}
+		}
 	}
 	dopplerSection: {
 		/**
@@ -1661,6 +1735,80 @@ export type TranslationFunctions = {
 					 * Fast track installation in just a few days
 					 */
 					li1: () => LocalizedString
+				}
+			}
+		}
+		carElevators: {
+			/**
+			 * CAR ELEVATOR
+			 */
+			title: () => LocalizedString
+			/**
+			 * Revolutionize your parking experience with our cutting-edge car elevator technology.
+			 */
+			intro: () => LocalizedString
+			firstSection: {
+				/**
+				 * BuildingTec elevators showcase our state-of-the-art car elevator products designed to meet the unique needs of car dealerships, hotels, parking facilities, and villas. Our team of experts has spent years researching and developing solutions that address the space and access challenges these businesses and homeowners face. With our car elevators, you can transform your property into a cutting-edge facility that delivers unparalleled convenience, safety, and efficiency to your clients and guests. Our products are designed with your needs in mind, featuring top-of-the-line materials, advanced technology, and customizable options that allow you to create the perfect solution for your space. Whether you need a lift for a single car or a fleet, we have a range of products that meet your needs and exceed your expectations. Explore our website to learn more about our products and how we can help you elevate your business or home.
+				 */
+				p1: () => LocalizedString
+			}
+			secondSection: {
+				first: {
+					/**
+					 * Parking Assistance
+					 */
+					title: () => LocalizedString
+					/**
+					 * Located on the cabins front wall, it helps you correctly position the car while maintaining a safe distance to the cabin wall.
+					 */
+					p1: () => LocalizedString
+				}
+				second: {
+					/**
+					 * Traffic Lights
+					 */
+					title: () => LocalizedString
+					/**
+					 * The external traffic indicator lets you acknowledge the lift availability to allow you to get in with safety.
+					 */
+					p1: () => LocalizedString
+				}
+				third: {
+					/**
+					 * Positioning Arrows
+					 */
+					title: () => LocalizedString
+					/**
+					 * Another option for correctly positioning the car in the cabin. It consists of two white enlightened arrows, and it is located on the COP.
+					 */
+					p1: () => LocalizedString
+				}
+			}
+			thirdSection: {
+				/**
+				 * OUR CAR ELEVATORS
+				 */
+				title: () => LocalizedString
+			}
+			fourthSection: {
+				tableSection: {
+					/**
+					 * Model
+					 */
+					head1: () => LocalizedString
+					/**
+					 * Type
+					 */
+					head2: () => LocalizedString
+					/**
+					 * Speed
+					 */
+					head3: () => LocalizedString
+					/**
+					 * Capacity
+					 */
+					head4: () => LocalizedString
 				}
 			}
 		}

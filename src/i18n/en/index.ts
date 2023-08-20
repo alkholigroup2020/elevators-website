@@ -155,6 +155,38 @@ const en: BaseTranslation = {
 					li1: 'Fast track installation in just a few days'
 				}
 			}
+		},
+		carElevators: {
+			title: 'CAR ELEVATOR',
+			intro: 'Revolutionize your parking experience with our cutting-edge car elevator technology.',
+			firstSection: {
+				p1: 'BuildingTec elevators showcase our state-of-the-art car elevator products designed to meet the unique needs of car dealerships, hotels, parking facilities, and villas. Our team of experts has spent years researching and developing solutions that address the space and access challenges these businesses and homeowners face. With our car elevators, you can transform your property into a cutting-edge facility that delivers unparalleled convenience, safety, and efficiency to your clients and guests. Our products are designed with your needs in mind, featuring top-of-the-line materials, advanced technology, and customizable options that allow you to create the perfect solution for your space. Whether you need a lift for a single car or a fleet, we have a range of products that meet your needs and exceed your expectations. Explore our website to learn more about our products and how we can help you elevate your business or home.'
+			},
+			secondSection: {
+				first: {
+					title: 'Parking Assistance',
+					p1: 'Located on the cabins front wall, it helps you correctly position the car while maintaining a safe distance to the cabin wall.'
+				},
+				second: {
+					title: 'Traffic Lights',
+					p1: 'The external traffic indicator lets you acknowledge the lift availability to allow you to get in with safety.'
+				},
+				third: {
+					title: 'Positioning Arrows',
+					p1: 'Another option for correctly positioning the car in the cabin. It consists of two white enlightened arrows, and it is located on the COP.'
+				}
+			},
+			thirdSection: {
+				title: 'OUR CAR ELEVATORS'
+			},
+			fourthSection: {
+				tableSection: {
+					head1: 'Model',
+					head2: 'Type',
+					head3: 'Speed',
+					head4: 'Capacity'
+				}
+			}
 		}
 	},
 	dopplerSection: {

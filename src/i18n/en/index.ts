@@ -178,14 +178,24 @@ const en: BaseTranslation = {
 			},
 			thirdSection: {
 				title: 'OUR CAR ELEVATORS'
+			}
+		},
+		cargoElevators: {
+			title: 'Cargo Lifts',
+			intro:
+				'Efficiently move heavy loads with ease and safety using our reliable cargo elevators.',
+			firstSection: {
+				p1: 'If you need to move heavy loads between floors in your warehouse, factory, or other industrial setting, our cargo elevators are the perfect solution. Our cargo elevators are designed with efficiency and safety in mind, featuring advanced safety features and durable construction that can handle even the heaviest loads. Plus, our elevators are customizable to suit your unique needs and space requirements, so you can choose the perfect size, capacity, and materials to match your facility. Additionally, our team of experts is always available to answer your questions and provide top-notch customer service, ensuring that you get the most out of your cargo elevator. With our reliable and efficient cargo elevators, you can streamline your operations, save time and money, and improve safety for your employees. So why wait? Contact us today to learn more and get started with your cargo elevator.'
 			},
-			fourthSection: {
-				tableSection: {
-					head1: 'Model',
-					head2: 'Type',
-					head3: 'Speed',
-					head4: 'Capacity'
-				}
+			secondSection: {
+				title: 'HEAVY DUTY',
+				p1: 'Our heavy-duty cargo lifts are designed to meet all your vertical transportation needs with ease. Whether you need to move large and heavy items or multiple loads, our cargo lifts are built to handle the toughest tasks. One of the standout features of our cargo lifts is the ability to customize cabin dimensions to suit your specific requirements, ensuring a perfect fit for your cargo. Additionally, we offer a choice of premium materials for your cargo lift, including stainless steel, galvanized steel, or epoxy painted steel, providing durability and resistance to corrosion. With our cargo lifts, you can trust in their reliability, durability, and versatility for all your lifting needs. Experience the convenience and efficiency of our heavy-duty cargo lifts and elevate your cargo transportation to new heights!'
+			},
+			thirdSection: {
+				title: 'OUR CARGO ELEVATORS',
+				first: 'GLP without attendant',
+				second: 'GLC without attendant',
+				third: 'GLC with attendant'
 			}
 		}
 	},

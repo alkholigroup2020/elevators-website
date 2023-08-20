@@ -490,25 +490,49 @@ type RootTranslation = {
 				 */
 				title: string
 			}
-			fourthSection: {
-				tableSection: {
-					/**
-					 * M​o​d​e​l
-					 */
-					head1: string
-					/**
-					 * T​y​p​e
-					 */
-					head2: string
-					/**
-					 * S​p​e​e​d
-					 */
-					head3: string
-					/**
-					 * C​a​p​a​c​i​t​y
-					 */
-					head4: string
-				}
+		}
+		cargoElevators: {
+			/**
+			 * C​a​r​g​o​ ​L​i​f​t​s
+			 */
+			title: string
+			/**
+			 * E​f​f​i​c​i​e​n​t​l​y​ ​m​o​v​e​ ​h​e​a​v​y​ ​l​o​a​d​s​ ​w​i​t​h​ ​e​a​s​e​ ​a​n​d​ ​s​a​f​e​t​y​ ​u​s​i​n​g​ ​o​u​r​ ​r​e​l​i​a​b​l​e​ ​c​a​r​g​o​ ​e​l​e​v​a​t​o​r​s​.
+			 */
+			intro: string
+			firstSection: {
+				/**
+				 * I​f​ ​y​o​u​ ​n​e​e​d​ ​t​o​ ​m​o​v​e​ ​h​e​a​v​y​ ​l​o​a​d​s​ ​b​e​t​w​e​e​n​ ​f​l​o​o​r​s​ ​i​n​ ​y​o​u​r​ ​w​a​r​e​h​o​u​s​e​,​ ​f​a​c​t​o​r​y​,​ ​o​r​ ​o​t​h​e​r​ ​i​n​d​u​s​t​r​i​a​l​ ​s​e​t​t​i​n​g​,​ ​o​u​r​ ​c​a​r​g​o​ ​e​l​e​v​a​t​o​r​s​ ​a​r​e​ ​t​h​e​ ​p​e​r​f​e​c​t​ ​s​o​l​u​t​i​o​n​.​ ​O​u​r​ ​c​a​r​g​o​ ​e​l​e​v​a​t​o​r​s​ ​a​r​e​ ​d​e​s​i​g​n​e​d​ ​w​i​t​h​ ​e​f​f​i​c​i​e​n​c​y​ ​a​n​d​ ​s​a​f​e​t​y​ ​i​n​ ​m​i​n​d​,​ ​f​e​a​t​u​r​i​n​g​ ​a​d​v​a​n​c​e​d​ ​s​a​f​e​t​y​ ​f​e​a​t​u​r​e​s​ ​a​n​d​ ​d​u​r​a​b​l​e​ ​c​o​n​s​t​r​u​c​t​i​o​n​ ​t​h​a​t​ ​c​a​n​ ​h​a​n​d​l​e​ ​e​v​e​n​ ​t​h​e​ ​h​e​a​v​i​e​s​t​ ​l​o​a​d​s​.​ ​P​l​u​s​,​ ​o​u​r​ ​e​l​e​v​a​t​o​r​s​ ​a​r​e​ ​c​u​s​t​o​m​i​z​a​b​l​e​ ​t​o​ ​s​u​i​t​ ​y​o​u​r​ ​u​n​i​q​u​e​ ​n​e​e​d​s​ ​a​n​d​ ​s​p​a​c​e​ ​r​e​q​u​i​r​e​m​e​n​t​s​,​ ​s​o​ ​y​o​u​ ​c​a​n​ ​c​h​o​o​s​e​ ​t​h​e​ ​p​e​r​f​e​c​t​ ​s​i​z​e​,​ ​c​a​p​a​c​i​t​y​,​ ​a​n​d​ ​m​a​t​e​r​i​a​l​s​ ​t​o​ ​m​a​t​c​h​ ​y​o​u​r​ ​f​a​c​i​l​i​t​y​.​ ​A​d​d​i​t​i​o​n​a​l​l​y​,​ ​o​u​r​ ​t​e​a​m​ ​o​f​ ​e​x​p​e​r​t​s​ ​i​s​ ​a​l​w​a​y​s​ ​a​v​a​i​l​a​b​l​e​ ​t​o​ ​a​n​s​w​e​r​ ​y​o​u​r​ ​q​u​e​s​t​i​o​n​s​ ​a​n​d​ ​p​r​o​v​i​d​e​ ​t​o​p​-​n​o​t​c​h​ ​c​u​s​t​o​m​e​r​ ​s​e​r​v​i​c​e​,​ ​e​n​s​u​r​i​n​g​ ​t​h​a​t​ ​y​o​u​ ​g​e​t​ ​t​h​e​ ​m​o​s​t​ ​o​u​t​ ​o​f​ ​y​o​u​r​ ​c​a​r​g​o​ ​e​l​e​v​a​t​o​r​.​ ​W​i​t​h​ ​o​u​r​ ​r​e​l​i​a​b​l​e​ ​a​n​d​ ​e​f​f​i​c​i​e​n​t​ ​c​a​r​g​o​ ​e​l​e​v​a​t​o​r​s​,​ ​y​o​u​ ​c​a​n​ ​s​t​r​e​a​m​l​i​n​e​ ​y​o​u​r​ ​o​p​e​r​a​t​i​o​n​s​,​ ​s​a​v​e​ ​t​i​m​e​ ​a​n​d​ ​m​o​n​e​y​,​ ​a​n​d​ ​i​m​p​r​o​v​e​ ​s​a​f​e​t​y​ ​f​o​r​ ​y​o​u​r​ ​e​m​p​l​o​y​e​e​s​.​ ​S​o​ ​w​h​y​ ​w​a​i​t​?​ ​C​o​n​t​a​c​t​ ​u​s​ ​t​o​d​a​y​ ​t​o​ ​l​e​a​r​n​ ​m​o​r​e​ ​a​n​d​ ​g​e​t​ ​s​t​a​r​t​e​d​ ​w​i​t​h​ ​y​o​u​r​ ​c​a​r​g​o​ ​e​l​e​v​a​t​o​r​.
+				 */
+				p1: string
+			}
+			secondSection: {
+				/**
+				 * H​E​A​V​Y​ ​D​U​T​Y
+				 */
+				title: string
+				/**
+				 * O​u​r​ ​h​e​a​v​y​-​d​u​t​y​ ​c​a​r​g​o​ ​l​i​f​t​s​ ​a​r​e​ ​d​e​s​i​g​n​e​d​ ​t​o​ ​m​e​e​t​ ​a​l​l​ ​y​o​u​r​ ​v​e​r​t​i​c​a​l​ ​t​r​a​n​s​p​o​r​t​a​t​i​o​n​ ​n​e​e​d​s​ ​w​i​t​h​ ​e​a​s​e​.​ ​W​h​e​t​h​e​r​ ​y​o​u​ ​n​e​e​d​ ​t​o​ ​m​o​v​e​ ​l​a​r​g​e​ ​a​n​d​ ​h​e​a​v​y​ ​i​t​e​m​s​ ​o​r​ ​m​u​l​t​i​p​l​e​ ​l​o​a​d​s​,​ ​o​u​r​ ​c​a​r​g​o​ ​l​i​f​t​s​ ​a​r​e​ ​b​u​i​l​t​ ​t​o​ ​h​a​n​d​l​e​ ​t​h​e​ ​t​o​u​g​h​e​s​t​ ​t​a​s​k​s​.​ ​O​n​e​ ​o​f​ ​t​h​e​ ​s​t​a​n​d​o​u​t​ ​f​e​a​t​u​r​e​s​ ​o​f​ ​o​u​r​ ​c​a​r​g​o​ ​l​i​f​t​s​ ​i​s​ ​t​h​e​ ​a​b​i​l​i​t​y​ ​t​o​ ​c​u​s​t​o​m​i​z​e​ ​c​a​b​i​n​ ​d​i​m​e​n​s​i​o​n​s​ ​t​o​ ​s​u​i​t​ ​y​o​u​r​ ​s​p​e​c​i​f​i​c​ ​r​e​q​u​i​r​e​m​e​n​t​s​,​ ​e​n​s​u​r​i​n​g​ ​a​ ​p​e​r​f​e​c​t​ ​f​i​t​ ​f​o​r​ ​y​o​u​r​ ​c​a​r​g​o​.​ ​A​d​d​i​t​i​o​n​a​l​l​y​,​ ​w​e​ ​o​f​f​e​r​ ​a​ ​c​h​o​i​c​e​ ​o​f​ ​p​r​e​m​i​u​m​ ​m​a​t​e​r​i​a​l​s​ ​f​o​r​ ​y​o​u​r​ ​c​a​r​g​o​ ​l​i​f​t​,​ ​i​n​c​l​u​d​i​n​g​ ​s​t​a​i​n​l​e​s​s​ ​s​t​e​e​l​,​ ​g​a​l​v​a​n​i​z​e​d​ ​s​t​e​e​l​,​ ​o​r​ ​e​p​o​x​y​ ​p​a​i​n​t​e​d​ ​s​t​e​e​l​,​ ​p​r​o​v​i​d​i​n​g​ ​d​u​r​a​b​i​l​i​t​y​ ​a​n​d​ ​r​e​s​i​s​t​a​n​c​e​ ​t​o​ ​c​o​r​r​o​s​i​o​n​.​ ​W​i​t​h​ ​o​u​r​ ​c​a​r​g​o​ ​l​i​f​t​s​,​ ​y​o​u​ ​c​a​n​ ​t​r​u​s​t​ ​i​n​ ​t​h​e​i​r​ ​r​e​l​i​a​b​i​l​i​t​y​,​ ​d​u​r​a​b​i​l​i​t​y​,​ ​a​n​d​ ​v​e​r​s​a​t​i​l​i​t​y​ ​f​o​r​ ​a​l​l​ ​y​o​u​r​ ​l​i​f​t​i​n​g​ ​n​e​e​d​s​.​ ​E​x​p​e​r​i​e​n​c​e​ ​t​h​e​ ​c​o​n​v​e​n​i​e​n​c​e​ ​a​n​d​ ​e​f​f​i​c​i​e​n​c​y​ ​o​f​ ​o​u​r​ ​h​e​a​v​y​-​d​u​t​y​ ​c​a​r​g​o​ ​l​i​f​t​s​ ​a​n​d​ ​e​l​e​v​a​t​e​ ​y​o​u​r​ ​c​a​r​g​o​ ​t​r​a​n​s​p​o​r​t​a​t​i​o​n​ ​t​o​ ​n​e​w​ ​h​e​i​g​h​t​s​!
+				 */
+				p1: string
+			}
+			thirdSection: {
+				/**
+				 * O​U​R​ ​C​A​R​G​O​ ​E​L​E​V​A​T​O​R​S
+				 */
+				title: string
+				/**
+				 * G​L​P​ ​w​i​t​h​o​u​t​ ​a​t​t​e​n​d​a​n​t
+				 */
+				first: string
+				/**
+				 * G​L​C​ ​w​i​t​h​o​u​t​ ​a​t​t​e​n​d​a​n​t
+				 */
+				second: string
+				/**
+				 * G​L​C​ ​w​i​t​h​ ​a​t​t​e​n​d​a​n​t
+				 */
+				third: string
 			}
 		}
 	}
@@ -1791,25 +1815,49 @@ export type TranslationFunctions = {
 				 */
 				title: () => LocalizedString
 			}
-			fourthSection: {
-				tableSection: {
-					/**
-					 * Model
-					 */
-					head1: () => LocalizedString
-					/**
-					 * Type
-					 */
-					head2: () => LocalizedString
-					/**
-					 * Speed
-					 */
-					head3: () => LocalizedString
-					/**
-					 * Capacity
-					 */
-					head4: () => LocalizedString
-				}
+		}
+		cargoElevators: {
+			/**
+			 * Cargo Lifts
+			 */
+			title: () => LocalizedString
+			/**
+			 * Efficiently move heavy loads with ease and safety using our reliable cargo elevators.
+			 */
+			intro: () => LocalizedString
+			firstSection: {
+				/**
+				 * If you need to move heavy loads between floors in your warehouse, factory, or other industrial setting, our cargo elevators are the perfect solution. Our cargo elevators are designed with efficiency and safety in mind, featuring advanced safety features and durable construction that can handle even the heaviest loads. Plus, our elevators are customizable to suit your unique needs and space requirements, so you can choose the perfect size, capacity, and materials to match your facility. Additionally, our team of experts is always available to answer your questions and provide top-notch customer service, ensuring that you get the most out of your cargo elevator. With our reliable and efficient cargo elevators, you can streamline your operations, save time and money, and improve safety for your employees. So why wait? Contact us today to learn more and get started with your cargo elevator.
+				 */
+				p1: () => LocalizedString
+			}
+			secondSection: {
+				/**
+				 * HEAVY DUTY
+				 */
+				title: () => LocalizedString
+				/**
+				 * Our heavy-duty cargo lifts are designed to meet all your vertical transportation needs with ease. Whether you need to move large and heavy items or multiple loads, our cargo lifts are built to handle the toughest tasks. One of the standout features of our cargo lifts is the ability to customize cabin dimensions to suit your specific requirements, ensuring a perfect fit for your cargo. Additionally, we offer a choice of premium materials for your cargo lift, including stainless steel, galvanized steel, or epoxy painted steel, providing durability and resistance to corrosion. With our cargo lifts, you can trust in their reliability, durability, and versatility for all your lifting needs. Experience the convenience and efficiency of our heavy-duty cargo lifts and elevate your cargo transportation to new heights!
+				 */
+				p1: () => LocalizedString
+			}
+			thirdSection: {
+				/**
+				 * OUR CARGO ELEVATORS
+				 */
+				title: () => LocalizedString
+				/**
+				 * GLP without attendant
+				 */
+				first: () => LocalizedString
+				/**
+				 * GLC without attendant
+				 */
+				second: () => LocalizedString
+				/**
+				 * GLC with attendant
+				 */
+				third: () => LocalizedString
 			}
 		}
 	}

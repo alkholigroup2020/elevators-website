@@ -412,7 +412,7 @@
 							</span>
 						</a>
 					</li>
-					<li class="mx-0">
+					<li class="mx-2">
 						<LocaleSwitcher />
 					</li>
 					<li dir="ltr" class="ml-3 mr-8 sm:mr-0 mt-[2px]">

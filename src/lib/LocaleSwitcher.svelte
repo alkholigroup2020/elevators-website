@@ -44,27 +44,38 @@
 
 	// update locale when page store changes
 	$: if (browser) {
-		const lang = $page.params.lang as Locales;
-		// currentLang = lang; // my addition
-		switchLocale(lang, false);
-		history.replaceState(
-			{ ...history.state, locale: lang },
-			'',
-			replaceLocaleInUrl($page.url, lang)
-		);
+		if ($page.params.lang) {
+			const lang = $page.params.lang as Locales;
+			switchLocale(lang, false);
+			history.replaceState(
+				{ ...history.state, locale: lang },
+				'',
+				replaceLocaleInUrl($page.url, lang)
+			);
+		}
+		// has to be added for the new survey layout group
+		else if ($page.params.langu) {
+			const lang = $page.params.langu as Locales;
+			switchLocale(lang, false);
+			history.replaceState(
+				{ ...history.state, locale: lang },
+				'',
+				replaceLocaleInUrl($page.url, lang)
+			);
+		}
 	}
 </script>
 
 <svelte:window on:popstate={handlePopStateEvent} />
 
 {#if $currentAppLang === 'en'}
-	<button type="button" class="btn !bg-transparent h-2">
+	<button type="button" class="btn !bg-transparent h-2 text-white px-0">
 		<a href={`${replaceLocaleInUrl($page.url, 'ar')}`} aria-label="language switch link">العربية</a>
 	</button>
 {/if}
 
 {#if $currentAppLang === 'ar'}
-	<button type="button" class="btn !bg-transparent h-2">
+	<button type="button" class="btn !bg-transparent h-2 text-white">
 		<a href={`${replaceLocaleInUrl($page.url, 'en')}`} aria-label="language switch link">English</a>
 	</button>
 {/if}

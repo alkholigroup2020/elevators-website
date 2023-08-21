@@ -1684,6 +1684,12 @@ type RootTranslation = {
 		 */
 		errorFeedback: string
 	}
+	survey: {
+		/**
+		 * V​i​s​i​t​ ​O​u​r​ ​W​e​b​s​i​t​e
+		 */
+		ourWebsite: string
+	}
 	footer: {
 		contact: {
 			/**
@@ -3484,6 +3490,12 @@ export type TranslationFunctions = {
 		 * Something went wrong!
 		 */
 		errorFeedback: () => LocalizedString
+	}
+	survey: {
+		/**
+		 * Visit Our Website
+		 */
+		ourWebsite: () => LocalizedString
 	}
 	footer: {
 		contact: {

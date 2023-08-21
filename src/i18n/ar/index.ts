@@ -576,6 +576,9 @@ const en: BaseTranslation = {
 		successFeedback: 'تم إرسال الرسالة بنجاح',
 		errorFeedback: 'حدث خطأ ما!'
 	},
+	survey: {
+		ourWebsite: 'مــوقعنا الإلكتروني'
+	},
 	footer: {
 		contact: {
 			title: 'اتصــل بنا',

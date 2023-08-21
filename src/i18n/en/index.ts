@@ -573,6 +573,9 @@ const en: BaseTranslation = {
 		successFeedback: 'Message Sent Successfully',
 		errorFeedback: 'Something went wrong!'
 	},
+	survey: {
+		ourWebsite: 'Visit Our Website'
+	},
 	footer: {
 		contact: {
 			title: 'Contact Us',

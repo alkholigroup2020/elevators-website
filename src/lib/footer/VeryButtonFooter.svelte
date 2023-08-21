@@ -5,7 +5,9 @@
 </script>
 
 <div class="section-bg h-fit flex justify-center">
-	<p class="py-1 text-md">Copyright &copy; Alkholi Group {currentYear()}</p>
+	<p class="py-1 text-md text-white">
+		Copyright &copy; Alkholi Group {currentYear()}
+	</p>
 </div>
 
 <style>

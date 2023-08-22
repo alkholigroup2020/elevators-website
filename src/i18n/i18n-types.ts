@@ -1689,6 +1689,118 @@ type RootTranslation = {
 		 * V​i​s​i​t​ ​O​u​r​ ​W​e​b​s​i​t​e
 		 */
 		ourWebsite: string
+		/**
+		 * B​u​i​l​d​i​n​g​t​e​c​ ​E​l​e​v​a​t​o​r​s​ ​C​l​i​e​n​t​s​ ​S​u​r​v​e​y
+		 */
+		title: string
+		/**
+		 * N​e​x​t
+		 */
+		next: string
+		/**
+		 * B​a​c​k
+		 */
+		back: string
+		/**
+		 * C​o​m​p​l​e​t​e
+		 */
+		complete: string
+		first: {
+			/**
+			 * R​a​t​e​ ​Y​o​u​r​ ​E​x​p​e​r​i​e​n​c​e​ ​W​i​t​h​ ​U​S​ ​.​.​.
+			 */
+			intro: string
+			/**
+			 * C​o​n​s​i​d​e​r​i​n​g​ ​y​o​u​r​ ​c​o​m​p​l​e​t​e​ ​e​x​p​e​r​i​e​n​c​e​ ​w​i​t​h​ ​o​u​r​ ​c​o​m​p​a​n​y​,​ ​h​o​w​ ​w​o​u​l​d​ ​y​o​u​ ​r​e​c​o​m​m​e​n​d​ ​u​s​ ​t​o​ ​a​ ​f​r​i​e​n​d​ ​o​r​ ​c​o​l​l​e​a​g​u​e​?
+			 */
+			question: string
+			/**
+			 * N​o​t​e​:​ ​0​ ​r​e​p​r​e​s​e​n​t​ ​(​v​e​r​y​ ​u​n​l​i​k​e​l​y​)​ ​a​n​d​ ​1​0​ ​r​e​p​r​e​s​e​n​t​ ​(​v​e​r​y​ ​l​i​k​e​l​y​)
+			 */
+			note: string
+		}
+		second: {
+			/**
+			 * R​a​t​e​ ​O​u​r​ ​S​e​r​v​i​c​e​s​ ​.​.​.
+			 */
+			intro: string
+			/**
+			 * P​l​e​a​s​e​ ​r​a​t​e​ ​o​u​r​ ​s​e​r​v​i​c​e​s​ ​f​o​r​ ​t​h​e​ ​f​o​l​l​o​w​i​n​g​ ​p​a​r​a​m​e​t​e​r​s​:
+			 */
+			question: string
+			/**
+			 * Q​u​a​l​i​t​y​:
+			 */
+			q1: string
+			/**
+			 * D​e​l​i​v​e​r​y​ ​t​i​m​e​:
+			 */
+			q2: string
+			/**
+			 * I​n​s​t​a​l​l​a​t​i​o​n​ ​t​i​m​e​:
+			 */
+			q3: string
+			/**
+			 * E​m​p​l​o​y​e​e​s​ ​b​e​h​a​v​i​o​r​:
+			 */
+			q4: string
+			/**
+			 * S​a​t​i​s​f​i​e​d
+			 */
+			option1: string
+			/**
+			 * N​e​u​t​r​a​l
+			 */
+			option2: string
+			/**
+			 * D​i​s​s​a​t​i​s​f​i​e​d
+			 */
+			option3: string
+		}
+		third: {
+			/**
+			 * R​a​t​e​ ​O​u​r​ ​P​r​o​d​u​c​t​s​ ​.​.​.
+			 */
+			intro: string
+			/**
+			 * H​o​w​ ​w​e​l​l​ ​d​i​d​ ​o​u​r​ ​p​r​o​d​u​c​t​s​ ​m​e​e​t​ ​y​o​u​r​ ​e​x​p​e​c​t​a​t​i​o​n​s​?
+			 */
+			question: string
+			/**
+			 * S​a​t​i​s​f​i​e​d
+			 */
+			option1: string
+			/**
+			 * N​e​u​t​r​a​l
+			 */
+			option2: string
+			/**
+			 * D​i​s​s​a​t​i​s​f​i​e​d
+			 */
+			option3: string
+		}
+		fourth: {
+			/**
+			 * C​o​m​m​e​n​t​s​ ​&​ ​S​u​g​g​e​s​t​i​o​n​s​ ​.​.​.
+			 */
+			intro: string
+			/**
+			 * D​o​ ​y​o​u​ ​h​a​v​e​ ​a​n​y​ ​c​o​m​m​e​n​t​s​ ​o​r​ ​s​u​g​g​e​s​t​i​o​n​s​?
+			 */
+			question: string
+			/**
+			 * Y​o​u​r​ ​M​e​s​s​a​g​e​ ​.​.​.
+			 */
+			message: string
+			/**
+			 * M​o​b​i​l​e​ ​N​u​m​b​e​r​ ​.​.​.
+			 */
+			mobile: string
+			/**
+			 * P​l​e​a​s​e​ ​e​n​t​e​r​ ​y​o​u​r​ ​m​o​b​i​l​e​ ​n​u​m​b​e​r​ ​a​s​ ​0​5​x​x​x​x​x​x​x​x
+			 */
+			mobileWarning: string
+		}
 	}
 	footer: {
 		contact: {
@@ -3496,6 +3608,118 @@ export type TranslationFunctions = {
 		 * Visit Our Website
 		 */
 		ourWebsite: () => LocalizedString
+		/**
+		 * Buildingtec Elevators Clients Survey
+		 */
+		title: () => LocalizedString
+		/**
+		 * Next
+		 */
+		next: () => LocalizedString
+		/**
+		 * Back
+		 */
+		back: () => LocalizedString
+		/**
+		 * Complete
+		 */
+		complete: () => LocalizedString
+		first: {
+			/**
+			 * Rate Your Experience With US ...
+			 */
+			intro: () => LocalizedString
+			/**
+			 * Considering your complete experience with our company, how would you recommend us to a friend or colleague?
+			 */
+			question: () => LocalizedString
+			/**
+			 * Note: 0 represent (very unlikely) and 10 represent (very likely)
+			 */
+			note: () => LocalizedString
+		}
+		second: {
+			/**
+			 * Rate Our Services ...
+			 */
+			intro: () => LocalizedString
+			/**
+			 * Please rate our services for the following parameters:
+			 */
+			question: () => LocalizedString
+			/**
+			 * Quality:
+			 */
+			q1: () => LocalizedString
+			/**
+			 * Delivery time:
+			 */
+			q2: () => LocalizedString
+			/**
+			 * Installation time:
+			 */
+			q3: () => LocalizedString
+			/**
+			 * Employees behavior:
+			 */
+			q4: () => LocalizedString
+			/**
+			 * Satisfied
+			 */
+			option1: () => LocalizedString
+			/**
+			 * Neutral
+			 */
+			option2: () => LocalizedString
+			/**
+			 * Dissatisfied
+			 */
+			option3: () => LocalizedString
+		}
+		third: {
+			/**
+			 * Rate Our Products ...
+			 */
+			intro: () => LocalizedString
+			/**
+			 * How well did our products meet your expectations?
+			 */
+			question: () => LocalizedString
+			/**
+			 * Satisfied
+			 */
+			option1: () => LocalizedString
+			/**
+			 * Neutral
+			 */
+			option2: () => LocalizedString
+			/**
+			 * Dissatisfied
+			 */
+			option3: () => LocalizedString
+		}
+		fourth: {
+			/**
+			 * Comments & Suggestions ...
+			 */
+			intro: () => LocalizedString
+			/**
+			 * Do you have any comments or suggestions?
+			 */
+			question: () => LocalizedString
+			/**
+			 * Your Message ...
+			 */
+			message: () => LocalizedString
+			/**
+			 * Mobile Number ...
+			 */
+			mobile: () => LocalizedString
+			/**
+			 * Please enter your mobile number as 05xxxxxxxx
+			 */
+			mobileWarning: () => LocalizedString
+		}
 	}
 	footer: {
 		contact: {

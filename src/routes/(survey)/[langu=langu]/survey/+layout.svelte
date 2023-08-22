@@ -18,7 +18,7 @@
 	<LoadingSpinner />
 {:else}
 	<div class="h-screen flex flex-col">
-		<div class="bg-primary-500 w-screen h-32 flex items-center justify-center">
+		<div class="bg-primary-500 w-screen min-h-[120px] flex items-center justify-center">
 			<div>
 				<img
 					loading="lazy"
@@ -30,7 +30,7 @@
 		</div>
 
 		<div class="bg-surface-500 w-screen h-8">
-			<div class="flex container mx-auto h-full">
+			<div class="flex container mx-auto px-12 md:px-5 h-full">
 				<div class="flex-none my-auto">
 					<div>
 						<a
@@ -66,13 +66,13 @@
 									/></svg
 								>
 							</span>
-							<span>{$LL.survey.ourWebsite()}</span>
+							<span class="text-white">{$LL.survey.ourWebsite()}</span>
 						</a>
 					</div>
 				</div>
 
 				<div class="grow">
-					<!--  -->
+					<!-- spacer -->
 				</div>
 
 				<div class="flex-none my-auto">

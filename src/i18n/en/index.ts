@@ -574,7 +574,42 @@ const en: BaseTranslation = {
 		errorFeedback: 'Something went wrong!'
 	},
 	survey: {
-		ourWebsite: 'Visit Our Website'
+		ourWebsite: 'Visit Our Website',
+		title: 'Buildingtec Elevators Clients Survey',
+		next: 'Next',
+		back: 'Back',
+		complete: 'Complete',
+		first: {
+			intro: 'Rate Your Experience With US ...',
+			question:
+				'Considering your complete experience with our company, how would you recommend us to a friend or colleague?',
+			note: 'Note: 0 represent (very unlikely) and 10 represent (very likely)'
+		},
+		second: {
+			intro: 'Rate Our Services ...',
+			question: 'Please rate our services for the following parameters:',
+			q1: 'Quality:',
+			q2: 'Delivery time:',
+			q3: 'Installation time:',
+			q4: 'Employees behavior:',
+			option1: 'Satisfied',
+			option2: 'Neutral',
+			option3: 'Dissatisfied'
+		},
+		third: {
+			intro: 'Rate Our Products ...',
+			question: 'How well did our products meet your expectations?',
+			option1: 'Satisfied',
+			option2: 'Neutral',
+			option3: 'Dissatisfied'
+		},
+		fourth: {
+			intro: 'Comments & Suggestions ...',
+			question: 'Do you have any comments or suggestions?',
+			message: 'Your Message ...',
+			mobile: 'Mobile Number ...',
+			mobileWarning: 'Please enter your mobile number as 05xxxxxxxx'
+		}
 	},
 	footer: {
 		contact: {

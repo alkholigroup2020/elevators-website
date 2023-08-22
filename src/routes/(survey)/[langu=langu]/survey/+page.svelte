@@ -1,6 +1,7 @@
 <script lang="ts">
+	import SurveyStepper from '$lib/survey/SurveyStepper.svelte';
+
+	let anonymous: boolean = true;
 </script>
 
-<div class="min-h-[100%] w-screen">
-	<!--  -->
-</div>
+<SurveyStepper {anonymous} />

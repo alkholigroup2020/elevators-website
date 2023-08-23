@@ -13,8 +13,7 @@ export const POST: RequestHandler = async ({ request }) => {
 	const { surveyData } = await request.json();
 
 	if (surveyData.contractID) {
-		// await client.connect();
-		await client
+		const req = await client
 			.db('survey')
 			.collection('specificClients')
 			.updateOne(
@@ -31,9 +30,12 @@ export const POST: RequestHandler = async ({ request }) => {
 					}
 				}
 			);
+		// to make sure that the survey request was originally generated from the portal system
+		if (req.modifiedCount === 0) {
+			throw new Error();
+		}
 		return new Response();
 	} else {
-		// await client.connect();
 		await client.db('survey').collection('clients').insertOne(surveyData);
 		return new Response();
 	}

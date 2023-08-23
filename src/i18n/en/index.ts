@@ -609,9 +609,23 @@ const en: BaseTranslation = {
 			message: 'Your Message ...',
 			mobile: 'Mobile Number ...',
 			mobileWarning: 'Please enter your mobile number as 05xxxxxxxx'
+		},
+		thanks: {
+			title: 'Many thanks for your precious answers!',
+			p1: 'Your opinion is important to us.',
+			p2: 'Your answers will be used for improving our services.',
+			p3: 'We look forward to see you again.'
+		},
+		error: {
+			title1: 'Something went wrong!',
+			title2: 'You may have taken this survey before.',
+			p1: 'Please try it again.',
+			p2: 'Your input is very precious to us.',
+			btn: 'Try it again ...'
 		}
 	},
 	footer: {
+		surveyLink: "Valued Client? We'd Love Your Feedback.",
 		contact: {
 			title: 'Contact Us',
 			email: 'Email: info@buildingtec.com',

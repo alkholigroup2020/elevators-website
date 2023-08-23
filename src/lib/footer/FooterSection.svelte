@@ -311,7 +311,7 @@
 			</div>
 
 			<!-- social media logos -->
-			<ul class="flex py-5 px-0">
+			<ul class="flex pt-5 px-0">
 				<!-- YouTube -->
 				<li
 					class="mx-3 hidden lg:block"
@@ -542,6 +542,16 @@
 					</a>
 				</li>
 			</ul>
+
+			<div class="mb-5 lg:mb-0 lg:mt-5">
+				<!-- underline underline-offset-2 -->
+				<a
+					href={`/${$currentAppLang}/survey`}
+					aria-label="a link to the survey page"
+					class="hover:text-secondary-300 text-md md:text-lg"
+					>{$LL.footer.surveyLink()}
+				</a>
+			</div>
 		</div>
 
 		<!-- Message Form section -->

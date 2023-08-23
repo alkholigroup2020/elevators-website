@@ -1801,8 +1801,52 @@ type RootTranslation = {
 			 */
 			mobileWarning: string
 		}
+		thanks: {
+			/**
+			 * M​a​n​y​ ​t​h​a​n​k​s​ ​f​o​r​ ​y​o​u​r​ ​p​r​e​c​i​o​u​s​ ​a​n​s​w​e​r​s​!
+			 */
+			title: string
+			/**
+			 * Y​o​u​r​ ​o​p​i​n​i​o​n​ ​i​s​ ​i​m​p​o​r​t​a​n​t​ ​t​o​ ​u​s​.
+			 */
+			p1: string
+			/**
+			 * Y​o​u​r​ ​a​n​s​w​e​r​s​ ​w​i​l​l​ ​b​e​ ​u​s​e​d​ ​f​o​r​ ​i​m​p​r​o​v​i​n​g​ ​o​u​r​ ​s​e​r​v​i​c​e​s​.
+			 */
+			p2: string
+			/**
+			 * W​e​ ​l​o​o​k​ ​f​o​r​w​a​r​d​ ​t​o​ ​s​e​e​ ​y​o​u​ ​a​g​a​i​n​.
+			 */
+			p3: string
+		}
+		error: {
+			/**
+			 * S​o​m​e​t​h​i​n​g​ ​w​e​n​t​ ​w​r​o​n​g​!
+			 */
+			title1: string
+			/**
+			 * Y​o​u​ ​m​a​y​ ​h​a​v​e​ ​t​a​k​e​n​ ​t​h​i​s​ ​s​u​r​v​e​y​ ​b​e​f​o​r​e​.
+			 */
+			title2: string
+			/**
+			 * P​l​e​a​s​e​ ​t​r​y​ ​i​t​ ​a​g​a​i​n​.
+			 */
+			p1: string
+			/**
+			 * Y​o​u​r​ ​i​n​p​u​t​ ​i​s​ ​v​e​r​y​ ​p​r​e​c​i​o​u​s​ ​t​o​ ​u​s​.
+			 */
+			p2: string
+			/**
+			 * T​r​y​ ​i​t​ ​a​g​a​i​n​ ​.​.​.
+			 */
+			btn: string
+		}
 	}
 	footer: {
+		/**
+		 * V​a​l​u​e​d​ ​C​l​i​e​n​t​?​ ​W​e​'​d​ ​L​o​v​e​ ​Y​o​u​r​ ​F​e​e​d​b​a​c​k​.
+		 */
+		surveyLink: string
 		contact: {
 			/**
 			 * C​o​n​t​a​c​t​ ​U​s
@@ -3720,8 +3764,52 @@ export type TranslationFunctions = {
 			 */
 			mobileWarning: () => LocalizedString
 		}
+		thanks: {
+			/**
+			 * Many thanks for your precious answers!
+			 */
+			title: () => LocalizedString
+			/**
+			 * Your opinion is important to us.
+			 */
+			p1: () => LocalizedString
+			/**
+			 * Your answers will be used for improving our services.
+			 */
+			p2: () => LocalizedString
+			/**
+			 * We look forward to see you again.
+			 */
+			p3: () => LocalizedString
+		}
+		error: {
+			/**
+			 * Something went wrong!
+			 */
+			title1: () => LocalizedString
+			/**
+			 * You may have taken this survey before.
+			 */
+			title2: () => LocalizedString
+			/**
+			 * Please try it again.
+			 */
+			p1: () => LocalizedString
+			/**
+			 * Your input is very precious to us.
+			 */
+			p2: () => LocalizedString
+			/**
+			 * Try it again ...
+			 */
+			btn: () => LocalizedString
+		}
 	}
 	footer: {
+		/**
+		 * Valued Client? We'd Love Your Feedback.
+		 */
+		surveyLink: () => LocalizedString
 		contact: {
 			/**
 			 * Contact Us

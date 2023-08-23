@@ -3,8 +3,10 @@
 	import LL from '$i18n/i18n-svelte';
 	import { modeCurrent } from '@skeletonlabs/skeleton';
 	import { Ratings, RadioGroup, RadioItem } from '@skeletonlabs/skeleton';
+	import { currentAppLang } from '$lib/stores/store';
 	import { icons } from './icons';
 	import { pageDirection } from '$lib/stores/store';
+	import { goto } from '$app/navigation';
 
 	export let anonymous: boolean;
 	export let contractID: string;
@@ -106,14 +108,12 @@
 
 			// Check if the request was successful
 			if (!response.ok) {
-				throw new Error('Network response was not ok');
+				throw new Error();
 			}
 
-			// Handle the response if you need to
-			// const data = await response.json();
+			await goto(`/${$currentAppLang}/survey/thank-you`);
 		} catch (error) {
-			console.error('🚀 error:', error);
-			//
+			await goto(`/${$currentAppLang}/survey/error`);
 		}
 	};
 </script>
@@ -123,7 +123,7 @@
 		<p
 			class="text-3xl md:text-4xl py-5 md:py-8 mx-5 md:mx-16 xl:mx-32 2xl:mx-48 text-center text-primary-500 font-medium"
 		>
-			{$LL.survey.title()} - {anonymous}
+			{$LL.survey.title()}
 		</p>
 	</div>
 	<div
@@ -161,7 +161,6 @@
 						<Ratings
 							class="fill-token pb-3"
 							spacing="space-x-0 sm:space-x-3"
-							regionIcon=""
 							justify="start"
 							bind:value={value.current}
 							max={value.max}

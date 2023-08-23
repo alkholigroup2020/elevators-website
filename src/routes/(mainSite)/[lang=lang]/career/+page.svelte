@@ -727,40 +727,6 @@
 						</div>
 					</div>
 				</div>
-
-				<!-- submit button -->
-				<!-- <div>
-					<div class="h-full flex items-end lg:justify-end p-0 m-0">
-						<div class=" order-last lg:order-first">
-							<p class={`${appliedClass} text-lg mx-3`}>
-								{formSubmitMessage}
-							</p>
-						</div>
-						<div>
-							<button
-								disabled={!resumeFileValid}
-								type="submit"
-								class="btn variant-ringed-success rounded-lg border border-surface-50-900-token px-16 py-[10px] text-lg mt-3"
-							>
-								<span class="px-3"
-									><svg
-										xmlns="http://www.w3.org/2000/svg"
-										viewBox="0 0 32 32"
-										fill="#FFF"
-										width="18"
-										height="18"
-										><g data-name="21-Email-Send"
-											><path
-												d="M29 4H3a3 3 0 0 0-3 3v4h2V7.23l13.42 9.58a1 1 0 0 0 1.16 0L30 7.23V25a1 1 0 0 1-1 1H4v2h25a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zM16 14.77 3.72 6h24.56zM0 26h2v2H0z"
-											/><path d="M0 21h14v2H0zM16 21h2v2h-2zM0 16h2v2H0zM4 16h6v2H4z" /></g
-										></svg
-									></span
-								>
-								<span>{$LL.career.submit()}</span>
-							</button>
-						</div>
-					</div>
-				</div> -->
 			</div>
 		</form>
 	</div>

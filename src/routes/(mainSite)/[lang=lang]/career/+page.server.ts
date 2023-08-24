@@ -64,7 +64,7 @@ export const actions = {
 			<table align="center" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse; border: 1px solid #cccccc; margin-bottom: 25px;">
 				<tr>
 					<td bgcolor="#70bbd9" style="padding: 40px 30px 40px 30px;">
-						<img src="https://cms.buildingtec-elevators.com/uploads/logo_text_white_Small_9774aace41.png" alt="company logo" width="210" height="45" style="display: block;" />
+						<h1>Message From The Career Page</h1>
 					</td>
 				</tr>
 				<tr>
@@ -87,7 +87,7 @@ export const actions = {
 				</tr>
 				<tr>
 					<td bgcolor="#70bbd9" style="padding: 30px 30px; color: white;">
-						<p style="color: #ffffff; font-size: 18px;">This message is sent from the footer form.</p>
+						<p style="color: #ffffff; font-size: 18px;">This message is sent from the career page.</p>
 					</td>
 				</tr>
 			</table>
@@ -110,8 +110,8 @@ export const actions = {
 		};
 
 		await sendEmail(
-			'fawzy.mohamed@alkholi.com',
-			'Website Messages - Career Form.',
+			'fawzy.mohamed@alkholi.com, info@buildingtec.com',
+			'Website Messages - Career Page.',
 			emailTemplate,
 			emailTemplate,
 			[attachment]

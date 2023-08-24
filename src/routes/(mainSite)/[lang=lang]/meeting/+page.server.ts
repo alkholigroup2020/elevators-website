@@ -93,7 +93,7 @@ export const actions = {
 		`;
 
 		await sendEmail(
-			'fawzy.mohamed@alkholi.com',
+			'fawzy.mohamed@alkholi.com, info@buildingtec.com',
 			'Website Messages - New Meeting Request.',
 			emailTemplate,
 			emailTemplate

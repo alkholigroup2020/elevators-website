@@ -27,12 +27,11 @@ export const actions = {
 			<table align="center" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse; border: 1px solid #cccccc; margin-bottom: 25px;">
 				<tr>
 					<td bgcolor="#70bbd9" style="padding: 40px 30px 40px 30px;">
-						<img src="https://cms.buildingtec-elevators.com/uploads/logo_text_white_Small_9774aace41.png" alt="Creating Email Magic." width="210" height="45" style="display: block;" />
+						<h1>Message From The Footer Section</h1>
 					</td>
 				</tr>
 				<tr>
 					<td bgcolor="#ffffff" style="padding: 40px 30px 40px 30px;">
-						<h1>Footer Form</h1>
 						<p style="font-size: 18px;"><strong>Name:</strong> ${footerForm.data.name}</p>
 						<p style="font-size: 18px;"><strong>Email:</strong> ${footerForm.data.email || 'Not provided!'}</p>
 						<p style="font-size: 18px;"><strong>Mobile:</strong> ${
@@ -51,8 +50,8 @@ export const actions = {
 		`;
 
 		await sendEmail(
-			'fawzy.mohamed@alkholi.com',
-			'Website Messages - Footer Form.',
+			'fawzy.mohamed@alkholi.com, info@buildingtec.com',
+			'Website Messages - Footer Section.',
 			emailTemplate,
 			emailTemplate
 		);

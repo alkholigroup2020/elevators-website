@@ -32,13 +32,7 @@ export const actions = {
 			<table align="center" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse; border: 1px solid #cccccc; margin-bottom: 25px;">
 				<tr>
 					<td bgcolor="#70bbd9" style="padding: 40px 30px 40px 30px;">
-						<img
-							src="https://cms.buildingtec-elevators.com/uploads/logo_text_white_240x60_cbf67ff00d.webp"
-							alt="company's logo"
-							width="210"
-							height="45"
-							style="display: block;"
-						/>
+						<h1>New Maintenance Subscription Request</h1>
 					</td> 
 				</tr> 
 				<tr>
@@ -54,7 +48,7 @@ export const actions = {
 				</tr>
 				<tr>
 					<td bgcolor="#70bbd9" style="padding: 30px 30px; color: white;">
-						<p style="color: #ffffff; font-size: 18px;">This message is sent from the footer form.</p>
+						<p style="color: #ffffff; font-size: 18px;">This message is sent from the maintenance subscription page.</p>
 					</td>
 				</tr>
 			</table>
@@ -62,8 +56,8 @@ export const actions = {
 		`;
 
 		await sendEmail(
-			'fawzy.mohamed@alkholi.com',
-			'Website Messages - New Elevator Quote Request.',
+			'fawzy.mohamed@alkholi.com, info@buildingtec.com',
+			'Website Messages - New Maintenance Subscription Request.',
 			emailTemplate,
 			emailTemplate
 		);

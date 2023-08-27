@@ -4,7 +4,7 @@
 </script>
 
 <section>
-	<div class="relative">
+	<div class="relative" dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}>
 		<img
 			alt="main hero section background"
 			src="/home-page/header/landing_2000x820.webp"
@@ -17,18 +17,21 @@
 		<div class="absolute inset-0 flex items-center justify-center">
 			<div class="container mx-auto grid grid-cols-6 relative inset-0 z-10 text-center">
 				<div
-					class="col-span-6 space-y-12 min-[350px]:space-y-6 min-[450px]:space-y-10 min-[520px]:space-y-12 xl:space-y-12 2xl:space-y-16 lg:col-span-4 lg:col-start-1 lg:col-end-7 lg:px-12"
+					class="col-span-6 space-y-12 min-[350px]:space-y-8 min-[450px]:space-y-10 min-[520px]:space-y-12 xl:space-y-16 2xl:space-y-20 lg:col-span-4 lg:col-start-1 lg:col-end-7 lg:px-12"
 				>
 					<!-- Heading -->
+					<!-- text-[40px] min-[450px]:text-5xl md:text-6xl xl:text-7xl -->
 					<h1
-						class="text-[40px] min-[450px]:text-5xl md:text-6xl xl:text-7xl text-white font-bold px-5"
-						style="text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.8); line-height:55px"
+						class="heading-{$currentAppLang}-1 text-white font-bold px-5 leading-10"
+						style="text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.8);"
 					>
 						{$LL.heroSection.title()}
 					</h1>
 					<!-- Subheading -->
+					<!-- text-lg min-[390px]:text-xl md:text-2xl lg:text-3xl -->
 					<p
-						class="text-lg min-[390px]:text-xl md:text-2xl lg:text-3xl text-white max-[768px]:text-justify section-msg px-5 lg:px-[50px] xl:px-[150px] hidden min-[350px]:block"
+						style="text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.8);"
+						class="large-{$currentAppLang}-text text-white max-[768px]:text-justify px-5 lg:px-[50px] xl:px-[150px] hidden min-[350px]:block"
 					>
 						<span class="leading-2 min-[390px]:leading-8 md:leading-relaxed">
 							{$LL.heroSection.message()}
@@ -38,7 +41,7 @@
 					<a
 						href={`/${$currentAppLang}/meeting`}
 						aria-label="a link to the new-elevator form page"
-						class="btn variant-filled-secondary border border-success-500 btn-md md:btn-xl text-lg md:text-[22px]"
+						class="btn variant-filled-secondary border border-success-500 btn-md md:btn-lg rounded-lg main-{$currentAppLang}-text font-medium"
 					>
 						{$LL.heroSection.action()}
 					</a>
@@ -49,7 +52,4 @@
 </section>
 
 <style>
-	.section-msg {
-		text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.8);
-	}
 </style>

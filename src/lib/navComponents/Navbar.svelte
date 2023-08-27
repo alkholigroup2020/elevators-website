@@ -128,72 +128,72 @@
 
 	<svelte:fragment slot="trail">
 		<nav
-			class="hidden lg:block space-x-2 xl:space-x-6"
+			class="hidden lg:block space-x-2 xl:space-x-4"
 			dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}
 		>
 			<!-- Why I have to add ml-6 to the first link?! Arabic page only!! -->
 			<a
 				href={`/${$currentAppLang}`}
 				aria-label="a link to the home page"
-				class="hover:text-secondary-300 ml-2 xl:ml-6"
+				class="hover:text-secondary-300 main-{$currentAppLang}-text ml-2 xl:ml-6"
 				>{$LL.mainNav.home()}
 			</a>
 			<a
 				href={`#products`}
 				on:click={navigate}
 				aria-label="a link to the products section"
-				class="hover:text-secondary-300"
+				class="hover:text-secondary-300 main-{$currentAppLang}-text"
 				>{$LL.mainNav.products()}
 			</a>
 			<a
 				href={`/${$currentAppLang}/about`}
 				aria-label="a link to the about page"
-				class="hover:text-secondary-300"
+				class="hover:text-secondary-300 main-{$currentAppLang}-text"
 				>{$LL.mainNav.about()}
 			</a>
 			<a
 				href={`/${$currentAppLang}/cabins`}
 				aria-label="a link to the cabins page"
-				class="hover:text-secondary-300"
+				class="hover:text-secondary-300 main-{$currentAppLang}-text"
 				>{$LL.mainNav.cabins()}
 			</a>
 			<a
 				href={`#projects`}
 				on:click={navigate}
 				aria-label="a link to the projects section"
-				class="hover:text-secondary-300"
+				class="hover:text-secondary-300 main-{$currentAppLang}-text"
 				>{$LL.mainNav.projects()}
 			</a>
 			<a
 				href={`#brands`}
 				on:click={navigate}
 				aria-label="a link to the brands section"
-				class="hover:text-secondary-300"
+				class="hover:text-secondary-300 main-{$currentAppLang}-text"
 				>{$LL.mainNav.brands()}
 			</a>
 			<a
 				href={`/${$currentAppLang}/media`}
 				aria-label="a link to the media page"
-				class="hover:text-secondary-300"
+				class="hover:text-secondary-300 main-{$currentAppLang}-text"
 				>{$LL.mainNav.media()}
 			</a>
 			<a
 				href={`/${$currentAppLang}/career`}
 				aria-label="a link to the career page"
-				class="hover:text-secondary-300"
+				class="hover:text-secondary-300 main-{$currentAppLang}-text"
 				>{$LL.mainNav.career()}
 			</a>
 			<a
 				href={`/${$currentAppLang}/blog`}
 				aria-label="a link to the blog page"
-				class="hover:text-secondary-300"
+				class="hover:text-secondary-300 main-{$currentAppLang}-text"
 				>{$LL.mainNav.blog()}
 			</a>
 			<a
 				href={`#quote`}
 				on:click={navigate}
 				aria-label="a link to the quote section"
-				class="hover:text-secondary-300"
+				class="hover:text-secondary-300 main-{$currentAppLang}-text"
 				>{$LL.mainNav.quote()}
 			</a>
 		</nav>

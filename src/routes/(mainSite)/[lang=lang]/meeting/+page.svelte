@@ -4,6 +4,8 @@
 	import { superForm } from 'sveltekit-superforms/client';
 	import { modeCurrent } from '@skeletonlabs/skeleton';
 
+	import { currentAppLang } from '$lib/stores/store';
+
 	export let data;
 	let newMeetingFormSettings: any;
 	newMeetingFormSettings = data.newMeetingFormSettings;
@@ -99,7 +101,7 @@
 		<div class="absolute w-[100%] h-full flex items-center justify-center">
 			<div class="container mx-auto px-5 2xl:px-0">
 				<h1
-					class="text-4xl lg:text-6xl font-medium text-white"
+					class="heading-{$currentAppLang}-2 font-medium text-white"
 					style="text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.8);"
 				>
 					{$LL.meeting.title()}
@@ -112,10 +114,10 @@
 <section dir={$pageDirection}>
 	<div class="container mx-auto px-5 2xl:px-0">
 		<div class="py-12 lg:pt-16">
-			<p class="text-2xl lg:text-3xl font-light text-primary-400-500-token">
+			<p class="large-{$currentAppLang}-text font-light text-primary-500">
 				{$LL.meeting.intro1()}
 			</p>
-			<p class="text-2xl lg:text-3xl font-light text-primary-400-500-token pt-3 lg:pt-5">
+			<p class="large-{$currentAppLang}-text font-light text-primary-500 pt-3 lg:pt-5">
 				{$LL.meeting.intro2()}
 			</p>
 		</div>
@@ -125,13 +127,13 @@
 				<!-- name -->
 				<div class="m-0 p-0">
 					<label class="label">
-						<div class="text-lg">
+						<div class="sub-main-{$currentAppLang}-text">
 							<span>{$LL.meeting.fullName()}</span>
 						</div>
 
 						<input
 							bind:value={$form.name}
-							class="input text-lg text-surface-900-50-token bg-surface-50-900-token rounded-lg focus:border-surface-700-200-token"
+							class="input sub-main-{$currentAppLang}-text text-surface-900-50-token bg-surface-50-900-token rounded-lg focus:border-surface-700-200-token"
 							type="text"
 							name="name"
 							{...$constraints.name}
@@ -144,12 +146,12 @@
 				<!-- Date & Time -->
 				<div class="m-0 p-0">
 					<label class="label">
-						<div class="text-lg">
+						<div class="sub-main-{$currentAppLang}-text">
 							<span>{$LL.meeting.dateTime()}</span>
 						</div>
 
 						<input
-							class="input text-lg text-surface-900-50-token bg-surface-50-900-token rounded-lg focus:border-surface-700-200-token"
+							class="input sub-main-{$currentAppLang}-text text-surface-900-50-token bg-surface-50-900-token rounded-lg focus:border-surface-700-200-token"
 							required
 							name="dateTime"
 							bind:value={$form.dateTime}
@@ -164,12 +166,12 @@
 				<div>
 					<div class="m-0 p-0">
 						<label class="label">
-							<div class="text-lg">
+							<div class="sub-main-{$currentAppLang}-text">
 								<span>{$LL.meeting.mobileNumber()}</span>
 							</div>
 							<input
 								bind:value={$form.mobileNumber}
-								class="input text-lg text-surface-900-50-token bg-surface-50-900-token rounded-lg focus:border-surface-700-200-token"
+								class="input sub-main-{$currentAppLang}-text text-surface-900-50-token bg-surface-50-900-token rounded-lg focus:border-surface-700-200-token"
 								type="tel"
 								title="Input (number)"
 								name="mobileNumber"
@@ -186,7 +188,7 @@
 				<div>
 					<div class="m-0 p-0">
 						<label class="label">
-							<div class="text-lg">
+							<div class="sub-main-{$currentAppLang}-text">
 								<span>{$LL.meeting.email()}</span>
 							</div>
 							<input
@@ -195,7 +197,7 @@
 								autocomplete="email"
 								{...$constraints.email}
 								bind:value={$form.email}
-								class="input text-lg text-surface-900-50-token bg-surface-50-900-token rounded-lg focus:border-surface-700-200-token"
+								class="input sub-main-{$currentAppLang}-text text-surface-900-50-token bg-surface-50-900-token rounded-lg focus:border-surface-700-200-token"
 								placeholder={$LL.meeting.emailPlaceholder()}
 							/>
 						</label>
@@ -208,11 +210,11 @@
 				<div>
 					<div class="m-0 p-0">
 						<label class="label">
-							<div class="text-lg">
+							<div class="sub-main-{$currentAppLang}-text">
 								<span>{$LL.meeting.textArea()}</span>
 							</div>
 							<textarea
-								class="input text-lg text-surface-900-50-token bg-surface-50-900-token rounded-lg focus:border-surface-700-200-token"
+								class="input sub-main-{$currentAppLang}-text text-surface-900-50-token bg-surface-50-900-token rounded-lg focus:border-surface-700-200-token"
 								rows="5"
 								{...$constraints.textArea}
 								placeholder={$LL.meeting.textAreaPlaceholder()}
@@ -229,14 +231,14 @@
 				<div>
 					<div class="h-full flex items-end lg:justify-end p-0 m-0">
 						<div class=" order-last lg:order-first">
-							<p class={`${appliedClass} text-lg mx-3`}>
+							<p class={`${appliedClass} sub-main-{$currentAppLang}-text mx-3`}>
 								{formSubmitMessage}
 							</p>
 						</div>
 						<div>
 							<button
 								type="submit"
-								class="btn variant-ringed-surface rounded-lg px-16 py-[10px] text-lg mt-3"
+								class="btn variant-ringed-surface rounded-lg px-16 py-[10px] sub-main-{$currentAppLang}-text mt-3"
 							>
 								<span class="px-3 mt-1"
 									><svg

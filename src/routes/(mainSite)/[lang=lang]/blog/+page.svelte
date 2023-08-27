@@ -42,7 +42,7 @@
 		<div class="absolute w-[100%] h-full flex items-center justify-center">
 			<div class="container mx-auto px-5 2xl:px-0">
 				<h1
-					class="text-5xl md:text-6xl lg:text-7xl font-medium text-white text-center"
+					class="heading-{$currentAppLang}-1 font-medium text-white text-center"
 					style="text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.8);"
 				>
 					{$LL.blogs.title()}
@@ -61,11 +61,11 @@
 				<!-- image -->
 				<div>
 					{#if $currentAppLang === 'en'}
-						<p class="text-4xl mb-6 text-primary-500 font-medium md:hidden">
+						<p class="heading-{$currentAppLang}-2 mb-6 text-primary-500 font-medium md:hidden">
 							{blog.attributes.Blog_Title}
 						</p>
 					{:else}
-						<p class="text-4xl mb-6 text-primary-500 font-medium md:hidden">
+						<p class="heading-{$currentAppLang}-2 mb-6 text-primary-500 font-medium md:hidden">
 							{blog.attributes.localizations.data[0].attributes.Blog_Title}
 						</p>
 					{/if}
@@ -84,20 +84,20 @@
 				<!-- text -->
 				<div class="h-full w-full flex flex-col justify-center">
 					{#if $currentAppLang === 'en'}
-						<div class="space-y-6">
-							<p class="text-[42px] text-primary-500 font-light hidden md:block">
+						<div class="space-y-8">
+							<p class="heading-{$currentAppLang}-2 text-primary-500 font-light hidden md:block">
 								{blog.attributes.Blog_Title}
 							</p>
-							<p class="text-xl font-normal line-clamp-3 leading-7">
+							<p class="main-{$currentAppLang}-text font-normal line-clamp-3 leading-7">
 								{blog.attributes.Blog_Brief}
 							</p>
 						</div>
 					{:else}
-						<div class="space-y-6">
-							<p class="text-t-[42px] text-primary-500 font-light hidden md:block">
+						<div class="space-y-8">
+							<p class="heading-{$currentAppLang}-2 text-primary-500 font-light hidden md:block">
 								{blog.attributes.localizations.data[0].attributes.Blog_Title}
 							</p>
-							<p class="text-xl font-normal line-clamp-3 leading-7">
+							<p class="main-{$currentAppLang}-text font-normal line-clamp-3 leading-7">
 								{blog.attributes.localizations.data[0].attributes.Blog_Brief}
 							</p>
 						</div>
@@ -108,7 +108,7 @@
 							type="button"
 							aria-label="a link for the blog page"
 							href={`/${$currentAppLang}/blog/${blog.attributes.ID_And_Order}`}
-							class="text-lg font-normal btn variant-ringed-primary w-full rounded-lg py-[12px] mt-6"
+							class="sub-main-{$currentAppLang}-text font-normal btn variant-ringed-primary w-full rounded-lg py-[12px] mt-6"
 							>{$LL.blogs.more()}</a
 						>
 					</div>

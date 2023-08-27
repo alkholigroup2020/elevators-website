@@ -3,6 +3,7 @@
 	import LL from '$i18n/i18n-svelte';
 	import { superForm } from 'sveltekit-superforms/client';
 	import { modeCurrent } from '@skeletonlabs/skeleton';
+	import { currentAppLang } from '$lib/stores/store';
 	import SuperDebug from 'sveltekit-superforms/client/SuperDebug.svelte';
 
 	export let data;
@@ -96,7 +97,7 @@
 		<div class="absolute w-[100%] h-full flex items-center justify-center">
 			<div class="container mx-auto px-5 2xl:px-0">
 				<h1
-					class="text-4xl lg:text-6xl font-medium text-white"
+					class="heading-{$currentAppLang}-2 font-medium text-white"
 					style="text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.8);"
 				>
 					{$LL.newSubscription.title()}
@@ -109,8 +110,8 @@
 <section dir={$pageDirection}>
 	<div class="container mx-auto px-5 2xl:px-0">
 		<!-- intro paragraph -->
-		<div class="py-12 lg:py-16">
-			<p class="text-2xl lg:text-3xl font-light max-lg:text-center pb-5 text-primary-400-500-token">
+		<div class="py-12 lg:py-20">
+			<p class="large-{$currentAppLang}-text font-light max-lg:text-center pb-5 text-primary-500">
 				{$LL.newSubscription.intro()}
 			</p>
 		</div>
@@ -144,11 +145,11 @@
 						</svg>
 					</span>
 					<!-- card title -->
-					<div class="text-3xl font-normal pt-2 pb-8">
+					<div class="heading-{$currentAppLang}-3 font-normal pt-2 pb-8">
 						<p>{$LL.newSubscription.card1.title()}</p>
 					</div>
 					<!-- list -->
-					<ul class="pb-10 space-y-5 text-xl px-5">
+					<ul class="pb-10 space-y-5 main-{$currentAppLang}-text px-5">
 						<li>{$LL.newSubscription.card1.li1()}</li>
 						<li>{$LL.newSubscription.card1.li2()}</li>
 						<li>{$LL.newSubscription.card1.li3()}</li>
@@ -182,11 +183,11 @@
 						</svg>
 					</span>
 					<!-- card title -->
-					<div class="text-3xl font-normal pt-2 pb-8">
+					<div class="heading-{$currentAppLang}-3 font-normal pt-2 pb-8">
 						<p>{$LL.newSubscription.card2.title()}</p>
 					</div>
 					<!-- list -->
-					<ul class="pb-10 space-y-5 text-xl px-5">
+					<ul class="pb-10 space-y-5 main-{$currentAppLang}-text px-5">
 						<li>{$LL.newSubscription.card2.li1()}</li>
 						<li>{$LL.newSubscription.card2.li2()}</li>
 						<li>{$LL.newSubscription.card2.li3()}</li>
@@ -220,11 +221,11 @@
 						</svg>
 					</span>
 					<!-- card title -->
-					<div class="text-3xl font-normal pt-2 pb-8">
+					<div class="heading-{$currentAppLang}-3 font-normal pt-2 pb-8">
 						<p>{$LL.newSubscription.card3.title()}</p>
 					</div>
 					<!-- list -->
-					<ul class="pb-10 space-y-5 text-xl px-5">
+					<ul class="pb-10 space-y-5 main-{$currentAppLang}-text px-5">
 						<li>{$LL.newSubscription.card3.li1()}</li>
 						<li>{$LL.newSubscription.card3.li2()}</li>
 						<li>{$LL.newSubscription.card3.li3()}</li>
@@ -240,7 +241,9 @@
 	<div class="container mx-auto px-5 2xl:px-0">
 		<!-- intro paragraph -->
 		<div class="py-8 lg:py-12">
-			<p class="text-2xl lg:text-3xl font-light text-primary-400-500-token">
+			<p
+				class="large-{$currentAppLang}-text lg:heading-{$currentAppLang}-3 font-light text-primary-500"
+			>
 				{$LL.newSubscription.formIntro()}
 			</p>
 		</div>
@@ -249,8 +252,8 @@
 			<div class="grid lg:grid-cols-2 gap-4 lg:gap-x-16 lg:gap-y-8 pb-12 lg:pb-24">
 				<!-- level selection -->
 				<div class="lg:col-span-2 pb-3">
-					<p class="text-xl pb-5">{$LL.newSubscription.form.selectMSG()}</p>
-					<div class="grid sm:grid-cols-3 text-xl font-light max-lg:space-y-3">
+					<p class="main-{$currentAppLang}-text pb-5">{$LL.newSubscription.form.selectMSG()}</p>
+					<div class="grid sm:grid-cols-3 main-{$currentAppLang}-text font-light max-lg:space-y-3">
 						<label class="flex items-center space-x-2">
 							<input
 								class="radio"
@@ -290,13 +293,13 @@
 				<!-- name -->
 				<div class="m-0 p-0">
 					<label class="label">
-						<div class="text-lg">
+						<div class="sub-main-{$currentAppLang}-text">
 							<span>{$LL.newSubscription.form.fullName()}</span>
 						</div>
 
 						<input
 							bind:value={$form.name}
-							class="input text-lg text-surface-900-50-token bg-surface-50-900-token rounded-lg focus:border-surface-700-200-token"
+							class="input sub-main-{$currentAppLang}-text text-surface-900-50-token bg-surface-50-900-token rounded-lg focus:border-surface-700-200-token"
 							type="text"
 							name="name"
 							{...$constraints.name}
@@ -309,13 +312,13 @@
 				<!-- company -->
 				<div class="m-0 p-0">
 					<label class="label">
-						<div class="text-lg">
+						<div class="sub-main-{$currentAppLang}-text">
 							<span>{$LL.newSubscription.form.companyName()}</span>
 						</div>
 
 						<input
 							bind:value={$form.companyName}
-							class="input text-lg text-surface-900-50-token bg-surface-50-900-token rounded-lg focus:border-surface-700-200-token"
+							class="input sub-main-{$currentAppLang}-text text-surface-900-50-token bg-surface-50-900-token rounded-lg focus:border-surface-700-200-token"
 							type="text"
 							name="companyName"
 							{...$constraints.companyName}
@@ -329,12 +332,12 @@
 				<div>
 					<div class="m-0 p-0">
 						<label class="label">
-							<div class="text-lg">
+							<div class="sub-main-{$currentAppLang}-text">
 								<span>{$LL.newSubscription.form.mobileNumber()}</span>
 							</div>
 							<input
 								bind:value={$form.mobileNumber}
-								class="input text-lg text-surface-900-50-token bg-surface-50-900-token rounded-lg focus:border-surface-700-200-token"
+								class="input sub-main-{$currentAppLang}-text text-surface-900-50-token bg-surface-50-900-token rounded-lg focus:border-surface-700-200-token"
 								type="tel"
 								title="Input (number)"
 								name="mobileNumber"
@@ -351,7 +354,7 @@
 				<div>
 					<div class="m-0 p-0">
 						<label class="label">
-							<div class="text-lg">
+							<div class="sub-main-{$currentAppLang}-text">
 								<span>{$LL.newSubscription.form.email()}</span>
 							</div>
 							<input
@@ -360,7 +363,7 @@
 								autocomplete="email"
 								{...$constraints.email}
 								bind:value={$form.email}
-								class="input text-lg text-surface-900-50-token bg-surface-50-900-token rounded-lg focus:border-surface-700-200-token"
+								class="input sub-main-{$currentAppLang}-text text-surface-900-50-token bg-surface-50-900-token rounded-lg focus:border-surface-700-200-token"
 								placeholder={$LL.newSubscription.form.emailPlaceholder()}
 							/>
 						</label>
@@ -373,11 +376,11 @@
 				<div>
 					<div class="m-0 p-0">
 						<label class="label">
-							<div class="text-lg">
+							<div class="sub-main-{$currentAppLang}-text">
 								<span>{$LL.newSubscription.form.textArea()}</span>
 							</div>
 							<textarea
-								class="input text-lg text-surface-900-50-token bg-surface-50-900-token rounded-lg focus:border-surface-700-200-token"
+								class="input sub-main-{$currentAppLang}-text text-surface-900-50-token bg-surface-50-900-token rounded-lg focus:border-surface-700-200-token"
 								rows="5"
 								{...$constraints.textArea}
 								placeholder={$LL.newSubscription.form.textAreaPlaceholder()}
@@ -394,14 +397,14 @@
 				<div>
 					<div class="h-full flex items-end lg:justify-end p-0 m-0">
 						<div class=" order-last lg:order-first">
-							<p class={`${appliedClass} text-lg mx-3`}>
+							<p class={`${appliedClass} sub-main-{$currentAppLang}-text mx-3`}>
 								{formSubmitMessage}
 							</p>
 						</div>
 						<div>
 							<button
 								type="submit"
-								class="btn variant-ringed-surface rounded-lg px-16 py-[10px] text-lg mt-3"
+								class="btn variant-ringed-surface rounded-lg px-16 py-[10px] sub-main-{$currentAppLang}-text mt-3"
 							>
 								<span class="px-3 mt-1"
 									><svg

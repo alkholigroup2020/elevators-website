@@ -137,9 +137,11 @@
 					</svg>
 				</span>
 			</div>
-			<p class="mt-5 mb-2 lg:mb-0 h3 font-semibold">{$LL.modernDesign()}</p>
+			<p class="mt-5 mb-2 lg:mb-0 heading-{$currentAppLang}-3 font-meduim">
+				{$LL.modernDesign()}
+			</p>
 			<p
-				class="text-center lg:text-justify pt-5 px-2 md:px-[50px] lg:px-1 2xl:px-10 text-xl leading-9"
+				class="text-center lg:text-justify pt-3 lg:pt-5 px-2 md:px-[50px] lg:px-1 2xl:px-10 main-{$currentAppLang}-text leading-7 md:leading-9"
 			>
 				{$LL.modernDesignParagraph()}
 			</p>
@@ -196,9 +198,9 @@
 					>
 				</span>
 			</div>
-			<p class="mt-5 mb-2 lg:mb-0 h3 font-semibold">{$LL.greatIdeas()}</p>
+			<p class="mt-5 mb-2 lg:mb-0 heading-{$currentAppLang}-3 font-meduim">{$LL.greatIdeas()}</p>
 			<p
-				class="text-center lg:text-justify pt-5 px-2 md:px-[50px] lg:px-1 2xl:px-10 text-xl leading-9"
+				class="text-center lg:text-justify pt-3 lg:pt-5 px-2 md:px-[50px] lg:px-1 2xl:px-10 main-{$currentAppLang}-text leading-7 md:leading-9"
 			>
 				{$LL.greatIdeasParagraph()}
 			</p>
@@ -280,9 +282,11 @@
 					</svg>
 				</span>
 			</div>
-			<p class="mt-5 mb-2 lg:mb-0 h3 font-semibold">{$LL.powerfulManagement()}</p>
+			<p class="mt-5 mb-2 lg:mb-0 heading-{$currentAppLang}-3 font-meduim">
+				{$LL.powerfulManagement()}
+			</p>
 			<p
-				class="text-center lg:text-justify pt-5 px-2 md:px-[50px] lg:px-1 2xl:px-10 text-xl leading-9"
+				class="text-center lg:text-justify pt-3 lg:pt-5 px-2 md:px-[50px] lg:px-1 2xl:px-10 main-{$currentAppLang}-text leading-7 md:leading-9"
 			>
 				{$LL.powerfulManagementParagraph()}
 			</p>

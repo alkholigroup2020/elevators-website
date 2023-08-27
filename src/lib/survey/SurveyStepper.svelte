@@ -121,7 +121,7 @@
 <div class="container mx-auto my-5" dir={$pageDirection}>
 	<div>
 		<p
-			class="text-3xl md:text-4xl py-5 md:py-8 mx-5 md:mx-16 xl:mx-32 2xl:mx-48 text-center text-primary-500 font-medium"
+			class="heading-{$currentAppLang}-2 py-5 md:py-8 mx-5 md:mx-16 xl:mx-32 2xl:mx-48 text-center text-primary-500 font-medium"
 		>
 			{$LL.survey.title()}
 		</p>
@@ -150,12 +150,13 @@
 			>
 				<Step locked={firstLock}>
 					<svelte:fragment slot="header">
-						<div class="pb-5 font-normal text-xl md:text-3xl">
+						<div class="pb-5 font-semibold main-{$currentAppLang}-text">
 							<span>{$LL.survey.first.intro()}</span>
 						</div>
 					</svelte:fragment>
 					<div class="pb-5">
-						<span class="text-md md:text-2xl">{$LL.survey.first.question()}</span>
+						<span class="main-{$currentAppLang}-text leading-10">{$LL.survey.first.question()}</span
+						>
 					</div>
 					<div>
 						<Ratings
@@ -179,23 +180,25 @@
 						</Ratings>
 					</div>
 					<div class="pb-5">
-						<span class="text-sm md:text-lg">{$LL.survey.first.note()}</span>
+						<span class="sub-main-{$currentAppLang}-text">{$LL.survey.first.note()}</span>
 					</div>
 				</Step>
 
 				<Step locked={secondLock}>
 					<svelte:fragment slot="header">
-						<div class="pb-5 font-normal text-xl md:text-3xl">
+						<div class="pb-5 font-normal main-{$currentAppLang}-text">
 							<span>{$LL.survey.second.intro()}</span>
 						</div>
 					</svelte:fragment>
 					<div class="pb-5">
-						<span class="text-md md:text-2xl">{$LL.survey.second.question()}</span>
+						<span class="main-{$currentAppLang}-text leading-10"
+							>{$LL.survey.second.question()}</span
+						>
 					</div>
 
 					<div class="md:grid md:grid-cols-6 items-center pb-1">
 						<div>
-							<p class="text-md md:text-xl pt-2">{$LL.survey.second.q1()}</p>
+							<p class="main-{$currentAppLang}-text pt-2">{$LL.survey.second.q1()}</p>
 						</div>
 						<div class="col-span-5">
 							<RadioGroup
@@ -208,7 +211,7 @@
 									name="quality"
 									value={$LL.survey.second.option1()}
 								>
-									<span class="text-md md:text-lg">
+									<span class="sub-main-{$currentAppLang}-text">
 										{$LL.survey.second.option1()}
 									</span>
 								</RadioItem>
@@ -217,7 +220,7 @@
 									name="quality"
 									value={$LL.survey.second.option2()}
 								>
-									<span class="text-md md:text-lg">
+									<span class="sub-main-{$currentAppLang}-text">
 										{$LL.survey.second.option2()}
 									</span>
 								</RadioItem>
@@ -226,7 +229,7 @@
 									name="quality"
 									value={$LL.survey.second.option3()}
 								>
-									<span class="text-md md:text-lg">
+									<span class="sub-main-{$currentAppLang}-text">
 										{$LL.survey.second.option3()}
 									</span>
 								</RadioItem>
@@ -236,7 +239,7 @@
 
 					<div class="md:grid md:grid-cols-6 items-center pb-1">
 						<div>
-							<p class="text-md md:text-xl pt-2">{$LL.survey.second.q2()}</p>
+							<p class="main-{$currentAppLang}-text pt-2">{$LL.survey.second.q2()}</p>
 						</div>
 						<div class="col-span-5">
 							<RadioGroup
@@ -249,7 +252,7 @@
 									name="delivery"
 									value={$LL.survey.second.option1()}
 								>
-									<span class="text-md md:text-lg">
+									<span class="sub-main-{$currentAppLang}-text">
 										{$LL.survey.second.option1()}
 									</span>
 								</RadioItem>
@@ -258,7 +261,7 @@
 									name="delivery"
 									value={$LL.survey.second.option2()}
 								>
-									<span class="text-md md:text-lg">
+									<span class="sub-main-{$currentAppLang}-text">
 										{$LL.survey.second.option2()}
 									</span>
 								</RadioItem>
@@ -267,7 +270,7 @@
 									name="delivery"
 									value={$LL.survey.second.option3()}
 								>
-									<span class="text-md md:text-lg">
+									<span class="sub-main-{$currentAppLang}-text">
 										{$LL.survey.second.option3()}
 									</span>
 								</RadioItem>
@@ -277,7 +280,7 @@
 
 					<div class="md:grid md:grid-cols-6 items-center pb-1">
 						<div>
-							<p class="text-md md:text-xl pt-2">{$LL.survey.second.q3()}</p>
+							<p class="main-{$currentAppLang}-text pt-2">{$LL.survey.second.q3()}</p>
 						</div>
 						<div class="col-span-5">
 							<RadioGroup
@@ -290,7 +293,7 @@
 									name="installation"
 									value={$LL.survey.second.option1()}
 								>
-									<span class="text-md md:text-lg">
+									<span class="sub-main-{$currentAppLang}-text">
 										{$LL.survey.second.option1()}
 									</span>
 								</RadioItem>
@@ -299,7 +302,7 @@
 									name="installation"
 									value={$LL.survey.second.option2()}
 								>
-									<span class="text-md md:text-lg">
+									<span class="sub-main-{$currentAppLang}-text">
 										{$LL.survey.second.option2()}
 									</span>
 								</RadioItem>
@@ -308,7 +311,7 @@
 									name="installation"
 									value={$LL.survey.second.option3()}
 								>
-									<span class="text-md md:text-lg">
+									<span class="sub-main-{$currentAppLang}-text">
 										{$LL.survey.second.option3()}
 									</span>
 								</RadioItem>
@@ -318,7 +321,7 @@
 
 					<div class="md:grid md:grid-cols-6 items-center pb-8 md:pb-12">
 						<div>
-							<p class="text-md md:text-xl pt-2">{$LL.survey.second.q4()}</p>
+							<p class="main-{$currentAppLang}-text pt-2">{$LL.survey.second.q4()}</p>
 						</div>
 						<div class="col-span-5">
 							<RadioGroup
@@ -331,7 +334,7 @@
 									name="behavior"
 									value={$LL.survey.second.option1()}
 								>
-									<span class="text-md md:text-lg">
+									<span class="sub-main-{$currentAppLang}-text">
 										{$LL.survey.second.option1()}
 									</span>
 								</RadioItem>
@@ -340,7 +343,7 @@
 									name="behavior"
 									value={$LL.survey.second.option2()}
 								>
-									<span class="text-md md:text-lg">
+									<span class="sub-main-{$currentAppLang}-text">
 										{$LL.survey.second.option2()}
 									</span>
 								</RadioItem>
@@ -349,7 +352,7 @@
 									name="behavior"
 									value={$LL.survey.second.option3()}
 								>
-									<span class="text-md md:text-lg">
+									<span class="sub-main-{$currentAppLang}-text">
 										{$LL.survey.second.option3()}
 									</span>
 								</RadioItem>
@@ -360,12 +363,13 @@
 
 				<Step locked={thirdLock}>
 					<svelte:fragment slot="header">
-						<div class="pb-5 font-normal text-xl md:text-3xl">
+						<div class="pb-5 font-normal main-{$currentAppLang}-text">
 							<span>{$LL.survey.third.intro()}</span>
 						</div>
 					</svelte:fragment>
 					<div class="pb-5">
-						<span class="text-md md:text-2xl">{$LL.survey.third.question()}</span>
+						<span class="main-{$currentAppLang}-text leading-10">{$LL.survey.third.question()}</span
+						>
 					</div>
 					<div class="pb-8 md:pb-12">
 						<div class="col-span-5">
@@ -379,7 +383,7 @@
 									name="expectations"
 									value={$LL.survey.second.option1()}
 								>
-									<span class="text-md md:text-lg">
+									<span class="sub-main-{$currentAppLang}-text">
 										{$LL.survey.second.option1()}
 									</span>
 								</RadioItem>
@@ -388,7 +392,7 @@
 									name="expectations"
 									value={$LL.survey.second.option2()}
 								>
-									<span class="text-md md:text-lg">
+									<span class="sub-main-{$currentAppLang}-text">
 										{$LL.survey.second.option2()}
 									</span>
 								</RadioItem>
@@ -397,7 +401,7 @@
 									name="expectations"
 									value={$LL.survey.second.option3()}
 								>
-									<span class="text-md md:text-lg">
+									<span class="sub-main-{$currentAppLang}-text">
 										{$LL.survey.second.option3()}
 									</span>
 								</RadioItem>
@@ -408,12 +412,14 @@
 
 				<Step locked={fourthLock}>
 					<svelte:fragment slot="header">
-						<div class="pb-5 font-normal text-xl md:text-3xl">
+						<div class="pb-5 font-normal main-{$currentAppLang}-text">
 							<span>{$LL.survey.fourth.intro()}</span>
 						</div>
 					</svelte:fragment>
 					<div class="mb-1">
-						<span class="text-md md:text-2xl">{$LL.survey.fourth.question()}</span>
+						<span class="main-{$currentAppLang}-text leading-10"
+							>{$LL.survey.fourth.question()}</span
+						>
 					</div>
 					<div class="grid lg:grid-cols-4">
 						<div class="lg:col-span-3">
@@ -440,7 +446,7 @@
 									bind:value={clientMobile}
 									placeholder={$LL.survey.fourth.mobile()}
 								/>
-								<span class="text-sm md:text-md text-warning-600-300-token mx-1"
+								<span class="sub-main-{$currentAppLang}-text text-warning-600-300-token mx-1"
 									>{$LL.survey.fourth.mobileWarning()}</span
 								>
 							</div>

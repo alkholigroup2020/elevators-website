@@ -553,7 +553,7 @@ const en: BaseTranslation = {
 		}
 	},
 	meeting: {
-		title: 'طلب اجتماع',
+		title: 'طلب مقابلــة',
 		intro1: 'هل تفكر في مصعد جديد؟',
 		intro2: 'تواصل معنا وسنرتب مقابلة في أقرب فرصة!',
 		fullName: 'الاسم:',

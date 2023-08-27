@@ -19,7 +19,7 @@
 		<div class="absolute w-[100%] h-full flex items-center justify-center">
 			<div class="container mx-auto px-5 2xl:px-0">
 				<h1
-					class="text-4xl lg:text-7xl font-bold text-white pb-8 2xl:pb-12"
+					class="heading-{$currentAppLang}-1 font-bold text-white pb-8 2xl:pb-12"
 					style="text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.8);"
 				>
 					{$LL.products.passenger.title()}
@@ -27,7 +27,7 @@
 				<a
 					href={`/${$currentAppLang}/meeting`}
 					aria-label="a link to the meeting page"
-					class="btn variant-filled-secondary border border-success-500 rounded-md px-3 lg:px-5 py-2 lg:py-3 text-lg md:text-[22px]"
+					class="btn variant-filled-secondary border border-success-500 rounded-md px-3 lg:px-5 py-2 lg:py-3 main-{$currentAppLang}-text"
 				>
 					{$LL.heroSection.action()}
 				</a>
@@ -50,7 +50,9 @@
 					/>
 				</div>
 				<div>
-					<div class="text-xl space-y-4 lg:space-y-2 xl:space-y-6 2xl:space-y-8 pb-6 lg:pb-0">
+					<div
+						class="main-{$currentAppLang}-text leading-7 space-y-4 lg:space-y-2 xl:space-y-6 2xl:space-y-8 pb-6 lg:pb-0"
+					>
 						<p>
 							{$LL.products.passenger.introSection.p1()}
 						</p>
@@ -70,7 +72,7 @@
 							href={`https://design.doppler.gr/`}
 							target="_blank"
 							aria-label="a link to doppler website"
-							class="btn border rounded-sm border-success-500 btn-md text-lg py-2 px-4 2xl:px-6"
+							class="btn border rounded-sm border-success-500 btn-md sub-main-{$currentAppLang}-text py-2 px-4 2xl:px-6"
 						>
 							{$LL.products.passenger.introSection.link()}
 						</a>
@@ -125,7 +127,7 @@
 		<div class="container mx-auto px-5 2xl:px-0 mb-16 md:mb-20">
 			<div class="mb-6">
 				<!-- Title -->
-				<p class="text-2xl text-primary-500">
+				<p class="heading-{$currentAppLang}-3 text-primary-500">
 					{$LL.products.passenger.secondSection.title()}
 				</p>
 			</div>
@@ -148,7 +150,7 @@
 				<div class="md:col-span-2 xl:px-8">
 					<!-- list -->
 					<ul
-						class="list-disc text-xl space-y-2 lg:space-y-0 xl:space-y-4 leading-9 {$currentAppLang ===
+						class="list-disc main-{$currentAppLang}-text space-y-2 lg:space-y-0 xl:space-y-4 leading-9 {$currentAppLang ===
 						'en'
 							? 'ml-5 md:ml-8 lg:ml-5 xl:ml-1'
 							: 'mr-5 md:mr-8 lg:mr-5 xl:mr-1'}"
@@ -171,12 +173,12 @@
 			<div class="grid lg:grid-cols-3 gap-8 lg:gap-16">
 				<!-- first -->
 				<div>
-					<div class="text-2xl mb-3 text-primary-500">
+					<div class="heading-{$currentAppLang}-3 mb-3 text-primary-500">
 						<p>
 							{$LL.products.passenger.thirdSection.firstTitle()}
 						</p>
 					</div>
-					<div class="space-y-3 text-xl 2xl:text-justify">
+					<div class="space-y-3 main-{$currentAppLang}-text 2xl:text-justify leading-7">
 						<p>
 							{$LL.products.passenger.thirdSection.firstP1()}
 						</p>
@@ -190,12 +192,12 @@
 				</div>
 				<!-- second -->
 				<div>
-					<div class="text-2xl mb-3 text-primary-500">
+					<div class="heading-{$currentAppLang}-3 mb-3 text-primary-500">
 						<p>
 							{$LL.products.passenger.thirdSection.secondTitle()}
 						</p>
 					</div>
-					<div class="space-y-3 text-xl 2xl:text-justify">
+					<div class="space-y-3 main-{$currentAppLang}-text 2xl:text-justify leading-7">
 						<p>
 							{$LL.products.passenger.thirdSection.secondP1()}
 						</p>
@@ -209,12 +211,12 @@
 				</div>
 				<!-- third -->
 				<div>
-					<div class="text-2xl mb-3 text-primary-500">
+					<div class="heading-{$currentAppLang}-3 mb-3 text-primary-500">
 						<p>
 							{$LL.products.passenger.thirdSection.thirdTitle()}
 						</p>
 					</div>
-					<div class="space-y-3 text-xl 2xl:text-justify">
+					<div class="space-y-3 main-{$currentAppLang}-text 2xl:text-justify leading-7">
 						<p>
 							{$LL.products.passenger.thirdSection.thirdP1()}
 						</p>
@@ -265,7 +267,7 @@
 		<div class="container mx-auto px-5 2xl:px-0 mb-16 md:mb-20">
 			<div class="mb-6">
 				<!-- Title -->
-				<p class="text-2xl text-primary-500">
+				<p class="heading-{$currentAppLang}-3 text-primary-500">
 					{$LL.products.passenger.tableSection.title()}
 				</p>
 			</div>

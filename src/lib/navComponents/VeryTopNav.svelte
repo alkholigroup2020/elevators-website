@@ -2,6 +2,7 @@
 	import LL from '$i18n/i18n-svelte';
 	import { LightSwitch } from '@skeletonlabs/skeleton';
 	import LocaleSwitcher from '$lib/LocaleSwitcher.svelte';
+	import { currentAppLang } from '$lib/stores/store';
 
 	$: phoneOnMouseEnter = false;
 	$: mobileOnMouseEnter = false;
@@ -69,7 +70,7 @@
 									/></svg
 								>
 							</span>
-							<span>9200 23 588</span>
+							<span class="sub-main-{$currentAppLang}-text">9200 23 588</span>
 						</a>
 					</li>
 
@@ -87,7 +88,7 @@
 							type="button"
 							href="tel:00966597370785"
 							aria-label="Riyadh branch mobile number"
-							class="btn !bg-transparent px-0 py-1 sm:py-3"
+							class="btn !bg-transparent px-0 py-1 sm:py-3 sub-main-{$currentAppLang}-text"
 						>
 							<span>
 								<svg width="22px" height="22px" viewBox="0 0 70.34 122.88" fill={mobileColor}
@@ -120,7 +121,7 @@
 							type="button"
 							aria-label="Jeddah branch mobile number"
 							href="tel:00966580251227"
-							class="btn !bg-transparent px-0 py-1 sm:py-3"
+							class="btn !bg-transparent px-0 py-1 sm:py-3 sub-main-{$currentAppLang}-text"
 						>
 							<span>
 								<svg width="22px" height="22px" viewBox="0 0 70.34 122.88" fill={jedColor}
@@ -153,7 +154,7 @@
 							type="button"
 							aria-label="our email address"
 							href="mailto:info@buildingtec.com"
-							class="btn !bg-transparent px-0 py-1 sm:py-3"
+							class="btn !bg-transparent px-0 py-1 sm:py-3 sub-main-{$currentAppLang}-text"
 						>
 							<span>
 								<svg

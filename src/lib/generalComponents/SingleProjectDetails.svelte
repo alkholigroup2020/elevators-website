@@ -43,9 +43,11 @@
 	>
 		<!-- title -->
 		{#if $currentAppLang === 'en' ? true : false}
-			<h3 class="h3 px-3 py-5 mb-3">{$modalStore[0].meta.projectName}</h3>
+			<h3 class="heading-{$currentAppLang}-3 px-3 py-5 mb-3">{$modalStore[0].meta.projectName}</h3>
 		{:else}
-			<h3 class="h3 px-3 py-5 mb-3" dir="rtl">{$modalStore[0].meta.projectNameAr}</h3>
+			<h3 class="heading-{$currentAppLang}-3 px-3 py-5 mb-3" dir="rtl">
+				{$modalStore[0].meta.projectNameAr}
+			</h3>
 		{/if}
 
 		<div class="grid grid-cols-1 xl:grid-cols-2 pb-5">
@@ -111,11 +113,11 @@
 			<div class="px-3">
 				<div>
 					{#if $currentAppLang === 'en' ? true : false}
-						<p class="text-xl leading-9 pb-5">
+						<p class="main-{$currentAppLang}-text leading-9 pb-5">
 							{$modalStore[0].meta.projectDescription}
 						</p>
 					{:else}
-						<p class="text-xl leading-9 pb-5" dir="rtl">
+						<p class="main-{$currentAppLang}-text leading-9 pb-5" dir="rtl">
 							{$modalStore[0].meta.projectDescriptionAr}
 						</p>
 					{/if}
@@ -128,10 +130,12 @@
 						<tbody>
 							{#each projectTableData as entry}
 								<tr>
-									<td class="border border-surface-800-100-token rounded-md px-2 text-lg"
+									<td
+										class="border border-surface-800-100-token rounded-md px-2 sub-main-{$currentAppLang}-text"
 										>{entry[0]}</td
 									>
-									<td class="border border-surface-800-100-token rounded-md px-2 text-lg"
+									<td
+										class="border border-surface-800-100-token rounded-md px-2 sub-main-{$currentAppLang}-textsub-"
 										>{entry[1]}</td
 									>
 								</tr>

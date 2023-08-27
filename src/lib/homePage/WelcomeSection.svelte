@@ -12,7 +12,7 @@
 		<div
 			class=" 2xl:text-center px-5 lg:px-[110px] xl:px-[300px] 2xl:px-0 py-9 md:py-12 2xl:py-[70px]"
 		>
-			<h2 class="text-4xl lg:text-4xl 2xl:text-5xl font-semibold">
+			<h2 class="heading-{$currentAppLang}-2 font-semibold leading-9">
 				<span>{$LL.welcomeSection.heading()}</span>
 				<span class="text-primary-500">{$LL.welcomeSection.headingSpan()}</span>
 			</h2>
@@ -46,8 +46,7 @@
 										<svg
 											xmlns="http://www.w3.org/2000/svg"
 											viewBox="0 0 32 32"
-											width="33"
-											height="33"
+											class="w-6 h-6 sm:w-7 sm:h-7"
 											><title>90-Arrow Up</title><g id="_90-Arrow_Up" data-name="90-Arrow Up"
 												><path
 													fill="#d63030"
@@ -66,12 +65,12 @@
 										: 'col-start-2 col-end-9 mr-3 sm:-mr-5 md:-mr-10 lg:-mr-[40px] 2xl:mr-0'}
 								>
 									<p
-										class="text-2xl lg:text-3xl font-medium mb-3 text-primary-500"
+										class="heading-{$currentAppLang}-3 font-medium mb-3 text-primary-500"
 										style="text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);"
 									>
 										{$LL.welcomeSection.firstTitle()}
 									</p>
-									<p class="text-xl leading-9">
+									<p class="main-{$currentAppLang}-text leading-9">
 										{$LL.welcomeSection.firstParagraph()}
 									</p>
 								</div>
@@ -84,8 +83,7 @@
 										<svg
 											xmlns="http://www.w3.org/2000/svg"
 											viewBox="0 0 32 32"
-											width="33"
-											height="33"
+											class="w-6 h-6 sm:w-7 sm:h-7"
 											><title>90-Arrow Up</title><g id="_90-Arrow_Up" data-name="90-Arrow Up"
 												><path
 													fill="#d63030"
@@ -104,12 +102,12 @@
 										: 'col-start-2 col-end-9 mr-3 sm:-mr-5 md:-mr-10 lg:-mr-[40px] 2xl:mr-0'}
 								>
 									<p
-										class="text-2xl lg:text-3xl font-medium mb-3 text-primary-500"
+										class="heading-{$currentAppLang}-3 font-medium mb-3 text-primary-500"
 										style="text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);"
 									>
 										{$LL.welcomeSection.secondTitle()}
 									</p>
-									<p class="text-xl leading-9">
+									<p class="main-{$currentAppLang}-text leading-9">
 										{$LL.welcomeSection.secondParagraph()}
 									</p>
 								</div>
@@ -122,8 +120,7 @@
 										<svg
 											xmlns="http://www.w3.org/2000/svg"
 											viewBox="0 0 32 32"
-											width="33"
-											height="33"
+											class="w-6 h-6 sm:w-7 sm:h-7"
 											><title>90-Arrow Up</title><g id="_90-Arrow_Up" data-name="90-Arrow Up"
 												><path
 													fill="#d63030"
@@ -142,12 +139,12 @@
 										: 'col-start-2 col-end-9 mr-3 sm:-mr-5 md:-mr-10 lg:-mr-[40px] 2xl:mr-0'}
 								>
 									<p
-										class="text-2xl lg:text-3xl font-medium mb-3 text-primary-500 text-custom-shadow"
+										class="heading-{$currentAppLang}-3 font-medium mb-3 text-primary-500 text-custom-shadow"
 										style="text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);"
 									>
 										{$LL.welcomeSection.thirdTitle()}
 									</p>
-									<p class="text-xl leading-9">
+									<p class="main-{$currentAppLang}-text leading-9">
 										{$LL.welcomeSection.thirdParagraph()}
 									</p>
 								</div>

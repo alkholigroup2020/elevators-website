@@ -2,7 +2,7 @@
 	import { pageDirection } from '$lib/stores/store';
 
 	import LL from '$i18n/i18n-svelte';
-
+	import { currentAppLang } from '$lib/stores/store';
 	import { superForm } from 'sveltekit-superforms/client';
 
 	import { Autocomplete, popup } from '@skeletonlabs/skeleton';
@@ -395,7 +395,7 @@
 		<div class="absolute w-[100%] h-full flex items-center justify-center">
 			<div class="container mx-auto px-5 2xl:px-0">
 				<h1
-					class="text-4xl lg:text-6xl font-medium text-white"
+					class="heading-{$currentAppLang}-1 font-medium text-white"
 					style="text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.8);"
 				>
 					{$LL.career.title()}
@@ -408,7 +408,7 @@
 <section dir={$pageDirection}>
 	<div class="container mx-auto px-5 2xl:px-0">
 		<div class="py-12 lg:py-16">
-			<p class="text-2xl lg:text-3xl font-light text-primary-400-500-token">{$LL.career.intro()}</p>
+			<p class="large-{$currentAppLang}-text font-light">{$LL.career.intro()}</p>
 		</div>
 
 		<form method="POST" use:enhance>
@@ -417,13 +417,13 @@
 				<div>
 					<div class="m-0 p-0">
 						<label class="label">
-							<div class="text-lg">
+							<div class="main-{$currentAppLang}-text">
 								<span>{$LL.career.fullName()}</span>
 							</div>
 
 							<input
 								bind:value={$form.name}
-								class="rounded-md input text-lg focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
+								class="rounded-md input main-{$currentAppLang}-text focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
 								type="text"
 								name="name"
 								{...$constraints.name}
@@ -439,13 +439,13 @@
 				<div>
 					<div class="m-0 p-0">
 						<label class="label">
-							<div class="text-lg">
+							<div class="main-{$currentAppLang}-text">
 								<span>{$LL.career.position()}</span>
 							</div>
 							<select
 								name="position"
 								bind:value={$form.position}
-								class="select rounded-md text-lg focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
+								class="select rounded-md main-{$currentAppLang}-text focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
 							>
 								<option class="mb-3" value="Sales Rep">Sales Rep</option>
 								<option class="mb-3" value="Sales Engineer">Sales Engineer</option>
@@ -465,12 +465,12 @@
 					<div class="text-token w-full max-w-[750px] space-y-2">
 						<div class="m-0 p-0">
 							<label class="label">
-								<div class="text-lg">
+								<div class="main-{$currentAppLang}-text">
 									<span>{$LL.career.nationality()}</span>
 								</div>
 
 								<input
-									class="input autocomplete rounded-md text-lg focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
+									class="input autocomplete rounded-md main-{$currentAppLang}-text focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
 									type="search"
 									name="nationality"
 									bind:value={$form.nationality}
@@ -499,13 +499,13 @@
 				<div>
 					<div class="m-0 p-0">
 						<label class="label">
-							<div class="text-lg">
+							<div class="main-{$currentAppLang}-text">
 								<span>{$LL.career.dateOfBirth()}</span>
 							</div>
 							<input
 								class="{$pageDirection === 'rtl'
 									? 'text-right'
-									: ''}  rounded-md input text-lg focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
+									: ''}  rounded-md input main-{$currentAppLang}-text focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
 								title="Input (date)"
 								type="date"
 								name="dateOfBirth"
@@ -523,12 +523,12 @@
 				<div>
 					<div class="m-0 p-0">
 						<label class="label">
-							<div class="text-lg">
+							<div class="main-{$currentAppLang}-text">
 								<span>{$LL.career.mobileNumber()}</span>
 							</div>
 							<input
 								bind:value={$form.mobile}
-								class=" rounded-md input text-lg focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
+								class=" rounded-md input main-{$currentAppLang}-text focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
 								type="tel"
 								title="Input (number)"
 								name="mobile"
@@ -544,7 +544,7 @@
 				<div>
 					<div class="m-0 p-0">
 						<label class="label">
-							<div class="text-lg">
+							<div class="main-{$currentAppLang}-text">
 								<span>{$LL.career.email()}</span>
 							</div>
 							<input
@@ -553,7 +553,7 @@
 								autocomplete="email"
 								{...$constraints.email}
 								bind:value={$form.email}
-								class=" rounded-md input text-lg focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
+								class=" rounded-md input main-{$currentAppLang}-text focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
 								placeholder={$LL.career.emailPlaceholder()}
 							/>
 						</label>
@@ -566,13 +566,13 @@
 				<div>
 					<div class="m-0 p-0">
 						<label class="label">
-							<div class="text-lg">
+							<div class="main-{$currentAppLang}-text">
 								<span>{$LL.career.degreeLevel()}</span>
 							</div>
 							<select
 								name="degreeLevel"
 								bind:value={$form.degreeLevel}
-								class="select rounded-md text-lg focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
+								class="select rounded-md main-{$currentAppLang}-text focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
 							>
 								<option class="mb-3" value="High School">High School</option>
 								<option class="mb-3" value="Certification">Certification</option>
@@ -591,13 +591,13 @@
 				<div>
 					<div class="m-0 p-0">
 						<label class="label">
-							<div class="text-lg">
+							<div class="main-{$currentAppLang}-text">
 								<span>{$LL.career.careerLevel()}</span>
 							</div>
 							<select
 								name="careerLevel"
 								bind:value={$form.careerLevel}
-								class="select rounded-md text-lg focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
+								class="select rounded-md main-{$currentAppLang}-text focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
 							>
 								<option class="mb-3" value="Student">Student</option>
 								<option class="mb-3" value="Entry Level (less than 4 years experience)"
@@ -619,13 +619,13 @@
 				<div>
 					<div class="m-0 p-0">
 						<label class="label">
-							<div class="text-lg">
+							<div class="main-{$currentAppLang}-text">
 								<span>{$LL.career.address()}</span>
 							</div>
 
 							<input
 								bind:value={$form.address}
-								class=" rounded-md input text-lg focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
+								class=" rounded-md input main-{$currentAppLang}-text focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
 								type="text"
 								name="address"
 								{...$constraints.address}
@@ -642,10 +642,12 @@
 					<div class="m-0 p-0">
 						<!-- svelte-ignore a11y-label-has-associated-control -->
 						<label class="label">
-							<div class="text-lg">
+							<div class="main-{$currentAppLang}-text">
 								<span>{$LL.career.employeeCV()}</span>
 								{#if resumeFileName}
-									<span class="text-success-500 text-lg px-2">{resumeFileName}</span>
+									<span class="text-success-500 main-{$currentAppLang}-text px-2"
+										>{resumeFileName}</span
+									>
 								{/if}
 							</div>
 							<!-- bind:files={cvFile} -->
@@ -675,12 +677,12 @@
 				<div>
 					<div class="m-0 p-0">
 						<label class="label">
-							<div class="text-lg">
+							<div class="main-{$currentAppLang}-text">
 								<span>{$LL.career.textArea()}</span>
 							</div>
 
 							<textarea
-								class=" rounded-md input text-lg focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
+								class=" rounded-md input main-{$currentAppLang}-text focus:border-surface-700-200-token bg-surface-50-900-token text-surface-900-50-token"
 								rows="5"
 								{...$constraints.textArea}
 								placeholder={$LL.career.textAreaPlaceholder()}
@@ -698,7 +700,7 @@
 				<div>
 					<div class="h-full flex items-end lg:justify-end p-0 m-0">
 						<div class=" order-last lg:order-first">
-							<p class={`${appliedClass} text-lg mx-3`}>
+							<p class={`${appliedClass} main-{$currentAppLang}-text mx-3`}>
 								{formSubmitMessage}
 							</p>
 						</div>
@@ -706,7 +708,7 @@
 							<button
 								type="submit"
 								disabled={!resumeFileValid}
-								class="btn variant-ringed-surface rounded-lg px-16 py-[10px] text-lg mt-3"
+								class="btn variant-ringed-surface rounded-lg px-16 py-[10px] main-{$currentAppLang}-text mt-3"
 							>
 								<span class="px-3 mt-1"
 									><svg

@@ -18,7 +18,7 @@
 		<div class="absolute w-[100%] h-full flex items-center justify-center">
 			<div class="container mx-auto px-5 2xl:px-0">
 				<h1
-					class="text-5xl lg:text-7xl font-bold text-white pb-16"
+					class="heading-{$currentAppLang}-1 font-bold text-white pb-16"
 					style="text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.8);"
 				>
 					{$LL.aboutUs.title()}
@@ -28,16 +28,16 @@
 	</section>
 
 	<!-- Our Story Section -->
-	<section class="container mx-auto px-5 2xl:px-0 my-12 md:my-16 sm:text-justify">
+	<section class="container mx-auto px-5 2xl:px-0 my-12 md:my-20 sm:text-justify">
 		<div>
-			<p class="text-3xl lg:text-5xl text-primary-500 font-bold mb-4 xl:mb-8">
+			<p class="heading-{$currentAppLang}-2 text-primary-500 font-bold mb-4 xl:mb-12">
 				{$LL.aboutUs.ourStory.title()}
 			</p>
 		</div>
 
 		<div class="grid grid-cols-1 xl:grid-cols-2 gap-12">
 			<div>
-				<ul class="text-xl leading-9 space-y-5">
+				<ul class="main-{$currentAppLang}-text leading-9 space-y-5">
 					<li>{$LL.aboutUs.ourStory.p1()}</li>
 					<li>{$LL.aboutUs.ourStory.p2()}</li>
 				</ul>
@@ -55,12 +55,12 @@
 
 		<div class="grid grid-cols-1 2xl:grid-cols-2 gap-12 mt-10">
 			<div>
-				<ul class="text-xl leading-9 space-y-5">
+				<ul class="main-{$currentAppLang}-text leading-9 space-y-5">
 					<li>{$LL.aboutUs.ourStory.p3()}</li>
 				</ul>
 			</div>
 			<div>
-				<ul class="text-xl leading-9 space-y-5">
+				<ul class="main-{$currentAppLang}-text leading-9 space-y-5">
 					<li>{$LL.aboutUs.ourStory.p4()}</li>
 				</ul>
 			</div>
@@ -72,23 +72,29 @@
 	<!-- Our Values Section -->
 	<section class="container mx-auto px-5 2xl:px-0 mb-8 md:mb-16">
 		<div>
-			<p class="text-3xl lg:text-5xl text-primary-500 font-bold mb-12 text-center">
+			<p class="heading-{$currentAppLang}-2 text-primary-500 font-bold mb-12 text-center">
 				{$LL.aboutUs.ourValues.title()}
 			</p>
 		</div>
 		<div class="grid grid-cols-1 xl:grid-cols-3 gap-12">
 			<div>
 				<div class="space-y-5 mb-8">
-					<p class="text-primary-500 text-3xl font-medium">{$LL.aboutUs.ourValues.v1()}</p>
-					<p class="text-xl leading-9">{$LL.aboutUs.ourValues.p1()}</p>
+					<p class="text-primary-500 heading-{$currentAppLang}-3 font-medium">
+						{$LL.aboutUs.ourValues.v1()}
+					</p>
+					<p class="main-{$currentAppLang}-text leading-9">{$LL.aboutUs.ourValues.p1()}</p>
 				</div>
 				<div class="space-y-5 mb-8">
-					<p class="text-primary-500 text-3xl font-medium">{$LL.aboutUs.ourValues.v2()}</p>
-					<p class="text-xl leading-9">{$LL.aboutUs.ourValues.p2()}</p>
+					<p class="text-primary-500 heading-{$currentAppLang}-3 font-medium">
+						{$LL.aboutUs.ourValues.v2()}
+					</p>
+					<p class="main-{$currentAppLang}-text leading-9">{$LL.aboutUs.ourValues.p2()}</p>
 				</div>
 				<div class="space-y-5 mb-8">
-					<p class="text-primary-500 text-3xl font-medium">{$LL.aboutUs.ourValues.v3()}</p>
-					<p class="text-xl leading-9">{$LL.aboutUs.ourValues.p3()}</p>
+					<p class="text-primary-500 heading-{$currentAppLang}-3 font-medium">
+						{$LL.aboutUs.ourValues.v3()}
+					</p>
+					<p class="main-{$currentAppLang}-text leading-9">{$LL.aboutUs.ourValues.p3()}</p>
 				</div>
 			</div>
 
@@ -107,16 +113,22 @@
 
 			<div class="xl:text-right">
 				<div class="space-y-5 mb-8">
-					<p class="text-primary-500 text-3xl font-medium">{$LL.aboutUs.ourValues.v4()}</p>
-					<p class="text-xl leading-9">{$LL.aboutUs.ourValues.p4()}</p>
+					<p class="text-primary-500 heading-{$currentAppLang}-3 font-medium">
+						{$LL.aboutUs.ourValues.v4()}
+					</p>
+					<p class="main-{$currentAppLang}-text leading-9">{$LL.aboutUs.ourValues.p4()}</p>
 				</div>
 				<div class="space-y-5 mb-8">
-					<p class="text-primary-500 text-3xl font-medium">{$LL.aboutUs.ourValues.v5()}</p>
-					<p class="text-xl leading-9">{$LL.aboutUs.ourValues.p5()}</p>
+					<p class="text-primary-500 heading-{$currentAppLang}-3 font-medium">
+						{$LL.aboutUs.ourValues.v5()}
+					</p>
+					<p class="main-{$currentAppLang}-text leading-9">{$LL.aboutUs.ourValues.p5()}</p>
 				</div>
 				<div class="space-y-5 mb-8">
-					<p class="text-primary-500 text-3xl font-medium">{$LL.aboutUs.ourValues.v6()}</p>
-					<p class="text-xl leading-9">{$LL.aboutUs.ourValues.p6()}</p>
+					<p class="text-primary-500 heading-{$currentAppLang}-3 font-medium">
+						{$LL.aboutUs.ourValues.v6()}
+					</p>
+					<p class="main-{$currentAppLang}-text leading-9">{$LL.aboutUs.ourValues.p6()}</p>
 				</div>
 			</div>
 		</div>
@@ -126,7 +138,7 @@
 	<!-- Why Us Section -->
 	<section class="container mx-auto px-5 2xl:px-0 mb-12 md:mb-16">
 		<div>
-			<p class="text-3xl lg:text-5xl text-primary-500 font-bold mb-4 xl:mb-8">
+			<p class="heading-{$currentAppLang}-2 text-primary-500 font-bold mb-4 xl:mb-12">
 				{$LL.aboutUs.whyUs.title()}
 			</p>
 		</div>
@@ -135,16 +147,16 @@
 			<div>
 				<ul class={$currentAppLang === 'en' ? 'xl:pr-12' : 'xl:pl-12'}>
 					<li>
-						<p class="text-xl pb-5 leading-9">{$LL.aboutUs.whyUs.r1()}</p>
+						<p class="main-{$currentAppLang}-text pb-5 leading-9">{$LL.aboutUs.whyUs.r1()}</p>
 					</li>
 					<li>
-						<p class="text-xl pb-5 leading-9">{$LL.aboutUs.whyUs.r2()}</p>
+						<p class="main-{$currentAppLang}-text pb-5 leading-9">{$LL.aboutUs.whyUs.r2()}</p>
 					</li>
 					<li>
-						<p class="text-xl pb-5 leading-9">{$LL.aboutUs.whyUs.r3()}</p>
+						<p class="main-{$currentAppLang}-text pb-5 leading-9">{$LL.aboutUs.whyUs.r3()}</p>
 					</li>
 					<li>
-						<p class="text-xl pb-5 leading-9">{$LL.aboutUs.whyUs.r4()}</p>
+						<p class="main-{$currentAppLang}-text pb-5 leading-9">{$LL.aboutUs.whyUs.r4()}</p>
 					</li>
 				</ul>
 			</div>

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import CabinsGallery from '$lib/generalComponents/CabinsGallery.svelte';
 	import LL from '$i18n/i18n-svelte';
+	import { currentAppLang } from '$lib/stores/store';
 
 	import { modalStore } from '@skeletonlabs/skeleton';
 	import type { ModalSettings, ModalComponent } from '@skeletonlabs/skeleton';
@@ -96,13 +97,14 @@
 
 <section>
 	<div
+		dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}
 		class="h-[180px] md:h-[250px] relative"
 		style="background: rgba(var(--color-surface-600)) url('/pattern.webp') repeat 50% 22px;"
 	>
 		<div class="absolute w-[100%] h-full flex items-center justify-center">
 			<div class="container mx-auto px-5 2xl:px-0">
 				<h1
-					class="text-4xl lg:text-6xl font-medium text-white"
+					class="heading-{$currentAppLang}-1 font-normal text-white"
 					style="text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.8);"
 				>
 					{$LL.cabins.title()}
@@ -118,13 +120,13 @@
 			class="grid grid-cols-1 min-[500px]:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-8 p-5 2xl:p-0"
 		>
 			{#each imgURLs as one}
-				<button
+				<!-- 
 					on:click={() => {
 						showModal();
 					}}
-					class=" w-full rounded-lg"
 					aria-label="a button to open the project modal"
-				>
+			 -->
+				<div class=" w-full rounded-lg">
 					<div
 						class="px-6 py-2 min-[400px]:px-12 min-[400px]:py-4 min-[500px]:px-0 min-[500px]:py-0"
 					>
@@ -136,7 +138,7 @@
 							class="w-[450px] rounded-md aspect-[1/1.2]"
 						/>
 					</div>
-				</button>
+				</div>
 			{/each}
 		</div>
 	</div>

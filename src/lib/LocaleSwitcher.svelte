@@ -69,13 +69,16 @@
 <svelte:window on:popstate={handlePopStateEvent} />
 
 {#if $currentAppLang === 'en'}
-	<button type="button" class="btn !bg-transparent h-2 text-white px-0">
+	<button
+		type="button"
+		class="btn !bg-transparent h-2 text-white px-0 sub-main-{$currentAppLang}-text"
+	>
 		<a href={`${replaceLocaleInUrl($page.url, 'ar')}`} aria-label="language switch link">العربية</a>
 	</button>
 {/if}
 
 {#if $currentAppLang === 'ar'}
-	<button type="button" class="btn !bg-transparent h-2 text-white">
+	<button type="button" class="btn !bg-transparent h-2 text-white sub-main-{$currentAppLang}-text">
 		<a href={`${replaceLocaleInUrl($page.url, 'en')}`} aria-label="language switch link">English</a>
 	</button>
 {/if}

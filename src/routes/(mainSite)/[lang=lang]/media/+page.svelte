@@ -17,7 +17,7 @@
 		<div class="absolute w-[100%] h-full flex items-center justify-center">
 			<div class="container mx-auto px-5 2xl:px-0">
 				<h1
-					class="text-4xl lg:text-6xl font-medium text-white"
+					class="heading-{$currentAppLang}-1 font-medium text-white"
 					style="text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.8);"
 				>
 					{$LL.media.title()}
@@ -43,10 +43,10 @@
 
 				{#if $currentAppLang === 'en'}
 					<div>
-						<h2 class="text-3xl lg:text-4xl font-medium text-primary-500 pb-3 lg:pb-8">
+						<h2 class="heading-{$currentAppLang}-3 font-meduim text-primary-500 pb-3 lg:pb-8">
 							{video.attributes.title}
 						</h2>
-						<ul class="text-xl space-y-4 leading-9 pr-8">
+						<ul class="main-{$currentAppLang}-text space-y-4 leading-9 pr-8">
 							{#each video.attributes.description as paragraph}
 								<li>
 									<p>{paragraph.description_line}</p>
@@ -56,10 +56,10 @@
 					</div>
 				{:else}
 					<div dir="rtl">
-						<h2 class="text-3xl lg:text-4xl font-medium text-primary-500 pb-3 lg:pb-8">
+						<h2 class="heading-{$currentAppLang}-3 font-medium text-primary-500 pb-3 lg:pb-8">
 							{video.attributes.localizations.data[0].attributes.title}
 						</h2>
-						<ul class="text-xl space-y-4 leading-9 pl-8">
+						<ul class="main-{$currentAppLang}-text space-y-4 leading-9 pl-8">
 							{#each video.attributes.localizations.data[0].attributes.description as paragraph}
 								<li>
 									<p>{paragraph.description_line}</p>

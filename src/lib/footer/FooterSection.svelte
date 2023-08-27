@@ -44,7 +44,7 @@
 	>
 		<!-- Contact Us section -->
 		<div class="col-span-2">
-			<h2 class="text-2xl md:text-3xl font-bold mb-4">{$LL.footer.contact.title()}</h2>
+			<h2 class="heading-{$currentAppLang}-3 font-semibold mb-4">{$LL.footer.contact.title()}</h2>
 
 			<!-- email address -->
 			<div>
@@ -86,7 +86,9 @@
 							</span>
 						</div>
 						<div>
-							<h3 class="text-xl px-3 pt-1">{$LL.footer.contact.email()}</h3>
+							<h3 class="main-{$currentAppLang}-text px-3 pt-1">
+								{$LL.footer.contact.email()}
+							</h3>
 						</div>
 					</div>
 				</a>
@@ -126,7 +128,9 @@
 							</span>
 						</div>
 						<div>
-							<h3 class="text-xl px-3 pt-1">{$LL.footer.contact.riyadhMobile()}</h3>
+							<h3 class="main-{$currentAppLang}-text px-3 pt-1">
+								{$LL.footer.contact.riyadhMobile()}
+							</h3>
 						</div>
 					</div>
 				</a>
@@ -166,7 +170,9 @@
 							</span>
 						</div>
 						<div>
-							<h3 class="text-xl px-3 pt-1">{$LL.footer.contact.jeddahMobile()}</h3>
+							<h3 class="main-{$currentAppLang}-text px-3 pt-1">
+								{$LL.footer.contact.jeddahMobile()}
+							</h3>
 						</div>
 					</div>
 				</a>
@@ -213,7 +219,7 @@
 							</span>
 						</div>
 						<div>
-							<h3 class="text-xl px-3 pt-1">{$LL.footer.contact.hotLine()}</h3>
+							<h3 class="main-{$currentAppLang}-text px-3 pt-1">{$LL.footer.contact.hotLine()}</h3>
 						</div>
 					</div>
 				</a>
@@ -248,7 +254,7 @@
 						</span>
 					</div>
 					<div>
-						<h3 class="text-xl px-3 pt-1">{$LL.footer.contact.locations()}</h3>
+						<p class="main-{$currentAppLang}-text px-3 pt-1">{$LL.footer.contact.locations()}</p>
 					</div>
 				</div>
 			</div>
@@ -257,8 +263,8 @@
 				<Accordion
 					width="w-[70%]"
 					regionControl={$currentAppLang === 'ar'
-						? 'border text-lg border-surface-500 text-right '
-						: 'border text-lg border-surface-500 '}
+						? 'border border-surface-500 text-right sub-main-ar-text'
+						: 'border border-surface-500 sub-main-en-text'}
 				>
 					<AccordionItem>
 						<svelte:fragment slot="summary">{$LL.footer.contact.city1()}</svelte:fragment>
@@ -548,7 +554,7 @@
 				<a
 					href={`/${$currentAppLang}/survey`}
 					aria-label="a link to the survey page"
-					class="hover:text-secondary-300 text-md md:text-lg"
+					class="hover:text-secondary-300 sub-main-{$currentAppLang}-text"
 					>{$LL.footer.surveyLink()}
 				</a>
 			</div>
@@ -556,7 +562,7 @@
 
 		<!-- Message Form section -->
 		<div class="col-span-2">
-			<h2 class="text-2xl md:text-3xl font-bold">{$LL.footer.message.title()}</h2>
+			<h2 class="heading-{$currentAppLang}-3 font-semibold">{$LL.footer.message.title()}</h2>
 			<FooterForm />
 		</div>
 

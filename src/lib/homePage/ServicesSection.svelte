@@ -12,7 +12,7 @@
 >
 	<!-- title section -->
 	<div>
-		<h3 class="text-4xl lg:text-4xl 2xl:text-5xl font-semibold text-primary-500 py-8 2xl:py-12">
+		<h3 class="heading-{$currentAppLang}-2 font-semibold text-primary-500 py-8 2xl:py-12">
 			{$LL.servicesSection.heading()}
 		</h3>
 	</div>
@@ -51,12 +51,12 @@
 								</g>
 							</svg>
 						</span>
-						<h3 class="text-3xl lg:text-4xl text-primary-500 px-4">
+						<h3 class="heading-{$currentAppLang}-3 lg:text-4xl text-primary-500 px-4">
 							{$LL.servicesSection.installationTitle()}
 						</h3>
 					</div>
 					<!-- text -->
-					<div class="py-5 text-xl">
+					<div class="py-5 main-{$currentAppLang}-text">
 						<p class="leading-9">
 							{$LL.servicesSection.installationText()}
 						</p>
@@ -101,12 +101,12 @@
 								/>
 							</svg>
 						</span>
-						<h3 class="text-3xl lg:text-4xl text-primary-500 px-4">
+						<h3 class="heading-{$currentAppLang}-3 lg:text-4xl text-primary-500 px-4">
 							{$LL.servicesSection.trafficTitle()}
 						</h3>
 					</div>
 					<!-- text -->
-					<div class="py-5 text-xl">
+					<div class="py-5 main-{$currentAppLang}-text">
 						<p class="leading-9">
 							{$LL.servicesSection.trafficTextP1()}
 						</p>
@@ -139,7 +139,7 @@
 							/></svg
 						>
 					</span>
-					<h3 class="text-3xl lg:text-4xl text-primary-500 px-4">
+					<h3 class="heading-{$currentAppLang}-3 lg:text-4xl text-primary-500 px-4">
 						{$LL.servicesSection.maintenanceTitle()}
 					</h3>
 				</div>
@@ -147,12 +147,12 @@
 				<div>
 					<!-- planned maintenance -->
 					<div class="pt-5">
-						<h3 class="text-2xl underline underline-offset-[6px]">
+						<h3 class="heading-{$currentAppLang}-3 underline underline-offset-[7px] font-light">
 							{$LL.servicesSection.maintenanceS1Title()}:
 						</h3>
 					</div>
 					<div>
-						<p class="py-2 text-xl leading-9">
+						<p class="py-2 main-{$currentAppLang}-text leading-9">
 							{$LL.servicesSection.maintenanceS1Text()}
 						</p>
 					</div>
@@ -160,12 +160,12 @@
 				<div>
 					<!-- repairs -->
 					<div class="pt-5">
-						<h3 class="text-2xl underline underline-offset-[6px]">
+						<h3 class="heading-{$currentAppLang}-3 underline underline-offset-[7px] font-light">
 							{$LL.servicesSection.maintenanceS2Title()}:
 						</h3>
 					</div>
 					<div>
-						<p class="py-2 text-xl leading-9">
+						<p class="py-2 main-{$currentAppLang}-text leading-9">
 							{$LL.servicesSection.maintenanceS2Text()}
 						</p>
 					</div>
@@ -173,15 +173,15 @@
 				<div>
 					<!-- warranty -->
 					<div class="pt-5">
-						<h3 class="text-2xl underline underline-offset-[6px]">
+						<h3 class="heading-{$currentAppLang}-3 underline underline-offset-[7px] font-light">
 							{$LL.servicesSection.maintenanceS3Title()}:
 						</h3>
 					</div>
 					<div>
-						<p class="py-2 text-xl leading-9">
+						<p class="py-2 main-{$currentAppLang}-text leading-9">
 							{$LL.servicesSection.maintenanceS3TextP1()}
 						</p>
-						<p class="text-xl leading-9">
+						<p class="main-{$currentAppLang}-text leading-9">
 							{$LL.servicesSection.maintenanceS3TextP2()}
 						</p>
 					</div>

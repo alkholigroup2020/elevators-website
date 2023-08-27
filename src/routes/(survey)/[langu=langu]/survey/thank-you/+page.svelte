@@ -1,6 +1,7 @@
 <script lang="ts">
 	import LL from '$i18n/i18n-svelte';
 	import { pageDirection } from '$lib/stores/store';
+	import { currentAppLang } from '$lib/stores/store';
 </script>
 
 <div
@@ -57,11 +58,11 @@
 		</span>
 	</div>
 	<div>
-		<p class="text-xl lg:text-2xl font-semibold py-8">{$LL.survey.thanks.title()}</p>
+		<p class="heading-{$currentAppLang}-3 font-semibold py-8">{$LL.survey.thanks.title()}</p>
 	</div>
 	<div>
-		<p class="text-lg lg:text-xl font-light py-1">{$LL.survey.thanks.p1()}</p>
-		<p class="text-lg lg:text-xl font-light py-1">{$LL.survey.thanks.p2()}</p>
-		<p class="text-lg lg:text-xl font-light py-1">{$LL.survey.thanks.p3()}</p>
+		<p class="main-{$currentAppLang}-text font-light py-2">{$LL.survey.thanks.p1()}</p>
+		<p class="main-{$currentAppLang}-text font-light py-2">{$LL.survey.thanks.p2()}</p>
+		<p class="main-{$currentAppLang}-text font-light py-2">{$LL.survey.thanks.p3()}</p>
 	</div>
 </div>

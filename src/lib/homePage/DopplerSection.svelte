@@ -12,7 +12,7 @@
 	<div class="pb-0 max-w-[1920px] mx-auto lg:px-[80px] xl:px-[265px] 2xl:px-0">
 		<!-- title section -->
 		<div class="py-12">
-			<h2 class="leading-[60px] text-4xl lg:text-4xl 2xl:text-5xl font-semibold px-8">
+			<h2 class="leading-[60px] heading-{$currentAppLang}-2 font-semibold px-5">
 				<span class="text-primary-500">{$LL.dopplerSection.headingSpan()}</span>
 				<span>{$LL.dopplerSection.heading()}</span>
 			</h2>
@@ -27,20 +27,24 @@
 				</div>
 			</div>
 			<!-- text section -->
-			<div class="px-8 w-full space-y-10 xl:pt-3 2xl:pt-0">
-				<p class="text-xl leading-9">
+			<div
+				class="{$currentAppLang === 'en'
+					? 'pl-5 pr-5 2xl:pr-24'
+					: 'pr-5 pl-5 2xl:pl-24'} w-full space-y-10 xl:pt-3 2xl:pt-0"
+			>
+				<p class="main-{$currentAppLang}-text leading-9">
 					{$LL.dopplerSection.p1()}
 				</p>
-				<p class="text-xl leading-9">
+				<p class="main-{$currentAppLang}-text leading-9">
 					{$LL.dopplerSection.p2()}
 				</p>
-				<p class="text-xl leading-9">
+				<p class="main-{$currentAppLang}-text leading-9">
 					{$LL.dopplerSection.p3()}
 				</p>
-				<p class="text-xl leading-9">
+				<p class="main-{$currentAppLang}-text leading-9">
 					{$LL.dopplerSection.p4()}
 				</p>
-				<p class="text-xl leading-9">
+				<p class="main-{$currentAppLang}-text leading-9">
 					{$LL.dopplerSection.p5()}
 				</p>
 			</div>

@@ -20,13 +20,13 @@
 		<div class="absolute w-[100%] h-full flex items-center justify-center">
 			<div class="container mx-auto px-5 2xl:px-0">
 				<h1
-					class="text-white text-3xl md:text-5xl lg:text-7xl font-bold pb-4 min-[300px]:pb-0"
+					class="text-white heading-{$currentAppLang}-1 font-bold pb-4 min-[300px]:pb-0"
 					style="text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.8);"
 				>
 					{$LL.products.carElevators.title()}
 				</h1>
 				<p
-					class="text-white hidden min-[300px]:block text-md min-[500px]:text-lg md:text-2xl lg:text-3xl mb-2 min-[500px]:my-5 md:my-6 2xl:my-10 leading-5 min-[500px]:leading-6 xl:leading-normal
+					class="text-white hidden min-[300px]:block large-{$currentAppLang}-text mb-2 min-[500px]:my-5 md:my-6 2xl:my-10 leading-5 min-[500px]:leading-6 xl:leading-normal
 					px-0 {$currentAppLang === 'en'
 						? 'min-[450px]:pr-8 md:pr-0 xl:pr-64'
 						: 'min-[450px]:pl-8 md:pl-0 xl:pl-64'}"
@@ -36,7 +36,7 @@
 				<a
 					href={`/${$currentAppLang}/meeting`}
 					aria-label="a link to the meeting page"
-					class="btn variant-filled-secondary border border-success-500 rounded-md px-3 lg:px-5 py-2 lg:py-3 text-md md:text-[22px]"
+					class="btn variant-filled-secondary border border-success-500 rounded-md px-3 lg:px-5 py-2 lg:py-3 main-{$currentAppLang}-text"
 				>
 					{$LL.heroSection.action()}
 				</a>
@@ -46,7 +46,7 @@
 
 	<section>
 		<div class="container mx-auto px-5 2xl:px-0 my-8 md:my-12">
-			<div class="text-md md:text-xl leading-7 md:leading-10 text-justify">
+			<div class="main-{$currentAppLang}-text md:leading-10 text-justify">
 				<p>
 					{$LL.products.carElevators.firstSection.p1()}
 				</p>
@@ -55,7 +55,6 @@
 	</section>
 
 	<section>
-		<!-- flex items-center justify-center -->
 		<div class="container mx-auto px-5 2xl:px-0 my-8 md:my-12">
 			<div class="grid lg:grid-cols-3 gap-12 lg:gap-4 xl:gap-12">
 				<div>
@@ -75,12 +74,12 @@
 					</div>
 
 					<div>
-						<p class="text-xl md:text-2xl font-semibold text-primary-500 my-3 lg:text-center">
+						<p class="heading-{$currentAppLang}-3 font-meduim text-primary-500 my-3 lg:text-center">
 							{$LL.products.carElevators.secondSection.first.title()}
 						</p>
 					</div>
 					<div>
-						<p class="text-md md:text-xl leading-7">
+						<p class="main-{$currentAppLang}-text leading-7 sm:leading-9">
 							{$LL.products.carElevators.secondSection.first.p1()}
 						</p>
 					</div>
@@ -103,12 +102,12 @@
 					</div>
 
 					<div>
-						<p class="text-xl md:text-2xl font-semibold text-primary-500 my-3 lg:text-center">
+						<p class="heading-{$currentAppLang}-3 font-meduim text-primary-500 my-3 lg:text-center">
 							{$LL.products.carElevators.secondSection.second.title()}
 						</p>
 					</div>
 					<div>
-						<p class="text-md md:text-xl leading-7">
+						<p class="main-{$currentAppLang}-text leading-7 sm:leading-9">
 							{$LL.products.carElevators.secondSection.second.p1()}
 						</p>
 					</div>
@@ -130,12 +129,12 @@
 						/>
 					</div>
 					<div>
-						<p class="text-xl md:text-2xl font-semibold text-primary-500 my-3 lg:text-center">
+						<p class="heading-{$currentAppLang}-3 font-meduim text-primary-500 my-3 lg:text-center">
 							{$LL.products.carElevators.secondSection.third.title()}
 						</p>
 					</div>
 					<div>
-						<p class="text-md md:text-xl leading-7">
+						<p class="main-{$currentAppLang}-text leading-7 sm:leading-9">
 							{$LL.products.carElevators.secondSection.third.p1()}
 						</p>
 					</div>
@@ -147,7 +146,7 @@
 	<section>
 		<div class="container mx-auto px-5 2xl:px-0 my-12 md:my-16">
 			<div>
-				<p class="text-2xl md:text-3xl font-semibold text-primary-500 my-3">
+				<p class="text-2xl md:text-3xl font-meduim text-primary-500 my-3">
 					{$LL.products.carElevators.thirdSection.title()}
 				</p>
 			</div>

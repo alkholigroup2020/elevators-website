@@ -79,7 +79,7 @@
 	<div class="container mx-auto pb-16 px-3 2xl:px-0">
 		<!-- title section -->
 		<div class="text-center py-9 md:py-12 2xl:py-[70px]">
-			<h2 class="text-4xl lg:text-4xl 2xl:text-5xl font-semibold">
+			<h2 class="heading-{$currentAppLang}-2 font-semibold">
 				<span class="text-primary-500">{$LL.projects.title()}</span>
 			</h2>
 		</div>
@@ -132,13 +132,15 @@
 
 								<div class="p-5">
 									{#if $currentAppLang === 'en' ? true : false}
-										<h3 class="mb-1 text-2xl font-medium leading-9 line-clamp-2 h-[4.5rem]">
+										<h3
+											class="mb-1 main-{$currentAppLang}-text font-medium leading-9 line-clamp-2 h-[4.5rem]"
+										>
 											{project.attributes.projectTitle}
 										</h3>
 									{:else}
 										<h3
 											dir="rtl"
-											class="mb-1 text-2xl font-medium leading-9 line-clamp-2 h-[4.5rem]"
+											class="mb-1 main-{$currentAppLang}-text font-medium leading-9 line-clamp-2 h-[4.5rem]"
 										>
 											{project.attributes.localizations.data[0].attributes.projectTitle}
 										</h3>
@@ -148,7 +150,7 @@
 									<div class="flex justify-end" dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}>
 										<button
 											aria-label="a button to open the project modal"
-											class="btn variant-ghost rounded-lg border border-surface-500 text-lg"
+											class="btn variant-ghost rounded-lg border border-surface-500 sub-main-{$currentAppLang}-text"
 											on:click={() => {
 												updateProjectData(project.attributes);
 											}}><span>{$LL.projects.more()}</span></button

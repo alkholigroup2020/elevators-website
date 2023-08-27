@@ -3,7 +3,7 @@ import { request, gql } from 'graphql-request';
 
 const query = gql`
 	{
-		cabinImages {
+		cabinImages(pagination: { limit: 100 }) {
 			data {
 				attributes {
 					description

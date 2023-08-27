@@ -1,5 +1,6 @@
 <script lang="ts">
 	import LL from '$i18n/i18n-svelte';
+	import { currentAppLang } from '$lib/stores/store';
 	import { pageDirection } from '$lib/stores/store';
 </script>
 
@@ -58,16 +59,16 @@
 	</div>
 
 	<div>
-		<p class="text-xl lg:text-2xl font-semibold mt-3 mb-2">{$LL.survey.error.title1()}</p>
-		<p class="text-xl lg:text-2xl font-semibold mb-8">{$LL.survey.error.title2()}</p>
+		<p class="heading-{$currentAppLang}-3 font-meduim mt-3 mb-5">{$LL.survey.error.title1()}</p>
+		<p class="heading-{$currentAppLang}-3 font-meduim mb-8">{$LL.survey.error.title2()}</p>
 	</div>
 	<div>
-		<p class="text-lg lg:text-xl font-light pb-1">{$LL.survey.error.p1()}</p>
-		<p class="text-lg lg:text-xl font-light py-1">{$LL.survey.error.p2()}</p>
+		<p class="main-{$currentAppLang}-text font-light pb-2">{$LL.survey.error.p1()}</p>
+		<p class="main-{$currentAppLang}-text font-light pt-3">{$LL.survey.error.p2()}</p>
 	</div>
 	<div>
 		<button
-			class="btn variant-ringed-surface rounded-md px-6 md:px-8 py-1 text-lg lg:text-xl font-light mt-8"
+			class="btn variant-ringed-surface rounded-md px-6 md:px-8 py-1 main-{$currentAppLang}-text font-light mt-8"
 			on:click={() => {
 				window.history.go(-1);
 			}}

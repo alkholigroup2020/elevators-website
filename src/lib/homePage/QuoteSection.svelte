@@ -6,7 +6,7 @@
 <section id="quote" class="container mx-auto pb-16 px-5 2xl:px-0">
 	<!-- title section -->
 	<div class="text-center py-9 md:py-12 2xl:py-[70px]">
-		<h2 class="text-4xl lg:text-4xl 2xl:text-5xl font-semibold">
+		<h2 class="heading-{$currentAppLang}-2 font-semibold">
 			<span class="text-primary-500">{$LL.quoteRequest.title()}</span>
 		</h2>
 	</div>
@@ -32,7 +32,7 @@
 				<hr />
 				<div class="px-7 py-6 md:py-8 w-full text-center">
 					<h3
-						class="text-lg sm:text-2xl lg:text-[25px] font-medium text-secondary-800-100-token"
+						class="heading-{$currentAppLang}-3 font-medium text-secondary-800-100-token"
 						data-toc-ignore
 					>
 						{$LL.quoteRequest.newElevator()}
@@ -59,7 +59,7 @@
 				<hr />
 				<div class="px-7 py-6 md:py-8 w-full text-center">
 					<h3
-						class="text-lg sm:text-2xl lg:text-[25px] font-medium text-secondary-800-100-token"
+						class="heading-{$currentAppLang}-3 font-medium text-secondary-800-100-token"
 						data-toc-ignore
 					>
 						{$LL.quoteRequest.newMaintenanceContract()}

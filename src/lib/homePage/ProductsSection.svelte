@@ -10,12 +10,14 @@
 	dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}
 >
 	<div>
-		<h3 class="text-4xl lg:text-4xl 2xl:text-5xl font-semibold text-primary-500 py-12 2xl:py-16">
+		<h3 class="heading-{$currentAppLang}-2 font-semibold text-primary-500 py-12 2xl:py-16">
 			{$LL.productsSection.heading()}
 		</h3>
 	</div>
 
-	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 xl:gap-[90px] gap-y-15 pb-12">
+	<div
+		class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 2xl:gap-[90px] gap-y-15 pb-12"
+	>
 		<!-- passenger-elevators -->
 		<a
 			class="card bg-transparent card-hover overflow-hidden shadow-md"
@@ -29,11 +31,14 @@
 				/>
 			</header>
 			<div class="p-4 space-y-4">
-				<h3 class="text-2xl lg:text-3xl font-medium mb-3 text-primary-500 py-3" data-toc-ignore>
+				<h3
+					class="heading-{$currentAppLang}-3 font-medium mb-3 text-primary-500 py-3"
+					data-toc-ignore
+				>
 					{$LL.productsSection.passengerElevatorsHeading()}
 				</h3>
 				<article>
-					<p class="text-xl leading-9 pb-3">
+					<p class="main-{$currentAppLang}-text leading-9 pb-3">
 						{$LL.productsSection.passengerElevatorsBrief()}
 					</p>
 				</article>
@@ -53,11 +58,14 @@
 				/>
 			</header>
 			<div class="p-4 space-y-4">
-				<h3 class="text-2xl lg:text-3xl font-medium mb-3 text-primary-500 py-3" data-toc-ignore>
+				<h3
+					class="heading-{$currentAppLang}-3 font-medium mb-3 text-primary-500 py-3"
+					data-toc-ignore
+				>
 					{$LL.productsSection.homeElevatorsHeading()}
 				</h3>
 				<article>
-					<p class="text-xl leading-9 pb-3">
+					<p class="main-{$currentAppLang}-text leading-9 pb-3">
 						{$LL.productsSection.homeElevatorsBrief()}
 					</p>
 				</article>
@@ -77,11 +85,14 @@
 				/>
 			</header>
 			<div class="p-4 space-y-4">
-				<h3 class="text-2xl lg:text-3xl font-medium mb-3 text-primary-500 py-3" data-toc-ignore>
+				<h3
+					class="heading-{$currentAppLang}-3 font-medium mb-3 text-primary-500 py-3"
+					data-toc-ignore
+				>
 					{$LL.productsSection.carElevatorHeading()}
 				</h3>
 				<article>
-					<p class="text-xl leading-9 pb-3">
+					<p class="main-{$currentAppLang}-text leading-9 pb-3">
 						{$LL.productsSection.carElevatorBrief()}
 					</p>
 				</article>
@@ -101,11 +112,14 @@
 				/>
 			</header>
 			<div class="p-4 space-y-4">
-				<h3 class="text-2xl lg:text-3xl font-medium mb-3 text-primary-500 py-3" data-toc-ignore>
+				<h3
+					class="heading-{$currentAppLang}-3 font-medium mb-3 text-primary-500 py-3"
+					data-toc-ignore
+				>
 					{$LL.productsSection.cargoElevatorsHeading()}
 				</h3>
 				<article>
-					<p class="text-xl leading-9 pb-3">
+					<p class="main-{$currentAppLang}-text leading-9 pb-3">
 						{$LL.productsSection.cargoElevatorsBrief()}
 					</p>
 				</article>
@@ -125,11 +139,14 @@
 				/>
 			</header>
 			<div class="p-4 space-y-4">
-				<h3 class="text-2xl lg:text-3xl font-medium mb-3 text-primary-500 py-3" data-toc-ignore>
+				<h3
+					class="heading-{$currentAppLang}-3 font-medium mb-3 text-primary-500 py-3"
+					data-toc-ignore
+				>
 					{$LL.productsSection.dumbWaitersHeading()}
 				</h3>
 				<article>
-					<p class="text-xl leading-9 pb-3">
+					<p class="main-{$currentAppLang}-text leading-9 pb-3">
 						{$LL.productsSection.dumbWaitersBrief()}
 					</p>
 				</article>
@@ -149,11 +166,14 @@
 				/>
 			</header>
 			<div class="p-4 space-y-4">
-				<h3 class="text-2xl lg:text-3xl font-medium mb-3 text-primary-500 py-3" data-toc-ignore>
+				<h3
+					class="heading-{$currentAppLang}-3 font-medium mb-3 text-primary-500 py-3"
+					data-toc-ignore
+				>
 					{$LL.productsSection.escalatorHeading()}
 				</h3>
 				<article>
-					<p class="text-xl leading-9 pb-3">
+					<p class="main-{$currentAppLang}-text leading-9 pb-3">
 						{$LL.productsSection.escalatorBrief()}
 					</p>
 				</article>
@@ -173,11 +193,14 @@
 				/>
 			</header>
 			<div class="p-4 space-y-4">
-				<h3 class="text-2xl lg:text-3xl font-medium mb-3 text-primary-500 py-3" data-toc-ignore>
+				<h3
+					class="heading-{$currentAppLang}-3 font-medium mb-3 text-primary-500 py-3"
+					data-toc-ignore
+				>
 					{$LL.productsSection.panoramicElevatorsHeading()}
 				</h3>
 				<article>
-					<p class="text-xl leading-9 pb-3">
+					<p class="main-{$currentAppLang}-text leading-9 pb-3">
 						{$LL.productsSection.panoramicElevatorsBrief()}
 					</p>
 				</article>
@@ -197,11 +220,14 @@
 				/>
 			</header>
 			<div class="p-4 space-y-4">
-				<h3 class="text-2xl lg:text-3xl font-medium mb-3 text-primary-500 py-3" data-toc-ignore>
+				<h3
+					class="heading-{$currentAppLang}-3 font-medium mb-3 text-primary-500 py-3"
+					data-toc-ignore
+				>
 					{$LL.productsSection.modernizationHeading()}
 				</h3>
 				<article>
-					<p class="text-xl leading-9 pb-3">
+					<p class="main-{$currentAppLang}-text leading-9 pb-3">
 						{$LL.productsSection.modernizationBrief()}
 					</p>
 				</article>
@@ -221,11 +247,14 @@
 				/>
 			</header>
 			<div class="p-4 space-y-4">
-				<h3 class="text-2xl lg:text-3xl font-medium mb-3 text-primary-500 py-3" data-toc-ignore>
+				<h3
+					class="heading-{$currentAppLang}-3 font-medium mb-3 text-primary-500 py-3"
+					data-toc-ignore
+				>
 					{$LL.productsSection.spsHeading()}
 				</h3>
 				<article>
-					<p class="text-xl leading-9 pb-3">
+					<p class="main-{$currentAppLang}-text leading-9 pb-3">
 						{$LL.productsSection.spsBrief()}
 					</p>
 				</article>

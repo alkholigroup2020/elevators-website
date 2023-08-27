@@ -3,7 +3,7 @@
 	import LL from '$i18n/i18n-svelte';
 	import { superForm } from 'sveltekit-superforms/client';
 	import { modeCurrent } from '@skeletonlabs/skeleton';
-
+	import { currentAppLang } from '$lib/stores/store';
 	export let data;
 	let newElevatorFormSettings: any;
 	newElevatorFormSettings = data.newElevatorFormSettings;
@@ -91,7 +91,7 @@
 		<div class="absolute w-[100%] h-full flex items-center justify-center">
 			<div class="container mx-auto px-5 2xl:px-0">
 				<h1
-					class="text-4xl lg:text-6xl font-medium text-white"
+					class="heading-{$currentAppLang}-2 font-medium text-white"
 					style="text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.8);"
 				>
 					{$LL.newElevator.title()}
@@ -104,10 +104,10 @@
 <section dir={$pageDirection}>
 	<div class="container mx-auto px-5 2xl:px-0">
 		<div class="py-12 lg:pt-16">
-			<p class="text-2xl lg:text-3xl font-light text-primary-400-500-token">
+			<p class="large-{$currentAppLang}-text font-light text-primary-400-500-token">
 				{$LL.newElevator.intro1()}
 			</p>
-			<p class="text-2xl lg:text-3xl font-light text-primary-400-500-token pt-3 lg:pt-5">
+			<p class="large-{$currentAppLang}-text font-light text-primary-400-500-token pt-3 lg:pt-5">
 				{$LL.newElevator.intro2()}
 			</p>
 		</div>

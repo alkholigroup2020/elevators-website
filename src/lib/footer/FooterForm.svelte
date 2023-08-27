@@ -91,7 +91,7 @@
 		<!-- name -->
 		<div class="my-2">
 			<label class="label">
-				<div class="text-lg -mb-1">
+				<div class="sub-main-{$currentAppLang}-text -mb-1">
 					<span>{$LL.footer.message.form.fullName()}</span>
 				</div>
 
@@ -111,7 +111,7 @@
 		<!-- email -->
 		<div class="my-2">
 			<label class="label">
-				<div class="text-lg -mb-1">
+				<div class="sub-main-{$currentAppLang}-text -mb-1">
 					<span>{$LL.footer.message.form.email()}</span>
 				</div>
 				<input
@@ -131,7 +131,7 @@
 		<!-- mobile number -->
 		<div class="my-2">
 			<label class="label">
-				<div class="text-lg -mb-1">
+				<div class="sub-main-{$currentAppLang}-text -mb-1">
 					<span>{$LL.footer.message.form.mobileNumber()}</span>
 				</div>
 
@@ -152,7 +152,7 @@
 		<!-- textarea -->
 		<div class="my-2">
 			<label class="label">
-				<div class="text-lg -mb-1">
+				<div class="sub-main-{$currentAppLang}-text -mb-1">
 					<span>{$LL.footer.message.form.textArea()}</span>
 				</div>
 
@@ -175,7 +175,7 @@
 			<div>
 				<button
 					type="submit"
-					class="btn variant-ghost rounded-md border border-success-800 px-8 py-[5px] text-lg mt-3"
+					class="btn variant-ghost rounded-md border border-success-800 px-8 py-[5px] sub-main-{$currentAppLang}-text mt-3"
 				>
 					<span class="px-3"
 						><svg
@@ -195,7 +195,7 @@
 				</button>
 			</div>
 			<div>
-				<p class={`${appliedClass} text-lg mx-3`}>
+				<p class={`${appliedClass} sub-main-{$currentAppLang}-text mx-3`}>
 					{formSubmitMessage}
 				</p>
 			</div>

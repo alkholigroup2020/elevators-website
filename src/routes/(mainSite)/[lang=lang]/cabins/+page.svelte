@@ -2,11 +2,11 @@
 	import CabinsGallery from '$lib/generalComponents/CabinsGallery.svelte';
 	import LL from '$i18n/i18n-svelte';
 	import { currentAppLang } from '$lib/stores/store';
-
+	import { onMount } from 'svelte';
 	import { modalStore } from '@skeletonlabs/skeleton';
 	import type { ModalSettings, ModalComponent } from '@skeletonlabs/skeleton';
 
-	export let data;
+	let server_response: any;
 
 	type InputData = {
 		attributes: {
@@ -62,8 +62,6 @@
 		});
 	}
 
-	const imgURLs = transformData(data.pageCMSData);
-
 	const modalComponent: ModalComponent = {
 		// Pass a reference to your custom component
 		ref: CabinsGallery
@@ -93,6 +91,27 @@
 		};
 		modalStore.trigger(modal);
 	}
+
+	const getCabinsData = async () => {
+		try {
+			const response = await fetch('/api/cabins-data');
+
+			const cabinsData = await response.json();
+
+			server_response = transformData(cabinsData);
+
+			// Check if the request was successful
+			if (!response.ok) {
+				throw new Error();
+			}
+		} catch (error) {
+			console.error('🚀 Error:', error);
+		}
+	};
+
+	onMount(() => {
+		getCabinsData();
+	});
 </script>
 
 <section>
@@ -110,36 +129,37 @@
 					{$LL.cabins.title()}
 				</h1>
 			</div>
+
+			<!-- <div class="px-12">
+				<button on:click={getCabinsData}>Roll the dice</button>
+				{#if server_response !== undefined}
+					<p>{server_response}</p>
+				{/if}
+			</div> -->
 		</div>
 	</div>
 </section>
 
-<section>
-	<div class="container mx-auto py-5 md:py-16">
-		<div
-			class="grid grid-cols-1 min-[500px]:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-8 p-5 2xl:p-0"
-		>
-			{#each imgURLs as one}
-				<!-- 
-					on:click={() => {
-						showModal();
-					}}
-					aria-label="a button to open the project modal"
-			 -->
-				<div class=" w-full rounded-lg">
-					<div
-						class="px-6 py-2 min-[400px]:px-12 min-[400px]:py-4 min-[500px]:px-0 min-[500px]:py-0"
-					>
-						<!-- srcset="/about-us/why-us/Why_Choose_Us_Final_600x420.webp 768w, /about-us/why-us/Why_Choose_Us_Final_800x480.webp 99999w" -->
-						<!-- 400px -->
-						<img
-							src={`https://cms.buildingtec-elevators.com${one.medium}`}
-							alt={one.alt}
-							class="w-[450px] rounded-md aspect-[1/1.2]"
-						/>
+{#if server_response !== undefined}
+	<section>
+		<div class="container mx-auto py-5 md:py-16">
+			<div
+				class="grid grid-cols-1 min-[500px]:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-8 p-5 2xl:p-0"
+			>
+				{#each server_response as one}
+					<div class=" w-full rounded-lg">
+						<div
+							class="px-6 py-2 min-[400px]:px-12 min-[400px]:py-4 min-[500px]:px-0 min-[500px]:py-0"
+						>
+							<img
+								src={`https://cms.buildingtec-elevators.com${one.medium}`}
+								alt={one.alt}
+								class="w-[450px] rounded-md aspect-[1/1.2]"
+							/>
+						</div>
 					</div>
-				</div>
-			{/each}
+				{/each}
+			</div>
 		</div>
-	</div>
-</section>
+	</section>
+{/if}

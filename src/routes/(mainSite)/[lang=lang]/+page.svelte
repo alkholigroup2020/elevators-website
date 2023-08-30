@@ -9,7 +9,7 @@
 	import ProjectsSection from '$lib/homePage/ProjectsSection.svelte';
 	import QuoteSection from '$lib/homePage/QuoteSection.svelte';
 
-	export let data;
+	// export let data;
 </script>
 
 <HeroSection />
@@ -24,7 +24,7 @@
 
 <ServicesSection />
 
-<ProjectsSection sectionData={data.data.homePageCMSData.projectsData} />
+<ProjectsSection />
 
 <QuoteSection />
 

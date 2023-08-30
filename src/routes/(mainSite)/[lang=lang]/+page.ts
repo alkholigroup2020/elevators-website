@@ -22,7 +22,7 @@ export const load: PageLoad = async ({ parent, data }) => {
 
 	return {
 		// setting the website title
-		title: $LL.title(),
-		data
+		title: $LL.title()
+		// data
 	};
 };

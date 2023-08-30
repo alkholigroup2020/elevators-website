@@ -2,10 +2,17 @@
 	import { pageDirection } from '$lib/stores/store';
 	import { currentAppLang } from '$lib/stores/store';
 	import LL from '$i18n/i18n-svelte';
-	import LoadingSpinner from '$lib/generalComponents/LoadingSpinner.svelte';
+	import { onMount } from 'svelte';
 
-	export let data;
-	const blogsData = data.props.pageCMSData;
+	import { ConicGradient } from '@skeletonlabs/skeleton';
+	import type { ConicStop } from '@skeletonlabs/skeleton';
+	const conicStops: ConicStop[] = [
+		{ color: 'transparent', start: 0, end: 25 },
+		{ color: 'rgb(var(--color-primary-500))', start: 75, end: 100 }
+	];
+
+	// export let data;
+	// const blogsData = data.props.pageCMSData;
 
 	// A type representing the structure of your data
 	type DataType = {
@@ -28,10 +35,35 @@
 	};
 
 	// cms array of data
-	let cmsData: DataType[] = blogsData;
+	// let cmsData: DataType[] = blogsData;
 
 	// Sorting the array based on the `ID_And_Order` property
-	const blogs = cmsData.sort((a, b) => a.attributes.ID_And_Order - b.attributes.ID_And_Order);
+	// const blogs = cmsData.sort((a, b) => a.attributes.ID_And_Order - b.attributes.ID_And_Order);
+
+	let blogs: any;
+
+	const getBlogsData = async () => {
+		try {
+			const response = await fetch('/api/blogs/');
+
+			const blogsData: DataType[] = await response.json();
+
+			blogs = blogsData.sort((a, b) => a.attributes.ID_And_Order - b.attributes.ID_And_Order);
+
+			// sectionData = projectsData;
+
+			// Check if the request was successful
+			if (!response.ok) {
+				throw new Error();
+			}
+		} catch (error) {
+			console.error('🚀 Error:', error);
+		}
+	};
+
+	onMount(() => {
+		getBlogsData();
+	});
 </script>
 
 <section dir={$pageDirection}>
@@ -56,64 +88,72 @@
 	<div
 		class="max-w-[1100px] mx-auto px-5 min-[420px]:px-12 min-[550px]:px-16 min-[650px]:px-[100px] min-[700px]:px-[125px] md:px-5 lg:px-0"
 	>
-		{#each blogs as blog}
-			<div class="grid md:grid-cols-2 gap-4 md:gap-8 py-12 md:py-16">
-				<!-- image -->
-				<div>
-					{#if $currentAppLang === 'en'}
-						<p class="heading-{$currentAppLang}-2 mb-6 text-primary-500 font-medium md:hidden">
-							{blog.attributes.Blog_Title}
-						</p>
-					{:else}
-						<p class="heading-{$currentAppLang}-2 mb-6 text-primary-500 font-medium md:hidden">
-							{blog.attributes.localizations.data[0].attributes.Blog_Title}
-						</p>
-					{/if}
-
-					{#if blog.attributes.Blog_Main_Image_w550_h385.data}
-						<img
-							src={`https://cms.buildingtec-elevators.com${blog.attributes.Blog_Main_Image_w550_h385.data.attributes.url}`}
-							alt="blog post"
-							class="w-full aspect-[1/0.7] rounded-lg"
-						/>
-					{:else}
-						<div class="w-full aspect-[1/0.7] border rounded-lg" />
-					{/if}
-				</div>
-
-				<!-- text -->
-				<div class="h-full w-full flex flex-col justify-center">
-					{#if $currentAppLang === 'en'}
-						<div class="space-y-8">
-							<p class="heading-{$currentAppLang}-2 text-primary-500 font-light hidden md:block">
-								{blog.attributes.Blog_Title}
-							</p>
-							<p class="main-{$currentAppLang}-text font-normal line-clamp-3 leading-7">
-								{blog.attributes.Blog_Brief}
-							</p>
-						</div>
-					{:else}
-						<div class="space-y-8">
-							<p class="heading-{$currentAppLang}-2 text-primary-500 font-light hidden md:block">
-								{blog.attributes.localizations.data[0].attributes.Blog_Title}
-							</p>
-							<p class="main-{$currentAppLang}-text font-normal line-clamp-3 leading-7">
-								{blog.attributes.localizations.data[0].attributes.Blog_Brief}
-							</p>
-						</div>
-					{/if}
-
-					<div class="max-w-[40%]">
-						<a
-							type="button"
-							aria-label="a link for the blog page"
-							href={`/${$currentAppLang}/blog/${blog.attributes.ID_And_Order}`}
-							class="sub-main-{$currentAppLang}-text font-normal btn variant-ringed-primary w-full rounded-lg py-[12px] mt-6"
-							>{$LL.blogs.more()}</a
-						>
-					</div>
+		{#if !blogs}
+			<div class="w-full h-[750px] flex justify-center items-top">
+				<div class="mt-32">
+					<ConicGradient stops={conicStops} width="w-8 md:w-16 2xl:w-20" spin />
 				</div>
 			</div>
-		{/each}
+		{:else}
+			{#each blogs as blog}
+				<div class="grid md:grid-cols-2 gap-4 md:gap-8 py-12 md:py-16">
+					<!-- image -->
+					<div>
+						{#if $currentAppLang === 'en'}
+							<p class="heading-{$currentAppLang}-2 mb-6 text-primary-500 font-medium md:hidden">
+								{blog.attributes.Blog_Title}
+							</p>
+						{:else}
+							<p class="heading-{$currentAppLang}-2 mb-6 text-primary-500 font-medium md:hidden">
+								{blog.attributes.localizations.data[0].attributes.Blog_Title}
+							</p>
+						{/if}
+
+						{#if blog.attributes.Blog_Main_Image_w550_h385.data}
+							<img
+								src={`https://cms.buildingtec-elevators.com${blog.attributes.Blog_Main_Image_w550_h385.data.attributes.url}`}
+								alt="blog post"
+								class="w-full aspect-[1/0.7] rounded-lg"
+							/>
+						{:else}
+							<div class="w-full aspect-[1/0.7] border rounded-lg" />
+						{/if}
+					</div>
+
+					<!-- text -->
+					<div class="h-full w-full flex flex-col justify-center">
+						{#if $currentAppLang === 'en'}
+							<div class="space-y-8">
+								<p class="heading-{$currentAppLang}-2 text-primary-500 font-light hidden md:block">
+									{blog.attributes.Blog_Title}
+								</p>
+								<p class="main-{$currentAppLang}-text font-normal line-clamp-3 leading-7">
+									{blog.attributes.Blog_Brief}
+								</p>
+							</div>
+						{:else}
+							<div class="space-y-8">
+								<p class="heading-{$currentAppLang}-2 text-primary-500 font-light hidden md:block">
+									{blog.attributes.localizations.data[0].attributes.Blog_Title}
+								</p>
+								<p class="main-{$currentAppLang}-text font-normal line-clamp-3 leading-7">
+									{blog.attributes.localizations.data[0].attributes.Blog_Brief}
+								</p>
+							</div>
+						{/if}
+
+						<div class="max-w-[40%]">
+							<a
+								type="button"
+								aria-label="a link for the blog page"
+								href={`/${$currentAppLang}/blog/${blog.attributes.ID_And_Order}`}
+								class="sub-main-{$currentAppLang}-text font-normal btn variant-ringed-primary w-full rounded-lg py-[12px] mt-6"
+								>{$LL.blogs.more()}</a
+							>
+						</div>
+					</div>
+				</div>
+			{/each}
+		{/if}
 	</div>
 </section>

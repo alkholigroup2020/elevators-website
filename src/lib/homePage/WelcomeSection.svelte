@@ -35,7 +35,7 @@
 				<!-- Right sub-column: UL with 3 li elements -->
 				<div
 					class={$currentAppLang === 'en'
-						? 'px-5 lg:px-[80px] xl:px-[270px] 2xl:px-0 2xl:-ml-8'
+						? 'px-5 lg:px-[80px] xl:px-[270px] 2xl:px-0 2xl:-ml-5'
 						: 'px-5 lg:px-[80px] xl:px-[270px] 2xl:px-0 2xl:-mr-12'}
 				>
 					<ul>
@@ -61,8 +61,8 @@
 								</div>
 								<div
 									class={$currentAppLang === 'en'
-										? 'col-start-2 col-end-9 ml-3 sm:-ml-5 md:-ml-10 lg:-ml-[40px] 2xl:ml-0'
-										: 'col-start-2 col-end-9 mr-3 sm:-mr-5 md:-mr-10 lg:-mr-[40px] 2xl:mr-0'}
+										? 'col-start-2 col-end-9 ml-3 sm:-ml-5 md:-ml-10 lg:-ml-[40px] 2xl:-ml-2'
+										: 'col-start-2 col-end-9 mr-3 sm:-mr-5 md:-mr-10 lg:-mr-[40px] 2xl:-mr-2'}
 								>
 									<p
 										class="heading-{$currentAppLang}-3 font-medium mb-3 text-primary-500"
@@ -98,8 +98,8 @@
 								</div>
 								<div
 									class={$currentAppLang === 'en'
-										? 'col-start-2 col-end-9 ml-3 sm:-ml-5 md:-ml-10 lg:-ml-[40px] 2xl:ml-0'
-										: 'col-start-2 col-end-9 mr-3 sm:-mr-5 md:-mr-10 lg:-mr-[40px] 2xl:mr-0'}
+										? 'col-start-2 col-end-9 ml-3 sm:-ml-5 md:-ml-10 lg:-ml-[40px] 2xl:-ml-2'
+										: 'col-start-2 col-end-9 mr-3 sm:-mr-5 md:-mr-10 lg:-mr-[40px] 2xl:-mr-2'}
 								>
 									<p
 										class="heading-{$currentAppLang}-3 font-medium mb-3 text-primary-500"
@@ -135,8 +135,8 @@
 								</div>
 								<div
 									class={$currentAppLang === 'en'
-										? 'col-start-2 col-end-9 ml-3 sm:-ml-5 md:-ml-10 lg:-ml-[40px] 2xl:ml-0'
-										: 'col-start-2 col-end-9 mr-3 sm:-mr-5 md:-mr-10 lg:-mr-[40px] 2xl:mr-0'}
+										? 'col-start-2 col-end-9 ml-3 sm:-ml-5 md:-ml-10 lg:-ml-[40px] 2xl:-ml-2'
+										: 'col-start-2 col-end-9 mr-3 sm:-mr-5 md:-mr-10 lg:-mr-[40px] 2xl:-mr-2'}
 								>
 									<p
 										class="heading-{$currentAppLang}-3 font-medium mb-3 text-primary-500 text-custom-shadow"

@@ -22,4 +22,3 @@ export const load = async (data: any) => {
 	// , cmsNavData
 	return { locale, footerFormSettings };
 };
-//

@@ -6,7 +6,8 @@
 
 	let elemCarousel: HTMLDivElement;
 
-	const cabinsImagesData = $modalStore[0].meta.imgURLs;
+	const cabinsImagesData = $modalStore[0].meta.server_response;
+	console.log('🚀 cabinsImagesData:', cabinsImagesData);
 
 	function carouselLeft(): void {
 		const x =
@@ -90,7 +91,7 @@
 			</button>
 		</div>
 
-		<div class="p-4 grid grid-cols-6 gap-4">
+		<!-- <div class="p-4 grid grid-cols-6 gap-4">
 			{#each cabinsImagesData as cabinImage, i}
 				<button type="button" on:click={() => carouselThumbnail(i)}>
 					<img
@@ -100,6 +101,6 @@
 					/>
 				</button>
 			{/each}
-		</div>
+		</div> -->
 	</section>
 {/if}

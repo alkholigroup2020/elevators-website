@@ -39,11 +39,18 @@
 			// and then scroll to the target.
 
 			await goto(`/${$currentAppLang}`);
-			target = document.querySelector(targetId);
+
+			await goToSection(targetId);
+		}
+	};
+
+	let goToSection = async (targetId: string) => {
+		setTimeout(() => {
+			const target = document.querySelector(targetId);
 			if (target) {
 				target.scrollIntoView({ behavior: 'smooth' });
 			}
-		}
+		}, 500);
 	};
 </script>
 

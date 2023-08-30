@@ -1,15 +1,26 @@
 <script lang="ts">
 	import LL from '$i18n/i18n-svelte';
 	import { currentAppLang } from '$lib/stores/store';
+	import { onMount } from 'svelte';
 
 	import { modalStore } from '@skeletonlabs/skeleton';
 	import type { ModalSettings, ModalComponent } from '@skeletonlabs/skeleton';
 	import SingleProjectDetails from '$lib/generalComponents/SingleProjectDetails.svelte';
 
-	export let sectionData: any = [];
+	import { ConicGradient } from '@skeletonlabs/skeleton';
+	import type { ConicStop } from '@skeletonlabs/skeleton';
+
+	const conicStops: ConicStop[] = [
+		{ color: 'transparent', start: 0, end: 25 },
+		{ color: 'rgb(var(--color-primary-500))', start: 75, end: 100 }
+	];
+
+	// export let sectionData: any = [];
+	let sectionData: any = [];
 
 	// The $: syntax creates a reactive statement.
 	// Whenever the values on the right-hand side of the equation change, the code within the statement will re-run.
+	let sortedProducts: any[] = [];
 	$: {
 		sortedProducts = orderByProjectOrder(sectionData);
 	}
@@ -18,8 +29,6 @@
 		arr.sort((a, b) => a.attributes.projectOrder - b.attributes.projectOrder);
 		return arr;
 	}
-
-	let sortedProducts: any[] = [];
 
 	const modalComponent: ModalComponent = {
 		// Pass a reference to your custom component
@@ -54,7 +63,6 @@
 
 	const updateProjectData = (payload: any) => {
 		projectData = payload;
-
 		showModal();
 	};
 
@@ -73,6 +81,27 @@
 			x = elemProjects.scrollLeft + elemProjects.clientWidth;
 		elemProjects.scroll(x, 0);
 	}
+
+	const getProjectsData = async () => {
+		try {
+			const response = await fetch('/api/projects-data/');
+
+			const projectsData = await response.json();
+
+			sectionData = projectsData;
+
+			// Check if the request was successful
+			if (!response.ok) {
+				throw new Error();
+			}
+		} catch (error) {
+			console.error('🚀 Error:', error);
+		}
+	};
+
+	onMount(() => {
+		getProjectsData();
+	});
 </script>
 
 <section class="section-bg" id="projects">
@@ -83,9 +112,10 @@
 				<span class="text-primary-500">{$LL.projects.title()}</span>
 			</h2>
 		</div>
+
 		<!-- projects slider -->
 		<div>
-			<div class="grid grid-cols-[auto_1fr_auto] gap-4 items-center">
+			<div class="grid grid-cols-[auto_1fr_auto] gap-4 items-center min-h-96">
 				<!-- Button: Left -->
 				<button
 					type="button"
@@ -102,65 +132,68 @@
 					</span>
 				</button>
 
-				<!-- Carousel -->
-				<div
-					bind:this={elemProjects}
-					class="snap-x snap-mandatory scroll-smooth flex gap-4 pb-3 overflow-x-auto"
-				>
-					{#each sortedProducts as project}
-						<div
-							class="bg-secondary-500 rounded-lg text-white shrink-0 w-[100%] sm:w-[50%] lg:w-[32%] 2xl:w-[24%] snap-start"
-						>
-							<div class="rounded-lg border border-surface-300-600-token">
-								<button
-									on:click={() => {
-										updateProjectData(project.attributes);
-									}}
-									class=" w-full rounded-lg"
-									aria-label="a button to open the project modal"
-								>
-									<!-- w-[600px] h-[700px] -->
-									<div>
-										<!-- class="w-full aspect-[8/5]" -->
-										<img
-											class="rounded-t-lg w-full aspect-[6/5] hover:brightness-125"
-											src={`https://cms.buildingtec-elevators.com${project.attributes.projectCover.data.attributes.url}`}
-											alt={`A picture for ${project.attributes.projectTitle} project.`}
-										/>
-									</div>
-								</button>
+				{#if sortedProducts === undefined}
+					<div class="w-full md:h-32 flex justify-center items-center">
+						<ConicGradient stops={conicStops} width="w-8 md:w-16 2xl:w-20" spin />
+					</div>
+				{:else}
+					<!-- Carousel -->
+					<div
+						bind:this={elemProjects}
+						class="snap-x snap-mandatory scroll-smooth flex gap-4 pb-3 overflow-x-auto"
+					>
+						{#each sortedProducts as project}
+							<div
+								class="bg-secondary-500 rounded-lg text-white shrink-0 w-[100%] sm:w-[50%] lg:w-[32%] 2xl:w-[24%] snap-start"
+							>
+								<div class="rounded-lg border border-surface-300-600-token">
+									<button
+										on:click={() => {
+											updateProjectData(project.attributes);
+										}}
+										class=" w-full rounded-lg"
+										aria-label="a button to open the project modal"
+									>
+										<div>
+											<img
+												class="rounded-t-lg w-full aspect-[6/5] hover:brightness-125"
+												src={`https://cms.buildingtec-elevators.com${project.attributes.projectCover.data.attributes.url}`}
+												alt={`A picture for ${project.attributes.projectTitle} project.`}
+											/>
+										</div>
+									</button>
 
-								<div class="p-5">
-									{#if $currentAppLang === 'en' ? true : false}
-										<h3
-											class="mb-1 main-{$currentAppLang}-text font-medium leading-9 line-clamp-2 h-[4.5rem]"
-										>
-											{project.attributes.projectTitle}
-										</h3>
-									{:else}
-										<h3
-											dir="rtl"
-											class="mb-1 main-{$currentAppLang}-text font-medium leading-9 line-clamp-2 h-[4.5rem]"
-										>
-											{project.attributes.localizations.data[0].attributes.projectTitle}
-										</h3>
-									{/if}
+									<div class="p-5">
+										{#if $currentAppLang === 'en' ? true : false}
+											<h3
+												class="mb-1 main-{$currentAppLang}-text font-medium leading-9 line-clamp-2 h-[4.5rem]"
+											>
+												{project.attributes.projectTitle}
+											</h3>
+										{:else}
+											<h3
+												dir="rtl"
+												class="mb-1 main-{$currentAppLang}-text font-medium leading-9 line-clamp-2 h-[4.5rem]"
+											>
+												{project.attributes.localizations.data[0].attributes.projectTitle}
+											</h3>
+										{/if}
 
-									<!-- more button -->
-									<div class="flex justify-end" dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}>
-										<button
-											aria-label="a button to open the project modal"
-											class="btn variant-ghost rounded-lg border border-surface-500 sub-main-{$currentAppLang}-text"
-											on:click={() => {
-												updateProjectData(project.attributes);
-											}}><span>{$LL.projects.more()}</span></button
-										>
+										<div class="flex justify-end" dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}>
+											<button
+												aria-label="a button to open the project modal"
+												class="btn variant-ghost rounded-lg border border-surface-500 sub-main-{$currentAppLang}-text"
+												on:click={() => {
+													updateProjectData(project.attributes);
+												}}><span>{$LL.projects.more()}</span></button
+											>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-					{/each}
-				</div>
+						{/each}
+					</div>
+				{/if}
 
 				<!-- Button-Right -->
 				<button

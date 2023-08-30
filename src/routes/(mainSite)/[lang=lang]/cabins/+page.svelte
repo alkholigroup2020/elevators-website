@@ -80,7 +80,7 @@
 			// modalClasses: 'bg-primary-100-800-token',
 
 			meta: {
-				imgURLs
+				server_response
 				// projectName: projectData.projectTitle,
 				// projectImages: projectData.projectImages.data,
 				// projectDescription: projectData.projectDescription,
@@ -129,25 +129,37 @@
 					{$LL.cabins.title()}
 				</h1>
 			</div>
-
-			<!-- <div class="px-12">
-				<button on:click={getCabinsData}>Roll the dice</button>
-				{#if server_response !== undefined}
-					<p>{server_response}</p>
-				{/if}
-			</div> -->
 		</div>
 	</div>
 </section>
 
-{#if server_response !== undefined}
+{#if server_response === undefined}
+	<section>
+		<div class="container mx-auto py-5 md:py-16">
+			<div
+				class="grid grid-cols-1 min-[500px]:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-8 p-5 2xl:p-0"
+			>
+				{#each Array(12).fill(0) as A}
+					<div class="placeholder h-96 rounded-lg animate-pulse" />
+				{/each}
+			</div>
+		</div>
+	</section>
+{:else}
 	<section>
 		<div class="container mx-auto py-5 md:py-16">
 			<div
 				class="grid grid-cols-1 min-[500px]:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-8 p-5 2xl:p-0"
 			>
 				{#each server_response as one}
-					<div class=" w-full rounded-lg">
+					<!-- on:click={() => {
+						showModal();
+					}} -->
+					<button
+						class="cursor-default w-full rounded-lg"
+						aria-label="a button to open the project modal"
+					>
+						<!-- <div class="w-full rounded-lg"> -->
 						<div
 							class="px-6 py-2 min-[400px]:px-12 min-[400px]:py-4 min-[500px]:px-0 min-[500px]:py-0"
 						>
@@ -157,7 +169,8 @@
 								class="w-[450px] rounded-md aspect-[1/1.2]"
 							/>
 						</div>
-					</div>
+						<!-- </div> -->
+					</button>
 				{/each}
 			</div>
 		</div>

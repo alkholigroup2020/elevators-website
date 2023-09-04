@@ -50,7 +50,7 @@
 			if (target) {
 				target.scrollIntoView({ behavior: 'smooth' });
 			}
-		}, 500);
+		}, 350);
 	};
 </script>
 

@@ -8,18 +8,23 @@
 <div dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}>
 	<!-- Hero Section -->
 	<section class="relative flex">
-		<img
-			src="/products/passenger-elevators/Headline_Photo_2000x500.webp"
-			alt="passengers elevators page header"
-			srcset="/products/passenger-elevators/Headline_Photo_800x400.webp 768w, /products/passenger-elevators/Headline_Photo_1600x640.webp 1536w, /products/passenger-elevators/Headline_Photo_2000x500.webp 8000w"
-			class="w-screen aspect-[1/0.5] md:aspect-[1/0.4] xl:aspect-[1/0.25]"
-		/>
+		<div class="mx-auto">
+			<SectionSize />
+			<img
+				src="/products/passenger-elevators/Headline_Photo_2000x500.webp"
+				alt="passengers elevators page header"
+				srcset="/products/passenger-elevators/Headline_Photo_800x400.webp 768w, 
+								/products/passenger-elevators/Headline_Photo_1600x640.webp 1536w, 
+								/products/passenger-elevators/Headline_Photo_2000x500.webp 8000w"
+				class="w-screen max-w-[2000px] aspect-[1/0.5] md:aspect-[1/0.4] xl:aspect-[1/0.25]"
+			/>
+		</div>
 
 		<div class="absolute inset-0 bg-black opacity-30" />
 		<div class="absolute w-[100%] h-full flex items-center justify-center">
 			<div class="container mx-auto px-5 2xl:px-0">
 				<h1
-					class="heading-{$currentAppLang}-1 font-bold text-white pb-8 2xl:pb-12"
+					class="heading-{$currentAppLang}-1 font-bold text-white pb-8 2xl:pb-16"
 					style="text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.8);"
 				>
 					{$LL.products.passenger.title()}
@@ -27,7 +32,7 @@
 				<a
 					href={`/${$currentAppLang}/meeting`}
 					aria-label="a link to the meeting page"
-					class="btn variant-filled-secondary border border-success-500 rounded-md px-3 lg:px-5 py-2 lg:py-3 main-{$currentAppLang}-text"
+					class="btn bg-primary-600 border font-medium rounded-md px-3 lg:px-5 py-2 lg:py-3 main-{$currentAppLang}-text"
 				>
 					{$LL.heroSection.action()}
 				</a>
@@ -72,9 +77,11 @@
 							href={`https://design.doppler.gr/`}
 							target="_blank"
 							aria-label="a link to doppler website"
-							class="btn border rounded-sm border-success-500 btn-md sub-main-{$currentAppLang}-text py-2 px-4 2xl:px-6"
+							class="btn border rounded-sm border-success-500 btn-md sub-main-{$currentAppLang}-text py-2 px-4 2xl:px-6 bg-success-700"
 						>
-							{$LL.products.passenger.introSection.link()}
+							<span class="text-white font-medium">
+								{$LL.products.passenger.introSection.link()}
+							</span>
 						</a>
 					</div>
 				</div>

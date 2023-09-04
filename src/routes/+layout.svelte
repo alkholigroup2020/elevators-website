@@ -38,7 +38,7 @@
 </svelte:head>
 
 {#if devOrProduction}
-	<WindowSize />
+	<!-- <WindowSize /> -->
 {/if}
 
 <Modal />

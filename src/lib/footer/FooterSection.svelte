@@ -571,7 +571,7 @@
 			<img
 				src="/ISO-Certified-vector-min.webp"
 				alt="our iso certificate"
-				class="w-[150px] h-[150px] aspect-1/1 mt-5"
+				class="aspect-1/1 w-[75px] h-[75px] lg:w-[125px] lg:h-[125px] mt-3 xl:mr-8"
 			/>
 		</div>
 	</div>

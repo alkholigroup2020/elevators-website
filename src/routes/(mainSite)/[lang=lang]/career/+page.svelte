@@ -408,7 +408,7 @@
 <section dir={$pageDirection}>
 	<div class="container mx-auto px-5 2xl:px-0">
 		<div class="py-12 lg:py-16">
-			<p class="large-{$currentAppLang}-text font-light">{$LL.career.intro()}</p>
+			<p class="large-{$currentAppLang}-text font-light leading-7">{$LL.career.intro()}</p>
 		</div>
 
 		<form method="POST" use:enhance>

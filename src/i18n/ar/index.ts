@@ -389,7 +389,8 @@ const en: BaseTranslation = {
 	},
 	projects: {
 		title: 'أعمالـنا السابقة',
-		more: 'المـزيد ...'
+		more: 'المـزيد ...',
+		btnClose: 'إغلاق'
 	},
 	media: {
 		title: 'الوسائط'

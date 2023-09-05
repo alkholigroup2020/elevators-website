@@ -115,7 +115,7 @@
 
 		<!-- projects slider -->
 		<div>
-			<div class="grid grid-cols-[auto_1fr_auto] gap-4 items-center min-h-96">
+			<div class="grid grid-cols-[auto_1fr_auto] gap-2 sm:gap-4 items-center min-h-96">
 				<!-- Button: Left -->
 				<button
 					type="button"

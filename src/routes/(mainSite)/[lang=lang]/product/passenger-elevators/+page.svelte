@@ -9,14 +9,13 @@
 	<!-- Hero Section -->
 	<section class="relative flex">
 		<div class="mx-auto">
-			<SectionSize />
 			<img
-				src="/products/passenger-elevators/Headline_Photo_2000x500.webp"
+				src="/products/passenger-elevators/passengers_header_2000x600.webp"
 				alt="passengers elevators page header"
-				srcset="/products/passenger-elevators/Headline_Photo_800x400.webp 768w, 
-								/products/passenger-elevators/Headline_Photo_1600x640.webp 1536w, 
-								/products/passenger-elevators/Headline_Photo_2000x500.webp 8000w"
-				class="w-screen max-w-[2000px] aspect-[1/0.5] md:aspect-[1/0.4] xl:aspect-[1/0.25]"
+				srcset="/products/passenger-elevators/passengers_header_800x640.webp 768w, 
+								/products/passenger-elevators/passengers_header_1600x720.webp 1536w, 
+								/products/passenger-elevators/passengers_header_2000x600.webp 8000w"
+				class="w-screen aspect-[1/0.8] md:aspect-[1/0.45] xl:aspect-[1/0.3]"
 			/>
 		</div>
 
@@ -24,15 +23,16 @@
 		<div class="absolute w-[100%] h-full flex items-center justify-center">
 			<div class="container mx-auto px-5 2xl:px-0">
 				<h1
-					class="heading-{$currentAppLang}-1 font-bold text-white pb-8 2xl:pb-16"
+					class="heading-{$currentAppLang}-1 font-bold text-white pb-12 2xl:pb-24"
 					style="text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.8);"
 				>
 					{$LL.products.passenger.title()}
 				</h1>
+
 				<a
 					href={`/${$currentAppLang}/meeting`}
 					aria-label="a link to the meeting page"
-					class="btn bg-primary-600 border font-medium rounded-md px-3 lg:px-5 py-2 lg:py-3 main-{$currentAppLang}-text"
+					class="text-white btn bg-primary-600 font-medium rounded-sm px-3 lg:px-5 py-2 lg:py-3 main-{$currentAppLang}-text"
 				>
 					{$LL.heroSection.action()}
 				</a>
@@ -42,7 +42,7 @@
 
 	<!-- image and text -->
 	<section>
-		<div class="container mx-auto px-5 2xl:px-0 my-16 md:my-20">
+		<div class="container mx-auto px-5 2xl:px-0 my-10 md:my-20">
 			<div class="grid lg:grid-cols-2 lg:gap-4 xl:gap-8">
 				<div class="max-lg:order-last">
 					<!-- the image -->
@@ -185,7 +185,9 @@
 							{$LL.products.passenger.thirdSection.firstTitle()}
 						</p>
 					</div>
-					<div class="space-y-3 main-{$currentAppLang}-text 2xl:text-justify leading-7">
+					<div
+						class="space-y-3 main-{$currentAppLang}-text 2xl:text-justify leading-7 lg:min-h-[28rem] xl:min-h-[21rem] 2xl:min-h-[18rem]"
+					>
 						<p>
 							{$LL.products.passenger.thirdSection.firstP1()}
 						</p>
@@ -196,6 +198,16 @@
 							{$LL.products.passenger.thirdSection.firstP3()}
 						</p>
 					</div>
+					<div class="mt-3 lg:mt-5">
+						<img
+							alt="energy efficiency rating"
+							src="/products/passenger-elevators/energy_500x300.webp"
+							class="max-w-[300px] md:max-w-[400px] lg:max-w-full aspect-[1/0.6]"
+						/>
+						<!-- <div class="bg-pink-400 max-w-[300px] md:max-w-[400px] lg:max-w-full aspect-[1/0.6]">
+							<SectionSize />
+						</div> -->
+					</div>
 				</div>
 				<!-- second -->
 				<div>
@@ -204,7 +216,9 @@
 							{$LL.products.passenger.thirdSection.secondTitle()}
 						</p>
 					</div>
-					<div class="space-y-3 main-{$currentAppLang}-text 2xl:text-justify leading-7">
+					<div
+						class="space-y-3 main-{$currentAppLang}-text 2xl:text-justify leading-7 lg:min-h-[28rem] xl:min-h-[21rem] 2xl:min-h-[18rem]"
+					>
 						<p>
 							{$LL.products.passenger.thirdSection.secondP1()}
 						</p>
@@ -214,6 +228,13 @@
 						<p>
 							{$LL.products.passenger.thirdSection.secondP3()}
 						</p>
+					</div>
+					<div class="mt-3 lg:mt-5">
+						<img
+							alt="quality"
+							src="/products/passenger-elevators/quality_500x300.webp"
+							class="max-w-[300px] md:max-w-[400px] lg:max-w-full aspect-[1/0.6]"
+						/>
 					</div>
 				</div>
 				<!-- third -->
@@ -234,36 +255,6 @@
 							{$LL.products.passenger.thirdSection.thirdP3()}
 						</p>
 					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- two images -->
-	<section>
-		<div class="container mx-auto px-5 2xl:px-0 mb-16 md:mb-20">
-			<div
-				class="grid min-[350px]:grid-cols-2 min-[480px]:grid-cols-3 md:grid-cols-4 gap-8 xl:gap-16"
-			>
-				<div>
-					<img
-						alt="energy efficiency rating"
-						src="/products/passenger-elevators/energy-efficiency-rating_350x210.webp"
-						srcset="/products/passenger-elevators/energy-efficiency-rating_180x144.webp 1024w, 
-						/products/passenger-elevators/energy-efficiency-rating_350x280.webp 1536w, 
-						/products/passenger-elevators/energy-efficiency-rating_350x210.webp 8000w"
-						class="w-screen aspect-[1/0.8] 2xl:aspect-[1/0.6]"
-					/>
-				</div>
-				<div>
-					<img
-						alt="shield check symbol like protection logo concept"
-						src="/products/passenger-elevators/shield-check-symbol_350x210.webp"
-						srcset="/products/passenger-elevators/shield-check-symbol_180x144.webp 1024w, 
-						/products/passenger-elevators/shield-check-symbol_350x280.webp 1536w, 
-						/products/passenger-elevators/shield-check-symbol_350x210.webp 8000w"
-						class="w-screen aspect-[1/0.8] 2xl:aspect-[1/0.6]"
-					/>
 				</div>
 			</div>
 		</div>

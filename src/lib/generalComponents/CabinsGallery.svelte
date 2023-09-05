@@ -7,7 +7,7 @@
 	let elemCarousel: HTMLDivElement;
 
 	const cabinsImagesData = $modalStore[0].meta.server_response;
-	console.log('🚀 cabinsImagesData:', cabinsImagesData);
+	// console.log('🚀 cabinsImagesData:', cabinsImagesData);
 
 	function carouselLeft(): void {
 		const x =

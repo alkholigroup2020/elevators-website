@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { currentAppLang } from '$lib/stores/store';
+	import LL from '$i18n/i18n-svelte';
 
 	import { modalStore } from '@skeletonlabs/skeleton';
 
@@ -7,9 +8,8 @@
 
 	$: arrowColor = $modeCurrent ? '#000' : '#fff';
 
-	// export let parent: any;
+	export let parent: any;
 
-	//
 	// console.log('🚀 parent:', parent);
 
 	// console.log('🚀 $modalStore[0]:', $modalStore[0].component.props);
@@ -37,33 +37,37 @@
 
 {#if $modalStore[0]}
 	<!-- $modalStore[0].component.props.background -->
-	<!-- mx-5 md:mx-8 2xl:mx-0 -->
+	<!-- max-w-[90%] -->
 	<div
-		class="bg-surface-100-800-token border rounded-xl h-fit max-w-[90%] xl:max-w-[80%] px-5 pt-5 pb-8 xl:pb-12 my-auto overflow-auto"
+		class="bg-surface-100-800-token border rounded-md h-fit w-screen xl:max-w-[85%] px-5 pt-5 pb-8 xl:pb-12 my-auto overflow-auto"
 	>
 		<!-- title -->
 		{#if $currentAppLang === 'en' ? true : false}
-			<h3 class="heading-{$currentAppLang}-3 px-3 py-5 mb-3">{$modalStore[0].meta.projectName}</h3>
+			<h3 class="heading-{$currentAppLang}-3 font-medium px-3 py-5 mb-3">
+				{$modalStore[0].meta.projectName}
+			</h3>
 		{:else}
-			<h3 class="heading-{$currentAppLang}-3 px-3 py-5 mb-3" dir="rtl">
+			<h3 class="heading-{$currentAppLang}-3 font-medium px-3 py-5 mb-3" dir="rtl">
 				{$modalStore[0].meta.projectNameAr}
 			</h3>
 		{/if}
 
-		<div class="grid grid-cols-1 xl:grid-cols-2 pb-5">
-			<!-- carousel xl:order-last -->
+		<div class="grid grid-cols-1 xl:grid-cols-2 xl:pb-5 xl:gap-8">
+			<!-- carousel -->
 			<div
 				class="pb-8 xl:pb-0 px-0 lg:px-5 2xl:px-3 {$currentAppLang === 'en'
 					? 'xl:order-last'
 					: 'order-start'}"
 			>
 				<div class="mx-auto grid grid-cols-1 items-center justify-items-center">
-					<div class="grid grid-cols-[auto_1fr_auto] gap-4 items-center w-fit">
+					<div
+						class="sm:grid grid-cols-[auto_1fr_auto] gap-2 md:gap-12 xl:gap-4 items-center w-fit"
+					>
 						<!-- Button: Left -->
 						<button
 							type="button"
 							aria-label="a button to move the slider to the left"
-							class="btn-icon bg-surface-100-800-token border-2 border-surface-700-200-token"
+							class="btn-icon bg-surface-100-800-token border-2 border-surface-700-200-token max-sm:hidden"
 							on:click={carouselLeft}
 						>
 							<span>
@@ -90,11 +94,47 @@
 							{/each}
 						</div>
 
+						<!-- up to sm buttons -->
+						<div class="sm:hidden mt-8 flex justify-center space-x-8">
+							<div>
+								<button
+									type="button"
+									aria-label="a button to move the slider to the left"
+									class="btn-icon bg-surface-100-800-token border-2 border-surface-700-200-token"
+									on:click={carouselLeft}
+								>
+									<span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill={arrowColor}
+											><path
+												d="M15.293 3.293 6.586 12l8.707 8.707 1.414-1.414L9.414 12l7.293-7.293-1.414-1.414z"
+											/></svg
+										>
+									</span>
+								</button>
+							</div>
+							<div>
+								<button
+									type="button"
+									aria-label="a button to move the slider to the right"
+									class="btn-icon bg-surface-100-800-token border-2 border-surface-700-200-token sm:hidden"
+									on:click={carouselRight}
+								>
+									<span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill={arrowColor}
+											><path
+												d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"
+											/></svg
+										>
+									</span>
+								</button>
+							</div>
+						</div>
+
 						<!-- Button: Right -->
 						<button
 							type="button"
 							aria-label="a button to move the slider to the right"
-							class="btn-icon bg-surface-100-800-token border-2 border-surface-700-200-token"
+							class="btn-icon bg-surface-100-800-token border-2 border-surface-700-200-token max-sm:hidden"
 							on:click={carouselRight}
 						>
 							<span>
@@ -143,6 +183,16 @@
 						</tbody>
 					</table>
 				</div>
+			</div>
+
+			<!-- Close Button -->
+			<div class="mt-8 px-3 xl:hidden">
+				<button
+					class="btn btn-sm variant-surface-100-800-token border-2 border-surface-800-100-token font-bold shadow-md rounded-md"
+					on:click={parent.onClose}
+				>
+					<span class="sub-main-{$currentAppLang}-text">{$LL.projects.btnClose()}</span>
+				</button>
 			</div>
 		</div>
 	</div>

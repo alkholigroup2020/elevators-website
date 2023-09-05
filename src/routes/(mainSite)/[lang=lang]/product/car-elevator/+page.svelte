@@ -1,6 +1,5 @@
 <script lang="ts">
 	import LL from '$i18n/i18n-svelte';
-	import SectionSize from '$lib/generalComponents/SectionSize.svelte';
 	import { currentAppLang } from '$lib/stores/store';
 </script>
 
@@ -8,12 +7,12 @@
 	<!-- Hero Section -->
 	<section class="relative flex">
 		<img
-			src="/products/car-elevators/Header_2000x500.webp"
-			alt="passengers elevators page header"
-			srcset="/products/car-elevators/Header_800x400.webp 768w, 
-			/products/car-elevators/Header_1600x640.webp 1536w, 
-			/products/car-elevators/Header_2000x500.webp 8000w"
-			class="w-screen aspect-[1/0.5] md:aspect-[1/0.4] xl:aspect-[1/0.25]"
+			src="/products/passenger-elevators/passengers_header_2000x600.webp"
+			alt="car elevators page header"
+			srcset="/products/passenger-elevators/passengers_header_800x640.webp 768w, 
+							/products/passenger-elevators/passengers_header_1600x720.webp 1536w, 
+							/products/passenger-elevators/passengers_header_2000x600.webp 8000w"
+			class="w-screen aspect-[1/0.8] md:aspect-[1/0.45] xl:aspect-[1/0.3]"
 		/>
 
 		<div class="absolute inset-0 bg-black opacity-40" />
@@ -36,7 +35,7 @@
 				<a
 					href={`/${$currentAppLang}/meeting`}
 					aria-label="a link to the meeting page"
-					class="btn variant-filled-secondary border border-success-500 rounded-md px-3 lg:px-5 py-2 lg:py-3 main-{$currentAppLang}-text"
+					class="text-white btn bg-primary-600 font-medium rounded-sm px-3 lg:px-5 py-2 lg:py-3 main-{$currentAppLang}-text"
 				>
 					{$LL.heroSection.action()}
 				</a>
@@ -45,36 +44,34 @@
 	</section>
 
 	<section>
-		<div class="container mx-auto px-5 2xl:px-0 my-8 md:my-12">
+		<div class="container mx-auto px-5 2xl:px-0 mt-8 md:mt-12">
 			<div class="main-{$currentAppLang}-text md:leading-10 text-justify">
 				<p>
 					{$LL.products.carElevators.firstSection.p1()}
 				</p>
 			</div>
+			<hr class="mt-8 md:mt-12" />
 		</div>
 	</section>
 
 	<section>
-		<div class="container mx-auto px-5 2xl:px-0 my-8 md:my-12">
+		<div class="container mx-auto px-5 2xl:px-0 mt-6 md:mt-16">
 			<div class="grid lg:grid-cols-3 gap-12 lg:gap-4 xl:gap-12">
 				<div>
-					<div class="lg:p-12 2xl:p-[90px]">
+					<div class="mb-8">
 						<!-- image -->
 						<img
 							alt="an elevator cabin"
-							src="/products/car-elevators/Traffic_Light_400x320.webp"
-							srcset="/products/car-elevators/Traffic_Light_400x200.webp 640w, /products/car-elevators/Traffic_Light_400x160.webp 1024w,
-							/products/car-elevators/Traffic_Light_400x280.webp 1536w, /products/car-elevators/Traffic_Light_400x320.webp 8000w"
-							class="w-screen aspect-[1/0.5] sm:aspect-[1/0.4] lg:aspect-[1/0.7] 2xl:aspect-[1/0.8]
-								{$currentAppLang === 'en'
-								? 'min-[300px]:pr-[50%] md:pr-[60%] lg:pr-0'
-								: 'min-[300px]:pl-[50%] md:pl-[60%] lg:pl-0'}
-							"
+							src="/products/car-elevators/elevators-1_400x280.webp"
+							class="w-3/5 sm:w-2/6 lg:w-3/5 2xl:w-1/2 aspect-[1/0.7]"
 						/>
+						<!-- <div class="bg-pink-400 w-3/5 sm:w-2/6 lg:w-3/5 2xl:w-1/2 aspect-[1/0.7]">
+							<SectionSize />
+						</div> -->
 					</div>
 
 					<div>
-						<p class="heading-{$currentAppLang}-3 font-meduim text-primary-500 my-3 lg:text-center">
+						<p class="heading-{$currentAppLang}-3 font-meduim text-primary-500 my-3">
 							{$LL.products.carElevators.secondSection.first.title()}
 						</p>
 					</div>
@@ -86,23 +83,17 @@
 				</div>
 
 				<div>
-					<div class="lg:p-12 2xl:p-[90px]">
+					<div class="mb-8">
 						<!-- image -->
 						<img
 							alt="an elevator cabin"
-							src="/products/car-elevators/Lift_400x320.webp"
-							srcset="/products/car-elevators/Lift_400x200.webp 640w, /products/car-elevators/Lift_400x160.webp 1024w,
-							/products/car-elevators/Lift_400x280.webp 1536w, /products/car-elevators/Lift_400x320.webp 8000w"
-							class="w-screen aspect-[1/0.5] sm:aspect-[1/0.4] lg:aspect-[1/0.7] 2xl:aspect-[1/0.8]
-							{$currentAppLang === 'en'
-								? 'min-[300px]:pr-[50%] md:pr-[60%] lg:pr-0'
-								: 'min-[300px]:pl-[50%] md:pl-[60%] lg:pl-0'}
-							"
+							src="/products/car-elevators/elevators-2_400x280.webp"
+							class="w-3/5 sm:w-2/6 lg:w-3/5 2xl:w-1/2 aspect-[1/0.7]"
 						/>
 					</div>
 
 					<div>
-						<p class="heading-{$currentAppLang}-3 font-meduim text-primary-500 my-3 lg:text-center">
+						<p class="heading-{$currentAppLang}-3 font-meduim text-primary-500 my-3">
 							{$LL.products.carElevators.secondSection.second.title()}
 						</p>
 					</div>
@@ -114,22 +105,16 @@
 				</div>
 
 				<div>
-					<div class="lg:p-12 2xl:p-[90px]">
+					<div class="mb-8">
 						<!-- image -->
 						<img
 							alt="an elevator cabin"
-							src="/products/car-elevators/COP_Arrows_400x320.webp"
-							srcset="/products/car-elevators/COP_Arrows_400x200.webp 640w, /products/car-elevators/COP_Arrows_400x160.webp 1024w,
-							/products/car-elevators/COP_Arrows_400x280.webp 1536w, /products/car-elevators/COP_Arrows_400x320.webp 8000w"
-							class="w-screen aspect-[1/0.5] sm:aspect-[1/0.4] lg:aspect-[1/0.7] 2xl:aspect-[1/0.8]
-							{$currentAppLang === 'en'
-								? 'min-[300px]:pr-[50%] md:pr-[60%] lg:pr-0'
-								: 'min-[300px]:pl-[50%] md:pl-[60%] lg:pl-0'}
-							"
+							src="/products/car-elevators/elevators-3_400x280.webp"
+							class="w-3/5 sm:w-2/6 lg:w-3/5 2xl:w-1/2 aspect-[1/0.7]"
 						/>
 					</div>
 					<div>
-						<p class="heading-{$currentAppLang}-3 font-meduim text-primary-500 my-3 lg:text-center">
+						<p class="heading-{$currentAppLang}-3 font-meduim text-primary-500 my-3">
 							{$LL.products.carElevators.secondSection.third.title()}
 						</p>
 					</div>
@@ -140,33 +125,32 @@
 					</div>
 				</div>
 			</div>
+			<hr class="mt-6 md:mt-16" />
 		</div>
 	</section>
 
 	<section>
 		<div class="container mx-auto px-5 2xl:px-0 my-12 md:my-16">
 			<div>
-				<p class="text-2xl md:text-3xl font-meduim text-primary-500 my-3">
+				<p class="text-2xl md:text-3xl font-meduim text-primary-500 mt-3 xl:-mb-8">
 					{$LL.products.carElevators.thirdSection.title()}
 				</p>
 			</div>
-			<div class="grid min-[380px]:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-16">
+			<div class="grid min-[250px]:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-16">
 				<div>
 					<!-- image -->
 					<img
 						alt="an elevator cabin"
-						src="/products/car-elevators/Elli_Max_400x480.webp"
-						srcset="/products/car-elevators/Elli_Max_400x440.webp 380w, /products/car-elevators/Elli_Max_400x480.webp 8000w"
-						class="w-screen aspect-[1/1.1] min-[380px]:aspect-[1/1.2]"
+						src="/products/car-elevators/Untitled-1_400x440.webp"
+						class="w-full sm:p-5 md:p-8 2xl:p-12 aspect-[1/1.1]"
 					/>
 				</div>
 				<div>
 					<!-- image -->
 					<img
 						alt="an elevator cabin"
-						src="/products/car-elevators/Elli_Max_S_400x480.webp"
-						srcset="/products/car-elevators/Elli_Max_S_400x440.webp 380w, /products/car-elevators/Elli_Max_S_400x480.webp 8000w"
-						class="w-screen aspect-[1/1.1] min-[380px]:aspect-[1/1.2]"
+						src="/products/car-elevators/Untitled-3_400x440.webp"
+						class="w-full sm:p-5 md:p-8 2xl:p-12 aspect-[1/1.1]"
 					/>
 				</div>
 				<div>
@@ -174,9 +158,8 @@
 						<!-- image -->
 						<img
 							alt="an elevator cabin"
-							src="/products/car-elevators/ECO_TC_400x480.webp"
-							srcset="/products/car-elevators/ECO_TC_400x440.webp 380w, /products/car-elevators/ECO_TC_400x480.webp 8000w"
-							class="w-screen aspect-[1/1.1] min-[380px]:aspect-[1/1.2]"
+							src="/products/car-elevators/Untitled-4_400x440.webp"
+							class="w-full sm:p-5 md:p-8 2xl:p-12 aspect-[1/1.1]"
 						/>
 					</div>
 				</div>
@@ -184,9 +167,8 @@
 					<!-- image -->
 					<img
 						alt="an elevator cabin"
-						src="/products/car-elevators/Vlift_400x480.webp"
-						srcset="/products/car-elevators/Vlift_400x440.webp 380w, /products/car-elevators/Vlift_400x480.webp 8000w"
-						class="w-screen aspect-[1/1.1] min-[380px]:aspect-[1/1.2]"
+						src="/products/car-elevators/Untitled-2_400x440.webp"
+						class="w-full sm:p-5 md:p-8 2xl:p-12 aspect-[1/1.1]"
 					/>
 				</div>
 			</div>

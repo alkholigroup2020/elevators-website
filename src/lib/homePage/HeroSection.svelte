@@ -40,7 +40,7 @@
 						<a
 							href={`/${$currentAppLang}/meeting`}
 							aria-label="a link to the new-elevator form page"
-							class="btn p-2 sm:p-3 2xl:p-[13px] bg-primary-600 font-medium border rounded-sm sm:rounded-lg main-{$currentAppLang}-text"
+							class="text-white btn p-2 sm:p-3 2xl:p-[13px] bg-primary-600 font-medium rounded-sm main-{$currentAppLang}-text"
 						>
 							{$LL.heroSection.action()}
 						</a>

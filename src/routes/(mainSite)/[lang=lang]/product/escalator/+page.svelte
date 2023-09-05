@@ -9,12 +9,12 @@
 	<!-- Hero Section -->
 	<section class="relative flex">
 		<img
-			src="/products/escalators/EscalatorHeader_2000x500.webp"
-			alt="passengers elevators page header"
-			srcset="/products/escalators/EscalatorHeader_800x400.webp 768w, 
-			/products/escalators/EscalatorHeader_1600x640.webp 1536w, 
-			/products/escalators/EscalatorHeader_2000x500.webp 8000w"
-			class="w-screen aspect-[1/0.5] md:aspect-[1/0.4] xl:aspect-[1/0.25]"
+			src="/products/passenger-elevators/passengers_header_2000x600.webp"
+			alt="escalators page header"
+			srcset="/products/passenger-elevators/passengers_header_800x640.webp 768w, 
+						/products/passenger-elevators/passengers_header_1600x720.webp 1536w, 
+						/products/passenger-elevators/passengers_header_2000x600.webp 8000w"
+			class="w-screen aspect-[1/0.8] md:aspect-[1/0.45] xl:aspect-[1/0.3]"
 		/>
 
 		<div class="absolute inset-0 bg-black opacity-40" />
@@ -37,7 +37,7 @@
 				<a
 					href={`/${$currentAppLang}/meeting`}
 					aria-label="a link to the meeting page"
-					class="btn variant-filled-secondary border border-success-500 rounded-md px-3 lg:px-5 py-2 lg:py-3 main-{$currentAppLang}-text"
+					class="text-white btn bg-primary-600 font-medium rounded-sm px-3 lg:px-5 py-2 lg:py-3 main-{$currentAppLang}-text"
 				>
 					{$LL.heroSection.action()}
 				</a>

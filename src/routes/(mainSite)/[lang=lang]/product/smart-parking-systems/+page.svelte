@@ -9,25 +9,25 @@
 	<!-- Hero Section -->
 	<section class="relative flex">
 		<img
-			src="/products/sps/Header_2000x500.webp"
-			alt="smart parking systems page header"
-			srcset="/products/sps/Header_800x400.webp 768w, 
-			/products/sps/Header_1600x640.webp 1536w, 
-			/products/sps/Header_2000x500.webp 8000w"
-			class="w-screen aspect-[1/0.5] md:aspect-[1/0.4] xl:aspect-[1/0.25]"
+			src="/products/passenger-elevators/passengers_header_2000x600.webp"
+			alt="smart parking elevators page header"
+			srcset="/products/passenger-elevators/passengers_header_800x640.webp 768w, 
+							/products/passenger-elevators/passengers_header_1600x720.webp 1536w, 
+							/products/passenger-elevators/passengers_header_2000x600.webp 8000w"
+			class="w-screen aspect-[1/0.8] md:aspect-[1/0.45] xl:aspect-[1/0.3]"
 		/>
 
 		<div class="absolute inset-0 bg-black opacity-40" />
 		<div class="absolute w-[100%] h-full flex items-center justify-center">
 			<div class="container mx-auto px-5 2xl:px-0">
 				<h1
-					class="text-white heading-{$currentAppLang}-1 font-bold pb-4 min-[350px]:pb-0"
+					class="text-white heading-{$currentAppLang}-1 font-bold leading-normal"
 					style="text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.8);"
 				>
 					{$LL.products.sps.title()}
 				</h1>
 				<p
-					class="text-white hidden min-[350px]:block large-{$currentAppLang}-text mb-2 min-[500px]:my-5 md:my-6 2xl:my-10 leading-5 min-[500px]:leading-6 xl:leading-normal
+					class="text-white hidden min-[350px]:block large-{$currentAppLang}-text mb-3 min-[500px]:mb-8 md:mb-10 2xl:mb-12 leading-5 min-[500px]:leading-6 xl:leading-normal
 					px-0 {$currentAppLang === 'en'
 						? 'min-[450px]:pr-8 md:pr-0 xl:pr-64'
 						: 'min-[450px]:pl-8 md:pl-0 xl:pl-64'}"
@@ -37,7 +37,7 @@
 				<a
 					href={`/${$currentAppLang}/meeting`}
 					aria-label="a link to the meeting page"
-					class="btn variant-filled-secondary border border-success-500 rounded-md px-3 lg:px-5 py-2 lg:py-3 main-{$currentAppLang}-text"
+					class="text-white btn bg-primary-600 font-medium rounded-sm px-3 lg:px-5 py-2 lg:py-3 main-{$currentAppLang}-text"
 				>
 					{$LL.heroSection.action()}
 				</a>

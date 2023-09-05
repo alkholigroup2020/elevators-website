@@ -48,7 +48,7 @@
 
 			<div class="flex justify-center">
 				<div class="circle my-5">
-					<div class="p-5 min-[450px]:px-16">
+					<div class="p-10 min-[450px]:px-16">
 						<img
 							src="/brands/PVE_150x120.webp"
 							class="w-full aspect-[1/0.8]"

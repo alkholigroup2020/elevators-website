@@ -8,12 +8,12 @@
 	<!-- Hero Section -->
 	<section class="relative flex">
 		<img
-			src="/products/cargo-elevators/Headline_2000x500.webp"
-			alt="passengers elevators page header"
-			srcset="/products/cargo-elevators/Headline_800x400.webp 768w, 
-			/products/cargo-elevators/Headline_1600x640.webp 1536w, 
-			/products/cargo-elevators/Headline_2000x500.webp 8000w"
-			class="w-screen aspect-[1/0.5] md:aspect-[1/0.4] xl:aspect-[1/0.25]"
+			src="/products/passenger-elevators/passengers_header_2000x600.webp"
+			alt="cargo elevators page header"
+			srcset="/products/passenger-elevators/passengers_header_800x640.webp 768w, 
+							/products/passenger-elevators/passengers_header_1600x720.webp 1536w, 
+							/products/passenger-elevators/passengers_header_2000x600.webp 8000w"
+			class="w-screen aspect-[1/0.8] md:aspect-[1/0.45] xl:aspect-[1/0.3]"
 		/>
 
 		<div class="absolute inset-0 bg-black opacity-30" />
@@ -36,7 +36,7 @@
 				<a
 					href={`/${$currentAppLang}/meeting`}
 					aria-label="a link to the meeting page"
-					class="btn variant-filled-secondary border border-success-500 rounded-md px-3 lg:px-5 py-2 lg:py-3 main-{$currentAppLang}-text]"
+					class="text-white btn bg-primary-600 font-medium rounded-sm px-3 lg:px-5 py-2 lg:py-3 main-{$currentAppLang}-text"
 				>
 					{$LL.heroSection.action()}
 				</a>
@@ -74,7 +74,7 @@
 			</div>
 			<div class="grid lg:grid-cols-3 gap-12 lg:gap-4 xl:gap-12">
 				<div>
-					<div>
+					<div class="2xl:p-12">
 						<!-- image -->
 						<img
 							alt="an elevator cabin"
@@ -86,7 +86,7 @@
 							class="w-screen aspect-[1/0.8] min-[380px]:aspect-[1/0.6] md:aspect-[1/0.5] lg:aspect-[1/0.9] {$currentAppLang ===
 							'en'
 								? 'min-[200px]:pr-[50%] md:pr-[60%] lg:px-20'
-								: 'min-[200px]:pl-[50%] md:pl-[60%] lg:px-20'} "
+								: 'min-[200px]:pl-[60%] md:pl-[60%] lg:px-20'} "
 						/>
 					</div>
 
@@ -98,7 +98,7 @@
 				</div>
 
 				<div>
-					<div>
+					<div class="2xl:p-16">
 						<!-- image -->
 						<img
 							alt="an elevator cabin"
@@ -110,7 +110,7 @@
 							class="w-screen aspect-[1/0.8] min-[380px]:aspect-[1/0.6] md:aspect-[1/0.5] lg:aspect-[1/0.9] {$currentAppLang ===
 							'en'
 								? 'min-[200px]:pr-[50%] md:pr-[60%] lg:px-16'
-								: 'min-[200px]:pl-[50%] md:pl-[60%] lg:px-16'} "
+								: 'min-[200px]:pl-[60%] md:pl-[60%] lg:px-16'} "
 						/>
 					</div>
 
@@ -122,7 +122,7 @@
 				</div>
 
 				<div>
-					<div>
+					<div class="2xl:p-12">
 						<!-- image -->
 						<img
 							alt="an elevator cabin"
@@ -134,7 +134,7 @@
 							class="w-screen aspect-[1/0.8] min-[380px]:aspect-[1/0.6] md:aspect-[1/0.5] lg:aspect-[1/0.9] {$currentAppLang ===
 							'en'
 								? 'min-[200px]:pr-[50%] md:pr-[60%] lg:px-16'
-								: 'min-[200px]:pl-[50%] md:pl-[60%] lg:px-16'} "
+								: 'min-[200px]:pl-[60%] md:pl-[60%] lg:px-16'} "
 						/>
 					</div>
 

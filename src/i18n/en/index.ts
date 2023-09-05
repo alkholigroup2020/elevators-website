@@ -386,7 +386,8 @@ const en: BaseTranslation = {
 	},
 	projects: {
 		title: 'Our Projects',
-		more: 'Learn More ...'
+		more: 'Learn More ...',
+		btnClose: 'Close'
 	},
 	media: {
 		title: 'Media'

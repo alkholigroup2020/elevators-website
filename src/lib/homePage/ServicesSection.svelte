@@ -51,7 +51,7 @@
 								</g>
 							</svg>
 						</span>
-						<h3 class="heading-{$currentAppLang}-3 lg:text-4xl text-primary-500 px-4">
+						<h3 class="heading-{$currentAppLang}-3 font-medium lg:text-4xl text-primary-500 px-4">
 							{$LL.servicesSection.installationTitle()}
 						</h3>
 					</div>
@@ -101,7 +101,7 @@
 								/>
 							</svg>
 						</span>
-						<h3 class="heading-{$currentAppLang}-3 lg:text-4xl text-primary-500 px-4">
+						<h3 class="heading-{$currentAppLang}-3 font-medium lg:text-4xl text-primary-500 px-4">
 							{$LL.servicesSection.trafficTitle()}
 						</h3>
 					</div>
@@ -139,7 +139,7 @@
 							/></svg
 						>
 					</span>
-					<h3 class="heading-{$currentAppLang}-3 lg:text-4xl text-primary-500 px-4">
+					<h3 class="heading-{$currentAppLang}-3 font-medium lg:text-4xl text-primary-500 px-4">
 						{$LL.servicesSection.maintenanceTitle()}
 					</h3>
 				</div>

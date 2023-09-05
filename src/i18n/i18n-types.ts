@@ -1033,6 +1033,10 @@ type RootTranslation = {
 		 * L​e​a​r​n​ ​M​o​r​e​ ​.​.​.
 		 */
 		more: string
+		/**
+		 * C​l​o​s​e
+		 */
+		btnClose: string
 	}
 	media: {
 		/**
@@ -2996,6 +3000,10 @@ export type TranslationFunctions = {
 		 * Learn More ...
 		 */
 		more: () => LocalizedString
+		/**
+		 * Close
+		 */
+		btnClose: () => LocalizedString
 	}
 	media: {
 		/**

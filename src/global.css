@@ -128,58 +128,58 @@
 
 @media screen and (max-width: 1536px) {
 	.heading-en-3 {
+		font-size: 1.6rem;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.heading-en-3 {
 		font-size: 1.5rem;
 	}
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 550px) {
 	.heading-en-3 {
 		font-size: 1.4rem;
 	}
 }
-
-@media screen and (max-width: 550px) {
-	.heading-en-3 {
-		font-size: 1.3rem;
-	}
-}
 @media screen and (max-width: 350px) {
 	.heading-en-3 {
-		font-size: 1.1rem;
+		font-size: 1.2rem;
 	}
 }
 /* Arabic Heading 3 */
 .heading-ar-3 {
-	font-size: 1.6rem;
+	font-size: 1.5rem;
 }
 
 @media screen and (max-width: 1536px) {
 	.heading-ar-3 {
-		font-size: 1.3rem;
+		font-size: 1.4rem;
 	}
 }
 
 @media screen and (max-width: 750px) {
 	.heading-ar-3 {
-		font-size: 1.2rem;
+		font-size: 1.3rem;
 	}
 }
 
 @media screen and (max-width: 550px) {
 	.heading-ar-3 {
-		font-size: 1.1rem;
+		font-size: 1.2rem;
 	}
 }
 @media screen and (max-width: 350px) {
 	.heading-ar-3 {
-		font-size: 1rem;
+		font-size: 1.1rem;
 	}
 }
 
 /* ================================================================================ */
 /* English Large Text */
 .large-en-text {
-	font-size: 1.7rem;
+	font-size: 1.6rem;
 }
 
 @media screen and (max-width: 1536px) {

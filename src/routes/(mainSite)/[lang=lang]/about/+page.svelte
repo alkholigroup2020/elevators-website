@@ -6,12 +6,22 @@
 <div class="flex flex-col items-center" dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}>
 	<!-- Hero Section -->
 	<section class="relative flex">
-		<img
+		<!-- <img
 			loading="lazy"
 			src="/about-us/header/AboutUsFinal_2000x500.webp"
 			alt="About-us page background"
 			srcset="/about-us/header/AboutUsFinal_800x400.webp 768w, /about-us/header/AboutUsFinal_1600x640.webp 1536w, /about-us/header/AboutUsFinal_2000x500.webp 8000w"
 			class="w-screen aspect-[1/0.5] md:aspect-[1/0.4] xl:aspect-[1/0.25]"
+		/> -->
+
+		<img
+			loading="lazy"
+			src="/about-us/header/aboutUs-3_2000x600.webp"
+			alt="About-us header background"
+			srcset="/about-us/header/aboutUs-1_800x640.webp 768w, 
+			/about-us/header/aboutUs-2_1600x720.webp 1536w,
+			/about-us/header/aboutUs-3_2000x600.webp 8000w"
+			class="w-screen aspect-[1/0.8] md:aspect-[1/0.45] xl:aspect-[1/0.3]"
 		/>
 
 		<div class="absolute inset-0 bg-black opacity-30" />

@@ -23,7 +23,7 @@
 		<div class="absolute w-[100%] h-full flex items-center justify-center">
 			<div class="container mx-auto px-5 2xl:px-0">
 				<h1
-					class="heading-{$currentAppLang}-1 font-bold text-white pb-12 2xl:pb-24"
+					class="heading-{$currentAppLang}-1 font-bold text-white pb-12 2xl:pb-20"
 					style="text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.8);"
 				>
 					{$LL.products.passenger.title()}

@@ -166,14 +166,14 @@
 									<div class="p-5">
 										{#if $currentAppLang === 'en' ? true : false}
 											<h3
-												class="mb-1 main-{$currentAppLang}-text font-medium leading-9 line-clamp-2 h-[4.5rem]"
+												class="mb-1 large-{$currentAppLang}-text font-light leading-9 line-clamp-2 md:h-[5.5rem]"
 											>
 												{project.attributes.projectTitle}
 											</h3>
 										{:else}
 											<h3
 												dir="rtl"
-												class="mb-1 main-{$currentAppLang}-text font-medium leading-9 line-clamp-2 h-[4.5rem]"
+												class="mb-1 large-{$currentAppLang}-text font-light leading-9 line-clamp-2 md:h-[5.5rem]"
 											>
 												{project.attributes.localizations.data[0].attributes.projectTitle}
 											</h3>

@@ -19,15 +19,25 @@
 			/>
 		</div>
 
-		<div class="absolute inset-0 bg-black opacity-30" />
+		<div class="absolute inset-0 bg-black opacity-40" />
+
 		<div class="absolute w-[100%] h-full flex items-center justify-center">
 			<div class="container mx-auto px-5 2xl:px-0">
 				<h1
-					class="heading-{$currentAppLang}-1 font-bold text-white pb-12 2xl:pb-20"
+					class="heading-{$currentAppLang}-1 font-bold text-white pb-6 2xl:pb-12"
 					style="text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.8);"
 				>
 					{$LL.products.passenger.title()}
 				</h1>
+
+				<p
+					class="text-white hidden xl:max-w-[80%] font-medium min-[350px]:block large-{$currentAppLang}-text leading-6 min-[500px]:leading-8 pb-5 2xl:pb-8 xl:leading-relaxed
+					px-0 {$currentAppLang === 'en'
+						? 'min-[450px]:pr-8 md:pr-0 xl:pr-64'
+						: 'min-[450px]:pl-8 md:pl-0 xl:pl-64'}"
+				>
+					{$LL.products.passenger.intro()}
+				</p>
 
 				<a
 					href={`/${$currentAppLang}/meeting`}

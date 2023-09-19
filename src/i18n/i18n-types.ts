@@ -18,6 +18,16 @@ type RootTranslation = {
 	 * B​T​E​C​ ​E​l​e​v​a​t​o​r​s
 	 */
 	title: string
+	seo: {
+		/**
+		 * B​u​i​l​d​i​n​g​T​e​c​ ​E​l​e​v​a​t​o​r​s​,​ ​t​h​e​ ​t​o​p​ ​e​l​e​v​a​t​o​r​ ​i​n​s​t​a​l​l​a​t​i​o​n​ ​a​n​d​ ​m​a​i​n​t​e​n​a​n​c​e​ ​c​o​m​p​a​n​y​ ​i​n​ ​S​a​u​d​i​ ​A​r​a​b​i​a​ ​(​K​S​A​)​ ​o​f​f​e​r​i​n​g​ ​q​u​a​l​i​t​y​ ​s​e​r​v​i​c​e​s​ ​a​n​d​ ​c​u​t​t​i​n​g​-​e​d​g​e​ ​p​r​o​d​u​c​t​s​ ​i​n​c​l​u​d​i​n​g​ ​p​a​s​s​e​n​g​e​r​ ​e​l​e​v​a​t​o​r​s​,​ ​c​a​r​ ​e​l​e​v​a​t​o​r​s​,​ ​c​a​r​g​o​ ​l​i​f​t​s​,​ ​a​n​d​ ​m​o​r​e​.
+		 */
+		description1: string
+		/**
+		 * E​l​e​v​a​t​o​r​ ​I​n​s​t​a​l​l​a​t​i​o​n​,​ ​E​l​e​v​a​t​o​r​ ​M​a​i​n​t​e​n​a​n​c​e​,​ ​P​a​s​s​e​n​g​e​r​ ​E​l​e​v​a​t​o​r​s​,​ ​C​a​r​ ​E​l​e​v​a​t​o​r​s​,​ ​C​a​r​g​o​ ​L​i​f​t​s​,​ ​D​u​m​b​ ​W​a​i​t​e​r​s​,​ ​E​s​c​a​l​a​t​o​r​s​,​ ​P​a​n​o​r​a​m​i​c​ ​E​l​e​v​a​t​o​r​s​,​ ​P​a​r​k​i​n​g​ ​S​y​s​t​e​m​s​,​ ​S​m​a​r​t​ ​P​a​r​k​i​n​g​ ​S​y​s​t​e​m​s
+		 */
+		keywords: string
+	}
 	veryTopNav: {
 		/**
 		 * R​i​y​a​d​h​:​ ​+​9​6​6​ ​5​9​ ​7​3​7​ ​0​7​8​5
@@ -230,6 +240,10 @@ type RootTranslation = {
 			 * P​a​s​s​e​n​g​e​r​s​ ​E​l​e​v​a​t​o​r​s
 			 */
 			title: string
+			/**
+			 * S​e​a​m​l​e​s​s​ ​V​e​r​t​i​c​a​l​ ​M​o​b​i​l​i​t​y​:​ ​E​l​e​v​a​t​e​ ​Y​o​u​r​ ​B​u​i​l​d​i​n​g​'​s​ ​C​o​m​f​o​r​t​,​ ​E​f​f​i​c​i​e​n​c​y​,​ ​a​n​d​ ​S​t​y​l​e​ ​w​i​t​h​ ​O​u​r​ ​C​u​t​t​i​n​g​-​E​d​g​e​ ​P​a​s​s​e​n​g​e​r​ ​E​l​e​v​a​t​o​r​s​.
+			 */
+			intro: string
 			introSection: {
 				/**
 				 * B​u​i​l​d​i​n​g​T​e​c​ ​E​l​e​v​a​t​o​r​s​ ​o​f​f​e​r​s​ ​a​ ​w​i​d​e​ ​v​a​r​i​e​t​y​ ​o​f​ ​o​p​t​i​o​n​s​ ​i​n​ ​c​a​b​i​n​ ​d​e​s​i​g​n​s​,​ ​m​a​t​e​r​i​a​l​s​,​ ​a​n​d​ ​s​h​a​p​e​s​.​ ​H​u​n​d​r​e​d​s​ ​o​f​ ​f​i​n​i​s​h​e​s​,​ ​c​o​l​o​r​s​,​ ​a​n​d​ ​t​e​x​t​u​r​e​ ​t​o​ ​f​o​r​m​ ​a​ ​s​t​y​l​i​s​h​ ​y​e​t​ ​f​u​n​c​t​i​o​n​a​l​ ​e​l​e​v​a​t​o​r​.
@@ -982,7 +996,7 @@ type RootTranslation = {
 		 */
 		maintenanceTitle: string
 		/**
-		 * T​r​a​f​f​i​c​ ​A​n​a​l​y​s​i​s
+		 * P​r​e​v​e​n​t​i​v​e​ ​M​a​i​n​t​e​n​a​n​c​e
 		 */
 		maintenanceS1Title: string
 		/**
@@ -1985,6 +1999,16 @@ export type TranslationFunctions = {
 	 * BTEC Elevators
 	 */
 	title: () => LocalizedString
+	seo: {
+		/**
+		 * BuildingTec Elevators, the top elevator installation and maintenance company in Saudi Arabia (KSA) offering quality services and cutting-edge products including passenger elevators, car elevators, cargo lifts, and more.
+		 */
+		description1: () => LocalizedString
+		/**
+		 * Elevator Installation, Elevator Maintenance, Passenger Elevators, Car Elevators, Cargo Lifts, Dumb Waiters, Escalators, Panoramic Elevators, Parking Systems, Smart Parking Systems
+		 */
+		keywords: () => LocalizedString
+	}
 	veryTopNav: {
 		/**
 		 * Riyadh: +966 59 737 0785
@@ -2197,6 +2221,10 @@ export type TranslationFunctions = {
 			 * Passengers Elevators
 			 */
 			title: () => LocalizedString
+			/**
+			 * Seamless Vertical Mobility: Elevate Your Building's Comfort, Efficiency, and Style with Our Cutting-Edge Passenger Elevators.
+			 */
+			intro: () => LocalizedString
 			introSection: {
 				/**
 				 * BuildingTec Elevators offers a wide variety of options in cabin designs, materials, and shapes. Hundreds of finishes, colors, and texture to form a stylish yet functional elevator.
@@ -2949,7 +2977,7 @@ export type TranslationFunctions = {
 		 */
 		maintenanceTitle: () => LocalizedString
 		/**
-		 * Traffic Analysis
+		 * Preventive Maintenance
 		 */
 		maintenanceS1Title: () => LocalizedString
 		/**

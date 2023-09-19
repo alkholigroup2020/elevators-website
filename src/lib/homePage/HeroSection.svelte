@@ -17,7 +17,7 @@
 		<div class="absolute inset-0 flex items-center">
 			<div class="container mx-auto grid grid-cols-6 relative inset-0 z-10">
 				<div
-					class="col-span-6 space-y-12 min-[350px]:space-y-8 min-[450px]:space-y-10 min-[520px]:space-y-12 xl:space-y-16 2xl:space-y-20 lg:col-span-4 lg:col-start-1 lg:col-end-7 lg:px-12"
+					class="col-span-6 space-y-2 min-[185px]:space-y-12 min-[350px]:space-y-8 min-[450px]:space-y-10 min-[520px]:space-y-12 xl:space-y-12 lg:col-span-4 lg:col-start-1 lg:col-end-7 lg:px-12"
 				>
 					<!-- Heading -->
 					<h1
@@ -31,7 +31,7 @@
 						style="text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.8);"
 						class="large-{$currentAppLang}-text text-white max-[768px]:text-justify hidden min-[350px]:block px-5 lg:px-0 lg:max-w-4xl"
 					>
-						<span class="leading-2 min-[390px]:leading-8 md:leading-relaxed">
+						<span class="leading-2 min-[390px]:leading-8 md:leading-loose">
 							{$LL.heroSection.message()}
 						</span>
 					</p>
@@ -40,7 +40,7 @@
 						<a
 							href={`/${$currentAppLang}/meeting`}
 							aria-label="a link to the new-elevator form page"
-							class="text-white btn p-2 sm:p-3 2xl:p-[13px] bg-primary-600 font-medium rounded-sm main-{$currentAppLang}-text"
+							class="text-white btn p-2 sm:p-3 2xl:p-[13px] bg-primary-600 font-medium rounded-md main-{$currentAppLang}-text"
 						>
 							{$LL.heroSection.action()}
 						</a>

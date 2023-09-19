@@ -5,7 +5,6 @@
 	$: svgColor = $modeCurrent ? '#212121' : '#dedede';
 </script>
 
-<!-- px-8 xl:px-[240px] 2xl:px-0 -->
 <section
 	class="container mx-auto pb-10 px-5 2xl:px-0"
 	dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}
@@ -18,7 +17,7 @@
 	</div>
 	<!-- text section -->
 	<div class="grid grid-cols-1 2xl:grid-cols-2 2xl:gap-16 pb-8 xl:pb-12">
-		<div class="w-full">
+		<div class="w-full mb-8 2xl:mb-0">
 			<div>
 				<!-- installation -->
 				<div>
@@ -147,7 +146,7 @@
 				<div>
 					<!-- planned maintenance -->
 					<div class="pt-5">
-						<h3 class="heading-{$currentAppLang}-3 underline underline-offset-[7px] font-light">
+						<h3 class="text-lg md:text-2xl underline underline-offset-[7px] font-light">
 							{$LL.servicesSection.maintenanceS1Title()}:
 						</h3>
 					</div>
@@ -160,7 +159,7 @@
 				<div>
 					<!-- repairs -->
 					<div class="pt-5">
-						<h3 class="heading-{$currentAppLang}-3 underline underline-offset-[7px] font-light">
+						<h3 class="text-lg md:text-2xl underline underline-offset-[7px] font-light">
 							{$LL.servicesSection.maintenanceS2Title()}:
 						</h3>
 					</div>
@@ -173,7 +172,7 @@
 				<div>
 					<!-- warranty -->
 					<div class="pt-5">
-						<h3 class="heading-{$currentAppLang}-3 underline underline-offset-[7px] font-light">
+						<h3 class="text-lg md:text-2xl underline underline-offset-[7px] font-light">
 							{$LL.servicesSection.maintenanceS3Title()}:
 						</h3>
 					</div>

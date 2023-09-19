@@ -33,7 +33,49 @@
 
 <svelte:head>
 	<title>{$LL.title()}</title>
-	<meta name="description" content="An Elevators Co." />
+
+	<meta name="description" content={$LL.seo.description1()} />
+
+	<meta name="keywords" content={$LL.seo.keywords()} />
+
+	<!-- Meta Robots -->
+
+	<meta name="robots" content="index, follow" />
+
+	<!-- Canonical Tag -->
+
+	<link rel="canonical" href="https://www.buildingtec-elevators.com/" />
+
+	<!-- Hreflang Tags -->
+
+	<link rel="alternate" href="https://www.buildingtec-elevators.com/en/" hreflang="en" />
+
+	<link rel="alternate" href="https://www.buildingtec-elevators.com/ar/" hreflang="ar" />
+
+	<!-- Open Graph Tags -->
+
+	<!-- en -->
+	<meta
+		property="og:title"
+		content="BuildingTec Elevators - Quality Elevator Installation and Maintenance"
+	/>
+	<meta
+		property="og:description"
+		content="BuildingTec Elevators, the top elevator installation and maintenance company offering quality services and cutting-edge products including passenger elevators, car elevators, cargo lifts, and more."
+	/>
+	<meta property="og:url" content="https://www.buildingtec-elevators.com/" />
+	<meta property="og:site_name" content="BuildingTec Elevators" />
+	<meta property="og:type" content="website" />
+	<!-- ar -->
+	<meta property="og:title" content="مصاعد فن المعمار - تركيب وصيانة المصاعد بجودة عالية" />
+	<meta
+		property="og:description"
+		content="مصاعد فن المعمار، الشركة الرائدة في تركيب وصيانة المصاعد، تقدم خدمات عالية الجودة ومنتجات ذات تكنولوجيا متقدمة بما في ذلك المصاعد الركاب، المصاعد السيارات، المصاعد البضائع، وأكثر من ذلك."
+	/>
+	<meta property="og:url" content="https://www.buildingtec-elevators.com/ar/" />
+	<meta property="og:site_name" content="مصاعد فن المعمار" />
+	<meta property="og:type" content="website" />
+
 	<HeadHrefLangs />
 </svelte:head>
 
@@ -47,5 +89,4 @@
 
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
-	@import '../global.css';
 </style>

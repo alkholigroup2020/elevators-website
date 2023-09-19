@@ -39,7 +39,7 @@
 	<!-- $modalStore[0].component.props.background -->
 	<!-- max-w-[90%] -->
 	<div
-		class="bg-surface-100-800-token border rounded-md h-fit w-screen xl:max-w-[85%] px-5 pt-5 pb-8 xl:pb-12 my-auto overflow-auto"
+		class="bg-surface-100-800-token border rounded-md h-fit w-screen xl:max-w-[1500px] px-5 pt-5 pb-8 xl:pb-12 my-auto overflow-auto"
 	>
 		<!-- title -->
 		{#if $currentAppLang === 'en' ? true : false}

@@ -2,6 +2,13 @@ import type { BaseTranslation } from '../i18n-types';
 
 const en: BaseTranslation = {
 	title: 'BTEC Elevators',
+	seo: {
+		description1:
+			'BuildingTec Elevators, the top elevator installation and maintenance company in Saudi Arabia (KSA) offering quality services and cutting-edge products including passenger elevators, car elevators, cargo lifts, and more.',
+
+		keywords:
+			'Elevator Installation, Elevator Maintenance, Passenger Elevators, Car Elevators, Cargo Lifts, Dumb Waiters, Escalators, Panoramic Elevators, Parking Systems, Smart Parking Systems'
+	},
 	veryTopNav: {
 		mobile: 'Riyadh: +966 59 737 0785',
 		jed: 'Jeddah: +966 58 025 1227',
@@ -78,6 +85,8 @@ const en: BaseTranslation = {
 	products: {
 		passenger: {
 			title: 'Passengers Elevators',
+			intro:
+				"Seamless Vertical Mobility: Elevate Your Building's Comfort, Efficiency, and Style with Our Cutting-Edge Passenger Elevators.",
 			introSection: {
 				p1: 'BuildingTec Elevators offers a wide variety of options in cabin designs, materials, and shapes. Hundreds of finishes, colors, and texture to form a stylish yet functional elevator.',
 				p2: 'Glass, wood, inox, marble can be applied to your cabin design. Our elevator’s cabin is an artwork in your interior.',
@@ -368,7 +377,7 @@ const en: BaseTranslation = {
 		trafficTextP2:
 			'Our company can provide to all consultant engineers with a free of charge traffic analysis for their building in order to determine the optimized speed and capacity of their lifts.',
 		maintenanceTitle: 'Maintenance',
-		maintenanceS1Title: 'Traffic Analysis',
+		maintenanceS1Title: 'Preventive Maintenance',
 		maintenanceS1Text:
 			'Our scheduled maintenance gives you peace of mind that your lift will continue working.',
 		maintenanceS2Title: 'Repairs',

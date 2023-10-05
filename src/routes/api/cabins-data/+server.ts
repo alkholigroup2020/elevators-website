@@ -9,6 +9,7 @@ const query = gql`
 			data {
 				attributes {
 					description
+					image_order
 					thumb_100_100 {
 						data {
 							attributes {

@@ -15,13 +15,25 @@
 
 	// const videos = data.pageCMSData;
 
+	// Sort function
+	const sortVideos = (videos: any) => {
+		// Use the sort method which mutates the original array
+		return videos.sort(
+			(a: { attributes: { media_order: number } }, b: { attributes: { media_order: number } }) =>
+				a.attributes.media_order - b.attributes.media_order
+		);
+	};
+
 	let videos: any;
+	let sortedVideos: any;
 
 	const getVideosData = async () => {
 		try {
 			const response = await fetch('/api/media/');
 
 			videos = await response.json();
+
+			sortedVideos = sortVideos(videos);
 
 			// Check if the request was successful
 			if (!response.ok) {
@@ -58,7 +70,7 @@
 
 <section>
 	<div class="container mx-auto px-5 2xl:px-0">
-		{#if videos}
+		{#if sortedVideos}
 			{#each videos as video, index}
 				<div class="grid lg:grid-cols-2 gap-4 lg:gap-12 py-5 lg:py-12">
 					<div

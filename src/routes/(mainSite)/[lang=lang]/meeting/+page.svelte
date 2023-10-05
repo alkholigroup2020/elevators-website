@@ -84,7 +84,7 @@
 				}, 3000);
 			} else if (result.status === 400) {
 				formSubmitMessage = `${$LL.meeting.errorFeedback()}`;
-				appliedClass = 'text-error-400 px-2';
+				appliedClass = 'text-error-500 px-2';
 				setTimeout(() => {
 					formSubmitMessage = '';
 				}, 3000);

@@ -49,7 +49,7 @@
 
 			meta: {
 				projectName: projectData.projectTitle,
-				projectImages: projectData.projectImages.data,
+				projectImages: projectData.projectImages_500x600.data,
 				projectDescription: projectData.projectDescription,
 				projectTableData: projectData.projectTable,
 				projectNameAr: projectData.localizations.data[0].attributes.projectTitle,
@@ -157,7 +157,7 @@
 										<div>
 											<img
 												class="rounded-t-lg w-full aspect-[6/5] hover:brightness-125"
-												src={`https://cms.buildingtec-elevators.com${project.attributes.projectCover.data.attributes.url}`}
+												src={`https://cms.buildingtec-elevators.com${project.attributes.projectCover_600x500.data.attributes.url}`}
 												alt={`A picture for ${project.attributes.projectTitle} project.`}
 											/>
 										</div>

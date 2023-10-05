@@ -10,6 +10,7 @@ const query = gql`
 				id
 				attributes {
 					videoID
+					media_order
 					title
 					description {
 						description_line

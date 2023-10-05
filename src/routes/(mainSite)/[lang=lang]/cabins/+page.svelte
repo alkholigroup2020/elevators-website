@@ -71,6 +71,15 @@
 		// slot: '<p>Skeleton</p>'
 	};
 
+	// Sort function
+	const sortImages = (videos: any) => {
+		// Use the sort method which mutates the original array
+		return videos.sort(
+			(a: { attributes: { image_order: number } }, b: { attributes: { image_order: number } }) =>
+				a.attributes.image_order - b.attributes.image_order
+		);
+	};
+
 	function showModal(): void {
 		const modal: ModalSettings = {
 			type: 'component',
@@ -98,8 +107,8 @@
 
 			const cabinsData = await response.json();
 
-			server_response = transformData(cabinsData);
-
+			server_response = transformData(sortImages(cabinsData));
+			// console.log('🚀 server_response:', server_response);
 			// Check if the request was successful
 			if (!response.ok) {
 				throw new Error();

@@ -20,14 +20,14 @@ const query = gql`
 					projectDescription
 					projectTable
 					projectOrder
-					projectCover {
+					projectCover_600x500 {
 						data {
 							attributes {
 								url
 							}
 						}
 					}
-					projectImages {
+					projectImages_500x600 {
 						data {
 							attributes {
 								url

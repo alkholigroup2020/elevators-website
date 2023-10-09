@@ -27,6 +27,7 @@
 	import LL from '$i18n/i18n-svelte';
 
 	import WindowSize from '$lib/generalComponents/WindowSize.svelte';
+	import Analytics from '$lib/Analytics.svelte';
 
 	$: devOrProduction = process.env.NODE_ENV === 'development' ? true : false;
 </script>
@@ -84,6 +85,8 @@
 {/if}
 
 <Modal />
+
+<Analytics />
 
 <slot />
 

@@ -80,6 +80,20 @@
 			}
 		}
 	});
+
+	// Google Analytics - Contact us conversion page
+	function gtag_report_conversion(url: Location | (string & Location)) {
+		var callback = function () {
+			if (typeof url != 'undefined') {
+				window.location = url;
+			}
+		};
+		gtag('event', 'conversion', {
+			send_to: 'AW-824456723/_Fl1CLuxmfQCEJPskIkD',
+			event_callback: callback
+		});
+		return false;
+	}
 </script>
 
 <div>
@@ -175,6 +189,9 @@
 			<div>
 				<button
 					type="submit"
+					on:click={() => {
+						gtag_report_conversion;
+					}}
 					class="btn variant-ghost rounded-md border border-success-800 px-8 py-[5px] sub-main-{$currentAppLang}-text mt-3"
 				>
 					<span class="px-3"

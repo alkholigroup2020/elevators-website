@@ -25,6 +25,23 @@
 	$: whatsAppColor = onWhatsAppEnter ? '#d63030' : '#FFF';
 	$: linkedInColor = onLinkedInEnter ? '#d63030' : '#FFF';
 	$: instagramColor = onInstagramEnter ? '#d63030' : '#FFF';
+
+	// Google Analytics - calls to company conversion page
+	/**
+	 * @param {Location | (string & Location)} url
+	 */
+	function gtag_report_conversion(url) {
+		var callback = function () {
+			if (typeof url != 'undefined') {
+				window.location = url;
+			}
+		};
+		gtag('event', 'conversion', {
+			send_to: 'AW-824456723/GhYECJvQloABEJPskIkD',
+			event_callback: callback
+		});
+		return false;
+	}
 </script>
 
 <nav class={`w-full bg-surface-500 text-white ${`h-auto sm:h-12`}`}>
@@ -44,6 +61,9 @@
 						}}
 					>
 						<a
+							on:click={() => {
+								gtag_report_conversion;
+							}}
 							type="button"
 							aria-label="Call us on the hotline number"
 							href="tel:920023588"

@@ -33,6 +33,23 @@
 	$: linkedInColor = onLinkedInEnter ? '#d63030' : '#FFF';
 	$: onInstagramEnter = false;
 	$: instagramColor = onInstagramEnter ? '#d63030' : '#FFF';
+
+	// Google Analytics - Contact us conversion page
+	/**
+	 * @param {Location | (string & Location)} url
+	 */
+	function gtag_report_conversion(url) {
+		var callback = function () {
+			if (typeof url != 'undefined') {
+				window.location = url;
+			}
+		};
+		gtag('event', 'conversion', {
+			send_to: 'AW-824456723/_Fl1CLuxmfQCEJPskIkD',
+			event_callback: callback
+		});
+		return false;
+	}
 </script>
 
 <hr />
@@ -53,6 +70,9 @@
 					class="btn !bg-transparent p-0"
 					aria-label="our email address"
 					href="mailto:info@buildingtec.com"
+					on:click={() => {
+						gtag_report_conversion;
+					}}
 				>
 					<div
 						class="flex pb-3"
@@ -101,6 +121,9 @@
 					href="tel:00966597370785"
 					aria-label="Riyadh branch mobile number"
 					class="btn !bg-transparent p-0"
+					on:click={() => {
+						gtag_report_conversion;
+					}}
 				>
 					<div
 						class="flex pb-3"
@@ -139,6 +162,9 @@
 			<!-- Jeddah mobile number -->
 			<div>
 				<a
+					on:click={() => {
+						gtag_report_conversion;
+					}}
 					type="button"
 					aria-label="Jeddah branch mobile number"
 					href="tel:00966580251227"
@@ -185,6 +211,9 @@
 					aria-label="Call us on the hotline number"
 					href="tel:920023588"
 					class="btn !bg-transparent p-0"
+					on:click={() => {
+						gtag_report_conversion;
+					}}
 				>
 					<div
 						class="flex pb-3"

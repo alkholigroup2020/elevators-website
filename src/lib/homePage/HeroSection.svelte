@@ -5,20 +5,47 @@
 
 <section>
 	<div class="relative" dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}>
-		<!-- max-h-[40vh] min-[420px]:max-h-[44vh] min-[480px]:max-h-[50vh] md:max-h-[60vh] lg:max-h-none -->
+		<!-- from 0 to 450px -->
+		<img
+			alt="main hero section background"
+			src="/home-page/header/small-landing_800x760.webp"
+			srcset="
+			/home-page/header/small-landing_800x760.webp 450w, 
+			"
+			class="w-full aspect-[1/0.95] min-[450px]:aspect-[1/0.8] min-[450px]:hidden"
+		/>
+
+		<!-- from 450px to sm -->
+		<img
+			alt="main hero section background"
+			src="/home-page/header/small-landing_800x640.webp"
+			srcset="
+			/home-page/header/small-landing_800x640.webp 640w, 
+			"
+			class="w-full min-[450px]:aspect-[1/0.8] hidden min-[450px]:block sm:hidden"
+		/>
+
+		<!-- from sm to md -->
+		<img
+			alt="main hero section background"
+			src="/home-page/header/small-landing_800x520.webp"
+			srcset="
+			/home-page/header/small-landing_800x520.webp 768w, 
+			"
+			class="w-full sm:aspect-[1/0.65] hidden sm:block md:hidden"
+		/>
+
+		<!-- from md to 2xl -->
 		<img
 			alt="main hero section background"
 			src="/home-page/header/landing_2000x820.webp"
-			srcset="
-			/home-page/header/small-landing_800x760.webp 450w, 
-			/home-page/header/small-landing_800x640.webp 640w, 
-			/home-page/header/small-landing_800x520.webp 768w, 
+			srcset=" 
 			/home-page/header/landing_1200x720.webp 1024w, 
 			/home-page/header/landing_1400x700.webp 1280w, 
 			/home-page/header/landing_1600x720.webp 1536w, 
 			/home-page/header/landing_2000x820.webp 99999w
 			"
-			class="w-full aspect-[1/0.95] min-[450px]:aspect-[1/0.8] sm:aspect-[1/0.65] md:aspect-[1/0.6] lg:aspect-[1/0.5] xl:aspect-[1/0.45] 2xl:aspect-[1/0.41]"
+			class="w-full md:aspect-[1/0.6] lg:aspect-[1/0.5] xl:aspect-[1/0.45] 2xl:aspect-[1/0.41] max-md:hidden"
 		/>
 
 		<div class="absolute inset-0 bg-black opacity-50" />
@@ -26,7 +53,7 @@
 		<div class="absolute inset-0 flex items-center">
 			<div class="container mx-auto grid grid-cols-6 relative inset-0 z-10">
 				<div
-					class="col-span-6 space-y-2 min-[185px]:space-y-12 min-[350px]:space-y-6 min-[450px]:space-y-8 min-[520px]:space-y-10 xl:space-y-12 lg:col-span-4 lg:col-start-1 lg:col-end-7 lg:px-12"
+					class="col-span-6 space-y-2 min-[185px]:space-y-12 min-[350px]:space-y-6 min-[450px]:space-y-7 min-[520px]:space-y-10 xl:space-y-12 lg:col-span-4 lg:col-start-1 lg:col-end-7 lg:px-12"
 				>
 					<!-- Heading -->
 					<h1
@@ -40,7 +67,7 @@
 						style="text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.8);"
 						class="large-{$currentAppLang}-text text-white max-[768px]:text-justify hidden min-[350px]:block px-5 lg:px-0 lg:max-w-4xl"
 					>
-						<span class="leading-2 min-[390px]:leading-8 md:leading-loose">
+						<span class="leading-2 min-[390px]:leading-7 md:leading-loose">
 							{$LL.heroSection.message()}
 						</span>
 					</p>
@@ -49,7 +76,7 @@
 						<a
 							href={`/${$currentAppLang}/meeting`}
 							aria-label="a link to the new-elevator form page"
-							class="text-white btn p-2 sm:p-3 2xl:p-[13px] bg-primary-600 font-medium rounded-md main-{$currentAppLang}-text"
+							class="text-white btn p-2 sm:p-3 2xl:p-[13px] bg-primary-600 font-medium rounded-sm main-{$currentAppLang}-text"
 						>
 							{$LL.heroSection.action()}
 						</a>

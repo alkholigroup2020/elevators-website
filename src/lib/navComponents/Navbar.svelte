@@ -55,7 +55,7 @@
 </script>
 
 <AppBar
-	background="bg-surface-50-800-token text-secondary-800-100-token text-lg py-0"
+	background="bg-surface-50-800-token text-secondary-800-100-token text-lg py-0 sm:py-1"
 	shadow="shadow-md"
 	regionRowMain="container mx-auto"
 >
@@ -107,7 +107,7 @@
 							</div>
 						</div>
 
-						<div class="flex items-end pb-4 ml-4">
+						<div class="flex items-end pb-4 ml-4 max-md:hidden">
 							<div>
 								<!-- text logo -->
 								{#if $modeCurrent}
@@ -115,14 +115,14 @@
 										loading="lazy"
 										src="/logo_text_black_240x60.webp"
 										alt="company's logo"
-										class="w-full aspect-[1/0.25] max-h-8 lg:max-h-9 max-[300px]:hidden"
+										class="w-full aspect-[1/0.25] max-h-8 lg:max-h-9"
 									/>
 								{:else}
 									<img
 										loading="lazy"
 										src="/logo_text_white_240x60.webp"
 										alt="company's logo"
-										class="w-full aspect-[1/0.25] max-h-8 lg:max-h-9 max-[300px]:hidden"
+										class="w-full aspect-[1/0.25] max-h-8 lg:max-h-9"
 									/>
 								{/if}
 							</div>

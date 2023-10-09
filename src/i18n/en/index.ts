@@ -652,7 +652,7 @@ const en: BaseTranslation = {
 			title: 'Send Us a Message',
 			form: {
 				fullName: 'Name:',
-				fullNameError: 'Name length should be more that 3 characters!',
+				fullNameError: 'Name length should be more than 2 characters!',
 				fullNameLengthError: 'Name is too long! Maximum 60 characters.',
 				fullNameNumericError: 'No numbers are allowed!',
 				fullNamePlaceholder: 'Your good name ...',

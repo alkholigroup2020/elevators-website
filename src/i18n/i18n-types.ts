@@ -1918,7 +1918,7 @@ type RootTranslation = {
 				 */
 				fullName: string
 				/**
-				 * N​a​m​e​ ​l​e​n​g​t​h​ ​s​h​o​u​l​d​ ​b​e​ ​m​o​r​e​ ​t​h​a​t​ ​3​ ​c​h​a​r​a​c​t​e​r​s​!
+				 * N​a​m​e​ ​l​e​n​g​t​h​ ​s​h​o​u​l​d​ ​b​e​ ​m​o​r​e​ ​t​h​a​n​ ​2​ ​c​h​a​r​a​c​t​e​r​s​!
 				 */
 				fullNameError: string
 				/**
@@ -3899,7 +3899,7 @@ export type TranslationFunctions = {
 				 */
 				fullName: () => LocalizedString
 				/**
-				 * Name length should be more that 3 characters!
+				 * Name length should be more than 2 characters!
 				 */
 				fullNameError: () => LocalizedString
 				/**

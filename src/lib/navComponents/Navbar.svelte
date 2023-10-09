@@ -107,7 +107,7 @@
 							</div>
 						</div>
 
-						<div class="hidden lg:flex items-end pb-4 ml-4">
+						<div class="flex items-end pb-4 ml-4">
 							<div>
 								<!-- text logo -->
 								{#if $modeCurrent}
@@ -115,14 +115,14 @@
 										loading="lazy"
 										src="/logo_text_black_240x60.webp"
 										alt="company's logo"
-										class="w-full aspect-[4/1] max-h-9"
+										class="w-full aspect-[1/0.25] max-h-8 lg:max-h-9 max-[300px]:hidden"
 									/>
 								{:else}
 									<img
 										loading="lazy"
 										src="/logo_text_white_240x60.webp"
 										alt="company's logo"
-										class="w-full aspect-[4/1] max-h-9"
+										class="w-full aspect-[1/0.25] max-h-8 lg:max-h-9 max-[300px]:hidden"
 									/>
 								{/if}
 							</div>

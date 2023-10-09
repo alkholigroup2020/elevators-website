@@ -8,8 +8,15 @@
 		<img
 			alt="main hero section background"
 			src="/home-page/header/landing_2000x820.webp"
-			srcset="/home-page/header/landing_800x960.webp 768w, /home-page/header/landing_1200x840.webp 1024w, /home-page/header/landing_1400x700.webp 1280w, /home-page/header/landing_1600x720.webp 1536w, /home-page/header/landing_2000x820.webp 99999w"
-			class="w-full min-[420px]:max-h-[70vh] min-[480px]:max-h-[50vh] md:max-h-[60vh] lg:max-h-none aspect-[1/1.2] md:aspect-[1/0.7] lg:aspect-[1/0.5] xl:aspect-[1/0.45] 2xl:aspect-[1/0.41]"
+			srcset="
+			/home-page/header/landing_800x960.webp 768w, 
+			/home-page/header/landing_1200x840.webp 1024w, 
+			/home-page/header/landing_1400x700.webp 1280w, 
+			/home-page/header/landing_1600x720.webp 1536w, 
+			/home-page/header/landing_2000x820.webp 99999w
+			"
+			class="w-full max-h-[40vh] min-[420px]:max-h-[44vh] min-[480px]:max-h-[50vh] md:max-h-[60vh] lg:max-h-none
+			aspect-[1/1.2] md:aspect-[1/0.7] lg:aspect-[1/0.5] xl:aspect-[1/0.45] 2xl:aspect-[1/0.41]"
 		/>
 
 		<div class="absolute inset-0 bg-black opacity-50" />
@@ -17,7 +24,7 @@
 		<div class="absolute inset-0 flex items-center">
 			<div class="container mx-auto grid grid-cols-6 relative inset-0 z-10">
 				<div
-					class="col-span-6 space-y-2 min-[185px]:space-y-12 min-[350px]:space-y-8 min-[450px]:space-y-10 min-[520px]:space-y-12 xl:space-y-12 lg:col-span-4 lg:col-start-1 lg:col-end-7 lg:px-12"
+					class="col-span-6 space-y-2 min-[185px]:space-y-12 min-[350px]:space-y-6 min-[450px]:space-y-8 min-[520px]:space-y-10 xl:space-y-12 lg:col-span-4 lg:col-start-1 lg:col-end-7 lg:px-12"
 				>
 					<!-- Heading -->
 					<h1

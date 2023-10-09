@@ -5,18 +5,20 @@
 
 <section>
 	<div class="relative" dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}>
+		<!-- max-h-[40vh] min-[420px]:max-h-[44vh] min-[480px]:max-h-[50vh] md:max-h-[60vh] lg:max-h-none -->
 		<img
 			alt="main hero section background"
 			src="/home-page/header/landing_2000x820.webp"
 			srcset="
-			/home-page/header/landing_800x960.webp 768w, 
-			/home-page/header/landing_1200x840.webp 1024w, 
+			/home-page/header/small-landing_800x760.webp 450w, 
+			/home-page/header/small-landing_800x640.webp 640w, 
+			/home-page/header/small-landing_800x520.webp 768w, 
+			/home-page/header/landing_1200x720.webp 1024w, 
 			/home-page/header/landing_1400x700.webp 1280w, 
 			/home-page/header/landing_1600x720.webp 1536w, 
 			/home-page/header/landing_2000x820.webp 99999w
 			"
-			class="w-full max-h-[40vh] min-[420px]:max-h-[44vh] min-[480px]:max-h-[50vh] md:max-h-[60vh] lg:max-h-none
-			aspect-[1/1.2] md:aspect-[1/0.7] lg:aspect-[1/0.5] xl:aspect-[1/0.45] 2xl:aspect-[1/0.41]"
+			class="w-full aspect-[1/0.95] min-[450px]:aspect-[1/0.8] sm:aspect-[1/0.65] md:aspect-[1/0.6] lg:aspect-[1/0.5] xl:aspect-[1/0.45] 2xl:aspect-[1/0.41]"
 		/>
 
 		<div class="absolute inset-0 bg-black opacity-50" />

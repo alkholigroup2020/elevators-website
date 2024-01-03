@@ -3,9 +3,9 @@
 </script>
 
 <section class="section-bg" id="brands">
-	<div class="container mx-auto py-14 px-5 2xl:px-0">
+	<div class="container mx-auto py-8 sm:py-14 px-5 xl:px-24">
 		<div
-			class="grid min-[320px]:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-2 lg:gap-5 xl:gap-12"
+			class="grid min-[320px]:grid-cols-2 lg:grid-cols-4 gap-2 min-[320px]:gap-8 lg:gap-5 xl:gap-2"
 		>
 			<div class="flex justify-center">
 				<div class="circle my-5">
@@ -46,7 +46,7 @@
 				</div>
 			</div>
 
-			<div class="flex justify-center">
+			<!-- <div class="flex justify-center">
 				<div class="circle my-5">
 					<div class="p-10 min-[450px]:px-16">
 						<img
@@ -57,7 +57,7 @@
 						/>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 			<div class="flex justify-center">
 				<div class="circle my-5">

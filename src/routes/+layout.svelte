@@ -11,6 +11,8 @@
 	import { storePopup } from '@skeletonlabs/skeleton';
 	storePopup.set({ computePosition, autoUpdate, offset, shift, flip, arrow });
 
+	import { onMount } from 'svelte';
+
 	import { setLocale } from '$i18n/i18n-svelte';
 	import HeadHrefLangs from '$lib/HeadHrefLangs.svelte';
 
@@ -28,8 +30,34 @@
 
 	import WindowSize from '$lib/generalComponents/WindowSize.svelte';
 	import Analytics from '$lib/Analytics.svelte';
+	import { any } from 'zod';
 
 	$: devOrProduction = process.env.NODE_ENV === 'development' ? true : false;
+
+	onMount(() => {
+		(function (h, o, t, j, a, r) {
+			// @ts-ignore
+			h.hj =
+				// @ts-ignore
+				h.hj ||
+				function () {
+					// @ts-ignore
+					(h.hj.q = h.hj.q || []).push(arguments);
+				};
+			// @ts-ignore
+			h._hjSettings = { hjid: 2670023, hjsv: 6 };
+			// @ts-ignore
+			a = o.getElementsByTagName('head')[0];
+			// @ts-ignore
+			r = o.createElement('script');
+			// @ts-ignore
+			r.async = 1;
+			// @ts-ignore
+			r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+			// @ts-ignore
+			a.appendChild(r);
+		})(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+	});
 </script>
 
 <svelte:head>
@@ -67,6 +95,7 @@
 	<meta property="og:url" content="https://www.buildingtec-elevators.com/" />
 	<meta property="og:site_name" content="BuildingTec Elevators" />
 	<meta property="og:type" content="website" />
+
 	<!-- ar -->
 	<meta property="og:title" content="مصاعد فن المعمار - تركيب وصيانة المصاعد بجودة عالية" />
 	<meta
@@ -76,24 +105,6 @@
 	<meta property="og:url" content="https://www.buildingtec-elevators.com/ar/" />
 	<meta property="og:site_name" content="مصاعد فن المعمار" />
 	<meta property="og:type" content="website" />
-
-	<!-- Hotjar Tracking Code -->
-	<!-- Hotjar Tracking Code -->
-	<script>
-		(function (h, o, t, j, a, r) {
-			h.hj =
-				h.hj ||
-				function () {
-					(h.hj.q = h.hj.q || []).push(arguments);
-				};
-			h._hjSettings = { hjid: 2670023, hjsv: 6 };
-			a = o.getElementsByTagName('head')[0];
-			r = o.createElement('script');
-			r.async = 1;
-			r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-			a.appendChild(r);
-		})(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-	</script>
 
 	<HeadHrefLangs />
 </svelte:head>

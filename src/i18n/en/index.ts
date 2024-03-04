@@ -1,7 +1,7 @@
 import type { BaseTranslation } from '../i18n-types';
 
 const en: BaseTranslation = {
-	title: 'BTEC Elevators',
+	title: 'BuildingTec Elevators',
 	seo: {
 		description1:
 			'BuildingTec Elevators, the top elevator installation and maintenance company in Saudi Arabia (KSA) offering quality services and cutting-edge products including passenger elevators, car elevators, cargo lifts, and more.',

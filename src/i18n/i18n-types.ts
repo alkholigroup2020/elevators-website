@@ -15,7 +15,7 @@ export type Translations = RootTranslation
 
 type RootTranslation = {
 	/**
-	 * B​T​E​C​ ​E​l​e​v​a​t​o​r​s
+	 * B​u​i​l​d​i​n​g​T​e​c​ ​E​l​e​v​a​t​o​r​s
 	 */
 	title: string
 	seo: {
@@ -1996,7 +1996,7 @@ type RootTranslation = {
 
 export type TranslationFunctions = {
 	/**
-	 * BTEC Elevators
+	 * BuildingTec Elevators
 	 */
 	title: () => LocalizedString
 	seo: {

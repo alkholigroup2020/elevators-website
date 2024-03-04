@@ -26,18 +26,65 @@
 	$: linkedInColor = onLinkedInEnter ? '#d63030' : '#FFF';
 	$: instagramColor = onInstagramEnter ? '#d63030' : '#FFF';
 
-	// Google Analytics - calls to company conversion page
 	/**
 	 * @param {Location | (string & Location)} url
 	 */
-	function gtag_report_conversion(url) {
+	function jeddah_gtag_report_conversion(url) {
 		var callback = function () {
 			if (typeof url != 'undefined') {
 				window.location = url;
 			}
 		};
 		gtag('event', 'conversion', {
-			send_to: 'AW-824456723/GhYECJvQloABEJPskIkD',
+			send_to: 'AW-824456723/Bli8CJy52ZUZEJPskIkD',
+			event_callback: callback
+		});
+		return false;
+	}
+
+	/**
+	 * @param {Location | (string & Location)} url
+	 */
+	function landLine_gtag_report_conversion(url) {
+		var callback = function () {
+			if (typeof url != 'undefined') {
+				window.location = url;
+			}
+		};
+		gtag('event', 'conversion', {
+			send_to: 'AW-824456723/_1-7CJa52ZUZEJPskIkD',
+			event_callback: callback
+		});
+		return false;
+	}
+
+	/**
+	 * @param {Location | (string & Location)} url
+	 */
+	function riyadh_gtag_report_conversion(url) {
+		var callback = function () {
+			if (typeof url != 'undefined') {
+				window.location = url;
+			}
+		};
+		gtag('event', 'conversion', {
+			send_to: 'AW-824456723/4EDJCJm52ZUZEJPskIkD',
+			event_callback: callback
+		});
+		return false;
+	}
+
+	/**
+	 * @param {Location | (string & Location)} url
+	 */
+	function email_gtag_report_conversion(url) {
+		var callback = function () {
+			if (typeof url != 'undefined') {
+				window.location = url;
+			}
+		};
+		gtag('event', 'conversion', {
+			send_to: 'AW-824456723/hERoCJ-52ZUZEJPskIkD',
 			event_callback: callback
 		});
 		return false;
@@ -62,7 +109,7 @@
 					>
 						<a
 							on:click={() => {
-								gtag_report_conversion;
+								landLine_gtag_report_conversion;
 							}}
 							type="button"
 							aria-label="Call us on the hotline number"
@@ -105,6 +152,9 @@
 						}}
 					>
 						<a
+							on:click={() => {
+								riyadh_gtag_report_conversion;
+							}}
 							type="button"
 							href="tel:00966597370785"
 							aria-label="Riyadh branch mobile number"
@@ -127,6 +177,7 @@
 							<span>{$LL.veryTopNav.mobile()}</span>
 						</a>
 					</li>
+
 					<!-- JED Mobile Number -->
 					<li
 						class="hidden 2xl:block mx-4"
@@ -138,6 +189,9 @@
 						}}
 					>
 						<a
+							on:click={() => {
+								jeddah_gtag_report_conversion;
+							}}
 							type="button"
 							aria-label="Jeddah branch mobile number"
 							href="tel:00966580251227"
@@ -160,6 +214,7 @@
 							<span>{$LL.veryTopNav.jed()}</span>
 						</a>
 					</li>
+
 					<!-- email -->
 					<li
 						class="hidden md:block mx-4"
@@ -172,6 +227,9 @@
 					>
 						<a
 							type="button"
+							on:click={() => {
+								email_gtag_report_conversion;
+							}}
 							aria-label="our email address"
 							href="mailto:info@buildingtec.com"
 							class="btn !bg-transparent px-0 py-1 sm:py-3 sub-main-{$currentAppLang}-text"

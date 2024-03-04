@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import LL from '$i18n/i18n-svelte';
 	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
 	import FooterForm from './FooterForm.svelte';
@@ -34,18 +34,65 @@
 	$: onInstagramEnter = false;
 	$: instagramColor = onInstagramEnter ? '#d63030' : '#FFF';
 
-	// Google Analytics - Contact us conversion page
 	/**
 	 * @param {Location | (string & Location)} url
 	 */
-	function gtag_report_conversion(url) {
+	function jeddah_gtag_report_conversion(url: Location | (string & Location)) {
 		var callback = function () {
 			if (typeof url != 'undefined') {
 				window.location = url;
 			}
 		};
 		gtag('event', 'conversion', {
-			send_to: 'AW-824456723/_Fl1CLuxmfQCEJPskIkD',
+			send_to: 'AW-824456723/Bli8CJy52ZUZEJPskIkD',
+			event_callback: callback
+		});
+		return false;
+	}
+
+	/**
+	 * @param {Location | (string & Location)} url
+	 */
+	function landLine_gtag_report_conversion(url: Location | (string & Location)) {
+		var callback = function () {
+			if (typeof url != 'undefined') {
+				window.location = url;
+			}
+		};
+		gtag('event', 'conversion', {
+			send_to: 'AW-824456723/_1-7CJa52ZUZEJPskIkD',
+			event_callback: callback
+		});
+		return false;
+	}
+
+	/**
+	 * @param {Location | (string & Location)} url
+	 */
+	function riyadh_gtag_report_conversion(url: Location | (string & Location)) {
+		var callback = function () {
+			if (typeof url != 'undefined') {
+				window.location = url;
+			}
+		};
+		gtag('event', 'conversion', {
+			send_to: 'AW-824456723/4EDJCJm52ZUZEJPskIkD',
+			event_callback: callback
+		});
+		return false;
+	}
+
+	/**
+	 * @param {Location | (string & Location)} url
+	 */
+	function email_gtag_report_conversion(url: Location | (string & Location)) {
+		var callback = function () {
+			if (typeof url != 'undefined') {
+				window.location = url;
+			}
+		};
+		gtag('event', 'conversion', {
+			send_to: 'AW-824456723/hERoCJ-52ZUZEJPskIkD',
 			event_callback: callback
 		});
 		return false;
@@ -71,7 +118,7 @@
 					aria-label="our email address"
 					href="mailto:info@buildingtec.com"
 					on:click={() => {
-						gtag_report_conversion;
+						email_gtag_report_conversion;
 					}}
 				>
 					<div
@@ -122,7 +169,7 @@
 					aria-label="Riyadh branch mobile number"
 					class="btn !bg-transparent p-0"
 					on:click={() => {
-						gtag_report_conversion;
+						riyadh_gtag_report_conversion;
 					}}
 				>
 					<div
@@ -163,7 +210,7 @@
 			<div>
 				<a
 					on:click={() => {
-						gtag_report_conversion;
+						jeddah_gtag_report_conversion;
 					}}
 					type="button"
 					aria-label="Jeddah branch mobile number"
@@ -212,7 +259,7 @@
 					href="tel:920023588"
 					class="btn !bg-transparent p-0"
 					on:click={() => {
-						gtag_report_conversion;
+						landLine_gtag_report_conversion;
 					}}
 				>
 					<div

@@ -81,15 +81,17 @@
 		}
 	});
 
-	// Google Analytics - Contact us conversion page
-	function gtag_report_conversion(url: Location | (string & Location)) {
+	/**
+	 * @param {Location | (string & Location)} url
+	 */
+	function sendMsg_gtag_report_conversion(url: Location | (string & Location)) {
 		var callback = function () {
 			if (typeof url != 'undefined') {
 				window.location = url;
 			}
 		};
 		gtag('event', 'conversion', {
-			send_to: 'AW-824456723/_Fl1CLuxmfQCEJPskIkD',
+			send_to: 'AW-824456723/lEHUCP7H2ZUZEJPskIkD',
 			event_callback: callback
 		});
 		return false;
@@ -190,7 +192,7 @@
 				<button
 					type="submit"
 					on:click={() => {
-						gtag_report_conversion;
+						sendMsg_gtag_report_conversion;
 					}}
 					class="btn variant-ghost rounded-md border border-success-800 px-8 py-[5px] sub-main-{$currentAppLang}-text mt-3"
 				>

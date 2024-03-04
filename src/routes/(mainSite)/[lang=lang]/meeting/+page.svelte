@@ -92,15 +92,17 @@
 		}
 	});
 
-	// Google Analytics - Contact us conversion page
-	function gtag_report_conversion(url: Location | (string & Location)) {
+	/**
+	 * @param {Location | (string & Location)} url
+	 */
+	function meeting_gtag_report_conversion(url: Location | (string & Location)) {
 		var callback = function () {
 			if (typeof url != 'undefined') {
 				window.location = url;
 			}
 		};
 		gtag('event', 'conversion', {
-			send_to: 'AW-824456723/_Fl1CLuxmfQCEJPskIkD',
+			send_to: 'AW-824456723/VkTLCKK52ZUZEJPskIkD',
 			event_callback: callback
 		});
 		return false;
@@ -128,10 +130,10 @@
 <section dir={$pageDirection}>
 	<div class="container mx-auto px-5 2xl:px-0">
 		<div class="py-12 lg:pt-16">
-			<p class="large-{$currentAppLang}-text font-light text-primary-500">
+			<p class="large-{$currentAppLang}-text font-light">
 				{$LL.meeting.intro1()}
 			</p>
-			<p class="large-{$currentAppLang}-text font-light text-primary-500 pt-3 lg:pt-5">
+			<p class="large-{$currentAppLang}-text font-light pt-3 lg:pt-5">
 				{$LL.meeting.intro2()}
 			</p>
 		</div>
@@ -252,7 +254,7 @@
 						<div>
 							<button
 								on:click={() => {
-									gtag_report_conversion;
+									meeting_gtag_report_conversion;
 								}}
 								type="submit"
 								class="btn variant-ringed-surface rounded-lg px-16 py-[10px] sub-main-{$currentAppLang}-text mt-3"

@@ -4,6 +4,13 @@
 	import { currentAppLang } from '$lib/stores/store';
 </script>
 
+<svelte:head>
+	<meta property="og:description" content="Passenger Elevators" />
+	<meta property="og:description" content="Elevator" />
+	<meta property="og:description" content="مصاعد أفراد" />
+	<meta property="og:description" content="المصاعد" />
+</svelte:head>
+
 <!-- class="flex flex-col items-center" -->
 <div dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}>
 	<!-- Hero Section -->

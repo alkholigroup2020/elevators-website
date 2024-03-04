@@ -35,6 +35,7 @@
 	$: devOrProduction = process.env.NODE_ENV === 'development' ? true : false;
 
 	onMount(() => {
+		// hotjar
 		(function (h, o, t, j, a, r) {
 			// @ts-ignore
 			h.hj =
@@ -90,8 +91,9 @@
 	/>
 	<meta
 		property="og:description"
-		content="BuildingTec Elevators, the top elevator installation and maintenance company offering quality services and cutting-edge products including passenger elevators, car elevators, cargo lifts, and more."
+		content="BuildingTec Elevators, the top elevator installation and maintenance company offering quality services and cutting-edge products including passenger elevators, car elevators, cargo lifts, and more"
 	/>
+	<meta property="og:description" content="Best Elevator company in Saudi Arabia" />
 	<meta property="og:url" content="https://www.buildingtec-elevators.com/" />
 	<meta property="og:site_name" content="BuildingTec Elevators" />
 	<meta property="og:type" content="website" />
@@ -102,6 +104,7 @@
 		property="og:description"
 		content="مصاعد فن المعمار، الشركة الرائدة في تركيب وصيانة المصاعد، تقدم خدمات عالية الجودة ومنتجات ذات تكنولوجيا متقدمة بما في ذلك المصاعد الركاب، المصاعد السيارات، المصاعد البضائع، وأكثر من ذلك."
 	/>
+	<meta property="og:description" content="نحن أفضل شركة مصاعد في المملكة العربية السعودية" />
 	<meta property="og:url" content="https://www.buildingtec-elevators.com/ar/" />
 	<meta property="og:site_name" content="مصاعد فن المعمار" />
 	<meta property="og:type" content="website" />

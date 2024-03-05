@@ -94,6 +94,33 @@
 		content="BuildingTec Elevators, the top elevator installation and maintenance company offering quality services and cutting-edge products including passenger elevators, car elevators, cargo lifts, and more"
 	/>
 	<meta property="og:description" content="Best Elevator company in Saudi Arabia" />
+	<meta property="og:description" content="Elevators Company in Jeddah" />
+	<meta property="og:description" content="Elevator Company in Riyadh" />
+	<meta property="og:description" content="Elevator company in Saudi Arabia" />
+	<meta property="og:description" content="Elevator company in KSA" />
+	<meta property="og:description" content="Elevator Riyadh" />
+	<meta property="og:description" content="Elevator Jeddah" />
+	<meta property="og:description" content="Home elevator in Riyadh" />
+	<meta property="og:description" content="Home elevator in Jeddah" />
+	<meta property="og:description" content="Home elevator in saudi arabia" />
+	<meta property="og:description" content="Car Elevator in Saudi Arabia" />
+	<meta property="og:description" content="Car Elevator in Riyadh" />
+	<meta property="og:description" content="Car Elevator in Jeddah" />
+	<meta property="og:description" content="Cargo lift in Saudi arabia" />
+	<meta property="og:description" content="Cargo lift in Riyadh" />
+	<meta property="og:description" content="Cargo lift in jeddah" />
+	<meta property="og:description" content="Dumbwaiter in riyadh" />
+	<meta property="og:description" content="Dumbwaiter in jeddah" />
+	<meta property="og:description" content="Dumbwaiter in Saudi arabia" />
+	<meta property="og:description" content="Escalator in Saudi Arabia" />
+	<meta property="og:description" content="Escalator in riyadh" />
+	<meta property="og:description" content="Escalator in Jeddah" />
+	<meta property="og:description" content="Panoramic Elevators in jeddah" />
+	<meta property="og:description" content="Panoramic elevator in riyadh" />
+	<meta property="og:description" content="Panoramic elevator in Saudi arabia" />
+	<meta property="og:description" content="parking system in jeddah" />
+	<meta property="og:description" content="parking system in riyadh" />
+	<meta property="og:description" content="parking system in Saudi arabia" />
 	<meta property="og:url" content="https://www.buildingtec-elevators.com/" />
 	<meta property="og:site_name" content="BuildingTec Elevators" />
 	<meta property="og:type" content="website" />
@@ -105,6 +132,33 @@
 		content="مصاعد فن المعمار، الشركة الرائدة في تركيب وصيانة المصاعد، تقدم خدمات عالية الجودة ومنتجات ذات تكنولوجيا متقدمة بما في ذلك المصاعد الركاب، المصاعد السيارات، المصاعد البضائع، وأكثر من ذلك."
 	/>
 	<meta property="og:description" content="نحن أفضل شركة مصاعد في المملكة العربية السعودية" />
+	<meta property="og:description" content="شركة مصاعد في جدة" />
+	<meta property="og:description" content="شركة مصاعد في الرياض" />
+	<meta property="og:description" content="شركة مصاعد في المملكة العربية السعودية" />
+	<meta property="og:description" content="شركة مصاعد في السعودية" />
+	<meta property="og:description" content="مصاعد في الرياض" />
+	<meta property="og:description" content="مصاعد في جدة" />
+	<meta property="og:description" content="مصعد منزلي بالرياض" />
+	<meta property="og:description" content="مصعد منزلي في جدة" />
+	<meta property="og:description" content="مصعد منزلي في السعودية" />
+	<meta property="og:description" content="مصعد سيارات في السعودية" />
+	<meta property="og:description" content="مصعد سيارات في الرياض" />
+	<meta property="og:description" content="مصعد سيارات في جدة" />
+	<meta property="og:description" content="مصعد بضائع في السعودية" />
+	<meta property="og:description" content="مصعد بضائع في الرياض" />
+	<meta property="og:description" content="مصعد بضائع في جدة" />
+	<meta property="og:description" content="مصعد طعام في الرياض" />
+	<meta property="og:description" content="مصعد طعام في جدة" />
+	<meta property="og:description" content="مصعد طعام في السعودية" />
+	<meta property="og:description" content="سلالم متحركة في السعودية" />
+	<meta property="og:description" content="سلالم متحركة في الرياض" />
+	<meta property="og:description" content="سلالم متحركة في جدة" />
+	<meta property="og:description" content="مصاعد بانوراما في جدة" />
+	<meta property="og:description" content="مصاعد بانوراما في الرياض" />
+	<meta property="og:description" content="مصاعد بانوراما في السعودية" />
+	<meta property="og:description" content="مواقف السيارات الذكية في جدة" />
+	<meta property="og:description" content="مواقف السيارات الذكية في الرياض" />
+	<meta property="og:description" content="مواقف السيارات الذكية في السعودية" />
 	<meta property="og:url" content="https://www.buildingtec-elevators.com/ar/" />
 	<meta property="og:site_name" content="مصاعد فن المعمار" />
 	<meta property="og:type" content="website" />

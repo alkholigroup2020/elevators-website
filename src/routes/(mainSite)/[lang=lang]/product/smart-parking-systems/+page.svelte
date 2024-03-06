@@ -5,8 +5,8 @@
 </script>
 
 <svelte:head>
-	<meta property="og:description" content="parking systems" />
-	<meta property="og:description" content="أنظمة المواقف" />
+	<meta name="description" content="parking systems" />
+	<meta name="description" content="أنظمة المواقف" />
 </svelte:head>
 
 <!-- class="flex flex-col items-center" -->

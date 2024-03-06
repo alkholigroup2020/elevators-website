@@ -5,8 +5,8 @@
 </script>
 
 <svelte:head>
-	<meta property="og:description" content="Dumbwaiter" />
-	<meta property="og:description" content="مصعد نقل الأطعمة" />
+	<meta name="description" content="Dumbwaiter" />
+	<meta name="description" content="مصعد نقل الأطعمة" />
 </svelte:head>
 
 <!-- class="flex flex-col items-center" -->

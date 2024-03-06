@@ -5,10 +5,10 @@
 </script>
 
 <svelte:head>
-	<meta property="og:description" content="Passenger Elevators" />
-	<meta property="og:description" content="Elevator" />
-	<meta property="og:description" content="مصاعد أفراد" />
-	<meta property="og:description" content="المصاعد" />
+	<meta name="description" content="Passenger Elevators" />
+	<meta name="description" content="Elevator" />
+	<meta name="description" content="مصاعد أفراد" />
+	<meta name="description" content="المصاعد" />
 </svelte:head>
 
 <!-- class="flex flex-col items-center" -->

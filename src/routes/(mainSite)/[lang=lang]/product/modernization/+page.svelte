@@ -5,8 +5,8 @@
 </script>
 
 <svelte:head>
-	<meta property="og:description" content="modernization" />
-	<meta property="og:description" content="تحديث المصاعد" />
+	<meta name="description" content="modernization" />
+	<meta name="description" content="تحديث المصاعد" />
 </svelte:head>
 
 <div dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}>

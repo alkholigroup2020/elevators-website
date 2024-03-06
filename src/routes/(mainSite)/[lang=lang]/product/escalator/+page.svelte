@@ -5,8 +5,8 @@
 </script>
 
 <svelte:head>
-	<meta property="og:description" content="Escalators" />
-	<meta property="og:description" content="السلالم المتحركة" />
+	<meta name="description" content="Escalators" />
+	<meta name="description" content="السلالم المتحركة" />
 </svelte:head>
 
 <!-- class="flex flex-col items-center" -->

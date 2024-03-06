@@ -5,8 +5,8 @@
 </script>
 
 <svelte:head>
-	<meta property="og:description" content="Cargo Elevator" />
-	<meta property="og:description" content="مصعد البضائع" />
+	<meta name="description" content="Cargo Elevator" />
+	<meta name="description" content="مصعد البضائع" />
 </svelte:head>
 
 <div dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}>

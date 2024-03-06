@@ -4,8 +4,8 @@
 </script>
 
 <svelte:head>
-	<meta property="og:description" content="Car Elevator" />
-	<meta property="og:description" content="مصعد السيارة" />
+	<meta name="description" content="Car Elevator" />
+	<meta name="description" content="مصعد السيارة" />
 </svelte:head>
 
 <div dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}>

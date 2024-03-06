@@ -5,8 +5,8 @@
 </script>
 
 <svelte:head>
-	<meta property="og:description" content="Panoramic Elevators" />
-	<meta property="og:description" content="المصاعد البانورامية" />
+	<meta name="description" content="Panoramic Elevators" />
+	<meta name="description" content="المصاعد البانورامية" />
 </svelte:head>
 
 <!-- class="flex flex-col items-center" -->

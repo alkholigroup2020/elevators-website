@@ -26,69 +26,22 @@
 	$: linkedInColor = onLinkedInEnter ? '#d63030' : '#FFF';
 	$: instagramColor = onInstagramEnter ? '#d63030' : '#FFF';
 
-	/**
-	 * @param {Location | (string & Location)} url
-	 */
-	function jeddah_gtag_report_conversion(url) {
-		var callback = function () {
-			if (typeof url != 'undefined') {
-				window.location = url;
-			}
-		};
-		gtag('event', 'conversion', {
-			send_to: 'AW-824456723/Bli8CJy52ZUZEJPskIkD',
-			event_callback: callback
-		});
-		return false;
-	}
-
-	/**
-	 * @param {Location | (string & Location)} url
-	 */
-	function landLine_gtag_report_conversion(url) {
-		var callback = function () {
-			if (typeof url != 'undefined') {
-				window.location = url;
-			}
-		};
-		gtag('event', 'conversion', {
-			send_to: 'AW-824456723/_1-7CJa52ZUZEJPskIkD',
-			event_callback: callback
-		});
-		return false;
-	}
-
-	/**
-	 * @param {Location | (string & Location)} url
-	 */
-	function riyadh_gtag_report_conversion(url) {
-		var callback = function () {
-			if (typeof url != 'undefined') {
-				window.location = url;
-			}
-		};
-		gtag('event', 'conversion', {
-			send_to: 'AW-824456723/4EDJCJm52ZUZEJPskIkD',
-			event_callback: callback
-		});
-		return false;
-	}
-
-	/**
-	 * @param {Location | (string & Location)} url
-	 */
-	function email_gtag_report_conversion(url) {
-		var callback = function () {
-			if (typeof url != 'undefined') {
-				window.location = url;
-			}
-		};
-		gtag('event', 'conversion', {
-			send_to: 'AW-824456723/hERoCJ-52ZUZEJPskIkD',
-			event_callback: callback
-		});
-		return false;
-	}
+	import { conversionTracking } from '$lib/actions/conversionTracking';
+	const hotLine_trackingOptions = {
+		tag: 'AW-824456723/_1-7CJa52ZUZEJPskIkD'
+	};
+	const jeddah_trackingOptions = {
+		tag: 'AW-824456723/Bli8CJy52ZUZEJPskIkD'
+	};
+	const riyadh_trackingOptions = {
+		tag: 'AW-824456723/4EDJCJm52ZUZEJPskIkD'
+	};
+	const emailLink_trackingOptions = {
+		tag: 'AW-824456723/hERoCJ-52ZUZEJPskIkD'
+	};
+	const whatsApp_trackingOptions = {
+		tag: 'AW-824456723/6KALCKW52ZUZEJPskIkD'
+	};
 </script>
 
 <nav class={`w-full bg-surface-500 text-white ${`h-auto sm:h-12`}`}>
@@ -108,9 +61,7 @@
 						}}
 					>
 						<a
-							on:click={() => {
-								landLine_gtag_report_conversion;
-							}}
+							use:conversionTracking={hotLine_trackingOptions}
 							type="button"
 							aria-label="Call us on the hotline number"
 							href="tel:920023588"
@@ -152,9 +103,7 @@
 						}}
 					>
 						<a
-							on:click={() => {
-								riyadh_gtag_report_conversion;
-							}}
+							use:conversionTracking={riyadh_trackingOptions}
 							type="button"
 							href="tel:00966597370785"
 							aria-label="Riyadh branch mobile number"
@@ -189,9 +138,7 @@
 						}}
 					>
 						<a
-							on:click={() => {
-								jeddah_gtag_report_conversion;
-							}}
+							use:conversionTracking={jeddah_trackingOptions}
 							type="button"
 							aria-label="Jeddah branch mobile number"
 							href="tel:00966580251227"
@@ -226,10 +173,8 @@
 						}}
 					>
 						<a
+							use:conversionTracking={emailLink_trackingOptions}
 							type="button"
-							on:click={() => {
-								email_gtag_report_conversion;
-							}}
 							aria-label="our email address"
 							href="mailto:info@buildingtec.com"
 							class="btn !bg-transparent px-0 py-1 sm:py-3 sub-main-{$currentAppLang}-text"
@@ -259,6 +204,7 @@
 					</li>
 				</ul>
 			</div>
+
 			<!-- right side content -->
 			<div class="flex justify-end sm:justify-normal py-3">
 				<ul class="flex">
@@ -340,6 +286,7 @@
 							</span>
 						</a>
 					</li>
+
 					<!-- Twitter -->
 					<li
 						class="mx-3 hidden lg:block"
@@ -367,6 +314,7 @@
 							</span>
 						</a>
 					</li>
+
 					<!-- WhatsApp -->
 					<li
 						class="mx-3 hidden lg:block"
@@ -377,7 +325,12 @@
 							onWhatsAppEnter = false;
 						}}
 					>
-						<a aria-label="Our WhatsApp Link" href="https://wa.me/966597370785" target="_blank">
+						<a
+							use:conversionTracking={whatsApp_trackingOptions}
+							aria-label="Our WhatsApp Link"
+							href="https://wa.me/966597370785"
+							target="_blank"
+						>
 							<span>
 								<svg
 									width="20px"
@@ -408,6 +361,7 @@
 							</span>
 						</a>
 					</li>
+
 					<!-- LinkedIn -->
 					<li
 						class="mx-3 hidden lg:block"
@@ -446,6 +400,7 @@
 							</span>
 						</a>
 					</li>
+
 					<!-- Instagram -->
 					<li
 						class="mx-3 hidden lg:block"
@@ -491,6 +446,7 @@
 							</span>
 						</a>
 					</li>
+
 					<li class="mx-2">
 						<LocaleSwitcher />
 					</li>

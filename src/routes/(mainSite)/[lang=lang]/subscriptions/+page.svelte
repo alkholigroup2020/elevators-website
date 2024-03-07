@@ -88,21 +88,10 @@
 		}
 	});
 
-	/**
-	 * @param {Location | (string & Location)} url
-	 */
-	function maintenance_gtag_report_conversion(url: Location | (string & Location)) {
-		var callback = function () {
-			if (typeof url != 'undefined') {
-				window.location = url;
-			}
-		};
-		gtag('event', 'conversion', {
-			send_to: 'AW-824456723/bx01CKu52ZUZEJPskIkD',
-			event_callback: callback
-		});
-		return false;
-	}
+	import { conversionTracking } from '$lib/actions/conversionTracking';
+	const maintenanceReq_trackingOptions = {
+		tag: 'AW-824456723/bx01CKu52ZUZEJPskIkD'
+	};
 </script>
 
 <section dir={$pageDirection}>
@@ -419,9 +408,7 @@
 						</div>
 						<div>
 							<button
-								on:click={() => {
-									maintenance_gtag_report_conversion;
-								}}
+								use:conversionTracking={maintenanceReq_trackingOptions}
 								type="submit"
 								class="btn variant-ringed-surface rounded-lg px-16 py-[10px] sub-main-{$currentAppLang}-text mt-3"
 							>

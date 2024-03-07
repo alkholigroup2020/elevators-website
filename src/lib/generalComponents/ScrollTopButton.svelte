@@ -13,21 +13,10 @@
 		window.scrollTo({ top: 0, behavior: 'smooth' });
 	};
 
-	/**
-	 * @param {Location | (string & Location)} url
-	 */
-	function whatsapp_gtag_report_conversion(url: Location | (string & Location)) {
-		var callback = function () {
-			if (typeof url != 'undefined') {
-				window.location = url;
-			}
-		};
-		gtag('event', 'conversion', {
-			send_to: 'AW-824456723/6KALCKW52ZUZEJPskIkD',
-			event_callback: callback
-		});
-		return false;
-	}
+	import { conversionTracking } from '$lib/actions/conversionTracking';
+	const whatsApp_trackingOptions = {
+		tag: 'AW-824456723/6KALCKW52ZUZEJPskIkD'
+	};
 </script>
 
 <div class="fixed bottom-6 right-1 md:right-3 z-50">
@@ -37,10 +26,8 @@
 			class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200 opacity-80 hover:opacity-100"
 		>
 			<a
+				use:conversionTracking={whatsApp_trackingOptions}
 				aria-label="Our WhatsApp Link"
-				on:click={() => {
-					whatsapp_gtag_report_conversion;
-				}}
 				href="https://wa.me/966597370785"
 				target="_blank"
 				class="grid rounded-full w-[40px] h-[40px] md:w-[45px] md:h-[45px] xl:w-[52px] xl:h-[52px] bg-success-500"

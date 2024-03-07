@@ -92,21 +92,10 @@
 		}
 	});
 
-	/**
-	 * @param {Location | (string & Location)} url
-	 */
-	function meeting_gtag_report_conversion(url: Location | (string & Location)) {
-		var callback = function () {
-			if (typeof url != 'undefined') {
-				window.location = url;
-			}
-		};
-		gtag('event', 'conversion', {
-			send_to: 'AW-824456723/VkTLCKK52ZUZEJPskIkD',
-			event_callback: callback
-		});
-		return false;
-	}
+	import { conversionTracking } from '$lib/actions/conversionTracking';
+	const meeting_trackingOptions = {
+		tag: 'AW-824456723/VkTLCKK52ZUZEJPskIkD'
+	};
 </script>
 
 <section dir={$pageDirection}>
@@ -253,9 +242,7 @@
 						</div>
 						<div>
 							<button
-								on:click={() => {
-									meeting_gtag_report_conversion;
-								}}
+								use:conversionTracking={meeting_trackingOptions}
 								type="submit"
 								class="btn variant-ringed-surface rounded-lg px-16 py-[10px] sub-main-{$currentAppLang}-text mt-3"
 							>

@@ -81,27 +81,14 @@
 		}
 	});
 
-	/**
-	 * @param {Location | (string & Location)} url
-	 */
-	function sendMsg_gtag_report_conversion(url: Location | (string & Location)) {
-		var callback = function () {
-			if (typeof url != 'undefined') {
-				window.location = url;
-			}
-		};
-		gtag('event', 'conversion', {
-			send_to: 'AW-824456723/lEHUCP7H2ZUZEJPskIkD',
-			event_callback: callback
-		});
-		return false;
-	}
+	import { conversionTracking } from '$lib/actions/conversionTracking';
+	const footerMsg_trackingOptions = {
+		tag: 'AW-824456723/lEHUCP7H2ZUZEJPskIkD'
+	};
 </script>
 
 <div>
 	<!-- <SuperDebug data={$form} /> -->
-
-	<!-- on:submit|preventDefault={handleSubmit}  -->
 
 	<form method="POST" action={`/${$currentAppLang}/footer`} use:enhance>
 		<!-- name -->
@@ -190,10 +177,8 @@
 		<div class="flex items-center">
 			<div>
 				<button
+					use:conversionTracking={footerMsg_trackingOptions}
 					type="submit"
-					on:click={() => {
-						sendMsg_gtag_report_conversion;
-					}}
 					class="btn variant-ghost rounded-md border border-success-800 px-8 py-[5px] sub-main-{$currentAppLang}-text mt-3"
 				>
 					<span class="px-3"

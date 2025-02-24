@@ -7,11 +7,11 @@ import { INFO_PASSWORD } from '$env/static/private';
 
 // Create a reusable transporter object using the default SMTP transport
 const transporter: Transporter = nodemailer.createTransport({
-	host: '10.10.10.20', // replace with your email host
+	host: 'smtp.office365.com', // replace with your email host
 	port: 587,
 	secure: false, // true for 465, false for other ports
 	auth: {
-		user: 'info@buildingtec.com', // replace with your email
+		user: 'alKholi.info@alkholi.com', // replace with your email
 		pass: INFO_PASSWORD // replace with your email password
 	},
 	tls: {
@@ -29,7 +29,7 @@ export const sendEmail = async (
 ): Promise<void> => {
 	// email options
 	const mailOptions: SendMailOptions = {
-		from: 'info@buildingtec.com',
+		from: 'alKholi.info@alkholi.com',
 		to: to,
 		subject: subject,
 		text: text,

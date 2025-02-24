@@ -83,12 +83,16 @@
 	<link rel="alternate" href="https://www.buildingtec-elevators.com/ar/" hreflang="ar" />
 
 	<!-- Open Graph Tags -->
+	<meta property="og:type" content="website" />
 
 	<!-- en -->
 	<meta
 		property="og:title"
 		content="BuildingTec Elevators - Quality Elevator Installation and Maintenance"
 	/>
+	<meta property="og:url" content="https://www.buildingtec-elevators.com/" />
+	<meta property="og:site_name" content="BuildingTec Elevators" />
+
 	<meta
 		name="description"
 		content="BuildingTec Elevators, the top elevator installation and maintenance company offering quality services and cutting-edge products including passenger elevators, car elevators, cargo lifts, and more"
@@ -122,12 +126,46 @@
 	<meta name="description" content="parking system in jeddah" />
 	<meta name="description" content="parking system in riyadh" />
 	<meta name="description" content="parking system in Saudi arabia" />
-	<meta property="og:url" content="https://www.buildingtec-elevators.com/" />
-	<meta property="og:site_name" content="BuildingTec Elevators" />
-	<meta property="og:type" content="website" />
+
+	<meta
+		name="keywords"
+		content="BuildingTec Elevators, the top elevator installation and maintenance company offering quality services and cutting-edge products including passenger elevators, car elevators, cargo lifts, and more"
+	/>
+	<meta name="keywords" content="Elevator" />
+	<meta name="keywords" content="Best Elevator company in Saudi Arabia" />
+	<meta name="keywords" content="Elevators Company in Jeddah" />
+	<meta name="keywords" content="Elevator Company in Riyadh" />
+	<meta name="keywords" content="Elevator company in Saudi Arabia" />
+	<meta name="keywords" content="Elevator company in KSA" />
+	<meta name="keywords" content="Elevator Riyadh" />
+	<meta name="keywords" content="Elevator Jeddah" />
+	<meta name="keywords" content="Home elevator in Riyadh" />
+	<meta name="keywords" content="Home elevator in Jeddah" />
+	<meta name="keywords" content="Home elevator in saudi arabia" />
+	<meta name="keywords" content="Car Elevator in Saudi Arabia" />
+	<meta name="keywords" content="Car Elevator in Riyadh" />
+	<meta name="keywords" content="Car Elevator in Jeddah" />
+	<meta name="keywords" content="Cargo lift in Saudi arabia" />
+	<meta name="keywords" content="Cargo lift in Riyadh" />
+	<meta name="keywords" content="Cargo lift in jeddah" />
+	<meta name="keywords" content="Dumbwaiter in riyadh" />
+	<meta name="keywords" content="Dumbwaiter in jeddah" />
+	<meta name="keywords" content="Dumbwaiter in Saudi arabia" />
+	<meta name="keywords" content="Escalator in Saudi Arabia" />
+	<meta name="keywords" content="Escalator in riyadh" />
+	<meta name="keywords" content="Escalator in Jeddah" />
+	<meta name="keywords" content="Panoramic Elevators in jeddah" />
+	<meta name="keywords" content="Panoramic elevator in riyadh" />
+	<meta name="keywords" content="Panoramic elevator in Saudi arabia" />
+	<meta name="keywords" content="parking system in jeddah" />
+	<meta name="keywords" content="parking system in riyadh" />
+	<meta name="keywords" content="parking system in Saudi arabia" />
 
 	<!-- ar -->
+	<meta property="og:url" content="https://www.buildingtec-elevators.com/ar/" />
 	<meta property="og:title" content="مصاعد فن المعمار - تركيب وصيانة المصاعد بجودة عالية" />
+	<meta property="og:site_name" content="مصاعد فن المعمار" />
+
 	<meta
 		name="description"
 		content="مصاعد فن المعمار، الشركة الرائدة في تركيب وصيانة المصاعد، تقدم خدمات عالية الجودة ومنتجات ذات تكنولوجيا متقدمة بما في ذلك المصاعد الركاب، المصاعد السيارات، المصاعد البضائع، وأكثر من ذلك."
@@ -161,9 +199,40 @@
 	<meta name="description" content="مواقف السيارات الذكية في جدة" />
 	<meta name="description" content="مواقف السيارات الذكية في الرياض" />
 	<meta name="description" content="مواقف السيارات الذكية في السعودية" />
-	<meta property="og:url" content="https://www.buildingtec-elevators.com/ar/" />
-	<meta property="og:site_name" content="مصاعد فن المعمار" />
-	<meta property="og:type" content="website" />
+
+	<meta
+		name="keywords"
+		content="مصاعد فن المعمار، الشركة الرائدة في تركيب وصيانة المصاعد، تقدم خدمات عالية الجودة ومنتجات ذات تكنولوجيا متقدمة بما في ذلك المصاعد الركاب، المصاعد السيارات، المصاعد البضائع، وأكثر من ذلك."
+	/>
+	<meta name="keywords" content="مصاعد" />
+	<meta name="keywords" content="نحن أفضل شركة مصاعد في المملكة العربية السعودية" />
+	<meta name="keywords" content="شركة مصاعد في جدة" />
+	<meta name="keywords" content="شركة مصاعد في الرياض" />
+	<meta name="keywords" content="شركة مصاعد في المملكة العربية السعودية" />
+	<meta name="keywords" content="شركة مصاعد في السعودية" />
+	<meta name="keywords" content="مصاعد في الرياض" />
+	<meta name="keywords" content="مصاعد في جدة" />
+	<meta name="keywords" content="مصعد منزلي بالرياض" />
+	<meta name="keywords" content="مصعد منزلي في جدة" />
+	<meta name="keywords" content="مصعد منزلي في السعودية" />
+	<meta name="keywords" content="مصعد سيارات في السعودية" />
+	<meta name="keywords" content="مصعد سيارات في الرياض" />
+	<meta name="keywords" content="مصعد سيارات في جدة" />
+	<meta name="keywords" content="مصعد بضائع في السعودية" />
+	<meta name="keywords" content="مصعد بضائع في الرياض" />
+	<meta name="keywords" content="مصعد بضائع في جدة" />
+	<meta name="keywords" content="مصعد طعام في الرياض" />
+	<meta name="keywords" content="مصعد طعام في جدة" />
+	<meta name="keywords" content="مصعد طعام في السعودية" />
+	<meta name="keywords" content="سلالم متحركة في السعودية" />
+	<meta name="keywords" content="سلالم متحركة في الرياض" />
+	<meta name="keywords" content="سلالم متحركة في جدة" />
+	<meta name="keywords" content="مصاعد بانوراما في جدة" />
+	<meta name="keywords" content="مصاعد بانوراما في الرياض" />
+	<meta name="keywords" content="مصاعد بانوراما في السعودية" />
+	<meta name="keywords" content="مواقف السيارات الذكية في جدة" />
+	<meta name="keywords" content="مواقف السيارات الذكية في الرياض" />
+	<meta name="keywords" content="مواقف السيارات الذكية في السعودية" />
 
 	<HeadHrefLangs />
 </svelte:head>

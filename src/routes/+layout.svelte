@@ -69,18 +69,12 @@
 	<meta name="keywords" content={$LL.seo.keywords()} />
 
 	<!-- Meta Robots -->
-
 	<meta name="robots" content="index, follow" />
 
 	<!-- Canonical Tag -->
-
 	<link rel="canonical" href="https://www.buildingtec-elevators.com/" />
 
-	<!-- Hreflang Tags -->
-
-	<link rel="alternate" href="https://www.buildingtec-elevators.com/en/" hreflang="en" />
-
-	<link rel="alternate" href="https://www.buildingtec-elevators.com/ar/" hreflang="ar" />
+	<HeadHrefLangs />
 
 	<!-- Open Graph Tags -->
 	<meta property="og:type" content="website" />
@@ -233,8 +227,6 @@
 	<meta name="keywords" content="مواقف السيارات الذكية في جدة" />
 	<meta name="keywords" content="مواقف السيارات الذكية في الرياض" />
 	<meta name="keywords" content="مواقف السيارات الذكية في السعودية" />
-
-	<HeadHrefLangs />
 </svelte:head>
 
 {#if devOrProduction}

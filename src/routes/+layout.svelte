@@ -30,7 +30,6 @@
 
 	import WindowSize from '$lib/generalComponents/WindowSize.svelte';
 	import Analytics from '$lib/Analytics.svelte';
-	import { any } from 'zod';
 
 	$: devOrProduction = process.env.NODE_ENV === 'development' ? true : false;
 
@@ -62,14 +61,23 @@
 </script>
 
 <svelte:head>
+	<!-- DNS Prefetch -->
+	<link rel="dns-prefetch" href="https://www.buildingtec-elevators.com" />
+
+	<!-- Preconnect to required origins -->
+	<link rel="preconnect" href="https://www.buildingtec-elevators.com" />
+
 	<title>{$LL.title()}</title>
 
 	<meta name="description" content={$LL.seo.description1()} />
 
 	<meta name="keywords" content={$LL.seo.keywords()} />
 
+	<!-- Cache control -->
+	<meta http-equiv="Cache-Control" content="public, max-age=31536000" />
+
 	<!-- Meta Robots -->
-	<meta name="robots" content="index, follow" />
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
 
 	<!-- Canonical Tag -->
 	<link rel="canonical" href="https://www.buildingtec-elevators.com/" />

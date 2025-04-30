@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.buildingtec-elevators.com/sitemap_index.xml

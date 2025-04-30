@@ -5,8 +5,25 @@
 </script>
 
 <svelte:head>
-	<meta name="description" content="Panoramic Elevators" />
-	<meta name="description" content="المصاعد البانورامية" />
+	<meta name="description" content="Panoramic Elevator" />
+	<meta name="description" content="مصعد بانورامي" />
+	<meta name="description" content="مصعد زجاجي" />
+	<meta name="description" content="مصعد بانورامي للفنادق" />
+	<meta name="description" content="مصعد بانورامي للمولات" />
+	<meta name="description" content="مصعد بانورامي للفلل" />
+	<meta name="description" content="مصعد زجاجي للقصور" />
+	<meta name="description" content="تركيب مصعد بانورامي" />
+	<meta name="description" content="صيانة مصعد بانورامي" />
+	<meta name="description" content="اسعار المصاعد البانورامية" />
+	<meta name="description" content="مصعد بانورامي في الرياض" />
+	<meta name="description" content="مصعد بانورامي في جدة" />
+	<meta name="description" content="تكلفة المصعد البانورامي" />
+	<meta name="description" content="شركة مصاعد بانورامية" />
+
+	<meta
+		name="keywords"
+		content="مصعد بانورامي, مصعد زجاجي, مصعد بانورامي للفنادق, مصعد بانورامي للمولات, مصعد بانورامي للفلل, مصعد زجاجي للقصور, تركيب مصعد بانورامي, صيانة مصعد بانورامي, اسعار المصاعد البانورامية, مصعد بانورامي في الرياض, مصعد بانورامي في جدة, تكلفة المصعد البانورامي, شركة مصاعد بانورامية, مصاعد فخمة"
+	/>
 </svelte:head>
 
 <!-- class="flex flex-col items-center" -->

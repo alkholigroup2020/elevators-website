@@ -7,8 +7,23 @@
 <svelte:head>
 	<meta name="description" content="Passenger Elevators" />
 	<meta name="description" content="Elevator" />
-	<meta name="description" content="مصاعد أفراد" />
-	<meta name="description" content="المصاعد" />
+	<meta name="description" content="Best Elevator company in Saudi Arabia" />
+	<meta name="description" content="مصاعد ركاب" />
+	<meta name="description" content="مصاعد مباني سكنية" />
+	<meta name="description" content="مصاعد مباني تجارية" />
+	<meta name="description" content="مصاعد مستشفيات" />
+	<meta name="description" content="مصاعد فنادق" />
+	<meta name="description" content="تركيب مصاعد في الرياض" />
+	<meta name="description" content="تركيب مصاعد في جدة" />
+	<meta name="description" content="صيانة مصاعد في الرياض" />
+	<meta name="description" content="صيانة مصاعد في جدة" />
+	<meta name="description" content="شركة مصاعد معتمدة" />
+	<meta name="description" content="افضل شركة مصاعد في السعودية" />
+
+	<meta
+		name="keywords"
+		content="مصاعد ركاب, تركيب مصاعد, صيانة مصاعد, مصاعد مباني سكنية, مصاعد مباني تجارية, مصاعد مستشفيات, مصاعد فنادق, شركة مصاعد معتمدة, افضل شركة مصاعد في السعودية, مصاعد في الرياض, مصاعد في جدة, قطع غيار مصاعد اصلية"
+	/>
 </svelte:head>
 
 <!-- class="flex flex-col items-center" -->

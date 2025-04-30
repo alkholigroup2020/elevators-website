@@ -5,8 +5,25 @@
 </script>
 
 <svelte:head>
-	<meta name="description" content="modernization" />
+	<meta name="description" content="Elevator Modernization" />
 	<meta name="description" content="تحديث المصاعد" />
+	<meta name="description" content="تطوير المصاعد" />
+	<meta name="description" content="تجديد المصاعد" />
+	<meta name="description" content="صيانة شاملة للمصاعد" />
+	<meta name="description" content="ترقية المصاعد" />
+	<meta name="description" content="إصلاح المصاعد" />
+	<meta name="description" content="تحديث مصاعد قديمة" />
+	<meta name="description" content="تحديث مصاعد في الرياض" />
+	<meta name="description" content="تحديث مصاعد في جدة" />
+	<meta name="description" content="تكلفة تحديث المصاعد" />
+	<meta name="description" content="شركة تحديث مصاعد" />
+	<meta name="description" content="خدمة تحديث المصاعد" />
+	<meta name="description" content="تحديث أنظمة المصاعد" />
+
+	<meta
+		name="keywords"
+		content="تحديث المصاعد, تطوير المصاعد, تجديد المصاعد, صيانة شاملة للمصاعد, ترقية المصاعد, إصلاح المصاعد, تحديث مصاعد قديمة, تحديث مصاعد في الرياض, تحديث مصاعد في جدة, تكلفة تحديث المصاعد, شركة تحديث مصاعد, خدمة تحديث المصاعد, تحديث أنظمة المصاعد, قطع غيار مصاعد اصلية"
+	/>
 </svelte:head>
 
 <div dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}>

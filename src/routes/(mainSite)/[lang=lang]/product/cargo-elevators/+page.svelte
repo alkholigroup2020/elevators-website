@@ -6,7 +6,24 @@
 
 <svelte:head>
 	<meta name="description" content="Cargo Elevator" />
-	<meta name="description" content="مصعد البضائع" />
+	<meta name="description" content="مصعد بضائع" />
+	<meta name="description" content="مصعد حمولة" />
+	<meta name="description" content="مصعد مستودعات" />
+	<meta name="description" content="مصعد مصانع" />
+	<meta name="description" content="مصعد شحن البضائع" />
+	<meta name="description" content="مصعد مواد ثقيلة" />
+	<meta name="description" content="تركيب مصعد بضائع" />
+	<meta name="description" content="صيانة مصعد بضائع" />
+	<meta name="description" content="اسعار مصاعد البضائع" />
+	<meta name="description" content="مصعد بضائع في الرياض" />
+	<meta name="description" content="مصعد بضائع في جدة" />
+	<meta name="description" content="تكلفة مصعد بضائع" />
+	<meta name="description" content="شركة مصاعد بضائع" />
+
+	<meta
+		name="keywords"
+		content="مصعد بضائع, مصعد حمولة, مصعد مستودعات, مصعد مصانع, مصعد شحن البضائع, مصعد مواد ثقيلة, تركيب مصعد بضائع, صيانة مصعد بضائع, اسعار مصاعد البضائع, مصعد بضائع في الرياض, مصعد بضائع في جدة, تكلفة مصعد بضائع, شركة مصاعد بضائع, مصاعد صناعية"
+	/>
 </svelte:head>
 
 <div dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}>

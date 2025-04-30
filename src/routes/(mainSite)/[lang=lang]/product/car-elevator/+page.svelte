@@ -1,11 +1,29 @@
 <script lang="ts">
 	import LL from '$i18n/i18n-svelte';
+	import SectionSize from '$lib/generalComponents/SectionSize.svelte';
 	import { currentAppLang } from '$lib/stores/store';
 </script>
 
 <svelte:head>
 	<meta name="description" content="Car Elevator" />
-	<meta name="description" content="مصعد السيارة" />
+	<meta name="description" content="مصعد سيارات" />
+	<meta name="description" content="مصعد سيارات فندق" />
+	<meta name="description" content="مصعد سيارات للفلل" />
+	<meta name="description" content="مصعد سيارات للقصور" />
+	<meta name="description" content="تركيب مصعد سيارات" />
+	<meta name="description" content="صيانة مصعد سيارات" />
+	<meta name="description" content="اسعار مصاعد السيارات" />
+	<meta name="description" content="تكلفة مصعد سيارات" />
+	<meta name="description" content="مصعد سيارات في الرياض" />
+	<meta name="description" content="مصعد سيارات في جدة" />
+	<meta name="description" content="مصعد سيارات للمعارض" />
+	<meta name="description" content="افضل مصعد سيارات" />
+	<meta name="description" content="شركة مصاعد سيارات" />
+
+	<meta
+		name="keywords"
+		content="مصعد سيارات, مصعد سيارات فندق, مصعد سيارات للفلل, مصعد سيارات للقصور, تركيب مصعد سيارات, صيانة مصعد سيارات, اسعار مصاعد السيارات, تكلفة مصعد سيارات, مصعد سيارات في الرياض, مصعد سيارات في جدة, مصعد سيارات للمعارض, افضل مصعد سيارات, شركة مصاعد سيارات في السعودية"
+	/>
 </svelte:head>
 
 <div dir={$currentAppLang === 'en' ? 'ltr' : 'rtl'}>

@@ -6,7 +6,24 @@
 
 <svelte:head>
 	<meta name="description" content="Home Elevator" />
-	<meta name="description" content="مصعد المنزل" />
+	<meta name="description" content="مصعد منزلي" />
+	<meta name="description" content="مصعد فيلا" />
+	<meta name="description" content="مصعد منزلي في الرياض" />
+	<meta name="description" content="مصعد منزلي في جدة" />
+	<meta name="description" content="تركيب مصاعد منزلية" />
+	<meta name="description" content="صيانة مصاعد منزلية" />
+	<meta name="description" content="اسعار المصاعد المنزلية" />
+	<meta name="description" content="مصعد منزلي رخيص" />
+	<meta name="description" content="مصعد منزلي صغير" />
+	<meta name="description" content="افضل مصعد منزلي" />
+	<meta name="description" content="مصعد كهربائي منزلي" />
+	<meta name="description" content="مصعد طعام منزلي" />
+	<meta name="description" content="تكلفة المصعد المنزلي" />
+
+	<meta
+		name="keywords"
+		content="مصعد منزلي, مصعد فيلا, تركيب مصاعد منزلية, صيانة مصاعد منزلية, اسعار المصاعد المنزلية, مصعد منزلي رخيص, مصعد منزلي صغير, افضل مصعد منزلي, مصعد كهربائي منزلي, مصعد طعام منزلي, تكلفة المصعد المنزلي, مصاعد منازل في الرياض, مصاعد منازل في جدة"
+	/>
 </svelte:head>
 
 <!-- class="flex flex-col items-center" -->

@@ -161,7 +161,7 @@
 					use:conversionTracking={jeddah_trackingOptions}
 					type="button"
 					aria-label="Jeddah branch mobile number"
-					href="tel:00966580251227"
+					href="tel:00966593349052"
 					class="btn !bg-transparent p-0"
 				>
 					<div

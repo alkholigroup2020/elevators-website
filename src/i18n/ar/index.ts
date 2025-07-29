@@ -10,7 +10,7 @@ const en: BaseTranslation = {
 	},
 	veryTopNav: {
 		mobile: '+966 59 737 0785 :الريــاض',
-		jed: '+966 58 025 1227 :جــدة',
+		jed: '+966 59 334 9052 :جــدة',
 		email: 'info@buildingtec.com'
 	},
 	mainNav: {
@@ -641,7 +641,7 @@ const en: BaseTranslation = {
 			title: 'اتصــل بنا',
 			email: 'البريد الإلكتروني: info@buildingtec.com',
 			riyadhMobile: 'الريــاض: 00966597370785',
-			jeddahMobile: 'جــدة: 00966580251227',
+			jeddahMobile: 'جــدة: 00966593349052',
 			hotLine: 'الخط الساخن: 920023588',
 			locations: 'فــروعنا:',
 			city1: 'الــريـاض',

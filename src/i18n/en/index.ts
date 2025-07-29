@@ -11,7 +11,7 @@ const en: BaseTranslation = {
 	},
 	veryTopNav: {
 		mobile: 'Riyadh: +966 59 737 0785',
-		jed: 'Jeddah: +966 58 025 1227',
+		jed: 'Jeddah: +966 59 334 9052',
 		email: 'info@buildingtec.com'
 	},
 	mainNav: {
@@ -640,7 +640,7 @@ const en: BaseTranslation = {
 			title: 'Contact Us',
 			email: 'Email: info@buildingtec.com',
 			riyadhMobile: 'Riyadh: +966 59 737 0785',
-			jeddahMobile: 'Jeddah: +966 58 025 1227',
+			jeddahMobile: 'Jeddah: +966 59 334 9052',
 			hotLine: 'Hotline: 9200 23 588',
 			locations: 'Our Branches:',
 			city1: 'Riyadh',

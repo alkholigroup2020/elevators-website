@@ -39,6 +39,18 @@
 						</ul>
 					</div>
 				{/if}
+
+				{#if section.__typename === 'ComponentBlogABlogPicture'}
+					<div class="pb-5 md:pb-12">
+						<img
+							src={`https://cms.buildingtec-elevators.com${section.a_blog_picture_900x540.data.attributes.url}`}
+							srcset={`https://cms.buildingtec-elevators.com${section.a_blog_picture_500x300.data.attributes.url} 640w, 
+								https://cms.buildingtec-elevators.com${section.a_blog_picture_900x540.data.attributes.url} 8000w`}
+							alt="blog post"
+							class="w-full md:w-[80%] aspect-[1/0.6] rounded-sm"
+						/>
+					</div>
+				{/if}
 			{/each}
 		{:else}
 			<!-- Arabic Content -->
@@ -70,6 +82,17 @@
 								<li>{line.line}</li>
 							{/each}
 						</ul>
+					</div>
+				{/if}
+				{#if section.__typename === 'ComponentBlogABlogPicture'}
+					<div class="pb-5 md:pb-12">
+						<img
+							src={`https://cms.buildingtec-elevators.com${section.a_blog_picture_900x540.data.attributes.url}`}
+							srcset={`https://cms.buildingtec-elevators.com${section.a_blog_picture_500x300.data.attributes.url} 640w, 
+								https://cms.buildingtec-elevators.com${section.a_blog_picture_900x540.data.attributes.url} 8000w`}
+							alt="blog post"
+							class="w-full md:w-[80%] aspect-[1/0.6] rounded-sm"
+						/>
 					</div>
 				{/if}
 			{/each}

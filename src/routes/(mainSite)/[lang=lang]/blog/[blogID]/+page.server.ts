@@ -33,6 +33,23 @@ export const load = (async ({ params }) => {
 								line
 							}
 						}
+            __typename
+            ... on ComponentBlogABlogPicture {
+              a_blog_picture_900x540 {
+                data {
+                  attributes {
+                    url
+                  }
+                }
+              }
+              a_blog_picture_500x300 {
+                data {
+                  attributes {
+                    url
+                  }
+                }
+              }
+            }
 					}
 					localizations {
 						data {
@@ -56,12 +73,28 @@ export const load = (async ({ params }) => {
 											line
 										}
 									}
+                  ... on ComponentBlogABlogPicture {
+                    a_blog_picture_900x540 {
+                      data {
+                        attributes {
+                          url
+                        }
+                      }
+                    }
+                    a_blog_picture_500x300 {
+                      data {
+                        attributes {
+                          url
+                        }
+                      }
+                    }
+                  }
 								}
 							}
 						}
 					}
 				}
-			}
+      }
 		}
 	}
 `;
